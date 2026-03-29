@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Album Analysis Index</title>
+<link rel="stylesheet" href="album-analysis.css">
+<style>
+  /* ── Index page — hero ─────────────────────────────────────────── */
+  .ix-hero {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 56px 0 40px;
+    text-align: center;
+  }
+
+  .ix-hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    margin: 0 0 6px;
+  }
+
+  .ix-hero p {
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    margin: 0 0 28px;
+  }
+
+  /* ── Search input ──────────────────────────────────────────────── */
+  .ix-search {
+    width: 100%;
+    max-width: 500px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    padding: 11px 16px;
+    outline: none;
+    transition: border-color 0.18s;
+    margin: 0 auto;
+    display: block;
+  }
+  .ix-search:focus        { border-color: var(--accent); }
+  .ix-search::placeholder { color: var(--text-dim); }
+
+  /* ── Artist filter pills ───────────────────────────────────────── */
+  .ix-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 18px auto 0;
+    max-width: 700px;
+  }
+
+  .ix-pill {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    color: var(--text-dim);
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    padding: 5px 14px;
+    transition: border-color 0.18s, color 0.18s, background 0.18s;
+  }
+  .ix-pill:hover           { border-color: var(--accent); color: var(--text); }
+  .ix-pill.active          {
+    background: rgba(0,255,136,0.09);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* ── Results bar ───────────────────────────────────────────────── */
+  .ix-results-bar {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin: 28px 0 4px;
+  }
+
+  .ix-count {
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+  }
+
+  /* ── Album grid ────────────────────────────────────────────────── */
+  .ix-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 18px;
+    padding-bottom: 72px;
+  }
+
+  /* ── Album card ────────────────────────────────────────────────── */
+  .ix-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 2px solid var(--card-accent, var(--accent));
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-decoration: none;
+    transition: border-color 0.18s, transform 0.15s, box-shadow 0.18s;
+  }
+  .ix-card:hover {
+    border-color: var(--card-accent, var(--accent));
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    transform: translateY(-3px);
+  }
+
+  .ix-card-body {
+    flex: 1;
+    padding: 18px 20px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .ix-card-genre {
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .ix-card-title {
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 2px 0 0;
+  }
+
+  .ix-card-artist {
+    color: var(--card-accent, var(--accent));
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.77rem;
+    margin-top: 2px;
+  }
+
+  .ix-card-meta {
+    color: var(--time);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    margin-top: 6px;
+  }
+
+  .ix-card-footer {
+    border-top: 1px solid var(--border);
+    color: var(--card-accent, var(--accent));
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: gap 0.15s;
+  }
+  .ix-card:hover .ix-card-footer { gap: 10px; }
+
+  /* ── Empty / error states ──────────────────────────────────────── */
+  .ix-empty,
+  .ix-error {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    grid-column: 1 / -1;
+    padding: 64px 0;
+    text-align: center;
+  }
+  .ix-empty { color: var(--text-dim); }
+  .ix-error { color: var(--accent2); line-height: 1.9; }
+  .ix-error code {
+    background: var(--surface2);
+    border-radius: 4px;
+    color: var(--warn);
+    padding: 1px 6px;
+  }
+
+  /* ── Responsive ────────────────────────────────────────────────── */
+  @media (max-width: 480px) {
+    .ix-hero h1  { font-size: 1.6rem; }
+    .ix-grid     { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ix-hero">
+  <div class="container">
+    <h1>Album Analysis</h1>
+    <p>Structural &nbsp;·&nbsp; Timestamp-Based &nbsp;·&nbsp; Deep Listening Notes</p>
+    <input type="search" class="ix-search" id="ixSearch"
+           placeholder="Search by title, artist or genre…"
+           autocomplete="off" spellcheck="false" aria-label="Filter albums">
+    <div class="ix-filters" id="ixFilters"></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="ix-results-bar">
+    <span class="ix-count" id="ixCount"></span>
+  </div>
+  <div class="ix-grid" id="ixGrid"></div>
+</div>
+
+<!--
+  albums.js defines window.ALBUMS — the only file you need to edit
+  when adding a new album. index.html never needs to change.
+-->
+<script src="albums.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  // ── Colour palette — one colour per unique artist (sorted A-Z) ──
+  // Extend the array if you have more than 5 distinct artists.
+  var PALETTE = [
+    'var(--accent)',   // green
+    'var(--time)',     // amber
+    'var(--accent3)',  // purple
+    'var(--accent2)',  // red
+    'var(--warn)'      // orange
+  ];
+
+  // ── Minimal HTML-escape to prevent any accidental XSS ───────────
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ── Build deterministic artist → colour map from sorted names ───
+  function buildColorMap(albums) {
+    var artists = Array.from(new Set(albums.map(function (a) { return a.artist; }))).sort();
+    var map = {};
+    artists.forEach(function (name, i) {
+      map[name] = PALETTE[i % PALETTE.length];
+    });
+    return map;
+  }
+
+  // ── DOM references ───────────────────────────────────────────────
+  var grid    = document.getElementById('ixGrid');
+  var filters = document.getElementById('ixFilters');
+  var search  = document.getElementById('ixSearch');
+  var count   = document.getElementById('ixCount');
+
+  var allAlbums   = [];
+  var colorMap    = {};
+  var activeArtist = 'All';
+
+  // ── Build artist filter pills ────────────────────────────────────
+  function buildPills() {
+    var artists = ['All'].concat(
+      Array.from(new Set(allAlbums.map(function (a) { return a.artist; }))).sort()
+    );
+    filters.innerHTML = artists.map(function (name) {
+      var active = name === 'All' ? ' active' : '';
+      return '<button class="ix-pill' + active + '" data-artist="' + esc(name) + '">' + esc(name) + '</button>';
+    }).join('');
+
+    filters.querySelectorAll('.ix-pill').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        activeArtist = btn.dataset.artist;
+        filters.querySelectorAll('.ix-pill').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        render();
+      });
+    });
+  }
+
+  // ── Render the visible cards ─────────────────────────────────────
+  function render() {
+    var q = search.value.trim().toLowerCase();
+
+    var visible = allAlbums.filter(function (a) {
+      var matchArtist = activeArtist === 'All' || a.artist === activeArtist;
+      var matchSearch = !q
+        || a.title.toLowerCase().indexOf(q) !== -1
+        || a.artist.toLowerCase().indexOf(q) !== -1
+        || (a.genre && a.genre.toLowerCase().indexOf(q) !== -1);
+      return matchArtist && matchSearch;
+    });
+
+    count.textContent = visible.length + ' / ' + allAlbums.length + ' album' + (allAlbums.length !== 1 ? 's' : '');
+
+    if (visible.length === 0) {
+      grid.innerHTML = '<div class="ix-empty">No albums match &ldquo;' + esc(search.value) + '&rdquo;.</div>';
+      return;
+    }
+
+    grid.innerHTML = visible.map(function (a) {
+      var color = colorMap[a.artist] || 'var(--accent)';
+      var trackLabel = a.tracks + ' track' + (a.tracks !== 1 ? 's' : '');
+      return (
+        '<a class="ix-card" href="' + esc(a.file) + '" style="--card-accent:' + color + '">' +
+          '<div class="ix-card-body">' +
+            '<div class="ix-card-genre">' + esc(a.genre || '') + '</div>' +
+            '<div class="ix-card-title">'  + esc(a.title)      + '</div>' +
+            '<div class="ix-card-artist">' + esc(a.artist)     + '</div>' +
+            '<div class="ix-card-meta">'   + esc(a.year) + ' &nbsp;·&nbsp; ' + esc(trackLabel) + '</div>' +
+          '</div>' +
+          '<div class="ix-card-footer">View Analysis &rarr;</div>' +
+        '</a>'
+      );
+    }).join('');
+  }
+
+  // ── Initialise ───────────────────────────────────────────────────
+  if (typeof window.ALBUMS === 'undefined' || !Array.isArray(window.ALBUMS)) {
+    grid.innerHTML =
+      '<div class="ix-error">' +
+        'Could not load album data.<br>' +
+        'Ensure <code>albums.js</code> is present alongside this file.' +
+      '</div>';
+    return;
+  }
+
+  allAlbums = window.ALBUMS;
+  colorMap  = buildColorMap(allAlbums);
+
+  buildPills();
+  render();
+
+  search.addEventListener('input', render);
+}());
+</script>
+
+</body>
+</html>
