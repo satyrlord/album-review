@@ -94,14 +94,6 @@ window.ALBUMS = [
     year:   1997,
     tracks: 10,
     genre:  'Electronic / Big Beat'
-  },
-  {
-    file:   'vangelis-blade-runner-structural-analysis.html',
-    artist: 'Vangelis',
-    title:  'Blade Runner',
-    year:   2013,
-    tracks: 24,
-    genre:  '<!-- TODO: add genre -->'
   }
 
 ];
