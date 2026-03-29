@@ -40,6 +40,11 @@ function step(label: string, fn: () => void): void {
 
 console.log("\n── album-review build ──────────────────────────────────────\n");
 
+// ── 0. Browser script ─────────────────────────────────────────────
+step("Compile index.ts → index.js", () => {
+  execSync("npx tsc -p tsconfig.browser.json", { cwd: ROOT, stdio: "pipe" });
+});
+
 // ── 1. TypeScript ──────────────────────────────────────────────────
 step("TypeScript typecheck", () => {
   execSync("npx tsc", { cwd: ROOT, stdio: "pipe" });

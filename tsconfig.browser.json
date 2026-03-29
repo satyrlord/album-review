@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "None",
+    "lib": ["DOM", "ES2022"],
+    "strict": true,
+    "noEmit": false,
+    "skipLibCheck": true
+  },
+  "include": ["index.ts"]
+}

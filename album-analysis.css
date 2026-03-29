@@ -317,6 +317,7 @@ body {
 }
 
 /* --- Home button ------------------------------------------- */
+.footer .home-btn { margin-bottom: 0; margin-top: 20px; }
 .home-btn {
   display: inline-flex;
   align-items: center;
@@ -343,4 +344,196 @@ body {
   .track-header { flex-direction: column; gap: 4px; }
   .track-duration { margin-left: 0; }
   .event { grid-template-columns: 60px 1fr; gap: 10px; }
+}
+
+/* =========================================================
+   Index page (index.html)
+   ========================================================= */
+
+/* --- Hero -------------------------------------------------- */
+.ix-hero {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 56px 0 40px;
+  text-align: center;
+}
+
+.ix-hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+}
+
+.ix-hero p {
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  margin: 0 0 28px;
+}
+
+/* --- Search input ------------------------------------------ */
+.ix-search {
+  width: 100%;
+  max-width: 500px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  padding: 11px 16px;
+  outline: none;
+  transition: border-color 0.18s;
+  margin: 0 auto;
+  display: block;
+}
+.ix-search:focus        { border-color: var(--accent); }
+.ix-search::placeholder { color: var(--text-dim); }
+
+/* --- Artist filter pills ----------------------------------- */
+.ix-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 18px auto 0;
+  max-width: 700px;
+}
+
+.ix-pill {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  padding: 5px 14px;
+  transition: border-color 0.18s, color 0.18s, background 0.18s;
+}
+.ix-pill:hover  { border-color: var(--accent); color: var(--text); }
+.ix-pill.active {
+  background: rgba(0, 255, 136, 0.09);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* --- Results bar ------------------------------------------- */
+.ix-results-bar {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin: 28px 0 4px;
+}
+
+.ix-count {
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+}
+
+/* --- Album grid -------------------------------------------- */
+.ix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+  padding-bottom: 72px;
+}
+
+/* --- Album card -------------------------------------------- */
+.ix-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--card-accent, var(--accent));
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none;
+  transition: border-color 0.18s, transform 0.15s, box-shadow 0.18s;
+}
+.ix-card:hover {
+  border-color: var(--card-accent, var(--accent));
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+.ix-card-body {
+  flex: 1;
+  padding: 18px 20px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ix-card-genre {
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ix-card-title {
+  color: var(--text);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 2px 0 0;
+}
+
+.ix-card-artist {
+  color: var(--card-accent, var(--accent));
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.77rem;
+  margin-top: 2px;
+}
+
+.ix-card-meta {
+  color: var(--time);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  margin-top: 6px;
+}
+
+.ix-card-footer {
+  border-top: 1px solid var(--border);
+  color: var(--card-accent, var(--accent));
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.15s;
+}
+.ix-card:hover .ix-card-footer { gap: 10px; }
+
+/* --- Empty / error states ---------------------------------- */
+.ix-empty,
+.ix-error {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  grid-column: 1 / -1;
+  padding: 64px 0;
+  text-align: center;
+}
+.ix-empty { color: var(--text-dim); }
+.ix-error { color: var(--accent2); line-height: 1.9; }
+.ix-error code {
+  background: var(--surface2);
+  border-radius: 4px;
+  color: var(--warn);
+  padding: 1px 6px;
+}
+
+/* --- Responsive -------------------------------------------- */
+@media (max-width: 480px) {
+  .ix-hero h1 { font-size: 1.6rem; }
+  .ix-grid    { grid-template-columns: 1fr; }
 }

@@ -101,7 +101,7 @@ window.ALBUMS = [
     title:  'Voices',
     year:   1995,
     tracks: 9,
-    genre:  '<!-- TODO: add genre -->'
+    genre:  'Electronic / Ambient'
   }
 
 ];
