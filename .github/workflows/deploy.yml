@@ -12,6 +12,10 @@ permissions:
   pages:    write
   id-token: write
 
+# Use Node.js 24 for all JavaScript actions (Node 20 deprecated June 2026)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 # Only one deployment at a time; cancel in-flight runs on new push
 concurrency:
   group: pages

@@ -2,14 +2,14 @@
 
 Deep-listening notes for albums — track-by-track timestamp breakdowns covering structure, production technique, energy arc, and musical function. Rendered as a static web app with a shared dark-theme design system.
 
-**Live site →** https://satyrlord.github.io/album-review/
+**Live site →** <https://satyrlord.github.io/album-review/>
 
 ---
 
 ## What's Here
 
 | File | Purpose |
-|------|---------|
+| ------ | --------- |
 | `index.html` | Album index — filterable card grid, reads `albums.js` |
 | `albums.js` | Data manifest — the **only** file to edit when adding an album |
 | `album-analysis.css` | Shared stylesheet — single source of truth for all design tokens and components |
@@ -18,7 +18,7 @@ Deep-listening notes for albums — track-by-track timestamp breakdowns covering
 ## Albums Covered
 
 | Artist | Album | Year |
-|--------|-------|------|
+| -------- | ------- | ------ |
 | Jean-Michel Jarre | Oxygène | 1976 |
 | Jean-Michel Jarre | Equinoxe | 1978 |
 | Jean-Michel Jarre | Les Chants Magnétiques | 1981 |
@@ -77,7 +77,7 @@ All styles live in `album-analysis.css`. Never add `<style>` blocks or inline `s
 ### Color Tokens
 
 | Variable | Value | Usage |
-|----------|-------|-------|
+| ---------- | ------- | ------- |
 | `--bg` | `#0a0a0c` | Page background |
 | `--surface` | `#111115` | Card / component background |
 | `--surface2` | `#18181e` | Nested surface |
@@ -95,7 +95,7 @@ All styles live in `album-analysis.css`. Never add `<style>` blocks or inline `s
 Exactly one per track, placed first in `.track-tags`:
 
 | Class | Meaning |
-|-------|---------|
+| ------- | --------- |
 | `.energy-low` | Calm, atmospheric, slow build |
 | `.energy-mid` | Mid-tempo, groove |
 | `.energy-high` | High-energy, rave, fast breakbeat |
