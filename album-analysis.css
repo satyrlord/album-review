@@ -316,6 +316,27 @@ body {
   letter-spacing: 1px;
 }
 
+/* --- Home button ------------------------------------------- */
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 5px 12px;
+  margin-bottom: 28px;
+  transition: color 0.18s, border-color 0.18s;
+}
+.home-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 /* --- Responsive -------------------------------------------- */
 @media (max-width: 600px) {
   .hero { padding: 48px 24px 40px; }
