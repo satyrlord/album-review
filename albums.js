@@ -94,6 +94,14 @@ window.ALBUMS = [
     year:   1997,
     tracks: 10,
     genre:  'Electronic / Big Beat'
+  },
+  {
+    file:   'vangelis-voices-structural-analysis.html',
+    artist: 'Vangelis',
+    title:  'Voices',
+    year:   1995,
+    tracks: 9,
+    genre:  '<!-- TODO: add genre -->'
   }
 
 ];
