@@ -188,77 +188,10 @@
     padding: 1px 6px;
   }
 
-  /* ── Initial Analysis form ─────────────────────────────────────── */
-  .ix-add {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    margin: 28px 0 0;
-    padding: 20px 24px;
-  }
-
-  .ix-add-title {
-    color: var(--accent);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    margin: 0 0 12px;
-    text-transform: uppercase;
-  }
-
-  .ix-add-row {
-    align-items: stretch;
-    display: flex;
-    gap: 10px;
-  }
-
-  .ix-add-input {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--text);
-    flex: 1;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.92rem;
-    outline: none;
-    padding: 10px 14px;
-    transition: border-color 0.18s;
-  }
-  .ix-add-input:focus        { border-color: var(--accent); }
-  .ix-add-input::placeholder { color: var(--text-dim); }
-
-  .ix-add-btn {
-    background: var(--accent);
-    border: none;
-    border-radius: 6px;
-    color: var(--bg);
-    cursor: pointer;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.82rem;
-    font-weight: 600;
-    padding: 10px 20px;
-    transition: opacity 0.18s;
-    white-space: nowrap;
-  }
-  .ix-add-btn:hover    { opacity: 0.85; }
-  .ix-add-btn:disabled { cursor: wait; opacity: 0.5; }
-
-  .ix-add-status {
-    color: var(--text-dim);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.72rem;
-    margin-top: 10px;
-    min-height: 1.2em;
-  }
-  .ix-add-status.error   { color: var(--accent2); }
-  .ix-add-status.success { color: var(--accent); }
-
   /* ── Responsive ────────────────────────────────────────────────── */
   @media (max-width: 480px) {
     .ix-hero h1  { font-size: 1.6rem; }
     .ix-grid     { grid-template-columns: 1fr; }
-    .ix-add-row  { flex-direction: column; }
   }
 </style>
 </head>
@@ -272,17 +205,6 @@
            placeholder="Search by title, artist or genre…"
            autocomplete="off" spellcheck="false" aria-label="Filter albums">
     <div class="ix-filters" id="ixFilters"></div>
-
-    <div class="ix-add">
-      <div class="ix-add-title">Initial Analysis</div>
-      <form class="ix-add-row" id="ixAddForm" autocomplete="off">
-        <input type="text" class="ix-add-input" id="ixAddInput"
-               placeholder="Artist - Album Title  (e.g. Vangelis - Voices)"
-               spellcheck="false" required aria-label="New album">
-        <button type="submit" class="ix-add-btn" id="ixAddBtn">Analyse</button>
-      </form>
-      <div class="ix-add-status" id="ixAddStatus"></div>
-    </div>
   </div>
 </div>
 
@@ -319,6 +241,18 @@
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
+  }
+
+  function normaliseText(value) {
+    return String(value || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase();
+  }
+
+  function displayGenre(value) {
+    var genre = String(value || '').trim();
+    return genre && !/^<!--[\s\S]*-->$/.test(genre) ? genre : '';
   }
 
   // ── Build deterministic artist → colour map from sorted names ───
@@ -363,14 +297,15 @@
 
   // ── Render the visible cards ─────────────────────────────────────
   function render() {
-    var q = search.value.trim().toLowerCase();
+    var q = normaliseText(search.value.trim());
 
     var visible = allAlbums.filter(function (a) {
+      var genre = displayGenre(a.genre);
       var matchArtist = activeArtist === 'All' || a.artist === activeArtist;
       var matchSearch = !q
-        || a.title.toLowerCase().indexOf(q) !== -1
-        || a.artist.toLowerCase().indexOf(q) !== -1
-        || (a.genre && a.genre.toLowerCase().indexOf(q) !== -1);
+        || normaliseText(a.title).indexOf(q) !== -1
+        || normaliseText(a.artist).indexOf(q) !== -1
+        || normaliseText(genre).indexOf(q) !== -1;
       return matchArtist && matchSearch;
     });
 
@@ -383,11 +318,13 @@
 
     grid.innerHTML = visible.map(function (a) {
       var color = colorMap[a.artist] || 'var(--accent)';
+      var genre = displayGenre(a.genre);
+      var genreHtml = genre ? '<div class="ix-card-genre">' + esc(genre) + '</div>' : '';
       var trackLabel = a.tracks + ' track' + (a.tracks !== 1 ? 's' : '');
       return (
         '<a class="ix-card" href="' + esc(a.file) + '" style="--card-accent:' + color + '">' +
           '<div class="ix-card-body">' +
-            '<div class="ix-card-genre">' + esc(a.genre || '') + '</div>' +
+            genreHtml +
             '<div class="ix-card-title">'  + esc(a.title)      + '</div>' +
             '<div class="ix-card-artist">' + esc(a.artist)     + '</div>' +
             '<div class="ix-card-meta">'   + esc(a.year) + ' &nbsp;·&nbsp; ' + esc(trackLabel) + '</div>' +
@@ -415,51 +352,6 @@
   render();
 
   search.addEventListener('input', render);
-
-  // ── Initial Analysis — add album form ─────────────────────────
-  var addForm   = document.getElementById('ixAddForm');
-  var addInput  = document.getElementById('ixAddInput');
-  var addBtn    = document.getElementById('ixAddBtn');
-  var addStatus = document.getElementById('ixAddStatus');
-
-  if (addForm) {
-    addForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var value = addInput.value.trim();
-      if (!value) return;
-
-      addBtn.disabled = true;
-      addBtn.textContent = 'Analysing…';
-      addStatus.className = 'ix-add-status';
-      addStatus.textContent = 'Looking up album on MusicBrainz and generating scaffold…';
-
-      fetch('/api/add-album', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ input: value })
-      })
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        if (data.ok) {
-          addStatus.className = 'ix-add-status success';
-          addStatus.textContent = 'Album added! Reloading…';
-          addInput.value = '';
-          setTimeout(function () { location.reload(); }, 800);
-        } else {
-          addStatus.className = 'ix-add-status error';
-          addStatus.textContent = data.error || 'Something went wrong.';
-        }
-      })
-      .catch(function (err) {
-        addStatus.className = 'ix-add-status error';
-        addStatus.textContent = 'Network error — is the dev server running?';
-      })
-      .finally(function () {
-        addBtn.disabled = false;
-        addBtn.textContent = 'Analyse';
-      });
-    });
-  }
 }());
 </script>
 

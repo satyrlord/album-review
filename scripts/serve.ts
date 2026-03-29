@@ -1,16 +1,17 @@
 #!/usr/bin/env tsx
 /**
- * scripts/serve.ts — (re)start the static HTTP server on port 3000.
+ * scripts/serve.ts — (re)start the static HTTP server on the configured port.
  *
  * Steps:
- *   1. Kill whatever process is currently bound to port 3000 (if any)
+ *   1. Kill whatever process is currently bound to the configured port (if any)
  *   2. Spawn `node server.js` as a detached background process
  *   3. Confirm the server is accepting connections
  *
  * Run: npm run serve
+ * Env: PORT=3100 npm run serve
  *
  * After running, refresh the Simple Browser (already open at
- * http://127.0.0.1:3000) to see the latest version of the site.
+ * http://127.0.0.1:3000 by default) to see the latest version of the site.
  */
 
 import { execSync, spawn } from "child_process";
@@ -20,8 +21,9 @@ import { fileURLToPath }   from "url";
 import net                 from "net";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const PORT = 3000;
+const PORT = Number(process.env.PORT || "3000");
 const HOST = "127.0.0.1";
+const DETACH = process.env.SERVE_DETACH !== "false";
 
 // ── 1. Kill any process currently on PORT ─────────────────────────
 
@@ -97,12 +99,25 @@ await waitForPortFree(PORT);
 console.log("  Starting server...");
 const srv = spawn("node", ["server.js"], {
   cwd: ROOT,
-  detached: true,
-  stdio: "ignore",
+  detached: DETACH,
+  env: { ...process.env, PORT: String(PORT) },
+  stdio: DETACH ? "ignore" : "inherit",
 });
-srv.unref();
+
+if (DETACH) srv.unref();
 
 await waitForPortOpen(PORT);
 
 console.log(`  Server running at http://${HOST}:${PORT}`);
-console.log("\n  Refresh the Simple Browser panel to see the latest index.\n");
+
+if (DETACH) {
+  console.log("\n  Refresh the Simple Browser panel to see the latest index.\n");
+} else {
+  console.log("\n  Running in foreground mode. Press Ctrl+C to stop.\n");
+  await new Promise((resolve, reject) => {
+    srv.once("exit", code => {
+      if (code === 0 || code === null) resolve(undefined);
+      else reject(new Error(`server.js exited with code ${code}`));
+    });
+  });
+}

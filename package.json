@@ -7,11 +7,14 @@
     "add-album": "tsx add_album.ts",
     "build": "tsx scripts/build.ts",
     "serve": "tsx scripts/serve.ts",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
     "typecheck": "tsc",
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
     "validate": "npm run typecheck && npm run lint:md"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "@types/node": "^22.0.0",
     "markdownlint-cli2": "^0.22.0",
     "tsx": "^4.19.3",

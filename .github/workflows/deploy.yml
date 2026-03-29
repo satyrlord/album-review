@@ -12,10 +12,6 @@ permissions:
   pages:    write
   id-token: write
 
-# Use Node.js 24 for all JavaScript actions (Node 20 deprecated June 2026)
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 # Only one deployment at a time; cancel in-flight runs on new push
 concurrency:
   group: pages
@@ -31,17 +27,30 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
+
+      - name: Package Pages artifact
+        shell: bash
+        run: |
+          tar \
+            --dereference --hard-dereference \
+            --directory . \
+            --exclude=.git \
+            --exclude=.github \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            .
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
-          # Serve the entire repo root — no build step needed
-          path: .
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
 
       - name: Deploy to GitHub Pages
         id:   deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

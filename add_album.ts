@@ -21,6 +21,7 @@
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { Track, slugify, msToMmss, buildHtml, buildEntry } from "./album-scaffold.js";
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 
@@ -31,12 +32,6 @@ const MB_AGENT  = "AlbumAnalysisScaffolder/1.0 (https://github.com/satyrlord/alb
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
-interface Track {
-  num: number;
-  title: string;
-  lengthMs: number;
-}
-
 interface MbRelease {
   id: string;
   title: string;
@@ -45,32 +40,6 @@ interface MbRelease {
 }
 
 // ── Utilities ──────────────────────────────────────────────────────────────────
-
-function slugify(text: string): string {
-  const replacements: Record<string, string> = {
-    "\u2019": "", "\u2018": "", "\u2013": "-", "\u2014": "-",
-    "\u00e9": "e", "\u00e8": "e", "\u00ea": "e", "\u00e0": "a", "\u00e2": "a",
-    "\u00ee": "i", "\u00f4": "o", "\u00fb": "u", "\u00e7": "c",
-    "\u00eb": "e", "\u00ef": "i", "\u00fc": "u", "\u00f6": "o", "\u00e4": "a",
-    "\u00df": "ss", "'": "", "\u2026": "",
-  };
-  let s = text.toLowerCase();
-  for (const [char, repl] of Object.entries(replacements)) s = s.split(char).join(repl);
-  s = s.replace(/[^a-z0-9\s-]/g, "");
-  s = s.replace(/[\s_]+/g, "-").trim();
-  s = s.replace(/-{2,}/g, "-");
-  return s.replace(/^-|-$/g, "");
-}
-
-function msToMmss(ms: number): string {
-  const total = Math.floor(ms / 1000);
-  const secs  = total % 60;
-  return `${Math.floor(total / 60)}:${String(secs).padStart(2, "0")}`;
-}
-
-function htmlEscape(text: string): string {
-  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
 
 function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -113,114 +82,7 @@ async function fetchTracks(mbid: string): Promise<{ tracks: Track[]; releaseDate
   return { tracks, releaseDate: data.date ?? "" };
 }
 
-// ── HTML Generation ────────────────────────────────────────────────────────────
-
-function trackBlock(track: Track, idx: number): string {
-  const num      = String(idx).padStart(2, "0");
-  const duration = track.lengthMs ? msToMmss(track.lengthMs) : "?:??";
-  const title    = htmlEscape(track.title);
-  return `\
-  <!-- TRACK ${num} -->
-  <div class="track">
-    <div class="track-header">
-      <span class="track-num">${num}</span>
-      <span class="track-title">${title}</span>
-      <span class="track-duration">${duration}</span>
-    </div>
-    <div class="track-tags">
-      <span class="tag energy-mid">Energy: Mid</span>
-      <!-- TODO: add descriptive tags -->
-    </div>
-    <div class="track-role"><!-- TODO: describe this track's role in the album arc --></div>
-    <div class="timeline">
-      <div class="event intro-ev">
-        <span class="event-time">0:00</span>
-        <span class="event-desc"><strong>Intro</strong> — <!-- TODO: describe opening section --></span>
-      </div>
-      <!-- TODO: add more timeline events -->
-    </div>
-  </div>
-`;
-}
-
-function buildHtml(
-  artist: string, title: string, year: number, genre: string,
-  tracks: Track[], releaseDate: string,
-): string {
-  const safeArtist = htmlEscape(artist);
-  const safeTitle  = htmlEscape(title);
-  const safeGenre  = genre ? htmlEscape(genre) : "<!-- TODO: add genre -->";
-  const totalMs    = tracks.reduce((s, t) => s + t.lengthMs, 0);
-  const totalDur   = totalMs ? msToMmss(totalMs) : "?:??";
-
-  const parts     = safeTitle.split(" ");
-  const last      = parts.pop()!;
-  const h1Content = parts.length ? `${parts.join(" ")} <span>${last}</span>` : `<span>${safeTitle}</span>`;
-
-  const tracksHtml = tracks.map((t, i) => trackBlock(t, i + 1)).join("\n");
-
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Structural Analysis — ${safeArtist} · ${safeTitle} (${year})</title>
-<link rel="stylesheet" href="album-analysis.css">
-</head>
-<body>
-
-<div class="hero">
-  <div class="container">
-    <a class="home-btn" href="index.html">&#8592; All Albums</a>
-    <div class="subtitle">Timestamp-Based Structural Analysis</div>
-    <h1>${h1Content}</h1>
-    <div class="meta">
-      <div><strong>Artist:</strong> ${safeArtist}</div>
-      <div><strong>Released:</strong> ${releaseDate || year}</div>
-      <div><strong>Total Length:</strong> ${totalDur}</div>
-      <div><strong>Tracks:</strong> ${tracks.length}</div>
-      <div><strong>Genre:</strong> ${safeGenre}</div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-
-  <div class="preamble">
-    <h2>Overview</h2>
-    <p><!-- TODO: write overall album analysis --></p>
-    <p>Timestamps are approximate to ±3 seconds. BPM values are estimated from listen analysis.</p>
-  </div>
-
-${tracksHtml}
-</div>
-
-<div class="footer">
-  <div class="container">
-    Scaffold generated from MusicBrainz data — timestamps and analysis require manual completion.
-  </div>
-</div>
-
-</body>
-</html>
-`;
-}
-
 // ── albums.js Patching ─────────────────────────────────────────────────────────
-
-function buildEntry(file: string, artist: string, title: string, year: number, tracks: number, genre: string): string {
-  const safeGenre = genre || "<!-- TODO: add genre -->";
-  return (
-    `  {\n` +
-    `    file:   '${file}',\n` +
-    `    artist: '${artist}',\n` +
-    `    title:  '${title}',\n` +
-    `    year:   ${year},\n` +
-    `    tracks: ${tracks},\n` +
-    `    genre:  '${safeGenre}'\n` +
-    `  }`
-  );
-}
 
 function appendToAlbumsJs(file: string, artist: string, title: string, year: number, trackCount: number, genre: string): void {
   let content = readFileSync(ALBUMS_JS, "utf-8");
