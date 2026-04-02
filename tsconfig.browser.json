@@ -7,5 +7,5 @@
     "noEmit": false,
     "skipLibCheck": true
   },
-  "include": ["index.ts"]
+  "include": ["index.ts", "album.ts"]
 }

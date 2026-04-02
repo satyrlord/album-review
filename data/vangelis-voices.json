@@ -1,0 +1,464 @@
+{
+  "id": "vangelis-voices",
+  "artist": "Vangelis",
+  "title": "Voices",
+  "year": 1995,
+  "label": "East West (Europe) / Atlantic (USA)",
+  "producer": "Vangelis",
+  "genre": "Electronic / Ambient",
+  "runtime": "54:25",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/8/86/Vangelis_voices.jpg",
+  "overview": "Voices (1995) marks the beginning of Vangelis's late-period contemplative trilogy — followed by Oceanic (1996) — representing a decisive retreat from the grand orchestral scale of 1492: Conquest of Paradise toward intimate electronic lyricism. Produced entirely at his Nemo Studios in London, the album deploys the Yamaha CS80 and layered synth-pad orchestration alongside an unusually prominent role for invited vocalists: the Athens Opera Company on the title track, Caroline Lavelle (cello and voice) on \"Come To Me\", Stina Nordenstam on \"Ask The Mountains\", and Paul Young on \"Losing Sleep\" — each contributing a distinct human colour to an otherwise synthetic palette. Structurally, the album alternates between large-scale ambient-orchestral pieces and brief vocal or interlude passages, with \"Echoes\" and \"Messages\" as the instrumental axis and \"Ask The Mountains\" as the emotional centrepiece and lead single. The album reached Gold certification in Austria and Germany, charted at No. 58 in the UK, and its music was subsequently licensed to Discovery Channel documentaries and a Cannes Lions Award-winning television commercial.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Voices",
+      "duration": "7:00",
+      "energy": "mid",
+      "tags": [
+        "Choral",
+        "Ceremonial",
+        "CS80",
+        "Orchestral-Electronica",
+        "Title Track"
+      ],
+      "role": "Album role: Ceremonial overture; establishes the album's tonal palette through Athens Opera Company choir and Vangelis's signature synth-pad orchestration, functioning as an extended scene-setting prologue for the nine-track arc.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "sub-tonal drone and distant chord cluster, establishing an aural void before any melodic identity is asserted.",
+          "detail": "Near-static texture; the low-frequency pad occupies the full frequency floor without rhythmic content."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Choir Entry",
+          "description": "Athens Opera Company soprano voices emerge without percussion, sparsely spatialized across the stereo field.",
+          "detail": "No vibrato, no rhythm, no accompaniment beyond the sustaining pad — a deliberately elemental choral entrance."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Synth Theme",
+          "description": "principal CS80-register melody appears in counterpoint to the choir; the defining motif of the album.",
+          "detail": "The CS80 portamento gives the melody a vocal quality that fuses organically with the live choral texture above it."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Layering",
+          "description": "secondary choir voices and synth harmonics thicken the orchestral texture; ostinato bass synth enters beneath."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Climax",
+          "description": "full density; choir, bass ostinato, and melodic CS80 lines align at maximum convergence.",
+          "detail": "The harmonic weight peaks here; all elements present simultaneously, no layer stripped."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Recession",
+          "description": "choral layer withdraws; string-pad sustains as the primary texture."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Outro",
+          "description": "solitary synth phrase with long reverb decay fades toward silence, leaving tonal space for \"Echoes.\""
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Echoes",
+      "duration": "8:20",
+      "energy": "low",
+      "tags": [
+        "Ambient",
+        "Long-Form",
+        "No Vocals",
+        "CS80",
+        "Slow-Build"
+      ],
+      "role": "Album role: Longest track on the album; a slow-evolving ambient suite that defines the contemplative centre of gravity — its patient melodic development establishing the introspective register that all surrounding tracks inhabit.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Pad Field",
+          "description": "sustained low synth chord, near-static texture; harmonic motion barely perceptible.",
+          "detail": "The opening is almost archivally Vangelis: pure pad, no attack transients, absolute negative space."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Melodic Fragment",
+          "description": "single CS80-register phrase, four notes, repeated with subtle variation; the track's only melodic material."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Rhythmic Pulse",
+          "description": "gentle, almost subliminal periodicity enters beneath the static pad; more implied than stated.",
+          "detail": "The pulse never becomes a groove; it functions as a slow metabolic rate for the piece."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Full Statement",
+          "description": "melody restated in the fullest harmonic context; warmest synth voicing on the track, filter opened."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Ambient Return",
+          "description": "melodic element withdraws; pure pad re-emerges as sole foreground; rhythmic pulse fades.",
+          "detail": "The track returns to its opening state — an arch form that encloses the melodic development within stillness."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Restatement",
+          "description": "theme returns in condensed form; filter brightness increased, softer decay."
+        },
+        {
+          "timestamp": "7:50",
+          "section": "Dissolve",
+          "description": "melody fragments break apart; sustained pad fades to near-silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Come To Me",
+      "duration": "4:40",
+      "energy": "low",
+      "tags": [
+        "Chamber",
+        "Cello",
+        "Caroline Lavelle",
+        "Intimate",
+        "Acoustic-Synth Hybrid"
+      ],
+      "role": "Album role: Intimate chamber interlude; Caroline Lavelle's double role as vocalist and cellist creates an organic/electronic hybrid texture that offsets the purely synthesised surrounding tracks and introduces the human voice as a lyrical rather than orchestral instrument.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Cello Entry",
+          "description": "solo cello, dry and unharmonised, establishing the tonal centre before any other element.",
+          "detail": "The immediate acoustic intimacy is a structural surprise after eight minutes of Echoes; no pad, no reverb inflation."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Vocal",
+          "description": "Lavelle's breathy mezzo-soprano enters; melody moves in close parallel motion with the cello beneath it."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Synth Bed",
+          "description": "warm Vangelis pad fills the lower register; the acoustic duo now exists within an electronic harmonic framework.",
+          "detail": "The synth is deliberately unobtrusive — supportive rather than melodic, never competing with cello or voice."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Interweaving",
+          "description": "voice and cello exchange melodic material in imitative counterpoint; the texture's most active moment."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Simplification",
+          "description": "pad recedes; voice and cello return to the opening sparse texture without accompaniment."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Fade",
+          "description": "cello sustain decays against a single synth resonance; voice has already withdrawn."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "P.S.",
+      "duration": "2:05",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Solo Synth",
+        "Crystalline",
+        "Palate-Cleanser"
+      ],
+      "role": "Album role: Two-minute crystalline postscript bridging \"Come To Me\" to the album's emotional peak; structurally a palette-reset that quiets accumulated vocal warmth before the singular clarity of \"Ask The Mountains.\"",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Opening Phrase",
+          "description": "sparse, crystalline synth figure in the upper register; no bass, no pad, no rhythmic context."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Melodic Statement",
+          "description": "principal motif stated in full; simple, unornamented, almost improvisatory in character."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Harmonic Expansion",
+          "description": "a second voice doubles the melody at a third below; texture subtly thickens while maintaining the sparse register."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Final Phrase",
+          "description": "motif returns unaccompanied, allowed to decay naturally into reverb tail."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Near-Silence",
+          "description": "reverb trail fades; a brief void before \"Ask the Mountains\" opens."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Ask the Mountains",
+      "duration": "7:55",
+      "energy": "mid",
+      "tags": [
+        "Centrepiece",
+        "Stina Nordenstam",
+        "Ethereal Vocal",
+        "CS80",
+        "Lead Single"
+      ],
+      "role": "Album role: Emotional and commercial centrepiece; Stina Nordenstam's crystalline soprano anchors the most fully realised melody on the album, and the track's disciplined alternation of vocal and instrumental passages makes it the sharpest compositional statement on Voices.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Atmospheric Intro",
+          "description": "diaphanous pad rising from near-silence; no melody, only tonal air.",
+          "detail": "A longer-than-expected intro — roughly 40 seconds — that makes Nordenstam's vocal entry a genuine arrival."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Vocal Entry",
+          "description": "Nordenstam's soprano introduces the principal theme; the sparsest possible arrangement, voice over near-static pad."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Synth Complement",
+          "description": "Vangelis melody shadows the vocal at a harmonic remove, adding depth without encroaching on Nordenstam's line."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Instrumental Bridge",
+          "description": "Nordenstam rests; full synth orchestration expands and varies the theme.",
+          "detail": "The synth here is allowed more prominence than anywhere else in the arrangement — a temporary role-reversal."
+        },
+        {
+          "timestamp": "5:10",
+          "section": "Vocal Return",
+          "description": "theme restated with a fuller harmonic backdrop; richer bass synth layer added beneath Nordenstam's line."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Climax",
+          "description": "densest texture on the album; voice, CS80 melody, and orchestral pad at maximum convergence.",
+          "detail": "No additional percussion or rhythmic event — Vangelis's climaxes are density-based, not tempo-based."
+        },
+        {
+          "timestamp": "7:20",
+          "section": "Resolution",
+          "description": "gradual strip-back; Nordenstam's voice trails over a fading pad sustain toward silence."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Prelude",
+      "duration": "4:24",
+      "energy": "low",
+      "tags": [
+        "Atmospheric",
+        "Orchestral Pad",
+        "No Vocals",
+        "Transitional",
+        "Mid-Album Pivot"
+      ],
+      "role": "Album role: Transitional hinge between the album's first emotional peak and the second vocal sequence; orchestral in character, it resets the emotional register after \"Ask The Mountains\" without deflating the accumulated intensity.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sustained Tone",
+          "description": "single low-mid synth pitch opens without cadence; no harmonic motion, pure tonal stasis."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Piano-Textured Phrase",
+          "description": "sparse melodic figure with quasi-pianistic attack transient; low velocity, contemplative spacing."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Chord Sequence",
+          "description": "harmonic motion established; a slow-moving progression with a clear cadential arc.",
+          "detail": "The harmonic rhythm here is the slowest on the album — roughly one chord per four bars."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Rhythmic Pulse",
+          "description": "subtle, slow periodicity enters beneath the orchestral layer; suggested rather than metrically defined."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Retreat",
+          "description": "pulse withdraws; orchestral pad simplifies toward a single sustained note."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Dissolution",
+          "description": "final chord decays with long reverb tail, leaving a transitional void before \"Losing Sleep.\""
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Losing Sleep (Still, My Heart)",
+      "duration": "6:41",
+      "energy": "mid",
+      "tags": [
+        "Pop Vocal",
+        "Paul Young",
+        "Groove",
+        "Mid-Tempo",
+        "Song Form"
+      ],
+      "role": "Album role: The album's most accessible and rhythmically grounded track; Paul Young's warm baritone introduces explicit song structure — verse, chorus, bridge — that temporarily anchors the surrounding ambient contemplation in a tangible human narrative.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Groove Intro",
+          "description": "Vangelis mid-tempo synth groove; harmonic and rhythmic framework established without vocal.",
+          "detail": "The presence of a discernible rhythm track here is the most structural departure on the album — Vangelis committing to a groove rather than a pulse."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Vocal Entry",
+          "description": "Paul Young's baritone opens the verse; melody direct, unornamented, immediate connection with lyrical content."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Chorus",
+          "description": "harmonic lift; richer synth backdrop and slight increase in textural density mark the chorus boundary."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Bridge",
+          "description": "groove briefly pauses; harmonic digression and emotional intensification outside the verse/chorus frame."
+        },
+        {
+          "timestamp": "4:05",
+          "section": "Synth Solo",
+          "description": "Young rests; Vangelis melodic synth fill occupies the middle section over the reinstated groove."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Chorus Reprise",
+          "description": "vocal returns for the final section; harmonic framework as before but with added synth ornament."
+        },
+        {
+          "timestamp": "6:10",
+          "section": "Fade",
+          "description": "groove decays gradually; Young's final phrase trails off into reverb."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Messages",
+      "duration": "7:30",
+      "energy": "low",
+      "tags": [
+        "Ambient",
+        "No Vocals",
+        "Synth-Orchestral",
+        "Introspective",
+        "Pre-Closer"
+      ],
+      "role": "Album role: Second large-scale instrumental ambient suite; mirrors \"Echoes\" in structural approach and occupies the album's third quadrant, its more diffuse and fragmentary architecture serving as the contemplative wind-down that places the closing track in relief.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ambient Field",
+          "description": "pure pad texture; no pulse, no directionality; the densest negative space on the record."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Melodic Fragment",
+          "description": "fragmentary synth phrase emerges; incomplete in character, trailing off rather than cadencing.",
+          "detail": "Where \"Echoes\" offered a complete riff from its first melodic appearance, \"Messages\" offers a question that never fully resolves."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Secondary Layer",
+          "description": "a complementary melodic fragment enters, overlapping the first; the two phrases orbit each other without converging."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Harmonic Saturation",
+          "description": "richest chord voicing of the piece; all layers present simultaneously, filter fully open."
+        },
+        {
+          "timestamp": "5:10",
+          "section": "Deconstruction",
+          "description": "elements withdraw in sequence; the pad assumes the sole foreground role."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Single Theme",
+          "description": "one melodic fragment persists over near-silent pad with long delay trails."
+        },
+        {
+          "timestamp": "7:10",
+          "section": "Fade",
+          "description": "the final fragment dissolves into reverb decay; extended silence precedes \"Dream In An Open Place.\""
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Dream in an Open Place",
+      "duration": "5:50",
+      "energy": "low",
+      "tags": [
+        "Closer",
+        "Ambient",
+        "Valedictory",
+        "Diaphanous",
+        "Resolution"
+      ],
+      "role": "Album role: Valedictory close; resolves the album arc with the most transparent texture on the record — no vocals, no rhythmic event, no urgency — the distilled essence of the album's atmospheric language offering a definitive and unhurried farewell.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Opening",
+          "description": "diaphanous upper-register pad, almost formless; the quietest entrance on the album.",
+          "detail": "The choice of register — high, diffuse, tonally unanchored — mirrors the open space of the title."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Final Theme",
+          "description": "the album's closing melodic statement; lyrical, unhurried, given space to unfold without ornamentation."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Harmonic Bloom",
+          "description": "warm mid-range voicings emerge beneath the melody; the fullest texture of the track."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Centrepiece",
+          "description": "the most saturated moment; a valedictory quality, all layers aligned in a final gesture of completion.",
+          "detail": "The dynamic ceiling is still low by any conventional standard — this is a Vangelis climax, felt rather than heard."
+        },
+        {
+          "timestamp": "4:25",
+          "section": "Simplification",
+          "description": "texture reduces to a single melodic strand over a slowly fading pad."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Coda",
+          "description": "final synth notes decay with natural reverb; silence reclaims the space on which the album opened."
+        }
+      ]
+    }
+  ]
+}

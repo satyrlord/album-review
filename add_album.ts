@@ -1,6 +1,7 @@
 #!/usr/bin/env tsx
 /**
- * add_album.ts — scaffold a new album analysis page from MusicBrainz data.
+ * add_album.ts — scaffold a new album analysis entry from MusicBrainz data
+ * and a Wikipedia album-cover thumbnail when available.
  *
  * Usage:
  *   npx tsx add_album.ts "Artist Name" "Album Title" YEAR [OPTIONS]
@@ -18,17 +19,19 @@
  *   npx tsx add_album.ts "Autechre" "Tri Repetae" 1995 --dry-run
  */
 
-import { readFileSync, writeFileSync, existsSync } from "fs";
+import { writeFileSync, existsSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import { Track, slugify, msToMmss, buildHtml, buildEntry } from "./album-scaffold.js";
+import { toAlbumIndexEntry, writeAlbumIndexFile } from "./album-index.js";
+import { Track, slugify, msToMmss, buildJson } from "./album-scaffold.js";
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 
 const ROOT      = dirname(fileURLToPath(import.meta.url));
-const ALBUMS_JS = join(ROOT, "albums.js");
 const MB_BASE   = "https://musicbrainz.org/ws/2";
 const MB_AGENT  = "AlbumAnalysisScaffolder/1.0 (https://github.com/satyrlord/album-review)";
+const WIKI_API  = "https://en.wikipedia.org/w/api.php";
+const WIKI_SUMMARY_BASE = "https://en.wikipedia.org/api/rest_v1/page/summary";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -39,10 +42,28 @@ interface MbRelease {
   status?: string;
 }
 
+interface WikiSearchResponse {
+  query?: {
+    search?: Array<{ title: string }>;
+  };
+}
+
+interface WikiSummaryResponse {
+  thumbnail?: { source?: string };
+  originalimage?: { source?: string };
+}
+
 // ── Utilities ──────────────────────────────────────────────────────────────────
 
 function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function normaliseLoose(text: string): string {
+  return text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
 }
 
 // ── MusicBrainz API ────────────────────────────────────────────────────────────
@@ -82,38 +103,91 @@ async function fetchTracks(mbid: string): Promise<{ tracks: Track[]; releaseDate
   return { tracks, releaseDate: data.date ?? "" };
 }
 
-// ── albums.js Patching ─────────────────────────────────────────────────────────
+// ── Wikipedia cover lookup ───────────────────────────────────────────────────
 
-function appendToAlbumsJs(file: string, artist: string, title: string, year: number, trackCount: number, genre: string): void {
-  let content = readFileSync(ALBUMS_JS, "utf-8");
-  const entry = buildEntry(file, artist, title, year, trackCount, genre);
+async function wikiSearch(query: string): Promise<string[]> {
+  const qs = new URLSearchParams({
+    action: "query",
+    format: "json",
+    list: "search",
+    srsearch: query,
+    srlimit: "5",
+    srnamespace: "0",
+  }).toString();
 
-  // Try to find an existing artist comment block and insert after its last entry
-  const commentPat = new RegExp(`/\\* ── ${artist.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} .*?──`, "i");
-  const m = commentPat.exec(content);
-  if (m) {
-    const after         = content.slice(m.index + m[0].length);
-    const nextBoundary  = /\/\* ──|\];/.exec(after);
-    if (nextBoundary) {
-      const region   = after.slice(0, nextBoundary.index);
-      const lastBrace = region.lastIndexOf("  }");
-      if (lastBrace !== -1) {
-        const insertAt = m.index + m[0].length + lastBrace + 3;
-        content = content.slice(0, insertAt) + ",\n" + entry + "\n" + content.slice(insertAt);
-        writeFileSync(ALBUMS_JS, content, "utf-8");
-        return;
-      }
-    }
+  const res = await fetch(`${WIKI_API}?${qs}`, {
+    headers: { "User-Agent": MB_AGENT, "Accept": "application/json" },
+  });
+
+  if (!res.ok) return [];
+
+  const data = await res.json() as WikiSearchResponse;
+  return (data.query?.search ?? []).map(result => result.title).filter(Boolean);
+}
+
+async function wikiSummary(pageTitle: string): Promise<WikiSummaryResponse | null> {
+  const res = await fetch(`${WIKI_SUMMARY_BASE}/${encodeURIComponent(pageTitle)}`, {
+    headers: { "User-Agent": MB_AGENT, "Accept": "application/json" },
+  });
+
+  if (!res.ok) return null;
+  return await res.json() as WikiSummaryResponse;
+}
+
+function scoreWikiPageTitle(pageTitle: string, albumTitle: string, artist: string): number {
+  const page   = normaliseLoose(pageTitle);
+  const album  = normaliseLoose(albumTitle);
+  const artistName = normaliseLoose(artist);
+
+  let score = 0;
+
+  if (page === album) score += 10;
+  if (page.includes(album)) score += 6;
+  if (page.includes(artistName)) score += 4;
+  if (page.includes("album")) score += 3;
+  if (page.includes("song")) score -= 6;
+  if (page.includes("disambiguation")) score -= 8;
+
+  return score;
+}
+
+async function findWikipediaCoverUrl(artist: string, title: string): Promise<string> {
+  const candidates = new Map<string, number>();
+
+  const addCandidate = (pageTitle: string, bonus = 0): void => {
+    const score = scoreWikiPageTitle(pageTitle, title, artist) + bonus;
+    const prev  = candidates.get(pageTitle);
+    if (prev === undefined || score > prev) candidates.set(pageTitle, score);
+  };
+
+  [
+    title,
+    `${title} (album)`,
+    `${title} (${artist} album)`,
+  ].forEach(pageTitle => addCandidate(pageTitle, 2));
+
+  for (const query of [
+    `${artist} ${title} album`,
+    `"${artist}" "${title}" album`,
+    `"${title}" album`,
+    `${title} ${artist}`,
+  ]) {
+    const results = await wikiSearch(query);
+    results.forEach(pageTitle => addCandidate(pageTitle));
   }
 
-  // Fallback: insert before `];`
-  const close = content.lastIndexOf("];");
-  if (close === -1) { console.error("ERROR: Could not find `];` in albums.js."); return; }
-  const lastBrace = content.lastIndexOf("}", close);
-  content = lastBrace !== -1
-    ? content.slice(0, lastBrace + 1) + ",\n" + entry + "\n\n" + content.slice(close)
-    : content.slice(0, close) + entry + "\n" + content.slice(close);
-  writeFileSync(ALBUMS_JS, content, "utf-8");
+  const ordered = [...candidates.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([pageTitle]) => pageTitle)
+    .slice(0, 8);
+
+  for (const pageTitle of ordered) {
+    const summary = await wikiSummary(pageTitle);
+    const coverUrl = summary?.thumbnail?.source ?? summary?.originalimage?.source ?? "";
+    if (coverUrl) return coverUrl;
+  }
+
+  return "";
 }
 
 // ── CLI ────────────────────────────────────────────────────────────────────────
@@ -148,13 +222,12 @@ function parseArgs(): {
 async function main(): Promise<void> {
   const { artist, title, year, genre, mbid: mbidArg, dryRun } = parseArgs();
 
-  const artistSlug   = slugify(artist);
-  const titleSlug    = slugify(title);
-  const outFilename  = `${artistSlug}-${titleSlug}-structural-analysis.html`;
-  const outPath      = join(ROOT, outFilename);
+  const id      = `${slugify(artist)}-${slugify(title)}`;
+  const dataDir = join(ROOT, "data");
+  const outPath = join(dataDir, `${id}.json`);
 
   if (!dryRun && existsSync(outPath)) {
-    console.error(`ERROR: ${outFilename} already exists. Remove it first or use --dry-run.`);
+    console.error(`ERROR: data/${id}.json already exists. Remove it first or use --dry-run.`);
     process.exit(1);
   }
 
@@ -165,7 +238,7 @@ async function main(): Promise<void> {
 
   if (!mbid) {
     const yearLabel = year ? ` (${year})` : "";
-    console.log(`[1/3] Searching MusicBrainz for '${title}' by ${artist}${yearLabel}…`);
+    console.log(`[1/4] Searching MusicBrainz for '${title}' by ${artist}${yearLabel}…`);
     const release = await searchRelease(artist, title, year);
     if (!release) {
       console.error("      No release found. Try --mbid <id> to specify one directly.");
@@ -180,12 +253,12 @@ async function main(): Promise<void> {
     if (!resolvedYear) resolvedYear = new Date().getFullYear();
     console.log(`      Found: ${release.title} (${releaseDate})  MBID: ${mbid}`);
   } else {
-    console.log(`[1/3] Using provided MBID: ${mbid}`);
+    console.log(`[1/4] Using provided MBID: ${mbid}`);
     if (!resolvedYear) resolvedYear = new Date().getFullYear();
   }
 
   // 2. Fetch tracks
-  console.log("[2/3] Fetching track listing…");
+  console.log("[2/4] Fetching track listing…");
   const { tracks, releaseDate: mbDate } = await fetchTracks(mbid);
   if (mbDate && !mbidArg) releaseDate = mbDate;
   if (!tracks.length) {
@@ -199,26 +272,36 @@ async function main(): Promise<void> {
     console.log(`        ${String(t.num).padStart(2)}. ${t.title}  [${dur}]`);
   }
 
-  // 3. Generate and write
-  console.log("[3/3] Generating scaffold…");
-  const html = buildHtml(artist, title, resolvedYear, genre, tracks, releaseDate || String(resolvedYear));
+  // 3. Resolve cover art
+  console.log("[3/4] Searching Wikipedia for album cover…");
+  const coverUrl = await findWikipediaCoverUrl(artist, title);
+  if (coverUrl) {
+    console.log(`      Found cover: ${coverUrl}`);
+  } else {
+    console.log("      No Wikipedia thumbnail found. Continuing without coverUrl.");
+  }
+
+  // 4. Generate and write
+  console.log("[4/4] Generating scaffold…");
+  const jsonData = buildJson(id, artist, title, resolvedYear, genre, tracks, releaseDate || String(resolvedYear), coverUrl);
 
   if (dryRun) {
-    console.log("\n─── HTML preview (first 2 000 chars) ─────────────────────────────");
-    console.log(html.slice(0, 2000), "\n…");
-    console.log("\n─── albums.js entry ───────────────────────────────────────────────");
-    console.log(buildEntry(outFilename, artist, title, resolvedYear, tracks.length, genre));
+    console.log("\n─── JSON preview (first 2 000 chars) ──────────────────────────────");
+    console.log(JSON.stringify(jsonData, null, 2).slice(0, 2000), "\n…");
+    console.log("\n─── data/index.json entry ────────────────────────────────────────");
+    console.log(JSON.stringify(toAlbumIndexEntry(jsonData), null, 2));
     console.log("\n(dry-run: no files written)");
     return;
   }
 
-  writeFileSync(outPath, html, "utf-8");
-  console.log(`      Created : ${outFilename}`);
+  mkdirSync(dataDir, { recursive: true });
+  writeFileSync(outPath, `${JSON.stringify(jsonData, null, 2)}\n`, "utf-8");
+  console.log(`      Created : data/${id}.json`);
 
-  appendToAlbumsJs(outFilename, artist, title, resolvedYear, tracks.length, genre);
-  console.log(`      Updated : albums.js`);
+  writeAlbumIndexFile(dataDir);
+  console.log("      Updated : data/index.json");
 
-  console.log(`\nDone.\n  File  → ${outPath}\n  Open  → http://127.0.0.1:3000/${outFilename}`);
+  console.log(`\nDone.\n  File  → ${outPath}\n  Open  → http://127.0.0.1:3000/album.html?id=${id}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

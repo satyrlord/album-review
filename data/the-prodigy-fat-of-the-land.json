@@ -1,0 +1,618 @@
+{
+  "id": "the-prodigy-fat-of-the-land",
+  "artist": "The Prodigy",
+  "title": "The Fat of the Land",
+  "year": 1997,
+  "label": "",
+  "producer": "Liam Howlett",
+  "genre": "Electronic / Big Beat",
+  "runtime": "56:27",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/3/3b/TheProdigy-TheFatOfTheLand.jpg",
+  "overview": "The Fat of the Land is The Prodigy's third studio album and their commercial apex — a record that turned underground rave production into mainstream event music without softening its edges. Howlett's approach here is merciless sequencing: each track is engineered as a self-contained assault with a distinct identity, yet the ordering is carefully calibrated. Front-loaded with maximum-pressure material, the album expands mid-way through \"Narayan\" into its most epic gesture, before Firestarter (track 8) arrives as a deliberate detonation in the album's second half. The closing pair — atmospheric retreat followed by a punk blaze — completes one of electronic music's most precisely constructed LP arcs.\n\nTimestamps are approximate to ±3 seconds. BPM values are estimated from listen analysis.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Smack My Bitch Up",
+      "duration": "5:42",
+      "energy": "peak",
+      "tags": [
+        "Big Beat",
+        "Sample Collage",
+        "Shock Tactic"
+      ],
+      "role": "Album role: A violent opening statement — a build-and-destroy arc that refuses to ask permission. Sampled from The Honey Drippers and Ultramagnetic MCs.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Birdsong / nature ambience",
+          "description": "open-air field recording appears before anything electronic.",
+          "detail": "Natural world as false shelter. Approximately 8 seconds of calm."
+        },
+        {
+          "timestamp": "0:08",
+          "section": "Sub-bass drone rises",
+          "description": "low-frequency oscillation fades in beneath the ambience.",
+          "detail": "No rhythm yet. Pure low-end pressure building under the surface."
+        },
+        {
+          "timestamp": "0:28",
+          "section": "Rhythmic pulse begins",
+          "description": "a skeletal kick pattern enters, irregular, pressing forward.",
+          "detail": "Not yet full tempo. The tension accumulates across roughly 20 seconds."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Main beat drops",
+          "description": "heavily compressed breakbeat slams in at full BPM. Bass locks in.",
+          "detail": "The \"Impeach the President\" drum break processed beyond recognition. Almost industrial texture."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Vocal sample enters",
+          "description": "\"Change my pitch up / smack my bitch up\" from Ultramagnetic MCs \"Give the Drummer Some\".",
+          "detail": "Repeating loop treated as rhythmic element rather than lyric. The title hook, weaponised."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Synth layer added",
+          "description": "abrasive, distorted mid-range stab reinforces the loop.",
+          "detail": "Density increases. Each additional element tightens the vice."
+        },
+        {
+          "timestamp": "3:05",
+          "section": "Full breakdown",
+          "description": "drums strip completely. Only bass and reverb tails remain.",
+          "detail": "Approximately 15 seconds of near-silence. Maximum contrast moment."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Snare roll re-entry",
+          "description": "percussion rebuilds with rising filter sweep.",
+          "detail": "The listener already knows how devastating the drop will be."
+        },
+        {
+          "timestamp": "3:35",
+          "section": "Re-drop",
+          "description": "full arrangement returns with added distortion layer on beat.",
+          "detail": "Slightly louder and more saturated than the first drop. Howlett's compression chain pushed harder."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Fade out",
+          "description": "elements strip progressively, birdsong briefly resurfaces in reverb tail.",
+          "detail": "Circular closure — nature sounds bookend the violence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Breathe",
+      "duration": "5:35",
+      "energy": "high",
+      "tags": [
+        "Techno",
+        "Guitar-Synth Hybrid",
+        "Anthem"
+      ],
+      "role": "Album role: The album's first true anthem — an immediately recognisable guitar-like synth riff over a UK breakbeat chassis. Keith Flint vocal. Second single from the album.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro riff launches immediately",
+          "description": "the iconic synth/guitar hybrid motif appears before drums. Heaving, breath-like pulse.",
+          "detail": "Processed guitar riff through distortion and gate. Immediately recognisable signature."
+        },
+        {
+          "timestamp": "0:12",
+          "section": "Breakbeat enters",
+          "description": "hard-compressed kick and snare lock in behind the riff.",
+          "detail": "Drums arrive with zero ceremony. Already at full tempo."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Keith Flint vocal enters",
+          "description": "\"Breathe the pressure / come play my game I'll test ya.\" Barked and rhythmically precise.",
+          "detail": "Vocal treated with gating and light distortion. Functions as additional percussive element."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Bassline shifts",
+          "description": "sub-bass movement becomes more melodic, adds harmonic depth beneath the riff.",
+          "detail": "The track's rhythmic complexity increases without losing lock."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Riff drops out",
+          "description": "minimal percussive bed with high-frequency synth texture only.",
+          "detail": "~20 second breathing space. Ironic given the title."
+        },
+        {
+          "timestamp": "3:12",
+          "section": "Build resumes",
+          "description": "elements re-stack layer by layer. Vocal phrases reappear fragmentarily.",
+          "detail": "Methodical reconstruction. Each element added on a phrase boundary."
+        },
+        {
+          "timestamp": "3:28",
+          "section": "Final re-drop",
+          "description": "full arrangement restored. Riff feels more urgent after the break.",
+          "detail": "The post-breakdown energy hits harder for the contrast. Standard dance-music psychology applied with precision."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Outro",
+          "description": "gradual element removal. Riff persists until near the end, then cuts.",
+          "detail": "Hard cut rather than fade — clean boundary for the next track."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Diesel Power",
+      "duration": "4:17",
+      "energy": "high",
+      "tags": [
+        "Big Beat / Hip-Hop",
+        "Feat. Kool Keith",
+        "Industrial"
+      ],
+      "role": "Album role: The hip-hop pivot — Kool Keith's barrelling freestyle delivery over mechanised big-beat production. The album's most overtly rap-influenced cut; the collaboration broadens the sonic palette mid-block-one.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Synth intro",
+          "description": "dark, low oscillating tone establishes the industrial register.",
+          "detail": "No percussion. ~5 seconds of tonal ground-laying."
+        },
+        {
+          "timestamp": "0:05",
+          "section": "Beat enters",
+          "description": "compressed kick and snare with mechanical precision. Looped breakbeat, low-tempo feel despite high BPM.",
+          "detail": "The \"heavy\" feel comes from deep bass placement and sparse snare hits."
+        },
+        {
+          "timestamp": "0:18",
+          "section": "Kool Keith vocal verse",
+          "description": "rapid-fire rap delivery over the beat.",
+          "detail": "Dry vocal with minimal reverb. Performance dry-mixed to maintain presence."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Synth stab layer",
+          "description": "aggressive mid-range synth chord enters for the second verse section.",
+          "detail": "Chords add harmonic aggression. Tonal palette darkens."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Percussion breakdown",
+          "description": "kit strips back to hi-hat; bass continues holding.",
+          "detail": "Keith's vocal continues over minimal backing. The rhythm gives way to the voice."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Full beat return",
+          "description": "all elements slam back simultaneously.",
+          "detail": "Hard re-entry. No gradual build this time — binary on/off switch."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Outro",
+          "description": "vocal fragments loop and pitch-shift. Track decelerates in texture.",
+          "detail": "Transitional device preparing for \"Funky Shit.\""
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Funky Shit",
+      "duration": "5:16",
+      "energy": "peak",
+      "tags": [
+        "Breakbeat",
+        "Funk Sample",
+        "Mechanical"
+      ],
+      "role": "Album role: Maximum mechanical groove — a track where the funk sample source is sublimated into pure electronic motion. The album's most relentlessly forward-driving cut before the mid-section pivot.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Cold open on break",
+          "description": "compressed, looped drum break at full intensity from bar one.",
+          "detail": "No intro. The album's most abrupt opening transition. Energy carries directly from Track 3."
+        },
+        {
+          "timestamp": "0:08",
+          "section": "Brass/horn stab",
+          "description": "single-shot sampled horn bursts punctuate the grid.",
+          "detail": "Function: adds funk DNA without making the track feel retrospective."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Bass layer enters",
+          "description": "heavy sub-bass line locks into the kick grid.",
+          "detail": "Synergistic with the break — kick and bass lock exactly. Low-end pressure maximised."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Vocal sample loop",
+          "description": "repetitive vocal fragment becomes a rhythmic instrument.",
+          "detail": "Phrase semantics are secondary; rhythmic placement is the function."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Groove breakdown",
+          "description": "beat drops; bass and isolaed percussion elements remain.",
+          "detail": "~25 seconds. The groove is remembered via the bass alone."
+        },
+        {
+          "timestamp": "2:55",
+          "section": "Filtered build",
+          "description": "high-pass filter sweeps from closed to open as elements return.",
+          "detail": "Classic technique. The ear compensates for the missing low end by predicting it."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Final section drop",
+          "description": "full arrangement reinstated. Horn stabs emphasised more aggressively.",
+          "detail": "Peak energy for remainder of track."
+        },
+        {
+          "timestamp": "4:55",
+          "section": "Outro fade",
+          "description": "percussion thins, sub-bass holds briefly then cuts.",
+          "detail": "Clean exit. Makes space for \"Serial Thrilla.\""
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Serial Thrilla",
+      "duration": "5:11",
+      "energy": "high",
+      "tags": [
+        "Punk-Electronic",
+        "Keith Flint Vocal",
+        "Distortion"
+      ],
+      "role": "Album role: Punk aggression fused with breakbeat machinery — Keith Flint's vocal as raw energy object rather than lyrical carrier. First hint of the album's punk-rock crossover intentions.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Filtered noise intro",
+          "description": "distorted, mechanical scrape fades in before beat.",
+          "detail": "Textural threat. The sound design signals a rougher track ahead."
+        },
+        {
+          "timestamp": "0:10",
+          "section": "Beat arrives",
+          "description": "hard breakbeat with heavier noise-floor saturation than previous tracks.",
+          "detail": "Snare has a crunchier, more distorted character than tracks 1–4."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Keith Flint vocal",
+          "description": "snarled, gated delivery enters. Content is confrontational by design.",
+          "detail": "Vocal distorted and compressed aggressively. Treated as blunt instrument."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Synth noise layer",
+          "description": "abrasive synthesised noise band stacks over the break.",
+          "detail": "Industrial timbral reference. Sonic palette widening toward noise music."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Breakdown",
+          "description": "drums reduce to skeletal pattern; noise elements hold.",
+          "detail": "~20 seconds. Less clean than previous breakdowns — some grit remains."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Re-drop",
+          "description": "full intensity returns with additional distortion on the break.",
+          "detail": "The progressively saturated sound design across the album arc is evident here."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Outro",
+          "description": "abrupt cut after final vocal fragment.",
+          "detail": "Sudden ending signals album's mid-point transition about to arrive."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Mindfields",
+      "duration": "5:40",
+      "energy": "peak",
+      "tags": [
+        "Paranoid",
+        "Maxim Vocal",
+        "Dark Techno"
+      ],
+      "role": "Album role: Psychic paranoia as dancefloor architecture. Maxim Reality's vocal functions as a threatening narrator over the album's most claustrophobic production. The darkness deepens before \"Narayan\" provides relief.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Dark pad intro",
+          "description": "low, swelling synthesiser chord under filtered noise. No drums yet.",
+          "detail": "The most ominous opening of any track so far. ~12 seconds of pressure building."
+        },
+        {
+          "timestamp": "0:12",
+          "section": "Hard drop",
+          "description": "breakbeat and bass arrive together. More aggressive compression than previous tracks.",
+          "detail": "Attack sharpness maximized. Every transient hits with maximum visual clarity on a waveform."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Maxim Reality vocal",
+          "description": "\"Mindfields\" repeated, warning delivered. Monotone, deliberate pacing.",
+          "detail": "Vocal delivery calculated to unsettle rather than energise."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Synth arpeggio",
+          "description": "rapid ascending sequence activates mid-frequency chaos layer.",
+          "detail": "Harmonic dissonance introduced. The track's \"minefield\" concept rendered sonically."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Extended breakdown",
+          "description": "drums drop; only pad, arpeggio fragments and Maxim's voice persist.",
+          "detail": "Unlike earlier tracks, the breakdown retains significant harmonic tension. No release."
+        },
+        {
+          "timestamp": "3:25",
+          "section": "Build sequence",
+          "description": "snare rolls under filter sweep, arpeggio accelerates.",
+          "detail": "The build here is longer (~25 seconds) and more unstable than previous tracks."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Final section drop",
+          "description": "maximum energy return. All layers firing. This is the album's densest moment of the first six tracks.",
+          "detail": "Peak arrangement density. The paranoia resolves into overwhelming sonic pressure."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Abrupt cut",
+          "description": "track ends on a beat without fadeout.",
+          "detail": "Hard stop into silence before \"Narayan\" arrives with a completely different energy."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Narayan",
+      "duration": "9:05",
+      "energy": "high",
+      "tags": [
+        "Epic",
+        "Feat. Crispian Mills",
+        "Live Drums",
+        "Multi-Section"
+      ],
+      "role": "Album role: The album's centrepiece and longest track by far. A multi-section journey incorporating Crispian Mills' voice, live drums by Matt Cameron (Soundgarden/Pearl Jam), and deeply layered production. Howlett's most compositionally ambitious statement on the record.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Atmospheric intro",
+          "description": "drone pad, distant sonic texture. No rhythm. The album pauses to breathe for the first time.",
+          "detail": "~30 seconds of space after the compressed density of tracks 4–6. Critical psychological reset."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Beat enters",
+          "description": "programmed drums appear at moderate intensity. More textured than earlier tracks.",
+          "detail": "Noticeably different drum character. Live elements from Matt Cameron's performance blend with programming."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Crispian Mills vocal enters",
+          "description": "spiritual, urgent delivery over the building beat. Melodic contour is distinct.",
+          "detail": "\"Narayan\" — Sanskrit name for Vishnu/cosmic consciousness. Lyrical register is entirely unlike the rest of the album."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Production density increases",
+          "description": "additional synth pads, bass sub weight builds.",
+          "detail": "The track constructs a wall of sound over its first half. Gradual accumulation strategy."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Peak section",
+          "description": "maximum energy state reached. All elements firing simultaneously.",
+          "detail": "The broadest, most anthemic peak on the album. Nine-minute context makes this moment feel earned."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Extended breakdown",
+          "description": "drums reduce significantly; vocal fragments loop in reverb space.",
+          "detail": "Approximately 90 seconds of deconstruction. The album's longest breakdown moment."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Rebuild",
+          "description": "live drum feel becomes more prominent as programmed elements return.",
+          "detail": "Matt Cameron's organic drumming texture blends with the programmed grid in the rebuild. Intentional stylistic collision."
+        },
+        {
+          "timestamp": "7:10",
+          "section": "Final peak",
+          "description": "broadest arrangement restored. Vocal soars. Production at its most expansive.",
+          "detail": "The emotional climax of the album. Everything that follows is denouement."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Outro",
+          "description": "gradual element removal. Final vocal phrase reverberates into silence.",
+          "detail": "8 seconds of silence after fade — the longest gap between tracks on the album. Prepares for Firestarter."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Firestarter",
+      "duration": "4:41",
+      "energy": "peak",
+      "tags": [
+        "Punk-Electronic",
+        "Keith Flint Vocal",
+        "Sample: Art of Noise / KLF"
+      ],
+      "role": "Album role: The lead single dropped deliberately late in the running order — a precision placement that maximises its impact as second-act detonation. Keith Flint's defining performance. Samples Art of Noise's \"Close (To the Edit)\" guitar loop and a KLF kick.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Immediate drop",
+          "description": "bass stab and distorted guitar-loop sample hit simultaneously. Zero ramp-up.",
+          "detail": "Post-Narayan silence makes this entry maximally violent. One of electronic music's most effective track transitions."
+        },
+        {
+          "timestamp": "0:05",
+          "section": "Keith Flint vocal",
+          "description": "\"I'm the trouble starter, punkin' instigator.\" Aggressive, sneering, perfectly mixed.",
+          "detail": "The vocal performance is physically demonstrative — breath, snarl and spit are all audible in the production."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Production density increases",
+          "description": "additional percussion layers stack on top of the core loop.",
+          "detail": "Howlett's sequencing adds complexity without reducing the punk directness of the track."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Breakdown",
+          "description": "guitar loop isolated; kick and bass drop out momentarily.",
+          "detail": "~12 seconds. The briefest breakdown on the album — \"Firestarter\" refuses to rest for long."
+        },
+        {
+          "timestamp": "2:07",
+          "section": "Re-entry",
+          "description": "full kit returns. Howlett adds new rhythmic element over the core loop.",
+          "detail": "The track evolves structurally while maintaining its DNA."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Final build",
+          "description": "synth layer and additional percussion stack toward closing section.",
+          "detail": "Production at its densest point in the track."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Outro",
+          "description": "guitar loop remains as other elements drop progressively. Final cut.",
+          "detail": "Ends with the sample alone, giving \"Climbatize\" a tonal contrast entry point."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Climbatize",
+      "duration": "6:38",
+      "energy": "mid",
+      "tags": [
+        "Atmospheric",
+        "Instrumental",
+        "Comedown"
+      ],
+      "role": "Album role: The album's only genuine atmospheric reprieve — an extended, largely instrumental piece that acts as controlled decompression after the assault of tracks 1–8. Sets up the punk finale with its emotional contrast.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ambient synth opening",
+          "description": "widescreen, glacial pad texture. No drums for the first time since Track 1's birdsong intro.",
+          "detail": "Howlett allowing the listener to exhale after nine tracks of compression."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Melodic line enters",
+          "description": "a synthesised melody emerges, almost orchestral in character.",
+          "detail": "The album's most overtly melodic moment. Howlett revealing compositional sensibility beyond the rhythm-first approach."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Beat enters — slower",
+          "description": "breakbeat at noticeably lower intensity and density than preceding tracks.",
+          "detail": "The reduced BPM feel is intentional. Mid-range energy plateau maintained throughout."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Production develops",
+          "description": "additional pads and melodic counter-voices accumulate.",
+          "detail": "The track builds but never explodes. Perpetual anticipation without release."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Melodic peak",
+          "description": "all harmonic elements at maximum. Still no aggressive bass drop.",
+          "detail": "The restraint is itself the contribution here."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Gradual fade",
+          "description": "elements strip away piece by piece. Melody is last to disappear.",
+          "detail": "Extended outro builds maximum contrast tension before \"Fuel My Fire.\""
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Fuel My Fire",
+      "duration": "4:19",
+      "energy": "peak",
+      "tags": [
+        "Punk Rock",
+        "L7 Cover",
+        "Saffron Vocal",
+        "Keith Flint"
+      ],
+      "role": "Album role: Final detonation — an L7 punk-rock cover (1994) treated with Howlett's electronic production signatures. Saffron and Keith Flint share vocal duties. The album closes not with a fade but with a collision.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Immediate full-band entry",
+          "description": "distorted guitars and electronic drums hit simultaneously after Climbatize's fade.",
+          "detail": "The most maximalist contrast point on the album. From atmospheric to full-throttle punk in zero seconds."
+        },
+        {
+          "timestamp": "0:08",
+          "section": "Saffron vocal enters",
+          "description": "hard, controlled delivery. Melody has a direct punk-rock lineage.",
+          "detail": "Saffron's performance carries the melodic thread while Keith's vocal adds aggression counterpoint."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Keith Flint joins",
+          "description": "additional vocal layer, snarled and confrontational.",
+          "detail": "Dual vocal architecture increases the chaotic energy."
+        },
+        {
+          "timestamp": "1:35",
+          "section": "Guitar solo element",
+          "description": "distorted lead line cuts through the mix.",
+          "detail": "The most guitar-forward moment on the entire album. Jim Davies' influence apparent."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Instrumental bridge",
+          "description": "cut-down version of the arrangement. Guitars continue; drums simplified.",
+          "detail": "~15 seconds. Functions as the track's single structural breath."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Final chorus",
+          "description": "maximum density. Full band, full vocals, additional electronic percussion layers.",
+          "detail": "The album's culminating noise event."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Hard cut",
+          "description": "track ends abruptly on a downbeat. No fade. No coda.",
+          "detail": "The album terminates with the same refusal to soften that characterised its opening."
+        }
+      ]
+    }
+  ]
+}

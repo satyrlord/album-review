@@ -1,0 +1,318 @@
+{
+  "id": "jean-michel-jarre-oxygene-7-13",
+  "artist": "Jean-Michel Jarre",
+  "title": "Oxygène 7–13",
+  "year": 1997,
+  "label": "Disques Dreyfus · Epic",
+  "producer": "Jean-Michel Jarre",
+  "genre": "Electronic / Ambient",
+  "runtime": "41:12",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/43/Oxygene_7-13_album_cover.jpg",
+  "overview": "Twenty-one years after the original, Jarre returns to the same instrument palette — ARP 2600, EMS VCS 3 and Synthi AKS, Eminent 310 Unique, Mellotron M400, RMI Harmonic Synthesizer — and supplements them with TR-808, Akai MPC 3000, Nord Lead, Korg Prophecy and Yamaha CS-80 to bridge analog authenticity with 1990s rhythmic sensibility. The album is dedicated to Pierre Schaeffer, Jarre's mentor at the GRM, who died in 1995. Also the last collaboration with longtime partner Michel Geiss, alongside keyboardist Francis Rimbert and programmer Christian Sales.\n\nRecorded and mixed at Oxygene Studio and Croissy Studio, Paris. Seven continuous parts numbered to pick up exactly where the 1976 album left off. Singles: \"Oxygène 8\" (10 March 1997), \"Oxygène 10\" (23 June 1997), \"Oxygène 7\" (October 1997). Followed by a large-scale Moscow open-air concert attended by 3.5 million. Commercial and critical reception strong across Europe; reached No. 11 UK Albums, No. 6 France.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Oxygène 7",
+      "duration": "11:41",
+      "energy": "mid",
+      "tags": [
+        "Epic Opener",
+        "ARP 2600",
+        "Eminent 310",
+        "Long Form"
+      ],
+      "role": "Album role: The narrative entry point — eleven minutes that re-establish the Oxygène sound world before recontextualising it with contemporary rhythmic density. Longest track on the album; functions as a full statement rather than an introduction.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sparse ARP sequences",
+          "description": "fractured arpeggios in the original Oxygène register; neither warm nor cold, just present.",
+          "detail": "Deliberately recalls the 1976 album without quoting it directly. The listener calibrates against memory."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Eminent 310 string pad entrance",
+          "description": "the same timbral signature from 1976 wells up beneath the sequences.",
+          "detail": "Continuity of instrument rather than melody; the sonic DNA is identical even as the harmonic language has evolved."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "TR-808 pulse enters",
+          "description": "subtle, low in the mix, a rhythmic underpinning absent from the original Oxygène. The contemporary intrusion is deliberate.",
+          "detail": "Jarre's 1997 interview stated his aim was to combine \"spherical sounds\" of 1976 with contemporary rhythms — the 808 is the syntactic bridge."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Harmonic development cycle begins",
+          "description": "the sequence modulates, introducing tonal motion absent from the opening's static.",
+          "detail": "Chord movement here is more complex than the original album, reflecting two decades of compositional development."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Full orchestration peak",
+          "description": "Mellotron M400 swells, Yamaha CS-80 pads, layered sequences; densest textural moment of the piece.",
+          "detail": "The CS-80 provides the polyphonic warmth missing from the original's more restrained palette."
+        },
+        {
+          "timestamp": "9:40",
+          "section": "Gradual strip-back",
+          "description": "layers exit in reverse order, returning toward the sparse opening texture.",
+          "detail": "A compositional arch: the track rises and falls symmetrically, its length justified by the discipline of the descent."
+        },
+        {
+          "timestamp": "11:10",
+          "section": "Wind-noise outro",
+          "description": "atmospheric fade, textural tail providing the connective tissue into Oxygène 8."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Oxygène 8",
+      "duration": "3:54",
+      "energy": "mid",
+      "tags": [
+        "Lead Single",
+        "Hook-Driven",
+        "Four-on-Floor"
+      ],
+      "role": "Album role: The commercial pivot — four minutes of melodic focus after the eleven-minute epic. The album's most immediately accessible piece; released as the first single on 10 March 1997 and the primary radio promo.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Arpeggiated sequence with 808 pattern",
+          "description": "clean rhythmic hook established immediately; no atmospheric preamble.",
+          "detail": "Structurally inverts the approach of Oxygène 7: the rhythm is first, the texture follows."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Main melodic theme",
+          "description": "ascending ARP 2600 hook, easily distinguishable and designed for single-format play.",
+          "detail": "More directional melody than anything on the 1976 album; Jarre's 1990s pop instinct applied within the Oxygène framework."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Filter sweep and stereo widening",
+          "description": "resonant low-pass filter opens on the bass layer, broadening the mix.",
+          "detail": "Classic 1990s electronic production technique; the contrast with the dry analog sources is deliberate."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Stripped breakdown",
+          "description": "percussion and most melodic layers drop; bare sequence and near-silence briefly assert."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Full reprise",
+          "description": "all elements return for final run."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Rapid decay",
+          "description": "track dissolves rather than fading, cutting abruptly into the silence before Oxygène 9."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Oxygène 9",
+      "duration": "6:13",
+      "energy": "low",
+      "tags": [
+        "Introspective",
+        "Theremin",
+        "Textural"
+      ],
+      "role": "Album role: Meditative centre of Side One — a deliberate return to introspection after the commercial energy of Oxygène 8, restoring the album's contemplative voice before the second half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sustained pads, near-silence",
+          "description": "atmospheric opening, punctuated by isolated single notes dropped into empty space.",
+          "detail": "The closest the album gets to the original Oxygène's first track — pure space as compositional material."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Delicate upper-register arpeggio",
+          "description": "minimal, high, almost music-box in character; the melody is suggested more than stated."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Theremin-like melodic line",
+          "description": "wavering, continuous-pitch melody drifts over the static harmony; the most human-sounding element of the track.",
+          "detail": "The Theremin is listed in the album's equipment; its use here is characteristically Jarre — an instrument of air and gesture."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Timbral register shift",
+          "description": "the pad layer drops an octave, the harmonic context darkens noticeably."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Dissolve",
+          "description": "gradual noise texture fade, closing the side on the same atmospheric uncertainty with which it began."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Oxygène 10",
+      "duration": "4:16",
+      "energy": "high",
+      "tags": [
+        "Second Single",
+        "Uptempo",
+        "Nord Lead",
+        "Driving Sequence"
+      ],
+      "role": "Album role: Side Two opener and second single — the album's most rhythmically propulsive piece, re-energising after Side One's contemplative close. North Lead and Korg Prophecy voices give the track a harder, more contemporary edge.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Fast-tempo driving sequence",
+          "description": "immediate urgency; no atmospheric introduction, straight into motion.",
+          "detail": "The tempo step-up relative to earlier tracks is the most dramatic energy shift on the album."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Main hook",
+          "description": "punchy arpeggiated figure on Nord Lead; harder attack than the ARP-based textures elsewhere.",
+          "detail": "The Nord Lead's polyphonic digital-analog hybrid character brings a brightness to the hook not achievable on the vintage instruments."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "TR-808 and sequenced percussion layering",
+          "description": "rhythm section builds to full complement, the 808's characteristic snap prominent."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Full stop breakdown",
+          "description": "near-complete silence, then sequential reconstruction from the lowest layer up.",
+          "detail": "The silence here is dramatic precisely because this track has been the album's most continuous-motion piece."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Climax restatement",
+          "description": "all layers return simultaneously at full intensity."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Fade",
+          "description": "truncated rather than resolved; the energy simply runs out of space."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Oxygène 11",
+      "duration": "4:58",
+      "energy": "low",
+      "tags": [
+        "Minor Mode",
+        "Wide Stereo",
+        "Searching"
+      ],
+      "role": "Album role: Transitional piece — a decompression after Oxygène 10's kinetic energy, using wide stereo placement and minor-mode harmonic ambiguity to set up the penultimate and closing pieces.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sparse, wide-stereo opening",
+          "description": "panned elements placed at extremes; the sense of searching space.",
+          "detail": "Stereo field placement as composition: notes arrive from different coordinates, suggesting spatial disorientation."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Minor-key melodic fragment",
+          "description": "tentative, incomplete phrase that delays resolution through the entire track."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Gradual harmonic shift",
+          "description": "the tonal centre migrates without settling. Modal ambiguity increases."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Dissolve without resolution",
+          "description": "the searching quality of the track is maintained to its end; closure is deferred to Oxygène 12."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Oxygène 12",
+      "duration": "5:40",
+      "energy": "mid",
+      "tags": [
+        "Call and Response",
+        "Pre-Finale",
+        "Mellotron"
+      ],
+      "role": "Album role: Pre-finale build — resumes the rhythmic pulse suspended by Oxygène 11, with call-and-response melodic architecture and thickening harmonics preparing for the closing piece.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Steady rhythmic pattern re-emerges",
+          "description": "the 808 and sequence framework returns, restoring directionality."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Call-and-response melodic structure",
+          "description": "two distinct voices on separate synthesizers answer each other across the stereo field.",
+          "detail": "The dialogue format contrasts with the solo melodic lines on earlier tracks; a more conversational register."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Harmonic thickening",
+          "description": "Mellotron M400 strings enter, adding warmth and density; the palette approaches maximum saturation."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Pre-outro tension build",
+          "description": "the sequence accelerates fractionally, harmonic tension preparing for the finale without resolving it."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Held tension, open fade",
+          "description": "no resolution; the track hands the unresolved phrase directly to Oxygène 13."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Oxygène 13",
+      "duration": "4:27",
+      "energy": "low",
+      "tags": [
+        "Closer",
+        "Nostalgic Callback",
+        "Trilogy Bridge"
+      ],
+      "role": "Album role: Closing statement and trilogy handoff — returns to the stripped, atmospheric register of the 1976 original, resolving the album's harmonic journey and leaving the door open for the third chapter. Wind-noise texture at close is a deliberate echo across twenty-one years.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Return to original Oxygène sonic territory",
+          "description": "the density of the preceding tracks dissolves; the opening recalls the 1976 album's atmospheric quality.",
+          "detail": "The listener who knows the original will feel the symmetry: the album ends where it began, two decades later."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Nostalgic melodic callback",
+          "description": "phrase structure and timbral choices echo the original Oxygène VI without direct quotation."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Gradual harmonic resolution",
+          "description": "the modal ambiguity accumulated across the album finds a gentle landing point.",
+          "detail": "Resolution is earned rather than imposed; the work of eleven harmonically open tracks closes quietly."
+        },
+        {
+          "timestamp": "3:55",
+          "section": "Wind-noise textural close",
+          "description": "the same atmospheric device used at the start of the 1976 album, here marking both an ending and a 19-year suspension of the trilogy.",
+          "detail": "Oxygène 3 (2016) will open with comparable atmospheric material, completing the arc."
+        }
+      ]
+    }
+  ]
+}

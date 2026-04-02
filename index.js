@@ -41,6 +41,19 @@
     let allAlbums = [];
     let colorMap = {};
     let activeArtist = 'All';
+    function showError(message) {
+        grid.innerHTML =
+            '<div class="ix-error">' +
+                `${esc(message)}` +
+                '</div>';
+    }
+    async function loadAlbums() {
+        const response = await fetch('data/index.json', { cache: 'no-store' });
+        if (!response.ok) {
+            throw new Error(`Could not load data/index.json (${response.status}).`);
+        }
+        return await response.json();
+    }
     function buildPills() {
         const artists = ['All', ...Array.from(new Set(allAlbums.map(a => a.artist))).sort()];
         filters.innerHTML = artists.map(name => {
@@ -68,6 +81,10 @@
             return matchArtist && matchSearch;
         });
         count.textContent = `${visible.length} / ${allAlbums.length} album${allAlbums.length !== 1 ? 's' : ''}`;
+        if (visible.length === 0 && !q && allAlbums.length === 0) {
+            grid.innerHTML = '<div class="ix-empty">No albums available.</div>';
+            return;
+        }
         if (visible.length === 0) {
             grid.innerHTML = `<div class="ix-empty">No albums match &ldquo;${esc(search.value)}&rdquo;.</div>`;
             return;
@@ -76,8 +93,12 @@
             const color = colorMap[a.artist] ?? 'var(--accent)';
             const genre = displayGenre(a.genre);
             const genreHtml = genre ? `<div class="ix-card-genre">${esc(genre)}</div>` : '';
+            const mediaHtml = a.coverUrl
+                ? `<div class="ix-card-media"><img class="ix-card-cover" src="${esc(a.coverUrl)}" alt="Album cover for ${esc(a.artist)} - ${esc(a.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>`
+                : '';
             const trackLabel = `${a.tracks} track${a.tracks !== 1 ? 's' : ''}`;
-            return (`<a class="ix-card" href="${esc(a.file)}" style="--card-accent:${color}">` +
+            return (`<a class="ix-card" href="album.html?id=${esc(a.id)}" style="--card-accent:${color}">` +
+                mediaHtml +
                 `<div class="ix-card-body">` +
                 genreHtml +
                 `<div class="ix-card-title">${esc(a.title)}</div>` +
@@ -88,17 +109,20 @@
                 `</a>`);
         }).join('');
     }
-    if (typeof window.ALBUMS === 'undefined' || !Array.isArray(window.ALBUMS)) {
-        grid.innerHTML =
-            '<div class="ix-error">' +
-                'Could not load album data.<br>' +
-                'Ensure <code>albums.js</code> is present alongside this file.' +
-                '</div>';
-        return;
-    }
-    allAlbums = window.ALBUMS;
-    colorMap = buildColorMap(allAlbums);
-    buildPills();
-    render();
     search.addEventListener('input', render);
+    async function main() {
+        try {
+            allAlbums = await loadAlbums();
+        }
+        catch (error) {
+            showError(error instanceof Error ? error.message : 'Could not load album data.');
+            return;
+        }
+        colorMap = buildColorMap(allAlbums);
+        buildPills();
+        render();
+    }
+    main().catch((error) => {
+        showError(error instanceof Error ? error.message : 'Unexpected error.');
+    });
 }());

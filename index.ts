@@ -1,15 +1,11 @@
 interface AlbumEntry {
-  file: string;
+  id:     string;
   artist: string;
-  title: string;
-  year: number;
+  title:  string;
+  year:   number;
   tracks: number;
-  genre: string;
-}
-
-// albums.js sets window.ALBUMS before this script runs.
-interface Window {
-  ALBUMS?: AlbumEntry[];
+  genre:  string;
+  coverUrl?: string;
 }
 
 (function (): void {
@@ -62,6 +58,21 @@ interface Window {
   let colorMap: Record<string, string> = {};
   let activeArtist = 'All';
 
+  function showError(message: string): void {
+    grid.innerHTML =
+      '<div class="ix-error">' +
+        `${esc(message)}` +
+      '</div>';
+  }
+
+  async function loadAlbums(): Promise<AlbumEntry[]> {
+    const response = await fetch('data/index.json', { cache: 'no-store' });
+    if (!response.ok) {
+      throw new Error(`Could not load data/index.json (${response.status}).`);
+    }
+    return await response.json() as AlbumEntry[];
+  }
+
   function buildPills(): void {
     const artists = ['All', ...Array.from(new Set(allAlbums.map(a => a.artist))).sort()];
     filters.innerHTML = artists.map(name => {
@@ -94,6 +105,11 @@ interface Window {
 
     count.textContent = `${visible.length} / ${allAlbums.length} album${allAlbums.length !== 1 ? 's' : ''}`;
 
+    if (visible.length === 0 && !q && allAlbums.length === 0) {
+      grid.innerHTML = '<div class="ix-empty">No albums available.</div>';
+      return;
+    }
+
     if (visible.length === 0) {
       grid.innerHTML = `<div class="ix-empty">No albums match &ldquo;${esc(search.value)}&rdquo;.</div>`;
       return;
@@ -103,9 +119,13 @@ interface Window {
       const color = colorMap[a.artist] ?? 'var(--accent)';
       const genre = displayGenre(a.genre);
       const genreHtml = genre ? `<div class="ix-card-genre">${esc(genre)}</div>` : '';
+      const mediaHtml = a.coverUrl
+        ? `<div class="ix-card-media"><img class="ix-card-cover" src="${esc(a.coverUrl)}" alt="Album cover for ${esc(a.artist)} - ${esc(a.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div>`
+        : '';
       const trackLabel = `${a.tracks} track${a.tracks !== 1 ? 's' : ''}`;
       return (
-        `<a class="ix-card" href="${esc(a.file)}" style="--card-accent:${color}">` +
+        `<a class="ix-card" href="album.html?id=${esc(a.id)}" style="--card-accent:${color}">` +
+          mediaHtml +
           `<div class="ix-card-body">` +
             genreHtml +
             `<div class="ix-card-title">${esc(a.title)}</div>` +
@@ -118,20 +138,22 @@ interface Window {
     }).join('');
   }
 
-  if (typeof window.ALBUMS === 'undefined' || !Array.isArray(window.ALBUMS)) {
-    grid.innerHTML =
-      '<div class="ix-error">' +
-        'Could not load album data.<br>' +
-        'Ensure <code>albums.js</code> is present alongside this file.' +
-      '</div>';
-    return;
+  search.addEventListener('input', render);
+
+  async function main(): Promise<void> {
+    try {
+      allAlbums = await loadAlbums();
+    } catch (error: unknown) {
+      showError(error instanceof Error ? error.message : 'Could not load album data.');
+      return;
+    }
+
+    colorMap = buildColorMap(allAlbums);
+    buildPills();
+    render();
   }
 
-  allAlbums = window.ALBUMS;
-  colorMap  = buildColorMap(allAlbums);
-
-  buildPills();
-  render();
-
-  search.addEventListener('input', render);
+  main().catch((error: unknown) => {
+    showError(error instanceof Error ? error.message : 'Unexpected error.');
+  });
 }());

@@ -1,0 +1,278 @@
+{
+  "id": "jean-michel-jarre-magnetic-fields",
+  "artist": "Jean-Michel Jarre",
+  "title": "Les Chants Magnétiques",
+  "year": 1981,
+  "label": "",
+  "producer": "Jean-Michel Jarre",
+  "genre": "Electronic / New Wave",
+  "runtime": "35:52",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Magnetic_Fields_Jarre_Album.jpg",
+  "overview": "The third major Jarre album and the first to incorporate the Fairlight CMI — the Australian computer music instrument that introduced digital sampling to popular music production. Recorded at Croissy Studio (not the apartment), the album signals a shift in Jarre's methodology: the analog sequencer dominance of Oxygène and Equinoxe is now joined by digital sample playback. \"Les Chants Magnétiques\" is a title pun — in French, chants (songs) is a homophone of champs (fields), so \"chants magnétiques\" reads simultaneously as \"magnetic songs\" and \"magnetic fields.\" The English title translates the second meaning.\n\nRecording team: Jean-Michel Jarre (production), Michel Geiss (recorded train sounds used in the album), Jean-Pierre Janiaud (recording and mixing), Patrick Foulon (mixing assistant). Equipment adds RSF Kobol, MDB Polysequencer, Moog Taurus Pedal Synthesizer, and Electro-Harmonix Echoflanger to the existing Jarre arsenal. UK #6, France #4. Led to the China invitation — Jarre became the first Western musician to perform in China after Mao. Singles: \"Part 2\" (April 1981), \"Part 4 Remix\" (November 1981). Timestamps for Part 1 approximate to ±8 seconds due to its continuous three-movement structure.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Les Chants Magnétiques Part 1",
+      "duration": "17:50",
+      "energy": "high",
+      "tags": [
+        "17:50 — Three Movements",
+        "Fairlight CMI Debut",
+        "RSF Kobol",
+        "MDB Polysequencer"
+      ],
+      "role": "Album role: The album occupies an entire side — a three-movement 17-minute work that contains the complete tonal range of the album in miniature. Movement I is bold and demonstrative; Movement II is surreal with human voice samples; Movement III is mechanical and insistently rhythmic. Part 1 is the album's argument; Parts 2–5 are its elaboration.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Movement I opens — bold declarative statement",
+          "description": "assertive, new-decade energy. The post-Equinoxe album announces itself with confidence rather than atmosphere.",
+          "detail": "The RSF Kobol synthesizer (French analog, 1979) provides a new timbral colour distinct from the ARP 2600/CS-60 palette of earlier albums. A brighter, more attack-oriented analog character."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "MDB Polysequencer driving the melodic motion",
+          "description": "more complex sequencing patterns than the Matrisequencer. Multiple simultaneous melodic voices.",
+          "detail": "The MDB Polysequencer allows polyphonic sequence playback — melodic lines that the earlier mono sequencers could not produce. A fundamental expansion in compositional possibility."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Oberheim OB-X layer enters",
+          "description": "the OB-X's fat polyphonic sound adds harmonic mass.",
+          "detail": "The Oberheim OB-X (1979) is a distinctively American synthesizer — bold, brash, and electrostatically present. It adds a different character from the warmer CS-60 of Equinoxe."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Movement I peak",
+          "description": "full arrangement at its most assertive. The \"demonstrative\" character at its peak before the transition to Movement II.",
+          "detail": "Movement I behaves like an album opener compressed into 5–6 minutes: introduction, development, peak."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Movement II begins — Fairlight CMI: human voice samples enter",
+          "description": "the first arrival of digitally sampled sounds in a Jarre album. Human vocal fragments, processed and transformed.",
+          "detail": "The Fairlight CMI (Computer Musical Instrument, Australian, 1979) allows recording and polyphonic playback of any sound. The ability to sample a human voice and play it on a keyboard was genuinely new in 1981."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Surreal collage territory",
+          "description": "voice samples interact with synthetic textures. The effect is unsettling, slightly alien.",
+          "detail": "Michel Geiss's recorded train sounds likely appear in this section — field recordings (proto-sampling) integrated with synthesizers and true digital samples."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "EMS Vocoder 1000 applied",
+          "description": "voice and synthesizer hybrids via vocoder processing. The boundary between human and machine sound actively blurred.",
+          "detail": "Vocoder + Fairlight CMI: in 1981, the combination of voice-analysis synthesis and digital sample playback was a genuinely advanced approach."
+        },
+        {
+          "timestamp": "10:00",
+          "section": "Movement II development",
+          "description": "the surreal register sustained. Korg VC-10 vocoder (a second vocodered voice). Multiple processed voices in the texture.",
+          "detail": "The VC-10 adds yet another voice-synthesis approach. Jarre in 1981 had more tools for transforming human voice into synthetic textures than any previous electronic album."
+        },
+        {
+          "timestamp": "11:30",
+          "section": "Movement III — mechanical character arrives abruptly",
+          "description": "the surreal human register gives way to insistent, repetitive, industrial rhythmic motion.",
+          "detail": "The train sounds recorded by Michel Geiss may be most present here — mechanical churning as musical material. Movement III is the album's most overtly industrial section."
+        },
+        {
+          "timestamp": "12:30",
+          "section": "Moog Taurus Pedal Synthesizer bass layer",
+          "description": "the Taurus (traditionally used as a foot pedal by rock bassists: David Gilmour, Neil Peart) provides enormous low-frequency foundation.",
+          "detail": "The Moog Taurus pedals were originally a live performance instrument. In the studio, their bass depth anchors the mechanical Movement III."
+        },
+        {
+          "timestamp": "14:00",
+          "section": "Movement III peak — maximum rhythmic insistence",
+          "description": "the machine at full speed. Electro-Harmonix Echoflanger creates swirling, rotating spatial effects around the mechanical pulse.",
+          "detail": "The Echoflanger's analog flanging effect — a sweeping, jet-engine modulation — adds the most overtly psychedelic texture on any Jarre album."
+        },
+        {
+          "timestamp": "15:30",
+          "section": "Deceleration of Movement III",
+          "description": "the machine slows. The mechanical urgency releases.",
+          "detail": "17:50 is too long to sustain maximum intensity — Jarre gives the mechanical energy its full statement then allows it to wind down before Side Two."
+        },
+        {
+          "timestamp": "17:00",
+          "section": "Part 1 completes",
+          "description": "the three movements resolved. Side One ends.",
+          "detail": "A complete compositional statement in 17:50 — three characteristically different sections unified by the album's overall sound world. Flip the record."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Les Chants Magnétiques Part 2",
+      "duration": "3:59",
+      "energy": "high",
+      "tags": [
+        "Lead Single",
+        "Sequenced Melody",
+        "Most Accessible"
+      ],
+      "role": "Album role: The lead single (released April 1981) and the album's most identifiable melody after the 17-minute complexity of Part 1. Part 2 operates as the commercial face of the album — a tight, focused piece that distils the new synth-pop direction into a radio-viable four minutes.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Immediately recognisable melodic sequence",
+          "description": "Side Two opens with a memorable, propulsive melody. Direct, confident.",
+          "detail": "After 17 minutes of Part 1's movements and complexity, Part 2's economy is a relief. The single was cut specifically to demonstrate the album's most accessible face."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "RSF Kobol / Oberheim OB-X harmony",
+          "description": "the bright analog palette from Part 1 now in concentrated single-track form.",
+          "detail": "The synth-pop influence is clearest here. Part 2 sits comfortably alongside synth-pop productions from the same period (Kraftwerk, Gary Numan, Human League)."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Full arrangement at the single's peak",
+          "description": "maximum density for Part 2's compact form.",
+          "detail": "Chart position: \"Part 2\" charted in France and across Europe as the first single from the album. Its melodic directness was a deliberate commercial move without compromising the album's broader ambition."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Clean conclusion",
+          "description": "the single ends clearly. Part 3 follows with a different character.",
+          "detail": "Four minutes is exactly the right length for Part 2. Any longer and it would outstay its welcome. Any shorter and it would feel truncated."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Les Chants Magnétiques Part 3",
+      "duration": "4:15",
+      "energy": "low",
+      "tags": [
+        "Fairlight CMI — Toy Box Samples",
+        "Minimalist",
+        "Playful"
+      ],
+      "role": "Album role: The album's most unusual and lightest piece — the Fairlight CMI is used not for voice or orchestral emulation but for toy-like, mechanical sounds with a childlike quality. Part 3 is the album's most playful gesture: a curiosity shop of strange sounds in a minimalist arrangement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Toy-box sounds via Fairlight CMI",
+          "description": "unexpected, mechanical-playful textures. Not what follows a hit single in 1981.",
+          "detail": "The Fairlight CMI's ability to sample anything — including toy sounds, clocks, mechanical objects — makes Part 3 possible. Jarre uses the technology for whimsy rather than power."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Minimalist arrangement sustains",
+          "description": "no build, no accumulation. The texture stays sparse and peculiar.",
+          "detail": "Part 3's restraint is formally interesting: after Part 2's melodic assertion and before Part 4's build, it is deliberately static and odd."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Harmonic movement — the music shifts tonally",
+          "description": "the toy-box sounds take on different qualities as the chord beneath them changes.",
+          "detail": "The toy-box samples are the same sounds; the harmonic context makes them sound threatening, then innocent, then mechanical in succession."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Part 3 releases toward Part 4",
+          "description": "the minimalism prepares for Part 4's more assertive character.",
+          "detail": "Part 3's function: to make Part 4 feel like an arrival after static preparation. The dynamic contrast is intentional."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Les Chants Magnétiques Part 4",
+      "duration": "6:18",
+      "energy": "high",
+      "tags": [
+        "Second Single (Remix)",
+        "Album Climax",
+        "Moog Taurus"
+      ],
+      "role": "Album role: Side Two's climax and the album's second single (released as \"Part 4 Remix\" in November 1981). The longest piece on Side Two, Part 4 is the album's final major energy statement before the exuberant closure of La Dernière Rumba. Acts as the nocturnal counterpart to Part 1's three-movement ambition.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Driving energy from the first beat",
+          "description": "Part 4 launches purposefully after Part 3's deliberate minimalism.",
+          "detail": "The dynamic reversal after Part 3 is sharp and effective. Part 4 wastes no time re-establishing the album's assertive character."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Melodic development — MDB Polysequencer at its most evolved",
+          "description": "the polyphonic sequencing creates layered melodic motion more complex than any preceding Jarre sequencing.",
+          "detail": "The Polysequencer's full capability is demonstrated in Part 4. Multiple melodic voices moving simultaneously yet coherently."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Moog Taurus bass foundation",
+          "description": "the large bass synthesizer pedals provide an immense low-frequency anchor.",
+          "detail": "The Moog Taurus in Part 4 functions as heard from the floor up: the bass is not decorative but structural. The whole piece is built over it."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Album's penultimate peak",
+          "description": "maximum energy for Part 4's form. The whole Side Two has been building toward this.",
+          "detail": "Part 4's peak comes at almost exactly the album's structural centre of gravity on Side Two — with the single's commercial appeal justifying the second release."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Echoflanger spatial effects",
+          "description": "the flanging creates rotating, psychedelic space around the melodic content.",
+          "detail": "The Electro-Harmonix Echoflanger's most dramatic application in the album — it gives Part 4's climax a distinctive sweeping character."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Energy decline toward Part 5",
+          "description": "Part 4 resolves before La Dernière Rumba's surprise.",
+          "detail": "The album is about to end with something unexpected."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Les Chants Magnétiques Part 5 — La Dernière Rumba",
+      "duration": "3:30",
+      "energy": "high",
+      "tags": [
+        "La Dernière Rumba",
+        "Latin Finale",
+        "Unexpected Closure",
+        "Netherlands Single"
+      ],
+      "role": "Album role: The album's most structurally surprising moment — a joyful, exuberant Latin dance rhythm that closes a synthetic, avant-garde electronic album with the warmth of analogue human dance music. \"La Dernière Rumba\" (The Last Rumba) inverts expectations generated by the three preceding albums. The title pun of the album (chants/champs) is resolved here: the magnetic fields were always about dance.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Latin dance rhythm enters",
+          "description": "the most surprising opening of any piece in Jarre's catalogue to this point. After Part 4's driving electronic climax, this is a dance floor.",
+          "detail": "The rumba's structural role: it reframes the entire album retroactively. The magnetic fields that Jarre has been mapping are not industrial or cosmic but fundamentally about the human body's response to rhythm."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Synth melody adapts to the rumba rhythm",
+          "description": "the same electronic instruments now serving a completely different formal master.",
+          "detail": "The ARP 2600 in rumba mode. The Korg KR 55 in Latin rhythm mode. The instruments don't change; their application does."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Full rumba arrangement — the album's most kinetic moment",
+          "description": "dance energy at its peak. The most physically immediate sound on any Jarre album.",
+          "detail": "This piece became a single in the Netherlands, where its unexpectedly exuberant character apparently fit the market. An outlier that became a regional hit."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "The last rumba — its final measures",
+          "description": "the album is ending on its most outwardly joyful gesture.",
+          "detail": "Jarre will go to China on the back of this album. The rumba predicts the cultural journey: music that bridges the local and the global through dance."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Album ends — the dance depletes toward silence",
+          "description": "the last rhythm fades. The rumba is over.",
+          "detail": "Les Chants Magnétiques closes on a dance rather than an atmosphere or a building texture. A choice that defines the album's character in retrospect: the songs and the fields were always magnetic because of this."
+        }
+      ]
+    }
+  ]
+}

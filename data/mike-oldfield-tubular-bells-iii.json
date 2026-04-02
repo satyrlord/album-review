@@ -1,0 +1,460 @@
+{
+  "id": "mike-oldfield-tubular-bells-iii",
+  "artist": "Mike Oldfield",
+  "title": "Tubular Bells III",
+  "year": 1998,
+  "label": "",
+  "producer": "Mike Oldfield",
+  "genre": "New Age / Electronic",
+  "runtime": "46:36",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/65/Mike_oldfield_tubular_bells_iii_album_cover.jpg",
+  "overview": "Tubular Bells III completes the trilogy — recorded partly in Oldfield's home studio at Es Cubells, Ibiza, and partly in London, it carries the Mediterranean warmth of its recording location throughout. The most vocal of the three Tubular Bells albums, featuring five distinct vocal artists including Irish folk singer Cara Dillon, Irish vocalist Clodagh Simonds, Moroccan singer Amar (credited on three tracks), and child voice Francesca Robertson. The album's closing track \"Far Above the Clouds\" explicitly references the Tubular Bells Part One finale and functions as a valediction. Released on 31 August 1998 — exactly six years after Tubular Bells II. UK #4. Performed live at Horse Guards Parade in torrential rain, 4 September 1998.\n\nDrums on \"Man in the Rain\" are sampled from Oldfield's own 1983 hit \"Moonlight Shadow.\" Timestamps approximate to ±4 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Source of Secrets",
+      "duration": "5:35",
+      "energy": "high",
+      "tags": [
+        "Epic Opener",
+        "Amar Vocal",
+        "Ibiza Recording"
+      ],
+      "role": "Album role: An ambitious opening — Amar's distinctive North African vocal timbre over Oldfield's most expansive opening production since Sentinel. Sets the album's aesthetic tone: warm, layered, vocally alive.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Atmospheric foundation",
+          "description": "wide synth and guitar texture establishes the album's warmer, solar character.",
+          "detail": "Ibiza home-studio recording carries a different acoustic character from TBII's clinical Trevor Horn production."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Guitar motif enters",
+          "description": "the familiar Tubular Bells opening theme transformed, this time with a folky, sunny inflection.",
+          "detail": "Oldfield's signature revisitation of the TB theme, now filtered through Mediterranean light."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Amar vocal enters",
+          "description": "incantatory, melodically complex. North African tonal vocabulary in a progressive rock context.",
+          "detail": "The vocal treatment is respectful of Amar's tradition — no Euro-pop smoothing. The cultural collision is the point."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Production density increases",
+          "description": "orchestral layers and percussion accumulate around Amar's voice.",
+          "detail": "Layer stacking — the Oldfield method, applied with the album's character of warmth rather than drama."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Peak section",
+          "description": "full arrangement. Vocal reaches its highest expressive register.",
+          "detail": "The album announces its ambition in the first five minutes. A productive pressure point."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Gradual resolution",
+          "description": "elements thin out. The track ends calmly.",
+          "detail": "Not a hard cut — control of the ending mirrors the album's chill-out ambient influence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "The Watchful Eye",
+      "duration": "2:09",
+      "energy": "low",
+      "tags": [
+        "Transitional",
+        "Eerie"
+      ],
+      "role": "Album role: A brief eerie interlude — the album's first tonal shadow after the warmth of the opener. Watching, hovering, alert.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sparse atmospheric texture",
+          "description": "minimal instrumentation with unresolved harmonic tension.",
+          "detail": "The title implies surveillance; the music supports it — something is watching, not moving."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Brief melodic fragment",
+          "description": "a small melodic gesture, incomplete and unresolved.",
+          "detail": "Transitional function — creating uncertainty before Jewel in the Crown's resolution."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Jewel in the Crown",
+      "duration": "5:45",
+      "energy": "high",
+      "tags": [
+        "Anthemic",
+        "Amar Vocal",
+        "Second Peak"
+      ],
+      "role": "Album role: The album's second major peak — Amar returns with a more celebratory register. \"Jewel in the Crown\" is the album's most overtly anthemic track in the first half, a counterpart to the opener's opening urgency.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Immediate instrumental energy",
+          "description": "guitar and rhythm section open with momentum, no atmospheric intro.",
+          "detail": "After The Watchful Eye's tense stillness, this entry is deliberately energising."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Amar vocal — celebratory mode",
+          "description": "different register from track 1. More joyful, less incantatory.",
+          "detail": "The crowning gesture in the title is reflected in the vocal performance's uplift."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Production layers build",
+          "description": "strings, guitar harmonics, percussion layering accumulates.",
+          "detail": "Oldfield's stratification technique in action again, now in an explicitly jubilant context."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Full peak",
+          "description": "maximum energy. The album's first jubilant climax.",
+          "detail": "This is the album demonstrating its warmest, most life-affirming side — the Ibiza recording environment made sonic."
+        },
+        {
+          "timestamp": "4:55",
+          "section": "Gradual descent",
+          "description": "energy reduces cleanly.",
+          "detail": "No abrupt ending — the warmth persists through the fade."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Outcast",
+      "duration": "3:49",
+      "energy": "high",
+      "tags": [
+        "Aggressive",
+        "Contrast",
+        "Darker Register"
+      ],
+      "role": "Album role: The album's most aggressive track — a deliberate shadow after the jubilant double of Source of Secrets / Jewel in the Crown. The outsider's darker energy.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Hard rhythmic entry",
+          "description": "percussion and bass arrive with more force than anything on the album so far.",
+          "detail": "The tonal shift is striking after the warmth of the first three meaningful tracks."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Dark guitar layer",
+          "description": "distorted or heavily processed guitar in the mid-high register.",
+          "detail": "Oldfield allowing the album's shadow side to speak directly, without the usual pastoral softening."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Peak aggression",
+          "description": "full arrangement at maximum density and tension.",
+          "detail": "The track's most intense moment — brief but effective as a tonal palette cleaner."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Reduction",
+          "description": "energy drops toward a quieter ending. The outcast retreats.",
+          "detail": "Preparing for Serpent Dream's introduction of the album's most mysterious tonal territory."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Serpent Dream",
+      "duration": "2:53",
+      "energy": "low",
+      "tags": [
+        "Sinister",
+        "Atmospheric"
+      ],
+      "role": "Album role: The album's most sinister piece — a slow-moving, serpentine soundscape. Brief but tonally memorable as the album's mid-point shadow.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Coiling synth texture",
+          "description": "low, slow harmonic movement suggesting the titular serpent's movement.",
+          "detail": "About as far from the Ibiza warmth of Source of Secrets as the album travels."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Chromatic melodic line",
+          "description": "the melody is deliberately unsettling in its half-step movements.",
+          "detail": "The serpent's dream is not a nightmare but a cold, precise intelligence."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Resolution into stillness",
+          "description": "the serpent settles. Transition toward The Inner Child.",
+          "detail": "The contrast function of this track is complete. It has measured the album's depth of shadow."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "The Inner Child",
+      "duration": "4:41",
+      "energy": "mid",
+      "tags": [
+        "Rosa Cedrón Vocal",
+        "Galician-Celtic",
+        "Emotional"
+      ],
+      "role": "Album role: Rosa Cedrón's Galician vocal — the album's most emotionally direct vocal contribution. The \"inner child\" concept rendered in the raw, ancient quality of Galician traditional music.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Gentle instrumental opening",
+          "description": "unhurried, warm guitar over quiet percussion. The serpent's tension fully dissolved.",
+          "detail": "The most intimate production texture on the album so far."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Rosa Cedrón vocal enters",
+          "description": "Galician folk singing tradition applied to Oldfield's progressive context. Unadorned and direct.",
+          "detail": "Cedrón's vocal is the least processed on the album — very little reverb. The intimacy is structural."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Instrumental backing develops",
+          "description": "careful, respectful arrangement growth around the vocal.",
+          "detail": "Oldfield allows the folk tradition space — the instrumentation supports rather than competes."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Emotional peak",
+          "description": "the track's fullest arrangement moment. Voice and instruments at their most unified.",
+          "detail": "The album's most emotionally communicative single moment."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Gentle fade",
+          "description": "the inner child rests. Preparation for the rain of \"Man in the Rain.\"",
+          "detail": "The emotional register remains warm through the fade."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Man in the Rain",
+      "duration": "4:03",
+      "energy": "mid",
+      "tags": [
+        "Cara Dillon Vocal",
+        "Irish Folk",
+        "Sampled Drums: Moonlight Shadow"
+      ],
+      "role": "Album role: Cara Dillon's crystalline Irish folk voice over drums sampled from Oldfield's own 1983 hit \"Moonlight Shadow\" — a self-referential gesture connecting this album to its commercial predecessor. The song about a man standing in rain became the centrepiece performed at the Horse Guards Parade concert in actual torrential rain.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drum pattern enters",
+          "description": "recognisably derived from \"Moonlight Shadow.\" The self-citation is deliberate.",
+          "detail": "Oldfield sampling himself — closing a loop from 1983 to 1998. The drum feel is immediately familiar to fans of the earlier hit."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Cara Dillon vocal",
+          "description": "lyrical, melodically precise Irish voice. Crystal quality.",
+          "detail": "Dillon's vocal register is the highest on the album — pure, rained-on clarity."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Guitar and bass layer",
+          "description": "arrangement fills out around Dillon's voice.",
+          "detail": "Heather Burnett adds additional vocal texture in the fuller sections."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Full arrangement peak",
+          "description": "the track's emotional summit. Voice soaring over full production.",
+          "detail": "Ironic that this track about a man standing in rain was performed live in a literal rainstorm at Horse Guards Parade."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Rain-soaked fade",
+          "description": "gradual dissolution. The man remains in the rain.",
+          "detail": "The fade doesn't resolve tension — the rain continues beyond the track boundary."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "The Top of the Morning",
+      "duration": "4:26",
+      "energy": "high",
+      "tags": [
+        "Celtic Jig",
+        "Celebratory",
+        "Irish Influence"
+      ],
+      "role": "Album role: The album's most overtly Celtic and celebratory instrumental — a jig-influenced piece connecting directly to the folk-dance spirit of Tubular Bells Part Two's Sailor's Hornpipe section. The morning greeting after the rain.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Jig-like rhythm launches immediately",
+          "description": "dance-oriented, upbeat. Folk percussion.",
+          "detail": "After the emotional weight of tracks 6 and 7, this opening is a deliberate tonal break upward."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Melody develops",
+          "description": "fiddle-character guitar melody carries the Irish dance idiom.",
+          "detail": "This is Oldfield referencing the folk tradition established in Tubular Bells Part Two in 1973."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Full celebratory peak",
+          "description": "all instruments dancing. The album's most kinetically joyful moment.",
+          "detail": "A contrast anchor: this is what the album sounds like at its most tribal and celebratory."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Jig winds down",
+          "description": "energy and tempo feel relax toward the end.",
+          "detail": "The dance is ending. The album begins its final sequence."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Moonwatch",
+      "duration": "4:25",
+      "energy": "low",
+      "tags": [
+        "Ambient",
+        "Night Register",
+        "Atmospheric"
+      ],
+      "role": "Album role: Nocturnal — the album shifts from morning (Top of the Morning) to night watch. An expansive ambient piece that is the final significant atmospheric space before the final two tracks close the trilogy.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Night-register texture",
+          "description": "dark but not threatening synth pad landscape. Moon watching.",
+          "detail": "The naming — moonwatch — suggests vigil more than sleep. Alert but still."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Melodic guitar",
+          "description": "a slow, contemplative line traces the night sky.",
+          "detail": "The melody moves without urgency. There is no place it needs to reach — just the act of watching."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Harmonic rest",
+          "description": "the piece settles into its most sustained harmonic point.",
+          "detail": "The album is preparing to close. Moonwatch is the last full breath before the ending sequence."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Fade toward Secrets",
+          "description": "texture dissolves into near-silence.",
+          "detail": "Transitional function: the night watch ends; secrets emerge."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Secrets",
+      "duration": "3:20",
+      "energy": "mid",
+      "tags": [
+        "Amar Vocal",
+        "Pre-Finale"
+      ],
+      "role": "Album role: The third Amar vocal piece — returning the album's most characteristic voice for the penultimate track. A gathering of energies before the closing valediction.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Familiar Amar voice returns",
+          "description": "his distinctive timbre after the night of Moonwatch functions as a returning friend.",
+          "detail": "Three appearances across the album give Amar's voice an arc of its own — opening, mid-point, and final approach."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Instrumental layers accumulate",
+          "description": "moderate density build. The piece is building toward the finale.",
+          "detail": "Less climactic in itself than as a structural preparation for Far Above the Clouds."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Mid-energy peak",
+          "description": "the track's fullest moment. Consciously holding back relative to what follows.",
+          "detail": "A penultimate track's job: prepare rather than climax."
+        },
+        {
+          "timestamp": "2:55",
+          "section": "Gradual release",
+          "description": "the track opens to silence before the finale begins.",
+          "detail": "A clean boundary. The album's valediction requires a clear runway."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Far Above the Clouds",
+      "duration": "5:30",
+      "energy": "high",
+      "tags": [
+        "Trilogy Valediction",
+        "Clodagh Simonds Vocal",
+        "TB Part One Finale Reference",
+        "Child Voice"
+      ],
+      "role": "Album role: The closing valediction of the entire trilogy — explicitly references the Tubular Bells Part One finale theme. Clodagh Simonds' soaring voice and child voice Francesca Robertson together carry the album's farewell. The album ends above the clouds, above all three records' accumulated complexity.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ascending opening",
+          "description": "rising melodic gesture, deliberately unambiguous in its upward direction.",
+          "detail": "The final track declares its intent from bar one: ascension. The trilogy ends looking upward."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Clodagh Simonds vocal enters",
+          "description": "soaring, ethereal. An Irish singer who worked with Van Morrison and others; here in her most elevated mode.",
+          "detail": "Simonds' voice has a spiritual, ceremonial quality appropriate to the finale function."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Tubular Bells Part One finale theme",
+          "description": "the original 1973 closing melody explicitly referenced. The trilogy makes contact with its own origin.",
+          "detail": "A deliberate allusory gesture. In 1973 this theme meant \"beginning\"; in 1998, it means \"I have come full circle.\""
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Full production layers deploy",
+          "description": "bass, guitar, orchestral pads, percussion all active.",
+          "detail": "The album's most texturally complete arrangement moment — the culmination of all three albums' production logic."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Child voice — Francesca Robertson",
+          "description": "enters above the full arrangement. The highest, purest voice on any of the three records.",
+          "detail": "The choice of a child voice for the trilogy's final statement is an obvious but emotionally resonant decision. Innocence as perspective."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Climactic peak — all voices, full arrangement",
+          "description": "the trilogy's final apex. Oldfield's guitar above everything.",
+          "detail": "25 years of Tubular Bells in a single moment of maximum compression. The resolution of three albums' worth of cumulative tension."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "The ascent continues beyond the track",
+          "description": "gradual fade upward. The album does not land; it goes higher.",
+          "detail": "Ending in the sky rather than on the ground. The trilogy's final statement is an absence of closure — there is more sky above. Fittingly, the rain came down during the live premiere at Horse Guards Parade."
+        }
+      ]
+    }
+  ]
+}

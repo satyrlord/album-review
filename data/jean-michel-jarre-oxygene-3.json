@@ -1,0 +1,306 @@
+{
+  "id": "jean-michel-jarre-oxygene-3",
+  "artist": "Jean-Michel Jarre",
+  "title": "Oxygène 3",
+  "year": 2016,
+  "label": "Sony · Columbia",
+  "producer": "Jean-Michel Jarre",
+  "genre": "Electronic / Ambient",
+  "runtime": "39:54",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/f/f5/Oxygene3.jpg",
+  "overview": "Released on the 40th anniversary of Oxygène to the day, this third and final chapter was composed in six weeks and mixed entirely in Ableton Live — a deliberate choice Jarre describes as maintaining the minimalist constraint of the 1976 original, where an 8-track studio enforced discipline. The instrument list deliberately mirrors the earlier albums — Eminent 310, EMS Synthi AKS, ARP 2500/2600, Mellotron — alongside modern additions including Moog Sub 37, Teenage Engineering OP-1, Elektron Analog Keys and digital VSTs. Jarre described a \"light and dark\" architecture: the album moves from introspection toward resolution across its seven parts.\n\nOxygène (Part 19) was the compositional genesis: a piece written during the Electronica 1 sessions that made Jarre reconsider what the series could be in 2016. Part 20 directly samples wind and white-noise material from the original Oxygène Part VI, closing the trilogy with an explicit sonic quotation of its own origin. Parts 14–20 complete a sequence begun forty years earlier. Metacritic score: 65/100. UK Albums: No. 41; Switzerland: No. 14.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Oxygène (Part 14)",
+      "duration": "5:28",
+      "energy": "low",
+      "tags": [
+        "Dark Side Opener",
+        "ARP 2600",
+        "Eminent 310",
+        "Minimalist"
+      ],
+      "role": "Album role: Entry into the 40th-anniversary chapter — re-establishes the trilogy's sonic world through the inherited instrument palette before introducing the darker, more restrained character of the album's first half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "ARP 2600 sequences open",
+          "description": "spare, familiar arpeggiation in the Oxygène register; the sonic handshake that connects three decades.",
+          "detail": "The opening is almost archivally careful: the timbral match to the 1976 album is exact enough to feel like time has not passed."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Eminent 310 string texture entry",
+          "description": "the melancholic string-organ pad characteristic of the entire trilogy fills the harmonic space."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Moog Sub 37 bass pulse",
+          "description": "low-frequency rhythmic grounding, more felt than heard; anchors the composition without imposing percussive structure.",
+          "detail": "The Sub 37 is the most contemporary element in this track; its presence is integrated rather than announced."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Filter intensification",
+          "description": "resonant filter opens on the lead sequence, brightening the harmonic register."
+        },
+        {
+          "timestamp": "4:50",
+          "section": "Return to sparse opening motion",
+          "description": "the filter closes, the bass withdraws; the track retreats to its original register.",
+          "detail": "Structural arch mirroring the large-scale design of Part 20: everything comes back to where it started."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Oxygène (Part 15)",
+      "duration": "6:40",
+      "energy": "low",
+      "tags": [
+        "Wind Texture",
+        "Long-Form Melody",
+        "Lower Register"
+      ],
+      "role": "Album role: Expansive second piece — the album's most patient track; a long-form melodic statement in the lower register that establishes the \"dark side\" character fully before it migrates toward shade in Part 16.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Wind-noise texture opens",
+          "description": "the same atmospheric device that bookmarks the trilogy; ARP enters cautiously over it.",
+          "detail": "The wind noise is not ambient padding; it is the trilogy's recurring atmospheric signature, present in all three albums."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Long-form melodic statement in lower register",
+          "description": "a broad, unhurried phrase that does not want to resolve quickly. The track's entire purpose is to let this melody breathe."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Textural density increase",
+          "description": "Mellotron D4000 enters with string swells; the melody becomes embroidered rather than solo.",
+          "detail": "The Mellotron D4000 is a digital Mellotron model; its character is softer than the M400 used on Oxygène 7–13 but retains the analog warmth."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Dark turn",
+          "description": "harmonic shift into a minor mode deeper than the opening; the melodic material takes on an uncertain quality."
+        },
+        {
+          "timestamp": "5:50",
+          "section": "Gradual dissolution",
+          "description": "layers recede, the wind texture reasserts, and the track fades without formal closure."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Oxygène (Part 16)",
+      "duration": "6:50",
+      "energy": "low",
+      "tags": [
+        "Dark Side Centrepiece",
+        "EMS Synthi AKS",
+        "Harmonic Ambiguity"
+      ],
+      "role": "Album role: Dark side centrepiece — the longest track and deepest point of the album's introspective arc; harmonic ambiguity never settles, reflecting the ecological anxiety Jarre cited as the album's conceptual underpinning.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Brooding slow-moving sequences",
+          "description": "unhurried, low-pitched arpeggiation with wide spacing between events; space as tension."
+        },
+        {
+          "timestamp": "1:35",
+          "section": "EMS Synthi AKS melodic line",
+          "description": "the instrument's distinctive portamento and timbral instability give the melody a slightly unstable, searching quality.",
+          "detail": "The Synthi AKS is Jarre's most expressive instrument choice: its patch matrix means no two performances are identical."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Harmonic ambiguity peak",
+          "description": "suspended chords and unresolved modal fragments accumulate; the track's \"ecological warning\" is clearest here.",
+          "detail": "Jarre described the artwork and music as \"an ecological warning signal, dark and surreal.\" This is the compositional correlate."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Gradual brightening",
+          "description": "the harmonic texture begins to lift, filter opens, motion increases fractionally.",
+          "detail": "The structural turn toward the \"light side\": Part 16 is the hinge between the album's two halves."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Return to opening texture",
+          "description": "the track closes on the same sparse material that opened it, but the harmonic context has shifted slightly toward resolution."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Oxygène (Part 17)",
+      "duration": "4:20",
+      "energy": "mid",
+      "tags": [
+        "Lead Single",
+        "Light Side Pivot",
+        "OP-1",
+        "Accessible Hook"
+      ],
+      "role": "Album role: The light-side pivot and single — the album's most melodically direct piece; the tonal shift from the preceding three tracks is immediate and pronounced. Accompanied by a music video for its single release on 4 November 2016.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Warmer major-adjacent tonality",
+          "description": "the harmonic register has shifted; the minor-mode weight of the dark side is absent.",
+          "detail": "The tonal contrast against Parts 14–16 is the album's most structurally dramatic moment; a single heard without context misses it entirely."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Main melodic hook",
+          "description": "the album's most immediately memorable phrase; designed for single format and broad accessibility."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Teenage Engineering OP-1 textural layer",
+          "description": "distinctively modern timbre woven into the analog foundation; the only place on the album where the contemporary production is foregrounded.",
+          "detail": "The OP-1's 4-track tape simulation and built-in synthesis give it a character recognisably different from the vintage instruments surrounding it."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Strip to bare sequences",
+          "description": "brief exposure of the underlying material before the final reprise."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Full theme reprise",
+          "description": "all elements return for the closing statement; the track ends decisively."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Oxygène (Part 18)",
+      "duration": "2:48",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Palette Cleanser",
+        "Minimal"
+      ],
+      "role": "Album role: Interlude and palette cleanser — the shortest piece on the album, functioning as a meditative suspension between the single and the closing two-part finale. Its brevity is its structural function.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Immediate minimal texture",
+          "description": "reduced to a single melodic line and sparse pad; no introductory build.",
+          "detail": "At 2:48, the shortest track on the album. Its function is decompression after Part 17's melodic density."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Single melodic line over sustained pad",
+          "description": "one voice, no counterpoint; total structural simplicity."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Texture becomes fractionally more active",
+          "description": "sequences enter briefly, suggesting the momentum of Part 19 is approaching."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Dissolve",
+          "description": "the texture fragments and disappears, resolving nothing, opening everything."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Oxygène (Part 19)",
+      "duration": "5:45",
+      "energy": "mid",
+      "tags": [
+        "Genesis Track",
+        "Original Atmosphere",
+        "Pre-Finale"
+      ],
+      "role": "Album role: The compositional genesis of the entire album — the piece Jarre wrote during the Electronica 1 sessions that prompted the creation of Oxygène 3. Functions as the penultimate movement, restoring momentum toward the epic finale.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequences recalling original Oxygène atmosphere most directly",
+          "description": "among all the album's tracks, this most closely mirrors the feel of the 1976 original.",
+          "detail": "Its genesis explains this: written first and independently, before the album existed, without the burden of continuation. It is the most freely composed piece here."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Harmonic sequence development",
+          "description": "RMI Harmonic Synthesizer enters with its distinctive timbral colour, bridging all three albums.",
+          "detail": "The RMI Harmonic Synthesizer appears on all three Oxygène albums; its consistent presence is one of the trilogy's sonic through-lines."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Second arpeggiated layer added",
+          "description": "counterpoint between two sequences increases the compositional density measurably."
+        },
+        {
+          "timestamp": "4:05",
+          "section": "Pre-climax build",
+          "description": "all elements approach maximum density before truncation; the energy does not release, it accumulates into Part 20."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Dissolve into wind texture",
+          "description": "atmospheric tail connects directly to the opening of Part 20."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Oxygène (Part 20)",
+      "duration": "7:58",
+      "energy": "mid",
+      "tags": [
+        "Trilogy Closer",
+        "Samples Part VI (1976)",
+        "Epic Finale",
+        "Wind Noise Quotation"
+      ],
+      "role": "Album role: The trilogy's concluding statement — structurally the most complex piece, opening with a direct sample of Oxygène Part VI's wind and white-noise material and building to a full-scale finale that resolves sixty-three combined minutes of sequential music across forty years. The harmonic closure of 1976 is finally completed here.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sampled wind and white-noise from Oxygène Part VI (1976)",
+          "description": "the opening of this track is the closing of the original album, sounded again forty years on.",
+          "detail": "This is not homage but suture: the exact audio material of 1976 is woven into the texture of 2016, collapsing the temporal distance between the two recordings."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "1976 elements integrated into new sequence",
+          "description": "the sampled material begins to interact with new synthesizer voices; history and present operate simultaneously."
+        },
+        {
+          "timestamp": "2:05",
+          "section": "New material builds over historical echo",
+          "description": "the 2016 composition asserts itself fully; the sample becomes substrate rather than subject."
+        },
+        {
+          "timestamp": "4:05",
+          "section": "Full arrangement peak",
+          "description": "the densest textural moment of the album; all instruments present, the trilogy's accumulated harmonic energy at maximum.",
+          "detail": "The only point in Oxygène 3 that justifies comparison to the large-scale climax of Part IV on the 1976 album."
+        },
+        {
+          "timestamp": "6:05",
+          "section": "Harmonic resolution",
+          "description": "the suspended harmonics of the preceding six tracks settle at last; a landing after forty years of open cadences."
+        },
+        {
+          "timestamp": "7:05",
+          "section": "Wind-noise return and final fade",
+          "description": "the atmospheric signature of the entire trilogy resounds one last time; the music returns to breath and air.",
+          "detail": "The structural circle is complete: wind opened the 1976 album, wind closes the 2016 album. Three records, forty years, one atmospheric signature."
+        }
+      ]
+    }
+  ]
+}

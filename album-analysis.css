@@ -52,6 +52,53 @@ body {
   pointer-events: none;
 }
 
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-layout {
+  display: grid;
+  gap: 32px;
+}
+
+.hero-layout.has-cover {
+  align-items: end;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-media {
+  justify-self: end;
+  width: 100%;
+}
+
+.hero-cover-frame {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+    var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow:
+    0 20px 48px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  padding: 10px;
+}
+
+.hero-cover {
+  aspect-ratio: 1 / 1;
+  background: var(--surface2);
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
 .hero h1 {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 600;
@@ -341,6 +388,8 @@ body {
 /* --- Responsive -------------------------------------------- */
 @media (max-width: 600px) {
   .hero { padding: 48px 24px 40px; }
+  .hero-layout.has-cover { grid-template-columns: 1fr; gap: 22px; }
+  .hero-media { justify-self: start; max-width: 220px; }
   .track-header { flex-direction: column; gap: 4px; }
   .track-duration { margin-left: 0; }
   .event { grid-template-columns: 60px 1fr; gap: 10px; }
@@ -460,6 +509,37 @@ body {
   border-color: var(--card-accent, var(--accent));
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
   transform: translateY(-3px);
+}
+
+.ix-card-media {
+  aspect-ratio: 1 / 1;
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--card-accent, var(--accent)) 28%, transparent), transparent 45%),
+    linear-gradient(180deg, var(--surface2), var(--surface));
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  position: relative;
+}
+
+.ix-card-media::after {
+  background: linear-gradient(180deg, transparent, rgba(10, 10, 12, 0.3));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.ix-card-cover {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.22s ease, filter 0.22s ease;
+  width: 100%;
+}
+
+.ix-card:hover .ix-card-cover {
+  filter: saturate(1.04);
+  transform: scale(1.03);
 }
 
 .ix-card-body {

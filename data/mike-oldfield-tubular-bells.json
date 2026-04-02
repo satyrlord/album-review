@@ -1,0 +1,182 @@
+{
+  "id": "mike-oldfield-tubular-bells",
+  "artist": "Mike Oldfield",
+  "title": "Tubular Bells",
+  "year": 1973,
+  "label": "",
+  "producer": "Tom Newman · Simon Heyworth · Mike Oldfield",
+  "genre": "Progressive / Neo-Classical",
+  "runtime": "49:18",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/Mike_oldfield_tubular_bells_album_cover.jpg",
+  "overview": "Tubular Bells is one of the most structurally unusual debut albums in recorded music — a two-track, 49-minute work made almost entirely by one 19-year-old multi-instrumentalist overdubbing himself at The Manor studio in Oxfordshire. The album's organisational logic is cumulative: Part One constructs a complex machine instrument by instrument, announced by Vivian Stanshall's Master of Ceremonies commentary; Part Two dismantles the template and rebuilds it in different registers, incorporating Celtic folk, boogie, and the chaotic \"Piltdown Man\" section. First release on Richard Branson's Virgin Records. Grammy-winning. Used in The Exorcist (1973). 15 million copies sold. The reference architecture for what a solo instrumental rock album could be.\n\nTimestamps are approximate to ±5 seconds across the extended suite format. Instrument entries are Oldfield performing every part.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Tubular Bells, Part One",
+      "duration": "25:30",
+      "energy": "high",
+      "tags": [
+        "Progressive",
+        "Cumulative Build",
+        "15/8 Time Signature",
+        "Multi-Instrument"
+      ],
+      "role": "Album role: The cumulative machine — a single piece in which instruments are introduced one by one over 25 minutes, building from a single piano motif to a full ensemble climax. The \"instruments named\" section is iconic.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Piano motif — the opening theme",
+          "description": "the definitive Tubular Bells riff played on piano in 15/8 time. Two separate voices in an overlapping pattern.",
+          "detail": "Approximately 8 notes in a repeating asymmetric cycle. The odd meter gives the theme its slightly lurching, unstoppable quality. Recorded at The Manor on a grand piano."
+        },
+        {
+          "timestamp": "0:53",
+          "section": "Second piano voice enters",
+          "description": "a lower-register answering pattern joins the opening motif.",
+          "detail": "The overlapping piano voices begin the stacking process. The structure of the entire piece is seeded."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Bass guitar enters",
+          "description": "electric bass sustains the harmonic foundation below the piano lines.",
+          "detail": "The first appearance of a string instrument. Low-end grounding for the accumulating upper layers."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Electric guitar arpeggios",
+          "description": "clean, picked guitar pattern added in the middle-high register.",
+          "detail": "Interlocked with the piano rhythm. The arpeggios fill harmonic space without harmonic conflict."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Mandolin-register guitar pattern",
+          "description": "a plucked, fast higher-register motif joins.",
+          "detail": "Recorded using a guitar played in mandolin register. Adds textural lightness on top of the growing density."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Lowrey organ enters",
+          "description": "sustained organ chords colour the upper frequency band.",
+          "detail": "Oldfield's first use of organ in Part One. Harmonic richness deepens significantly."
+        },
+        {
+          "timestamp": "8:45",
+          "section": "Full arrangement peak — pre-MoC",
+          "description": "multiple layers all active simultaneously. First climactic plateau.",
+          "detail": "The arrangement is at its most \"full\" before Stanshall's introductions begin. A preview of what the completed machine sounds like."
+        },
+        {
+          "timestamp": "13:30",
+          "section": "Vivian Stanshall introduces instruments",
+          "description": "\"Grand piano… plus… mandolin… plus… Spanish guitar… plus… bass guitar… plus… tubular bells!\"",
+          "detail": "Each announcement precedes the re-entry of that instrument into the arrangement. Stanshall's aristocratic delivery transforms a production note into high comedy. The most beloved moment on the record."
+        },
+        {
+          "timestamp": "14:15",
+          "section": "Tubular bells named and struck",
+          "description": "the actual tubular bells instrument appears at last, named last by Stanshall for maximum effect.",
+          "detail": "The album's title instrument doesn't appear until a full 14 minutes into Part One. The delay makes the entry cathartic."
+        },
+        {
+          "timestamp": "18:00",
+          "section": "\"Sailor's Hornpipe\" derivative theme emerges",
+          "description": "a new, faster melodic section grows out of the cycle.",
+          "detail": "The tempo increases perceptibly. The piece enters a more celebratory, folk-derived register."
+        },
+        {
+          "timestamp": "22:15",
+          "section": "Grand finale build",
+          "description": "all elements re-engage for the climactic final section. The stacking mechanism reaches its ceiling.",
+          "detail": "The longest, most sustained peak in Part One. The resolution of 22 minutes of cumulative tension."
+        },
+        {
+          "timestamp": "24:45",
+          "section": "Deconstruction",
+          "description": "layers strip away piece by piece, returning toward the solo piano motif.",
+          "detail": "The machine disassembles in reverse order. Part One ends having demonstrated the full cycle of construction and dissolution."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Tubular Bells, Part Two",
+      "duration": "23:22",
+      "energy": "mid",
+      "tags": [
+        "Progressive",
+        "Folk Elements",
+        "Experimental Mid-Section",
+        "Boogie"
+      ],
+      "role": "Album role: The album's second half — substantially different in character from Part One. More varied in tempo and mood: passes through folk dance, boogie-rock, the avant-garde \"Piltdown Man\" vocal section, and a final resolution that references the Part One material.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Flageolet opening",
+          "description": "a breathy flageolet flute melody opens Part Two. Tonally opposite to the piano-based Part One.",
+          "detail": "The folk instrument choice is deliberate. Part Two begins in a different register — more rural, more Celtic."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Bass and guitar enter",
+          "description": "electric instruments join. More groove-oriented feel than Part One.",
+          "detail": "Part Two's central section has a stronger rock-band sensibility. Oldfield's rhythm section lock is more overt."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Organ and piano layer",
+          "description": "keyboard textures stack in, bringing warmth and harmonic complexity.",
+          "detail": "Building toward a mid-track peak distinctly different in character from Part One's climax."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "First peak — boogie section",
+          "description": "upbeat, almost rock-and-roll groove builds to a driving climax.",
+          "detail": "The most kinetic section of the album. A complete tonal departure from Part One's reflective character."
+        },
+        {
+          "timestamp": "9:15",
+          "section": "\"Piltdown Man\" vocal section",
+          "description": "Oldfield himself delivers the growling, grunting \"Piltdown Man\" cave-man vocal over stripped-down percussion.",
+          "detail": "Three different vocal timbres performed by Oldfield: \"Piltdown Man,\" \"nasty\" cave tones, and the \"Moribund\" chorus. Avant-garde comedy interrupting the suite. Named after the famous archaeological hoax."
+        },
+        {
+          "timestamp": "10:45",
+          "section": "Recovery from Piltdown",
+          "description": "instruments gradually reassert themselves after the vocal passage.",
+          "detail": "The suite reassembles after its most eccentric moment. The transition validates the surrounding seriousness by contrast."
+        },
+        {
+          "timestamp": "12:30",
+          "section": "Sailor's Hornpipe theme",
+          "description": "the jig-like melody from the Part One finale appears transformed and developed.",
+          "detail": "Cross-part thematic connection. The piece is showing its architectural awareness of its own previous material."
+        },
+        {
+          "timestamp": "15:00",
+          "section": "\"Girlie Chorus\"",
+          "description": "Sally Oldfield and Mundy Ellis provide an ensemble vocal texture.",
+          "detail": "The album's only multi-vocal moment. Adds warmth and a brief moment of communal humanity to Oldfield's largely solitary construction."
+        },
+        {
+          "timestamp": "17:30",
+          "section": "Grand finale section",
+          "description": "all elements converge in a final, extended climax. The piece's most orchestrally full moment.",
+          "detail": "Concert timpani is prominent here. The full scope of Oldfield's multi-tracked arrangement reaches its largest configuration."
+        },
+        {
+          "timestamp": "21:00",
+          "section": "Fade toward resolution",
+          "description": "the texture reduces, the energy dissipates, returning toward the opening melodic character.",
+          "detail": "A sense of returning home. The circle closes in the same tonal country where Part One began."
+        },
+        {
+          "timestamp": "23:00",
+          "section": "Final tubular bell strikes",
+          "description": "the album's title instrument delivers the last sounds before silence.",
+          "detail": "Framing device: the striking title instrument bookends the work."
+        }
+      ]
+    }
+  ]
+}

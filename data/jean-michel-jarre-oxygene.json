@@ -1,0 +1,290 @@
+{
+  "id": "jean-michel-jarre-oxygene",
+  "artist": "Jean-Michel Jarre",
+  "title": "Oxygène",
+  "year": 1976,
+  "label": "",
+  "producer": "Jean-Michel Jarre",
+  "genre": "Electronic / Ambient",
+  "runtime": "39:39",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/25/Oxygene_album_cover.jpg",
+  "overview": "Recorded in Jarre's Paris apartment kitchen on Rue de la Trémoille — no studio time, no recording budget, no label commission. Six continuous parts that function as a single atmospheric statement about air, breath, and the texture of space. Key equipment: ARP 2600, EMS Synthi AKS, EMS VCS 3, Farfisa Professional Organ, Eminent 310 Unique (the atmospheric string sound), Korg Mini-Pops 7 drum machine, RMI Harmonic Synthesizer, Mellotron, and Michel Geiss's custom Rhytmi-computer. Produced and mixed with Jean-Pierre Janiaud.\n\nReleased December 1976 on Disques Motors / Polydor (France); initially 50,000 copies given free to hi-fi shops as a demonstration record. Grew to 15–18 million copies worldwide. Oxygène Part IV became the UK hit single. Won the Grand Prix du Disque. Timestamps approximate to ±5 seconds given the continuous-tape nature of the album's original recording.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Oxygène Part I",
+      "duration": "7:39",
+      "energy": "low",
+      "tags": [
+        "Atmospheric Prelude",
+        "ARP 2600",
+        "EMS Synthi AKS"
+      ],
+      "role": "Album role: The album's opening atmospheric statement — establishing the sonic vocabulary before the famous melody of Part II enters. A lesson in patience: seven minutes of textural preparation as compositional discipline.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Atmospheric opening — wind and breath",
+          "description": "near-inaudible textural layer, expanding slowly. Not silence; something breathing.",
+          "detail": "The apartment kitchen becomes infinite space. The entire album's philosophy announced in the first seconds."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Eminent 310 string pad",
+          "description": "the warm, slightly mournful sustained chord enters. The electric organ sound that defines the album's harmonic language.",
+          "detail": "The Eminent 310 Unique is not a synthesizer but an electronic organ with a distinctive string-ensemble sound. Jarre uses it as a harmonic foundation throughout."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "ARP 2600 melodic fragments",
+          "description": "tentative, exploratory. Short phrases that do not yet commit to a theme.",
+          "detail": "The ARP 2600 is a semi-modular analog synthesizer. Jarre patches it for these early melodic gestures — characteristic gliding tones."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Korg Mini-Pops 7 rhythm pattern enters",
+          "description": "discrete, muted. The mechanical heartbeat underneath the organic texture.",
+          "detail": "The Mini-Pops 7 is a preset rhythm machine. Its slightly toy-like, deliberate quality becomes part of Jarre's aesthetic rather than a limitation."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Harmonic development",
+          "description": "the chord progressions begin moving. The static of the opening gives way to motion.",
+          "detail": "The tension of Part I is the question: will the album remain atmospheric or commit to melody? Part II answers."
+        },
+        {
+          "timestamp": "6:45",
+          "section": "Transition to Part II",
+          "description": "the texture prepares for the melodic arrival. A held chord resolves the anticipation.",
+          "detail": "On the original vinyl, this is a continuous tape — no gap between parts. Part I's function is purely to make Part II's entry inevitable."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Oxygène Part II",
+      "duration": "7:49",
+      "energy": "mid",
+      "tags": [
+        "Iconic Melody",
+        "ARP 2600 Sequence",
+        "Side One Centrepiece"
+      ],
+      "role": "Album role: The album's defining statement — the most recognised synthesizer melody of the 1970s. The arpeggiated ARP 2600 sequence over the Eminent 310 chord pad. Where Part I prepared, Part II delivers. The cultural centre of gravity for all electronic music in France.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "The melodic sequence enters",
+          "description": "the famous Oxygène Part II arpeggiated riff. A looping melodic pattern on the ARP 2600 sequencer, immediately recognisable.",
+          "detail": "This single sequence launched an entire genre of electronic music. 1976 France: no precedent for an album-length purely instrumental synthesizer work selling at this scale."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Harmonic movement underneath",
+          "description": "the Eminent 310 pads shift chord, transforming the sequence's emotional character with each change.",
+          "detail": "The genius of Part II: the same sequence sounds completely different as the harmonic foundation moves beneath it."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Additional synthesizer layers",
+          "description": "EMS Synthi AKS provides textural fills and atmospheric colours alongside the main sequence.",
+          "detail": "The Synthi AKS (the briefcase version of the EMS Synthi A) is used for expressive ornamental elements throughout the album."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Melodic variation",
+          "description": "subtle changes in the sequence and harmonic palette. The piece develops without abandoning its central pulse.",
+          "detail": "Repetition-with-development: the minimalist strategy that would define electronic music for decades."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Peak complexity",
+          "description": "maximum number of simultaneous elements. The apartment kitchen reaches its fullest imagined space.",
+          "detail": "All tools of a one-man studio production: bouncing between tape machines, manual fader operation, no automation."
+        },
+        {
+          "timestamp": "7:15",
+          "section": "Fade toward Part III",
+          "description": "the sequence releases. The melody prepared; Part III will reset the palette.",
+          "detail": "Part II is complete as a formal statement. What follows constitutes the more experimental, abstract side of the album."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Oxygène Part III",
+      "duration": "3:16",
+      "energy": "low",
+      "tags": [
+        "Abstract",
+        "Palette Cleanser",
+        "EMS VCS 3"
+      ],
+      "role": "Album role: The album's briefest and most abstract section — an interlude between the two long melodic pieces either side of it. A palette-cleaning exploration using the EMS VCS 3's most unpredictable tonal qualities.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "EMS VCS 3 experiment",
+          "description": "unusual timbres, pitch-unstable tones. The most avant-garde moment on the album.",
+          "detail": "The VCS 3 is a British analog synthesizer known for its unpredictable, wobbly oscillators — Jarre uses this instability as a feature."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Mid-section abstract textures",
+          "description": "no melody, no conventional rhythm. Pure sound exploration.",
+          "detail": "The shortest piece on the album is its most experimental. Its function is contrast. Side One ends here before the flip."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Transition to side boundary",
+          "description": "the section dissolves. Original vinyl Side One ends after Part III.",
+          "detail": "Side Two opens with Part IV — immediately establishing a new character. The palindromic structure of the album places its two most melodic pieces (II and IV) as the outer frame of the abstract centre."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Oxygène Part IV",
+      "duration": "4:14",
+      "energy": "mid",
+      "tags": [
+        "UK Hit Single",
+        "Sequencer Pulse",
+        "Most Accessible"
+      ],
+      "role": "Album role: The UK hit single and the album's most commercially accessible piece — the signature hi-hat pattern and driving sequencer pulse make this the most \"pop\" moment. Its relative brevity (only 4:14 among the longer album sections) gives it a focused, single-like economy of form.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Driving hi-hat pattern — Side Two opens with momentum",
+          "description": "the Korg Mini-Pops 7 provides a continuous eighth-note hi-hat pulse. The album's most rhythmically propulsive opening.",
+          "detail": "Compared to Part I's patient atmospheric build, Part IV arrives briskly and purposefully. Side Two makes different demands on the listener — more kinetic."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "The Part IV melody enters",
+          "description": "a different melodic vocabulary from Part II. More chromatic, slightly unsettling but still highly listenable.",
+          "detail": "The melody that became the UK single in 1977. Its recognisability is distinct from Part II's sequence — more explicitly contoured as a tune."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Harmonic elaboration",
+          "description": "the chord sequence under the melody adds depth. RMI Harmonic Synthesizer contributes to the harmonic texture.",
+          "detail": "The RMI Harmonic Synthesizer is an electromechanical instrument — interesting timbral texture between organ and synthesizer."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Full arrangement, compositional peak",
+          "description": "Part IV's complete production at its densest. The hit single earning its status.",
+          "detail": "Chart position UK #65 on its original 1977 release — remarkable for an entirely instrumental electronic piece by a French composer."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Gradual reduction",
+          "description": "the driving pulse eases. Part IV resolves cleanly before Part V's extended atmosphere.",
+          "detail": "Part IV delivers the most compressed formal package on the album. Parts V and VI expand time again."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Oxygène Part V",
+      "duration": "10:23",
+      "energy": "mid",
+      "tags": [
+        "Longest Track",
+        "Mellotron",
+        "Evolving Panorama"
+      ],
+      "role": "Album role: The album's most expansive and diverse single section — over ten minutes traversing multiple textural territories. Part V contains the album's widest range of moods: meditative, urgent, ethereal, mechanical, and vast. The Mellotron appears here with its characteristic choral/orchestral illusion.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Expansive atmospheric opening",
+          "description": "after Part IV's focused economy, Part V spreads outward. Wide synth pads, unhurried.",
+          "detail": "The longest track earns its length by exploring what the shorter pieces could only suggest."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Mellotron enters",
+          "description": "the strings/choir tape-replay instrument adds an orchestral warmth uniquely associated with 1970s progressive music.",
+          "detail": "The Mellotron plays pre-recorded orchestral samples from tape — each key triggers a different tape strip. The result is recognisably artificial but hauntingly humanistic."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Rhythmic pulse develops",
+          "description": "the Korg Mini-Pops reappears with a different pattern. The piece gains forward momentum.",
+          "detail": "Multiple tempo zones within a single long section — the piece breathes differently in different moments."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Mid-section climax",
+          "description": "the longest section reaches its highest intensity at midpoint. Multiple synthesizer voices active simultaneously.",
+          "detail": "The cumulative density effect unique to Part V. No other section on the album sustains this much material for so long."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Deconstruction",
+          "description": "elements remove themselves one by one. Long release into texture.",
+          "detail": "The reverse of the opening build — a slow withdrawal. Jarre respects the listener's need for space."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Late-section re-emergence",
+          "description": "a final melodic gesture, quieter, reflective.",
+          "detail": "The piece finds a different character in its final two minutes — more inward, preparing for Part VI's elegant conclusion."
+        },
+        {
+          "timestamp": "9:45",
+          "section": "Transition to Part VI",
+          "description": "the texture releases. The album's penultimate movement.",
+          "detail": "Part V has covered the most ground. Part VI is the resolved, graceful landing."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Oxygène Part VI",
+      "duration": "6:20",
+      "energy": "low",
+      "tags": [
+        "Closing Statement",
+        "Graceful Resolution",
+        "Harmonic Completion"
+      ],
+      "role": "Album role: The album's final statement — graceful, spacious, and harmonically resolving. Part VI returns to the atmospheric patience of Part I but now enriched by everything that has passed. The breath entering the body at the start now exhales fully.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Atmospheric resolution opens",
+          "description": "unhurried, spacious. The album's accumulated tension releases into open sonic space.",
+          "detail": "The final section mirrors the opening — both are atmospheric and melodically restrained. But Part VI carries all the preceding music's emotional weight."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Melodic farewell gesture",
+          "description": "a long, slow melodic line on a synthesizer voice. Not the urgency of Part II or IV — contemplative departure.",
+          "detail": "The final melody of the album is its most resigned and beautiful. There is no need to assert anything — the album has already said what it needed to say."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Part VI's single peak",
+          "description": "modest by Part V's standards but emotionally fulfilling as a culminating gesture.",
+          "detail": "The restraint of Part VI's peak is the point. This is the exhale after six parts of intake."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Final dissolution",
+          "description": "the last notes extend into silence. The synthesizers thin one by one.",
+          "detail": "The air of the album's title disperses back into the atmosphere from which it was summoned. Circular structure: begins in near-silence, ends in near-silence."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Album ends in silence",
+          "description": "the last tone fades.",
+          "detail": "15–18 million copies worldwide. Grand Prix du Disque. Recorded alone in a Paris apartment. The silence at the end contains all of that."
+        }
+      ]
+    }
+  ]
+}

@@ -5,16 +5,17 @@
  * Steps:
  *   1. TypeScript typecheck (tsc --noEmit)
  *   2. Markdownlint across all .md files
- *   3. Album consistency — every file in albums.js exists on disk,
- *      and every *-structural-analysis.html on disk is declared in albums.js
+ *   3. Data consistency — every data/*.json file is self-consistent,
+ *      and data/index.json is regenerated from those files
  *
  * Run: npm run build
  */
 
 import { execSync } from "child_process";
-import { existsSync, readFileSync, readdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+
+import { expectedAlbumId, readAlbumDataDir, writeAlbumIndexFile } from "../album-index.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -66,23 +67,36 @@ step("Markdownlint", () => {
   }
 });
 
-// ── 3. Album consistency ──────────────────────────────────────────
-step("Albums consistency", () => {
-  const albumsJs = readFileSync(join(ROOT, "albums.js"), "utf-8");
-
-  const declared = [...albumsJs.matchAll(/file:\s*'([^']+\.html)'/g)].map(m => m[1]);
-  const onDisk   = readdirSync(ROOT).filter(f => f.endsWith("-structural-analysis.html"));
-
-  const missingOnDisk = declared.filter(f => !existsSync(join(ROOT, f)));
-  const undeclared    = onDisk.filter(f => !declared.includes(f));
-
+// ── 3. Data consistency ───────────────────────────────────────────
+step("Data folder consistency", () => {
+  const dataDir = join(ROOT, "data");
+  const records = readAlbumDataDir(dataDir);
+  const seenIds = new Set<string>();
   const issues: string[] = [];
-  if (missingOnDisk.length)
-    issues.push(`Declared in albums.js but file missing:\n      ${missingOnDisk.join("\n      ")}`);
-  if (undeclared.length)
-    issues.push(`HTML files not listed in albums.js:\n      ${undeclared.join("\n      ")}`);
 
-  if (issues.length) throw new Error(issues.join("\n  "));
+  for (const record of records) {
+    const expectedId = expectedAlbumId(record.fileName);
+    const album = record.album;
+
+    if (album.id !== expectedId) {
+      issues.push(`${record.fileName}: id must be \"${expectedId}\", got \"${album.id}\"`);
+    }
+
+    if (seenIds.has(album.id)) {
+      issues.push(`${record.fileName}: duplicate album id \"${album.id}\"`);
+    }
+    seenIds.add(album.id);
+
+    if (!String(album.artist || "").trim()) issues.push(`${record.fileName}: artist is required`);
+    if (!String(album.title || "").trim()) issues.push(`${record.fileName}: title is required`);
+    if (!Array.isArray(album.tracks) || album.tracks.length === 0) {
+      issues.push(`${record.fileName}: tracks must be a non-empty array`);
+    }
+  }
+
+  if (issues.length) throw new Error(issues.join("\n      "));
+
+  writeAlbumIndexFile(dataDir);
 });
 
 // ── Result ────────────────────────────────────────────────────────

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "jean-michel-jarre-oxygene",
+    "artist": "Jean-Michel Jarre",
+    "title": "Oxygène",
+    "year": 1976,
+    "tracks": 6,
+    "genre": "Electronic / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/25/Oxygene_album_cover.jpg"
+  },
+  {
+    "id": "jean-michel-jarre-equinoxe",
+    "artist": "Jean-Michel Jarre",
+    "title": "Equinoxe",
+    "year": 1978,
+    "tracks": 8,
+    "genre": "Electronic / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Equinoxe_Jarre_Album.jpg"
+  },
+  {
+    "id": "jean-michel-jarre-magnetic-fields",
+    "artist": "Jean-Michel Jarre",
+    "title": "Les Chants Magnétiques",
+    "year": 1981,
+    "tracks": 5,
+    "genre": "Electronic / New Wave",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Magnetic_Fields_Jarre_Album.jpg"
+  },
+  {
+    "id": "jean-michel-jarre-oxygene-7-13",
+    "artist": "Jean-Michel Jarre",
+    "title": "Oxygène 7–13",
+    "year": 1997,
+    "tracks": 7,
+    "genre": "Electronic / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/43/Oxygene_7-13_album_cover.jpg"
+  },
+  {
+    "id": "jean-michel-jarre-oxygene-3",
+    "artist": "Jean-Michel Jarre",
+    "title": "Oxygène 3",
+    "year": 2016,
+    "tracks": 7,
+    "genre": "Electronic / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/f/f5/Oxygene3.jpg"
+  },
+  {
+    "id": "mike-oldfield-tubular-bells",
+    "artist": "Mike Oldfield",
+    "title": "Tubular Bells",
+    "year": 1973,
+    "tracks": 2,
+    "genre": "Progressive / Neo-Classical",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/Mike_oldfield_tubular_bells_album_cover.jpg"
+  },
+  {
+    "id": "mike-oldfield-tubular-bells-ii",
+    "artist": "Mike Oldfield",
+    "title": "Tubular Bells II",
+    "year": 1992,
+    "tracks": 14,
+    "genre": "New Age / Progressive",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/Mike_oldfield_tubular_bells_2_album_cover.jpg"
+  },
+  {
+    "id": "mike-oldfield-tubular-bells-iii",
+    "artist": "Mike Oldfield",
+    "title": "Tubular Bells III",
+    "year": 1998,
+    "tracks": 11,
+    "genre": "New Age / Electronic",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/65/Mike_oldfield_tubular_bells_iii_album_cover.jpg"
+  },
+  {
+    "id": "the-prodigy-music-for-the-jilted-generation",
+    "artist": "The Prodigy",
+    "title": "Music for the Jilted Generation",
+    "year": 1994,
+    "tracks": 13,
+    "genre": "Electronic / Rave",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/8/86/TheProdigy-MusicForTheJiltedGeneration.jpg"
+  },
+  {
+    "id": "the-prodigy-fat-of-the-land",
+    "artist": "The Prodigy",
+    "title": "The Fat of the Land",
+    "year": 1997,
+    "tracks": 10,
+    "genre": "Electronic / Big Beat",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/3/3b/TheProdigy-TheFatOfTheLand.jpg"
+  },
+  {
+    "id": "vangelis-voices",
+    "artist": "Vangelis",
+    "title": "Voices",
+    "year": 1995,
+    "tracks": 9,
+    "genre": "Electronic / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/8/86/Vangelis_voices.jpg"
+  }
+]

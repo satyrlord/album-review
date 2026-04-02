@@ -1,0 +1,521 @@
+{
+  "id": "mike-oldfield-tubular-bells-ii",
+  "artist": "Mike Oldfield",
+  "title": "Tubular Bells II",
+  "year": 1992,
+  "label": "",
+  "producer": "Trevor Horn · Tom Newman · Mike Oldfield",
+  "genre": "New Age / Progressive",
+  "runtime": "58:34",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/Mike_oldfield_tubular_bells_2_album_cover.jpg",
+  "overview": "Tubular Bells II arrived 19 years after the original — a deliberate sequel that honours its predecessor's architecture while applying high-budget 1990s production (Trevor Horn, the most technically perfectionist producer of the era). The album's 14 tracks abandon the original's continuous-suite format in favour of shorter, individually titled pieces, each named after or referencing Arthur C. Clarke short stories and concepts. Alan Rickman performs the Master of Ceremonies role in homage to Vivian Stanshall. The album reached UK #1 and sold 2 million copies — a reunion between Oldfield and the record-buying public that his experimental 1980s output never achieved.\n\nTrack titles reference Arthur C. Clarke stories: \"Sentinel\" (precursor to 2001: A Space Odyssey), \"Sunjammer\" (solar sail story), among others. Timestamps approximate to ±5 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Sentinel",
+      "duration": "8:07",
+      "energy": "high",
+      "tags": [
+        "Epic Opener",
+        "Arthur C. Clarke Ref.",
+        "Multi-Phase"
+      ],
+      "role": "Album role: The opening statement — eight minutes that echo the original Part One's cumulative logic but in a darker, more cinematic production register. \"The Sentinel\" was Clarke's 1948 story that became 2001: A Space Odyssey.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Atmospheric opening",
+          "description": "low synth drone and processed bell texture. Space music inheritance.",
+          "detail": "Trevor Horn's production fingerprint is immediately audible — the low end is deeper and more controlled than the 1973 original."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Guitar motif introduces itself",
+          "description": "a transformed version of the original Tubular Bells piano theme, now on guitar. Immediately recognisable but distinctly contemporary.",
+          "detail": "Oldfield playing the famous cycle on guitar. The recontextualisation is the album's central gesture in its opening bars."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Bass and drums enter",
+          "description": "a heavier, more produced rhythm section than the original's live feel.",
+          "detail": "1990s production values: tighter gate on snare, deeper sub bass, more precisely edited samples."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Orchestral elements introduced",
+          "description": "string-pad textures and synthesised orchestral colours join.",
+          "detail": "Horn's orchestral production expertise applied to Oldfield's instrumental palette."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "First major peak",
+          "description": "all elements converge. Tubular bells themselves strike.",
+          "detail": "The actual bells are introduced earlier here than in the original — a knowing reversal of the 1973 deferred-entry strategy."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Breakdown",
+          "description": "texture reduces to bell and atmospheric pad.",
+          "detail": "Brief decompression before the final section."
+        },
+        {
+          "timestamp": "6:50",
+          "section": "Final build and resolution",
+          "description": "guitar theme restated fully. Track ends in brightness rather than drama.",
+          "detail": "The 8-minute opener closes on an affirmative note — contrast with the ominous drone that began it."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Dark Star",
+      "duration": "2:16",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Atmospheric"
+      ],
+      "role": "Album role: A dark atmospheric bridge — brief but tonally significant. Provides a shadow contrast after Sentinel's light-filled resolution.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Dark synth texture",
+          "description": "low, rumbling processed sound. Minimal harmonic movement.",
+          "detail": "The title is accurate. A brief sonic night between two longer pieces."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Melodic fragment",
+          "description": "a brief, elusive guitar or keyboard melody crosses the soundscape.",
+          "detail": "More texture than structure. The track is a mood carrier rather than a statement."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Fade toward Clear Light",
+          "description": "texture disperses, creating an entry point for the next piece.",
+          "detail": "Transitional function: tonal preparation for the brightness of \"Clear Light.\""
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Clear Light",
+      "duration": "5:48",
+      "energy": "mid",
+      "tags": [
+        "Melodic",
+        "New-Age",
+        "Pastoral"
+      ],
+      "role": "Album role: Tonal renewal after Dark Star — an open, melodically generous piece that expands the register upwards. One of the album's warmest-sounding tracks.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Guitar melody — open, daylit tone",
+          "description": "clean electric guitar carrying the primary melodic line.",
+          "detail": "Immediate tonal contrast with Dark Star. The title is earned in the opening bar."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Synth pad joins",
+          "description": "warm, sustained synthesiser texture fills the harmonic background.",
+          "detail": "Layering process begins — less accumulated than Sentinel, more focused."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Rhythmic element enters",
+          "description": "light percussion joins, giving the track forward momentum.",
+          "detail": "The rhythm here is understated — more floating than driving."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Melodic resolution",
+          "description": "the primary guitar line completes its arc and fades.",
+          "detail": "No dramatic climax. A pastoral piece that fulfils its brief and steps aside."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Blue Saloon",
+      "duration": "2:59",
+      "energy": "low",
+      "tags": [
+        "Jazz-Influenced",
+        "Intimate"
+      ],
+      "role": "Album role: An unexpected tonal pocket — jazz-inflected and low-lit, with a nightclub intimacy entirely unlike the album's grand progressive sequences. Palette cleanser.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intimate piano opening",
+          "description": "solo or near-solo piano with a bluesier, more jazz-adjacent harmonic vocabulary than elsewhere on the album.",
+          "detail": "The most harmonically relaxed moment on either side of the album. A brief tonal holiday."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Bass and percussion join lightly",
+          "description": "rhythm section enters at low intensity.",
+          "detail": "The groove is loose rather than locked. Very different feel from Sentinel's precision production."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Fade out",
+          "description": "the saloon empties. Transitional function toward Sunjammer's propulsion.",
+          "detail": "The track ends before outstaying its welcome — a lesson in brevity that Part One did not follow."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Sunjammer",
+      "duration": "2:32",
+      "energy": "mid",
+      "tags": [
+        "Arthur C. Clarke Ref.",
+        "Propulsive"
+      ],
+      "role": "Album role: Named after Clarke's 1964 story about solar sail racing — a brief but propulsive piece that embodies the sailing-through-space concept in its forward momentum.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Propulsive rhythm entrance",
+          "description": "beat and harmonic movement start together, no preamble.",
+          "detail": "The brevity of the track demands immediate rhythm. No time for introductions."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Melodic development",
+          "description": "a flowing melodic line traces an arc over the rhythm.",
+          "detail": "The \"sailing\" quality in the melody's contour — rising, arcing, forward-moving."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Resolution and cutoff",
+          "description": "track ends cleanly.",
+          "detail": "The Side 1 interlude sequence (Dark Star, Clear Light, Blue Saloon, Sunjammer) has completed its tonal tour."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Red Dawn",
+      "duration": "1:50",
+      "energy": "low",
+      "tags": [
+        "Transitional",
+        "Ominous"
+      ],
+      "role": "Album role: The shortest track — a dark transitional piece setting up \"The Bell.\" The colour red in the title signals danger, dawn as threshold.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Low, ominous texture",
+          "description": "dark synth layer, slowly moving.",
+          "detail": "The album is preparing for its Side 1 centrepiece. Red Dawn is the approaching horizon."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Rising tension",
+          "description": "slow melodic ascent, harmonic tension unresolved at track end.",
+          "detail": "The unresolved ending bridges directly into the moment The Bell strikes."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "The Bell",
+      "duration": "6:59",
+      "energy": "high",
+      "tags": [
+        "Side 1 Centrepiece",
+        "Alan Rickman MoC",
+        "Tubular Bell Climax"
+      ],
+      "role": "Album role: The Side 1 summit — Alan Rickman's Master of Ceremonies announcement followed by the tubular bells themselves in a climactic sequence that directly mirrors the original album's central ceremonial moment.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Continuation from Red Dawn",
+          "description": "the tension from the previous track resolves into The Bell's opening.",
+          "detail": "Seamless carry-over. The album's Side 1 structural logic is fully apparent here."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Full arrangement building",
+          "description": "instrumentation accumulates toward the announcement moment.",
+          "detail": "The same cumulative architecture as Part One, compressed into seven minutes."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Alan Rickman as \"A Strolling Player\"",
+          "description": "delivers the instrument-naming ceremony in his measured, theatrical voice.",
+          "detail": "Rickman's version is simultaneously reverent and self-aware. The ceremony is the same; the knowing quality is 1992."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Tubular bells — triumphant entry",
+          "description": "Oldfield strikes the bells as they are named. The album's most cathartic single moment.",
+          "detail": "The payoff of the entire Side 1 structural setup. Six tracks have been building toward this bell strike."
+        },
+        {
+          "timestamp": "6:15",
+          "section": "Resolution — Side 1 closes",
+          "description": "full arrangement descends to a clean ending.",
+          "detail": "Side 1 ends definitively. Tracks 1–7 form a complete arc from Sentinel's introduction to The Bell's climax."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Weightless",
+      "duration": "5:43",
+      "energy": "low",
+      "tags": [
+        "Floating",
+        "New-Age",
+        "Female Vocal"
+      ],
+      "role": "Album role: Side 2 opener — floated on the album's lightest production. Female vocal textures (Bradshaw, Lehmann, Melvoin) establish a new register for the album's second half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Aerial synth texture",
+          "description": "high-register pads, no downward pull. The gravity of the first side has been released.",
+          "detail": "The title is the concept and the production approach simultaneously."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Female vocals enter",
+          "description": "wordless or semi-wordless, used as tonal instruments.",
+          "detail": "Sally Bradshaw, Edie Lehmann and Susannah Melvoin. The harmonics lift the piece further from the earth."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Oldfield guitar joins",
+          "description": "melodic guitar line weaves through the vocal texture.",
+          "detail": "Call and response between guitar and voice. Intimate despite the broad production."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Gradual dissolution",
+          "description": "elements fade at different rates, maintaining the weightless quality to the end.",
+          "detail": "The track earns its title by never landing. The fade is itself the concept."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "The Great Plain",
+      "duration": "4:47",
+      "energy": "mid",
+      "tags": [
+        "Landscape",
+        "Expansive"
+      ],
+      "role": "Album role: Horizontal, landscape music — a wide vista piece that maps physical space in sound. Side 2's most geographically conceived track.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Wide synth horizon",
+          "description": "broad, panning pad establishes a sense of open space.",
+          "detail": "The stereo field is used maximally. The plain is audible in the width of the production."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Melodic guitar wandering",
+          "description": "a non-repeating melodic line traverses the harmonic plain.",
+          "detail": "The melody moves without urgency — a traveller rather than a racing horse."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Rhythmic engagement",
+          "description": "light percussion gives the piece forward drive without compromising its spaciousness.",
+          "detail": "Just enough rhythm to sustain interest across the track's nearly five-minute length."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Horizon fade",
+          "description": "the landscape recedes behind the listener.",
+          "detail": "Ends without drama. The plain simply extends beyond the track's boundary."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Sunset Door",
+      "duration": "2:23",
+      "energy": "low",
+      "tags": [
+        "Transitional",
+        "Dusk"
+      ],
+      "role": "Album role: A brief chromatic pivot — dusk entering the album before the more complex Tattoo and Altered State arrive.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Warm, fading texture",
+          "description": "amber-toned synth and guitar. The sonic equivalent of last daylight.",
+          "detail": "The atmospheric colour is warmer and lower than the Great Plain's cold expansiveness."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Door closes",
+          "description": "texture fades to near-silence before Tattoo opens.",
+          "detail": "Threshold piece. The naming — \"door\" — implies transition rather than destination."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Tattoo",
+      "duration": "4:15",
+      "energy": "mid",
+      "tags": [
+        "Folk-Influenced",
+        "Celtic Colour"
+      ],
+      "role": "Album role: Folk elements reintroduce themselves — Oldfield's Celtic lineage resurfaces on Side 2, recalling the flageolet-based opening of Tubular Bells Part Two.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Folk instrument texture",
+          "description": "melodic passage with a Celtic folk character. Tonal warmth.",
+          "detail": "The connection to Part Two of Tubular Bells (1973) is deliberate — a genealogical reference."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Rhythm and harmony develop",
+          "description": "percussion joins, harmonic layers accumulate through the piece's second half.",
+          "detail": "The growth arc is compressed but recognisable as Oldfield's signature strategy."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Peak moment",
+          "description": "full arrangement briefly. The piece's most energised point.",
+          "detail": "The peak is modest by Side 1 standards — Tattoo is a mid-register contribution, not a climax."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Folk fade",
+          "description": "elements thin. Transition toward \"Altered State.\"",
+          "detail": "The album is building toward its final two significant pieces."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Altered State",
+      "duration": "5:12",
+      "energy": "high",
+      "tags": [
+        "Live Drums",
+        "John Robinson",
+        "Drive"
+      ],
+      "role": "Album role: The album's most rhythm-forward track — John Robinson's live drum performance (the album's only significant outside contribution) drives the piece with extraordinary precision. The \"altered state\" of the title is tonal: the album's clearest departure from the progressive template.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Live drum kit launches immediately",
+          "description": "John Robinson's performance is audibly human. The groove is warm and forward-leaning.",
+          "detail": "Robinson brings a funk-session player's sensibility to the progressive context. Different feel from the rest of the album."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Oldfield guitar joins the rhythm section",
+          "description": "riff-based guitar over the live drums. Rock feel.",
+          "detail": "The combination of live drums and electric guitar riff is the closest the album comes to conventional rock structure."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Full arrangement peak",
+          "description": "the track's core groove at maximum density. The album's most viscerally driving moment.",
+          "detail": "Trevor Horn's production amplifies the live quality here rather than over-processing it."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Rhythmic breakdown",
+          "description": "drums reduce; melodic elements sustain.",
+          "detail": "~20 seconds. The live feel is maintained even at reduced density."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Final drive",
+          "description": "full groove restored for the closing passage.",
+          "detail": "The track ends with the same forward momentum it opened with."
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "Maya Gold",
+      "duration": "4:01",
+      "energy": "mid",
+      "tags": [
+        "Melodic",
+        "Warm",
+        "Pre-Finale"
+      ],
+      "role": "Album role: A warm, golden-register piece — the last melodic statement before the brief coda. The title's \"gold\" is expressed through the tonal warmth of the arrangement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Harmonically rich opening",
+          "description": "layered melodic instruments in warm acoustic registers.",
+          "detail": "The saturation of timbres here gives the track its \"gold\" quality."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Production layers accumulate",
+          "description": "gentle stacking toward the track's peak.",
+          "detail": "The accumulation is textural rather than rhythmic — adding harmonic richness rather than energy."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Melodic peak",
+          "description": "the track's most harmonically complete moment.",
+          "detail": "A warm climax that prepares the listener for Moonshine's coda function."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Gentle close",
+          "description": "the warmth dims toward Moonshine.",
+          "detail": "A gracious, unhurried exit from the album's penultimate full piece."
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "Moonshine",
+      "duration": "1:42",
+      "energy": "low",
+      "tags": [
+        "Coda",
+        "Closing",
+        "Bagpipes"
+      ],
+      "role": "Album role: The album's closing coda — brief, luminous, and anchored by bagpipes from the Celtic Bevy Band / LAPD Pipe Band. A final salute before silence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Bagpipes enter",
+          "description": "the Celtic Bevy Band / LAPD Pipe Band. The album's most unexpected final timbral choice.",
+          "detail": "Bagpipes were a feature of the original Tubular Bells. Their return here as the album's closing instrument is a genealogical bow."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Final melodic statement",
+          "description": "a brief, hymn-like passage. The album's last musical gesture.",
+          "detail": "Luminous rather than triumphant. The moonshine quality is quiet, reflected light rather than the sun."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Final fade",
+          "description": "the pipes fade to silence. The album ends.",
+          "detail": "58 minutes of music closes with Celtic stillness."
+        }
+      ]
+    }
+  ]
+}

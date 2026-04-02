@@ -2,16 +2,19 @@
 
 ## Project Purpose
 
-This workspace contains AI-assisted structural analysis notes for albums, rendered as lightweight static HTML files sharing a single central stylesheet.
+This workspace contains AI-assisted structural analysis notes for albums, rendered as a lightweight static web app backed by JSON data files and a single shared stylesheet.
 
 ## File Structure
 
 ```text
-album-analysis.css                                                 ← shared styles (single source of truth)
-<artist>-<album-slug>-structural-analysis.html  ← one file per album (data only)
+album-analysis.css          ← shared styles (single source of truth)
+index.html / index.ts       ← album index UI, driven by data/index.json
+album.html / album.ts       ← album detail UI, driven by data/<id>.json
+data/<id>.json              ← source of truth for each album
+data/index.json             ← generated summary index derived from data/*.json (do not edit manually)
 ```
 
-No build system, no package manager. Open any HTML file directly in a browser.
+There is lightweight tooling in TypeScript. Run `npm run build` after changing album data so generated browser files and `data/index.json` stay in sync.
 
 ## Language Constraints
 
@@ -96,6 +99,8 @@ Additional tags (no modifier class) describe genre, technique, mood, or signific
 ## Editing Guidelines
 
 - **Central stylesheet only**: all CSS lives in `album-analysis.css`. Do not add `<style>` blocks or inline `style=` attributes to any HTML file; do not introduce additional external stylesheets or JS files.
+- **Album data lives in `data/<id>.json` only**: do not add album metadata to root-level manifests or duplicate it outside `data/`.
+- **`data/index.json` is generated**: never hand-edit it; regenerate it via `npm run build` or the scaffolder.
 - **Adding new shared styles**: if a new component or rule is needed across files, add it to `album-analysis.css` — never duplicate it per-file.
 - **Dark theme is non-negotiable**: never add light-mode rules or override color variables.
 - **Add tracks in sequence** using the established `.track` markup; increment `.track-num` in two-digit zero-padded format (01, 02 …).
@@ -104,24 +109,9 @@ Additional tags (no modifier class) describe genre, technique, mood, or signific
 
 ## Extending the Project
 
-### HTML boilerplate for a new album
-
-Every HTML file must follow this `<head>` structure — no inline styles, just a single link to the shared stylesheet:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Structural Analysis — Artist · Album Title (Year)</title>
-<link rel="stylesheet" href="album-analysis.css">
-</head>
-```
-
 ### Steps to create a new analysis
 
-1. Create `<artist>-<album-slug>-structural-analysis.html` using the boilerplate `<head>` above.
-2. Update `<title>`, `.hero h1`, and `.hero .subtitle`.
-3. Populate all `.track` sections with the new album's tracks.
-4. If the album warrants a distinct visual identity, override only the relevant CSS custom properties in a **single** `<style>` block scoped to that file — document the change here. This is the one exception to the no-inline-style rule.
+1. Create or update `data/<id>.json`, or scaffold it with `npx tsx add_album.ts "Artist" "Album" YEAR --genre "..."`.
+2. Keep `id` equal to the filename slug and store optional cover art in `coverUrl` inside that JSON.
+3. Populate all tracks, roles, tags, and timeline events in the JSON structure defined by `album-schema.ts`.
+4. Run `npm run build` to regenerate `data/index.json`, `index.js`, and `album.js`.

@@ -10,10 +10,12 @@ Deep-listening notes for albums — track-by-track timestamp breakdowns covering
 
 | File | Purpose |
 | ------ | --------- |
-| `index.html` | Album index — filterable card grid, reads `albums.js` |
-| `albums.js` | Data manifest — the **only** file to edit when adding an album |
+| `index.html` | Album index — filterable card grid, fetches `data/index.json` |
+| `album.html` | Dynamic album detail page, fetches `data/<id>.json` |
+| `data/<id>.json` | Source of truth for each album analysis |
+| `data/index.json` | Generated album summary index derived from `data/*.json` |
 | `album-analysis.css` | Shared stylesheet — single source of truth for all design tokens and components |
-| `<artist>-<album-slug>-structural-analysis.html` | One file per album — data only, no inline CSS |
+| `add_album.ts` | MusicBrainz/Wikipedia scaffolder for new album JSON files |
 
 ## Albums Covered
 
@@ -34,39 +36,20 @@ Deep-listening notes for albums — track-by-track timestamp breakdowns covering
 
 ## Adding a New Album
 
-**Step 1 — Create the HTML analysis file.**
+The only source of truth is `data/<id>.json`.
 
-Filename convention: `<artist-slug>-<album-slug>-structural-analysis.html`
+1. Create a new album JSON directly, or use the scaffold with `npx tsx add_album.ts "Artist Name" "Album Title" YEAR --genre "Genre / Subgenre"`.
 
-Every file must start with this `<head>` — no inline styles:
+2. Ensure the JSON includes the album metadata, overview, track analysis, and optional `coverUrl`.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Structural Analysis — Album Title</title>
-<link rel="stylesheet" href="album-analysis.css">
-</head>
-```
+3. Run the quality gate with `npm run build` to regenerate browser artifacts and `data/index.json`.
 
-**Step 2 — Register it in `albums.js`.**
+4. Verify locally with `npm run serve`.
 
-Add one object to the `window.ALBUMS` array:
+Then open:
 
-```js
-{
-  file:   'artist-album-structural-analysis.html',
-  artist: 'Artist Name',
-  title:  'Album Title',
-  year:   2024,
-  tracks: 10,
-  genre:  'Genre / Subgenre'
-}
-```
-
-That's it. `index.html` picks it up automatically — no other changes required.
+- `http://127.0.0.1:3000/index.html`
+- `http://127.0.0.1:3000/album.html?id=<id>`
 
 ---
 
@@ -105,7 +88,9 @@ Exactly one per track, placed first in `.track-tags`:
 
 ## Deployment
 
-The site deploys automatically to GitHub Pages on every push to `main` via `.github/workflows/deploy.yml`. No build step — static files are served directly from the repository root.
+The site deploys automatically to GitHub Pages on every push to `main` via `.github/workflows/deploy.yml`.
+
+Because Pages serves committed static files directly, run `npm run build` before pushing so `index.js`, `album.js`, and `data/index.json` stay in sync with `data/*.json`.
 
 To enable for a new fork:
 

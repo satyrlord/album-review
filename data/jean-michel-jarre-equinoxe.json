@@ -1,0 +1,342 @@
+{
+  "id": "jean-michel-jarre-equinoxe",
+  "artist": "Jean-Michel Jarre",
+  "title": "Equinoxe",
+  "year": 1978,
+  "label": "",
+  "producer": "Jean-Michel Jarre",
+  "genre": "Electronic / Ambient",
+  "runtime": "39:02",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Equinoxe_Jarre_Album.jpg",
+  "overview": "Equinoxe is a conceptual day cycle — eight parts mapping the progression from pre-dawn to late night. Recorded again in Jarre's Paris apartment, it expands the Oxygène palette with new equipment: Yamaha CS-60 (the warm polysynth central to the daytime sections), Oberheim Polyphonic synthesizer, Geiss Matrisequencer 250 (an upgraded sequencer from the Rhytmi-computer), Korg KR 55 (more sophisticated drum machine than the Mini-Pops 7), and EMS Vocoder 1000. Same recording team: Jarre, Michel Geiss on technical assistance, Jean-Pierre Janiaud on engineering.\n\nUsed in Carl Sagan's Cosmos (1980). A 1 million–person audience attended the Place de la Concorde concert in July 1979. UK #11, France #1. ~3 million worldwide. Part 4 is the midday peak; Part 7 is the longest track (7:24) and the album's most cinematic piece. Timestamps approximate to ±5 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Equinoxe Part 1",
+      "duration": "2:23",
+      "energy": "low",
+      "tags": [
+        "Pre-Dawn",
+        "EMS Synthi AKS",
+        "Concept: Day Cycle"
+      ],
+      "role": "Album role: Pre-dawn awakening — the album at its most still and dark. Two minutes of the night before the day begins. Its brevity is the point: night doesn't need long to establish itself when the entire album is about what follows it.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Night-register texture",
+          "description": "dark, sparse. The day has not yet begun.",
+          "detail": "The EMS Synthi AKS provides the deep, unstable textures of pre-dawn — not peaceful but not yet alert. The hinge between night and morning."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "First faint melodic suggestion",
+          "description": "a thin, distant sound. Something approaching.",
+          "detail": "Part 1's compositional function: introduce the album's world with minimum assertion. Let the listener's ear rest before the day begins in Part 2."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Dawn transition",
+          "description": "the texture shifts subtly. The day is about to begin.",
+          "detail": "At 2:23, Part 1 hands off to Part 2's energised morning pulse."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Equinoxe Part 2",
+      "duration": "5:01",
+      "energy": "mid",
+      "tags": [
+        "Morning",
+        "Sequenced Rhythm",
+        "Geiss Matrisequencer"
+      ],
+      "role": "Album role: Morning arrives — the day's first energy. A rising, purposeful sequence announces the working start of the day. The Geiss Matrisequencer 250's tighter, more complex patterns replace the Mini-Pops 7 in the driving role.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequencer pulse arrives",
+          "description": "an energised melodic sequence, brisk and purposeful. After Part 1's pre-dawn stillness, this is sunrise.",
+          "detail": "The Geiss Matrisequencer 250 is a step-sequencer capable of more complex patterns than its predecessor — its 12-volt analogue control voltage sequences are more defined and rhythmically intricate."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Yamaha CS-60 polysynth enters",
+          "description": "the warm, polyphonic voice characteristic of daytime sections. CS-60's distinctive filter gives the morning a golden quality.",
+          "detail": "The Yamaha CS-60 (1977) is a polyphonic analog synthesizer with individual voice architecture. Its filter has a rounder, warmer character than the ARP 2600."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Layering — multiple voices active",
+          "description": "the morning fills with activity.",
+          "detail": "The concept begins to assert itself beyond mere mood-setting. The day has structure; Part 2 maps that structure's beginning."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Morning peak",
+          "description": "full arrangement at maximum morning energy.",
+          "detail": "Jarre doesn't overplay Part 2. He reserves maximum energy for Part 4 — midday."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Transition toward Part 3",
+          "description": "energy sustained but beginning to develop into the more complex late-morning material of the adjacent section.",
+          "detail": "On the original vinyl, Parts 1–4 run on Side One with no gap."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Equinoxe Part 3",
+      "duration": "5:11",
+      "energy": "mid",
+      "tags": [
+        "Late Morning",
+        "Korg KR 55",
+        "Harmonic Complexity"
+      ],
+      "role": "Album role: Late morning — more complex, slightly busier than Part 2. The Korg KR 55 drum machine (more elaborate than the Mini-Pops 7) adds a denser rhythmic layer. The day is well underway; this is mid-morning at peak activity before the midday summit.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Continuous development from Part 2",
+          "description": "the sequence continues in a related but evolved form.",
+          "detail": "Part 3 functions as the plateau between the morning energy of Part 2 and the midday peak of Part 4."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Korg KR 55 pattern",
+          "description": "the more sophisticated drum machine provides a busier, more detailed rhythmic texture than the Mini-Pops.",
+          "detail": "The KR 55 allows more complex programmed patterns. The late-morning soundscape has more moving parts than the clean morning launch of Part 2."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Harmonic elaboration — Oberheim Polyphonic",
+          "description": "the Oberheim adds its brighter, more precise polyphonic voice to the texture.",
+          "detail": "Oberheim's synthesizers have a different character from Jarre's earlier equipment — brighter, more immediate. The new instruments signal this album's expanded palette."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Building toward Part 4's midday peak",
+          "description": "the arrangement grows more active. Anticipation.",
+          "detail": "Part 3's late-section material is deliberately accumulating energy for the Side One climax in Part 4."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Peak of Part 3 — Side One's secondary summit",
+          "description": "not the album's highest point but Part 3's own internal apex.",
+          "detail": "Immediately gives way to Part 4. The two climaxes are adjacent — Part 3's ending merges into Part 4's opening."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Equinoxe Part 4",
+      "duration": "6:52",
+      "energy": "peak",
+      "tags": [
+        "Midday Climax",
+        "Side One Apex",
+        "EMS Vocoder 1000"
+      ],
+      "role": "Album role: Midday — the album's first and highest energy climax. Part 4 is the summit of the day and of the entire album's first half. The most assertive, driven, and rhythmically complex section on Side One — where the sun is at its zenith and the album at its most awake. Longest track on Side One.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Full midday energy launch",
+          "description": "maximum rhythmic complexity from Part 4's first moment. No build: this is already the peak.",
+          "detail": "The Korg KR 55 and Matrisequencer at their busiest. After the building arc of Parts 1–3, Part 4 arrives fully formed."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "EMS Vocoder 1000",
+          "description": "the vocoder processes and transforms vocal or instrument sounds into synthetic voice textures.",
+          "detail": "The EMS Vocoder 1000 had been used to create alien or robotic voice effects since Kraftwerk popularised the device. Jarre uses it textural rather than as a lead voice."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Layering continues toward internal peak",
+          "description": "the Yamaha CS-60 melody is most prominent here, riding over the complex rhythm.",
+          "detail": "Part 4's golden, driven quality — the warmth of the CS-60 over insistent percussion — is the album's most commercially resonant moment."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Maximum complexity — the album's peak moment (Side One)",
+          "description": "all instruments contributing simultaneously.",
+          "detail": "The Place de la Concorde concert audience of 1 million heard this moment under open sky. Their applause between sections is on the live album."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Post-peak reduction",
+          "description": "the midday sun begins its descent. Energy released gradually.",
+          "detail": "The back half of Part 4 is the afternoon arriving — Side Two will map the second half of the day."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Side Two transition",
+          "description": "the energy drops to a sustained level, preparing the listener for the flip.",
+          "detail": "Side One ends at the midday summit's decline. Side Two picks up in mid-afternoon."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Equinoxe Part 5",
+      "duration": "3:54",
+      "energy": "mid",
+      "tags": [
+        "Afternoon",
+        "Yamaha CS-60",
+        "Post-Peak Warmth"
+      ],
+      "role": "Album role: Afternoon warmth after the midday peak — the day's energy declining from its zenith but still full of light. Part 5 is gentler than Part 4 but retains its forward motion. Transitional in the day-arc from the activity of midday to the quieter late afternoon of Part 6.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Afternoon register — reduced intensity",
+          "description": "warmth without the midday urgency. The CS-60 carries the melody with a more relaxed character.",
+          "detail": "Side Two begins at a deliberately lower energy level than Part 4 ended. The sun is past its peak."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Melodic warmth develops",
+          "description": "the afternoon's golden light in sonic form. CS-60 polysynth at its most lyrical.",
+          "detail": "The Yamaha CS-60's warm filter character is most appropriate for this time-of-day — richer and fuller than morning, softer than midday."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Part 5's modest peak",
+          "description": "contained, unhurried. This is not a second midday but an afternoon that knows its place.",
+          "detail": "Structural self-awareness: Part 5 refuses to compete with Part 4. Its role is warmth, not drama."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Gradual release into Part 6",
+          "description": "the afternoon fades toward evening.",
+          "detail": "The day is now past its productive centre. Parts 6–8 map the transition into night."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Equinoxe Part 6",
+      "duration": "3:15",
+      "energy": "low",
+      "tags": [
+        "Early Evening",
+        "Transitional"
+      ],
+      "role": "Album role: Early evening — the briefest track on Side Two. A transitional section bridging the afternoon warmth of Part 5 to the nocturnal epic of Part 7. As the light fades, the music becomes more introspective and less rhythmically insistent.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Evening palette shift",
+          "description": "cooler tones, slower harmonic movement. The temperature has dropped.",
+          "detail": "The transition from afternoon warmth to evening cool is achieved through tonal register more than tempo change."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Introspective melodic turn",
+          "description": "the melody becomes more inward-looking than the daytime sections.",
+          "detail": "Part 6 is the doorway. On one side: the sunny afternoon of Parts 4–5. On the other: the night epic of Part 7."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Evening dissolves toward night",
+          "description": "texture thins. Part 7's opening waits.",
+          "detail": "Three minutes is enough to shift the album's psychological register from day to night."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Equinoxe Part 7",
+      "duration": "7:24",
+      "energy": "high",
+      "tags": [
+        "Night Epic",
+        "Longest Track",
+        "Most Cinematic",
+        "Carl Sagan Cosmos"
+      ],
+      "role": "Album role: The album's nocturnal centrepiece and most cinematic piece — the longest track at 7:24. Night reverses the day's journey: where the day built toward midday from a quiet dawn, the night builds toward a different, darker climax. Used in Carl Sagan's Cosmos (1980) — the piece that gave Equinoxe its most prominent cultural placement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Night opens",
+          "description": "the darkest, most expansive texture on the album. Stars rather than sun.",
+          "detail": "After the compressed brevity of Part 6, Part 7 opens the space of the album to its maximum. Night has more room than day."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Night melody develops",
+          "description": "slower, more deliberate than the daytime sequences. Cosmic rather than solar.",
+          "detail": "Carl Sagan selected this piece for Cosmos — the universe as experienced from a synthesizer room at night. An unexpectedly perfect match."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Layering nocturnal depth",
+          "description": "dense low frequencies, atmospheric washes. The night in full dimension.",
+          "detail": "The album's equipment range at its most dramatic: EMS Synthi AKS for unpredictable textural movement; ARP 2600 for the deeper bass sequences."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Night peak — the album's second major climax",
+          "description": "Part 7 reaches its summit. Darker and more dramatic than Part 4's midday brightness; this is the energy of the night sky rather than the sun.",
+          "detail": "Two peaks: Part 4 (midday, bright, rhythmically assertive) and Part 7 (midnight, vast, harmonically dramatic). The day and night halves of the album mirror each other."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Night deconstruction",
+          "description": "the peak energy releases. Post-midnight.",
+          "detail": "The night has done its work. The album moves toward Part 8's resolution — late night into the quiet before dawn."
+        },
+        {
+          "timestamp": "6:45",
+          "section": "Approaching Part 8",
+          "description": "the night's last movement. Fatigue and quiet.",
+          "detail": "Part 7 earns its length by covering the most emotional territory. Its 7:24 is the album's most demanding and rewarding single experience."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Equinoxe Part 8",
+      "duration": "5:02",
+      "energy": "low",
+      "tags": [
+        "Late Night",
+        "Resolution",
+        "Day Cycle Complete"
+      ],
+      "role": "Album role: Late night / pre-dawn — the album completes its 24-hour cycle. Part 8 mirrors Part 1: both are atmospheric and spare, book-ending the day. The album ends where it began — not quite day, not quite night. The equinox: equal darkness and light.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Late night atmosphere",
+          "description": "sparse, tired, still. The day is completely done.",
+          "detail": "The mirror of Part 1: both short (relative to the expansive middle sections), both atmospheric, both near the day's boundary."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Quiet melody in the dark",
+          "description": "a single melodic voice, soft and resigned.",
+          "detail": "The synthesizers that were assertive in Parts 2–4 are here patient and understated. The same instruments at rest."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Final harmonic movement",
+          "description": "slow chord progression that the entire 39-minute album has been approaching.",
+          "detail": "The resolution is harmonically simple but emotionally satisfying after the journey of the preceding seven parts."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Dissolution — the equinox completes",
+          "description": "the last sounds fade. Day and night equalised.",
+          "detail": "The album ends not in silence but in the same atmospheric near-silence as its beginning. The cycle is complete. Tomorrow, Part 1 begins again."
+        }
+      ]
+    }
+  ]
+}
