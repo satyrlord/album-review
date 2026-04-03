@@ -1,0 +1,27 @@
+{
+  "all": false,
+  "include": [
+    "src/site.ts",
+    "src/index.ts",
+    "src/album.ts",
+    "src/rankings.ts",
+    "src/segment.ts"
+  ],
+  "exclude": [
+    "dist/**",
+    "coverage/**",
+    "node_modules/**"
+  ],
+  "excludeAfterRemap": false,
+  "extension": [
+    ".ts",
+    ".js"
+  ],
+  "report-dir": "coverage",
+  "reporter": [
+    "text",
+    "html",
+    "lcov"
+  ],
+  "temp-dir": ".nyc_output"
+}

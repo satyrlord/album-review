@@ -1,6 +1,8 @@
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
 
-import { buildHtml } from "../album-scaffold.js";
+import { expect, test } from "./baseFixtures.js";
+
+import { buildJson } from "../scripts/albums/album-scaffold.js";
 
 interface AlbumIndexEntry {
   id: string;
@@ -10,6 +12,7 @@ interface AlbumIndexEntry {
   tracks: number;
   genre: string;
   coverUrl?: string;
+  isSoundtrack?: boolean;
 }
 
 interface AlbumData {
@@ -17,6 +20,8 @@ interface AlbumData {
   artist: string;
   title: string;
   coverUrl?: string;
+  spotifyUrl?: string;
+  youtubeUrl?: string;
 }
 
 function escapeRegex(text: string): string {
@@ -40,14 +45,128 @@ async function gotoIndex(page: Page): Promise<void> {
   await expect(page.getByRole("heading", { name: "Album Analysis" })).toBeVisible();
 }
 
+async function gotoSoundtracks(page: Page): Promise<void> {
+  await page.goto("/soundtracks.html");
+  await expect(page.getByRole("heading", { name: "Soundtracks" })).toBeVisible();
+}
+
+async function gotoRanking(page: Page, path: "/top-10.html" | "/top-20.html", heading: RegExp): Promise<void> {
+  await page.goto(path);
+  await expect(page.getByRole("heading", { name: heading })).toBeVisible();
+}
+
+async function readBuildMeta(page: Page): Promise<{ pushedCommitCount: number; version: string }> {
+  const meta = await page.evaluate(() => {
+    const siteWindow = window as Window & {
+      AlbumReviewSite?: {
+        getBuildMeta(): { pushedCommitCount: number; version: string };
+      };
+    };
+
+    return siteWindow.AlbumReviewSite ? siteWindow.AlbumReviewSite.getBuildMeta() : null;
+  });
+
+  expect(meta).not.toBeNull();
+
+  if (!meta) {
+    throw new Error("Build metadata was not available in the page context.");
+  }
+
+  return meta;
+}
+
+async function expectPrimaryNav(page: Page, currentLabel?: "HOME PAGE" | "SOUNDTRACKS" | "TOP 10" | "TOP 20"): Promise<void> {
+  await expect(page.locator(".site-nav-link")).toHaveText(["HOME PAGE", "SOUNDTRACKS", "TOP 10", "TOP 20"]);
+
+  if (currentLabel) {
+    await expect(page.getByRole("link", { name: currentLabel })).toHaveAttribute("aria-current", "page");
+  }
+}
+
 test.describe("album index regressions", () => {
   test("renders all registered albums on first load", async ({ page }) => {
     const totalAlbums = (await readAlbumIndex(page)).length;
 
     await gotoIndex(page);
 
+    await expectPrimaryNav(page, "HOME PAGE");
+    await expect(page.getByRole("link", { name: "SOUNDTRACKS" })).toHaveAttribute("href", /soundtracks\.html$/);
+    await expect(page.getByRole("link", { name: "TOP 10" })).toHaveAttribute("href", /top-10\.html$/);
+    await expect(page.getByRole("link", { name: "TOP 20" })).toHaveAttribute("href", /top-20\.html$/);
     await expect(page.locator(".ix-card")).toHaveCount(totalAlbums);
     await expect(page.locator("#ixCount")).toHaveText(`${totalAlbums} / ${totalAlbums} albums`);
+  });
+
+  test("soundtracks page currently shows Tubular Bells only", async ({ page }) => {
+    await gotoSoundtracks(page);
+
+    await expectPrimaryNav(page, "SOUNDTRACKS");
+    await expect(page.locator(".ix-card")).toHaveCount(1);
+    await expect(page.locator("#ixCount")).toHaveText("1 / 1 album");
+    await expect(page.locator(".ix-card-title")).toHaveText(["Tubular Bells"]);
+    await expect(page.locator(".ix-card-artist")).toHaveText(["Mike Oldfield"]);
+  });
+
+  test("renders a shared footer with a clickable version badge", async ({ page }) => {
+    await gotoIndex(page);
+
+    const meta = await readBuildMeta(page);
+
+    await expect(page.locator(".site-footer")).toContainText(`Version ${meta.version}`);
+    await expect(page.locator('.site-footer-version')).toHaveAttribute("href", "https://github.com/satyrlord/album-review");
+    await expect(page.locator('.site-footer-version')).toHaveAttribute("target", "_blank");
+    await expect(page.locator('.site-footer-version')).toHaveAttribute("rel", "noopener noreferrer");
+    await expect(page.locator(".site-footer")).not.toContainText("pushed commit");
+    await expect(page.locator(".site-footer")).not.toContainText("github.com/satyrlord/album-review");
+
+    await page.locator('.ix-card[href="album.html?id=jean-michel-jarre-oxygene"]').click();
+
+    await expect(page.locator(".site-footer")).toContainText(`Version ${meta.version}`);
+    await expect(page.locator('.site-footer-version')).toHaveAttribute("href", "https://github.com/satyrlord/album-review");
+    await expect(page.locator('.site-footer-version')).toHaveAttribute("target", "_blank");
+    await expect(page.locator('.site-footer-version')).toHaveAttribute("rel", "noopener noreferrer");
+    await expect(page.locator(".site-footer")).not.toContainText("pushed commit");
+    await expect(page.locator(".site-footer")).not.toContainText("github.com/satyrlord/album-review");
+  });
+
+  test("site helpers render optional nav and footer states safely", async ({ page }) => {
+    await gotoIndex(page);
+
+    const rendered = await page.evaluate(() => {
+      const siteWindow = window as Window & {
+        AlbumReviewSite?: {
+          renderNav(options?: { activePage?: "home" | "soundtracks" | "top10" | "top20" | null }): string;
+          renderFooter(options?: { context?: string; actionHref?: string; actionLabel?: string }): string;
+          mountNav(elementId: string, options?: { activePage?: "home" | "soundtracks" | "top10" | "top20" | null }): void;
+          mountFooter(elementId: string, options?: { context?: string; actionHref?: string; actionLabel?: string }): void;
+        };
+      };
+
+      const site = siteWindow.AlbumReviewSite;
+      if (!site) {
+        throw new Error("AlbumReviewSite helpers were not available.");
+      }
+
+      site.mountNav("missing-nav");
+      site.mountFooter("missing-footer");
+
+      return {
+        navHtml: site.renderNav(),
+        footerHtml: site.renderFooter(),
+        footerWithActionHtml: site.renderFooter({
+          context: "Coverage Pass",
+          actionHref: "soundtracks.html",
+          actionLabel: "Jump",
+        }),
+      };
+    });
+
+    expect(rendered.navHtml).not.toContain('aria-current="page"');
+    expect(rendered.footerHtml).not.toContain("site-footer-context");
+    expect(rendered.footerHtml).not.toContain("site-footer-link");
+    expect(rendered.footerWithActionHtml).toContain("site-footer-context");
+    expect(rendered.footerWithActionHtml).toContain('href="soundtracks.html"');
+    expect(rendered.footerWithActionHtml).toContain("Jump");
   });
 
   test("renders album cover thumbnails when cover URLs are present", async ({ page }) => {
@@ -94,6 +213,142 @@ test.describe("album index regressions", () => {
     await expect(page.locator(".ix-card-artist")).toHaveText(Array(expectedMatches).fill("Mike Oldfield"));
   });
 
+  test("soundtracks page filters non-soundtracks and keeps soundtrack albums chronological", async ({ page }) => {
+    await page.route("**/data/index.json", async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify([
+          {
+            id: "late-score",
+            artist: "Late Composer",
+            title: "Late Score",
+            year: 1999,
+            tracks: 12,
+            genre: "Movie Soundtrack",
+            isSoundtrack: true,
+          },
+          {
+            id: "regular-album",
+            artist: "Non Soundtrack Artist",
+            title: "Regular Album",
+            year: 1971,
+            tracks: 9,
+            genre: "Electronic",
+          },
+          {
+            id: "early-score",
+            artist: "Early Composer",
+            title: "Early Score",
+            year: 1982,
+            tracks: 8,
+            genre: "Game Soundtrack",
+            isSoundtrack: true,
+          },
+          {
+            id: "mid-score",
+            artist: "Mid Composer",
+            title: "Mid Score",
+            year: 1987,
+            tracks: 10,
+            genre: "Movie Soundtrack",
+            isSoundtrack: true,
+          },
+        ]),
+      });
+    });
+
+    await gotoSoundtracks(page);
+
+    await expect(page.locator(".ix-card")).toHaveCount(3);
+    await expect(page.locator("#ixCount")).toHaveText("3 / 3 albums");
+    await expect(page.locator(".ix-card-title")).toHaveText(["Early Score", "Mid Score", "Late Score"]);
+    await expect(page.locator("body")).not.toContainText("Regular Album");
+  });
+
+  test("collection pages expose empty states when the index is empty", async ({ page }) => {
+    await page.route("**/data/index.json", async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: "[]",
+      });
+    });
+
+    await gotoIndex(page);
+    await expect(page.locator("#ixCount")).toHaveText("0 / 0 albums");
+    await expect(page.locator(".ix-empty")).toHaveText("No albums available.");
+
+    await gotoSoundtracks(page);
+    await expect(page.locator("#ixCount")).toHaveText("0 / 0 albums");
+    await expect(page.locator(".ix-empty")).toHaveText("No soundtrack albums available.");
+  });
+
+  test("index bootstrap exits cleanly when required collection DOM nodes are missing", async ({ page }) => {
+    await page.addInitScript(() => {
+      const originalGetElementById = Document.prototype.getElementById;
+      const blockedIds: Record<string, string> = {
+        "missing-grid": "ixGrid",
+        "missing-filters": "ixFilters",
+        "missing-search": "ixSearch",
+        "missing-count": "ixCount",
+      };
+
+      Document.prototype.getElementById = function(id: string): HTMLElement | null {
+        const fixture = new URL(window.location.href).searchParams.get("fixture");
+        if (fixture && blockedIds[fixture] === id) {
+          return null;
+        }
+        return originalGetElementById.call(this, id);
+      };
+    });
+
+    for (const fixture of ["missing-grid", "missing-filters", "missing-search", "missing-count"]) {
+      await page.goto(`/index.html?fixture=${fixture}`);
+      await expect(page.getByRole("heading", { name: "Album Analysis" })).toBeVisible();
+      await expect(page.locator("#siteNav")).toHaveCount(1);
+      await expect(page.locator("#siteFooter")).toHaveCount(1);
+      await expect(page.locator(".site-nav")).toHaveCount(0);
+      await expect(page.locator(".site-footer")).toHaveCount(0);
+    }
+  });
+
+  test("index page covers no-cover cards and no-match search states", async ({ page }) => {
+    await page.route("**/data/index.json", async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify([
+          {
+            id: "no-cover",
+            artist: "Coverless Artist",
+            title: "Bare Bones",
+            year: 2024,
+            tracks: 1,
+            genre: "Minimal",
+          },
+        ]),
+      });
+    });
+
+    await gotoIndex(page);
+
+    await expect(page.locator(".ix-card-cover")).toHaveCount(0);
+    await expect(page.locator(".ix-card-meta")).toHaveText(["2024  ·  1 track"]);
+
+    await page.getByRole("searchbox", { name: "Filter albums" }).fill("no hits here");
+
+    await expect(page.locator(".ix-empty")).toContainText("No albums match");
+    await expect(page.locator(".ix-empty")).toContainText("no hits here");
+  });
+
+  test("index page falls back to a generic load error for non-Error fetch failures", async ({ page }) => {
+    await page.addInitScript(() => {
+      window.fetch = (() => Promise.reject("boom")) as typeof window.fetch;
+    });
+
+    await page.goto("/index.html");
+
+    await expect(page.locator(".ix-error")).toHaveText("Could not load album data.");
+  });
+
   test("opens an album page and returns to the index", async ({ page }) => {
     await gotoIndex(page);
 
@@ -102,7 +357,7 @@ test.describe("album index regressions", () => {
     await expect(page).toHaveURL(/album\.html\?id=mike-oldfield-tubular-bells-ii$/);
     await expect(page.getByRole("heading", { name: "Tubular Bells II" })).toBeVisible();
 
-    await page.getByRole("link", { name: "← All Albums" }).first().click();
+    await page.getByRole("link", { name: "HOME PAGE" }).click();
 
     await expect(page).toHaveURL(/\/index\.html$/);
     await expect(page.getByRole("heading", { name: "Album Analysis" })).toBeVisible();
@@ -115,6 +370,11 @@ test.describe("album index regressions", () => {
     await page.goto("/album.html?id=jean-michel-jarre-oxygene");
 
     await expect(page.getByRole("heading", { name: "Oxygène" })).toBeVisible();
+    await expectPrimaryNav(page);
+    await expect(page.getByRole("link", { name: "HOME PAGE" })).toHaveAttribute("href", /index\.html$/);
+    await expect(page.getByRole("link", { name: "SOUNDTRACKS" })).toHaveAttribute("href", /soundtracks\.html$/);
+    await expect(page.getByRole("link", { name: "TOP 10" })).toHaveAttribute("href", /top-10\.html$/);
+    await expect(page.getByRole("link", { name: "TOP 20" })).toHaveAttribute("href", /top-20\.html$/);
     await expect(page.locator(".hero-cover")).toBeVisible();
     await expect(page.locator(".hero-cover")).toHaveAttribute(
       "src",
@@ -126,14 +386,197 @@ test.describe("album index regressions", () => {
     await expect(page.locator(".track")).toHaveCount(6);
     await expect(page.locator(".track-title").first()).toBeVisible();
     await expect(page.locator(".timeline").first()).toBeVisible();
+    await expect(page.getByRole("link", { name: "← All Albums" })).toHaveCount(0);
 
-    await page.getByRole("link", { name: "← All Albums" }).first().click();
+    await page.getByRole("link", { name: "HOME PAGE" }).click();
     await expect(page).toHaveURL(/\/index\.html$/);
+  });
+
+  test("album page exposes streaming links when present", async ({ page }) => {
+    const album = await readAlbumData(page, "jean-michel-jarre-oxygene");
+
+    await page.goto("/album.html?id=jean-michel-jarre-oxygene");
+
+    await expect(page.getByRole("link", { name: "Listen on Spotify" })).toHaveAttribute("href", album.spotifyUrl ?? "");
+    await expect(page.getByRole("link", { name: "Listen on Spotify" })).toHaveAttribute("target", "_blank");
+    await expect(page.getByRole("link", { name: "Listen on Spotify" })).toHaveAttribute("rel", "noopener noreferrer");
+    await expect(page.getByRole("link", { name: "Listen on YouTube Music" })).toHaveAttribute("href", album.youtubeUrl ?? "");
+    await expect(page.getByRole("link", { name: "Listen on YouTube Music" })).toHaveAttribute("target", "_blank");
+    await expect(page.getByRole("link", { name: "Listen on YouTube Music" })).toHaveAttribute("rel", "noopener noreferrer");
+  });
+
+  test("album page renders the optional label row when present", async ({ page }) => {
+    await page.route("**/data/labeled-album.json", async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify({
+          id: "labeled-album",
+          artist: "Test Artist",
+          title: "Signal Forms",
+          year: 2024,
+          label: "Test Label",
+          producer: "",
+          genre: "Electronic",
+          runtime: "2:34",
+          overview: "Label coverage fixture.",
+          tracks: [
+            {
+              num: 1,
+              title: "Signal",
+              duration: "2:34",
+              energy: "mid",
+              tags: [],
+              role: "Coverage fixture.",
+              events: [
+                {
+                  timestamp: "0:00",
+                  section: "Intro",
+                  description: "Signal opens.",
+                },
+              ],
+            },
+          ],
+        }),
+      });
+    });
+
+    await page.goto("/album.html?id=labeled-album");
+
+    await expect(page.getByRole("heading", { name: "Signal Forms" })).toBeVisible();
+    await expect(page.locator(".meta")).toContainText("Label:");
+    await expect(page.locator(".meta")).toContainText("Test Label");
   });
 
   test("album page shows error for unknown id", async ({ page }) => {
     await page.goto("/album.html?id=no-such-album");
     await expect(page.locator("body")).toContainText("Could not load album");
+  });
+
+  test("album page falls back cleanly for non-Error fetch failures", async ({ page }) => {
+    await page.addInitScript(() => {
+      window.fetch = (() => Promise.reject("boom")) as typeof window.fetch;
+    });
+
+    await page.goto("/album.html?id=generic-failure");
+
+    await expect(page.locator(".page-state-title")).toContainText('Could not load album "generic-failure".');
+  });
+
+  test("album page guards missing and invalid ids before requesting data", async ({ page }) => {
+    await page.goto("/album.html");
+    await expect(page.locator(".page-state-title")).toContainText("No album ID specified in URL");
+
+    await page.goto("/album.html?id=..%2Fbad");
+    await expect(page.locator(".page-state-title")).toHaveText("Invalid album ID.");
+  });
+
+  test("album page renders minimal albums without optional media or meta fields", async ({ page }) => {
+    await page.route("**/data/minimal-album.json", async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify({
+          id: "minimal-album",
+          artist: "Test Artist",
+          title: "Monolith",
+          year: 2024,
+          label: "",
+          producer: "",
+          genre: "",
+          runtime: "1:23",
+          overview: "Single paragraph overview.",
+          tracks: [
+            {
+              num: 1,
+              title: "Pulse",
+              duration: "1:23",
+              energy: "low",
+              tags: [],
+              role: "Sketch.",
+              events: [
+                {
+                  timestamp: "0:10",
+                  section: "",
+                  description: "Bare motif",
+                },
+              ],
+            },
+          ],
+        }),
+      });
+    });
+
+    await page.goto("/album.html?id=minimal-album");
+
+    await expect(page.getByRole("heading", { name: "Monolith" })).toBeVisible();
+    await expect(page.locator(".hero-layout.has-cover")).toHaveCount(0);
+    await expect(page.locator(".hero-cover")).toHaveCount(0);
+    await expect(page.locator(".hero-link")).toHaveCount(0);
+    await expect(page.locator(".meta")).not.toContainText("Label:");
+    await expect(page.locator(".meta")).not.toContainText("Producer:");
+    await expect(page.locator(".meta")).not.toContainText("Genre:");
+    await expect(page.locator(".event-desc strong")).toHaveCount(0);
+    await expect(page.locator(".event-desc .detail")).toHaveCount(0);
+  });
+
+  test("album page renders a track timeline segment chart", async ({ page }) => {
+    await page.goto("/album.html?id=vangelis-voices");
+
+    await expect(page.getByRole("heading", { name: "Voices" })).toBeVisible();
+    const chart = page.locator("#timelineChart");
+    await expect(chart).toHaveAttribute("role", "img");
+    await expect(chart).toHaveAttribute("aria-label", /Track timeline breakdown/);
+    await expect(chart.locator(".segment-row")).toHaveCount(9);
+    await expect(chart.locator(".segment-item-wrapper").first()).toBeVisible();
+  });
+
+  test("segment chart covers default palette and zero-sum edge case", async ({ page }) => {
+    await page.goto("/album.html?id=vangelis-voices");
+    await expect(page.getByRole("heading", { name: "Voices" })).toBeVisible();
+
+    const result = await page.evaluate(async () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const segmentPath = "/src/segment.ts";
+      const mod: any = await import(segmentPath);
+      const buildSegmentChart = mod.buildSegmentChart as (
+        el: HTMLElement,
+        opts: {
+          rows: { label: string; duration: number; durationLabel: string; segments: { title: string; value: number; tooltip: string }[] }[];
+          ariaLabel: string;
+        },
+      ) => void;
+
+      // Exercise default palette by omitting it
+      const defaultEl = document.createElement("div");
+      document.body.appendChild(defaultEl);
+      buildSegmentChart(defaultEl, {
+        rows: [
+          { label: "Track A", duration: 120, durationLabel: "2:00", segments: [{ title: "Intro", value: 60, tooltip: "Intro" }, { title: "Outro", value: 60, tooltip: "Outro" }] },
+          { label: "Track B", duration: 60, durationLabel: "1:00", segments: [{ title: "Main", value: 60, tooltip: "Main" }] },
+        ],
+        ariaLabel: "Test defaults",
+      });
+      const defaultRows = defaultEl.querySelectorAll(".segment-row").length;
+      const hasBarWidth = (defaultEl.querySelectorAll(".segment-bar")[0] as HTMLElement)?.style.width ?? "";
+      const hasNoPctSpan = defaultEl.querySelector(".segment-item-percentage") === null;
+
+      // Exercise zero-sum data
+      const zeroEl = document.createElement("div");
+      document.body.appendChild(zeroEl);
+      buildSegmentChart(zeroEl, {
+        rows: [
+          { label: "Empty", duration: 0, durationLabel: "0:00", segments: [{ title: "X", value: 0, tooltip: "X" }] },
+        ],
+        ariaLabel: "Zero sum",
+      });
+      const zeroSegWidth = (zeroEl.querySelector(".segment-item-wrapper") as HTMLElement)?.style.width ?? "";
+
+      return { defaultRows, hasBarWidth, hasNoPctSpan, zeroSegWidth };
+    });
+
+    expect(result.defaultRows).toBe(2);
+    expect(result.hasBarWidth).toBe("");
+    expect(result.hasNoPctSpan).toBe(true);
+    expect(result.zeroSegWidth).toBe("0%");
   });
 
   test("does not render the removed initial analysis controls", async ({ page }) => {
@@ -175,21 +618,21 @@ test.describe("album index regressions", () => {
     await expect(page.locator("body")).not.toContainText("TODO");
   });
 
-  test("generated scaffold pages omit missing genre rows and raw TODO placeholders", async ({ page }) => {
-    const scaffoldHtml = buildHtml(
+  test("generated scaffold JSON omits missing genre rows and raw TODO placeholders", async ({ page }) => {
+    const scaffoldJson = buildJson(
+      "generated-scaffold",
       "Vangelis",
       "Voices",
       1995,
       "",
       [{ num: 1, title: "Voices", lengthMs: 422000 }],
-      "1995-10-17",
     );
 
-    await page.route("**/__fixtures__/generated-scaffold.html", async (route) => {
-      await route.fulfill({ contentType: "text/html", body: scaffoldHtml });
+    await page.route("**/data/generated-scaffold.json", async (route) => {
+      await route.fulfill({ contentType: "application/json", body: JSON.stringify(scaffoldJson) });
     });
 
-    await page.goto("/__fixtures__/generated-scaffold.html");
+    await page.goto("/album.html?id=generated-scaffold");
 
     await expect(page.getByRole("heading", { name: "Voices" })).toBeVisible();
     await expect(page.locator(".meta")).not.toContainText("Genre:");
@@ -198,5 +641,56 @@ test.describe("album index regressions", () => {
       "Initial scaffold only. Narrative role pending detailed listen.",
     );
     await expect(page.locator(".event-desc")).toContainText("Detailed timestamp notes pending.");
+  });
+
+  test("top 10 ranking page highlights analysed albums and keeps missing entries inert", async ({ page }) => {
+    await gotoRanking(page, "/top-10.html", /TOP 10/i);
+
+    await expectPrimaryNav(page, "TOP 10");
+    await expect(page.locator(".ranking-item")).toHaveCount(50);
+    await expect(
+      page.locator('.ranking-item.is-available[href="album.html?id=jean-michel-jarre-oxygene"]'),
+    ).toContainText("Oxygène");
+    await expect(
+      page.locator(".ranking-item.is-unavailable").filter({ hasText: "Ambient 1: Music for Airports" }),
+    ).toHaveCount(1);
+    await expect(page.getByRole("link", { name: /Ambient 1: Music for Airports/ })).toHaveCount(0);
+  });
+
+  test("ranking pages navigate into covered albums and expose the expanded top 20 list", async ({ page }) => {
+    await gotoRanking(page, "/top-20.html", /TOP 20/i);
+
+    await expectPrimaryNav(page, "TOP 20");
+    await expect(page.locator(".ranking-item")).toHaveCount(100);
+
+    await page.locator('.ranking-item.is-available[href="album.html?id=the-prodigy-music-for-the-jilted-generation"]').click();
+
+    await expect(page).toHaveURL(/album\.html\?id=the-prodigy-music-for-the-jilted-generation$/);
+    await expect(page.getByRole("heading", { name: "Music for the Jilted Generation" })).toBeVisible();
+  });
+
+  test("ranking pages surface both HTTP and generic load failures", async ({ page }) => {
+    await page.route("**/data/index.json", async (route) => {
+      await route.fulfill({
+        status: 503,
+        contentType: "application/json",
+        body: "[]",
+      });
+    });
+
+    await page.goto("/top-10.html");
+
+    await expect(page.locator(".page-state-title")).toContainText("Could not load data/index.json (503).");
+    await expect(page.locator(".site-footer")).toContainText("Top 10 by Decade");
+
+    await page.unroute("**/data/index.json");
+    await page.addInitScript(() => {
+      window.fetch = (() => Promise.reject("boom")) as typeof window.fetch;
+    });
+
+    await page.goto("/top-20.html");
+
+    await expect(page.locator(".page-state-title")).toHaveText("Could not load ranking data.");
+    await expect(page.locator(".site-footer")).toContainText("Top 20 by Decade");
   });
 });

@@ -1,10 +1,10 @@
 #!/usr/bin/env tsx
 /**
- * add_album.ts — scaffold a new album analysis entry from MusicBrainz data
+ * add-album.ts — scaffold a new album analysis entry from MusicBrainz data
  * and a Wikipedia album-cover thumbnail when available.
  *
  * Usage:
- *   npx tsx add_album.ts "Artist Name" "Album Title" YEAR [OPTIONS]
+ *   npx tsx scripts/add-album.ts "Artist Name" "Album Title" YEAR [OPTIONS]
  *   npm run add-album -- "Artist Name" "Album Title" YEAR [OPTIONS]
  *
  * Options:
@@ -13,21 +13,21 @@
  *   --dry-run                     Print what would be generated without writing any files
  *
  * Examples:
- *   npx tsx add_album.ts "Aphex Twin" "Selected Ambient Works 85-92" 1992
- *   npx tsx add_album.ts "Boards of Canada" "Music Has the Right to Children" 1998 --genre "Electronic / Ambient"
- *   npx tsx add_album.ts "Massive Attack" "Mezzanine" 1998 --mbid 9c5a764d-be29-4b16-9c35-e7e58b5d4f66
- *   npx tsx add_album.ts "Autechre" "Tri Repetae" 1995 --dry-run
+ *   npx tsx scripts/add-album.ts "Aphex Twin" "Selected Ambient Works 85-92" 1992
+ *   npx tsx scripts/add-album.ts "Boards of Canada" "Music Has the Right to Children" 1998 --genre "Electronic / Ambient"
+ *   npx tsx scripts/add-album.ts "Massive Attack" "Mezzanine" 1998 --mbid 9c5a764d-be29-4b16-9c35-e7e58b5d4f66
+ *   npx tsx scripts/add-album.ts "Autechre" "Tri Repetae" 1995 --dry-run
  */
 
 import { writeFileSync, existsSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import { toAlbumIndexEntry, writeAlbumIndexFile } from "./album-index.js";
-import { Track, slugify, msToMmss, buildJson } from "./album-scaffold.js";
+import { toAlbumIndexEntry, writeAlbumIndexFile } from "./albums/album-index.js";
+import { Track, slugify, msToMmss, buildJson } from "./albums/album-scaffold.js";
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 
-const ROOT      = dirname(fileURLToPath(import.meta.url));
+const ROOT      = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MB_BASE   = "https://musicbrainz.org/ws/2";
 const MB_AGENT  = "AlbumAnalysisScaffolder/1.0 (https://github.com/satyrlord/album-review)";
 const WIKI_API  = "https://en.wikipedia.org/w/api.php";
@@ -199,7 +199,7 @@ function parseArgs(): {
   const args = process.argv.slice(2);
   if (args.length < 2 || args[0].startsWith("--")) {
     console.error(
-      "Usage: npx tsx add_album.ts \"Artist\" \"Album Title\" [YEAR] [--genre \"...\"] [--mbid ID] [--dry-run]\n" +
+      "Usage: npx tsx scripts/add-album.ts \"Artist\" \"Album Title\" [YEAR] [--genre \"...\"] [--mbid ID] [--dry-run]\n" +
       "  or:  npm run add-album -- \"Artist\" \"Album Title\" [YEAR] [OPTIONS]"
     );
     process.exit(1);
@@ -283,7 +283,7 @@ async function main(): Promise<void> {
 
   // 4. Generate and write
   console.log("[4/4] Generating scaffold…");
-  const jsonData = buildJson(id, artist, title, resolvedYear, genre, tracks, releaseDate || String(resolvedYear), coverUrl);
+  const jsonData = buildJson(id, artist, title, resolvedYear, genre, tracks, coverUrl);
 
   if (dryRun) {
     console.log("\n─── JSON preview (first 2 000 chars) ──────────────────────────────");

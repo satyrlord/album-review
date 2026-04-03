@@ -4,20 +4,29 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "add-album": "tsx add_album.ts",
+    "dev": "vite",
+    "add-album": "tsx scripts/add-album.ts",
     "build": "tsx scripts/build.ts",
-    "serve": "tsx scripts/serve.ts",
+    "serve": "vite",
+    "preview": "vite preview",
     "test": "playwright test",
+    "test:coverage": "tsx scripts/test-coverage.ts",
     "test:ui": "playwright test --ui",
-    "typecheck": "tsc",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.browser.json",
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
     "validate": "npm run typecheck && npm run lint:md"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2",
+    "@tailwindcss/vite": "^4.2.2",
     "@types/node": "^22.0.0",
+    "daisyui": "^5.5.19",
     "markdownlint-cli2": "^0.22.0",
+    "nyc": "^18.0.0",
+    "tailwindcss": "^4.2.2",
     "tsx": "^4.19.3",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^8.0.3",
+    "vite-plugin-istanbul": "^8.0.0"
   }
 }

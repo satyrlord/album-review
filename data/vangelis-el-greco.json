@@ -1,0 +1,537 @@
+{
+  "id": "vangelis-el-greco",
+  "artist": "Vangelis",
+  "title": "El Greco",
+  "year": 1998,
+  "label": "East West (Europe) · Atlantic (USA)",
+  "producer": "Vangelis",
+  "genre": "Electronic / Classical",
+  "runtime": "1:12:36",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Vangelis_El_Greco_album_art.jpeg/330px-Vangelis_El_Greco_album_art.jpeg",
+  "overview": "El Greco (1998) completes the contemplative trilogy that began with Voices (1995) and continued with Oceanic (1996), and is Vangelis's most sustained engagement with Byzantine choral-electronic fusion. An expanded reworking of the limited-edition Foros Timis Ston Greco (1995), the album reorders the original seven movements and adds three new ones — Movements III, V, and VII — to create a ten-part, 72-minute suite inspired by the painter Dominikos Theotokópoulos (El Greco, 1541–1614). Produced at Nemo Studios with engineer Philippe Colonna and assistant Frederick Rousseau, the album features soprano Montserrat Caballé on one movement and tenor Konstantinos Paliatsaras on another, with a choir conducted by Ivan Cassar complementing Vangelis's layered synthesiser orchestration throughout. The album charted at No. 66 in France, No. 74 in Germany, No. 11 in Hungary, and No. 9 on the Billboard New Age Albums chart.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Movement I",
+      "duration": "10:04",
+      "energy": "mid",
+      "tags": [
+        "Byzantine",
+        "Choral",
+        "Overture",
+        "Extended Form"
+      ],
+      "role": "Album role: Extended overture; the longest opening movement in the trilogy, establishing the Byzantine harmonic language, the choir's role as primary textural colour, and the synth-orchestral scale that governs the remaining nine movements.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone Intro",
+          "description": "low sustained synthesiser drone opens; archaic tonal quality evoking ecclesiastical space.",
+          "detail": "The opening deliberately establishes a sacred architectural resonance before any choral or melodic content."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Choir Entry",
+          "description": "choral voices enter in unison; Byzantine modal inflection, conducted by Ivan Cassar."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Synth Theme",
+          "description": "principal synthesiser melody appears; rich, string-like timbre doubling the choral mode."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Contrapuntal Development",
+          "description": "choir and synth voices diverge into polyphonic texture; harmonic density increases."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Rhythmic Pulse",
+          "description": "subtle percussive pulse enters beneath the choral-orchestral mass; processional character.",
+          "detail": "The pulse is more processional than metronomic — irregular stress patterns suggest liturgical rather than dance rhythm."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Climax",
+          "description": "fullest textural density; choir, synth orchestra, and pulse converge at maximum weight."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Recession",
+          "description": "layers strip progressively; choir diminishes to a sustained pedal tone."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Outro",
+          "description": "single synth voice and fading choral resonance dissolve toward silence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Movement II",
+      "duration": "5:18",
+      "energy": "low",
+      "tags": [
+        "Contemplative",
+        "Solo Synth",
+        "Modal",
+        "Chamber Scale"
+      ],
+      "role": "Album role: Intimate counterpart to the monumental opening; reduces the orchestral scale to a chamber texture, allowing the Byzantine modal language to be heard without choral mass or rhythmic drive.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Solo Voice",
+          "description": "single synthesiser voice opens; unaccompanied, modal melody with ornamental turns.",
+          "detail": "The reduction from the full choral-orchestral texture of Movement I is abrupt and deliberate — a dynamic reset."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Pad Entry",
+          "description": "warm sustained pad enters beneath the solo voice; harmonic support without melodic competition."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Second Voice",
+          "description": "second synth voice in a lower register; the two lines move in loose parallel motion."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Harmonic Peak",
+          "description": "richest harmonic moment; both voices and pad converge on a modal cadence."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Simplification",
+          "description": "second voice withdraws; solo melody returns over sustained pad."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Decay",
+          "description": "melody fragments; pad sustain decays to near-silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Movement III",
+      "duration": "6:48",
+      "energy": "mid",
+      "tags": [
+        "New Addition",
+        "Orchestral-Electronic",
+        "Choral Texture",
+        "Processional"
+      ],
+      "role": "Album role: First of the three newly composed movements added to the Foros Timis Ston Greco material; a more assertive processional that bridges the contemplative opening pair to the richer vocal movements that follow.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Orchestral Pad",
+          "description": "broad synth-orchestral chord opens; fuller than Movement II's sparse texture, signalling increased scale."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Choir",
+          "description": "choral voices enter with a processional character; measured, rhythmically steady."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Synth Countermelody",
+          "description": "synthesiser provides a countermelody above the choral line; richer harmonic interaction than the opening movements."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Build",
+          "description": "textural layering increases; bass synth and additional pad voices enrich the lower register."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Climactic Plateau",
+          "description": "sustained full density; choir and synth orchestra aligned at maximum convergence."
+        },
+        {
+          "timestamp": "5:50",
+          "section": "Descent",
+          "description": "choir thins; synth voices reduce to a single sustained line."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Transition",
+          "description": "fading resonance creates transition space before Movement IV."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Movement IV",
+      "duration": "6:21",
+      "energy": "mid",
+      "tags": [
+        "Reprise Compilation Pick",
+        "Rhythmic",
+        "Byzantine Modal",
+        "Dynamic"
+      ],
+      "role": "Album role: Dynamic intensification; the first movement with a strongly rhythmic character, introducing percussive pulse as a primary element and creating the momentum needed before the reflective Movement V interlude.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Rhythmic Opening",
+          "description": "percussive synth pulse opens immediately; the most rhythmically assertive start on the album.",
+          "detail": "Selected for inclusion on the Reprise 1990–1999 compilation, indicating its role as one of the album's most representative movements."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Choir Entry",
+          "description": "choir enters above the rhythm; Byzantine modal phrasing over the modern pulse."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Melodic Statement",
+          "description": "principal synth melody asserts itself; rhythmically aligned with the pulse, more forward-moving than prior movements."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Textural Peak",
+          "description": "full arrangement: choir, rhythm, synth melody, bass, and pad at maximum density."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Rhythmic Variation",
+          "description": "pulse pattern shifts; subtle metric displacement creates tension."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Recession",
+          "description": "melody and choir withdraw; pulse continues alone before fading."
+        },
+        {
+          "timestamp": "6:05",
+          "section": "Fade",
+          "description": "rhythmic pulse decays to silence."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Movement V",
+      "duration": "4:30",
+      "energy": "low",
+      "tags": [
+        "New Addition",
+        "Interlude",
+        "Reflective",
+        "Sparse"
+      ],
+      "role": "Album role: Second newly composed movement; a brief reflective interlude that resets the dynamic intensity after Movement IV's rhythmic assertiveness and prepares the listener for the choral grandeur of Movement VI.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sparse Opening",
+          "description": "single crystalline synth tone; almost no harmonic context, suspended in reverb."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Melodic Thread",
+          "description": "gentle melody emerges; modal, unhurried, with the economy of a Byzantine chant fragment."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Harmonic Bed",
+          "description": "warm pad enters; the melody now supported by a richer but still sparse harmonic field."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Theme Development",
+          "description": "melody restated with subtle ornamentation; the most developed passage in this short movement."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Dissolution",
+          "description": "melody withdraws; pad sustain alone, decaying toward silence."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Silence",
+          "description": "reverb tail fades to nothing; clean transition to Movement VI."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Movement VI",
+      "duration": "7:52",
+      "energy": "high",
+      "tags": [
+        "Choral Grandeur",
+        "Reprise Compilation Pick",
+        "Orchestral Climax",
+        "Byzantine Polyphony"
+      ],
+      "role": "Album role: The album's emotional and dynamic summit; the largest-scale choral-orchestral movement, representing the fullest convergence of Byzantine vocal polyphony and electronic orchestration — the movement most directly evoking El Greco's monumental paintings.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Grand Opening",
+          "description": "full synth-orchestral chord opens with immediate scale; no gradual introduction.",
+          "detail": "The most imposing opening on the album — designed to be heard after the silence of Movement V."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Full Choir",
+          "description": "choir enters at full voice; polyphonic Byzantine texture, the densest choral writing on the album."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Synth Orchestration",
+          "description": "layered synth voices expand the harmonic space; orchestral rather than chamber in scale."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Rhythmic Drive",
+          "description": "processional pulse establishes forward momentum beneath the choral mass."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Climax",
+          "description": "maximum textural weight; choir, synth orchestra, pulse, and bass converge at the album's highest energy.",
+          "detail": "This is the peak density moment of the entire album — the summit of the ten-movement arc."
+        },
+        {
+          "timestamp": "5:50",
+          "section": "Sustained Peak",
+          "description": "climactic density maintained unusually long; no immediate recession, holding maximum intensity."
+        },
+        {
+          "timestamp": "6:50",
+          "section": "Gradual Descent",
+          "description": "choir begins to thin; pulse softens; synth layers withdraw one by one."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Final Resonance",
+          "description": "choral sustain fades; single synth tone carries the last seconds."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Movement VII",
+      "duration": "3:18",
+      "energy": "low",
+      "tags": [
+        "New Addition",
+        "Miniature",
+        "Transitional",
+        "Solo Voice"
+      ],
+      "role": "Album role: Third and final newly composed movement; a brief miniature that provides essential breathing space between the monumental Movement VI and the sprawling penultimate Movement VIII.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Solo Tone",
+          "description": "single sustained synth note opens; the starkest possible contrast after Movement VI's grandeur."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Melodic Fragment",
+          "description": "brief, ornamental melody in the upper register; Byzantine inflection, no harmonic support."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Pad Entry",
+          "description": "warm pad fills the lower register; the melody now supported but not thickened."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Theme Statement",
+          "description": "the movement's most complete melodic idea; brief, concentrated, modal."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Withdrawal",
+          "description": "melody fades; pad sustain continues alone."
+        },
+        {
+          "timestamp": "3:05",
+          "section": "Fade",
+          "description": "pad decays to near-silence; transition to Movement VIII."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Movement VIII",
+      "duration": "9:43",
+      "energy": "mid",
+      "tags": [
+        "Montserrat Caballé",
+        "Soprano",
+        "Operatic-Electronic",
+        "Extended"
+      ],
+      "role": "Album role: The album's operatic centrepiece; Montserrat Caballé's soprano performance transforms the Byzantine-electronic texture into something approaching electronic opera, and the movement's nearly ten-minute span gives it structural weight comparable to the opening.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Orchestral Intro",
+          "description": "synth-orchestral introduction; broad harmonic palette establishing the harmonic space for the vocal entry.",
+          "detail": "The introduction is more elaborate than any other movement — setting the stage for Caballé's entrance."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Caballé Entry",
+          "description": "Montserrat Caballé's soprano enters; operatic projection over the electronic orchestration.",
+          "detail": "Caballé's voice occupies a different register and timbral world from the choir — a soloist over an electronic orchestra."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Vocal Development",
+          "description": "soprano melody develops with operatic phrasing; Vangelis's synth arrangement responds to the vocal line."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Orchestral Interlude",
+          "description": "Caballé rests; synth orchestra takes the melodic lead, developing material from the vocal theme."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Vocal Return",
+          "description": "soprano re-enters with increased intensity; the arrangement builds beneath her."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Climax",
+          "description": "fullest convergence of soprano and synth orchestra; the movement's peak intensity.",
+          "detail": "The operatic climax is the album's second-highest peak after Movement VI."
+        },
+        {
+          "timestamp": "8:20",
+          "section": "Vocal Recession",
+          "description": "Caballé's voice withdraws; synth orchestration sustains alone."
+        },
+        {
+          "timestamp": "9:15",
+          "section": "Outro",
+          "description": "orchestral texture thins to a single sustained tone; transition to Movement IX."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Movement IX",
+      "duration": "12:00",
+      "energy": "high",
+      "tags": [
+        "Tenor",
+        "Konstantinos Paliatsaras",
+        "Epic Scale",
+        "Longest Track"
+      ],
+      "role": "Album role: The album's most expansive movement and its structural climax; at twelve minutes, tenor Konstantinos Paliatsaras's performance anchors the longest and most architecturally complex passage, functioning as a penultimate summit before the epilogue.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone Foundation",
+          "description": "deep synthesiser drone opens; the most massive tonal foundation on the album.",
+          "detail": "The twelve-minute span requires the most patient opening — nearly two minutes before the tenor enters."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Tenor Entry",
+          "description": "Konstantinos Paliatsaras's tenor enters; Byzantine modal phrasing, powerful projection over the synth drone.",
+          "detail": "The tenor voice provides a different colour from Caballé's soprano — darker, more earth-bound, anchoring the low-register drone."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Choral Support",
+          "description": "choir enters beneath the tenor; choral mass provides harmonic support, building the orchestral scale."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Orchestral Build",
+          "description": "synth orchestration expands; layered pad voices and bass synth create a monumental harmonic field."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "First Peak",
+          "description": "tenor, choir, and synth orchestra align at high density; the movement's first climactic plateau."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Reflective Passage",
+          "description": "intensity recedes; tenor voice in quieter, more contemplative phrasing over reduced orchestration."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Final Build",
+          "description": "orchestral mass rebuilds; choir returns at full voice, driving toward the movement's ultimate climax."
+        },
+        {
+          "timestamp": "10:30",
+          "section": "Summit",
+          "description": "maximum textural density; tenor, full choir, synth orchestra, and rhythmic pulse at the movement's highest energy."
+        },
+        {
+          "timestamp": "11:15",
+          "section": "Recession",
+          "description": "all elements begin to withdraw; choral mass thins, tenor voice softens."
+        },
+        {
+          "timestamp": "11:45",
+          "section": "Fade",
+          "description": "orchestral sustain dissolves; a brief void before the epilogue."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Movement X (Epilogue)",
+      "duration": "6:21",
+      "energy": "low",
+      "tags": [
+        "Epilogue",
+        "Closing Statement",
+        "Reflective",
+        "Arch Form"
+      ],
+      "role": "Album role: Epilogue and closing meditation; returns to the contemplative register of the opening movements, completing the ten-movement arch and resolving the album's Byzantine-electronic journey into sustained stillness.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sustained Chord",
+          "description": "single sustained synth chord opens; warm, full, but without melodic content — a tonal clearing after the weight of Movement IX."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Choir (Distant)",
+          "description": "distant choral voices enter; reduced volume, as if receding into architectural space.",
+          "detail": "The choir's spatial positioning suggests distance — a deliberate contrast with the full-voice choral moments of Movements VI and IX."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Melody",
+          "description": "gentle synth melody; modal, contemplative, referencing the harmonic language of Movement I."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Harmonic Resolution",
+          "description": "the melody finds its cadential point; the most clearly resolved harmonic moment on the album."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Choral Fade",
+          "description": "choir withdraws entirely; synth pad and melody alone."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Final Tone",
+          "description": "melody ceases; sustained synth tone holds, then fades to silence.",
+          "detail": "The album ends on a sustained tone rather than a cadence — an open ending evoking contemplation rather than closure."
+        }
+      ]
+    }
+  ]
+}

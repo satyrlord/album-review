@@ -3,12 +3,14 @@
   "artist": "The Prodigy",
   "title": "Music for the Jilted Generation",
   "year": 1994,
-  "label": "",
-  "producer": "Liam Howlett / Neil McLellan",
+  "label": "XL Recordings",
+  "producer": "Liam Howlett · Neil McLellan",
   "genre": "Electronic / Rave",
   "runtime": "78:07",
   "coverUrl": "https://upload.wikimedia.org/wikipedia/en/8/86/TheProdigy-MusicForTheJiltedGeneration.jpg",
-  "overview": "A per-track, timestamp-level structural blueprint of \"Music for the Jilted Generation.\" Each track is broken down into its arrangement events — when drums enter, when breakdowns happen, when energy peaks — so you can use the timings and structures as a skeleton for your own album. The album-arc section at the bottom maps the macro pacing across all 13 tracks.\n\nTimestamps are approximate to ±2 seconds. BPM values are estimated. Energy tags rate each track's overall intensity ceiling.",
+  "spotifyUrl": "https://open.spotify.com/album/4qhJwKBr2ksxAUFjfJd3rb",
+  "youtubeUrl": "https://music.youtube.com/playlist?list=OLAK5uy_mGfL-eeGfDLyRBHfG5dzGnbUwII92gAxY",
+  "overview": "Music for the Jilted Generation is The Prodigy's second studio album and the definitive statement of UK rave's political moment — released 4 July 1994, conceived in direct response to the Criminal Justice and Public Order Act 1994, which was moving toward the criminalisation of gatherings featuring 'a succession of repetitive beats.' Produced by Liam Howlett with Neil McLellan mixing, the album spans 78 minutes across 13 tracks: a front-loaded assault of breakbeat rave and genre collision (Tracks 2–7) framed by a political spoken-word manifesto, concluded by the Narcotic Suite trilogy (Tracks 11–13) — a self-contained journey from downtempo through ambient bloom to industrial darkness. Equipment centres on Akai S1000 and S950 samplers, Roland TR-808, and a sourced-sample library including the Amen Break, Nirvana's \"Very Ape,\" Bernard Purdie's \"Good Livin',\" and Baby D's \"Casanova.\" Tracks 3 and 5 introduce live rock guitar via Pop Will Eat Itself and Lance Riddler respectively — the album's most aggressive genre-collision moments. UK No. 1; Mercury Music Prize nomination.\n\nTimestamps are approximate to ±2 seconds. Energy tags rate each track's overall intensity ceiling.",
   "tracks": [
     {
       "num": 1,
@@ -23,25 +25,25 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Drone",
           "description": "Silence, then a low ambient hum fades in — filtered, cavernous reverb.",
           "detail": "Establishes negative space. No rhythm, no melody. Pure atmosphere."
         },
         {
           "timestamp": "0:06",
-          "section": "",
+          "section": "Spoken Word",
           "description": "Spoken-word vocal sample enters over the drone. Narrative/political tone — a voice addressing the listener directly.",
           "detail": "Dry vocal against wet ambient bed. Contrast is key."
         },
         {
           "timestamp": "0:30",
-          "section": "",
+          "section": "Swell",
           "description": "Ambient bed begins to swell slightly, tension building beneath the final words.",
           "detail": "Very subtle rise in volume/density. No drums. The restraint here makes Track 2's entrance devastating."
         },
         {
           "timestamp": "0:42",
-          "section": "",
+          "section": "Outro",
           "description": "Voice ends. Ambient trail fades into silence — brief gap before Track 2 detonates.",
           "detail": "~2-3 seconds of near-silence. Critical for the impact of the transition."
         }
@@ -61,85 +63,85 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Intro",
           "description": "Breakbeat drums slam in at full intensity from the very first beat — no intro, maximum contrast with Track 1.",
           "detail": "Chopped Amen-style breaks, heavy processing. The silence-to-chaos transition is the album's first statement."
         },
         {
           "timestamp": "0:08",
-          "section": "",
+          "section": "Synth Entry",
           "description": "Filtered synth stab enters alongside the break, establishing the dark tonal center.",
           "detail": "Low-mid frequency range. Gives the drums harmonic context."
         },
         {
           "timestamp": "0:30",
-          "section": "",
+          "section": "Vocal Hook",
           "description": "Vocal sample (\"Casanova\" by Baby D) drops in — becomes the hook/refrain of the track.",
           "detail": "Pitched and chopped. Used as a melodic instrument rather than lyrical content."
         },
         {
           "timestamp": "1:15",
-          "section": "",
+          "section": "Layering",
           "description": "Additional synth layers begin stacking — rising pad, new stab pattern enters.",
           "detail": "Density increasing. ~3-4 simultaneous synth elements now."
         },
         {
           "timestamp": "2:00",
-          "section": "",
+          "section": "Peak",
           "description": "First major arrangement peak — all elements firing. Sub-bass fully engaged. Maximum rave energy.",
           "detail": "This is the \"full arrangement\" state. Track will cycle between this and stripped versions."
         },
         {
           "timestamp": "2:45",
-          "section": "",
+          "section": "Breakdown",
           "description": "First breakdown — drums strip to half-time or drop out. Atmospheric pads and reverb take over.",
           "detail": "~30 seconds of ambient breathing room. Synth washes and delayed fragments."
         },
         {
           "timestamp": "3:15",
-          "section": "",
+          "section": "Build",
           "description": "Build begins — hi-hats return, snare roll starts, filtered sweep rises.",
           "detail": "Classic rave build technique. Tension accumulates over ~15 seconds."
         },
         {
           "timestamp": "3:30",
-          "section": "",
+          "section": "Drop",
           "description": "Second drop — full breakbeat returns with a new melodic variation. Fresh synth line introduced.",
           "detail": "The trick: same energy level, new melodic information. Keeps interest over 8+ minutes."
         },
         {
           "timestamp": "4:30",
-          "section": "",
+          "section": "Mid-Section",
           "description": "New section — tempo and rhythmic feel shifts subtly. Darker, more aggressive synth tones.",
           "detail": "The track evolves rather than repeats. Mid-track pivot point."
         },
         {
           "timestamp": "5:20",
-          "section": "",
+          "section": "Breakdown",
           "description": "Extended ambient breakdown #2 — longest in the track (~45 seconds). Ethereal pads, distant vocal echoes.",
           "detail": "This is the track's emotional center. Contrast before the final assault."
         },
         {
           "timestamp": "6:05",
-          "section": "",
+          "section": "Build",
           "description": "Build #2 — more aggressive this time. Distorted elements, rising noise sweeps.",
           "detail": "Longer build than the first one. Tension is higher because the listener knows what's coming."
         },
         {
           "timestamp": "6:25",
-          "section": "",
+          "section": "Final Drop",
           "description": "Final drop — all elements return at maximum intensity. New percussive elements added. Peak energy.",
           "detail": "The payoff. Additional percussion layers that weren't in earlier drops."
         },
         {
           "timestamp": "7:30",
-          "section": "",
+          "section": "Deconstruction",
           "description": "Elements begin to strip away gradually. Synths fade, leaving drums more exposed.",
           "detail": "Controlled deconstruction over ~50 seconds."
         },
         {
           "timestamp": "8:10",
-          "section": "",
+          "section": "Outro",
           "description": "Final bars — last echoes of the break, reverb tails, fade to near-silence.",
           "detail": "Leaves sonic space for Track 3 to claim a different territory."
         }
@@ -159,61 +161,61 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Spoken Word",
           "description": "Spoken-word intro sample — political/confrontational tone. Sparse, dark ambient backdrop.",
           "detail": "~12 seconds of voice-only with minimal texture beneath. Sets up the confrontation."
         },
         {
           "timestamp": "0:12",
-          "section": "",
+          "section": "Drop",
           "description": "Distorted guitar riff and breakbeat drums slam in simultaneously. Heavy, industrial feel.",
           "detail": "Guitar is heavily processed — sits between electronic and rock. Bass drops from \"Drop That Bassline\" sample."
         },
         {
           "timestamp": "0:45",
-          "section": "",
+          "section": "Vocal Hook",
           "description": "Vocal hook enters — shouted, aggressive delivery from PWEI. Call-and-response pattern.",
           "detail": "The vocal sits on top of the mix, deliberately raw and confrontational."
         },
         {
           "timestamp": "1:30",
-          "section": "",
+          "section": "Peak",
           "description": "Additional synth layers and processed noise sweeps intensify the wall of sound.",
           "detail": "Track is now at ~80% density. Guitar riff continues as the anchor."
         },
         {
           "timestamp": "2:15",
-          "section": "",
+          "section": "Breakdown",
           "description": "Breakdown — guitar and vocals drop out. Stripped to just beats and bass, with filtered effects.",
           "detail": "~20 seconds. Drums become more exposed, almost hip-hop feel."
         },
         {
           "timestamp": "2:35",
-          "section": "",
+          "section": "Drop",
           "description": "Everything crashes back in — guitar riff returns louder/harder. Vocal sample intensifies.",
           "detail": "The drop hits harder because of the stripped section. Pattern repeats with variations."
         },
         {
           "timestamp": "3:40",
-          "section": "",
+          "section": "Breakdown",
           "description": "Second major breakdown — more atmospheric this time. Distant reverbed elements, ambient drift.",
           "detail": "~30 seconds. Longer breathing room. Creates a valley before the final climb."
         },
         {
           "timestamp": "4:10",
-          "section": "",
+          "section": "Build",
           "description": "Build begins — rising filter sweep, drums reintroduce piece by piece. Tension builds.",
           "detail": "Snare rolls begin at 4:25, announcing the return."
         },
         {
           "timestamp": "4:30",
-          "section": "",
+          "section": "Final Section",
           "description": "Final section — all elements return at peak intensity. New guitar variation and additional vocal layers.",
           "detail": "The most intense ~90 seconds of the track. Everything at maximum."
         },
         {
           "timestamp": "5:45",
-          "section": "",
+          "section": "Outro",
           "description": "Deconstruction begins — layers peel off over final 20 seconds. Ends on a reverb tail and low drone."
         }
       ]
@@ -231,48 +233,48 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Intro",
           "description": "Opens with a reversed sample and hard-hitting kick drum pattern. Immediate energy.",
           "detail": "Reversed Star Wars sample (\"we're going in, full throttle\") — played backwards. Sets up a disorienting entry."
         },
         {
           "timestamp": "0:15",
-          "section": "",
+          "section": "Drop",
           "description": "Full breakbeat and bass engage. Staccato synth riff establishes the main hook.",
           "detail": "More straightforward than Tracks 2-3. Direct 4/4-adjacent energy."
         },
         {
           "timestamp": "0:50",
-          "section": "",
+          "section": "Vocal Stabs",
           "description": "Vocal samples (\"Hey!\" from The Breeders' \"SOS\") layer in as rhythmic accents.",
           "detail": "Short, percussive vocal stabs. Used for texture, not melody."
         },
         {
           "timestamp": "1:30",
-          "section": "",
+          "section": "Layering",
           "description": "Second synth layer joins — higher frequency, more insistent. Energy ramps.",
           "detail": "Film sample laughter (from A Fistful of Dollars) weaves in and out."
         },
         {
           "timestamp": "2:20",
-          "section": "",
+          "section": "Breakdown",
           "description": "Breakdown — kick drops out, hi-hats and filtered elements carry momentum.",
           "detail": "~25 seconds. Shorter breakdown than previous tracks — keeps the pace up."
         },
         {
           "timestamp": "2:45",
-          "section": "",
+          "section": "Drop",
           "description": "Drop back in — kick returns with added sub-bass weight. New percussion pattern.",
           "detail": "Energy feels renewed rather than repeated. Fresh drum fills mark the return."
         },
         {
           "timestamp": "3:30",
-          "section": "",
+          "section": "Peak",
           "description": "Peak section — all elements layered. Maximum density sustained for ~60 seconds."
         },
         {
           "timestamp": "4:30",
-          "section": "",
+          "section": "Outro",
           "description": "Outro begins — elements thin out. Synths fade first, then bass, finally drums.",
           "detail": "~30 seconds of controlled descent. Ends clean with a final reverbed hit."
         }
@@ -292,73 +294,73 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Intro",
           "description": "Atmospheric intro — filtered ambient sounds, a distant warped sample, low rumble.",
           "detail": "~20 seconds of scene-setting. Calm before the storm — alien, psychedelic texture."
         },
         {
           "timestamp": "0:20",
-          "section": "",
+          "section": "Guitar Riff",
           "description": "The iconic guitar riff enters — clean, isolated, immediately recognizable. No drums yet.",
           "detail": "Based on Nirvana's \"Very Ape,\" performed by Lance Riddler. Heavily treated but melodically clear."
         },
         {
           "timestamp": "0:35",
-          "section": "",
+          "section": "Drop",
           "description": "Breakbeat drums and bass drop in beneath the riff. Full groove established.",
           "detail": "The riff-over-breaks combination is the track's DNA. Everything else layers on top."
         },
         {
           "timestamp": "1:10",
-          "section": "",
+          "section": "Vocal Hook",
           "description": "Vocal sample enters (\"The Shalimar\" by Gylan Kain) — spoken-word, hypnotic, ritualistic feel.",
           "detail": "Adds the \"voodoo\" atmosphere. Processed with delay and reverb."
         },
         {
           "timestamp": "1:50",
-          "section": "",
+          "section": "Peak",
           "description": "Additional synth stabs and a rising pad layer in. Track reaches first peak density.",
           "detail": "~5-6 simultaneous elements. Guitar riff remains the constant anchor."
         },
         {
           "timestamp": "2:30",
-          "section": "",
+          "section": "Breakdown",
           "description": "First breakdown — drums and bass cut. Guitar riff continues alone with ambient effects.",
           "detail": "~20 seconds. The riff sounds completely different without the rhythm section — eerie, exposed."
         },
         {
           "timestamp": "2:50",
-          "section": "",
+          "section": "Drop",
           "description": "Drums smash back — bigger, more distorted. New percussive elements layered.",
           "detail": "The return adds crash cymbals and a heavier kick for extra impact."
         },
         {
           "timestamp": "3:40",
-          "section": "",
+          "section": "Extended Peak",
           "description": "Extended peak section — all elements fully engaged. Synth leads weave around the guitar.",
           "detail": "This plateau sustains for over a minute. Pure momentum."
         },
         {
           "timestamp": "4:50",
-          "section": "",
+          "section": "Breakdown",
           "description": "Second breakdown — longer, more atmospheric. Guitar drops out. Pads and distant vocal echoes.",
           "detail": "~35 seconds. The deepest valley in the track. Creates anticipation for the finale."
         },
         {
           "timestamp": "5:25",
-          "section": "",
+          "section": "Build",
           "description": "Build — filtered sweep, snare rolls accelerating, guitar riff fading back in.",
           "detail": "~15 seconds of escalating tension."
         },
         {
           "timestamp": "5:40",
-          "section": "",
+          "section": "Final Drop",
           "description": "Final drop — all elements return at maximum. Additional distortion and intensity.",
           "detail": "The final 45 seconds are the track at its most unhinged."
         },
         {
           "timestamp": "6:10",
-          "section": "",
+          "section": "Outro",
           "description": "Outro — rapid deconstruction. Elements strip in seconds. Ends on a guitar reverb trail."
         }
       ]
@@ -377,60 +379,60 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Intro",
           "description": "Cinematic intro — car engine/mechanical sound effects over a rising synth pad.",
           "detail": "Sets a \"chase scene\" atmosphere. ~15 seconds of sound design."
         },
         {
           "timestamp": "0:15",
-          "section": "",
+          "section": "Breakbeat Entry",
           "description": "Rapid breakbeat enters — faster, more junglist patterns than previous tracks.",
           "detail": "Double-time feel. Hi-hats are prominent, syncopated. Drum pattern is the star."
         },
         {
           "timestamp": "0:45",
-          "section": "",
+          "section": "Groove",
           "description": "Bass synth and a dark, circular synth melody lock in. Hypnotic groove established.",
           "detail": "Less \"riff-based\" than previous tracks — this is about repetition and trance state."
         },
         {
           "timestamp": "1:40",
-          "section": "",
+          "section": "Texture",
           "description": "Textural layers — processed noise, metallic scrapes, filtered sweeps.",
           "detail": "Industrial textures add grit without changing the harmonic content."
         },
         {
           "timestamp": "2:30",
-          "section": "",
+          "section": "Breakdown",
           "description": "Breakdown — drums thin to just a filtered hi-hat loop. Bass drops to sub frequencies.",
           "detail": "~35 seconds. Minimal, hypnotic. The groove doesn't stop, it just recedes."
         },
         {
           "timestamp": "3:05",
-          "section": "",
+          "section": "Drop",
           "description": "Full drums return with new synth pattern — higher pitch, more urgent feel.",
           "detail": "Track evolves in the second half. Melody shifts upward."
         },
         {
           "timestamp": "4:15",
-          "section": "",
+          "section": "Polyrhythm",
           "description": "New section — additional breakbeat layer creates polyrhythmic complexity.",
           "detail": "Two break patterns overlapping. Very jungle-influenced."
         },
         {
           "timestamp": "5:20",
-          "section": "",
+          "section": "Breakdown",
           "description": "Second breakdown — more atmospheric than the first. Pads and reverb dominate.",
           "detail": "~30 seconds of spacious, almost ambient territory."
         },
         {
           "timestamp": "5:50",
-          "section": "",
+          "section": "Final Section",
           "description": "Final section — builds back with additional energy. Last ~70 seconds ride out at peak intensity."
         },
         {
           "timestamp": "6:50",
-          "section": "",
+          "section": "Outro",
           "description": "Rapid fade. Elements collapse into silence. Brief gap before Track 7.",
           "detail": "Note: On the \"More Music\" reissue, over 2.5 minutes of this track continues into Track 7 — a mastering correction."
         }
@@ -450,52 +452,52 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Intro",
           "description": "Immediate — hard kick drum and distorted synth stab from beat one. No preamble.",
           "detail": "Vocal sample from Poltergeist III layers in early. Horror-film tension meets dancefloor."
         },
         {
           "timestamp": "0:30",
-          "section": "",
+          "section": "Breakbeat",
           "description": "Breakbeat fills out beneath the kick. Layered percussion creates dense rhythmic bed.",
           "detail": "Samples from Lil Louis and Moby's \"Thousand\" contribute to the frantic texture."
         },
         {
           "timestamp": "1:15",
-          "section": "",
+          "section": "Synth Melody",
           "description": "Melodic synth element introduces — a minor-key arpeggiated line.",
           "detail": "Sits high in the mix. First real melodic content after ~75 seconds of pure rhythm."
         },
         {
           "timestamp": "2:00",
-          "section": "",
+          "section": "Breakdown",
           "description": "Brief breakdown — kick drops, breakbeat becomes exposed. Film sample more prominent.",
           "detail": "Only ~15 seconds. This track doesn't give you much time to breathe."
         },
         {
           "timestamp": "2:15",
-          "section": "",
+          "section": "Drop",
           "description": "Full return — heavier, with added low-end weight. Track reaches maximum density."
         },
         {
           "timestamp": "3:00",
-          "section": "",
+          "section": "Build",
           "description": "New synth pattern — more dissonant, urgent. Drives toward the track's climax.",
           "detail": "Layered over the existing arpeggiation. Harmonic tension increases."
         },
         {
           "timestamp": "3:45",
-          "section": "",
+          "section": "Breakdown",
           "description": "Second breakdown — slightly longer (~20 seconds). Filtered pads and echoed vocal."
         },
         {
           "timestamp": "4:05",
-          "section": "",
+          "section": "Final Section",
           "description": "Final section — everything returns for the last minute of sustained intensity."
         },
         {
           "timestamp": "4:50",
-          "section": "",
+          "section": "Outro",
           "description": "Abrupt ending — cuts almost dead, with a final reverb tail. Clean stop.",
           "detail": "No fade. The hard cut leaves a vacuum that Track 8 fills differently."
         }
@@ -515,60 +517,60 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Silence",
           "description": "Extended silence/near-silence — very low ambient hum. ~30 seconds of almost nothing.",
           "detail": "Deliberately provocative pacing after Track 7's relentless energy. Forces the listener to reset."
         },
         {
           "timestamp": "0:30",
-          "section": "",
+          "section": "Sparse Beat",
           "description": "A single, heavy drum hit — then another. Sparse, deliberate rhythm emerges.",
           "detail": "Skull Snaps sample. Very slow compared to the album so far. Almost hip-hop tempo."
         },
         {
           "timestamp": "1:00",
-          "section": "",
+          "section": "Bass Entry",
           "description": "Bass synth creeps in — deep, venomous, pitch-bent. The \"poison\" feel is established.",
           "detail": "Amen Brother break begins to layer beneath. Building from the bottom up."
         },
         {
           "timestamp": "1:30",
-          "section": "",
+          "section": "Vocal",
           "description": "Vocal fragments — Maxim's processed voice. Short, menacing phrases.",
           "detail": "Not a traditional vocal performance. More like a weapon woven into the texture."
         },
         {
           "timestamp": "2:00",
-          "section": "",
+          "section": "Drop",
           "description": "Full groove finally engages — took 2 full minutes to build. Drums at full intensity. Bass at maximum.",
           "detail": "The slow build makes this hit much harder than an immediate drop would. 2 minutes of anticipation."
         },
         {
           "timestamp": "2:45",
-          "section": "",
+          "section": "Layering",
           "description": "Additional synth layers — dark strings, atonal stabs. Density increases.",
           "detail": "The arrangement keeps growing even after the \"drop.\" Nothing plateaus."
         },
         {
           "timestamp": "3:30",
-          "section": "",
+          "section": "Breakdown",
           "description": "Breakdown — drums strip to a minimal loop. Bass goes sub-only. Filtered, distant.",
           "detail": "~30 seconds. Vocal sample echoes in reverb. Spacious."
         },
         {
           "timestamp": "4:00",
-          "section": "",
+          "section": "Drop",
           "description": "Return — drums crash back. New percussive fills and a more aggressive bass pattern.",
           "detail": "The second half is darker than the first. The track gets meaner as it goes."
         },
         {
           "timestamp": "5:00",
-          "section": "",
+          "section": "Peak",
           "description": "Peak density — all layers engaged. Maximum menace. Sustained for ~60 seconds."
         },
         {
           "timestamp": "6:00",
-          "section": "",
+          "section": "Outro",
           "description": "Outro begins — gradual deconstruction. Elements drop one by one. Ends on bass and ambience.",
           "detail": "~40 seconds of unwinding. Mirrors the slow-build intro."
         }
@@ -588,59 +590,59 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Vocal Intro",
           "description": "Filtered vocal sample intro — Kelly Charles' \"No Good for Me\" pitched and looped. Instantly iconic.",
           "detail": "Minimal backing — just the vocal and a basic filtered beat. Hook-first approach."
         },
         {
           "timestamp": "0:20",
-          "section": "",
+          "section": "Beat Entry",
           "description": "Kick drum and bass enter. Clean, punchy four-on-the-floor feel with breakbeat overlay.",
           "detail": "More house-influenced than the rest of the album. Funk sample from \"Funky Nassau\" underpins."
         },
         {
           "timestamp": "0:45",
-          "section": "",
+          "section": "Drop",
           "description": "Full arrangement engages — synth stabs, layered percussion, vocal hook fully established.",
           "detail": "The most \"classic rave\" moment on the album. Immediately dancefloor-ready."
         },
         {
           "timestamp": "1:30",
-          "section": "",
+          "section": "Synth Lead",
           "description": "Additional synth lead — melodic, uplifting. A stark contrast to Poison's darkness.",
           "detail": "The vocal hook repeats with variation. New rhythmic accents added."
         },
         {
           "timestamp": "2:20",
-          "section": "",
+          "section": "Breakdown",
           "description": "Breakdown — vocal isolated with filter effects. Drums strip to hi-hats and a distant kick.",
           "detail": "~25 seconds. The vocal hook carries this section entirely."
         },
         {
           "timestamp": "2:45",
-          "section": "",
+          "section": "Drop",
           "description": "Drop — full energy returns. New synth pad adds width. Bass is heavier.",
           "detail": "Standard rave drop technique but executed perfectly. The crowd-goes-wild moment."
         },
         {
           "timestamp": "3:30",
-          "section": "",
+          "section": "Extended Peak",
           "description": "Extended peak section — arrangement sustains maximum energy. Additional vocal chops."
         },
         {
           "timestamp": "4:15",
-          "section": "",
+          "section": "Breakdown",
           "description": "Second breakdown — longer, more atmospheric. Piano/keys element briefly appears.",
           "detail": "~30 seconds. Gives the track a second emotional arc."
         },
         {
           "timestamp": "4:45",
-          "section": "",
+          "section": "Final Drop",
           "description": "Final drop — all elements return. Last 90 seconds at peak energy with subtle variations."
         },
         {
           "timestamp": "5:55",
-          "section": "",
+          "section": "Outro",
           "description": "Outro — elements strip away. Vocal hook is the last thing to fade, reverbed into silence.",
           "detail": "The hook stays in your head because it's the last thing you hear."
         }
@@ -660,42 +662,42 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Vocal Intro",
           "description": "Arabic vocal sample (\"Muezzin\" from Zero G sample CD) — ethereal, haunting, melodic.",
           "detail": "Immediately sets this apart from everything else on the album. Spiritual vs. aggressive."
         },
         {
           "timestamp": "0:15",
-          "section": "",
+          "section": "Beat Entry",
           "description": "Breakbeat and sub-bass enter beneath the vocal. Classic rave structure forms quickly.",
           "detail": "The edited version wastes no time. Straight to the groove."
         },
         {
           "timestamp": "0:35",
-          "section": "",
+          "section": "Drop",
           "description": "Full arrangement — synth pads, layered percussion, vocal sample repeating. Euphoric.",
           "detail": "More uplifting than anything else on the album. A moment of transcendence."
         },
         {
           "timestamp": "1:20",
-          "section": "",
+          "section": "Synth Build",
           "description": "Additional melodic synth — a rising sequence that adds urgency.",
           "detail": "Track builds continuously. No real plateau in the first half."
         },
         {
           "timestamp": "2:00",
-          "section": "",
+          "section": "Breakdown",
           "description": "Breakdown — vocal sample isolated with reverb. Drums drop to minimal pattern.",
           "detail": "~20 seconds. Short — the track's brevity demands efficiency."
         },
         {
           "timestamp": "2:20",
-          "section": "",
+          "section": "Drop",
           "description": "Return — full energy. All elements back. New synth variation for the final section."
         },
         {
           "timestamp": "3:20",
-          "section": "",
+          "section": "Outro",
           "description": "Outro begins — gradual fade. Vocal sample is the last element, trailing into reverb.",
           "detail": "~30 seconds of deconstruction. Transitions into the Narcotic Suite."
         }
@@ -715,31 +717,31 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Intro",
           "description": "Slow, languid beat fades in — almost hip-hop tempo. Sampled from Bernard Purdie's \"Good Livin'.\"",
           "detail": "Drastically slower than anything before it. The tempo shift is jarring in the best way."
         },
         {
           "timestamp": "0:20",
-          "section": "",
+          "section": "Flute Entry",
           "description": "Deep bass and a live flute melody (Phil Bent) enter. Warm, smoky, narcotic atmosphere.",
           "detail": "The flute is a totally new sonic element for the album. Organic vs. electronic."
         },
         {
           "timestamp": "0:50",
-          "section": "",
+          "section": "Keys",
           "description": "Additional keys/pad — warm, round tone. Vibraphone-like accents.",
           "detail": "The arrangement is sparse but rich. Every element has space."
         },
         {
           "timestamp": "1:30",
-          "section": "",
+          "section": "Development",
           "description": "Flute melody develops — more elaborate phrasing. Subtle rhythmic variations in the drums.",
           "detail": "The track doesn't build in intensity — it deepens in texture."
         },
         {
           "timestamp": "2:20",
-          "section": "",
+          "section": "Crossfade",
           "description": "Elements begin to fade. Flute trails off. Beat thins. Crossfade into Skylined begins.",
           "detail": "No hard ending — the three Narcotic Suite tracks are designed to flow as one piece."
         }
@@ -759,55 +761,55 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Crossfade Intro",
           "description": "Crossfade from 3 Kilos — ambient pads and a rising synth wash. Tempo gradually increasing.",
           "detail": "The transition is seamless. New harmonic territory — brighter, more hopeful."
         },
         {
           "timestamp": "0:25",
-          "section": "",
+          "section": "Breakbeat Entry",
           "description": "A breakbeat enters — mid-tempo, lighter touch than earlier tracks. More swing, less aggression.",
           "detail": "Flute continues from 3 Kilos but with a different, more uplifting melody."
         },
         {
           "timestamp": "1:00",
-          "section": "",
+          "section": "Synth Pad",
           "description": "Melodic synth pad — wide, warm, major-key feel. Emotional uplift.",
           "detail": "This is the album's most \"beautiful\" moment. Lush production."
         },
         {
           "timestamp": "1:45",
-          "section": "",
+          "section": "Layering",
           "description": "Additional layers — strings-like synth, arpeggiated sequences. Density growing gently.",
           "detail": "The build is patient — no sudden jumps. A slow bloom."
         },
         {
           "timestamp": "2:30",
-          "section": "",
+          "section": "Peak",
           "description": "Peak moment — all elements converge. Drums at full intensity, multiple synth layers, flute.",
           "detail": "But \"full intensity\" here is still softer than the album's earlier peaks. Different register."
         },
         {
           "timestamp": "3:15",
-          "section": "",
+          "section": "Atmospheric",
           "description": "Atmospheric section — drums recede. Pads and flute carry the track alone.",
           "detail": "~30 seconds of floating, spacious ambience. The \"skylined\" feeling."
         },
         {
           "timestamp": "3:45",
-          "section": "",
+          "section": "Return",
           "description": "Drums return — slightly harder this time. Preparing the transition to Part 3.",
           "detail": "The mood begins to darken subtly. Harmonic content shifts toward minor keys."
         },
         {
           "timestamp": "4:45",
-          "section": "",
+          "section": "Tonal Shift",
           "description": "Tonal shift — brighter elements fade. Darker, more ominous textures seep in.",
           "detail": "The transition to Claustrophobic Sting is happening in real time."
         },
         {
           "timestamp": "5:10",
-          "section": "",
+          "section": "Crossfade Outro",
           "description": "Final bars — most elements gone. A low, unsettling drone remains. Crossfade to Track 13.",
           "detail": "The beauty of Skylined is replaced by dread. The Suite's emotional arc in action."
         }
@@ -827,67 +829,67 @@
       "events": [
         {
           "timestamp": "0:00",
-          "section": "",
+          "section": "Drone Intro",
           "description": "Crossfade from Skylined — a dark, cavernous drone. Sub-bass rumble. Oppressive atmosphere.",
           "detail": "The \"claustrophobic\" sensation starts immediately. Spatial compression."
         },
         {
           "timestamp": "0:30",
-          "section": "",
+          "section": "Kick Pulse",
           "description": "Slow, pounding kick drum — very sparse, each hit reverbed into a massive space.",
           "detail": "Almost processional. Like footsteps in a cathedral. ~80 BPM."
         },
         {
           "timestamp": "1:00",
-          "section": "",
+          "section": "Industrial Texture",
           "description": "Industrial textures — metallic scrapes, distorted mechanical sounds.",
           "detail": "No melody. Pure texture and rhythm. Unsettling sound design."
         },
         {
           "timestamp": "1:45",
-          "section": "",
+          "section": "Dialogue Sample",
           "description": "2001: A Space Odyssey dialogue recreation appears — processed, distant, eerie.",
           "detail": "Adds a sci-fi/existential dimension. The album ends not in rave, but in space."
         },
         {
           "timestamp": "2:30",
-          "section": "",
+          "section": "Breakbeat Entry",
           "description": "Breakbeat enters — but darker, more distorted than anywhere on the album.",
           "detail": "Drums sound damaged, corroded. Filtered and bit-crushed."
         },
         {
           "timestamp": "3:15",
-          "section": "",
+          "section": "Bass Drop",
           "description": "Bass drops — massive, sub-heavy. Combined with the distorted breaks, creates a wall of darkness.",
           "detail": "This is the album's deepest, most claustrophobic moment. Maximum density, minimum light."
         },
         {
           "timestamp": "4:00",
-          "section": "",
+          "section": "Noise Layers",
           "description": "Additional noise layers — rising dissonance, feedback-like tones.",
           "detail": "The track becomes progressively more unhinged. Controlled chaos."
         },
         {
           "timestamp": "4:45",
-          "section": "",
+          "section": "Dark Breakdown",
           "description": "Breakdown — but not relief. Drums drop, but the ambient dread intensifies.",
           "detail": "~30 seconds of pure horror-soundtrack ambience. The darkness is louder than the beats."
         },
         {
           "timestamp": "5:15",
-          "section": "",
+          "section": "Final Assault",
           "description": "Final assault — all elements return at maximum darkness. Distortion, sub-bass, industrial percussion.",
           "detail": "The last ~90 seconds of peak intensity. No redemption arc — the album ends in the depths."
         },
         {
           "timestamp": "6:30",
-          "section": "",
+          "section": "Deconstruction",
           "description": "Deconstruction begins — elements strip away slowly. Reverb tails extend into nothing.",
           "detail": "The final 40 seconds are a slow fade into void. Sub-bass is the last audible element."
         },
         {
           "timestamp": "7:05",
-          "section": "",
+          "section": "Outro",
           "description": "Near-silence. A final low hum, then nothing. The album ends.",
           "detail": "The last few seconds mirror the album's opening — ambient nothingness bookending 78 minutes of chaos."
         }

@@ -1,0 +1,439 @@
+{
+  "id": "vangelis-oceanic",
+  "artist": "Vangelis",
+  "title": "Oceanic",
+  "year": 1996,
+  "label": "East West (Europe) · Atlantic (USA)",
+  "producer": "Vangelis",
+  "genre": "Electronic / Ambient",
+  "runtime": "50:42",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/c/c8/Oceanic_%28Vangelis%29_album_cover.jpg",
+  "overview": "Oceanic (1996) is the second panel of Vangelis's late-period contemplative trilogy, following Voices (1995) and preceding El Greco (1998), and his most sustained exploration of aquatic imagery as compositional architecture. Produced at Nemo Studios in London with assistant producer Frederick Rousseau and engineer Philippe Colonna, the album deploys layered synth-pad orchestration, sampled ocean sound effects — waves, whale song, ship horns, seagulls — and acoustic piano alongside sequencer-driven passages and choral textures. The nine tracks describe a continuous arc from departure (\"Bon Voyage\") through deep-water exploration to a cyclic return, with surf sounds bookending the album. Nominated for a Grammy Award in the Best New Age Album category — Vangelis's first Grammy nomination — the album charted at No. 22 in Austria, No. 29 in France, and No. 5 on the Billboard New Age Albums chart.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Bon Voyage",
+      "duration": "2:33",
+      "energy": "low",
+      "tags": [
+        "Sea Sounds",
+        "Orchestral Electronica",
+        "Scene-Setter",
+        "Field Recording"
+      ],
+      "role": "Album role: Ceremonial embarkation; opens the album with literal wave recordings that dissolve into orchestral electronica, establishing the oceanic programme and setting the departure metaphor for the nine-track arc.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Surf Opening",
+          "description": "field-recorded sea waves open the album; no musical content, purely atmospheric scene-setting.",
+          "detail": "The surf sounds recur at the album's close, creating a cyclic frame — departure and return."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Synth Entry",
+          "description": "warm pad chord rises beneath the wave sounds; tonal centre established without melody."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Melodic Fragment",
+          "description": "brief orchestral-register synth phrase introduces the first melodic identity; stately and unhurried."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Full Texture",
+          "description": "layered pad orchestration and subtle bass presence fill the stereo field; wave sounds recede."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Crossfade",
+          "description": "orchestral texture dissolves and merges seamlessly into the opening beat of \"Sirens' Whispering.\""
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Sirens' Whispering",
+      "duration": "7:59",
+      "energy": "mid",
+      "tags": [
+        "Beat Sequence",
+        "Choral",
+        "Sampled Voices",
+        "Hypnotic"
+      ],
+      "role": "Album role: First full-scale statement; a beat-driven piece with sampled choral textures that establishes the album's rhythmic and harmonic vocabulary — the longest and most structurally developed track on the first half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Beat Entry",
+          "description": "programmed beat sequence enters from the crossfade; mid-tempo, minimal percussion palette."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Choral Layer",
+          "description": "sampled choir voices appear, whispering and sustaining; melodic fragments without lyrical content.",
+          "detail": "The 'sirens' are synthetic-choral textures, not a live choir — an oceanic metaphor rendered through electronics."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Melody",
+          "description": "principal synth melody stated over the beat and choral bed; warm, mid-register timbre."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Development",
+          "description": "melody varied and ornamented; harmonic layering thickens with additional pad voices."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Breakdown",
+          "description": "beat drops away; choral textures and pad sustain carry the track momentarily without rhythmic support."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Rhythmic Return",
+          "description": "beat re-enters with modified pattern; bass register enriched for the track's second arc."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Fade",
+          "description": "gradual textural thinning; beat dissolves and choral layer fades to near-silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Dreams of Surf",
+      "duration": "2:43",
+      "energy": "low",
+      "tags": [
+        "Acoustic Piano",
+        "Intimate",
+        "Interlude",
+        "Reflective"
+      ],
+      "role": "Album role: Acoustic palate-cleanser; the only piano-centred piece on the album, providing a deliberately organic interruption between the two longest beat-driven tracks.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Piano Solo",
+          "description": "unaccompanied piano figure opens in the upper register; sparse, with long sustain pedal.",
+          "detail": "The acoustic piano is a deliberate textural exception on an otherwise synthesiser-dominated album."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Pad Support",
+          "description": "soft synth pad enters beneath the piano; harmonic support without melodic competition."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Theme",
+          "description": "piano states its fullest melodic idea; gentle, unhurried, with subtle sustain variation."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Dissolution",
+          "description": "piano phrases fragment; pad sustain holds as the melodic content thins."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Outro",
+          "description": "final piano note decays into reverb tail; transition space before \"Spanish Harbour.\""
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Spanish Harbour",
+      "duration": "6:42",
+      "energy": "mid",
+      "tags": [
+        "Spanish Guitar",
+        "Beat-Driven",
+        "Mediterranean",
+        "Groove"
+      ],
+      "role": "Album role: Geographic waypoint; the Spanish guitar and mid-tempo groove introduce a Mediterranean colour that broadens the album's oceanic palette beyond the Northern European ambient register of the opening tracks.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Guitar Intro",
+          "description": "sampled or sequenced Spanish guitar figure establishes a rhythmic and harmonic identity distinct from the rest of the album.",
+          "detail": "The guitar is likely a sample or synth patch rather than a live performance, but the timbral effect is convincingly acoustic."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Beat Entry",
+          "description": "mid-tempo beat enters beneath the guitar; a groove-based foundation replaces the ambient textures."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Synth Melody",
+          "description": "principal synth lead joins above the groove; warm, slightly nasal timbre."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Layering",
+          "description": "pad orchestration and bass synth thicken the arrangement; guitar recedes to background texture."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Peak",
+          "description": "densest arrangement moment; all elements — guitar, beat, synth lead, bass, pad — present simultaneously."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Strip-Back",
+          "description": "layers removed progressively; guitar regains prominence as synth elements fade."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Fade",
+          "description": "beat and guitar dissolve together into ambient residue."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Islands of the Orient",
+      "duration": "7:24",
+      "energy": "mid",
+      "tags": [
+        "Sequencer",
+        "Chinoiserie",
+        "Tangerine Dream Influence",
+        "Jazzy"
+      ],
+      "role": "Album role: Centrepiece and the album's most compositionally varied track; a blend of Tangerine Dream-influenced sequencer patterns with chinoiserie-jazzy melody, marking the deepest point of the oceanic journey before the ambient descent.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequence Intro",
+          "description": "arpeggiated sequencer pattern opens; rapid, Tangerine Dream-influenced pulsing in the mid register.",
+          "detail": "The sequencer style here is closer to Tangerine Dream's Phaedra-era sound than to Vangelis's typical melodic approach."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Melody Entry",
+          "description": "oriental-inflected melody appears above the sequence; pentatonic, with chinoiserie ornamentation."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Jazzy Passage",
+          "description": "harmonic motion shifts to a more chromatic, jazz-inflected progression; unexpected chord colour."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Development",
+          "description": "sequencer pattern and melody interleave with increasing contrapuntal density."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Breakdown",
+          "description": "sequencer drops to a simpler pattern; melody restated in isolation before rebuilding."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Full Texture",
+          "description": "all elements return at full density; bass synth adds weight beneath the sequencer."
+        },
+        {
+          "timestamp": "6:50",
+          "section": "Outro",
+          "description": "sequencer pattern decelerates and fades; oriental melody trails off into ambient space."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Fields of Coral",
+      "duration": "7:44",
+      "energy": "low",
+      "tags": [
+        "Ambient",
+        "Deep Underwater",
+        "Drone",
+        "Textural"
+      ],
+      "role": "Album role: The album's deepest-water moment; the most purely ambient track, stripping away beat, melody, and rhythmic structure to evoke a submerged, pressure-heavy stillness at the midpoint of the arc.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone",
+          "description": "low-frequency drone opens; near-subsonic, evoking depth and pressure.",
+          "detail": "The most static opening on the album — no melodic or rhythmic content for almost two minutes."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Texture Shift",
+          "description": "higher-register synth tones emerge like light penetrating deep water; sparse, non-melodic."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Melodic Hint",
+          "description": "faint melodic fragment surfaces briefly before being absorbed back into the ambient bed."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Layering",
+          "description": "additional pad voices create a richer harmonic field without introducing rhythmic structure."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Whale Sound",
+          "description": "processed sound effect evoking whale song or deep-sea fauna enters the stereo field.",
+          "detail": "The album includes sampled effects resembling whales, porpoises, and marine fauna throughout."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Dissolution",
+          "description": "all layers thin to a single sustained tone; the track dissolves into near-silence."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Aquatic Dance",
+      "duration": "3:44",
+      "energy": "mid",
+      "tags": [
+        "Synth-Bass Ostinato",
+        "Synth-Vocals",
+        "Groove",
+        "Rhythmic"
+      ],
+      "role": "Album role: Kinetic resurgence after the ambient depths of \"Fields of Coral\"; the synth-bass ostinato and synth-vocal textures restore rhythmic energy and signal the album's re-ascent toward the surface.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ostinato",
+          "description": "synth-bass ostinato figure enters immediately; repetitive, groove-based, medium tempo.",
+          "detail": "The ostinato is the track's structural spine — rhythmically the most insistent passage on the album."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Synth-Vocal Entry",
+          "description": "processed synth-vocal textures appear above the ostinato; wordless, fluid, aquatic in character."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Melodic Development",
+          "description": "synth lead joins; melody interacts with the vocal texture in loose counterpoint."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Peak Density",
+          "description": "all layers — ostinato, synth-vocal, lead melody, pad — converge at maximum arrangement density."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Thinning",
+          "description": "lead and vocal textures withdraw; ostinato continues alone."
+        },
+        {
+          "timestamp": "3:25",
+          "section": "Fade",
+          "description": "ostinato loses volume and fades; a brief pause before \"Memories of Blue.\""
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Memories of Blue",
+      "duration": "5:40",
+      "energy": "low",
+      "tags": [
+        "Nostalgic",
+        "See You Later Reference",
+        "Melodic Recall",
+        "Contemplative"
+      ],
+      "role": "Album role: Reflective counterpart to the mid-album ambient descent; the title and character deliberately recall \"Memories of Green\" from See You Later (1980), creating an intertextual echo across Vangelis's catalogue and signalling the arc's homeward turn.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Pad Opening",
+          "description": "warm, sustained synth pad opens; tonal centre established without melodic content.",
+          "detail": "The timbre consciously mirrors the 'green' sound palette of the earlier Memories of Green — now transposed to 'blue.'"
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Melody",
+          "description": "gentle, lyrical synth melody enters in the mid-upper register; nostalgic, unhurried phrasing."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Harmonic Expansion",
+          "description": "secondary pad voices create a richer harmonic bed; the melody floats above a deeper tonal field."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Theme Restatement",
+          "description": "melody restated with subtle timbral variation; filter opened slightly for brighter character."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Simplification",
+          "description": "secondary layers withdraw; melody and the original pad sustain alone."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Fade",
+          "description": "melody fades; pad sustain decays into the opening of \"Song of the Seas.\""
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Song of the Seas",
+      "duration": "6:12",
+      "energy": "mid",
+      "tags": [
+        "Sequencer",
+        "Mellow",
+        "Closing Statement",
+        "Cyclic Return"
+      ],
+      "role": "Album role: Closing statement and cyclic return; a mellow sequencer-based track that resolves the album's journey by fading back into the surf sounds that opened \"Bon Voyage,\" completing the departure–return arc.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequencer Intro",
+          "description": "gentle sequencer pattern opens; mellow, unhurried, with a clear melodic contour."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Melody",
+          "description": "principal synth melody enters above the sequencer; warm, lyrical, the album's most directly emotional line."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Pad Layering",
+          "description": "orchestral pad fills the harmonic space beneath melody and sequencer; full but not dense."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Development",
+          "description": "melody varied; sequencer pattern subtly shifts rhythm; bass layer adds warmth."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Climax",
+          "description": "fullest arrangement moment on the closing track; melody, sequencer, and pad at aligned density."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Strip-Back",
+          "description": "sequencer thins; melody fades; pad sustain carries alone."
+        },
+        {
+          "timestamp": "5:50",
+          "section": "Surf Return",
+          "description": "surf wave recordings return as synth elements dissolve; the album closes where it began.",
+          "detail": "The cyclic return of the sea sounds mirrors the opening of Bon Voyage — a closed narrative loop."
+        }
+      ]
+    }
+  ]
+}

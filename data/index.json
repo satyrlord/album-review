@@ -51,7 +51,8 @@
     "year": 1973,
     "tracks": 2,
     "genre": "Progressive / Neo-Classical",
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/Mike_oldfield_tubular_bells_album_cover.jpg"
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/Mike_oldfield_tubular_bells_album_cover.jpg",
+    "isSoundtrack": true
   },
   {
     "id": "mike-oldfield-tubular-bells-ii",
@@ -97,5 +98,23 @@
     "tracks": 9,
     "genre": "Electronic / Ambient",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/8/86/Vangelis_voices.jpg"
+  },
+  {
+    "id": "vangelis-oceanic",
+    "artist": "Vangelis",
+    "title": "Oceanic",
+    "year": 1996,
+    "tracks": 9,
+    "genre": "Electronic / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/c/c8/Oceanic_%28Vangelis%29_album_cover.jpg"
+  },
+  {
+    "id": "vangelis-el-greco",
+    "artist": "Vangelis",
+    "title": "El Greco",
+    "year": 1998,
+    "tracks": 10,
+    "genre": "Electronic / Classical",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Vangelis_El_Greco_album_art.jpeg/330px-Vangelis_El_Greco_album_art.jpeg"
   }
 ]

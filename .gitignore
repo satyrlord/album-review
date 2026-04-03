@@ -5,10 +5,12 @@ node_modules/
 dist/
 build/
 coverage/
+.nyc_output/
 tmp/
 .github/skills/
 playwright-report/
 test-results/
+.playwright-mcp
 
 # TypeScript incremental build info
 *.tsbuildinfo

@@ -54,6 +54,12 @@ export interface AlbumData {
   runtime: string;
   /** Optional remote or local album-cover image path */
   coverUrl?: string;
+  /** Presence-only flag: set to true for Soundtracks page inclusion and omit when false */
+  isSoundtrack?: boolean;
+  /** Spotify album URL */
+  spotifyUrl?: string;
+  /** YouTube Music album URL */
+  youtubeUrl?: string;
   /** 3–4 sentence analytical overview */
   overview: string;
   tracks: AlbumTrack[];
@@ -70,4 +76,6 @@ export interface AlbumIndexEntry {
   genre: string;
   /** Optional remote or local thumbnail URL for the album cover */
   coverUrl?: string;
+  /** Presence-only flag copied into the index only when the source album sets true */
+  isSoundtrack?: boolean;
 }

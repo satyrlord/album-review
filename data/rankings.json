@@ -1,0 +1,902 @@
+[
+  {
+    "rank": 1,
+    "artist": "Brian Eno",
+    "title": "Ambient 1: Music for Airports",
+    "year": 1978,
+    "decade": "Early Pioneers",
+    "genre": "Ambient",
+    "note": "The canonical ambient record: calm, architectural, and endlessly referential."
+  },
+  {
+    "rank": 2,
+    "artist": "Jean-Michel Jarre",
+    "title": "Oxygène",
+    "year": 1976,
+    "decade": "Early Pioneers",
+    "genre": "Electronic / Ambient",
+    "note": "Sequencer minimalism turned into a melodic, mainstream electronic landmark."
+  },
+  {
+    "rank": 3,
+    "artist": "Kraftwerk",
+    "title": "Trans-Europe Express",
+    "year": 1977,
+    "decade": "Early Pioneers",
+    "genre": "Electronic / Synthpop",
+    "note": "Machine rhythm, repetition, and pop reduction in one definitive statement."
+  },
+  {
+    "rank": 4,
+    "artist": "Tangerine Dream",
+    "title": "Phaedra",
+    "year": 1974,
+    "decade": "Early Pioneers",
+    "genre": "Berlin School / Ambient",
+    "note": "A deep-space pulse record that shaped electronic long-form immersion."
+  },
+  {
+    "rank": 5,
+    "artist": "Wendy Carlos",
+    "title": "Switched-On Bach",
+    "year": 1968,
+    "decade": "Early Pioneers",
+    "genre": "Electronic / Classical",
+    "note": "A foundational bridge between synthesized timbre and mass recognition."
+  },
+  {
+    "rank": 6,
+    "artist": "Mike Oldfield",
+    "title": "Tubular Bells",
+    "year": 1973,
+    "decade": "Early Pioneers",
+    "genre": "New Age / Progressive",
+    "note": "Extended-form thematic writing that helped define crossover instrumental music."
+  },
+  {
+    "rank": 7,
+    "artist": "Jean-Michel Jarre",
+    "title": "Equinoxe",
+    "year": 1978,
+    "decade": "Early Pioneers",
+    "genre": "Electronic / Ambient",
+    "note": "A tighter, more narrative sequel that refines Jarre's melodic sequencing."
+  },
+  {
+    "rank": 8,
+    "artist": "Kraftwerk",
+    "title": "Autobahn",
+    "year": 1974,
+    "decade": "Early Pioneers",
+    "genre": "Electronic / Krautrock",
+    "note": "A twenty-three-minute motorway meditation that launched electronic pop."
+  },
+  {
+    "rank": 9,
+    "artist": "Tangerine Dream",
+    "title": "Rubycon",
+    "year": 1975,
+    "decade": "Early Pioneers",
+    "genre": "Berlin School / Ambient",
+    "note": "Seamless Berlin-school drift where side-long form becomes the content."
+  },
+  {
+    "rank": 10,
+    "artist": "Klaus Schulze",
+    "title": "Timewind",
+    "year": 1975,
+    "decade": "Early Pioneers",
+    "genre": "Berlin School / Ambient",
+    "note": "Two side-long analogue meditations invoking scale beyond the studio."
+  },
+  {
+    "rank": 11,
+    "artist": "Brian Eno",
+    "title": "Discreet Music",
+    "year": 1975,
+    "decade": "Early Pioneers",
+    "genre": "Ambient / Generative",
+    "note": "A generative composition that presaged ambient as a formal idea."
+  },
+  {
+    "rank": 12,
+    "artist": "Brian Eno",
+    "title": "Another Green World",
+    "year": 1975,
+    "decade": "Early Pioneers",
+    "genre": "Art Rock / Ambient",
+    "note": "Song and texture merged into a quietly radical electronic art-pop sketchbook."
+  },
+  {
+    "rank": 13,
+    "artist": "Vangelis",
+    "title": "Heaven and Hell",
+    "year": 1975,
+    "decade": "Early Pioneers",
+    "genre": "Electronic / Symphonic",
+    "note": "Orchestral electronics with choral power and a cinematic sense of drama."
+  },
+  {
+    "rank": 14,
+    "artist": "Isao Tomita",
+    "title": "Snowflakes Are Dancing",
+    "year": 1974,
+    "decade": "Early Pioneers",
+    "genre": "Electronic / Classical",
+    "note": "Debussy reimagined through analogue synthesis with meticulous timbral care."
+  },
+  {
+    "rank": 15,
+    "artist": "Terry Riley",
+    "title": "A Rainbow in Curved Air",
+    "year": 1969,
+    "decade": "Early Pioneers",
+    "genre": "Minimalism / Electronic",
+    "note": "A hypnotic keyboard cascade that links minimalism to electronic practice."
+  },
+  {
+    "rank": 16,
+    "artist": "Klaus Schulze",
+    "title": "Mirage",
+    "year": 1977,
+    "decade": "Early Pioneers",
+    "genre": "Berlin School / Ambient",
+    "note": "Expansive sequencer architecture that deepens the Berlin-school blueprint."
+  },
+  {
+    "rank": 17,
+    "artist": "Mike Oldfield",
+    "title": "Ommadawn",
+    "year": 1975,
+    "decade": "Early Pioneers",
+    "genre": "Progressive / New Age",
+    "note": "Multi-layered acoustic-electronic fusion at its most personal and patient."
+  },
+  {
+    "rank": 18,
+    "artist": "Popol Vuh",
+    "title": "Hosianna Mantra",
+    "year": 1972,
+    "decade": "Early Pioneers",
+    "genre": "Ambient / Spiritual",
+    "note": "Weightless spiritual chamber music on the boundary of ambient form."
+  },
+  {
+    "rank": 19,
+    "artist": "Ashra",
+    "title": "New Age of Earth",
+    "year": 1976,
+    "decade": "Early Pioneers",
+    "genre": "Berlin School / Electronic",
+    "note": "Kosmische guitar-and-synth warmth shaped into absorbing long-form journeys."
+  },
+  {
+    "rank": 20,
+    "artist": "Vangelis",
+    "title": "Spiral",
+    "year": 1977,
+    "decade": "Early Pioneers",
+    "genre": "Electronic / Progressive",
+    "note": "Expansive electronic odyssey fusing progressive ambition with synthesiser craft."
+  },
+  {
+    "rank": 1,
+    "artist": "Brian Eno",
+    "title": "Apollo: Atmospheres and Soundtracks",
+    "year": 1983,
+    "decade": "1980s",
+    "genre": "Ambient",
+    "note": "Pedal-steel ambience and slow-motion grandeur evoke space at human scale."
+  },
+  {
+    "rank": 2,
+    "artist": "Harold Budd / Brian Eno",
+    "title": "The Pearl",
+    "year": 1984,
+    "decade": "1980s",
+    "genre": "Ambient",
+    "note": "An essential low-light ambient piano record: soft edges, exact pacing."
+  },
+  {
+    "rank": 3,
+    "artist": "Kraftwerk",
+    "title": "Computer World",
+    "year": 1981,
+    "decade": "1980s",
+    "genre": "Electronic / Synthpop",
+    "note": "A concise, prescient pop-electronic album that decoded the digital era."
+  },
+  {
+    "rank": 4,
+    "artist": "Steve Roach",
+    "title": "Dreamtime Return",
+    "year": 1988,
+    "decade": "1980s",
+    "genre": "Ambient / New Age",
+    "note": "Deep-listening desert ambience with sustained long-form focus."
+  },
+  {
+    "rank": 5,
+    "artist": "Jean-Michel Jarre",
+    "title": "Les Chants Magnétiques",
+    "year": 1981,
+    "decade": "1980s",
+    "genre": "Electronic / New Wave",
+    "note": "Sharper rhythm design and a more synthetic bite without losing scope."
+  },
+  {
+    "rank": 6,
+    "artist": "Vangelis",
+    "title": "Chariots of Fire",
+    "year": 1981,
+    "decade": "1980s",
+    "genre": "Electronic / Soundtrack",
+    "note": "Synthesiser melody as cinematic shorthand, defining a decade of film scoring."
+  },
+  {
+    "rank": 7,
+    "artist": "Steve Roach",
+    "title": "Structures from Silence",
+    "year": 1984,
+    "decade": "1980s",
+    "genre": "Ambient",
+    "note": "Three sustained drones of extraordinary calm and spatial refinement."
+  },
+  {
+    "rank": 8,
+    "artist": "Manuel Göttsching",
+    "title": "E2-E4",
+    "year": 1984,
+    "decade": "1980s",
+    "genre": "Electronic / Minimalism",
+    "note": "A single hour-long take that anticipated house and techno by half a decade."
+  },
+  {
+    "rank": 9,
+    "artist": "Enya",
+    "title": "Watermark",
+    "year": 1988,
+    "decade": "1980s",
+    "genre": "New Age / Celtic",
+    "note": "Layered vocal synthesis and Celtic melody scaled into a global phenomenon."
+  },
+  {
+    "rank": 10,
+    "artist": "Kitarō",
+    "title": "Silk Road",
+    "year": 1980,
+    "decade": "1980s",
+    "genre": "New Age / Electronic",
+    "note": "Eastern-inflected synthesiser narratives that defined Japanese new-age crossover."
+  },
+  {
+    "rank": 11,
+    "artist": "Tangerine Dream",
+    "title": "Exit",
+    "year": 1981,
+    "decade": "1980s",
+    "genre": "Berlin School / Electronic",
+    "note": "Propulsive sequencing and rhythmic urgency mark a sharper Berlin-school turn."
+  },
+  {
+    "rank": 12,
+    "artist": "Jean-Michel Jarre",
+    "title": "Zoolook",
+    "year": 1984,
+    "decade": "1980s",
+    "genre": "Electronic / Experimental",
+    "note": "Sample-based vocal collage pushed into a polyglot electronic adventure."
+  },
+  {
+    "rank": 13,
+    "artist": "Andreas Vollenweider",
+    "title": "...Behind the Gardens",
+    "year": 1981,
+    "decade": "1980s",
+    "genre": "New Age / Acoustic",
+    "note": "Electroacoustic harp work that brought new-age instrumentation to the mainstream."
+  },
+  {
+    "rank": 14,
+    "artist": "Depeche Mode",
+    "title": "Music for the Masses",
+    "year": 1987,
+    "decade": "1980s",
+    "genre": "Electronic / Synthpop",
+    "note": "Darkly textured synthpop that fused stadium scale with electronic intimacy."
+  },
+  {
+    "rank": 15,
+    "artist": "Klaus Schulze",
+    "title": "Trancefer",
+    "year": 1981,
+    "decade": "1980s",
+    "genre": "Berlin School / Ambient",
+    "note": "Rhythmic Berlin-school electronics bridging the kosmische era and trance."
+  },
+  {
+    "rank": 16,
+    "artist": "Tangerine Dream",
+    "title": "Hyperborea",
+    "year": 1983,
+    "decade": "1980s",
+    "genre": "Berlin School / Ambient",
+    "note": "Polished digital-era Berlin school balancing melodic hooks and ambient drift."
+  },
+  {
+    "rank": 17,
+    "artist": "Robert Rich",
+    "title": "Rainforest",
+    "year": 1989,
+    "decade": "1980s",
+    "genre": "Ambient / New Age",
+    "note": "Immersive environmental ambience drawn from sleep concerts and organic texture."
+  },
+  {
+    "rank": 18,
+    "artist": "Art of Noise",
+    "title": "Who's Afraid of the Art of Noise?",
+    "year": 1984,
+    "decade": "1980s",
+    "genre": "Electronic / Experimental",
+    "note": "Cut-up sample art that merged Fairlight technology with pop subversion."
+  },
+  {
+    "rank": 19,
+    "artist": "Vangelis",
+    "title": "Antarctica",
+    "year": 1983,
+    "decade": "1980s",
+    "genre": "Electronic / Soundtrack",
+    "note": "Glacial synthesiser soundtrack capturing polar desolation with cinematic sweep."
+  },
+  {
+    "rank": 20,
+    "artist": "Suzanne Ciani",
+    "title": "Seven Waves",
+    "year": 1982,
+    "decade": "1980s",
+    "genre": "Electronic / New Age",
+    "note": "Lush Buchla-rooted electronic compositions with a lyrical, oceanic depth."
+  },
+  {
+    "rank": 1,
+    "artist": "Aphex Twin",
+    "title": "Selected Ambient Works 85-92",
+    "year": 1992,
+    "decade": "1990s",
+    "genre": "Ambient Techno",
+    "note": "Melodic ambient techno benchmark with unusual warmth and structural clarity."
+  },
+  {
+    "rank": 2,
+    "artist": "The Orb",
+    "title": "Adventures Beyond the Ultraworld",
+    "year": 1991,
+    "decade": "1990s",
+    "genre": "Ambient House",
+    "note": "Ambient house at album scale, balancing drift, collage, and groove."
+  },
+  {
+    "rank": 3,
+    "artist": "Global Communication",
+    "title": "76:14",
+    "year": 1994,
+    "decade": "1990s",
+    "genre": "Ambient / Downtempo",
+    "note": "A spacious sequencing masterclass where each transition feels inevitable."
+  },
+  {
+    "rank": 4,
+    "artist": "The Prodigy",
+    "title": "Music for the Jilted Generation",
+    "year": 1994,
+    "decade": "1990s",
+    "genre": "Rave / Breakbeat",
+    "note": "Peak-era UK rave album craft with relentless propulsion and scale."
+  },
+  {
+    "rank": 5,
+    "artist": "Biosphere",
+    "title": "Substrata",
+    "year": 1997,
+    "decade": "1990s",
+    "genre": "Ambient",
+    "note": "Cold-air ambience with extraordinary restraint and spatial detail."
+  },
+  {
+    "rank": 6,
+    "artist": "Aphex Twin",
+    "title": "Selected Ambient Works Volume II",
+    "year": 1994,
+    "decade": "1990s",
+    "genre": "Dark Ambient / Experimental",
+    "note": "Glacial ambient soundscapes that trade melody for texture and deep unease."
+  },
+  {
+    "rank": 7,
+    "artist": "Boards of Canada",
+    "title": "Music Has the Right to Children",
+    "year": 1998,
+    "decade": "1990s",
+    "genre": "IDM / Ambient",
+    "note": "Nostalgic analogue warmth filtered through woozy lo-fi psychedelia."
+  },
+  {
+    "rank": 8,
+    "artist": "Massive Attack",
+    "title": "Mezzanine",
+    "year": 1998,
+    "decade": "1990s",
+    "genre": "Trip Hop / Electronic",
+    "note": "Dark, cinematic trip hop that mines tension with immaculate production detail."
+  },
+  {
+    "rank": 9,
+    "artist": "The KLF",
+    "title": "Chill Out",
+    "year": 1990,
+    "decade": "1990s",
+    "genre": "Ambient House",
+    "note": "An unbroken ambient-country road trip that re-imagined album-as-journey."
+  },
+  {
+    "rank": 10,
+    "artist": "Autechre",
+    "title": "Tri Repetae",
+    "year": 1995,
+    "decade": "1990s",
+    "genre": "IDM / Electronic",
+    "note": "Machine-funk IDM with alien rhythmic structures and hypnotic repetition."
+  },
+  {
+    "rank": 11,
+    "artist": "The Chemical Brothers",
+    "title": "Dig Your Own Hole",
+    "year": 1997,
+    "decade": "1990s",
+    "genre": "Big Beat / Electronic",
+    "note": "Adrenaline-soaked big beat with psychedelic depth and festival-scale momentum."
+  },
+  {
+    "rank": 12,
+    "artist": "The Future Sound of London",
+    "title": "Lifeforms",
+    "year": 1994,
+    "decade": "1990s",
+    "genre": "Ambient / IDM",
+    "note": "Organic ambient collage stretching electronic textures into biological territory."
+  },
+  {
+    "rank": 13,
+    "artist": "Orbital",
+    "title": "Orbital 2",
+    "year": 1993,
+    "decade": "1990s",
+    "genre": "Techno / Electronic",
+    "note": "Sustained rave euphoria distilled into fluid, long-form electronic architecture."
+  },
+  {
+    "rank": 14,
+    "artist": "The Prodigy",
+    "title": "The Fat of the Land",
+    "year": 1997,
+    "decade": "1990s",
+    "genre": "Big Beat / Electronic",
+    "note": "Aggressive crossover electronica that brought rave energy to rock audiences."
+  },
+  {
+    "rank": 15,
+    "artist": "Underworld",
+    "title": "Second Toughest in the Infants",
+    "year": 1996,
+    "decade": "1990s",
+    "genre": "Techno / Progressive",
+    "note": "Expansive techno with literary vocal streams and restless structural ambition."
+  },
+  {
+    "rank": 16,
+    "artist": "Air",
+    "title": "Moon Safari",
+    "year": 1998,
+    "decade": "1990s",
+    "genre": "Downtempo / Electronic",
+    "note": "Dreamy French electronic pop with analogue warmth and effortless melodic charm."
+  },
+  {
+    "rank": 17,
+    "artist": "Vangelis",
+    "title": "Voices",
+    "year": 1995,
+    "decade": "1990s",
+    "genre": "Electronic / Ambient",
+    "note": "Vocal-electronic fusion at its most atmospheric and thematically unified."
+  },
+  {
+    "rank": 18,
+    "artist": "Jean-Michel Jarre",
+    "title": "Oxygène 7–13",
+    "year": 1997,
+    "decade": "1990s",
+    "genre": "Electronic / Ambient",
+    "note": "A faithful sequel that revisits the original palette with matured production."
+  },
+  {
+    "rank": 19,
+    "artist": "Mike Oldfield",
+    "title": "Tubular Bells II",
+    "year": 1992,
+    "decade": "1990s",
+    "genre": "New Age / Progressive",
+    "note": "A studio-polished reprise that reinterprets the original with orchestral scale."
+  },
+  {
+    "rank": 20,
+    "artist": "Mike Oldfield",
+    "title": "Tubular Bells III",
+    "year": 1998,
+    "decade": "1990s",
+    "genre": "New Age / Electronic",
+    "note": "A dance-era reinvention that stretches the Bells concept into new territory."
+  },
+  {
+    "rank": 1,
+    "artist": "Boards of Canada",
+    "title": "Geogaddi",
+    "year": 2002,
+    "decade": "2000s",
+    "genre": "IDM / Psychedelic Ambient",
+    "note": "Haunted-loop design and tonal unease rendered with immaculate detail."
+  },
+  {
+    "rank": 2,
+    "artist": "Gas",
+    "title": "Pop",
+    "year": 2000,
+    "decade": "2000s",
+    "genre": "Ambient Techno",
+    "note": "Forest-pressure ambient techno with a singular sense of momentum."
+  },
+  {
+    "rank": 3,
+    "artist": "Burial",
+    "title": "Untrue",
+    "year": 2007,
+    "decade": "2000s",
+    "genre": "Future Garage / Ambient",
+    "note": "A nocturnal electronic classic built from absence, pressure, and memory."
+  },
+  {
+    "rank": 4,
+    "artist": "William Basinski",
+    "title": "The Disintegration Loops",
+    "year": 2002,
+    "decade": "2000s",
+    "genre": "Ambient / Experimental",
+    "note": "Decaying tape loops as elegy: process music distilled to pure entropy."
+  },
+  {
+    "rank": 5,
+    "artist": "Tim Hecker",
+    "title": "Harmony in Ultraviolet",
+    "year": 2006,
+    "decade": "2000s",
+    "genre": "Drone / Ambient",
+    "note": "Dense digital noise sculpted into a shimmering, cathedral-scale drone work."
+  },
+  {
+    "rank": 6,
+    "artist": "Stars of the Lid",
+    "title": "And Their Refinement of the Decline",
+    "year": 2007,
+    "decade": "2000s",
+    "genre": "Ambient / Drone",
+    "note": "Orchestral ambient drift sustained across two discs of luminous patience."
+  },
+  {
+    "rank": 7,
+    "artist": "Fennesz",
+    "title": "Endless Summer",
+    "year": 2001,
+    "decade": "2000s",
+    "genre": "Glitch / Ambient",
+    "note": "Glitched guitar textures and warm digital erosion in a pop-ambient frame."
+  },
+  {
+    "rank": 8,
+    "artist": "Boards of Canada",
+    "title": "The Campfire Headphase",
+    "year": 2005,
+    "decade": "2000s",
+    "genre": "IDM / Downtempo",
+    "note": "Sun-faded psychedelia with live guitar textures folded into analogue haze."
+  },
+  {
+    "rank": 9,
+    "artist": "Daft Punk",
+    "title": "Discovery",
+    "year": 2001,
+    "decade": "2000s",
+    "genre": "French House / Electronic",
+    "note": "Filtered house and pop nostalgia merged into an endlessly replayable concept."
+  },
+  {
+    "rank": 10,
+    "artist": "Aphex Twin",
+    "title": "Drukqs",
+    "year": 2001,
+    "decade": "2000s",
+    "genre": "IDM / Experimental",
+    "note": "Sprawling prepared-piano interludes and ferocious drill punctuated in equal measure."
+  },
+  {
+    "rank": 11,
+    "artist": "Four Tet",
+    "title": "Rounds",
+    "year": 2003,
+    "decade": "2000s",
+    "genre": "Folktronica / IDM",
+    "note": "Organic micro-samples and warm rhythms in a precise folktronica framework."
+  },
+  {
+    "rank": 12,
+    "artist": "Autechre",
+    "title": "Confield",
+    "year": 2001,
+    "decade": "2000s",
+    "genre": "IDM / Experimental",
+    "note": "Algorithmic abstraction pushed to the edge of recognisable structure."
+  },
+  {
+    "rank": 13,
+    "artist": "The Knife",
+    "title": "Silent Shout",
+    "year": 2006,
+    "decade": "2000s",
+    "genre": "Electronic / Synthpop",
+    "note": "Cold, androgynous synthpop with theatrical intensity and physical menace."
+  },
+  {
+    "rank": 14,
+    "artist": "M83",
+    "title": "Dead Cities, Red Seas & Lost Ghosts",
+    "year": 2003,
+    "decade": "2000s",
+    "genre": "Shoegaze / Electronic",
+    "note": "Shoegaze electronics with cinematic breadth and saturated melodic colour."
+  },
+  {
+    "rank": 15,
+    "artist": "Ulrich Schnauss",
+    "title": "A Strangely Isolated Place",
+    "year": 2003,
+    "decade": "2000s",
+    "genre": "Shoegaze / Ambient",
+    "note": "Luminous layered shoegaze-ambient electronics with soaring melodic arcs."
+  },
+  {
+    "rank": 16,
+    "artist": "Brian Eno",
+    "title": "Another Day on Earth",
+    "year": 2005,
+    "decade": "2000s",
+    "genre": "Art Pop / Ambient",
+    "note": "A late-career vocal album marrying pop songwriting with ambient sensibility."
+  },
+  {
+    "rank": 17,
+    "artist": "Pantha du Prince",
+    "title": "This Bliss",
+    "year": 2007,
+    "decade": "2000s",
+    "genre": "Microhouse / Ambient",
+    "note": "Microhouse minimalism with crystalline field recordings and forest-floor texture."
+  },
+  {
+    "rank": 18,
+    "artist": "Telefon Tel Aviv",
+    "title": "Fahrenheit Fair Enough",
+    "year": 2001,
+    "decade": "2000s",
+    "genre": "IDM / Glitch",
+    "note": "Precision-engineered glitch-pop with an emotional undertow and pristine detail."
+  },
+  {
+    "rank": 19,
+    "artist": "Caribou",
+    "title": "Andorra",
+    "year": 2007,
+    "decade": "2000s",
+    "genre": "Psychedelic Pop / Electronic",
+    "note": "Psychedelic pop filtering krautrock and folk through electronic production."
+  },
+  {
+    "rank": 20,
+    "artist": "Murcof",
+    "title": "Martes",
+    "year": 2002,
+    "decade": "2000s",
+    "genre": "Ambient / Glitch",
+    "note": "Minimal electronic tension built from classical samples and spectral silence."
+  },
+  {
+    "rank": 1,
+    "artist": "Oneohtrix Point Never",
+    "title": "Replica",
+    "year": 2011,
+    "decade": "Present Day",
+    "genre": "Experimental Electronic",
+    "note": "Sample-fragment form turned into an eerily coherent electronic language."
+  },
+  {
+    "rank": 2,
+    "artist": "Floating Points, Pharoah Sanders & The London Symphony Orchestra",
+    "title": "Promises",
+    "year": 2021,
+    "decade": "Present Day",
+    "genre": "Ambient / Spiritual Jazz",
+    "note": "A modern long-form meditation built on patience, tone, and incremental bloom."
+  },
+  {
+    "rank": 3,
+    "artist": "Jon Hopkins",
+    "title": "Immunity",
+    "year": 2013,
+    "decade": "Present Day",
+    "genre": "Techno / Ambient",
+    "note": "A single-arc techno journey from euphoria through comedown with crystalline production."
+  },
+  {
+    "rank": 4,
+    "artist": "Tim Hecker",
+    "title": "Ravedeath, 1972",
+    "year": 2011,
+    "decade": "Present Day",
+    "genre": "Drone / Ambient",
+    "note": "Organ recordings deconstructed into seismic drone architecture."
+  },
+  {
+    "rank": 5,
+    "artist": "Nils Frahm",
+    "title": "All Melody",
+    "year": 2018,
+    "decade": "Present Day",
+    "genre": "Neo-Classical / Electronic",
+    "note": "Neo-classical piano and modular synthesis fused in warm, expansive layers."
+  },
+  {
+    "rank": 6,
+    "artist": "James Blake",
+    "title": "James Blake",
+    "year": 2011,
+    "decade": "Present Day",
+    "genre": "Post-Dubstep / Electronic",
+    "note": "Post-dubstep minimalism and falsetto vulnerability forged into a new template."
+  },
+  {
+    "rank": 7,
+    "artist": "Nicolas Jaar",
+    "title": "Space Is Only Noise",
+    "year": 2011,
+    "decade": "Present Day",
+    "genre": "Experimental Electronic",
+    "note": "Restrained dub-inflected production with theatrical pacing and textural wit."
+  },
+  {
+    "rank": 8,
+    "artist": "Aphex Twin",
+    "title": "Syro",
+    "year": 2014,
+    "decade": "Present Day",
+    "genre": "IDM / Electronic",
+    "note": "A long-awaited return delivering intricate, playful acid and electro craftsmanship."
+  },
+  {
+    "rank": 9,
+    "artist": "Ben Frost",
+    "title": "A U R O R A",
+    "year": 2014,
+    "decade": "Present Day",
+    "genre": "Experimental / Industrial",
+    "note": "Visceral electronic noise shaped into physical, confrontational song structures."
+  },
+  {
+    "rank": 10,
+    "artist": "Holly Herndon",
+    "title": "PROTO",
+    "year": 2019,
+    "decade": "Present Day",
+    "genre": "AI Music / Experimental",
+    "note": "AI-assisted choral composition that redefines the boundary of electronic voice."
+  },
+  {
+    "rank": 11,
+    "artist": "Grouper",
+    "title": "Ruins",
+    "year": 2014,
+    "decade": "Present Day",
+    "genre": "Ambient / Lo-Fi",
+    "note": "Skeletal piano and voice ambient pieces of devastating emotional clarity."
+  },
+  {
+    "rank": 12,
+    "artist": "Andy Stott",
+    "title": "Luxury Problems",
+    "year": 2012,
+    "decade": "Present Day",
+    "genre": "Dub Techno / Industrial",
+    "note": "Cavernous dub techno with ghostly vocals and post-industrial weight."
+  },
+  {
+    "rank": 13,
+    "artist": "Actress",
+    "title": "R.I.P.",
+    "year": 2012,
+    "decade": "Present Day",
+    "genre": "Experimental Electronic",
+    "note": "Fragmented electronic sketches hovering between structure and dissolution."
+  },
+  {
+    "rank": 14,
+    "artist": "Four Tet",
+    "title": "New Energy",
+    "year": 2017,
+    "decade": "Present Day",
+    "genre": "Electronic / Ambient",
+    "note": "Warm, inclusive electronic textures bridging ambient, techno, and world music."
+  },
+  {
+    "rank": 15,
+    "artist": "Bicep",
+    "title": "Isles",
+    "year": 2021,
+    "decade": "Present Day",
+    "genre": "Electro / Rave",
+    "note": "Euphoric rave callbacks refracted through modern production and sampling detail."
+  },
+  {
+    "rank": 16,
+    "artist": "Kelly Lee Owens",
+    "title": "Inner Song",
+    "year": 2020,
+    "decade": "Present Day",
+    "genre": "Techno / Dream Pop",
+    "note": "Crystalline techno-pop with dream-pop vocals and spatial electronic design."
+  },
+  {
+    "rank": 17,
+    "artist": "Jean-Michel Jarre",
+    "title": "Oxygène 3",
+    "year": 2016,
+    "decade": "Present Day",
+    "genre": "Electronic / Ambient",
+    "note": "A late-career return to the original concept with digital-era production values."
+  },
+  {
+    "rank": 18,
+    "artist": "Arca",
+    "title": "KiCk i",
+    "year": 2020,
+    "decade": "Present Day",
+    "genre": "Experimental / Reggaeton",
+    "note": "Genre-fluid experimental pop that fragments reggaeton, opera, and noise."
+  },
+  {
+    "rank": 19,
+    "artist": "Ryuichi Sakamoto",
+    "title": "async",
+    "year": 2017,
+    "decade": "Present Day",
+    "genre": "Ambient / Experimental",
+    "note": "Late-period minimalism merging field recordings, piano, and digital decay."
+  },
+  {
+    "rank": 20,
+    "artist": "Oneohtrix Point Never",
+    "title": "Age Of",
+    "year": 2018,
+    "decade": "Present Day",
+    "genre": "Experimental Electronic",
+    "note": "Baroque electronic collage blending harpsichord, noise, and fragmented pop."
+  }
+]
