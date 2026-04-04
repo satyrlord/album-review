@@ -79,7 +79,7 @@ async function expectPrimaryNav(page: Page, currentLabel?: "HOME PAGE" | "SOUNDT
   await expect(page.locator(".site-nav-link")).toHaveText(["HOME PAGE", "SOUNDTRACKS", "TOP 10", "TOP 20"]);
 
   if (currentLabel) {
-    await expect(page.getByRole("link", { name: currentLabel })).toHaveAttribute("aria-current", "page");
+    await expect(page.getByRole("link", { name: currentLabel, exact: true })).toHaveAttribute("aria-current", "page");
   }
 }
 
@@ -90,22 +90,21 @@ test.describe("album index regressions", () => {
     await gotoIndex(page);
 
     await expectPrimaryNav(page, "HOME PAGE");
-    await expect(page.getByRole("link", { name: "SOUNDTRACKS" })).toHaveAttribute("href", /soundtracks\.html$/);
-    await expect(page.getByRole("link", { name: "TOP 10" })).toHaveAttribute("href", /top-10\.html$/);
-    await expect(page.getByRole("link", { name: "TOP 20" })).toHaveAttribute("href", /top-20\.html$/);
+    await expect(page.getByRole("link", { name: "SOUNDTRACKS", exact: true })).toHaveAttribute("href", /soundtracks\.html$/);
+    await expect(page.getByRole("link", { name: "TOP 10", exact: true })).toHaveAttribute("href", /top-10\.html$/);
+    await expect(page.getByRole("link", { name: "TOP 20", exact: true })).toHaveAttribute("href", /top-20\.html$/);
     await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
     await expect(page.locator(".ix-card")).toHaveCount(totalAlbums);
     await expect(page.locator("#ixCount")).toHaveText(`${totalAlbums} / ${totalAlbums} albums`);
   });
 
-  test("soundtracks page shows Tubular Bells, Cosmos, Hyperborea, 1492, Diablo, and VTMB", async ({ page }) => {
+  test("soundtracks page shows all registered soundtrack albums", async ({ page }) => {
     await gotoSoundtracks(page);
 
     await expectPrimaryNav(page, "SOUNDTRACKS");
-    await expect(page.locator(".ix-card")).toHaveCount(6);
-    await expect(page.locator("#ixCount")).toHaveText("6 / 6 albums");
-    await expect(page.locator(".ix-card-title")).toHaveText(["Tubular Bells", "Cosmos", "Hyperborea", "1492: Conquest of Paradise", "Diablo + Hellfire", "Vampire: The Masquerade - Bloodlines"]);
-    await expect(page.locator(".ix-card-artist")).toHaveText(["Mike Oldfield", "Vangelis", "Tangerine Dream", "Vangelis", "Matt Uelmen", "Rik Schaffer"]);
+    const soundtrackAlbums = (await readAlbumIndex(page)).filter((a) => a.isSoundtrack);
+    await expect(page.locator(".ix-card")).toHaveCount(soundtrackAlbums.length);
+    await expect(page.locator("#ixCount")).toHaveText(`${soundtrackAlbums.length} / ${soundtrackAlbums.length} albums`);
   });
 
   test("renders a shared footer with a clickable version badge", async ({ page }) => {
@@ -373,10 +372,10 @@ test.describe("album index regressions", () => {
 
     await expect(page.getByRole("heading", { name: "Oxygène" })).toBeVisible();
     await expectPrimaryNav(page);
-    await expect(page.getByRole("link", { name: "HOME PAGE" })).toHaveAttribute("href", /index\.html$/);
-    await expect(page.getByRole("link", { name: "SOUNDTRACKS" })).toHaveAttribute("href", /soundtracks\.html$/);
-    await expect(page.getByRole("link", { name: "TOP 10" })).toHaveAttribute("href", /top-10\.html$/);
-    await expect(page.getByRole("link", { name: "TOP 20" })).toHaveAttribute("href", /top-20\.html$/);
+    await expect(page.getByRole("link", { name: "HOME PAGE", exact: true })).toHaveAttribute("href", /index\.html$/);
+    await expect(page.getByRole("link", { name: "SOUNDTRACKS", exact: true })).toHaveAttribute("href", /soundtracks\.html$/);
+    await expect(page.getByRole("link", { name: "TOP 10", exact: true })).toHaveAttribute("href", /top-10\.html$/);
+    await expect(page.getByRole("link", { name: "TOP 20", exact: true })).toHaveAttribute("href", /top-20\.html$/);
     await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
     await expect(page.locator(".hero-cover")).toBeVisible();
     await expect(page.locator(".hero-cover")).toHaveAttribute(

@@ -1,0 +1,589 @@
+{
+  "id": "vangelis-blade-runner",
+  "artist": "Vangelis",
+  "title": "Blade Runner",
+  "year": 1994,
+  "label": "East West (Europe) · Atlantic (U.S.)",
+  "producer": "Vangelis",
+  "genre": "Electronic / Soundtrack",
+  "runtime": "57:53",
+  "isSoundtrack": true,
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Bladerunnervangeliscover.jpg",
+  "overview": "Blade Runner (1994) collects the electronic score Vangelis composed and recorded at Nemo Studios, London, between December 1981 and April 1982 for Ridley Scott's science-fiction noir film — though rights disputes delayed the official album release by over a decade. The Yamaha CS-80 is the defining instrument, supplemented by a Roland Jupiter-4, Roland VP-330 Vocoder Plus, Sequential Circuits Prophet-10, E-mu Emulator sampler, Yamaha GS1 FM synthesiser, and acoustic percussion including gamelan, glockenspiel, and tubular bells; Dick Morrissey contributes saxophone on \"Love Theme\" and Demis Roussos provides vocals on several cues. Chronologically the second of Vangelis's two Ridley Scott collaborations — preceding 1492: Conquest of Paradise (1992) in composition but following it on the release calendar — the score predates the late-period contemplative trilogy of Voices (1995), Oceanic (1996), and El Greco (1998) and represents his most commercially visible film work, nominated for a BAFTA and Golden Globe in 1983, rated the best film score of all time by Pitchfork in 2019, and certified Gold in the UK, Spain, and Brazil.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Main Titles",
+      "duration": "3:42",
+      "energy": "mid",
+      "tags": [
+        "Yamaha CS-80",
+        "Film Dialogue",
+        "Opening Statement",
+        "Brass-Register Synth",
+        "Cinematic"
+      ],
+      "role": "Album role: The opening declaration — establishes the album's tonal world through the most recognised synthesiser passage in film-score history, and sets the noir-futurist register for the eleven tracks that follow.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Film dialogue sample ('a new life awaits you in the Off-world colonies') over low industrial drone; framings the score inside its cinematic origin.",
+          "detail": "The dialogue sample immediately locates the listener in the Blade Runner universe before any musical content appears."
+        },
+        {
+          "timestamp": "0:23",
+          "section": "Theme Entry",
+          "description": "Yamaha CS-80 brass-register melody rises — the definitive Blade Runner motif, slow portamento bends sustaining across a wide stereo field.",
+          "detail": "The CS-80's polyphonic aftertouch gives each note individual expression; Computer Music magazine rated this passage the greatest synth sound of all time in 2021."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Build",
+          "description": "Secondary synth layers thicken beneath the main theme; low-frequency pad and reverb-drenched percussion enter."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Peak",
+          "description": "Full harmonic density reached — CS-80 melody restated at higher register with sustained chordal accompaniment.",
+          "detail": "The arrangement mirrors the film's opening aerial shots of a flame-lit Los Angeles skyline in 2019."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Crossfade",
+          "description": "Theme dissolves into ambient texture; the track bleeds directly into 'Blush Response' as part of the seamless first-four-track block."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Blush Response",
+      "duration": "5:47",
+      "energy": "mid",
+      "tags": [
+        "Voight-Kampff",
+        "Film Dialogue",
+        "Tension Cue",
+        "Sequential Circuits Prophet-10",
+        "Percussion"
+      ],
+      "role": "Album role: The tension escalator — translates the film's Voight-Kampff interrogation sequence into a slow-burning electronic cue that introduces rhythmic and percussive elements absent from the opening titles.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Crossfade Intro",
+          "description": "Ambient residue from 'Main Titles' yields to a low pulsing synth ostinato; film dialogue fragment surfaces.",
+          "detail": "The seamless transition from track 1 maintains the four-track continuous block that defines the album's opening suite."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Rhythmic Entry",
+          "description": "Mechanical percussive pattern emerges — metallic timbres suggesting industrial process, underpinning the interrogation mood."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Build",
+          "description": "Prophet-10 adds mid-frequency harmonic layer; tension rises through increasing density rather than tempo."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Peak",
+          "description": "CS-80 stab chords punctuate the rhythmic bed; the piece reaches maximum dissonance.",
+          "detail": "Vangelis improvised the cue in real time to video playback of the Leon interrogation scene at Nemo Studios."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Decay",
+          "description": "Percussive elements recede; drone and reverb tail expand to fill the vacated frequency space."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Crossfade",
+          "description": "Texture thins to a sustained pad, transitioning seamlessly into 'Wait for Me'."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Wait for Me",
+      "duration": "5:27",
+      "energy": "low",
+      "tags": [
+        "Ambient",
+        "Film Dialogue",
+        "Yamaha CS-80",
+        "Reverb Wash",
+        "Contemplative"
+      ],
+      "role": "Album role: The first sustained ambient passage — reduces the score to near-stillness after the tension of 'Blush Response', establishing the contemplative register that recurs throughout the album's second half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained reverb-soaked pad emerges from the 'Blush Response' crossfade; near-static harmonic field.",
+          "detail": "Third track in the continuous opening block — no silence separates it from the preceding or following cue."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Dialogue",
+          "description": "Film dialogue sample surfaces above the ambient bed; whispered and heavily reverbed."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Theme Fragment",
+          "description": "CS-80 introduces a slow, descending melodic fragment — distinct from the Main Titles theme but sharing its portamento character."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Build",
+          "description": "Additional synth voices enter in parallel harmony; the texture thickens without accelerating."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Sustained Peak",
+          "description": "Maximum harmonic density for the track — a wide, warm chord sustained across the frequency spectrum.",
+          "detail": "The slow evolution rewards patient listening; the piece functions as a decompression chamber between the score's more dramatic moments."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Crossfade",
+          "description": "Chord dissolves into the opening texture of 'Rachel's Song', completing the four-track continuous suite."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Rachel's Song",
+      "duration": "4:46",
+      "energy": "low",
+      "tags": [
+        "Yamaha CS-80",
+        "Vocal Texture",
+        "Character Theme",
+        "Lyrical Melody",
+        "Suite Closer"
+      ],
+      "role": "Album role: The emotional centrepiece of the opening suite — a lyrical character theme for the replicant Rachael that closes the four-track continuous block and introduces the album's most tender melodic writing.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Crossfade Intro",
+          "description": "Gentle pad emerges from the 'Wait for Me' residue; final segment of the seamless opening block.",
+          "detail": "The Esper Edition credits Mary Hopkin with vocals on this track, though attribution is disputed."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Theme Entry",
+          "description": "CS-80 states Rachel's theme — a slow, ascending melodic line with pronounced portamento and vibrato.",
+          "detail": "The CS-80's polyphonic aftertouch is critical here: each note swells and decays independently, mimicking the rise and fall of breath."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Development",
+          "description": "Theme restated with added harmonic support; vocal-register synthesis creates the illusion of choral accompaniment."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Peak",
+          "description": "Full melodic statement with sustained chord bed beneath; the most exposed and lyrical passage in the opening suite."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Decay",
+          "description": "Theme fades into reverb wash; the first true silence of the album follows as the four-track suite ends."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Final sustained tone decays to silence — the suite's closing breath before 'Love Theme' begins as a discrete track."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Love Theme",
+      "duration": "4:56",
+      "energy": "low",
+      "tags": [
+        "Saxophone",
+        "Dick Morrissey",
+        "Jazz Noir",
+        "Yamaha CS-80",
+        "Romantic Cue"
+      ],
+      "role": "Album role: The noir-jazz interlude — the only track driven by an acoustic lead instrument, introducing Dick Morrissey's saxophone to fuse the electronic score with the classic film-noir tradition the film references.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Synth pad establishes a warm harmonic bed; the first track after the opening suite, separated by silence.",
+          "detail": "Tracks 5 through 7 are the album's 'discrete' middle section, each separated by silence rather than crossfaded."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Saxophone Entry",
+          "description": "Dick Morrissey's tenor saxophone enters with a slow, blues-inflected melody over the synth pad.",
+          "detail": "Morrissey was a veteran British jazz saxophonist; his playing draws on 1940s film-noir scoring conventions, bridging Vangelis's electronics to Philip Marlowe-era Hollywood."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "CS-80 Counterpoint",
+          "description": "Yamaha CS-80 introduces a secondary melodic line beneath the saxophone, creating a two-voice texture."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Build",
+          "description": "Harmonic bed thickens; saxophone melody ascends in register, supported by layered synth strings."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Peak",
+          "description": "Saxophone and CS-80 converge on the theme's emotional high point — sustained, reverb-drenched confluence.",
+          "detail": "The mixing places the saxophone forward and centre while the CS-80 occupies the stereo periphery, preserving spatial depth."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Outro",
+          "description": "Saxophone withdraws; synth pad sustains alone before fading to silence."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "One More Kiss, Dear",
+      "duration": "3:58",
+      "energy": "low",
+      "tags": [
+        "Retro Ballad",
+        "Don Percival",
+        "Peter Skellern",
+        "Diegetic",
+        "Pre-War Pastiche"
+      ],
+      "role": "Album role: The deliberate anachronism — a 1940s-style vocal ballad that functions as diegetic music within the film's world, contrasting the synthesised score with an acoustic human voice and conventional song form.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Acoustic piano and light orchestral arrangement establish a pre-war popular-song texture — no synthesiser.",
+          "detail": "Lyrics by Peter Skellern, vocals by Don Percival. The song is designed as source music within the film's narrative world."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Verse 1",
+          "description": "Don Percival's vocal enters with restrained phrasing; crooner delivery in the style of 1930s–1940s popular song."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Chorus",
+          "description": "Melody opens into a wider interval range; light string backing appears beneath the vocal."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Verse 2",
+          "description": "Second verse continues the same harmonic pattern with slight instrumental variation."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Bridge",
+          "description": "Brief harmonic departure; melody moves into a minor-key passage before resolving back to the major-key chorus structure."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Outro",
+          "description": "Vocal fades over sustained piano chord; the pre-war illusion dissolves to silence before Blade Runner Blues returns to synthesised territory."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Blade Runner Blues",
+      "duration": "8:53",
+      "energy": "low",
+      "tags": [
+        "Extended Ambient",
+        "Yamaha CS-80",
+        "Slow Evolution",
+        "Rain Texture",
+        "Centrepiece"
+      ],
+      "role": "Album role: The album's gravitational centre — the longest track and deepest ambient immersion, functioning as the atmospheric heart of the score and the final discrete track before the closing five-track seamless block.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Near-silence; a single sustained low-frequency drone fades in imperceptibly.",
+          "detail": "The slowest opening on the album — almost a minute passes before melodic content appears."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Theme Entry",
+          "description": "CS-80 introduces a slow, blues-inflected melodic fragment — sparse notes separated by long sustains and reverb decay."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Development",
+          "description": "Secondary pad voices enter; the harmonic field widens while maintaining the same glacial tempo."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Build",
+          "description": "Additional harmonic layers accumulate beneath the melody; frequency spectrum fills from sub-bass to high shimmer.",
+          "detail": "The piece evokes perpetual urban rain — Vangelis created atmospheric textures using Foley-like synthesis techniques on the CS-80."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Sustained Peak",
+          "description": "Maximum density; the full harmonic palette sustains without rhythmic movement — pure stasis.",
+          "detail": "At nearly nine minutes, this is the album's most committed ambient statement, comparable in approach to the extended meditations on Spiral (1977)."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Decay",
+          "description": "Layers begin to thin; melodic fragments repeat at lower volume with increasing reverb distance."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Outro",
+          "description": "Drone reasserts as melodic content withdraws; the piece returns to near-silence, completing a symmetrical arc."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Memories of Green",
+      "duration": "5:05",
+      "energy": "low",
+      "tags": [
+        "Yamaha CP-80",
+        "Sequencer Pattern",
+        "Borrowed Composition",
+        "See You Later",
+        "Pastoral"
+      ],
+      "role": "Album role: The borrowed pastoral — originally composed for the 1980 album See You Later, its inclusion in the film score introduces acoustic piano tonality and a cyclic sequencer motif that disrupts the synthesiser-dominated palette.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Opening of the final five-track seamless block; Yamaha CP-80 electric grand piano states a gentle cyclic pattern.",
+          "detail": "The track was originally released on Vangelis's 1980 album See You Later — the only pre-existing composition on the Blade Runner score."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Sequencer Entry",
+          "description": "Synthesiser sequencer pattern enters beneath the piano — a repeating arpeggio providing harmonic momentum.",
+          "detail": "The sequencer maintains a steady pulse that contrasts with the ambient timelessness of the surrounding tracks."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Theme Development",
+          "description": "Piano melody develops above the sequencer; longer phrases and wider intervals emerge."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Pad Entry",
+          "description": "CS-80 pad enters to support the piano; the texture warms and widens across the stereo field."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Peak",
+          "description": "Full arrangement density — piano, sequencer, and synth pad in balanced three-layer texture."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Crossfade",
+          "description": "Piano and sequencer fade as the sustained pad bridges into 'Tales of the Future'."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Tales of the Future",
+      "duration": "4:46",
+      "energy": "mid",
+      "tags": [
+        "Demis Roussos",
+        "Vocal Performance",
+        "Middle Eastern Mode",
+        "Roland VP-330 Vocoder",
+        "Dramatic Cue"
+      ],
+      "role": "Album role: The vocal centrepiece of the closing suite — Demis Roussos's improvised vocal line over synthesised Middle Eastern modalities injects human drama into the score's electronic fabric.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained drone pad with Eastern-inflected harmonic language; atmospheric preparation for the vocal entry.",
+          "detail": "The harmonic language shifts from the Western tonality of the preceding tracks to a Middle Eastern modal register, reflecting the film's multicultural cityscape."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Vocal Entry",
+          "description": "Demis Roussos's tenor voice enters with a melismatic, improvised vocal line — wordless and ornamented.",
+          "detail": "Roussos and Vangelis shared Greek heritage and had previously collaborated in Aphrodite's Child; the vocal performance draws on Byzantine and Middle Eastern singing traditions."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Build",
+          "description": "Synth accompaniment thickens; VP-330 Vocoder Plus adds processed vocal harmonics beneath Roussos's lead."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Peak",
+          "description": "Vocal and synthesiser reach maximum intensity; Roussos extends phrases into sustained high-register passages.",
+          "detail": "The track accompanies the snake-dancer scene in the film, one of the score's most visually and aurally distinct moments."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Decay",
+          "description": "Vocal retreats; synthesiser pad resumes dominance as the Eastern modes dissolve."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Crossfade",
+          "description": "Texture crossfades into the percussive opening of 'Damask Rose'."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Damask Rose",
+      "duration": "2:32",
+      "energy": "mid",
+      "tags": [
+        "Gamelan",
+        "Percussive",
+        "Middle Eastern",
+        "Brief Cue",
+        "Glockenspiel"
+      ],
+      "role": "Album role: The percussive interlude — the shortest track and the most rhythmically assertive, deploying gamelan and glockenspiel to bridge the vocal drama of 'Tales of the Future' and the symphonic End Titles.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Gamelan-register metallic percussion enters immediately — pitched tube and glockenspiel patterns over a sustained drone.",
+          "detail": "The acoustic percussion — gamelan, glockenspiel, and tubular bells — represents a rare departure from the score's synthesiser-dominated palette."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Rhythmic Pattern",
+          "description": "Interlocking percussive ostinato establishes a driving pulse; Middle Eastern modal inflections colour the melodic fragments above."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Peak",
+          "description": "CS-80 synth melody enters over the percussion bed; the two textures combine for the track's brief climax."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Decay",
+          "description": "Percussive pattern thins; glockenspiel retreats leaving the synth pad alone."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Crossfade",
+          "description": "Drone sustains and bridges into the End Titles without a break."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Blade Runner (End Titles)",
+      "duration": "4:40",
+      "energy": "mid",
+      "tags": [
+        "Yamaha CS-80",
+        "Reprise",
+        "Triumphant",
+        "Main Theme Restatement",
+        "Cinematic Climax"
+      ],
+      "role": "Album role: The thematic summation — restates and resolves the Main Titles material in a more expansive arrangement, functioning as the score's structural climax before the elegiac coda of 'Tears in Rain'.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained chord emerges from the 'Damask Rose' crossfade; orchestral-register synth pad builds slowly.",
+          "detail": "The End Titles revisit the Main Titles material but with a more resolved, less ambiguous harmonic language."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Theme Restatement",
+          "description": "CS-80 restates the Blade Runner theme — the brass-register melody from the Main Titles returns in fuller harmonic context."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Build",
+          "description": "Layered synth strings and pad voices accumulate beneath the theme; the arrangement exceeds the density of the opening statement."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Peak",
+          "description": "Full symphonic-electronic climax — CS-80 melody at maximum sustain, backed by the widest harmonic spread on the album.",
+          "detail": "The End Titles accompanies the film's ambiguous final sequence: Deckard and Rachael departing into uncertain daylight."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Decay",
+          "description": "Theme fades into reverb; density decreases as the arrangement thins toward the closing coda."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Crossfade",
+          "description": "Sustained tone bridges into 'Tears in Rain' — the album's final track."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Tears in Rain",
+      "duration": "3:00",
+      "energy": "low",
+      "tags": [
+        "Film Dialogue",
+        "Yamaha CS-80",
+        "Elegy",
+        "Closing Statement",
+        "Roy Batty Monologue"
+      ],
+      "role": "Album role: The elegiac coda — Roy Batty's 'tears in rain' monologue over dissolving synthesiser texture brings the album to its close, reducing the score to its most elemental state for a final three-minute meditation on mortality.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained CS-80 pad at minimal volume; the quietest opening on the album.",
+          "detail": "The track that inspired the 2049 sequel's 'Tears in the Rain' — Hans Zimmer and Benjamin Wallfisch produced a near-faithful remake for the later film."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Dialogue",
+          "description": "Rutger Hauer's Roy Batty monologue begins — 'I've seen things you people wouldn't believe' — over the sustained harmonic bed.",
+          "detail": "Hauer partly improvised the monologue on set; its inclusion on the 1994 album cements the score's identity as inseparable from the film's narrative."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Theme Fragment",
+          "description": "CS-80 introduces a final, slow melodic fragment — a distilled echo of the Main Titles theme at reduced intensity."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Build",
+          "description": "Pad voices thicken briefly; the harmony opens into a warmer register before beginning its final descent."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Decay",
+          "description": "All voices begin to fade; reverb tails extend as the harmonic content dissolves."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Outro",
+          "description": "Final sustained tone decays to silence — the album ends in the void from which it emerged.",
+          "detail": "The symmetry with the opening drone of 'Main Titles' is deliberate: the score begins and ends in near-silence, framing the twelve tracks as a single arc."
+        }
+      ]
+    }
+  ]
+}

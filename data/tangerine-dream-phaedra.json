@@ -1,0 +1,231 @@
+{
+  "id": "tangerine-dream-phaedra",
+  "artist": "Tangerine Dream",
+  "title": "Phaedra",
+  "year": 1974,
+  "label": "Virgin Records",
+  "producer": "Edgar Froese",
+  "genre": "Berlin School / Ambient",
+  "runtime": "37:33",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/d/de/Phaedra_%28Tangerine_Dream_album_-_cover_art%29.png",
+  "overview": "Recorded at The Manor Studio in Shipton-on-Cherwell, Oxfordshire during November–December 1973, completed in under six weeks by the trio of Edgar Froese, Christopher Franke, and Peter Baumann. The album introduced the Moog sequencer as Tangerine Dream's primary structural engine — the first time the device had been used to drive an entire long-form composition — alongside Mellotron, EMS VCS 3, organ, guitar, and electric piano. Phaedra reached UK No. 15 on word of mouth alone with no radio airplay, earned gold discs in seven countries, and is listed in 1001 Albums You Must Hear Before You Die. Side One is occupied entirely by the seventeen-minute title track; Side Two presents three shorter pieces that function as contrasting perspectives on the same equipment and methodology.\n\nTimestamps are proportionally estimated to ±20 seconds; the album's continuous textures and improvised passages do not produce hard section boundaries.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Phaedra",
+      "duration": "17:39",
+      "energy": "high",
+      "tags": [
+        "Side One Centrepiece",
+        "Moog Sequencer",
+        "Long-Form Improvisation",
+        "Berlin School",
+        "Oscillator Drift"
+      ],
+      "role": "Album role: The album's defining statement — a single side-long piece that introduced the Moog sequencer as Tangerine Dream's primary structural engine and established the Berlin School template for sequencer-driven long-form composition.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency Moog oscillator drones open the album — sustained sub-bass tones with no rhythmic activity.",
+          "detail": "The opening minutes are deliberately formless, closer to the group's earlier free-form work on Zeit and Atem than to the sequencer-driven material that follows. The spatial emptiness is structural preparation."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Sequencer entry",
+          "description": "The Moog sequencer enters with a cycling bass pattern — the first appearance of the rhythmic grid that defines the piece.",
+          "detail": "This is the moment that reoriented Tangerine Dream's career. Franke's use of the Moog sequencer as a substitute for bass guitar was a practical solution to a personnel gap, but it became the group's signature technique. Tuning the sequencer took several hours each day due to the absence of presets or memory banks."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Build",
+          "description": "EMS VCS 3 textures layer above the sequencer, adding filtered noise sweeps and harmonic overtones in the mid-register.",
+          "detail": "All three members played the VCS 3 on this album. The instrument's patch-pin matrix allowed rapid timbral changes without menu navigation — a critical advantage during the improvised recording sessions."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Polyrhythmic development",
+          "description": "A second sequencer line enters at a different cycling rate, generating polyrhythmic interplay against the original bass pattern.",
+          "detail": "The illusion of forward motion in Berlin School music comes from layering independent cycling patterns at different lengths rather than from tempo change. The accumulating polyrhythm here is the technique in its earliest recorded form."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Peak",
+          "description": "Maximum sequencer density — multiple independent cycling patterns running simultaneously across the full register, organ sustain beneath.",
+          "detail": "The speakers at The Manor were damaged by the unusually low frequencies of the bass notes during these sessions. The equipment was being pushed beyond its design limits, which contributed to the raw, unstable character of the sound."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Harmonic drift",
+          "description": "The oscillators begin to detune as the equipment warms up — the sequencer patterns shift pitch involuntarily, introducing unplanned tonal movement.",
+          "detail": "This is one of the most discussed aspects of the recording. The temperature-sensitive analogue oscillators drifted as the Moog heated up, producing harmonic changes that were not composed but which became integral to the piece's character. Froese later described this as a fortunate accident."
+        },
+        {
+          "timestamp": "11:30",
+          "section": "Breakdown",
+          "description": "Sequencer layers thin — outer patterns drop away, leaving exposed oscillator drifts and sustained VCS 3 filter sweeps.",
+          "detail": "The structural thinning mirrors the opening's gradual accumulation in reverse, but the detuned oscillators prevent the music from returning to its starting point. The piece is audibly somewhere else from where it began."
+        },
+        {
+          "timestamp": "13:00",
+          "section": "Rebuild",
+          "description": "A new harmonic area emerges as the surviving sequencer pattern shifts register — organ tones provide a stable ground beneath the unstable oscillators.",
+          "detail": "The rebuild section reveals the compositional structure beneath the improvisation. Despite the equipment instability, the trio maintained a deliberate arc — breakdown followed by reconstruction in altered harmonic territory."
+        },
+        {
+          "timestamp": "15:00",
+          "section": "Extended peak",
+          "description": "All remaining voices converge — the piece reaches its densest harmonic point, sequencer and VCS 3 textures at maximum simultaneous activity.",
+          "detail": "Mark J. Prendergast described this passage as conveying 'feelings of the cosmos, of giant suns exploding, of huge ocean movements' — layer upon layer of sound piling up until the piece climaxes."
+        },
+        {
+          "timestamp": "16:30",
+          "section": "Dissolution",
+          "description": "The piece dissolves into decaying oscillator tones and reverb tails — the sequencer pattern disintegrates as Side One ends.",
+          "detail": "On the original vinyl pressing, Side One ends here. The listener must physically turn the record over before encountering any of the remaining three pieces, giving the title track a self-contained finality that the CD format obscures."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Mysterious Semblance at the Strand of Nightmares",
+      "duration": "9:55",
+      "energy": "low",
+      "tags": [
+        "Mellotron Solo",
+        "Single-Take Recording",
+        "Phasing Effects",
+        "Side Two Opener"
+      ],
+      "role": "Album role: The album's contemplative counterpoint — a Mellotron solo piece recorded in a single take that provides the structural contrast to the sequencer-driven title track, demonstrating the group's capacity for sustained melodic composition without rhythmic machinery.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Mellotron opens unaccompanied on a sustained string preset, treated with a slow phasing sweep across the harmonic spectrum.",
+          "detail": "Recorded on 4 December 1973 while Franke and Baumann slept after a long session. Froese invited his wife Monique into the studio to operate the phasing device while he played the double-keyboarded Mellotron. The piece exists on the record exactly as it was recorded that night."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Melodic statement",
+          "description": "Froese introduces the primary melodic theme on the upper Mellotron keyboard — a slow, descending phrase shaped by the continuously sweeping phase effect.",
+          "detail": "The Mellotron's tape-based playback gives each sustained note a natural decay limit of approximately eight seconds, forcing the performer to rearticulate rather than hold indefinitely. This mechanical constraint shapes the phrasing throughout."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Development",
+          "description": "The melodic line becomes more elaborate — wider intervallic leaps, the phasing device creating an evolving timbral landscape around the Mellotron's inherent warmth.",
+          "detail": "Monique Froese's contribution — turning the phasing knobs in real time — is audible as the continuous timbral modulation that distinguishes this piece from a conventional Mellotron performance. The human variability in the phasing sweep is part of the composition."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Textural deepening",
+          "description": "Both Mellotron keyboards engaged simultaneously — the lower register adds harmonic weight beneath the melodic voice, doubling the timbral density.",
+          "detail": "The double-keyboarded Mellotron allowed Froese to play bass and treble voices independently. The two tape-replay mechanisms produce slightly different timbres even on the same preset, creating a natural chorusing effect."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Recapitulation",
+          "description": "The opening melodic material returns in varied form, now heard through denser phasing treatment — the filter sweep rate has increased.",
+          "detail": "The single-take format means this structural return was a real-time compositional decision. The arc of the piece — statement, development, return — was improvised rather than planned, which gives the recapitulation its slightly asymmetric character."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Fade",
+          "description": "The Mellotron fades through increasingly deep filtering — the phasing effect dominates the final moments as the instrument recedes.",
+          "detail": "The piece ends without resolution, the Mellotron simply withdrawing rather than cadencing. This open ending connects directly to the sequencer re-entry of 'Movements of a Visionary' that follows."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Movements of a Visionary",
+      "duration": "7:56",
+      "energy": "mid",
+      "tags": [
+        "Moog Sequencer",
+        "EMS VCS 3",
+        "Rhythmic Development",
+        "Berlin School"
+      ],
+      "role": "Album role: Side Two's primary rhythmic statement — the second sequencer-driven piece that reintroduces pulsing structure after the Mellotron interlude and balances the title track's extended scale with a more contained arc.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequencer entry",
+          "description": "The Moog sequencer re-enters after the Mellotron interlude — a rising bass pattern distinct from the title track's sequence, anchored lower in the register.",
+          "detail": "Franke's sequencer programming here is tighter and more rhythmically insistent than the title track's drifting patterns. The contrast is deliberate — this is a composed sequencer piece rather than an improvised one."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Build",
+          "description": "VCS 3 adds filtered textures above the sequencer grid — swept resonant filters creating moving harmonic content in the mid-register.",
+          "detail": "The VCS 3's voltage-controlled filter is responsible for the sweeping, liquid quality of the upper textures. All three members had VCS 3 units, making it the most pervasive instrument on the album after the Moog."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Peak",
+          "description": "Multiple voices active — organ sustain, VCS 3 filter sweeps, and Moog sequencer bass operating simultaneously at full density.",
+          "detail": "The organ provides the harmonic stability that the VCS 3 and Moog do not — a fixed-pitch reference point around which the more volatile electronic voices circulate. Baumann and Froese both played organ on the album."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Harmonic shift",
+          "description": "The sequencer pattern transposes to a new root — the harmonic centre of the piece moves, altering the relationship between all active voices.",
+          "detail": "Transposing a Moog sequencer pattern required manually retuning individual step voltages, which could not be done in real time with precision. This shift was likely a pre-planned structural event rather than an improvised gesture."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Thinning",
+          "description": "Layers begin to withdraw — the VCS 3 textures recede, leaving the sequencer pattern increasingly exposed against sparse organ sustain.",
+          "detail": "The structural withdrawal mirrors the title track's dissolution but operates on a compressed timescale. Seven minutes rather than seventeen enforces a different compositional discipline."
+        },
+        {
+          "timestamp": "7:15",
+          "section": "Transition",
+          "description": "The piece fades into sparse oscillator tones — the sequencer decelerates and drops away, preparing the shift to Baumann's acoustic closer.",
+          "detail": "The gap between the electronic density of this piece and the recorder simplicity of 'Sequent C'' is the album's most extreme timbral contrast. The transition is handled by near-silence."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Sequent C'",
+      "duration": "2:13",
+      "energy": "low",
+      "tags": [
+        "Recorder",
+        "Tape Echo",
+        "Acoustic Coda",
+        "Peter Baumann"
+      ],
+      "role": "Album role: The album's brief acoustic postscript — a Peter Baumann recorder piece that closes the record with deliberately archaic instrumentation after three electronic compositions, functioning as a coda that reframes the preceding technology through the lens of pre-electronic sound.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Entry",
+          "description": "Baumann's recorder enters unaccompanied — a simple melodic line with tape echo producing a cascading delay effect.",
+          "detail": "The choice of recorder — a medieval instrument — after thirty-five minutes of synthesizers and sequencers is a pointed juxtaposition. The tape echo transforms the acoustic source into something closer to the electronic textures that preceded it."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Echo accumulation",
+          "description": "The tape echo accumulates — repeating delays create a polyphonic texture from the single recorder voice, each repetition slightly degraded.",
+          "detail": "Tape echo produces a natural degradation of signal with each repetition — high frequencies attenuate, the sound becomes warmer and less defined. This analogue decay gives the layered echoes their organic, receding quality."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Melodic variation",
+          "description": "The recorder shifts register and explores a new phrase — earlier echoes persist as a harmonic bed beneath the live voice.",
+          "detail": "Baumann composed this piece independently of the rest of the album. Its brevity and acoustic simplicity serve a structural function that exceeds its duration — the album ends not with electronic spectacle but with a human breath through a wooden tube."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Fade",
+          "description": "The recorder falls silent — only decaying tape echoes remain, each repetition quieter than the last, until the album ends in silence.",
+          "detail": "The final sound on Phaedra is a degraded echo of an acoustic instrument — the electronic processing outlasting the human performance. The closing seconds encapsulate the album's central tension between organic music-making and machine-driven sound."
+        }
+      ]
+    }
+  ]
+}

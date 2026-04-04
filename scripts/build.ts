@@ -84,7 +84,7 @@ step("TypeScript typecheck", () => {
 
 step("Markdownlint", () => {
   try {
-    execSync('npx markdownlint-cli2 "**/*.md" "#node_modules" "#.github/skills/**"', {
+    execSync('npx markdownlint-cli2 "**/*.md" "#node_modules" "#.github/skills/**" "#coverage/**" "#.nyc_output/**" "#tmp/**" "#playwright-report/**" "#test-results/**" "#.playwright-mcp/**"', {
       cwd: ROOT,
       stdio: "pipe",
     });

@@ -1,0 +1,455 @@
+{
+  "id": "brian-eno-apollo",
+  "artist": "Brian Eno",
+  "title": "Apollo: Atmospheres & Soundtracks",
+  "year": 1983,
+  "label": "EG Records",
+  "producer": "Brian Eno · Daniel Lanois",
+  "genre": "Ambient",
+  "runtime": "48:08",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a0/Brianenoapollo.jpg",
+  "isSoundtrack": true,
+  "overview": "Apollo: Atmospheres & Soundtracks (1983) was composed by Brian Eno, Daniel Lanois, and Roger Eno at Lanois's Grant Avenue Studio in Hamilton, Ontario, as the score for Al Reinert's Apollo program documentary For All Mankind — though the film was not released until 1989. The production employs reversed tape playback with heavy multi-layered reverb, Lanois's Sho-Bud pedal steel guitar, the Yamaha CS-80, and a Suzuki Omnichord drastically slowed from its original recording tempo to form the foundation of \"Deep Blue Day.\" The country-ambient hybrid introduced here — pedal steel guitar framed by synthetic drones — would influence subsequent ambient and post-rock movements; \"An Ending (Ascent)\" became one of Eno's most licensed compositions, appearing in Traffic (2000), 28 Days Later (2002), and the 2012 London Olympics opening ceremony, while \"Deep Blue Day\" featured on the four-million-selling Trainspotting soundtrack.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Under Stars",
+      "duration": "4:25",
+      "energy": "low",
+      "tags": ["Treated guitar", "Dark ambient bed", "Reverb processing", "Recurring motif"],
+      "role": "Album role: Opening thematic statement — establishes the album's dark-textured ambient language and introduces the \"Under Stars\" motif that recurs in tracks 6 and 12.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Electronic ambient bed fades in from silence, occupying the low-mid frequency range with a slowly evolving drone.",
+          "detail": "The bed was constructed through Eno's characteristic method of soft-attack recordings played backwards with heavy reverb applied in both directions."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Guitar entry",
+          "description": "Treated guitar appears over the electronic bed, heavily spatialized with long reverb trails across the stereo field."
+        },
+        {
+          "timestamp": "1:35",
+          "section": "Build",
+          "description": "Additional harmonic layers accumulate; filtered pad textures thicken the stereo image without introducing rhythmic content."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Peak",
+          "description": "Guitar and electronic elements reach maximum density; overlapping echo trails create a shimmering harmonic wall."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Outro",
+          "description": "Layers gradually recede; the electronic bed returns to isolation as guitar reverb trails dissolve into near-silence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "The Secret Place",
+      "duration": "3:27",
+      "energy": "low",
+      "tags": ["Processed guitar", "Cavernous reverb", "Tape manipulation", "Dark texture"],
+      "role": "Album role: Deepens the nocturnal atmosphere established by the opener, functioning as the album's most enclosed and claustrophobic sonic environment.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Hushed synthesizer pad enters, establishing a cavernous reverb space that suggests a vast interior void."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Texture shift",
+          "description": "Processed guitar tones surface beneath the pad, adding granular detail through tape-speed manipulation."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Build",
+          "description": "Multiple overdubbed layers create an enveloping harmonic field; stereo width narrows to intensify the sense of enclosure.",
+          "detail": "Daniel Lanois arranged the piece; Eno applied processing and spatial treatments to Lanois's source material."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Peak",
+          "description": "Textural density reaches its ceiling; all processed layers sustain simultaneously at maximum harmonic saturation."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Outro",
+          "description": "Elements decay into silence, leaving only residual reverb tail as a transition to the next track."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Matta",
+      "duration": "4:14",
+      "energy": "low",
+      "tags": ["Synthetic drone", "Spectral texture", "Dark ambient", "Solo Eno composition"],
+      "role": "Album role: The album's most austere and isolated piece — a Brian Eno solo composition that strips the palette to pure synthetic texture, serving as Side One's contemplative centre.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Dark synthetic drone emerges from silence, occupying the low-mid frequency range with no harmonic movement."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Spectral layer",
+          "description": "High-frequency spectral tones appear above the drone, creating an unsettling harmonic contrast between registers."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Development",
+          "description": "New tonal elements phase in and out of audibility; the piece shifts subtly without rhythmic anchoring."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Tension",
+          "description": "Dissonant overtones accumulate, generating an oppressive textural density at the midpoint.",
+          "detail": "The dark, complicated textures here connect directly to Eno's preceding Ambient 4: On Land (1982), sharing its concern with imaginary landscapes."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Dissolution",
+          "description": "Upper harmonics fade, leaving the original low drone to close the piece in isolation."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Signals",
+      "duration": "2:44",
+      "energy": "low",
+      "tags": ["Electronic pulse", "Short-form interlude", "Signal processing", "Radio motif"],
+      "role": "Album role: Brief transitional interlude simulating distant communications; bridges the dark-ambient first half toward the emotional centre of \"An Ending (Ascent).\"",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Pulsing electronic signal emerges, suggesting distant radio transmissions between spacecraft and ground control."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Pattern",
+          "description": "Repeated signal pattern establishes a minimal rhythmic framework over a static ambient bed."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Modulation",
+          "description": "Signal undergoes filtering and spatial modulation, shifting stereo position as if tracking a moving transmission source."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Fade",
+          "description": "Pulsing signal attenuates gradually, fading as if the source has moved beyond reception range."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "An Ending (Ascent)",
+      "duration": "4:18",
+      "energy": "mid",
+      "tags": ["Yamaha CS-80", "Ascending pad", "Synth choir", "Signature piece"],
+      "role": "Album role: The album's emotional and structural apex — an ascending synthesizer meditation that became one of Eno's most widely licensed and recognised compositions.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained synthesizer chord fades in from silence; warm pad timbre consistent with the Yamaha CS-80's characteristic portamento.",
+          "detail": "The soft-attack technique — notes recorded with gentle onsets, then reversed and re-layered with reverb in both directions — produces the track's distinctive floating quality."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Theme",
+          "description": "Principal ascending melody emerges above the pad, each note sustained with long release envelopes blending into the next."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Layering",
+          "description": "Additional harmonic voices double the melody at different octaves, broadening the frequency spectrum toward full-range coverage."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Build",
+          "description": "Chord voicings swell in volume and density; the ascending contour becomes the dominant structural force."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Climax",
+          "description": "Full harmonic convergence; all synthesizer layers align at maximum sustain and volume, the album's single most elevated moment.",
+          "detail": "This passage was later sampled by Frou Frou, Burial, and others, and used in the memorial wall sequence of the 2012 London Olympics opening ceremony."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Descent",
+          "description": "Layers slowly recede; the ascending motif dissolves into extended reverb tail, returning the album to its ambient baseline."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Under Stars II",
+      "duration": "3:15",
+      "energy": "low",
+      "tags": ["Variant arrangement", "Re-treatment", "Ambient reprise", "Effects differentiation"],
+      "role": "Album role: Structural mirror of the opening track — the same composition subjected to alternative effects processing, marking the threshold between the album's darker first half and its warmer second half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Electronic ambient bed re-establishes the harmonic language of \"Under Stars\" with recognisable tonal content."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Differentiation",
+          "description": "Alternative effects processing applied to the guitar creates a distinctly new textural identity from the opening track.",
+          "detail": "Wikipedia notes this is the same composition as \"Under Stars\" with different effects and treatments — a deliberate structural device."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Development",
+          "description": "Re-treated layers diverge further from the original arrangement; a new reverb character with longer decay dominates."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Convergence",
+          "description": "Processed elements merge into a unified wash, distinct from the original track's preserved separation between guitar and bed."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Outro",
+          "description": "Texture dissipates through extended reverb decay, clearing space for the gentler pieces that follow."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Drift",
+      "duration": "3:03",
+      "energy": "low",
+      "tags": ["Piano", "Reverb wash", "Roger Eno co-write", "Atmospheric drift"],
+      "role": "Album role: Transitional piece introducing Roger Eno's keyboard sensibility — a gentle piano-led drift that pivots the album from synthetic darkness toward the country-ambient warmth of the final movement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Soft piano notes enter with heavy reverb, establishing a gentle harmonic foundation in a high register."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Pad entry",
+          "description": "Warm synthesizer pad underpins the piano, creating a floating harmonic bed beneath the acoustic instrument."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Melodic arc",
+          "description": "Piano melody traces a slow descending arc over the sustained pad; notes overlap through reverb rather than pedal sustain."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Suspension",
+          "description": "All elements sustain at a single harmonic point; temporal motion appears to halt as reverb tails merge."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Outro",
+          "description": "Piano notes thin to a single voice; reverb tail carries the piece to its natural conclusion."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Silver Morning",
+      "duration": "2:35",
+      "energy": "mid",
+      "tags": ["Sho-Bud steel guitar", "Country-ambient", "Pedal steel", "Daniel Lanois solo"],
+      "role": "Album role: The first of three country-ambient pieces — a brief, luminous interlude showcasing Daniel Lanois's Sho-Bud pedal steel guitar, released as a 7\" single B-side with \"Deep Blue Day.\"",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Pedal steel guitar opens with clean, sustained notes; volume swells eliminate pick attack for a bowed quality."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Theme",
+          "description": "Sho-Bud steel guitar establishes the primary country-inflected melody over an underlying ambient synthesizer pad.",
+          "detail": "Eno used country music — heard on American armed forces radio during his childhood in Woodbridge, Suffolk — to evoke the mythical American frontier and the connotation of pioneering in space."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Development",
+          "description": "Ambient synthesizer bed expands beneath the steel guitar; textural warmth increases as pad harmonics thicken."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Outro",
+          "description": "Steel guitar melody fades through a long volume-pedal diminuendo; ambient bed sustains briefly before final decay."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Deep Blue Day",
+      "duration": "3:53",
+      "energy": "mid",
+      "tags": ["Suzuki Omnichord", "Pedal steel guitar", "Tempo-shifted recording", "Country-ambient"],
+      "role": "Album role: The album's warmest and most melodically accessible piece — its Omnichord-and-steel-guitar foundation became a touchstone of ambient pop after its inclusion on the Trainspotting soundtrack.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Suzuki Omnichord pattern emerges, drastically slowed from its original recording tempo to produce a warm, undulating harmonic bed.",
+          "detail": "Daniel Lanois confirmed to Noisey that the slowed Omnichord forms the track's foundation, transforming a simple strumming pattern into a deep, pulsing texture."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Steel entry",
+          "description": "Pedal steel guitar enters with a languid melodic line, volume swells creating a legato phrasing over the Omnichord bed."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Build",
+          "description": "Bass-register synthesizer adds harmonic depth; the arrangement opens into full stereo width.",
+          "detail": "Lanois also confirmed use of a Yamaha CS-80, Fender Stratocaster, and Sho-Bud steel guitar in this track's construction."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Theme",
+          "description": "Steel guitar and Omnichord align on the primary melodic statement — the album's warmest harmonic moment."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Plateau",
+          "description": "All elements sustain at a consistent dynamic level; no new material introduced, allowing the existing layers to breathe."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Outro",
+          "description": "Gradual attenuation of all layers; the Omnichord pattern persists longest, fading last."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Weightless",
+      "duration": "4:28",
+      "energy": "low",
+      "tags": ["Pedal steel guitar", "Zero-gravity motif", "Floating texture", "Country-ambient hybrid"],
+      "role": "Album role: The final country-ambient piece — the most literally programmatic track, its drifting steel guitar and airy pads designed to evoke the physical sensation of weightlessness in orbit.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Synthesizer pad fades in with an airy, high-register shimmer; frequency content concentrated above 2 kHz."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Guitar entry",
+          "description": "Pedal steel guitar enters with sustained, floating notes; volume-swell technique eliminates all transient attack."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Layering",
+          "description": "Multiple overdubbed steel guitar and synthesizer voices accumulate, creating a slowly rotating harmonic field."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Peak",
+          "description": "Maximum density reached; layered voices produce a gently churning texture without rhythmic pulse."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Dissipation",
+          "description": "Layers thin progressively from the top of the frequency range downward; final steel guitar note trails into silence."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Always Returning",
+      "duration": "3:49",
+      "energy": "mid",
+      "tags": ["Melodic ambient", "Keyboard lead", "Cyclical motif", "Roger Eno co-write"],
+      "role": "Album role: Penultimate emotional resolution — its cyclical ascending-descending melody provides narrative closure before the extended ambient dissolution of \"Stars.\"",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Gentle synthesizer chord establishes harmonic centre; soft attack with extended sustain and slow filter opening."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Theme",
+          "description": "Principal melodic line appears, tracing a cyclical ascending-and-descending contour that embodies the title's meaning."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Development",
+          "description": "Harmonic accompaniment expands; a secondary melodic voice enters in a lower register to support the lead."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Reprise",
+          "description": "Main theme returns with fuller orchestration and increased dynamic range — the most harmonically complete statement."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Outro",
+          "description": "Melodic elements recede; sustained chord fades to silence, preparing the transition into the closing drone."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Stars",
+      "duration": "7:57",
+      "energy": "low",
+      "tags": ["Extended drone", "Pure ambient texture", "Deep space", "Closing meditation"],
+      "role": "Album role: Extended closing piece — the pure background texture stripped of the guitar overlay heard in \"Under Stars,\" functioning as the album's final dissolution into deep-space silence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Pure ambient texture begins; deep synthesizer drone establishes a vast, dark space with minimal harmonic content.",
+          "detail": "Wikipedia identifies this track as the underlying texture from \"Under Stars\" without the treated guitar overlay — a structural inversion that bookends the album."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "First shift",
+          "description": "Subtle harmonic overtones emerge above the fundamental drone, adding spectral complexity without melodic direction."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Textural addition",
+          "description": "A new synthesizer layer introduces a slowly evolving tonal colour in the mid-frequency range."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Deepening",
+          "description": "Low-frequency content increases; the texture becomes more enveloping as sub-harmonic weight builds."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Apex",
+          "description": "Maximum harmonic density; all ambient layers present simultaneously at sustained equilibrium."
+        },
+        {
+          "timestamp": "5:50",
+          "section": "Recession",
+          "description": "Layers begin gradual retreat; upper partials fade first, darkening the overall timbre."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Outro",
+          "description": "Drone thins to its most elemental form — a single sustained tone that fades to silence, closing the album."
+        }
+      ]
+    }
+  ]
+}

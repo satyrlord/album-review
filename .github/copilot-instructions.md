@@ -37,7 +37,7 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 
 1. Create a new album JSON directly, or use the scaffold with `npx tsx scripts/add-album.ts "Artist Name" "Album Title" YEAR --genre "Genre / Subgenre"`.
 
-When a request covers multiple albums, split the work by album and run the album-analysis workflow in parallel using multiple sub-agents whenever feasible. Assign one sub-agent per album, then reconcile the outputs in the main agent before the final build and validation pass.
+   When a request covers multiple albums, split the work by album and run the album-analysis workflow in parallel using multiple sub-agents whenever feasible. Assign one sub-agent per album, then reconcile the outputs in the main agent before the final build and validation pass.
 
 2. Ensure the JSON includes the album metadata, overview, track analysis, optional `coverUrl`, and `isSoundtrack: true` when the album should appear on the Soundtracks page.
 
