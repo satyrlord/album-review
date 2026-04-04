@@ -1,0 +1,224 @@
+{
+  "id": "jean-michel-jarre-waiting-for-cousteau",
+  "artist": "Jean-Michel Jarre",
+  "title": "Waiting for Cousteau",
+  "year": 1990,
+  "label": "Disques Dreyfus",
+  "producer": "Jean-Michel Jarre",
+  "genre": "Electronic / Ambient",
+  "runtime": "1:08:57",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/b/b6/En_attendant_Cousteau.jpg",
+  "overview": "Recorded at Coral Sound studio in Port of Spain, Trinidad and Tobago (Calypso tracks) and Jarre's Croissy studio in Paris (title track). The album divides into two distinct halves: three Calypso pieces featuring steel drums performed by The Amoco Renegades alongside Guy Delacroix (bass), Christophe Deschamps (drums), Michel Geiss and Dominique Perrier (keyboards); and the 46-minute ambient title track created largely with an Atari Mega-ST running algorithmic composition software, layered with hand-played synthesizer lines and time-stretched samples. Released 11 June 1990 on Jacques Cousteau's 80th birthday; reached UK No. 14 and sold approximately 1.55 million copies worldwide. Certified double Gold in France (550,000 units).\n\nTimestamps on the title track are proportional estimates given the continuous, slowly evolving nature of the piece (±30 seconds).",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Calypso Part 1",
+      "duration": "8:24",
+      "energy": "mid",
+      "tags": [
+        "Steel Drums",
+        "Calypso Fusion",
+        "Amoco Renegades",
+        "Album Opener"
+      ],
+      "role": "Album role: The album's rhythmic anchor — establishes the Calypso triptych's Caribbean-electronic fusion identity before the radical ambient departure of the title track.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Synthesizer pad and percussion open the piece with a warm, mid-tempo groove.",
+          "detail": "The steel drums have not yet entered. The electronic palette is familiar Jarre territory — the Caribbean element arrives as a surprise."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Steel drum entry",
+          "description": "The Amoco Renegades' steel pans enter with a melodic figure, fusing with the synthesizer bed.",
+          "detail": "The Amoco Renegades are a professional steelband from Trinidad and Tobago. Their acoustic timbre against Jarre's electronic framework defines the Calypso trilogy's character."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Bass and drums entry",
+          "description": "Guy Delacroix's bass and Christophe Deschamps's drums establish a full rhythmic foundation beneath the steel pans.",
+          "detail": "Live instrumentation layered with sequenced elements — a departure from Jarre's earlier entirely solo production method."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Melodic development",
+          "description": "The steel drum melody develops new phrasing while synthesizer arpeggios add harmonic depth."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Peak",
+          "description": "Maximum density of the arrangement — all elements active simultaneously, steel drums leading the melodic line."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Reduction",
+          "description": "The arrangement thins, electronic textures dominate again as the steel drums recede."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Transition",
+          "description": "Final bars prepare the harmonic space for Calypso Part 2's entry."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Calypso Part 2",
+      "duration": "7:10",
+      "energy": "mid",
+      "tags": [
+        "Sequencer Groove",
+        "Steel Drum Counterpoint",
+        "Rhythmic Dialogue"
+      ],
+      "role": "Album role: The Calypso trilogy's central panel — develops the Caribbean-electronic fusion into a denser, more sequencer-driven arrangement where the steel drums serve as counterpoint rather than lead voice.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sequencer pattern establishes a more mechanical pulse than Part 1's organic opening."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Rhythmic groove",
+          "description": "Drums and bass lock into a tighter groove, the electronic sequencer providing a repetitive foundation."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Steel drum re-entry",
+          "description": "The Amoco Renegades return with a different melodic figure, weaving around the sequencer pattern."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Harmonic shift",
+          "description": "The chord progression moves to a new tonal centre. Michel Geiss and Dominique Perrier's keyboard layers add textural complexity."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Peak",
+          "description": "The arrangement reaches maximum energy — syncopated steel drums and electronic percussion at full density."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Deconstruction",
+          "description": "Elements drop out progressively. The groove simplifies toward Part 3's contrasting character."
+        },
+        {
+          "timestamp": "6:50",
+          "section": "Outro",
+          "description": "Final synthesizer wash dissolves the rhythmic framework."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Calypso Part 3 (Fin de Siècle)",
+      "duration": "6:28",
+      "energy": "mid",
+      "tags": [
+        "Fin de Siècle",
+        "Calypso Farewell",
+        "Transitional Piece"
+      ],
+      "role": "Album role: The Calypso trilogy's conclusion and the pivot point of the entire album — the final rhythmic, melodic statement before the 47-minute ambient immersion of the title track.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A more reflective opening than Parts 1 or 2 — synthesizer pads with a slower initial tempo."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Steel drum melody",
+          "description": "The Amoco Renegades deliver the Calypso trilogy's most melodically developed passage — a farewell statement.",
+          "detail": "The subtitle 'Fin de Siècle' (End of the Century) signals both the decade's close and the end of the album's rhythmic half."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Full arrangement",
+          "description": "Bass, drums, keyboards, and steel pans all present. The most orchestrally complete moment of the Calypso trilogy."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Harmonic resolution",
+          "description": "The chord progression resolves toward a stable tonal centre — a sense of completion rather than forward drive."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Dissolution begins",
+          "description": "The rhythmic elements withdraw. The steel drums play their final phrases."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Ambient transition",
+          "description": "Pure synthesizer texture remains — the Caribbean identity dissolves entirely, preparing for the title track's radically different world.",
+          "detail": "The shift from Calypso Part 3 to the title track is one of the most dramatic stylistic contrasts on any Jarre album. Twenty-two minutes of rhythmic fusion yield to forty-seven minutes of near-static ambient sound."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "En attendant Cousteau",
+      "duration": "46:55",
+      "energy": "low",
+      "tags": [
+        "Deep Ambient",
+        "Atari Mega-ST",
+        "Algorithmic Composition",
+        "Cousteau Dedication",
+        "Extended Form"
+      ],
+      "role": "Album role: The album's singular ambient statement — a 47-minute oceanic drift dedicated to Jacques Cousteau, algorithmically generated on an Atari Mega-ST and shaped by hand. The most radical departure in Jarre's catalogue, abandoning melody, rhythm, and conventional structure in favour of slowly evolving timbral fields.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ambient immersion begins",
+          "description": "Deep, low-frequency synthesizer drones fade in from silence. No pulse, no melody — pure timbral presence.",
+          "detail": "The piece was created using algorithmic composition software on an Atari Mega-ST, with Jarre programming 16 starting notes. He later clarified that all notes were played by hand, with time-stretched samples mixed into the background."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Timbral shift",
+          "description": "The harmonic spectrum widens. New frequency layers emerge almost imperceptibly — the ocean as metaphor."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Textural deepening",
+          "description": "Sub-bass drones and upper-register harmonics create a widening frequency field. The sensation of depth intensifies.",
+          "detail": "The piece was used in the soundtrack of Cousteau's 1991 documentary 'Palawan: Le dernier refuge', though the documentary version differed from this album cut."
+        },
+        {
+          "timestamp": "15:00",
+          "section": "Mid-section plateau",
+          "description": "The ambient field reaches a sustained equilibrium — neither building nor receding. Stasis as compositional intent.",
+          "detail": "Jarre reportedly drew inspiration from Douglas Adams's 'Dirk Gently's Holistic Detective Agency', though he later denied this, stating the concept was independently arrived at."
+        },
+        {
+          "timestamp": "22:00",
+          "section": "Harmonic migration",
+          "description": "The tonal centre shifts almost imperceptibly over several minutes. New overtone relationships emerge from the drone.",
+          "detail": "On the vinyl and cassette edition, the title track was truncated to 22 minutes to fit the format. The CD edition preserves the full 46:55 continuous piece."
+        },
+        {
+          "timestamp": "30:00",
+          "section": "Deep drift",
+          "description": "The lowest frequencies dominate. The piece enters its most submerged region — maximum oceanic depth.",
+          "detail": "The piece was performed at the Paris La Défense concert on 14 July 1990, before approximately 2.5 million people."
+        },
+        {
+          "timestamp": "38:00",
+          "section": "Gradual ascent",
+          "description": "Higher harmonics re-enter the spectrum. The timbral field brightens — a slow return toward the surface."
+        },
+        {
+          "timestamp": "44:00",
+          "section": "Final dissolution",
+          "description": "The drones thin. The frequency field narrows back toward the low register from which it emerged.",
+          "detail": "The piece ends as it began — in near-silence. The circular structure mirrors the ocean's cyclical nature and Cousteau's lifelong return to the sea."
+        }
+      ]
+    }
+  ]
+}

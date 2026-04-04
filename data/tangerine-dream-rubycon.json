@@ -1,0 +1,148 @@
+{
+  "id": "tangerine-dream-rubycon",
+  "artist": "Tangerine Dream",
+  "title": "Rubycon",
+  "year": 1975,
+  "label": "Virgin Records",
+  "producer": "Tangerine Dream",
+  "genre": "Berlin School / Ambient",
+  "runtime": "34:53",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/6e/Rubycon.png",
+  "overview": "Recorded at The Manor Studio in Shipton-on-Cherwell, Oxfordshire during January 1975 — the same facility used for Phaedra one year earlier — by the trio of Edgar Froese, Christopher Franke, and Peter Baumann. The album refines the Moog sequencer methodology introduced on its predecessor into a more controlled and compositionally deliberate form, deploying double Moog synthesizer, Mellotron, EMS VCS 3, EMS Synthi A, modified Elka organ, prepared piano, Fender Rhodes, ARP 2600, guitar, gong, and voice across two side-long pieces. Rubycon reached UK No. 10 in a fourteen-week chart run — the group's highest UK chart position — and is included in Tom Moon's 1,000 Recordings to Hear Before You Die. The two-part structure mirrors Phaedra's Side One/Side Two division but eliminates the shorter contrasting pieces, committing the entire album to the sequencer-driven long-form arc.\n\nTimestamps are proportionally estimated to ±20 seconds; the album's continuous textures and improvised passages do not produce hard section boundaries.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Rubycon, Part One",
+      "duration": "17:18",
+      "energy": "high",
+      "tags": [
+        "Side One",
+        "Moog Sequencer",
+        "Mellotron Choir",
+        "Prepared Piano",
+        "Berlin School"
+      ],
+      "role": "Album role: The opening long-form statement — a seventeen-minute arc that develops the Phaedra sequencer template with greater compositional control, building from sparse drone textures through Mellotron choir washes to dense polyrhythmic sequencer activity.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency Moog drones and distant echo washes open the album — formless sustained tones establishing spatial depth with no rhythmic content.",
+          "detail": "The opening is darker and more deliberately paced than Phaedra's equivalent passage. The trio had a year's additional experience with the Moog sequencer and began the piece from a position of compositional confidence rather than exploration."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Textural development",
+          "description": "VCS 3 filtered noise sweeps layer above the drone bed — Froese's guitar emerges as a distant, heavily processed melodic thread.",
+          "detail": "Froese's guitar contributions on the album are treated through VCS 3 processing to the point where the instrument becomes indistinguishable from synthesized tones. The guitar serves as a textural voice rather than a melodic lead."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Mellotron entry",
+          "description": "Mellotron choir preset enters — the 'massed choir' effect flooding the stereo field with sustained vocal textures above the oscillator drones.",
+          "detail": "Chris Salewicz of NME noted 'the technological massed choir that floods out of the speakers' as a defining moment. The Mellotron's tape-based choir preset creates an uncanny vocal quality — recognisably human but mechanically sustained beyond natural breath capacity."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Sequencer entry",
+          "description": "The Moog sequencer enters with a cycling bass pattern — restrained and precise, the rhythmic grid emerging gradually from beneath the Mellotron wash.",
+          "detail": "Franke's double Moog synthesizer setup allowed independent sequencer voices to be programmed and layered. The sequencer entry here is more controlled than Phaedra's equivalent — the pattern is tighter, the pitch relationships more deliberately set."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Polyrhythmic build",
+          "description": "A second sequencer line enters at a different rate — the two independent cycling patterns generate polyrhythmic interplay against the Mellotron sustain.",
+          "detail": "The prepared piano contributions from Franke and Baumann add percussive metallic accents within the sequencer grid. Objects placed on the piano strings produce unpitched, bell-like tones that punctuate the electronic texture."
+        },
+        {
+          "timestamp": "10:00",
+          "section": "Peak",
+          "description": "Maximum density — Moog sequencer, Mellotron, VCS 3, organ, and prepared piano all active simultaneously, the polyrhythmic layers at their most complex.",
+          "detail": "The peak section sustains longer than Phaedra's equivalent, reflecting the group's increased confidence in managing multiple analogue voices at maximum activity. The modified Elka organ provides a sustained harmonic anchor beneath the volatile Moog patterns."
+        },
+        {
+          "timestamp": "12:30",
+          "section": "Harmonic drift",
+          "description": "The sequencer patterns begin to shift pitch — oscillator drift introduces unplanned tonal movement as the Moog heats up, altering the harmonic relationships between voices.",
+          "detail": "Unlike Phaedra, where the drift was entirely accidental, the group had learned to anticipate and exploit the temperature-sensitive oscillator behaviour. The drift here is semi-controlled — allowed rather than corrected."
+        },
+        {
+          "timestamp": "14:30",
+          "section": "Breakdown",
+          "description": "Layers thin systematically — sequencer voices drop away one by one, Mellotron recedes, leaving sparse VCS 3 filter sweeps and decaying oscillator tones.",
+          "detail": "The breakdown is more structured than Phaedra's dissolution. The trio dismantles the texture in deliberate stages rather than allowing it to collapse, demonstrating the compositional refinement that Paul Stump described as 'a mastery of primitive technology.'"
+        },
+        {
+          "timestamp": "16:30",
+          "section": "Dissolution",
+          "description": "The piece dissolves into reverberant silence — final oscillator tones and echo tails fade as Side One ends.",
+          "detail": "On the original vinyl pressing, a physical gap separates the two halves. The silence between sides is a structural element — the listener must turn the record over, creating a pause that the CD eliminates."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Rubycon, Part Two",
+      "duration": "17:35",
+      "energy": "mid",
+      "tags": [
+        "Side Two",
+        "ARP 2600",
+        "Fender Rhodes",
+        "Voice",
+        "Gong"
+      ],
+      "role": "Album role: The album's reflective second arc — a companion piece to Part One that opens from a darker, more atmospheric starting point before rebuilding the sequencer grid with different instrumental emphasis, incorporating voice and ARP 2600 alongside the Moog.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Dark, reverberant opening — gong resonances and low organ drones establish a more ominous atmosphere than Part One's equivalent passage.",
+          "detail": "AllMusic described this opening as 'wonderfully haunted.' Both Froese and Franke are credited with gong on Part Two — the instrument's long decay envelope and unpitched harmonic spectrum serve as a bridge between the acoustic and electronic timbres."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Melodic emergence",
+          "description": "Fender Rhodes electric piano introduces a tentative melodic line — the first clearly pitched melodic content on Side Two, heard against sustained VCS 3 drones.",
+          "detail": "Baumann's Fender Rhodes playing provides a human-scaled melodic element absent from Part One. The instrument's bell-like attack and warm decay offer timbral contrast to the Moog's harsher oscillator tones."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Vocal entry",
+          "description": "Baumann's voice enters — treated and processed, functioning as another textural instrument rather than delivering lyrics or melody.",
+          "detail": "The vocal contributions are non-verbal — sustained tones and breath sounds processed through the Synthi A. The human voice becomes another oscillator in the electronic ensemble, blurring the boundary between organic and synthesized sound."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Sequencer return",
+          "description": "The synthesizer arpeggios return — Moog sequencer re-enters with a new cycling pattern distinct from Part One, driving the rhythmic structure forward.",
+          "detail": "The sequencer pattern in Part Two uses wider intervals and a slower cycling rate than Part One, creating a more spacious rhythmic feel. The ARP 2600 adds filtered sweeps above the Moog bass, widening the timbral palette."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Build",
+          "description": "Mellotron choir returns alongside the sequencer grid — the combination of voices, Mellotron, and Moog creates the album's broadest harmonic palette.",
+          "detail": "Froese's organ provides sustained harmonic support beneath the Mellotron while guitar textures — processed through VCS 3 filters — thread through the upper register. All three members are simultaneously active across their full instrument lists."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Extended peak",
+          "description": "The densest passage on Side Two — all available voices active, the ARP 2600's resonant filter sweeps adding a sharper harmonic edge above the Moog sequencer bass.",
+          "detail": "The ARP 2600's voltage-controlled filter has a different resonance character from the Moog's — brighter and more aggressive in the upper harmonics. The combination of both synthesizer architectures gives this peak section a wider tonal range than Part One's equivalent."
+        },
+        {
+          "timestamp": "13:30",
+          "section": "Deconstruction",
+          "description": "The texture begins to fragment — sequencer patterns destabilise, Mellotron drops away, leaving exposed Synthi A processing and decaying Fender Rhodes notes.",
+          "detail": "The deconstruction is more gradual than Part One's breakdown, taking four minutes rather than two. The pacing mirrors the album's broader trajectory — Part Two operates at a lower energy ceiling and takes longer to unwind."
+        },
+        {
+          "timestamp": "16:00",
+          "section": "Outro",
+          "description": "Final moments — sparse gong resonance, retreating oscillator drones, and fading echo trails close the album in near-silence.",
+          "detail": "The album ends as it began — in formless drone and resonance. The symmetry between the two parts is structural: both emerge from silence, build to a sequencer-driven peak, and dissolve back. The circular form became a template for subsequent Berlin School recordings."
+        }
+      ]
+    }
+  ]
+}

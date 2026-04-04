@@ -21,12 +21,10 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 | `index.html` | Album index — filterable card grid, fetches `data/index.json` |
 | `soundtracks.html` | Soundtrack-only collection view using the same card grid, sorted chronologically |
 | `album.html` | Dynamic album detail page, fetches `data/<id>.json` |
-| `top-10.html` / `top-20.html` | Ranked decade-based shortlists using `data/rankings.json` and `data/index.json` |
 | `src/site.ts` | Shared site utilities, including the footer renderer and version display logic |
 | `vite.config.ts` | Multi-page Vite config, build metadata injection, and Istanbul coverage setup |
 | `data/<id>.json` | Source of truth for each album analysis |
 | `data/index.json` | Generated album summary index derived from `data/*.json` |
-| `data/rankings.json` | Ranked album catalog for the Top 10 and Top 20 pages |
 | `src/album-analysis.css` | Shared stylesheet — single source of truth for all design tokens and components |
 | `scripts/add-album.ts` | MusicBrainz/Wikipedia scaffolder for new album JSON files |
 | `docs/writing-guide.md` | Rules for writing album overviews, track roles, timeline events, and analytical style |
@@ -41,11 +39,9 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 
 2. Ensure the JSON includes the album metadata, overview, track analysis, optional `coverUrl`, and `isSoundtrack: true` when the album should appear on the Soundtracks page.
 
-3. All albums shown on the Home page must also be present on either the Top 10 page or the Top 20 page.
+3. Run the quality gate with `npm run build` to regenerate `data/index.json` and the production `dist/` build.
 
-4. Run the quality gate with `npm run build` to regenerate `data/index.json` and the production `dist/` build.
-
-5. Verify locally with `npm run serve`.
+4. Verify locally with `npm run serve`.
 
 - `http://127.0.0.1:3000/index.html`
 - `http://127.0.0.1:3000/album.html?id=<id>`

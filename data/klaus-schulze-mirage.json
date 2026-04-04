@@ -1,0 +1,140 @@
+{
+  "id": "klaus-schulze-mirage",
+  "artist": "Klaus Schulze",
+  "title": "Mirage",
+  "year": 1977,
+  "label": "Brain",
+  "producer": "Klaus Schulze",
+  "genre": "Berlin School / Ambient",
+  "runtime": "57:31",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/06/Mirage_Klaus_Schulze_Album.jpg",
+  "overview": "Recorded in January 1977, Mirage is Schulze's eighth solo album, subtitled \"Eine elektronische Winterlandschaft\" (An Electronic Winter Landscape) and dedicated to Hans Dieter Schulze. The album deploys the sequencer architecture Schulze had established on Timewind and Moondawn at its most expansive — two side-long pieces totalling nearly an hour, each subdivided into named sections though strict divisions between them are not present within the music. In 2005 it was the first Schulze album reissued by Revisited Records, and a newly remastered 40th Anniversary Edition followed in 2017. AllMusic awarded the album four and a half stars.\n\nTimestamps are proportionally estimated to ±30 seconds; both tracks are continuous compositions without hard structural boundaries between their named sub-sections.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Velvet Voyage",
+      "duration": "28:16",
+      "energy": "mid",
+      "tags": [
+        "Sequencer Architecture",
+        "Side One",
+        "Six Sub-Sections",
+        "Sustained Build"
+      ],
+      "role": "Album role: The album's primary statement — a twenty-eight-minute composition subdivided into six named sections ('1984', 'Aéronef', 'Éclipse', 'Exvasion', 'Lucidinterspace', 'Destinationvoid') that traces a single continuous arc from sparse introduction to dense sequencer climax.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse synthesizer tones open the piece — slow, filtered pads establishing a cold, open harmonic space consistent with the album's winter landscape subtitle.",
+          "detail": "The six sub-section titles listed on the sleeve ('1984', 'Aéronef', 'Éclipse', 'Exvasion', 'Lucidinterspace', 'Destinationvoid') are literary markers rather than audible structural divisions. The music flows as a single continuous composition."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Sequencer entry",
+          "description": "The analogue sequencer enters with a cycling pattern in the lower register — a repeating bass figure that establishes the rhythmic grid for the piece.",
+          "detail": "By 1977, Schulze had refined the sequencer technique first heard on Timewind into a more controlled compositional tool. The patterns here are more precisely tuned and structurally deliberate than the earlier album's single-take improvisations."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Build",
+          "description": "Synthesizer pad layers accumulate above the sequencer — string synthesizer warmth and filtered melodic voices adding harmonic density to the cycling bass.",
+          "detail": "The layering technique mirrors the multitracked approach of 'Wahnfried 1883' on Timewind but now integrates sequencer pulse with composed pad textures. The synthesis of the two methods — live sequencer and multitracked pads — defines Schulze's mature Berlin School style."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Melodic development",
+          "description": "A lead synthesizer melody enters — a slow, sustained line that moves above the sequencer and pad layers, providing the piece's primary melodic content.",
+          "detail": "The melodic writing is more lyrical and extended than on earlier Schulze albums. The lead voice sustains phrases across several sequencer cycles, creating a contrast between the mechanical repetition below and the human phrasing above."
+        },
+        {
+          "timestamp": "16:00",
+          "section": "Transposition",
+          "description": "The sequencer pattern transposes — the harmonic centre shifts, carrying all active voices into a new tonal area and intensifying the piece's forward momentum.",
+          "detail": "The transposition is smoother than the abrupt shifts on Timewind, reflecting Schulze's increasing control over the sequencer as a real-time performance instrument. The harmonic movement is gradual rather than sudden."
+        },
+        {
+          "timestamp": "20:00",
+          "section": "Peak",
+          "description": "Maximum textural density — sequencer, string pads, lead melody, and additional filtered voices all active simultaneously at the piece's climactic point.",
+          "detail": "The 'Destinationvoid' sub-section title references Samuel R. Delany's science fiction, situating the music within the cosmic and literary associations that characterised the Berlin School's self-image during the 1970s."
+        },
+        {
+          "timestamp": "24:00",
+          "section": "Thinning",
+          "description": "Voices begin to withdraw — the lead melody fades, pad layers thin, and the sequencer pattern is gradually exposed against diminishing harmonic support.",
+          "detail": "The structural thinning occupies the final four minutes, a proportionally longer wind-down than on Timewind's first side. The extended decline creates a sense of vast distance traversed."
+        },
+        {
+          "timestamp": "27:00",
+          "section": "Outro",
+          "description": "The sequencer decelerates and fades — residual pad tones and filtered noise trail into silence as Side One ends.",
+          "detail": "The transition to 'Crystal Lake' on Side Two resets the sonic palette completely. The gap between sides functions as a structural silence separating two parallel journeys through the winter landscape."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Crystal Lake",
+      "duration": "29:15",
+      "energy": "mid",
+      "tags": [
+        "Sequencer Architecture",
+        "Side Two",
+        "Six Sub-Sections",
+        "Reflective Arc"
+      ],
+      "role": "Album role: The album's reflective counterpart — a twenty-nine-minute composition subdivided into six named sections ('Xylotones', 'Chrom Waves', 'Willowdreams', 'Liquidmirrors', 'Springdance', 'A Bientot') that mirrors the first side's arc while introducing warmer, more consonant harmonic material.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Crystalline synthesizer tones open Side Two — higher-register textures and bell-like timbres establishing a brighter, more transparent sound than the first side's cold opening.",
+          "detail": "The 'Xylotones' sub-section title references the percussive, xylophone-like quality of the opening synthesizer timbres. The six named sub-sections ('Xylotones', 'Chrom Waves', 'Willowdreams', 'Liquidmirrors', 'Springdance', 'A Bientot') again function as literary markers rather than audible divisions."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Sequencer entry",
+          "description": "The sequencer enters with a new cycling pattern — higher in register and faster in cycling rate than the first side's bass-heavy pulse, creating a lighter rhythmic foundation.",
+          "detail": "The contrasting sequencer character between the two sides is the album's primary structural device. Where 'Velvet Voyage' operates from the bass up, 'Crystal Lake' builds from the mid-register, producing a fundamentally different harmonic weight."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Build",
+          "description": "String synthesizer pads enter — warmer and more consonant than the first side's harmonic language, moving toward the 'Willowdreams' and 'Liquidmirrors' sections' aquatic associations.",
+          "detail": "The lake imagery of the title is reflected in the liquid, flowing quality of the synthesizer textures. Schulze's filter settings produce slow, wave-like sweeps that reinforce the aquatic metaphor."
+        },
+        {
+          "timestamp": "12:00",
+          "section": "Melodic development",
+          "description": "A lead melody emerges — lyrical and unhurried, the melodic line floats above the sequencer and pad layers with wider intervallic spacing than the first side's lead voice.",
+          "detail": "The melodic writing becomes increasingly confident across the album's arc. Where the first side's melody entered cautiously, the second side's lead voice is more assertive and melodically developed from its first appearance."
+        },
+        {
+          "timestamp": "17:00",
+          "section": "Peak",
+          "description": "Full textural density — all synthesizer voices active, the sequencer pattern transposing beneath layered pads and sustained melodic lines at the piece's climactic midpoint.",
+          "detail": "The peak arrives earlier in the second piece's proportional structure than in the first, leaving more time for the extended denouement. This asymmetry prevents the two sides from feeling like identical templates."
+        },
+        {
+          "timestamp": "21:00",
+          "section": "Harmonic shift",
+          "description": "The sequencer transposes to a warmer harmonic area — the piece's tonal centre moves toward consonance, the 'Springdance' sub-section title suggesting emergence from winter.",
+          "detail": "The seasonal metaphor embedded in the sub-section titles traces a progression from winter ('Velvet Voyage') toward spring ('Springdance'), giving the album a narrative arc beyond its purely musical structure."
+        },
+        {
+          "timestamp": "24:00",
+          "section": "Thinning",
+          "description": "Voices withdraw gradually — the lead melody fades first, followed by pad layers, leaving the sequencer increasingly exposed in its final cycling.",
+          "detail": "The 'A Bientot' (until we meet again) sub-section title transforms the structural thinning into a farewell gesture. The French phrase adds a personal warmth absent from the album's Germanic and science-fiction titling elsewhere."
+        },
+        {
+          "timestamp": "27:30",
+          "section": "Outro",
+          "description": "The sequencer fades into sustained pad tones — the album closes with a long, warm chord dissolving into silence, the winter landscape yielding to stillness.",
+          "detail": "The album's ending is its most consonant moment — a resolution that the preceding hour of modulation and transposition has withheld. The final chord functions as a tonal homecoming after the extended chromatic journey."
+        }
+      ]
+    }
+  ]
+}

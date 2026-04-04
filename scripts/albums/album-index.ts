@@ -34,7 +34,7 @@ export function readAlbumDataDir(dataDir: string): AlbumFileRecord[] {
     .sort()
     .flatMap(fileName => {
       const parsed = JSON.parse(readFileSync(join(dataDir, fileName), "utf-8")) as unknown;
-      // Metadata catalogs such as rankings.json are array documents, not album records.
+      // Metadata catalogs such as the generated index.json are array documents, not album records.
       if (Array.isArray(parsed)) {
         return [];
       }

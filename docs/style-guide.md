@@ -2,7 +2,7 @@
 
 This document describes the current UI system for the site after the DaisyUI migration.
 
-The source of truth is the shipped code in [src/album-analysis.css](../src/album-analysis.css), [src/site.ts](../src/site.ts), [src/index.ts](../src/index.ts), [src/album.ts](../src/album.ts), [src/rankings.ts](../src/rankings.ts), and [src/segment.ts](../src/segment.ts). If this guide and the code disagree, update this guide to match the code.
+The source of truth is the shipped code in [src/album-analysis.css](../src/album-analysis.css), [src/site.ts](../src/site.ts), [src/index.ts](../src/index.ts), [src/album.ts](../src/album.ts), and [src/segment.ts](../src/segment.ts). If this guide and the code disagree, update this guide to match the code.
 
 ## Related Files
 
@@ -12,7 +12,6 @@ The source of truth is the shipped code in [src/album-analysis.css](../src/album
 - [Shared site chrome helpers](../src/site.ts)
 - [Collection renderer](../src/index.ts)
 - [Album renderer](../src/album.ts)
-- [Ranking renderer](../src/rankings.ts)
 - [Segment chart renderer](../src/segment.ts)
 
 ## Core Rules
@@ -21,7 +20,7 @@ The source of truth is the shipped code in [src/album-analysis.css](../src/album
 - The stylesheet now starts with Tailwind CSS and DaisyUI configuration. Treat it as three layers in one file: Tailwind import, DaisyUI theme definition, and custom CSS for the bespoke pieces DaisyUI does not cover directly.
 - Every HTML entry point sets `data-theme="dark"` on the root `<html>` element. The site remains dark-theme only.
 - Prefer DaisyUI component classes in renderer output: `card`, `btn`, `badge`, `input`, and `alert` are now the default primitives.
-- Keep the existing hook classes that the runtime and tests rely on: `site-nav`, `site-nav-link`, `site-footer`, `ix-card`, `track`, `timeline`, `ranking-item`, and the `segment-*` chart classes.
+- Keep the existing hook classes that the runtime and tests rely on: `site-nav`, `site-nav-link`, `site-footer`, `ix-card`, `track`, `timeline`, and the `segment-*` chart classes.
 - When a per-instance accent is needed on collection cards, continue using the existing `style="--card-accent:..."` hook from [src/index.ts](../src/index.ts).
 - Use custom CSS only for shared atmosphere or genuinely custom UI: page background treatment, track-event timeline rails, artist accent handling, and the segment chart.
 
@@ -58,7 +57,7 @@ Typography is configured through Tailwind theme variables in [src/album-analysis
 
 Current usage:
 
-- `Space Grotesk` is the display face for collection and ranking titles.
+- `Space Grotesk` is the display face for collection titles.
 - `JetBrains Mono` is used for navigation, labels, metadata, timestamps, pills, badges, and footer chrome.
 - `DM Sans` remains the default body copy face for long-form overview and note text.
 
@@ -70,7 +69,7 @@ Shared navigation and footer are rendered by [src/site.ts](../src/site.ts).
 
 - The nav shell is still `.site-nav`.
 - Links are still `.site-nav-link` but are now DaisyUI `btn` variants.
-- Collection pages center the nav; album and ranking heroes left-align it through shared CSS.
+- Collection pages center the nav; album heroes left-align it through shared CSS.
 - Active page state is still expressed with `aria-current="page"`.
 
 ### Footer
@@ -117,18 +116,6 @@ Track rules:
 - Tags still live in `.track-tags` and remain `.tag` elements. The first tag is still the energy tag.
 - Timeline entries still use `.timeline`, `.event`, `.event-time`, `.event-desc`, and `.detail`.
 - The event rail and dots are still custom CSS, not DaisyUI components.
-
-## Ranking Pages
-
-Top 10 and Top 20 still share [src/rankings.ts](../src/rankings.ts).
-
-Rules:
-
-- The hero uses `.ranking-hero`, `.ranking-heading`, `.ranking-count`, and `.ranking-intro`.
-- The summary block is now a DaisyUI card, but `.ranking-summary`, `.ranking-summary-text`, `.ranking-legend`, and `.ranking-key` remain the stable hooks.
-- Each entry is still `.ranking-item`; available entries are anchors, unavailable entries remain inert `article` nodes.
-- `.ranking-rank`, `.ranking-title`, `.ranking-artist`, `.ranking-meta`, `.ranking-note`, and `.ranking-state` are still present.
-- Available entries still tint title and state green. Unavailable entries remain visibly muted.
 
 ## Segment Chart
 

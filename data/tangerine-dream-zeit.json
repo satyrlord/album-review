@@ -1,0 +1,252 @@
+{
+  "id": "tangerine-dream-zeit",
+  "artist": "Tangerine Dream",
+  "title": "Zeit",
+  "year": 1972,
+  "label": "Ohr",
+  "producer": "Tangerine Dream",
+  "genre": "Berlin School / Ambient",
+  "runtime": "1:14:22",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/95/Zeit_%28Tangerine_Dream_album_-_cover_art%29.png",
+  "overview": "Recorded at Dierks Studio in 1972 by the trio of Edgar Froese, Christopher Franke, and Peter Baumann — Baumann's first appearance on a Tangerine Dream record. Subtitled Largo in Four Movements, the double LP employed audio generators, VCS 3 synthesizers, organ, vibraphone, gliss guitar, and guest contributions from Florian Fricke on Moog synthesizer and the Cologne Cello Quartet on the opening track. Zeit predates the group's adoption of the Moog sequencer on Phaedra (1974) and Rubycon (1975), operating instead through sustained drones, tone clusters, and collectively improvised textures with no rhythmic grid. Julian Cope's Head Heritage described it as the group's 'most abstract and austere' album; Steven Wilson has cited it as the 'birth of ambient music' and his favourite album of all time.\n\nTimestamps are proportionally estimated to ±30 seconds; the album's continuous drone textures and improvised passages do not produce hard section boundaries.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Birth of Liquid Plejades",
+      "duration": "19:54",
+      "energy": "low",
+      "tags": [
+        "Cello Quartet",
+        "Moog Synthesizer",
+        "Drone Composition",
+        "Side One",
+        "Florian Fricke"
+      ],
+      "role": "Album role: The album's opening cosmological statement — a side-long drone piece that layers acoustic cello against Moog synthesizer and VCS 3, establishing the album's timescale and its philosophy of motionless time.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Cello intro",
+          "description": "The Cologne Cello Quartet enters with sustained low-register bowing — four cellos producing overlapping drones that establish the harmonic foundation.",
+          "detail": "The use of acoustic cellos to open an electronic album was a deliberate structural choice. The organic string timbres ground the listener in familiar concert-hall sound before the electronics take over. The quartet comprises Christian Vallbracht, Joachim von Grumbkow, Hans Joachim Brüne, and Johannes Lücke."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Moog entry",
+          "description": "Florian Fricke's Moog synthesizer enters beneath the cellos — a low-frequency sustained tone that extends below the cello register into sub-bass territory.",
+          "detail": "Fricke, leader of Popol Vuh and owner of one of the few Moog synthesizers in Germany at this time, contributed to this track as a guest. His Moog III was one of the largest modular systems available in Europe, capable of producing the extreme low-frequency content audible here."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Textural merge",
+          "description": "Cellos and Moog converge into a single composite drone — the boundary between acoustic and electronic timbres dissolves as both sources sustain in overlapping registers.",
+          "detail": "The blend of acoustic and electronic sources anticipates the timbral ambiguity that later defined ambient music. Neither source dominates — the listener cannot always distinguish bowed string from oscillator."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "VCS 3 layer",
+          "description": "VCS 3 filter sweeps enter the mid-register — slow resonant sweeps adding harmonic motion to the otherwise static drone field.",
+          "detail": "Franke and Baumann both operated VCS 3 units on the album. The instrument's patch-pin matrix allowed rapid timbral changes, but on Zeit the group deliberately restricted the rate of change to match the album's glacial pacing."
+        },
+        {
+          "timestamp": "11:30",
+          "section": "Harmonic shift",
+          "description": "The drone field shifts to a new tonal centre — the cellos withdraw gradually as the electronic voices assume primary harmonic responsibility.",
+          "detail": "The transition from acoustic to electronic dominance mirrors the album's conceptual arc. The cellos, having anchored the opening, cede to the synthesizers that will carry the remaining three movements."
+        },
+        {
+          "timestamp": "14:30",
+          "section": "Deep drone",
+          "description": "Moog and VCS 3 sustain at maximum density — layered oscillators produce beating frequencies and slow interference patterns in the sub-bass register.",
+          "detail": "The beating frequencies are a natural consequence of multiple oscillators tuned to near-unison intervals. The resulting amplitude modulation creates a sense of slow breathing or pulsation without any rhythmic programming."
+        },
+        {
+          "timestamp": "17:00",
+          "section": "Organ entry",
+          "description": "Steve Schroyder's organ enters in the upper register — a sustained tone that adds a third timbral layer above the electronic drones.",
+          "detail": "Schroyder, a former member of Tangerine Dream who had departed before this album, returned specifically to contribute the organ outro on this track. His presence links Zeit to the group's earlier organ-driven work on Electronic Meditation and Alpha Centauri."
+        },
+        {
+          "timestamp": "19:00",
+          "section": "Dissolution",
+          "description": "All voices attenuate — the drone field thins to near-silence as Side One ends, leaving only decaying oscillator tones and room ambience."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Nebulous Dawn",
+      "duration": "17:56",
+      "energy": "low",
+      "tags": [
+        "Audio Generators",
+        "VCS 3",
+        "Vibraphone",
+        "Side Two"
+      ],
+      "role": "Album role: The album's most sparse and austere movement — a near-silent exploration of isolated tones and resonances that strips the instrumentation to its minimum, functioning as the structural negative space at the centre of the four-movement form.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Near-silence opens Side Two — isolated electronic tones emerge from the noise floor at irregular intervals, each sustained briefly before decaying.",
+          "detail": "The opening minutes of Nebulous Dawn are among the quietest passages in the Tangerine Dream catalogue. The deliberate emptiness tests the listener's tolerance for absence and prepares the ear for subtle detail."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Generator tones",
+          "description": "Froese's audio generators produce sine-like tones in the mid-register — clean, unmodulated signals that hang in acoustic space without harmonic elaboration.",
+          "detail": "Audio generators are signal-test equipment repurposed as instruments. Their output is simpler than a synthesizer's — typically a pure sine or square wave with no envelope shaping. Froese's use of laboratory equipment as a sound source was characteristic of the early Berlin School approach."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "VCS 3 textures",
+          "description": "VCS 3 adds filtered noise textures — white noise shaped by the voltage-controlled filter into slowly evolving timbral clouds.",
+          "detail": "The VCS 3's noise generator, passed through its resonant filter, produces the characteristic whistling and whooshing sounds that populate the track's middle section. The filter's resonance setting determines the pitched quality of the noise."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Vibraphone",
+          "description": "Baumann's vibraphone appears — isolated struck notes with the motor-driven vibrato producing a slow tremolo effect that contrasts with the electronic sustain.",
+          "detail": "The vibraphone is the only pitched percussion instrument on the album. Its attack-and-decay envelope is the opposite of the synthesizers' sustained drones, introducing momentary punctuation into the otherwise continuous texture."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Accumulation",
+          "description": "Generator tones, VCS 3 sweeps, and vibraphone coexist in the densest passage — multiple timbral sources active simultaneously for the first time in the track.",
+          "detail": "Even at maximum density, Nebulous Dawn remains quieter and more spacious than the other three movements. The accumulation is relative — three or four simultaneous voices rather than the layered drone masses of Birth of Liquid Plejades."
+        },
+        {
+          "timestamp": "14:00",
+          "section": "Thinning",
+          "description": "Voices withdraw individually — the vibraphone disappears first, followed by the VCS 3 textures, leaving the audio generators increasingly exposed.",
+          "detail": "The structural withdrawal is gradual enough that individual departures are difficult to pinpoint. Instruments do not stop so much as recede below the threshold of audibility."
+        },
+        {
+          "timestamp": "17:00",
+          "section": "Fade",
+          "description": "The track returns to near-silence — residual generator tones and room ambience are all that remain as Side Two concludes."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Origin of Supernatural Probabilities",
+      "duration": "19:34",
+      "energy": "mid",
+      "tags": [
+        "Gliss Guitar",
+        "Organ Drones",
+        "VCS 3",
+        "Side Three"
+      ],
+      "role": "Album role: The album's densest and most dynamically active movement — a side-long piece that reintroduces harmonic motion and timbral variety after the austerity of Nebulous Dawn, functioning as the structural counterweight to the opening movement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Organ drone",
+          "description": "Organ sustain opens Side Three — a held chord in the mid-register that establishes harmonic ground after the near-silence of the preceding movement.",
+          "detail": "The organ provides the fixed-pitch stability that the VCS 3 and audio generators cannot. Its function throughout this track is architectural — a constant harmonic reference point around which the more volatile voices circulate."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Gliss guitar entry",
+          "description": "Froese's gliss guitar enters — sustained notes produced by sliding along the strings, creating continuous pitch glides rather than discrete tones.",
+          "detail": "Gliss guitar involves sliding a metal or glass object along the guitar strings while sustaining through amplification and effects. The technique produces the vocal, crying quality audible here — closer to a theremin than a conventional guitar performance."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "VCS 3 build",
+          "description": "VCS 3 filter sweeps intensify — the resonant filter opens wider, allowing more harmonic content through and increasing the timbral complexity of the mid-register.",
+          "detail": "The gradual opening of the VCS 3 filter over several minutes produces a sense of brightening or dawn — an effect likely referenced in the adjacent track title Nebulous Dawn, though this movement operates on a larger dynamic scale."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Cymbal accents",
+          "description": "Franke introduces cymbal accents — isolated strikes with long decay, adding metallic transients to the otherwise attack-free drone texture.",
+          "detail": "Franke's background as a drummer (he had previously played in Agitation Free) surfaces in these sparse cymbal interventions. The cymbals function not as timekeeping but as timbral punctuation — bright, high-frequency events against the dark low-register drones."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Peak density",
+          "description": "All voices active simultaneously — organ, gliss guitar, VCS 3, cymbals, and audio generators producing the album's most harmonically rich passage.",
+          "detail": "This is the closest Zeit comes to conventional musical intensity. The layered timbres create a wall of sound that, while still drone-based, generates significant harmonic weight and forward momentum relative to the album's baseline."
+        },
+        {
+          "timestamp": "14:00",
+          "section": "Harmonic evolution",
+          "description": "The organ shifts to a new chord — the first clear harmonic change in several minutes, recontextualising the drone voices above it.",
+          "detail": "Harmonic motion in Zeit operates on a timescale of minutes rather than bars. A single chord change becomes a structural event of the first order, comparable to a modulation in a conventional composition."
+        },
+        {
+          "timestamp": "16:30",
+          "section": "Guitar withdrawal",
+          "description": "Gliss guitar recedes — the metallic string textures thin, leaving the organ and VCS 3 to carry the harmonic content through the closing minutes.",
+          "detail": "The withdrawal of the guitar removes the track's most human-sounding voice. The remaining texture is entirely keyboard and electronic — preparing the transition to the purely synthesized closing movement."
+        },
+        {
+          "timestamp": "18:30",
+          "section": "Transition",
+          "description": "The movement fades into sustained VCS 3 tones — a closing drone that bridges into the silence before the final movement begins."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Zeit",
+      "duration": "16:58",
+      "energy": "low",
+      "tags": [
+        "Title Track",
+        "Keyboard Drones",
+        "VCS 3",
+        "Side Four"
+      ],
+      "role": "Album role: The album's closing philosophical statement and namesake — a final movement that returns to the static drone language of the opening but without acoustic instruments, completing the four-movement structure with its most purely electronic and resigned passage.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "VCS 3 drones open the final movement — low-frequency sustained tones that recall the opening of Birth of Liquid Plejades but without the cello warmth.",
+          "detail": "The title track's opening deliberately mirrors the album's beginning, creating a structural frame. Where the cellos provided organic warmth in the first movement, here only electronic sources remain — the album has completed its transition from acoustic to synthetic."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Keyboard entry",
+          "description": "Organ and keyboard textures enter — sustained chords in the mid-register that provide harmonic definition beneath the VCS 3 drones.",
+          "detail": "Baumann's organ work on this track is more prominent than on the earlier movements. The sustained chords function as the harmonic skeleton that supports the more amorphous electronic textures."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Tone cluster",
+          "description": "Multiple sustained notes accumulate into a dense tone cluster — adjacent pitches sounding simultaneously, producing dissonant beating patterns.",
+          "detail": "The tone cluster technique owes more to the twentieth-century avant-garde tradition of Ligeti and Penderecki than to rock or popular music. The album's subtitle — Largo in Four Movements — explicitly claims this classical structural heritage."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Filter sweep",
+          "description": "VCS 3 filter sweeps the tone cluster — the resonant filter moves slowly across the harmonic spectrum, selectively amplifying different partials within the dense chord.",
+          "detail": "The filter sweep reveals the internal structure of the tone cluster, making audible the harmonic relationships between the simultaneously sounding pitches. The effect is comparable to slowly turning a prism through white light."
+        },
+        {
+          "timestamp": "10:30",
+          "section": "Harmonic thinning",
+          "description": "Voices begin to withdraw — the tone cluster thins as individual pitches drop away, reducing the harmonic density toward the movement's close.",
+          "detail": "The concept behind Zeit — that time is motionless and exists only in the mind — is most directly expressed in this thinning passage. The music appears to slow further as material is removed, approaching stasis."
+        },
+        {
+          "timestamp": "13:00",
+          "section": "Sparse drone",
+          "description": "Only two or three sustained voices remain — organ and VCS 3 holding a simple interval in the low-mid register, all complexity stripped away.",
+          "detail": "The reduction to a minimal drone mirrors the album's philosophical programme. Paul Russell's liner notes for the 2002 reissue explain that the album's concept held time to be 'motionless and only existing in our own minds.'"
+        },
+        {
+          "timestamp": "15:30",
+          "section": "Dissolution",
+          "description": "The final voices attenuate — the organ releases, the VCS 3 oscillators decay, and the album ends in silence after seventy-four minutes of sustained sound.",
+          "detail": "The album closes not with a cadence but with an absence. The final silence is as compositionally deliberate as any of the preceding sound — the motionless time of the album's title finally achieved through the removal of all acoustic activity."
+        }
+      ]
+    }
+  ]
+}

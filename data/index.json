@@ -10,6 +10,15 @@
     "isSoundtrack": true
   },
   {
+    "id": "edgar-froese-epsilon-in-malaysian-pale",
+    "artist": "Edgar Froese",
+    "title": "Epsilon in Malaysian Pale",
+    "year": 1975,
+    "tracks": 2,
+    "genre": "Berlin School / Ambient / Kosmische",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/74/EpsilonInMalaysianPale.jpg"
+  },
+  {
     "id": "global-communication-76-14",
     "artist": "Global Communication",
     "title": "76:14",
@@ -55,6 +64,15 @@
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Magnetic_Fields_Jarre_Album.jpg"
   },
   {
+    "id": "jean-michel-jarre-waiting-for-cousteau",
+    "artist": "Jean-Michel Jarre",
+    "title": "Waiting for Cousteau",
+    "year": 1990,
+    "tracks": 4,
+    "genre": "Electronic / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/b/b6/En_attendant_Cousteau.jpg"
+  },
+  {
     "id": "jean-michel-jarre-oxygene-7-13",
     "artist": "Jean-Michel Jarre",
     "title": "Oxygène 7–13",
@@ -89,6 +107,33 @@
     "tracks": 10,
     "genre": "Electronic / Ambient",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/11/Jarre_Equinoxe_Infinity_cover_1.jpg"
+  },
+  {
+    "id": "klaus-schulze-irrlicht",
+    "artist": "Klaus Schulze",
+    "title": "Irrlicht",
+    "year": 1972,
+    "tracks": 3,
+    "genre": "Berlin School / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Irrlicht_Klaus_Schulze_Album.jpg"
+  },
+  {
+    "id": "klaus-schulze-timewind",
+    "artist": "Klaus Schulze",
+    "title": "Timewind",
+    "year": 1975,
+    "tracks": 2,
+    "genre": "Berlin School / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/48/Timewind.jpg"
+  },
+  {
+    "id": "klaus-schulze-mirage",
+    "artist": "Klaus Schulze",
+    "title": "Mirage",
+    "year": 1977,
+    "tracks": 2,
+    "genre": "Berlin School / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/06/Mirage_Klaus_Schulze_Album.jpg"
   },
   {
     "id": "matt-uelmen-diablo-hellfire",
@@ -138,6 +183,15 @@
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/9e/Tubular_Bells_2003_CD_Front_Cover.jpg"
   },
   {
+    "id": "nine-inch-nails-quake",
+    "artist": "Nine Inch Nails",
+    "title": "Quake",
+    "year": 1996,
+    "tracks": 10,
+    "genre": "Dark Ambient / Industrial",
+    "isSoundtrack": true
+  },
+  {
     "id": "rik-schaffer-vampire-the-masquerade-bloodlines",
     "artist": "Rik Schaffer",
     "title": "Vampire: The Masquerade - Bloodlines",
@@ -148,6 +202,15 @@
     "isSoundtrack": true
   },
   {
+    "id": "tangerine-dream-zeit",
+    "artist": "Tangerine Dream",
+    "title": "Zeit",
+    "year": 1972,
+    "tracks": 4,
+    "genre": "Berlin School / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/95/Zeit_%28Tangerine_Dream_album_-_cover_art%29.png"
+  },
+  {
     "id": "tangerine-dream-phaedra",
     "artist": "Tangerine Dream",
     "title": "Phaedra",
@@ -155,6 +218,15 @@
     "tracks": 4,
     "genre": "Berlin School / Ambient",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/d/de/Phaedra_%28Tangerine_Dream_album_-_cover_art%29.png"
+  },
+  {
+    "id": "tangerine-dream-rubycon",
+    "artist": "Tangerine Dream",
+    "title": "Rubycon",
+    "year": 1975,
+    "tracks": 2,
+    "genre": "Berlin School / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/6e/Rubycon.png"
   },
   {
     "id": "tangerine-dream-hyperborea",
@@ -210,6 +282,16 @@
     "tracks": 26,
     "genre": "Electronic / Soundtrack",
     "coverUrl": "https://m.media-amazon.com/images/S/pv-target-images/49432757286e279066a41e781edd0ca0ab8737ad0206656d87ca4857df15948f.jpg",
+    "isSoundtrack": true
+  },
+  {
+    "id": "vangelis-antarctica",
+    "artist": "Vangelis",
+    "title": "Antarctica",
+    "year": 1983,
+    "tracks": 8,
+    "genre": "Electronic / Soundtrack",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/69/Vangelis_Antarctica_album_cover.jpg",
     "isSoundtrack": true
   },
   {

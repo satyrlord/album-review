@@ -1,0 +1,148 @@
+{
+  "id": "klaus-schulze-timewind",
+  "artist": "Klaus Schulze",
+  "title": "Timewind",
+  "year": 1975,
+  "label": "Brain",
+  "producer": "Klaus Schulze",
+  "genre": "Berlin School / Ambient",
+  "runtime": "59:10",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/48/Timewind.jpg",
+  "overview": "Recorded in March and June 1975, Timewind is Schulze's fifth solo album and his first to employ an analogue sequencer — the Synthanorma Sequencer that would become central to his compositional method for the next decade. Key equipment: ARP 2600, ARP Odyssey, EMS Synthi A, Elka String Synthesizer, Farfisa Professional Duo Organ and Piano, Synthanorma Sequencer. Both track titles reference Richard Wagner — 'Bayreuth Return' names the Bavarian town where Wagner built the Festspielhaus for the Ring Cycle premiere, and 'Wahnfried' names Wagner's Bayreuth home where he was buried in 1883. Timewind was awarded the Grand Prix du Disque by L'Académie Charles Cros in 1976, and Schulze later adopted 'Wahnfried' as an alias for several albums. Cover art by Urs Amann.\n\nTimestamps are proportionally estimated to ±30 seconds; 'Bayreuth Return' was recorded in one take on two-track equipment and its internal structure is continuous rather than sectional.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Bayreuth Return",
+      "duration": "30:32",
+      "energy": "mid",
+      "tags": [
+        "Synthanorma Sequencer",
+        "ARP 2600",
+        "Single-Take Recording",
+        "Side One",
+        "Wagner Reference"
+      ],
+      "role": "Album role: The album's rhythmic engine and primary statement — a side-long piece recorded in a single take on two-track equipment, built on the Synthanorma Sequencer's cycling bass pattern with real-time transposition, string synthesizer chords, and improvised melodic lines.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse electronic textures open — filtered synthesizer tones and Farfisa organ sustain establish a harmonic ground before the sequencer enters.",
+          "detail": "The piece was recorded in one take on two-track equipment, meaning the final mix is the live performance. No overdubs or post-production editing were possible. Every gesture Schulze made during the recording is preserved exactly as it occurred."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Sequencer entry",
+          "description": "The Synthanorma Sequencer enters with a cycling bass pattern — the first appearance of the analogue sequencer on a Schulze solo album.",
+          "detail": "The Synthanorma Sequencer became Schulze's primary structural device from this album onward. Unlike the Moog sequencer Tangerine Dream used on Phaedra, the Synthanorma offered more steps and greater voltage-control flexibility, enabling longer and more complex cycling patterns."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Build",
+          "description": "Elka String Synthesizer chords layer above the sequencer pattern — sustained harmonic pads providing tonal warmth against the mechanical pulse.",
+          "detail": "The Elka String Synthesizer's ensemble mode produces a naturally chorused tone through its multiple oscillator architecture. This warmth counterbalances the sequencer's precise, clicking pattern — a textural contrast that defines the Berlin School aesthetic."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Melodic development",
+          "description": "ARP 2600 melodic lines enter above the sequencer and string layers — improvised phrases that respond to the cycling pattern's harmonic implications.",
+          "detail": "The ARP 2600's semi-modular architecture allowed Schulze to reshape the synthesizer's voice in real time during the single-take recording. Filter sweeps, oscillator detuning, and envelope adjustments are audible as continuous timbral evolution throughout the melodic passages."
+        },
+        {
+          "timestamp": "13:00",
+          "section": "First transposition",
+          "description": "The sequencer pattern transposes to a new root — the harmonic centre shifts, altering the relationship between all active voices.",
+          "detail": "Transposing the Synthanorma Sequencer required adjusting the control voltage input in real time. The shift is audible as a momentary pitch instability before the new root stabilises — a performance artefact of the single-take method."
+        },
+        {
+          "timestamp": "17:00",
+          "section": "Peak",
+          "description": "Maximum textural density — sequencer, string synthesizer, ARP 2600 melody, and ARP Odyssey countermelody all active simultaneously.",
+          "detail": "The ARP Odyssey adds a second melodic voice with a distinctly different timbral character — thinner and more nasal than the 2600's warmer tone. The two synthesizers operate as a dialogue above the sequencer's mechanical foundation."
+        },
+        {
+          "timestamp": "21:00",
+          "section": "Second transposition",
+          "description": "The sequencer transposes again — a more distant harmonic shift that carries the piece into new tonal territory for its final section.",
+          "detail": "Each transposition moves the harmonic centre further from the opening key, creating a cumulative sense of forward motion despite the sequencer pattern's repetitive cycling. The Wagnerian ambition of the title is reflected in this slowly unfolding harmonic journey."
+        },
+        {
+          "timestamp": "25:00",
+          "section": "Thinning",
+          "description": "Melodic voices withdraw — the ARP synthesizers fall silent, leaving the sequencer and string pads to carry the piece's final minutes.",
+          "detail": "The structural withdrawal mirrors the opening's gradual accumulation. The piece's arc — sparse opening, building density, peak, thinning — follows the single-movement form that Schulze would refine across his next several albums."
+        },
+        {
+          "timestamp": "28:00",
+          "section": "Dissolution",
+          "description": "The sequencer pattern decelerates and the string pad fades — the piece dissolves into residual electronic tones and tape hiss.",
+          "detail": "The ending is gentle rather than abrupt — the sequencer's cycling slows as if the machine is powering down. On the original vinyl, the listener must turn the record over before encountering the contrasting stillness of 'Wahnfried 1883'."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Wahnfried 1883",
+      "duration": "28:38",
+      "energy": "low",
+      "tags": [
+        "Multitracked Composition",
+        "Shimmering Pads",
+        "EMS Synthi A",
+        "Side Two",
+        "Wagner Reference"
+      ],
+      "role": "Album role: The album's contemplative counterweight — a slow, composed and multitracked piece that contrasts the first side's single-take sequencer energy with layered, shimmering pads and kaleidoscopic key changes, named after Wagner's Bayreuth home and the year of his death.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Slow synthesizer pads open — layered, sustained tones with no rhythmic activity, establishing the meditative character that distinguishes this piece from the sequencer-driven first side.",
+          "detail": "Unlike 'Bayreuth Return', this piece was composed and multitracked rather than recorded in a single take. An excerpt of the graphic performance score appears on the back sleeve of the original vinyl pressing, indicating a pre-composed structural framework."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Harmonic shift",
+          "description": "The first key change — the harmonic centre moves without preparation or transition, a direct modulation that recolours all active voices simultaneously.",
+          "detail": "The kaleidoscopic key changes throughout the piece may be interpreted as a musical reference to Wagner's chromatic harmonic language, particularly the unresolved modulations of Tristan und Isolde. The absence of an obvious home key is deliberate."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Pad accumulation",
+          "description": "Additional synthesizer layers enter — the Elka String Synthesizer and EMS Synthi A add new timbral voices to the slowly building harmonic mass.",
+          "detail": "The EMS Synthi A's patch-pin matrix enabled rapid timbral reconfiguration between multitracked passes. Each layer carries a distinct filter setting, creating a composite texture richer than any single synthesizer could produce alone."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Second harmonic shift",
+          "description": "Another unprepared key change — the harmonic centre shifts to a more distant tonal area, the accumulated pad layers reinterpreted against the new root.",
+          "detail": "The sequence of key changes creates a sense of slow harmonic drift rather than directed modulation. The listener loses track of the original tonal centre, which is the structural purpose — a musical analogue to the disorientation of time passage."
+        },
+        {
+          "timestamp": "15:00",
+          "section": "Central plateau",
+          "description": "Maximum pad density — the shimmering layers reach their thickest accumulation, multiple synthesizer voices sustaining simultaneously across the full register.",
+          "detail": "The plateau occupies the approximate centre of the piece, mirroring the structural midpoint of 'Bayreuth Return'. The two pieces are architecturally symmetrical despite their radically different textures and recording methods."
+        },
+        {
+          "timestamp": "19:00",
+          "section": "Thinning",
+          "description": "Pad layers begin to withdraw — individual synthesizer voices fade, reducing the harmonic density gradually over several minutes.",
+          "detail": "The thinning is more gradual than in the first piece, matching the overall slower tempo and compositional pace of the second side. Each removed layer reveals the remaining voices more clearly."
+        },
+        {
+          "timestamp": "23:00",
+          "section": "Final harmonic area",
+          "description": "A last key change establishes the piece's final tonal centre — a warm, consonant harmonic area that provides the closest thing to resolution the album offers.",
+          "detail": "The arrival at relative consonance after twenty-three minutes of rootless modulation creates a sense of homecoming that the piece's structure has withheld. Wagner's own late-Romantic practice of extended tonal delay is echoed in this strategy."
+        },
+        {
+          "timestamp": "26:30",
+          "section": "Outro",
+          "description": "The remaining pad voices fade — the album ends with sustained tones dissolving into silence, the final pitch slowly decaying below audibility.",
+          "detail": "The album's ending mirrors its opening — electronic tones emerging from or retreating into silence. The symmetry between the two pieces, the two sides, and the opening and closing gestures gives Timewind its structural coherence despite the radical contrast between its two halves."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "klaus-schulze-irrlicht",
+  "artist": "Klaus Schulze",
+  "title": "Irrlicht",
+  "year": 1972,
+  "label": "Ohr",
+  "producer": "Klaus Schulze",
+  "genre": "Berlin School / Ambient",
+  "runtime": "50:27",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Irrlicht_Klaus_Schulze_Album.jpg",
+  "overview": "Recorded in April 1972 in Berlin, Schulze's debut solo album was produced entirely without synthesizers — built from a broken and modified electric organ, a pre-recorded rehearsal of the Colloquium Musica Orchestra (four first violins, four second violins, three violas, eight cellos, one bass, two horns, two flutes, three oboes), a damaged amplifier used as a filter, guitar, percussion, and zither, all mixed and layered on tape into a three-movement quadraphonic symphony. Subtitled \"Quadrophonische Symphonie für Orchester und E-Maschinen\" (Quadraphonic Symphony for Orchestra and Electronic Machines), the album has closer ties to musique concrète than to the sequencer-driven Berlin School electronics Schulze would later pioneer. Released on the krautrock label Ohr — which claimed his solo work because he was signed to them as a member of Tangerine Dream — the album received five stars from AllMusic and is recognised as one of the earliest examples of sustained electronic drone composition.\n\nTimestamps are proportionally estimated to ±30 seconds; the album's continuous textures and tape-spliced passages do not produce hard section boundaries.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "1. Satz: Ebene",
+      "duration": "23:23",
+      "energy": "mid",
+      "tags": [
+        "Organ Drone",
+        "Orchestral Tape Collage",
+        "Musique Concrète",
+        "Side One"
+      ],
+      "role": "Album role: The album's central mass — a twenty-three-minute first movement that establishes the drone-and-collage method, functioning as both an extended introduction to and the primary statement of the album's compositional language.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low organ drone opens the movement — a sustained, heavily filtered tone establishing the fundamental pitch centre.",
+          "detail": "The organ was broken and modified by Schulze to produce timbres outside its intended range. The damaged amplifier acted as an improvised filter, shaping the harmonic content of the raw signal."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Orchestral entry",
+          "description": "Fragments of the Colloquium Musica Orchestra rehearsal emerge through tape manipulation — strings and woodwinds treated as raw material rather than performed music.",
+          "detail": "The orchestral recording was not a commissioned performance but a rehearsal captured and subsequently filtered, reversed, and layered on tape. The musicians' contributions exist in the final work as processed texture rather than as recognisable orchestral passages."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Textural build",
+          "description": "Multiple tape layers accumulate — organ harmonics, filtered orchestral fragments, and percussive attacks from zither and struck strings create increasing density.",
+          "detail": "Schulze's tape-layering technique here predates the multitrack sequencer approaches he would adopt from Timewind onward. Each layer was mixed by hand onto the master tape, making the process irreversible and the result unrepeatable."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Drone plateau",
+          "description": "The organ drone dominates — a sustained mid-register wall of filtered harmonics with orchestral tape textures receding beneath.",
+          "detail": "The 'Ebene' (plain) of the title manifests as a flat, expansive sonic field. The plateau structure anticipates the sustained-state compositions Schulze would later achieve with analogue sequencers."
+        },
+        {
+          "timestamp": "14:00",
+          "section": "Harmonic shift",
+          "description": "The organ's pitch centre drifts upward — the damaged amplifier introduces distortion-driven overtones that alter the movement's harmonic character.",
+          "detail": "The amplifier's damage was not repaired but exploited as a compositional resource. The resulting distortion patterns were unpredictable and varied with temperature and signal level."
+        },
+        {
+          "timestamp": "18:00",
+          "section": "Thinning",
+          "description": "Tape layers withdraw — the orchestral fragments disappear, leaving exposed organ tones and intermittent percussion.",
+          "detail": "The structural thinning creates the contrast needed before the movement's final section. The gradual removal of voices mirrors the accumulation of the opening minutes in reverse."
+        },
+        {
+          "timestamp": "21:00",
+          "section": "Dissolution",
+          "description": "The organ drone decays into filtered noise and silence — the first movement ends with the sound disintegrating rather than resolving.",
+          "detail": "On the original vinyl, 'Ebene' and 'Gewitter' were combined as a single Side One track listed at 29:00. The CD reissue separated them, restoring the three-movement structure Schulze intended."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "2. Satz: Gewitter",
+      "duration": "5:39",
+      "energy": "high",
+      "tags": [
+        "Energy Climax",
+        "Percussive Attacks",
+        "Distorted Organ",
+        "Tape Manipulation"
+      ],
+      "role": "Album role: The album's violent centrepiece — a short, explosive second movement that ruptures the sustained textures of the first movement with percussive intensity, its subtitle 'energy rise — energy collaps' describing its own arc.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Energy rise",
+          "description": "Aggressive organ attacks enter without preamble — distorted chords driven through the damaged amplifier at maximum signal level.",
+          "detail": "The subtitle 'energy rise — energy collaps' is printed on the original sleeve exactly as Schulze spelled it. The movement functions as the symphony's scherzo — a sudden injection of violence between two sustained meditative movements."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Peak",
+          "description": "Maximum density — layered percussive strikes, organ distortion, and tape-manipulated orchestral bursts converge at the movement's climax.",
+          "detail": "The 'Gewitter' (thunderstorm) title is literal in its sonic intent. The compressed five-minute duration forces the energy curve into a much steeper trajectory than the surrounding movements."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Sustained assault",
+          "description": "Organ sustain holds at distortion threshold — the amplifier's damaged circuitry produces wavering, unstable harmonics across the mid and upper registers.",
+          "detail": "The harmonic instability is a direct consequence of pushing damaged equipment beyond its tolerances. Schulze later described the approach as using broken tools to find sounds that functioning equipment could not produce."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Energy collapse",
+          "description": "The intensity breaks — organ tones fragment, percussive attacks thin, and the movement collapses toward silence.",
+          "detail": "The 'collaps' is structural rather than gradual. The energy drops over approximately ninety seconds, a compressed mirror of the first movement's slow dissolution."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Transition",
+          "description": "Residual organ harmonics and tape hiss trail into silence — the gap before the third movement's reversed recording begins.",
+          "detail": "The transition between movements two and three is the album's most extreme timbral contrast: from maximum distortion to the inverted soundworld of the backwards-played third movement."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "3. Satz: Exil Sils Maria",
+      "duration": "21:25",
+      "energy": "low",
+      "tags": [
+        "Reversed Recording",
+        "Organ Drone",
+        "Side Two",
+        "Nietzsche Reference"
+      ],
+      "role": "Album role: The album's closing meditation — a twenty-one-minute third movement recorded entirely in reverse, named after the Swiss village of Sils Maria where Nietzsche wrote Thus Spoke Zarathustra, providing the symmetrical counterweight to the first movement's forward-played drone.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Reversed entry",
+          "description": "Reversed tape textures open Side Two — organ tones and orchestral fragments played backwards, creating inverted attack-and-decay envelopes.",
+          "detail": "The entire third movement was recorded backwards. When played in reverse, the original forward recording can be heard as Schulze initially performed it. The reversed playback transforms familiar organ timbres into alien, slowly swelling shapes."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Drone emergence",
+          "description": "A sustained reversed organ drone stabilises — the backwards decay of a long organ note produces a slowly building crescendo effect.",
+          "detail": "Reversed recording inverts the organ's natural envelope: the sharp attack becomes a gradual swell, and the sustained decay becomes an abrupt cut. This mechanical inversion creates the movement's distinctive breathing quality."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Orchestral textures",
+          "description": "Reversed orchestral fragments appear — string swells emerge tail-first, creating liquid, rising shapes that contrast with the organ's sustained foundation.",
+          "detail": "The Sils Maria of the title references Nietzsche's retreat in the Engadin valley. The philosophical association — exile, solitude, altitude — maps onto the movement's isolated, otherworldly character."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Central plateau",
+          "description": "The reversed drone reaches maximum sustain — a dense, shimmering wall of inverted organ harmonics occupies the midpoint of the movement.",
+          "detail": "The plateau mirrors the first movement's 'Ebene' (plain) but in reversed sonic space. The symmetry between the two outer movements — both approximately twenty-one minutes, both drone-based, one forward and one reversed — is the album's structural framework."
+        },
+        {
+          "timestamp": "15:00",
+          "section": "Thinning",
+          "description": "The reversed textures begin to disperse — individual tape layers drop away, exposing the raw organ signal beneath.",
+          "detail": "The gradual thinning operates in reversed time, meaning what was originally a building accumulation now plays as a slow dissolution. The listener experiences a composed narrative arc that was assembled in reverse order."
+        },
+        {
+          "timestamp": "18:00",
+          "section": "Final drone",
+          "description": "A single reversed organ tone persists — the movement reduces to its most elemental component, a sustained pitch slowly swelling from silence.",
+          "detail": "The isolation of a single voice at the movement's close creates the impression of a journey ending in radical simplicity. The quadraphonic mix — the album's subtitle specifies quadraphonic — places this final tone in spatial motion across the four channels."
+        },
+        {
+          "timestamp": "20:30",
+          "section": "Outro",
+          "description": "The reversed organ tone swells to its peak and cuts — the album ends with the abrupt termination of the inverted signal rather than a fade.",
+          "detail": "The sharp ending is a consequence of the reversed recording technique: what was originally the organ's initial attack becomes the final cut-off. The album closes not with resolution but with mechanical interruption."
+        }
+      ]
+    }
+  ]
+}

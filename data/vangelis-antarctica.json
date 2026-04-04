@@ -1,0 +1,404 @@
+{
+  "id": "vangelis-antarctica",
+  "artist": "Vangelis",
+  "title": "Antarctica",
+  "year": 1983,
+  "label": "Polydor",
+  "producer": "Vangelis",
+  "genre": "Electronic / Soundtrack",
+  "runtime": "45:29",
+  "isSoundtrack": true,
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/69/Vangelis_Antarctica_album_cover.jpg",
+  "overview": "Recorded at Nemo Studios, London, with engineer Raine Shine, Antarctica is Vangelis's synthesiser score for Koreyoshi Kurahara's 1983 Japanese drama Nankyoku Monogatari — a film based on the true story of fifteen Sakhalin huskies abandoned at Showa Base during the 1958 Japanese Antarctic expedition. The score draws primarily on the Yamaha CS-80, Roland VP-330 Vocoder Plus, and layered analogue synthesisers to evoke polar isolation, desolation, and vast open terrain across eight continuous cues totalling 45 minutes. The film became the highest-grossing domestic production in Japanese box-office history, holding that record for fourteen years until Princess Mononoke (1997), and the score received a Japan Academy Prize nomination for Best Music Score; Allmusic rated the album three stars, describing it as a 'dynamic and dramatic set' conveying 'angst, isolation, and desolation'. Chronologically the third of Vangelis's major film commissions — following Chariots of Fire (1981) and the Blade Runner sessions (1982) — Antarctica preceded Soil Festivities (1984) in the studio catalogue.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Theme from Antarctica",
+      "duration": "7:29",
+      "energy": "mid",
+      "tags": [
+        "Yamaha CS-80",
+        "Main Theme",
+        "Orchestral Synth Voicing",
+        "Cinematic"
+      ],
+      "role": "Album role: The principal statement — introduces the central melodic motif that scores the film's opening Antarctic panorama and anchors the album's harmonic language across all eight tracks.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency drone emerges from silence — sustained analogue pad establishes the frozen tonal palette.",
+          "detail": "The opening mirrors the film's aerial helicopter shot across the Antarctic ice shelf, establishing scale before any melodic content."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Theme Entry",
+          "description": "Yamaha CS-80 brass-register melody rises with slow portamento — the main Antarctica motif, anchored in a major-key tonality that conveys brightness against the cold.",
+          "detail": "The CS-80's polyphonic aftertouch allows each note individual dynamic shaping, producing the expressive vibrato that defines the theme."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Build",
+          "description": "Secondary synth layers and string-register pads thicken beneath the melody; stereo field widens as harmonic density increases."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Peak",
+          "description": "Full orchestral-synth voicing reached — melody restated at higher register with sustained chordal accompaniment and resonant low-pass filter sweep."
+        },
+        {
+          "timestamp": "4:50",
+          "section": "Recapitulation",
+          "description": "Theme returns in a quieter register; upper harmonics stripped back to expose the core melodic line against a sparse pad."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Dissolution",
+          "description": "Melody fragments into reverb-drenched echoes; harmonic content gradually reduces to a single sustained tone."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Outro",
+          "description": "Final drone decays into near-silence — a sustained low-frequency bed that bleeds into the following track."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Antarctica Echoes",
+      "duration": "5:58",
+      "energy": "low",
+      "tags": [
+        "Minimal Melody",
+        "Ambient Drift",
+        "Spatial Reverb",
+        "Polar Landscape"
+      ],
+      "role": "Album role: The desolation cue — strips the album to its most minimal state, using sustained tones and heavy reverb to convey the vastness and emptiness of the Antarctic interior.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Near-silent opening — a single sustained tone with extreme reverb tail creates an impression of echoing across an ice field."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Texture Entry",
+          "description": "A second tonal layer emerges a fifth above the root, creating an open harmonic interval suggestive of vast distance."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Melodic Fragment",
+          "description": "Sparse, widely spaced notes form a minimal melodic contour — each note separated by several seconds of reverberant decay.",
+          "detail": "The deliberate spacing reflects the film's visual pacing during the helicopter survey scenes over featureless ice."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Harmonic Shift",
+          "description": "Underlying drone shifts down by a minor third; tonal centre darkens as the piece moves from open brightness to colder territory."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Build",
+          "description": "Additional synth voices enter at low volume — the texture thickens imperceptibly, maintaining the ambient character while adding harmonic richness."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Outro",
+          "description": "All melodic content recedes; the track resolves into a single reverberant tone that fades toward silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Kinematic",
+      "duration": "3:50",
+      "energy": "mid",
+      "tags": [
+        "Rhythmic Pulse",
+        "Sequencer Pattern",
+        "Transitional Cue",
+        "Mechanical Drive"
+      ],
+      "role": "Album role: The kinetic interlude — introduces rhythmic forward motion into an otherwise ambient landscape, bridging the contemplative first half toward the narrative tension of the middle tracks.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Percussive synthesiser pulse begins immediately — a regular rhythmic ostinato suggesting mechanical movement across terrain."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Melodic Layer",
+          "description": "A mid-register synth line enters above the pulse, adding a simple ascending motif that repeats with variations."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Build",
+          "description": "Bass synth reinforces the rhythmic bed; the piece gains momentum through layered sequencer patterns."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Peak",
+          "description": "Maximum rhythmic density — multiple interlocking sequencer lines create a polyrhythmic texture over the driving pulse.",
+          "detail": "The track's mechanical quality likely scores the expedition's vehicular traverse scenes, contrasting human technology against the natural landscape."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Deconstruction",
+          "description": "Layers strip away in reverse order; rhythmic pulse thins to a single line."
+        },
+        {
+          "timestamp": "3:35",
+          "section": "Outro",
+          "description": "Final pulse iterations decay into silence — an abrupt, clean ending."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Song of White",
+      "duration": "5:17",
+      "energy": "low",
+      "tags": [
+        "Cold Timbre",
+        "High-Register Synth",
+        "Isolation Cue",
+        "Sustained Pads"
+      ],
+      "role": "Album role: The isolation portrait — the album's coldest-sounding cue, scoring the visual monotony of the snow-covered plateau and the emotional distance of the stranded dogs.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "High-register synth tone enters — crystalline and cold, with a timbre suggesting ice formation or wind across a frozen surface."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Harmonic Bed",
+          "description": "Lower pad enters beneath the high tone, creating a wide frequency spread that evokes spatial depth."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Melodic Contour",
+          "description": "A slow, descending melodic line emerges in the mid-register — sparse and deliberate, with each note sustained for several beats.",
+          "detail": "The descending contour suggests emotional weight and resignation, matching the film's scenes of the expedition team deciding to abandon the dogs."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Textural Shift",
+          "description": "Upper harmonics shimmer as a filter sweep adds brightness to the sustained pads; the cold timbre intensifies."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Dissolution",
+          "description": "Melodic content fades; the high-register tone from the opening returns alone, now carrying accumulated emotional weight."
+        },
+        {
+          "timestamp": "4:50",
+          "section": "Outro",
+          "description": "Gradual fade to near-silence — the sustained tone thins to a thread before disappearing."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Life of Antarctica",
+      "duration": "5:59",
+      "energy": "mid",
+      "tags": [
+        "Nature Motif",
+        "Warm Pad",
+        "Melodic Development",
+        "Survival Theme"
+      ],
+      "role": "Album role: The counterweight — reintroduces warmth and melodic generosity after the cold austerity of 'Song of White', scoring the persistence of life in an inhospitable environment.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Warm analogue pad opens in a major tonality — a deliberate contrast to the preceding track's cold register."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Theme Entry",
+          "description": "CS-80 melody enters with a lyrical, singing quality — a new motif distinct from the main theme but harmonically related.",
+          "detail": "This melody likely underscores the film's sequences of the surviving dogs adapting to hunt and forage on the ice shelves."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Development",
+          "description": "Melody develops through variation — the initial motif is restated with harmonic embellishment and rhythmic variation."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Build",
+          "description": "Additional synth voices join in parallel harmony; the texture approaches orchestral density for the first time since the opening track."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Peak",
+          "description": "Full harmonic density — the melody is stated in its most complete form with rich chordal support beneath."
+        },
+        {
+          "timestamp": "5:10",
+          "section": "Recapitulation",
+          "description": "Texture thins as the melody returns to its initial spare voicing; the warmth is maintained through sustained pad."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Outro",
+          "description": "Final melodic phrase dissolves into a held chord that sustains through the track boundary."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Memory of Antarctica",
+      "duration": "5:30",
+      "energy": "low",
+      "tags": [
+        "Reflective",
+        "Theme Recall",
+        "Elegiac Tone",
+        "Roland VP-330"
+      ],
+      "role": "Album role: The retrospective — recalls fragments of earlier motifs through a filtered, memory-like haze, functioning as the album's emotional centre and elegy for the lost dogs.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Vocoder-processed tone enters — the Roland VP-330 creates a voice-like quality without intelligible lyrics, evoking human presence at a distance."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Theme Fragment",
+          "description": "A recognisable fragment of the main Antarctica theme appears, transposed downward and processed through heavy reverb — melodic recall rather than statement.",
+          "detail": "The fragmented recall mirrors the film's structure of flashback sequences showing the handlers' memories of the dogs."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Harmonic Bed",
+          "description": "Sustained string-register pad provides a warm harmonic foundation beneath the theme fragments."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Development",
+          "description": "VP-330 vocoder layer returns with additional harmonic movement; the piece gains emotional intensity through accumulation rather than volume."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Peak",
+          "description": "Densest moment — multiple synth voices converge in a sustained chordal statement that carries the album's strongest elegiac weight."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "All voices recede through a long reverb tail; the track dissolves gradually into ambient silence."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Other Side of Antarctica",
+      "duration": "6:56",
+      "energy": "mid",
+      "tags": [
+        "Sinister Undertone",
+        "Low-Frequency Drone",
+        "Tension Build",
+        "Dramatic Arc"
+      ],
+      "role": "Album role: The dark turn — the album's longest and most dramatic cue, introducing dissonance and threat to score the hostile Antarctic conditions and the survival struggle of the remaining dogs.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency drone opens with a darker tonal centre than any preceding track — sub-bass register creates a sense of foreboding."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Texture Entry",
+          "description": "Dissonant upper harmonics enter against the bass drone; the interval creates an unsettling tension."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Build",
+          "description": "Rhythmic pulse emerges in the low-mid register — slower and heavier than 'Kinematic', suggesting threat rather than movement.",
+          "detail": "The sinister character likely underscores the film's most dangerous sequences — the killer whale attack and the ice shelf collapse."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Melodic Entry",
+          "description": "A distorted melodic line enters in minor tonality — angular and unpredictable, contrasting with the lyrical melodies of earlier tracks."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Peak",
+          "description": "Maximum dissonance and density — layered synthesiser voices create a wall of sound with clashing harmonics and aggressive filter sweeps."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Breakdown",
+          "description": "Sudden reduction to bass drone alone; the silence after the peak creates maximum dramatic contrast."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Resolution",
+          "description": "A gentler melodic fragment surfaces above the drone — the first hint of the resolution that will arrive in the final track."
+        },
+        {
+          "timestamp": "6:35",
+          "section": "Outro",
+          "description": "Drone fades as the melodic fragment sustains, bridging into the closing track."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Deliverance",
+      "duration": "4:30",
+      "energy": "mid",
+      "tags": [
+        "Closing Theme",
+        "Resolution",
+        "Triumphant Register",
+        "Film Finale"
+      ],
+      "role": "Album role: The resolution — closes the album with a return to major-key warmth and the main theme's melodic language, scoring the film's ending where the surviving dogs Taro and Jiro are reunited with the expedition team.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Clean, bright synth tone opens — an immediate tonal shift from the darkness of the preceding track, signalling arrival and resolution."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Theme Return",
+          "description": "Main Antarctica theme returns in a warmer, fuller voicing — the CS-80 melody restated with an upward transposition suggesting triumph.",
+          "detail": "This reprise scores the film's climax: Kitagawa's return to Showa Base eleven months later and the discovery that Taro and Jiro survived."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Build",
+          "description": "Harmonic layers accumulate beneath the theme; string-register pads and choir-like VP-330 textures create orchestral richness."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Peak",
+          "description": "Full ensemble statement — the most harmonically complete version of the main theme, combining all the synthesiser voices heard across the album."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Recapitulation",
+          "description": "Melody returns to its initial spare voicing; the orchestral layers thin to expose the core melodic line one final time."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Outro",
+          "description": "Final sustained chord resolves with a gentle downward filter sweep; the album closes on a warm, consonant tone that fades to silence."
+        }
+      ]
+    }
+  ]
+}

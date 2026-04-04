@@ -50,11 +50,6 @@ async function gotoSoundtracks(page: Page): Promise<void> {
   await expect(page.getByRole("heading", { name: "Soundtracks" })).toBeVisible();
 }
 
-async function gotoRanking(page: Page, path: "/top-10.html" | "/top-20.html", heading: RegExp): Promise<void> {
-  await page.goto(path);
-  await expect(page.getByRole("heading", { name: heading })).toBeVisible();
-}
-
 async function readBuildMeta(page: Page): Promise<{ pushedCommitCount: number; version: string }> {
   const meta = await page.evaluate(() => {
     const siteWindow = window as Window & {
@@ -75,9 +70,11 @@ async function readBuildMeta(page: Page): Promise<{ pushedCommitCount: number; v
   return meta;
 }
 
-async function expectPrimaryNav(page: Page, currentLabel?: "HOME PAGE" | "SOUNDTRACKS" | "TOP 10" | "TOP 20"): Promise<void> {
-  await expect(page.locator(".site-nav-link")).toHaveText(["HOME PAGE", "SOUNDTRACKS", "TOP 10", "TOP 20"]);
+async function expectPrimaryNav(page: Page, currentLabel?: "HOME PAGE" | "SOUNDTRACKS"): Promise<void> {
+  const navLinks = page.locator(".site-nav-link");
 
+  await expect(navLinks).toHaveCount(2);
+  await expect(navLinks).toHaveText(["HOME PAGE", "SOUNDTRACKS"]);
   if (currentLabel) {
     await expect(page.getByRole("link", { name: currentLabel, exact: true })).toHaveAttribute("aria-current", "page");
   }
@@ -91,8 +88,6 @@ test.describe("album index regressions", () => {
 
     await expectPrimaryNav(page, "HOME PAGE");
     await expect(page.getByRole("link", { name: "SOUNDTRACKS", exact: true })).toHaveAttribute("href", /soundtracks\.html$/);
-    await expect(page.getByRole("link", { name: "TOP 10", exact: true })).toHaveAttribute("href", /top-10\.html$/);
-    await expect(page.getByRole("link", { name: "TOP 20", exact: true })).toHaveAttribute("href", /top-20\.html$/);
     await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
     await expect(page.locator(".ix-card")).toHaveCount(totalAlbums);
     await expect(page.locator("#ixCount")).toHaveText(`${totalAlbums} / ${totalAlbums} albums`);
@@ -135,9 +130,9 @@ test.describe("album index regressions", () => {
     const rendered = await page.evaluate(() => {
       const siteWindow = window as Window & {
         AlbumReviewSite?: {
-          renderNav(options?: { activePage?: "home" | "soundtracks" | "top10" | "top20" | null }): string;
+          renderNav(options?: { activePage?: "home" | "soundtracks" | null }): string;
           renderFooter(options?: { context?: string; actionHref?: string; actionLabel?: string }): string;
-          mountNav(elementId: string, options?: { activePage?: "home" | "soundtracks" | "top10" | "top20" | null }): void;
+          mountNav(elementId: string, options?: { activePage?: "home" | "soundtracks" | null }): void;
           mountFooter(elementId: string, options?: { context?: string; actionHref?: string; actionLabel?: string }): void;
         };
       };
@@ -374,8 +369,6 @@ test.describe("album index regressions", () => {
     await expectPrimaryNav(page);
     await expect(page.getByRole("link", { name: "HOME PAGE", exact: true })).toHaveAttribute("href", /index\.html$/);
     await expect(page.getByRole("link", { name: "SOUNDTRACKS", exact: true })).toHaveAttribute("href", /soundtracks\.html$/);
-    await expect(page.getByRole("link", { name: "TOP 10", exact: true })).toHaveAttribute("href", /top-10\.html$/);
-    await expect(page.getByRole("link", { name: "TOP 20", exact: true })).toHaveAttribute("href", /top-20\.html$/);
     await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
     await expect(page.locator(".hero-cover")).toBeVisible();
     await expect(page.locator(".hero-cover")).toHaveAttribute(
@@ -643,57 +636,6 @@ test.describe("album index regressions", () => {
       "Initial scaffold only. Narrative role pending detailed listen.",
     );
     await expect(page.locator(".event-desc")).toContainText("Detailed timestamp notes pending.");
-  });
-
-  test("top 10 ranking page highlights analysed albums and keeps missing entries inert", async ({ page }) => {
-    await gotoRanking(page, "/top-10.html", /TOP 10/i);
-
-    await expectPrimaryNav(page, "TOP 10");
-    await expect(page.locator(".ranking-item")).toHaveCount(50);
-    await expect(
-      page.locator('.ranking-item.is-available[href="album.html?id=jean-michel-jarre-oxygene"]'),
-    ).toContainText("Oxygène");
-    await expect(
-      page.locator(".ranking-item.is-unavailable").filter({ hasText: "Ambient 1: Music for Airports" }),
-    ).toHaveCount(1);
-    await expect(page.getByRole("link", { name: /Ambient 1: Music for Airports/ })).toHaveCount(0);
-  });
-
-  test("ranking pages navigate into covered albums and expose the expanded top 20 list", async ({ page }) => {
-    await gotoRanking(page, "/top-20.html", /TOP 20/i);
-
-    await expectPrimaryNav(page, "TOP 20");
-    await expect(page.locator(".ranking-item")).toHaveCount(100);
-
-    await page.locator('.ranking-item.is-available[href="album.html?id=the-prodigy-music-for-the-jilted-generation"]').click();
-
-    await expect(page).toHaveURL(/album\.html\?id=the-prodigy-music-for-the-jilted-generation$/);
-    await expect(page.getByRole("heading", { name: "Music for the Jilted Generation" })).toBeVisible();
-  });
-
-  test("ranking pages surface both HTTP and generic load failures", async ({ page }) => {
-    await page.route("**/data/index.json", async (route) => {
-      await route.fulfill({
-        status: 503,
-        contentType: "application/json",
-        body: "[]",
-      });
-    });
-
-    await page.goto("/top-10.html");
-
-    await expect(page.locator(".page-state-title")).toContainText("Could not load data/index.json (503).");
-    await expect(page.locator(".site-footer")).toContainText("Top 10 by Decade");
-
-    await page.unroute("**/data/index.json");
-    await page.addInitScript(() => {
-      window.fetch = (() => Promise.reject("boom")) as typeof window.fetch;
-    });
-
-    await page.goto("/top-20.html");
-
-    await expect(page.locator(".page-state-title")).toHaveText("Could not load ranking data.");
-    await expect(page.locator(".site-footer")).toContainText("Top 20 by Decade");
   });
 
   test("credits page renders all sections with nav and footer", async ({ page }) => {

@@ -150,14 +150,12 @@ a {
 }
 
 .ix-hero,
-.hero,
-.ranking-hero {
+.hero {
   padding-block: clamp(2rem, 7vw, 5rem);
 }
 
 .ix-hero::before,
-.hero::before,
-.ranking-hero::before {
+.hero::before {
   background:
     radial-gradient(circle at 15% 10%, rgba(0, 255, 136, 0.08), transparent 34%),
     radial-gradient(circle at 85% 15%, rgba(255, 51, 102, 0.08), transparent 30%);
@@ -183,8 +181,7 @@ a {
   letter-spacing: 0.18em;
 }
 
-.hero .site-nav,
-.ranking-hero .site-nav {
+.hero .site-nav {
   justify-content: flex-start;
 }
 
@@ -563,80 +560,6 @@ a {
   text-transform: uppercase;
 }
 
-.ranking-heading {
-  align-items: end;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-between;
-}
-
-.ranking-count,
-.ranking-summary-text,
-.ranking-key,
-.ranking-state,
-.ranking-meta,
-.ranking-rank,
-.ranking-decade-head span,
-.ranking-decade-head h2,
-.ranking-artist {
-  font-family: var(--font-mono);
-}
-
-.ranking-intro,
-.ranking-note {
-  color: color-mix(in srgb, var(--text) 76%, transparent);
-}
-
-.ranking-summary {
-  margin: 1.5rem 0 1.75rem;
-}
-
-.ranking-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.ranking-decade {
-  margin-top: 1.75rem;
-}
-
-.ranking-decade:first-of-type {
-  margin-top: 0;
-}
-
-.ranking-decade-head {
-  align-items: baseline;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-.ranking-list {
-  display: grid;
-  gap: 1rem;
-}
-
-.ranking-item {
-  overflow: hidden;
-}
-
-.ranking-item.is-available .ranking-title,
-.ranking-item.is-available .ranking-state {
-  color: var(--accent);
-}
-
-.ranking-item.is-unavailable {
-  opacity: 0.72;
-}
-
-.ranking-item.is-unavailable .ranking-state,
-.ranking-item.is-unavailable .ranking-title {
-  color: color-mix(in srgb, var(--text) 56%, transparent);
-}
-
 .segment-chart {
   display: grid;
   gap: 0.9rem;
@@ -773,12 +696,6 @@ a {
 
   .event-time {
     padding-top: 0;
-  }
-
-  .ranking-heading,
-  .ranking-decade-head {
-    align-items: flex-start;
-    flex-direction: column;
   }
 }
 

@@ -91,7 +91,7 @@ interface CreditSection {
     const footerHtml = renderFooter({ context: "Credits & Sources" });
 
     return (
-      `<div class="hero ranking-hero">\n` +
+      `<div class="hero">\n` +
       `  <div class="container">\n` +
       navHtml +
       `    <div class="subtitle badge badge-outline badge-secondary mt-5 w-fit px-4 py-3 font-mono text-[0.68rem] uppercase tracking-[0.28em]">Acknowledgements</div>\n` +

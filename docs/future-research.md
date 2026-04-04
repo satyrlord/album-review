@@ -545,23 +545,6 @@ Bubbling under the all-time top 3000 (unranked): Tangerine Dream — Rubycon ★
 
 ---
 
-## Cross-Reference with App Catalog
-
-Albums from the research lists with direct connections to existing `data/` entries, ranked by combined source strength and relevance to the current catalog.
-
-1. **Brian Eno — Apollo: Atmospheres & Soundtracks (1983)** — P#13, S#28, H22, R#23, Re52, Ac. Six-source consensus; soundtrack format aligns with existing soundtrack entries (Vangelis, Uelmen, Schaffer).
-2. **Vangelis — Blade Runner (1994)** — A#21, H(5–6), Ac. Same artist as seven Vangelis albums in the app; synthesiser soundtrack classic.
-3. **Tangerine Dream — Phaedra (1974)** — A#22, R#12, Re17. Same band as Tangerine Dream — Hyperborea in the app; Berlin School landmark.
-4. **Tangerine Dream — Rubycon (1975)** — O, R#52, Ac. Same band as Hyperborea; Phaedra's sequel and final pure-sequencer album.
-5. **Tangerine Dream — Zeit (1972)** — Re5, Ac. Same band as Hyperborea; earliest Tangerine Dream ambient work, pre-sequencer era.
-6. **Edgar Froese — Epsilon in Malaysian Pale (1975)** — P#46, S#3. Solo work by Tangerine Dream's frontman; connects to Hyperborea.
-7. **Klaus Schulze — Irrlicht (1972) / Mirage (1977) / Timewind (1975)** — A#2, O, H(5–6), T#19, Re9. Three albums across five sources; co-founded Tangerine Dream and Ash Ra Tempel.
-8. **Jean-Michel Jarre — Waiting for Cousteau (1990)** — Re5. Ambient departure from JMJ's synth-pop catalogue; 47-minute title track connects to existing JMJ entries.
-9. **Nine Inch Nails — Quake (1996)** — Re7. Dark ambient / industrial soundtrack; connects to existing game-soundtrack entries (Uelmen, Schaffer).
-10. **Vangelis — Antarctica (1983)** — Same artist as seven Vangelis albums in the app; synthesiser soundtrack for the Koreyoshi Kurahara film.
-
----
-
 ## Highly Represented Artists
 
 Artists appearing more than once across all sources (P, S, O, H, F, A, D, B, R, T, Re, Ac), sorted by total distinct albums:

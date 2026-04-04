@@ -14,7 +14,7 @@ interface SiteFooterOptions {
   actionLabel?: string;
 }
 
-type SiteNavPage = 'home' | 'soundtracks' | 'top10' | 'top20';
+type SiteNavPage = 'home' | 'soundtracks';
 
 interface SiteNavOptions {
   activePage?: SiteNavPage | null;
@@ -35,8 +35,6 @@ const PROJECT_URL = 'https://github.com/satyrlord/album-review';
 const PRIMARY_NAV_LINKS = [
   { href: 'index.html', label: 'HOME PAGE', page: 'home' },
   { href: 'soundtracks.html', label: 'SOUNDTRACKS', page: 'soundtracks' },
-  { href: 'top-10.html', label: 'TOP 10', page: 'top10' },
-  { href: 'top-20.html', label: 'TOP 20', page: 'top20' },
 ] as const;
 
 type SiteWindow = Window & {

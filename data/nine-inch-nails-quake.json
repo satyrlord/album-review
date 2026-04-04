@@ -1,0 +1,468 @@
+{
+  "id": "nine-inch-nails-quake",
+  "artist": "Nine Inch Nails",
+  "title": "Quake",
+  "year": 1996,
+  "label": "Interscope · id Software",
+  "producer": "Trent Reznor",
+  "genre": "Dark Ambient / Industrial",
+  "runtime": "58:53",
+  "isSoundtrack": true,
+  "overview": "Composed and produced by Trent Reznor with Nine Inch Nails members Charlie Clouser, Robin Finck, Danny Lohner, and Chris Vrenna, the Quake soundtrack was recorded for id Software's first-person shooter during 1995–1996 — Reznor's first sustained experiment with dark ambient composition, delivered free of charge after American McGee suggested the band while listening to The Downward Spiral during level design. The ten tracks were pressed directly onto the game CD as audio tracks (track one containing game data), with no standalone commercial release until the 2020 vinyl LP that finally assigned official titles to the previously unnamed cues. The score won the 1997 Game Developers Choice Award for Best Music or Soundtrack, and GameSpot reviewer Trent Ward called it \"the greatest soundtrack ever produced for a PC game\" — a judgement that solidified Reznor's crossover from industrial rock into interactive media scoring, preceding his later film work on The Social Network (2010) and Soul (2020) by over a decade.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Quake Theme",
+      "duration": "5:08",
+      "energy": "mid",
+      "tags": [
+        "Opening Theme",
+        "Industrial Drone",
+        "Synthesizer",
+        "Rhythmic Pulse"
+      ],
+      "role": "Album role: The identity statement — the only track with a recognisable rhythmic backbone, establishing the soundtrack's industrial-ambient register and functioning as the game's title-screen signature.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency drone fades in with metallic resonance; distorted hum establishes the industrial timbre.",
+          "detail": "The opening seconds set the tonal contract with conventional game soundtracks of the era — no melody, no fanfare, only texture."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Rhythmic Entry",
+          "description": "Percussive loop enters — mechanical, syncopated hits layered beneath sustained distortion.",
+          "detail": "The drum programming uses processed industrial percussion rather than conventional kit sounds, consistent with Reznor's NIN production vocabulary."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Build",
+          "description": "Additional synthesiser layers accumulate; filtered noise sweeps add forward momentum."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Peak",
+          "description": "Full textural density reached — distorted bass drone, percussive loop, and high-frequency noise coexist at maximum volume.",
+          "detail": "This passage accompanies the game's title screen and main menu, burned into the memory of an estimated five million players who owned copies by 1997."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Deconstruction",
+          "description": "Rhythmic elements thin; drone recedes into filtered ambience."
+        },
+        {
+          "timestamp": "4:40",
+          "section": "Outro",
+          "description": "Track dissolves into residual hum and silence, yielding to the ambient territory of the remainder of the album."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Aftermath",
+      "duration": "2:26",
+      "energy": "low",
+      "tags": [
+        "Ambient Texture",
+        "Post-Industrial",
+        "Brief Interlude"
+      ],
+      "role": "Album role: The decompression — the shortest track functions as a transitional passage between the rhythmic opening and the extended ambient pieces that follow.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse low-frequency drone surfaces; metallic scraping texture sits far back in the stereo field."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Textural Layer",
+          "description": "A second drone layer enters a minor third above the fundamental, creating dissonant harmonic tension."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Build",
+          "description": "Processed noise element — resembling wind through industrial ducting — rises in volume."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Decay",
+          "description": "All layers attenuate simultaneously; the track recedes into near-silence before its abrupt end."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "The Hall of Souls",
+      "duration": "8:20",
+      "energy": "low",
+      "tags": [
+        "Extended Form",
+        "Reverb Architecture",
+        "Synthesiser Drone",
+        "Spatial Audio"
+      ],
+      "role": "Album role: The first long-form ambient statement — its eight-minute duration and cavernous reverb mirror the game's gothic cathedral environments, establishing the patience and scale that define the album's middle section.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Deep sub-bass drone enters beneath heavily reverbed metallic resonance; the acoustic space suggests a vast enclosed chamber."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Textural Layer",
+          "description": "High-frequency whisper-like texture enters — processed vocal or breath sample, diffused beyond recognition.",
+          "detail": "The ambiguity between human and machine sound sources is central to Reznor's stated goal of creating 'textures and ambiences and whirling machine noises.'"
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Build",
+          "description": "A slow ascending pitch sweep adds forward motion; harmonic content gradually thickens."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Peak",
+          "description": "Maximum textural density — multiple drone layers, metallic resonance, and processed noise coexist."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Breakdown",
+          "description": "Upper layers recede; sub-bass drone persists alone for an extended passage."
+        },
+        {
+          "timestamp": "6:50",
+          "section": "Second Build",
+          "description": "New harmonic content enters — a minor-key sustained tone creates an unsettling melodic fragment."
+        },
+        {
+          "timestamp": "7:50",
+          "section": "Outro",
+          "description": "All elements decay into silence; reverb tail extends beyond the final sound source."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "It Is Raped",
+      "duration": "6:05",
+      "energy": "mid",
+      "tags": [
+        "Industrial Percussion",
+        "Distortion",
+        "Mechanical Rhythm",
+        "Dark Ambient"
+      ],
+      "role": "Album role: The aggression re-entry — reintroduces percussive and industrial elements after two ambient tracks, marking the album's first tonal escalation since the opening theme.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Distorted low drone with irregular metallic impacts — percussive but arrhythmic."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Rhythmic Entry",
+          "description": "A mechanical loop locks into a repetitive pattern; processed percussion creates a grinding industrial pulse."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Build",
+          "description": "Synthesiser noise layers stack above the percussive foundation; filtered sweeps add tension."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Peak",
+          "description": "Full industrial texture — distortion, percussion, and drone at maximum density.",
+          "detail": "The track's confrontational intensity maps to the game's combat-heavy level design in Episode Two."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Breakdown",
+          "description": "Percussion drops out; distorted drone persists with decaying noise elements."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Outro",
+          "description": "Residual drone and metallic scraping fade to silence."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Parallel Dimensions",
+      "duration": "7:24",
+      "energy": "low",
+      "tags": [
+        "Spatial Drone",
+        "Stereo Field Manipulation",
+        "Dark Ambient",
+        "Lovecraftian"
+      ],
+      "role": "Album role: The dimensional threshold — the title references the game's Slipgate teleportation mechanic, and the track's wide stereo panning and disorienting spatial effects serve as the album's most explicitly world-building cue.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Stereo-panned low drone enters from the left channel; a second pitch slowly materialises in the right.",
+          "detail": "The spatial separation evokes the inter-dimensional transit central to Quake's narrative premise."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Textural Layer",
+          "description": "Processed noise — resembling distant machinery — enters at centre; reverb tail extends across the full stereo image."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Build",
+          "description": "Harmonic content shifts — a tritone interval introduces maximum dissonance."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Peak",
+          "description": "Multiple drone layers converge; the stereo field narrows to a claustrophobic centre image."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Dissolution",
+          "description": "Layers separate and decay independently; the stereo field widens again."
+        },
+        {
+          "timestamp": "6:40",
+          "section": "Outro",
+          "description": "Final drone isolated in the left channel; fades to silence asymmetrically."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Life",
+      "duration": "8:38",
+      "energy": "low",
+      "tags": [
+        "Extended Drone",
+        "Textural Layering",
+        "Sub-Bass",
+        "Longest Track"
+      ],
+      "role": "Album role: The centrepiece and longest track — its nearly nine-minute duration and patient layering represent the album's deepest immersion in pure dark ambient texture, positioned at the midpoint of the ten-track sequence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sub-bass fundamental enters below audible threshold; felt rather than heard."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Textural Layer",
+          "description": "High-frequency granular texture materialises — static-like, diffused across the stereo field."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Build",
+          "description": "A sustained mid-range drone enters; harmonic beating between the sub-bass and the new tone creates a slow pulsation."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Dark Passage",
+          "description": "Processed metallic scraping — rhythmically irregular — enters as a foreground texture.",
+          "detail": "The title's irony — 'Life' as the name for the album's most desolate passage — reflects the Quake universe's nihilistic tone."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Peak",
+          "description": "All layers coexist at sustained volume; no single element dominates."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Decay",
+          "description": "Upper textural layers attenuate; sub-bass drone persists alone."
+        },
+        {
+          "timestamp": "7:40",
+          "section": "Outro",
+          "description": "Final sub-bass tone decays over sixty seconds into silence."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Damnation",
+      "duration": "5:35",
+      "energy": "mid",
+      "tags": [
+        "Industrial Noise",
+        "Metallic Texture",
+        "Rhythmic Pulse",
+        "Confrontational"
+      ],
+      "role": "Album role: The second-half aggressor — mirrors track four's industrial intensity to anchor the album's back half, providing rhythmic and tonal contrast against the surrounding ambient pieces.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Distorted impact sound opens the track abruptly; metallic resonance rings out."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Rhythmic Entry",
+          "description": "Mechanical percussive loop establishes a grinding mid-tempo pulse."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Build",
+          "description": "Synthesiser noise layer enters above the percussion; filtered distortion adds harmonic density."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Peak",
+          "description": "Full industrial texture — percussion, distortion, and noise at maximum intensity.",
+          "detail": "The eerie quality of this passage was specifically noted by GamePro's Major Mike: 'heavy, driving guitar riffs and eerie, subtle synthesizers.'"
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Deconstruction",
+          "description": "Percussion fragments and becomes irregular; distortion recedes."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Residual metallic resonance and drone decay to silence."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Focus",
+      "duration": "6:28",
+      "energy": "low",
+      "tags": [
+        "Synthesiser Pad",
+        "Slow Build",
+        "Ambient Tension",
+        "Sustained Tone"
+      ],
+      "role": "Album role: The late-album contemplation — its sustained pads and slow evolution provide the clearest link to the contemplative ambient tradition, offering a breathing space before the final two tracks.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained synthesiser pad enters — a single chord held with minimal modulation."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Textural Layer",
+          "description": "A second pad enters a perfect fifth above; the interval creates an open, hollow harmonic space."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Build",
+          "description": "Low-frequency rumble enters beneath the pads; processed noise adds granular detail.",
+          "detail": "The track's title — 'Focus' — suggests a narrowing of attention, mirrored by the gradual reduction of the stereo field as layers accumulate."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Peak",
+          "description": "Harmonic density reaches its maximum; a dissonant upper partial creates tension against the sustained fifth."
+        },
+        {
+          "timestamp": "4:50",
+          "section": "Decay",
+          "description": "Upper harmonics withdraw; the original sustained chord reasserts dominance."
+        },
+        {
+          "timestamp": "5:50",
+          "section": "Outro",
+          "description": "Pad fades to inaudibility over the final forty seconds."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Falling",
+      "duration": "3:32",
+      "energy": "low",
+      "tags": [
+        "Descending Motion",
+        "Minimal Texture",
+        "Brief Interlude"
+      ],
+      "role": "Album role: The descent — the second-shortest track functions as a tonal downdraft before the closing piece, its descending pitch contour enacting the vertiginous motion implied by its title.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "High-pitched synthesiser tone enters and immediately begins a slow downward pitch sweep."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Textural Layer",
+          "description": "Sub-bass drone enters in counterpoint — rising as the upper tone descends."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Build",
+          "description": "Metallic resonance and processed noise add textural density to the descending motion."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Convergence",
+          "description": "Upper and lower pitch sweeps meet in the mid-range; momentary unison before diverging."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Outro",
+          "description": "All elements decay rapidly; the track ends with an abrupt cut rather than a fade."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "The Reaction",
+      "duration": "5:15",
+      "energy": "mid",
+      "tags": [
+        "Closing Statement",
+        "Industrial Texture",
+        "Percussive Elements",
+        "Final Escalation"
+      ],
+      "role": "Album role: The closing salvo — reintroduces rhythmic and industrial elements one final time, providing structural symmetry with the opening theme and ending the album on a note of unresolved tension rather than resolution.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Distorted drone enters with irregular metallic impacts — recalls the opening seconds of 'Quake Theme' without replicating it."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Rhythmic Entry",
+          "description": "Percussive loop materialises — slower and heavier than the opening theme's rhythm.",
+          "detail": "The structural mirror with track one creates a framing device: industrial rhythm brackets the ambient interior."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Build",
+          "description": "Synthesiser noise layers accumulate; filtered sweeps create rising tension."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Peak",
+          "description": "Full textural density — all industrial and ambient elements merge."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Deconstruction",
+          "description": "Rhythmic elements fragment and dissolve; drone persists beneath collapsing percussive structure."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Outro",
+          "description": "Final drone decays without resolution; the album ends on sustained dissonance rather than silence.",
+          "detail": "The lack of harmonic resolution mirrors the game's cyclical structure — Quake's levels loop endlessly for the player who keeps playing."
+        }
+      ]
+    }
+  ]
+}
