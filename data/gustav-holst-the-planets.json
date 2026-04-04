@@ -1,0 +1,373 @@
+{
+  "id": "gustav-holst-the-planets",
+  "artist": "Gustav Holst",
+  "title": "The Planets",
+  "year": 1916,
+  "label": "Boosey & Hawkes",
+  "producer": "Gustav Holst",
+  "genre": "Orchestral / Classical",
+  "runtime": "49:09",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/The-Planets-score-cover.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/4v0Xyz0LVToUsSTGdsvKSK?si=NdabD0BXRJWo-fnXgGco1w",
+  "youtubeUrl": "https://youtu.be/Isic2Z2e2xs",
+  "overview": "The Planets, Op. 32 (1914–1916), is a seven-movement orchestral suite scored for an expanded symphony orchestra including six French horns, organ, celesta, two harps, and an offstage women's chorus in the final movement. Holst composed the work over three years while teaching at St Paul's Girls' School and Morley College, with two colleagues — Vally Lasker and Nora Day — acting as scribes to copy the 198-page full score as chronic neuritis impaired his right arm. Each movement depicts a planet's astrological character rather than its astronomical properties, ordered for maximum musical contrast: Mars opens with a relentless 5/4 ostinato building to quadruple-forte dissonance, while Neptune closes with a wordless female chorus fading to inaudibility behind a closing door — an early acoustic precursor of the recorded fade-out. Premiered at Queen's Hall on 29 September 1918 under Adrian Boult, the suite has been recorded over eighty times and its harmonic vocabulary directly influenced John Williams's Star Wars score six decades later.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Mars, the Bringer of War",
+      "duration": "7:36",
+      "energy": "peak",
+      "tags": [
+        "5/4 Ostinato",
+        "Dissonant",
+        "Militaristic",
+        "Col Legno Strings",
+        "Opening"
+      ],
+      "role": "Suite opener and its most visceral statement; a relentless 5/4 rhythmic assault that builds from col legno whisper to quadruple-forte orchestral dissonance, establishing the suite's dramatic scope from its first bars.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ostinato intro",
+          "description": "Col legno strings and percussion establish the iconic 5/4 rhythmic ostinato — three quavers grouped 3+2, entirely in the lower registers.",
+          "detail": "Completed before the First World War began, the movement's mechanical violence was unintentional prophecy. Colin Matthews noted Holst intended 'an experiment in rhythm and clashing keys' and was surprised by its perceived militarism."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Brass entry",
+          "description": "Horns and trumpets introduce the first melodic fragment over the relentless ostinato; dissonant harmonic clashes begin accumulating."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "First climax",
+          "description": "Full orchestral tutti reaches its first fortissimo peak; the 5/4 ostinato transferred from strings to full brass and percussion."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Recessive episode",
+          "description": "Dynamic drops briefly; woodwinds carry fragmented melodic material while the ostinato continues in lower strings, sustaining rhythmic momentum beneath the quieter surface."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Second build",
+          "description": "Orchestral density rebuilds with stacked dissonant harmonics; pedal-point clashes between moving chords and static bass intensify."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Extended climax",
+          "description": "Quadruple-forte passage with full brass, percussion, and organ at maximum density; the most violent dynamic point of the entire suite.",
+          "detail": "Michael Short compared the harmonic clashes between moving chords and static pedal-points to a similar technique at the end of Stravinsky's The Firebird, noting that orchestral battle music 'had never expressed such violence and sheer terror.'"
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Coda",
+          "description": "Final thunderous restatement of the ostinato with crashing timpani and tam-tam; the movement ends abruptly on a dissonant orchestral chord."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Venus, the Bringer of Peace",
+      "duration": "8:02",
+      "energy": "low",
+      "tags": [
+        "Adagio",
+        "Solo Horn",
+        "Celesta",
+        "Pastoral",
+        "Contemplative"
+      ],
+      "role": "Direct antithesis to Mars; a sustained adagio deploying solo horn, solo violin, and celesta in a luminous sound-world that Michael Short called 'one of the most sublime evocations of peace in music.'",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Solo horn theme",
+          "description": "Solo French horn states the opening melody in E♭ major; answered quietly by flutes and oboes in gentle call-and-response.",
+          "detail": "Imogen Holst wrote that Venus 'has to try and bring the right answer to Mars' — the movement's role as conceptual counterweight is deliberate."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Solo violin entry",
+          "description": "A second theme appears on solo violin; intimate, unhurried phrasing over oscillating chords from flutes and harps."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Andante section",
+          "description": "Tempo shifts to a flowing andante in 3/4; violin melody moves from solo to tutti with gentle woodwind syncopation beneath."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Celesta entrance",
+          "description": "Celesta enters with decorative figuration above the sustained harmonic field; its crystalline timbre defines the movement's central colour.",
+          "detail": "The celesta was a relatively novel orchestral instrument in 1914, popularised by Tchaikovsky's 'Dance of the Sugar Plum Fairy' only two decades earlier."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Central largo",
+          "description": "Oboe solo over sustained string harmonics; the movement's emotional centre and what Holst considered one of his last fully romantic melodies."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Receding coda",
+          "description": "Orchestral texture thins to solo horn and harp; sustained pianissimo chord fades into near-silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Mercury, the Winged Messenger",
+      "duration": "4:24",
+      "energy": "mid",
+      "tags": [
+        "Vivace",
+        "Scherzo",
+        "Bitonal",
+        "Glockenspiel",
+        "Shortest Movement"
+      ],
+      "role": "Fleet-footed scherzo and the suite's shortest movement; Holst's first experiment with bitonality, juxtaposing B♭ major and E major in a rapid 6/8 that functions as tonal palate-cleanser between Venus and Jupiter.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Bitonal opening",
+          "description": "Solo violin and flute trade rapid melodic fragments simultaneously in B♭ major and E major; the bitonal clash generates the movement's mercurial restlessness.",
+          "detail": "The last of the seven movements to be composed (early 1916), Mercury contains Holst's first sustained experiment with bitonality — a technique he would develop further in later works."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Glockenspiel figuration",
+          "description": "Glockenspiel and high-pitched harp enter with rapid arpeggiated figures; bright, metallic timbres reinforce the winged-messenger character."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Central episode",
+          "description": "Brief development section where the bitonal fragments pass through the woodwind section in quick imitation."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Scherzo return",
+          "description": "Opening material returns with increased orchestral density; the interplay between B♭ major and E major sharpens."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Accelerating close",
+          "description": "Texture thins rapidly to solo instruments; the movement dissolves with a delicate harmonic shimmer rather than a definitive cadence."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Jupiter, the Bringer of Jollity",
+      "duration": "8:01",
+      "energy": "high",
+      "tags": [
+        "Allegro Giocoso",
+        "Hymn Melody",
+        "Andante Maestoso",
+        "Festive",
+        "I Vow to Thee My Country"
+      ],
+      "role": "Suite's exuberant centrepiece; its buoyant allegro giocoso frames the celebrated andante maestoso melody later adopted as the hymn tune 'Thaxted' for 'I Vow to Thee, My Country' — the most widely recognised passage in Holst's entire output.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Allegro giocoso",
+          "description": "Energetic opening theme in 2/4; strings and brass trade buoyant melodic fragments with triple-forte orchestral punctuation.",
+          "detail": "Leo's horoscope characterised Jupiter as 'the most fortunate star under which to be born'; Holst's music embodies 'abundance of life and vitality' through relentless forward rhythmic momentum."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Second theme",
+          "description": "Time signature shifts to 3/4 for a broader, more lyrical second theme; the mood lightens from exuberance to warmth."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Development",
+          "description": "Both themes developed through the full orchestra; brass fanfares and woodwind countermelodies build density."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Andante maestoso",
+          "description": "The famous broad hymn-like melody enters at half the speed of the opening; horns and strings present the theme in E♭ major with full orchestral warmth.",
+          "detail": "In 1921, overworked and noting the words of Cecil Spring-Rice's poem fitted the melody, Holst repurposed it as the hymn 'I Vow to Thee, My Country' rather than compose a new tune. Imogen Holst spent decades trying to separate the melody from its 'unwanted associations with the hymn.'"
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Maestoso climax",
+          "description": "Full orchestral restatement of the hymn melody at triple forte; timpani and brass reinforce the harmonic foundation beneath massed strings."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Allegro return",
+          "description": "Opening allegro giocoso material returns with renewed vigour; the exuberant character reasserts itself."
+        },
+        {
+          "timestamp": "7:15",
+          "section": "Maestoso reprise",
+          "description": "Brief final appearance of the broad melody — its expected cadence deliberately left unresolved."
+        },
+        {
+          "timestamp": "7:45",
+          "section": "Coda",
+          "description": "Triple-forte quaver chord from the full orchestra ends the movement abruptly; no fade, no resolution."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Saturn, the Bringer of Old Age",
+      "duration": "8:23",
+      "energy": "mid",
+      "tags": [
+        "Processional",
+        "Tubular Bells",
+        "Trombones",
+        "Clock Motif",
+        "Holst's Favourite"
+      ],
+      "role": "Holst's stated favourite movement; a slow processional rising to a terrifying climax before fading into outer space, deploying a persistent clock-like motif in flutes, bassoons, and harps against solemn trombone melody.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Clock motif",
+          "description": "Flutes, bassoons, and harps establish a quietly insistent ticking figure in 4/4 adagio; the mechanical repetition evokes the passage of time.",
+          "detail": "Saturn was Holst's own favourite movement. Colin Matthews described it as 'a slow processional which rises to a frightening climax before fading away as if into the outer reaches of space.'"
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Trombone melody",
+          "description": "Trombones — Holst's own main instrument — introduce a solemn, processional melody; the first sustained melodic statement of the movement."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Orchestral expansion",
+          "description": "The trombone melody is taken up by the full orchestra; gradual accumulation of harmonic weight beneath the persistent clock motif."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Animato episode",
+          "description": "Short burst of faster tempo disrupts the processional pace; agitated strings and brass create momentary urgency."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Triple-forte climax",
+          "description": "Tubular bells strike at the dynamic apex; the clock motif transformed from quiet persistence into overwhelming clamour across the full orchestra.",
+          "detail": "Apart from timpani, no percussion is used in this movement except tubular bells reserved exclusively for the climactic moments — their restraint makes their eventual appearance devastating."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Andante recession",
+          "description": "Time signature shifts to 3/2; the music begins its long retreat from the climax, harmonic tension slowly dissolving."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Dying fall",
+          "description": "Orchestral texture reduces to isolated instrumental voices; the movement ends in hushed pianissimo as if receding into deep space."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Uranus, the Magician",
+      "duration": "5:20",
+      "energy": "high",
+      "tags": [
+        "Four-Note Motif",
+        "Organ Glissando",
+        "Allegro",
+        "Grotesque Dance",
+        "Sorcerer's Apprentice"
+      ],
+      "role": "Grotesque scherzo recalling Dukas's Sorcerer's Apprentice; a clumsy orchestral dance that escalates out of control until an organ glissando sweeps everything into sudden silence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Four-note brass motif",
+          "description": "Bassoons and brass state the 'tremendous four-note motif' that generates the movement's entire thematic material; heavy, angular, and deliberately ungainly.",
+          "detail": "Michael Short identified the main influence as Dukas's The Sorcerer's Apprentice (first performed London 1899), noting resemblances also to Ravel's Daphnis et Chloé and Stravinsky's Infernal Dance from The Firebird."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Dance begins",
+          "description": "Allegro in 6/4 establishes a lurching dance rhythm; woodwinds and strings trade fragments of the four-note motif."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Merry pranks",
+          "description": "Rapid orchestral exchanges with interjections in 9/4; the dance grows more chaotic and rhythmically unpredictable."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Escalating chaos",
+          "description": "The dance accelerates and the four-note motif appears in increasingly distorted harmonic contexts; dynamic level climbs relentlessly."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Organ glissando climax",
+          "description": "Quadruple-forte orchestral climax crowned by a prominent organ glissando; the accumulated chaos swept away in a single gesture.",
+          "detail": "The organ glissando is one of the suite's most dramatic textural devices — everything built over four minutes is annihilated in seconds."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Lento aftermath",
+          "description": "Sudden drop to pianissimo lento; alternating quick and slow fragments bring the movement to its hushed, disoriented conclusion."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Neptune, the Mystic",
+      "duration": "7:23",
+      "energy": "low",
+      "tags": [
+        "Wordless Chorus",
+        "Offstage",
+        "Fade-Out",
+        "Closing",
+        "Dissonant"
+      ],
+      "role": "Suite's concluding vanishing act; a quiet, metrically irregular movement that introduces an offstage women's chorus singing wordless harmonics, ending with the orchestra falling silent and a door closing gradually on the voices — an acoustic fade-out decades before the technique became standard in recorded music.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Irregular opening",
+          "description": "Flutes state a swaying theme in irregular metre; piccolo and oboes join with overlapping phrases that resist metrical resolution.",
+          "detail": "Neptune was composed in late 1915 and was the last movement to receive its first public performance (15 November 1920, Queen's Hall, under Albert Coates)."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Harp and celesta",
+          "description": "Harps and celesta enter with shimmering arpeggiated figures; the crystalline timbres establish the movement's otherworldly harmonic palette."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Dissonant brass",
+          "description": "Brass play simultaneous chords of E minor and G♯ minor; deliberate harmonic clashes that Holst said 'made him shudder when he wrote them down.'",
+          "detail": "Holst's colleague Geoffrey Toye warned that the passage was 'going to sound frightful.' Holst agreed but replied, 'What are you to do when they come like that?'"
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Orchestral thinning",
+          "description": "Texture steadily reduces; instruments drop out one by one as the harmonic field becomes increasingly static."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Chorus entry",
+          "description": "Offstage women's chorus enters singing a soft, wordless line; two three-part choruses (each with two soprano sections and one alto) located in an adjoining room screened from the audience.",
+          "detail": "The device of an unseen chorus in orchestral music had precedent in Debussy's Nocturnes (1900), but Holst's use — sustaining the chorus beyond the orchestra's final note — was unprecedented."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Orchestra falls silent",
+          "description": "The orchestra plays its final notes and ceases entirely; only the offstage chorus remains, alternating C minor and E major chords."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Door closing",
+          "description": "A door between the singers and the auditorium is gradually closed; the choral sound diminishes to inaudibility through physical acoustic attenuation rather than dynamic marking.",
+          "detail": "David Owen Norris observed that as the door shuts it is pure chance whether the last chord heard is C minor (looking back to Mars) or E major. William Weir identified this technique as an early precursor of the electronic fade-out ubiquitous in popular music from the 1950s to 1980s."
+        }
+      ]
+    }
+  ]
+}

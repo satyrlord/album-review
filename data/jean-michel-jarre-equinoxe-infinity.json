@@ -1,0 +1,428 @@
+{
+  "id": "jean-michel-jarre-equinoxe-infinity",
+  "artist": "Jean-Michel Jarre",
+  "title": "Equinoxe Infinity",
+  "year": 2018,
+  "label": "Columbia Records",
+  "producer": "Jean-Michel Jarre",
+  "genre": "Electronic / Ambient",
+  "runtime": "39:55",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/11/Jarre_Equinoxe_Infinity_cover_1.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/4jgAODRrzEoKHSBOAp7g3y",
+  "overview": "Released 16 November 2018 on Columbia Records, Jarre's 20th studio album arrives exactly forty years after Equinoxe (1978), using Yamaha CS-80, ARP 2600, EMS VCS 3, EMS Synthi AKS, Eminent 310 Unique, Mellotron, Korg MS-20, Moog Sub 37, Moog Taurus 1, Erica Synths Modular, and a prototype GR-1 granular synthesizer (Tasty Chips Electronics) alongside Arturia virtual instruments and Spectrasonics Omnisphere. Ten movements form a continuous arc from sparse atmospheric prelude through mechanical intensity to a seven-minute finale; Movement 5 is intentionally brief — a structural callback to 'Band In The Rain' (Equinoxe Part 8, 1978), processed using the GR-1 on a child's voice recording. Recorded at JMJ Studio, Paris; cover artwork by Filip Hodas in two variants — a hopeful ecological image and a dystopian alternate — both reworking Michel Granger's original Le trac composition. Charts: Germany #11, France #20, UK #33.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Watchers (Movement 1)",
+      "duration": "2:58",
+      "energy": "low",
+      "tags": [
+        "Atmospheric Prelude",
+        "CS-80 Pads",
+        "Sparse Intro"
+      ],
+      "role": "Album role: The album's sentinel opening — a sparse atmospherics-first movement that establishes the Equinoxe timbral vocabulary before any directed motion begins. At under three minutes it functions as a prelude, placing the listener inside the sound world rather than beginning a narrative.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ambient pad layer opens",
+          "description": "near-inaudible low-frequency texture, no percussive element. Pure harmonic space.",
+          "detail": "The CS-80's slow-attack polyphonic pads set the Equinoxe register immediately — the same timbral DNA as the 1978 original, warmly layered."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "CS-80 portamento melody enters",
+          "description": "characteristic pitch-gliding single-voice line over sustained harmony; slow, searching.",
+          "detail": "The Yamaha CS-80 is the album's defining instrument, used throughout. Its portamento mode allows pitch to slide between notes in a way no digital synthesizer replicates accurately."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Subtle pulse introduced",
+          "description": "not yet a rhythm section — an underlying low-frequency motion that implies pulse without asserting it.",
+          "detail": "The Moog Taurus pedal tones appear here: sub-bass motion that is felt rather than analytically heard. The bass register opens the dynamic range for what follows."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Final gesture and dissolve",
+          "description": "the opening melody completes its single phrase; the movement releases into the space leading to Movement 2.",
+          "detail": "Movement 1 asks no questions and answers none. Its function is orientation. It is the period of silence before a concert begins."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Flying Totems (Movement 2)",
+      "duration": "3:54",
+      "energy": "mid",
+      "tags": [
+        "Sequenced Melody",
+        "ARP 2600",
+        "Forward Motion"
+      ],
+      "role": "Album role: The album's first full movement — the energy establishes a sequenced melodic line and a sense of directed forward motion. Contrasts the prelude's stasis with purposeful arrival.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "ARP 2600 arpeggiated sequence enters",
+          "description": "immediate rhythmic character from the first note; the movement begins without atmospheric preamble.",
+          "detail": "The ARP 2600's semi-modular architecture gives it characteristic tonal variation between repeated notes — each arpeggio step has a slightly different timbral colour."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "CS-80 melodic layer",
+          "description": "a second voice — polyphonic, slower, providing harmonic support above the sequenced pulse."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Percussion layer introduced",
+          "description": "rhythm emerges: not hard-edged, soft and supportive. The album's first explicit rhythmic framework.",
+          "detail": "The Minipops rhythm unit provides a pattern consistent with the Equinoxe archetype; percussive but never dominating the tonal content."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Melodic development peak",
+          "description": "sequence and melody at maximum combined density. The movement's structural apex.",
+          "detail": "At 3:54 this is one of the album's shorter full movements; its economy is a structural virtue — it does exactly what it needs to do before exiting."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Gradual strip-back and dissolve",
+          "description": "elements exit one by one; the movement resolves cleanly without a hard cut."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Robots Don't Cry (Movement 3)",
+      "duration": "5:44",
+      "energy": "high",
+      "tags": [
+        "Longest Movement",
+        "Mechanical Theme",
+        "Full Arrangement",
+        "Intensification Arc"
+      ],
+      "role": "Album role: The album's longest movement and its greatest intensity — a five-minute build that concentrates the sequential arc's forward energy into its most fully orchestrated and rhythmically dense single piece. The title is the album's most explicit conceptual statement about automation.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Hard-sequenced opening",
+          "description": "immediate rhythmic urgency, more mechanical in character than Movement 2; the tempo intention is clear from the first beat.",
+          "detail": "The ARP 2600's hard-sync pulsing and the Erica Synths modular system's clock-driven sequences establish a mechanistic grid that makes the title's subject matter audible."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Layered arpeggios — counterpoint develops",
+          "description": "a second sequence introduced over the first, creating rhythmic and harmonic counterpoint.",
+          "detail": "Jarre's counterpoint approach is characteristically pre-digital: two sequences running in parallel at different rates, the interference pattern between them creating the melodic interest."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Full rhythm section — maximum build",
+          "description": "percussion arrives at full weight; CS-80 pads sustain beneath the sequences; the arrangement reaches its widest dynamic band.",
+          "detail": "This is the most densely produced point in the album's first half. The contrast between this moment and Movement 1's near-silence underlines the arc being constructed."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Brief breakdown — isolation of sequences",
+          "description": "most layers suspended; the underlying clock-pulse left exposed briefly before reconstruction.",
+          "detail": "The structural pause makes the re-entry of the full arrangement feel like a gain in force rather than a repetition."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Full climax restatement",
+          "description": "all elements return simultaneously; the movement's highest dynamic point."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Dissolve to silence",
+          "description": "the mechanical energy drains systematically; the movement empties before Movement 4."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "All That You Leave Behind (Movement 4)",
+      "duration": "4:01",
+      "energy": "mid",
+      "tags": [
+        "Reflective Midpoint",
+        "Mellotron",
+        "Spacious Melody"
+      ],
+      "role": "Album role: Emotional mid-point and tonal pivot — after Movement 3's mechanistic intensity, a spacious, expressive piece that restores the album's introspective register. The Mellotron's presence situates the emotional territory squarely in the 1978 Equinoxe lineage.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Mellotron string swells",
+          "description": "the immediately warmer timbral quality signals the movement's different emotional register.",
+          "detail": "The Mellotron, present on both the 1978 Equinoxe and this sequel, is the album's most obviously nostalgic instrument choice. Its tape-replay characteristic warmth is specific and irreproducible."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Principal melodic statement",
+          "description": "a broad, expressive melody on the CS-80; slower note values and wider intervals than the preceding movements."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Harmonic development",
+          "description": "the chord sequence underneath the melody begins to move; emotional complexity deepens."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Textural peak — full layering",
+          "description": "Mellotron, CS-80 melody, ARP sequence and rhythm section reach maximum concurrent density.",
+          "detail": "This is the album's most emotionally legible moment: the combination of warm analogue textures, slow melodic movement and the Mellotron's almost-orchestral register."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Gradual reduction",
+          "description": "the warm textures partially remove themselves; the movement exits with less than it entered with, preparing the listener for the structural surprise of Movement 5."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "If the Wind Could Speak (Movement 5)",
+      "duration": "1:32",
+      "energy": "low",
+      "tags": [
+        "GR-1 Granular",
+        "Child Voice Processing",
+        "Structural Bridge",
+        "1978 Callback"
+      ],
+      "role": "Album role: The album's structural pivot and its most unusual sound design moment — at 1:32 it is deliberately brief, a structural allusion to 'Band In The Rain' (Equinoxe Part 8, 1978). The GR-1 granular synthesizer, a Kickstarter prototype from Tasty Chips Electronics, processes a recorded child's voice into the texture.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Immediate minimal texture — GR-1 granular processing",
+          "description": "no introduction: the movement opens with the processed child's voice material, stretched and granularised by the GR-1.",
+          "detail": "The GR-1 granular synthesizer (Tasty Chips Electronics) was not yet commercially available at time of recording; Jarre received a prototype through Kickstarter. Granular synthesis divides audio into small fragments ('grains') and restructures them — the child's voice becomes something between a texture and a melody."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Wind-like textural motion",
+          "description": "the granular material moves through the stereo field with a drift suggesting air rather than signal.",
+          "detail": "The movement's title is its structural description: the sound is asked to do what wind does — carry meaning without words. The connection to Equinoxe 1978 Part 8 is intentional and acknowledged by Jarre."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Final held tone and release",
+          "description": "the granular texture sustains briefly, then releases completely. The movement's ending is its most quiet point.",
+          "detail": "The deliberate structural poverty of Movement 5 — under a minute and a half — forces the weight of the album's emotional arc onto the movements that surround it."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Infinity (Movement 6)",
+      "duration": "4:14",
+      "energy": "mid",
+      "tags": [
+        "Title Concept",
+        "Harmonic Development",
+        "Central Statement"
+      ],
+      "role": "Album role: The album's conceptual title piece — the term 'Infinity' is embedded in the album title and these four minutes are its fullest compositional articulation. The movement's harmonic language is the album's most developed: multiple voices, tonal movement, resolution deferred and then delivered.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Emergence from Movement 5's silence",
+          "description": "the re-establishment of motion after the pivot; the album's energy reasserts itself.",
+          "detail": "After Movement 5's structural compression, this emergence feels earned. The dynamics here are at their most considered in terms of the album's macro-arc."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Main CS-80 melodic theme",
+          "description": "the movement's principal voice: a polyphonic melody with harmonic weight absent from the earlier single-note sequences.",
+          "detail": "The CS-80's polyphony is used here deliberately: multiple simultaneous pitches on a single instrument, the chord-melody merge characteristic of Jarre at his most texturally rich."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Sequenced pulse re-establishes rhythmic grid",
+          "description": "the ARP 2600's sequenced patterns return under the CS-80 melody, restoring directed kinetic energy."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Harmonic expansion cycle",
+          "description": "the chord sequence moves through its widest range on the album; tonal movement covers the most harmonic ground of any single movement.",
+          "detail": "This is the 'Infinity' of the title as compositional method: harmonic motion that does not repeat the same path."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Resolution and soft close",
+          "description": "the extended harmonic journey completes; the movement exits with clarity into Movement 7."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Machines are Learning (Movement 7)",
+      "duration": "2:07",
+      "energy": "mid",
+      "tags": [
+        "AI Theme",
+        "Compressed Statement",
+        "Technological Reference"
+      ],
+      "role": "Album role: The album's most technologically explicit title, concentrated into its second-shortest form. At 2:07 it functions as a compressed statement rather than a development: a pointed comment on automation, delivered briskly.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Rapid-tempo sequenced figure",
+          "description": "a machine-like rhythmic precision from the opening note; the fastest internal pulse of any movement on the album.",
+          "detail": "The 'Machines are Learning' title receives its literal translation: a sequence that repeats with mechanical exactness, the character of a learning algorithm applied to musical structure."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Harmonic layer over the sequence",
+          "description": "pads and a melody line respond to the mechanical substrate; human expressiveness over algorithmic precision."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Sequence continues without variation",
+          "description": "no breakdown, no development; the machine element maintains complete rhythmic continuity to the final note.",
+          "detail": "The lack of a structural breakdown in so short a piece is a formal choice: the machine does not pause, does not breathe."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Abrupt close",
+          "description": "the movement ends without a fade; truncated rather than dissolved, entering Movement 8's space cleanly."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "The Opening (Movement 8)",
+      "duration": "4:16",
+      "energy": "mid",
+      "tags": [
+        "Structural Irony",
+        "CS-80 Lead",
+        "Dramatic Re-Entry",
+        "Pre-Finale Build"
+      ],
+      "role": "Album role: Structurally ironic — named 'The Opening' but placed eighth of ten, functioning as a dramatic re-entry and pre-finale intensification. Re-energises the album from Movement 7's brevity toward the concluding two movements.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Full arrangement enters immediately",
+          "description": "no atmospheric preamble; the movement arrives with all its layers already deployed.",
+          "detail": "The structural surprise: an 'Opening' that opens nothing except the final chapter of the album. The title is the movement's commentary on itself — eighth of ten, but acting as though the finale has just begun."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "CS-80 lead line",
+          "description": "sustained portamento melody over a fully deployed rhythm section; the CS-80's long sustain gives the melody a legato quality unlike the earlier percussive sequences."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Harmonic development and modulation",
+          "description": "the tonal centre shifts, adding urgency; the movement is building toward something larger than itself.",
+          "detail": "The modulation is the structural hinge into Movement 9. This movement is consciously transitional — its energy is directed forward."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Climactic peak and partial resolution",
+          "description": "the movement reaches its highest intensity before drawing back slightly for the exit.",
+          "detail": "The partial resolution rather than full close keeps tension available for Movement 9. The finale sequence is deliberate and two-stage."
+        },
+        {
+          "timestamp": "3:55",
+          "section": "Dissolve into Movement 9",
+          "description": "the layers reduce and the movement transitions seamlessly into the penultimate piece."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Don't Look Back (Movement 9)",
+      "duration": "3:36",
+      "energy": "mid",
+      "tags": [
+        "Sequel Tension",
+        "Forward Impetus",
+        "Penultimate"
+      ],
+      "role": "Album role: Penultimate movement — its title balances the nostalgic framing of a forty-year sequel against a forward compositional imperative. Each element builds tension available for the finale's full release.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Driving sequence — no resolution from Movement 8",
+          "description": "immediately continues the energy built in Movement 8; the transition is near-seamless.",
+          "detail": "The album's instruction to itself: do not look back at the 1978 original — or the preceding eight movements — but forward into the finale."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Melodic statement over driving sequence",
+          "description": "a melody that, by this stage of the album, reads as a reprise of earlier material rather than an introduction."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Dynamic reduction — stripped back",
+          "description": "the rhythm section reduces; the movement creates space by withdrawing, preparing the finale's maximum dynamic contrast.",
+          "detail": "The withdrawal before the finale is a structural device: the dynamic contrast between the reduced Movement 9 close and Movement 10's full deployment."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Final build to edge of Movement 10",
+          "description": "the sequence re-energises; total duration of the movement's build is concentrated into the final thirty seconds.",
+          "detail": "Movement 9 hands its unresolved momentum forward without releasing it. The finale inherits maximum available energy."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Equinoxe Infinity (Movement 10)",
+      "duration": "7:33",
+      "energy": "peak",
+      "tags": [
+        "Title Finale",
+        "Longest Movement",
+        "Peak Dynamic",
+        "CS-80 Showcase",
+        "Full Arc Resolution"
+      ],
+      "role": "Album role: All-encompassing finale — at 7:33 the album's longest movement and its fullest emotional deployment. The title restates the album title, situating this piece as the work's defining statement. Builds from the inherited energy of Movement 9 to the album's maximum dynamic range before a spacious, unhurried resolution.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Full arrangement opens at maximum density",
+          "description": "all instrumental layers deployed from the first bar. No build required: the preceding nine movements have performed the construction.",
+          "detail": "The structural logic of the album pays off here: the first nine movements are preamble. This finale is not an arrival — it is the destination."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "CS-80 principal melody — the title theme",
+          "description": "the album's fullest melodic statement, using the CS-80's polyphony and sustain at their most expressive.",
+          "detail": "On the CS-80, the polyphonic aftertouch — pressure applied to keys after initial contact — controls modulation and expression in real time. What sounds like an orchestral melody is a single player making real-time expressive decisions."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Harmonic cycle begins moving",
+          "description": "the chord sequence underneath the principal melody starts its widest movement; the tonal arc of the finale covers the most harmonic ground on the album.",
+          "detail": "This harmonic arc is the payoff for the preceding harmonic restraint of the earlier movements. The finale is harmonically ambitious precisely because the foundations have been carefully laid."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Maximum density peak",
+          "description": "all elements at maximum combined dynamic; the album's highest point of intensity.",
+          "detail": "Every instrument used across the album is present here simultaneously. The ARP sequences, CS-80 melodies, Mellotron swells, Erica Synths modular textures, and rhythm section at their combined maximum."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Gradual systematic withdrawal",
+          "description": "the finale begins its deliberate, unhurried emotional withdrawal; elements exit one by one over two minutes.",
+          "detail": "The coda of the finale is proportionally long by electronic album standards. Jarre gives the resolution as much space as it requires — there is no abrupt ending."
+        },
+        {
+          "timestamp": "6:45",
+          "section": "Final atmospheric close",
+          "description": "the last elements — CS-80 pads and sustained chord — release into silence.",
+          "detail": "The album closes as it opened, with a near-inaudible sustained pad texture fading to silence. The circle is closed: the ten movements form a single breath, inhaled and exhaled."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "vangelis-spiral",
+  "artist": "Vangelis",
+  "title": "Spiral",
+  "year": 1977,
+  "label": "RCA Records",
+  "producer": "Vangelis",
+  "genre": "Electronic / Progressive",
+  "runtime": "39:12",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7d/Vangelis_Spiral.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/6Tz3gRyPvHv8eDT5RZ2xXX?si=tto3NbRVRzKOTZYO_cNnOg",
+  "youtubeUrl": "https://www.youtube.com/watch?v=NZn0-k25tpo",
+  "overview": "Spiral (1977) is the third album Vangelis recorded at Nemo Studios, London, and his most philosophically coherent work of the decade — a five-part concept album shaped entirely by Taoist cosmology, its front cover bearing the Tao Te Ching aphorism: Going on means going far — Going far means returning. The album is the first to feature the Yamaha CS-80, the polyphonic synthesiser that would become Vangelis's definitive instrument across Chariots of Fire, Blade Runner, and the Jon & Vangelis records of the following decade. Almost entirely instrumental save for processed vocals on Ballad, the record deploys sequencers, electric piano, hand percussion, and the CS-80's characteristically warm, breath-responsive timbre in five long-form pieces ranging from the opening title track's forward-spiralling momentum through the Sufi-dance propulsion of Dervish D to the meditative grandeur of the nine-minute To the Unknown Man, which was awarded the Midem International Instrumental Prize in 1978 and later used as theme music for the BBC's coverage of the 1979 World Snooker Championship.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Spiral",
+      "duration": "6:55",
+      "energy": "high",
+      "tags": [
+        "CS-80",
+        "Sequencer",
+        "Progressive",
+        "Title Track",
+        "Conceptual"
+      ],
+      "role": "Conceptual anchor and kinetic opening statement; the title track places the album's Taoist spiral metaphor in motion immediately through forward-driving sequencer arpeggios and the CS-80's first prominent appearance on any Vangelis album.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse synthesiser chord bloom from silence; the CS-80's warm attack envelope is immediately audible.",
+          "detail": "The opening establishes the album's central tonal signature: the Yamaha CS-80's touch-sensitive polyphony, here at its most restrained before the sequencer enters."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Sequencer Entry",
+          "description": "Rotational arpeggio pattern begins in the mid-register; the spiral motion the album is named for rendered as pure rhythmic figure."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Melodic Development",
+          "description": "CS-80 melody unfolds above the sequencer; lyrical line with pronounced portamento, the recognisable Vangelis vocal-synth hybrid style."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Density Peak",
+          "description": "Harmonic layering reaches full texture; multiple synthesiser voices and bass ostinato simultaneously active.",
+          "detail": "The stacking here is characteristic of Vangelis's live-to-tape improvisational approach — all layers built and held in real time, not assembled by overdub."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Development",
+          "description": "Secondary melodic figure introduced against continuing sequencer rotation; variation without structural break."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Outro",
+          "description": "Sequencer pattern thins as upper melody withdraws; long reverb decay closes the track in forward motion rather than resolution."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Ballad",
+      "duration": "8:27",
+      "energy": "low",
+      "tags": [
+        "Vocals",
+        "Processed Voice",
+        "CS-80",
+        "Introspective",
+        "Long-Form"
+      ],
+      "role": "Emotional interior of the album; the only track on which Vangelis performs vocals — processed into an ethereal, non-lexical texture — producing the most intimate and unhurried moment on the record in deliberate contrast to the conceptually driven pieces around it.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained CS-80 chord with long attack; near-static, meditative quality establishes the ballad's patience and scale."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Vocal Entry",
+          "description": "Processed vocals emerge, unintelligible as language but melodically shaped; the voice used as another synthesised instrument rather than a communicative presence.",
+          "detail": "Vangelis routes his voice through signal processing to dissolve its identity as a human utterance — a technique consistent with his broader prioritisation of texture over lyric."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "CS-80 Melody",
+          "description": "Principal synthesiser melody joins the voice; the two lines move in loose counterpoint, neither dominating."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Mid-Section",
+          "description": "Bass synth layer deepens below the melody-voice fabric; gentle increase in harmonic density without dynamic surge."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Thinning",
+          "description": "Bass element withdraws; texture reduced to melody and voice as the piece enters its final third."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Vocal Solo",
+          "description": "Processed voice holds the line alone for an extended passage; unaccompanied vulnerability at the conceptual centre of the track."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Outro",
+          "description": "CS-80 pad returns to support the voice decay; long reverb trail dissolves into silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Dervish D",
+      "duration": "5:14",
+      "energy": "peak",
+      "tags": [
+        "Sufi Whirling",
+        "Rhythmic",
+        "Percussion",
+        "Dance",
+        "World Influence"
+      ],
+      "role": "Rhythmic and conceptual centrepiece explicitly inspired by Sufi whirling — the sleeve notes state it depicts the Dervish dancer who by his whirling realises the spiralling of the universe — producing the album's most percussive and physically propulsive moment.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Percussion Intro",
+          "description": "Hand percussion and drum patterns immediately establish forward motion; no ambient introduction, no spatial settling.",
+          "detail": "The contrast with the preceding Ballad's near-silence is maximum — the track opens mid-dance, consistent with the Dervish whirling metaphor."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Synthesiser Entry",
+          "description": "CS-80 melodic figure enters above the percussion; modal, Middle-Eastern inflected interval choices colour the harmonic character."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Acceleration",
+          "description": "Rhythmic density increases; additional percussion layers compound the rotational momentum."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Melodic Spiral",
+          "description": "The melodic line begins to circle its central note in increasingly rapid stepwise motion — the Dervish figure made melodic.",
+          "detail": "The connection between the track's subject matter (Sufi ritual rotation) and its melodic structure is among the most direct pieces of musical word-painting in Vangelis's catalogue."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Peak",
+          "description": "All layers simultaneously active; highest energy point on the album — full percussion, multiple synth voices, fastest melodic rotation."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Recession",
+          "description": "Percussion thins; melodic motion slows — the dancer's revolution decelerating after the ecstatic peak."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Outro",
+          "description": "Final chord held as percussion drops away; track concludes in returning stillness, completing a full spiral from motion to rest."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "To the Unknown Man",
+      "duration": "9:01",
+      "energy": "peak",
+      "tags": [
+        "CS-80",
+        "MIDEM Award",
+        "Atmospheric",
+        "Extended",
+        "Signature Work"
+      ],
+      "role": "Album climax and most celebrated composition; the nine-minute centrepiece won the Midem International Instrumental Prize in 1978, later served as BBC theme for the 1979 World Snooker Championship, and is widely regarded as Vangelis's most fully achieved purely electronic long-form statement of the decade.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone Open",
+          "description": "Deep bass synthesiser drone; vast, unmoving foundation that establishes the cosmic register of the title's Unknown Man.",
+          "detail": "The opening bars are among the most purely atmospheric Vangelis recorded at Nemo Studios — a deliberate expansion of tonal space before any melodic element."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Melody Entry",
+          "description": "CS-80 principal theme emerges against the drone; slow, measured, with extensive portamento shaping each phrase."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Harmonic Thickening",
+          "description": "Additional synthesiser voices sustain beneath the melody; the chordal fabric deepens toward orchestral density."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Rhythmic Element",
+          "description": "Soft percussion pulse enters beneath the harmonic mass; restrained and sparse — temporal marking rather than rhythmic drive."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Development",
+          "description": "Melodic material developed through variation and transposition; the theme unfolds across a wider pitch range as emotional commitment intensifies."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Climax",
+          "description": "Full orchestral-synthesiser density with melody at its most emphatic; the album's expressive summit.",
+          "detail": "The scale here is comparable to the Heaven-side peaks of the previous album, but achieved without choir — purely through the Yamaha CS-80 and Vangelis's layering technique."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Dissolution",
+          "description": "Layers withdraw one by one; the drone reasserts itself beneath the departing melody."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Outro",
+          "description": "Solitary bass drone and long reverb trail; the Unknown Man's presence dissipates back into the void of the closing seconds."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "3+3",
+      "duration": "9:35",
+      "energy": "high",
+      "tags": [
+        "CS-80",
+        "Polyrhythmic",
+        "Progressive",
+        "Extended",
+        "Album Closer"
+      ],
+      "role": "Structural and temporal summation of the album; the title encodes the 3+3 metric grouping that anchors the composition, and at nine and a half minutes it is the longest track — a progressive electronic statement that returns the listener to the spiralling cosmic motion introduced at the beginning before the album closes in forward motion.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Soft synthesiser figure in a clear 3+3 rhythmic grouping; the metric identity of the piece is established from the first bar."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Bass Entry",
+          "description": "Low-register synthesiser ostinato joins the mid-register figure; the 3+3 pulse reinforced in the bass."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "CS-80 Melody",
+          "description": "Main melodic line in the CS-80's upper register; broad, arching phrases over the established rhythmic foundation."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Layering",
+          "description": "Secondary synthesiser voice adds harmonic colour; the progressive accumulation of texture characteristic of Nemo Studios session composition."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Rhythmic Complexity",
+          "description": "Percussion element enters and compounds the 3+3 pulse with an additional subdivided layer; polyrhythmic mesh develops."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Peak Density",
+          "description": "Full texture: bass ostinato, mid-register rhythm, melody, secondary harmony, percussion — all elements simultaneously present at the track's expressive apex."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Reduction",
+          "description": "Layers begin withdrawing in reverse order; the 3+3 pulse is the last element to remain as the reduction proceeds."
+        },
+        {
+          "timestamp": "8:45",
+          "section": "Outro",
+          "description": "Solo synthesiser arpeggio in pure 3+3 grouping; the album closes as it opened — in forward rotational motion, spiral unresolved, Tao Te Ching: going far means returning."
+        }
+      ]
+    }
+  ]
+}

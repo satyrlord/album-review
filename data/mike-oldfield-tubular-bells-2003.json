@@ -1,0 +1,786 @@
+{
+  "id": "mike-oldfield-tubular-bells-2003",
+  "artist": "Mike Oldfield",
+  "title": "Tubular Bells 2003",
+  "year": 2003,
+  "label": "Warner Music Spain / WEA",
+  "producer": "Mike Oldfield",
+  "genre": "Progressive Rock / New Age",
+  "runtime": "48:38",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/9e/Tubular_Bells_2003_CD_Front_Cover.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/0bEnTj9zImDUVa5G0tXcJK",
+  "youtubeUrl": "https://www.youtube.com/watch?v=EGNPYXCvId8&list=PLLbPzTCEP9vfvT7xO5qW5sX5kGFvgxceo",
+  "overview": "Tubular Bells 2003 is Mike Oldfield's definitive digital re-recording of his 1973 debut, undertaken when he regained the re-recording rights 30 years after the original. Recorded at Roughwood Croft, his home studio in Chalfont St Giles, Buckinghamshire, between August 2002 and February 2003 using Emagic Logic and Digidesign Pro Tools — the original 16-track tape was sourced from AIR Studios, imported into Pro Tools as a timing and pitch reference, and then entirely re-performed. The continuous two-part suite has been segmented into 17 individually titled tracks, with John Cleese stepping into Vivian Stanshall's Master of Ceremonies role in the \"Finale\" after Stanshall's death in 1995. The first instrument recorded was the glockenspiel; the last was the \"Caveman\" vocal track. Released 26 May 2003 on Mike Oldfield's 50th birthday year and the 30th anniversary of the original — the final entry in the Tubular Bells trilogy (Tubular Bells 1973, Tubular Bells II 1992, Tubular Bells 2003).\n\nTimestamps approximate to ±5 seconds. All instruments performed by Oldfield.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Introduction",
+      "duration": "5:52",
+      "energy": "high",
+      "tags": [
+        "Iconic Theme",
+        "15/8 Time Signature",
+        "Multi-Layer Build",
+        "Part One Opener"
+      ],
+      "role": "Album role: The definitive restatement of the Tubular Bells opening motif — the same 15/8 arpeggio from 1973, now with pristine digital fidelity, starting with glockenspiel (the first instrument recorded in the sessions) before guitar arpeggios layer up.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Glockenspiel entry",
+          "description": "the opening glockenspiel note — the first instrument Oldfield recorded during the 2002–2003 sessions.",
+          "detail": "Wikipedia's booklet notes confirm glockenspiel was chosen as the first instrument to record as a practical alignment reference before building the guitar layers."
+        },
+        {
+          "timestamp": "0:08",
+          "section": "Guitar arpeggios — main theme",
+          "description": "the iconic 15/8 arpeggio pattern enters on guitar. Immediately recognisable as the Tubular Bells motif, now rendered with clarity impossible in 1973.",
+          "detail": "The asymmetric cycle gives the theme its lurching, unstoppable quality — identical rhythmic character to 1973 but with a cleaner, more controlled tone."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Second acoustic guitar voice",
+          "description": "a lower-register acoustic guitar joins as a counter-voice to the opening arpeggios.",
+          "detail": "Stacking begins. The two guitar voices interlocked at different rhythmic positions — the same compounding effect as the original piano ostinati."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Bass guitar enters",
+          "description": "electric bass sustains the harmonic foundation, deepening the texture considerably.",
+          "detail": "The 2003 recording benefits from Oldfield's Wal bass through the Manor Module pre-amp — fuller low-end than the 1973 original."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Electric guitar texture",
+          "description": "electric guitar adds midrange detail and forward drive.",
+          "detail": "Multiple guitar sources available in 2003 — Telecaster 1965, Stratocaster 1963 — allow Oldfield to select exactly the right timbre for each layer."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Transition to Fast Guitars",
+          "description": "the introduction's textured accumulation resolves and propels forward into the next section.",
+          "detail": "Clean structural seam — the 17-track segmentation allows individual sections to be navigated while the music remains continuous."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Fast Guitars",
+      "duration": "1:04",
+      "energy": "high",
+      "tags": [
+        "Rapid Picking",
+        "Part One",
+        "Forward Drive"
+      ],
+      "role": "Album role: An intense burst between the opening theme and the bass-dominated section — rapid electric guitar figures that raise the energy briefly before Part One's texture shifts.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Fast guitar figures enter",
+          "description": "rapid-picked electric guitar phrases replace the sustained arpeggios, introducing a more aggressive attack.",
+          "detail": "The shift in texture is abrupt and intentional — a contrast inserted early in Part One to prevent the cumulative build from becoming monotonous."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Second guitar voice joins",
+          "description": "a second guitar line interweaves at a different rhythmic position.",
+          "detail": "Two fast-picking lines in dialogue — Oldfield playing off himself as multi-track allows."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Momentum builds",
+          "description": "the dual guitar lines push forward with increasing rhythmic density.",
+          "detail": "No percussion — the rhythmic energy is generated entirely by the picking speed and note density of the two guitar parts."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Transition to Basses",
+          "description": "hard cut to the bass-dominated next section.",
+          "detail": "Like the 1973 original, the transitions are structural pivots rather than fades."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Basses",
+      "duration": "0:46",
+      "energy": "mid",
+      "tags": [
+        "Bass Guitars",
+        "Part One",
+        "Low-Register Dialogue"
+      ],
+      "role": "Album role: A low-register interlude in which multiple bass guitar voices are foregrounded — a brief tonal counterweight to the previous guitar-dominated passage.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Bass guitar enters prominently",
+          "description": "electric bass voices take the foreground, the texture dropping to a low register.",
+          "detail": "Wal bass through the NEVE 1073 pre-amps — the recorded bass tone is significantly warmer than the 1973 original."
+        },
+        {
+          "timestamp": "0:15",
+          "section": "Second bass voice added",
+          "description": "a second bass line begins a call-and-response dialogue.",
+          "detail": "Two bass voices at different pitch intervals — the lower one grounding, the upper one melodic."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Bass interplay at its most active",
+          "description": "the two bass voices are in fullest dialogue.",
+          "detail": "The short duration concentrates the effect — just enough time to register the shifting harmonic weight before moving on."
+        },
+        {
+          "timestamp": "0:42",
+          "section": "Transition to Latin",
+          "description": "bass voices fade and the Latin-flavoured section begins.",
+          "detail": "Another clean structural seam in the segmented Part One arc."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Latin",
+      "duration": "2:18",
+      "energy": "mid",
+      "tags": [
+        "Latin Rhythm",
+        "Acoustic Guitar",
+        "Part One",
+        "Percussion"
+      ],
+      "role": "Album role: A mid-section excursion into Latin rhythmic phrasing — acoustic guitar and light percussion provide a tonal contrast before Part One's final third.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Latin guitar pattern",
+          "description": "acoustic guitar enters with a rhythmically syncopated Latin-inflected picking pattern.",
+          "detail": "The Ramirez Flamenco 1974 is the likely guitar here — the sound matches the short-scale, bright timbres of classical Spanish guitar."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Percussion enters",
+          "description": "tambourine and light percussive accent join the guitar pattern.",
+          "detail": "Oldfield on tambourine — as in the original, all instruments self-performed. Maintains the mid-tempo groove."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Melodic counter-line",
+          "description": "a melodic guitar voice appears above the rhythmic pattern.",
+          "detail": "The melodic voice follows a different contour than the rhythmic pattern beneath it — a hint of counterpoint."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Dynamic peak",
+          "description": "full Latin-flavoured texture at its richest.",
+          "detail": "The section's loudest and most active point before the diminuendo into A Minor Tune."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Diminuendo",
+          "description": "texture reduces, energy falls. Transition toward the reflective A Minor Tune.",
+          "detail": "Energy arc: rise, peak, fall — even within 2:18, the section has complete structural shape."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "A Minor Tune",
+      "duration": "1:21",
+      "energy": "low",
+      "tags": [
+        "Minor Key",
+        "Reflective",
+        "Part One",
+        "Melodic Guitar"
+      ],
+      "role": "Album role: A brief tonal shadow — the only explicitly minor-mode passage in Part One, providing harmonic contrast before the more extrovert Blues and Thrash sections.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Minor-key guitar theme",
+          "description": "a reflective, descending guitar melody in a minor key — noticeably darker than the surrounding material.",
+          "detail": "The explicit minor mode is a structural device — a single emotional shadow inserted into Part One's mostly propulsive character."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Second voice in harmony",
+          "description": "a second guitar voice joins at a third or sixth — harmonised minor phrasing.",
+          "detail": "The harmonisation reinforces the melancholic quality without adding complexity."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Brief upward modulation",
+          "description": "a momentary shift upward in register, as if the tune is testing an escape route.",
+          "detail": "Does not resolve into a major mode — the shadow is brief but persistent."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Resolution and transition",
+          "description": "the minor theme completes and the dynamic shifts toward the Blues section.",
+          "detail": "The transition is a tonal hinge — minor to a blues-inflected minor/major ambiguity."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Blues",
+      "duration": "2:40",
+      "energy": "mid",
+      "tags": [
+        "Blues Guitar",
+        "Pentatonic",
+        "Part One",
+        "Rhythmic Drive"
+      ],
+      "role": "Album role: A blues-inflected episode that grounds Part One in a recognisable guitar idiom before the abrupt rupture of Thrash.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Blues riff enters",
+          "description": "electric guitar launches a pentatonic blues riff with characteristic bend and vibrato.",
+          "detail": "Probably Stratocaster 1963 or Telecaster 1965 — the guitar timber is sharper and more cutting than the acoustic passages. Amp Farm plug-in would process the electric signal."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Rhythmic drive established",
+          "description": "the blues groove locks in — a steady rhythmic pulse underscores the guitar lines.",
+          "detail": "No drums — rhythm is entirely in the guitar picking patterns, consistent with the no-drummer approach carried throughout the Tubular Bells series."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Melodic phrase",
+          "description": "an almost improvisatory melodic line over the blues groove — the most idiomatically \"guitarist\" moment in Part One.",
+          "detail": "Oldfield was a technically accomplished guitarist long before the 1973 recording; these blues passages demonstrate the facility he brought even to this multi-instrumental context."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Return to riff",
+          "description": "the opening blues riff is restated.",
+          "detail": "A structural return — even in 2:40, the section completes an ABA shape."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Transition toward Thrash",
+          "description": "the blues groove intensifies and angles toward the violent break that follows.",
+          "detail": "The dynamic escalation is deliberate — Thrash needs context and the Blues section provides it."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Thrash",
+      "duration": "0:44",
+      "energy": "peak",
+      "tags": [
+        "Distortion",
+        "Peak Energy",
+        "Abrupt",
+        "Part One"
+      ],
+      "role": "Album role: The singular violence of Part One — 44 seconds of maximum distorted guitar intensity, the structural rupture that precedes the Jazz and Ghost Bells cool-down.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Distorted guitar attack",
+          "description": "sudden onset of heavy distorted electric guitar — volume and density at maximum.",
+          "detail": "Mesa Boogie amplifier and Amp Farm plugin — the 2003 version is arguably heavier than the 1973 equivalent due to the gain staging available in modern processing."
+        },
+        {
+          "timestamp": "0:15",
+          "section": "Full guitar wall",
+          "description": "multiple layers of distorted guitar create a dense harmonic mass.",
+          "detail": "Brief in duration but maximum in intensity — the signature trait of the Thrash section across all Tubular Bells re-recordings."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Abrupt cutoff",
+          "description": "the guitar wall stops without decay — hard edit to silence.",
+          "detail": "The abruptness is structural — the sudden absence of sound is as impactful as the sound itself in context."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Brief silence into Jazz",
+          "description": "two to three seconds of near-silence before the Jazz section begins.",
+          "detail": "The silence functions as a caesura — a breath between the album's most intense and one of its most relaxed moments."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Jazz",
+      "duration": "0:48",
+      "energy": "mid",
+      "tags": [
+        "Jazz Guitar",
+        "Swing",
+        "Part One",
+        "Comic Relief"
+      ],
+      "role": "Album role: A sardonic jazz interlude following the Thrash rupture — 48 seconds of swing-inflected guitar as tonal joke and structural release valve before Ghost Bells.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Jazz guitar phrase",
+          "description": "clean-toned guitar enters with a swing rhythm and jazz-inflected chord voicings.",
+          "detail": "The sudden stylistic shift from distorted Thrash to clean jazz is broadly comic — a long-standing characteristic of Oldfield's musical personality."
+        },
+        {
+          "timestamp": "0:15",
+          "section": "Syncopated rhythm",
+          "description": "rhythm becomes more explicitly swing-patterned.",
+          "detail": "The swing feel is exaggerated for comic effect — not attempting jazz authenticity but referencing it."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Peak of swing feel",
+          "description": "the jazz inflection reaches its most pronounced before fading.",
+          "detail": "A knowing section — the same brief jazz moment exists in the 1973 original, maintained here as structural homage."
+        },
+        {
+          "timestamp": "0:44",
+          "section": "Transition to Ghost Bells",
+          "description": "jazz phrase dissolves into the eerie silence of Ghost Bells.",
+          "detail": "Another hard tonal seam — from light comedy to spectral stillness."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Ghost Bells",
+      "duration": "0:30",
+      "energy": "low",
+      "tags": [
+        "Tubular Bells",
+        "Spectral",
+        "Part One",
+        "Drone"
+      ],
+      "role": "Album role: The haunting still point of Part One — 30 seconds of tubular bell overtones and silence that echoes the instrument after which the entire series is named.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Tubular bell resonance",
+          "description": "a single tubular bell stroke — the resonance rings out into near-silence.",
+          "detail": "New Tubular Bell image by Steve Bedford is used on the 2003 album cover — a different physical bell from Trevor Key's original. The sonic character differs slightly."
+        },
+        {
+          "timestamp": "0:08",
+          "section": "Overtone decay",
+          "description": "the bell's natural harmonic decay fills the silence. Eerie and spectral.",
+          "detail": "The 2003 recording captures the overtone ring more precisely — Pro Tools at 24-bit resolution versus the 1973 analogue tape."
+        },
+        {
+          "timestamp": "0:18",
+          "section": "Second bell tone",
+          "description": "a second bell stroke at a different pitch adds a two-note melodic fragment.",
+          "detail": "The pitches of the two strokes are unresolved harmonically — the effect is intentionally spectral rather than melodic."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Final resonance",
+          "description": "the last bell tone fades. A brief silence before Russian.",
+          "detail": "The shortest track on the album — 30 seconds of refined acoustic space before Part One resumes its momentum."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Russian",
+      "duration": "0:44",
+      "energy": "mid",
+      "tags": [
+        "Folk Influence",
+        "Russian Style",
+        "Part One",
+        "Melodic Guitar"
+      ],
+      "role": "Album role: A brief folk-inflected episode drawing on Russian music idioms, one of several national style vignettes in Part One, providing colour before the grand Finale.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Russian folk melody",
+          "description": "guitar melody with a distinctly Slavic modal flavour — ascending-descending contour over a drone-like bass.",
+          "detail": "The modal quality (probable Dorian or Phrygian inflection) distinguishes this from the diatonic passages elsewhere in Part One."
+        },
+        {
+          "timestamp": "0:15",
+          "section": "Rhythmic ostinato",
+          "description": "a rhythmic pattern emerges underneath the melody, driving the folk feel.",
+          "detail": "The combination of folk melody and rhythmic ostinato is consistent with how the original 1973 piece handled its national-style vignettes."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Melodic intensification",
+          "description": "the Russian melody rises in register and dynamic.",
+          "detail": "The brief intensification is a micro-arc — like all the short sections in Part One, it rises and resolves within its own span."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Transition to Finale",
+          "description": "the Russian melody closes and the texture begins its pivot toward the grand Finale.",
+          "detail": "Direct transition — the Finale is the longest and most complex section of Part One and receives no additional preamble."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Finale",
+      "duration": "8:32",
+      "energy": "peak",
+      "tags": [
+        "John Cleese",
+        "Master of Ceremonies",
+        "Grand Climax",
+        "Part One Summit"
+      ],
+      "role": "Album role: The climax and summary of Part One — John Cleese announces each instrument in homage to Vivian Stanshall's 1973 role, the full ensemble builds to a grand orchestral peak, and tubular bells ring out in triumph.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Opening build",
+          "description": "orchestral and guitar textures accumulate in preparation for the Finale's long arc.",
+          "detail": "The opening of the Finale reprises the album's main themes in a denser, more orchestrated arrangement than their original appearances."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Main theme restatement",
+          "description": "the Part One main theme is played in its fullest arrangement — all instruments established by this point contribute.",
+          "detail": "The restatement confirms the Finale's function as synthesis — bringing together all the individually established layers before the naming ceremony."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "John Cleese begins announcements",
+          "description": "Cleese assumes the Master of Ceremonies role — introducing each instrument by name as it enters or is highlighted.",
+          "detail": "Stanshall's 1973 original naming section is one of the most recognisable moments in the album series. Cleese was recorded separately and his delivery is measured rather than deliberately comic."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Instrument-by-instrument announcements",
+          "description": "the full catalogue of instruments is named in sequence: Farfisa organ, Hammond organ, bass guitar, acoustic guitar, electric guitar, glockenspiel, mandolin, and more.",
+          "detail": "The 2003 casting includes Lowrey organ, Farfisa, Hammond, Steinway piano, and Oldfield's arsenal of guitars alongside the traditional instruments. The list is longer and more technically precise than in 1973."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Grand orchestral climax",
+          "description": "all named instruments in simultaneous, maximum-density performance — the peak of the entire album.",
+          "detail": "The climax is the structural payoff for the entire cumulative logic of Tubular Bells — the machine, now complete, operates at full capacity."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Tubular bells prominent",
+          "description": "the tubular bells themselves are foregrounded — the instrument of the album's title rings out clearly at the summit.",
+          "detail": "Steve Bedford's new tubular bell image provides a slightly different sonic character — brighter and more controlled than the original 1973 bell."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Final resolution",
+          "description": "the Finale's energy resolves into a calmer, settled close.",
+          "detail": "Part One ends here. Part Two opens with the polar opposite texture: Harmonics."
+        },
+        {
+          "timestamp": "8:25",
+          "section": "Fade to silence",
+          "description": "the track fades completely — the boundary between Part One and Part Two is silence.",
+          "detail": "The silence is structural punctuation. Part Two will begin in a completely different sonic register."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Harmonics",
+      "duration": "5:12",
+      "energy": "low",
+      "tags": [
+        "Guitar Harmonics",
+        "Drone",
+        "Part Two Opener",
+        "Ambient"
+      ],
+      "role": "Album role: The Part Two opening reset — after the grand climax of Finale, Harmonics drops the energy completely into sustained guitar overtones and near-silence, establishing Part Two's more introspective character.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Guitar harmonics enter",
+          "description": "natural guitar harmonics sustained at a whisper — the first sound of Part Two after the silence.",
+          "detail": "Natural harmonics on the guitar are produced by lightly touching the string at nodal points — the resulting tone is pure, flute-like, and bell-adjacent in character."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Overtone drones build",
+          "description": "additional harmonic voices are layered — drones in different registers begin to accumulate.",
+          "detail": "The technique is similar to how the 1973 Part Two opened — a reset from the complexity of Part One into a space of resonant stillness."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Multi-layered harmonic texture",
+          "description": "four or more harmonic voices sustain simultaneously — a shimmering, complex resonance.",
+          "detail": "The digital clarity of the 2003 recording gives each harmonic layer a precise definition that the analogue tape of 1973 could not achieve."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Resonance at peak",
+          "description": "the shimmer is at its most dense before the gradual retreat begins.",
+          "detail": "Even in low-energy territory, the section has a structural peak — a highest point before the diminuendo."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Gradual diminuendo",
+          "description": "layers begin to drop away one by one.",
+          "detail": "The reverse of the building process — deconstruction mirrors construction."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Transition to Peace",
+          "description": "the last harmonic voice fades into the acoustic guitar of Peace.",
+          "detail": "A smooth textural transition — the gentlest seam in the album."
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "Peace",
+      "duration": "3:30",
+      "energy": "low",
+      "tags": [
+        "Acoustic Guitar",
+        "Accordion",
+        "Pastoral",
+        "Part Two"
+      ],
+      "role": "Album role: The emotional and tonal still-point of Part Two — the album's most serene passage, featuring acoustic guitar and accordion in a pastoral pastoral arrangement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Acoustic guitar theme",
+          "description": "a gentle, fingerpicked acoustic guitar melody — the most song-like melodic writing in the album.",
+          "detail": "Taylor K22 Acoustic or Ovation Adamas — the clean, warm recording delivers the acoustic guitar with exceptional presence."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Accordion enters",
+          "description": "accordion joins softly beneath the guitar — adding a warm, folky lower voice.",
+          "detail": "Oldfield's accordion is listed in the personnel alongside the Farfisa and Hammond — the real instrument rather than a keyboard simulation."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Pastoral layering",
+          "description": "additional instruments join quietly — the texture thickens without disturbing the serenity.",
+          "detail": "The production restraint here is notable — 2003 Oldfield with all his home studio resources chooses sparseness as the most effective texture."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Warmest passage",
+          "description": "the section reaches its most harmonically resolved and emotionally open point.",
+          "detail": "The title is the track's intent: this is the album's genuine moment of rest, earned by Part One's structural complexity and Part Two's opening Harmonics."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Transition to Bagpipe Guitars",
+          "description": "the Peace acoustic texture shifts register — Celtic inflections begin to appear.",
+          "detail": "The transition prepares the ear for the Scottish folk character of Bagpipe Guitars without a hard cut."
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "Bagpipe Guitars",
+      "duration": "3:08",
+      "energy": "mid",
+      "tags": [
+        "Celtic",
+        "Guitar-as-Bagpipes",
+        "Part Two",
+        "Folk"
+      ],
+      "role": "Album role: Celtic folk episode in which electric guitars simulate the drone and melody roles of Scottish Highland pipes — Part Two's most distinctive national-style passage after the Russian section of Part One.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Guitar drone and melody",
+          "description": "electric guitar takes the dual bagpipe role: a sustained lower-string drone and a pentatonic melody above it.",
+          "detail": "The guitar bagpipe simulation is a technique Oldfield had deployed in the 1973 original — the 2003 version delivers the same effect with more precise intonation."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Celtic melody",
+          "description": "the Highland pipe melody emerges clearly — pentatonic scale, characteristic rhythmic snap.",
+          "detail": "The pentatonic scale (missing the 4th and 7th degrees) is common to both Scottish pipe music and the rock guitar idiom — a productive overlap."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Second guitar harmony",
+          "description": "a second guitar joins at a third or sixth above the melody line.",
+          "detail": "Harmonised pipe melody — uncommon in genuine bagpipe performance but normal in folk-rock guitar arrangements."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Full Celtic character",
+          "description": "the bagpipe simulation is at full intensity — the most energetic passage in Part Two before Caveman.",
+          "detail": "Energy: mid — the section drives without the peak-category intensity of Thrash or Caveman."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Transition to Caveman",
+          "description": "the Celtic melody diminishes and the irregular rhythmic texture of the Caveman section begins.",
+          "detail": "The shift from structured folk melody to the comic chaos of Caveman is Part Two's equivalent of the Thrash rupture in Part One."
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "title": "Caveman",
+      "duration": "4:33",
+      "energy": "peak",
+      "tags": [
+        "Vocals",
+        "Piltdown Man",
+        "Comic",
+        "Peak Energy",
+        "Part Two"
+      ],
+      "role": "Album role: The Piltdown Man section renamed — the last instrument recorded in the sessions (the caveman vocals) drives this chaotic, comic climax of Part Two, the equivalent structural rupture to Part One's Thrash.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Caveman vocal begins",
+          "description": "grunting, bestial vocalisations — the \"Piltdown Man\" equivalent used in the 1973 original, re-recorded as the final element of the 2003 sessions.",
+          "detail": "Wikipedia's booklet notes confirm the caveman vocal track was the last element recorded. Sally Oldfield provides background vocal support."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Rhythmic percussion enters",
+          "description": "timpani and heavy percussion reinforce the caveman vocal rhythm.",
+          "detail": "The timpani are listed in Oldfield's percussion instruments for the 2003 recordings — their use in Caveman is one of the most prominent percussion moments on the album."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Multi-voice chorus",
+          "description": "multiple layered caveman vocal voices — a crowd of grunts and bellowing.",
+          "detail": "Overdubbed Oldfield vocals building a tribal chorus — the same technique as the 1973 original, now with Pro Tools overdubbing capability rather than 16-track tape bouncing."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Rhythmic intensity peak",
+          "description": "percussion and voices reach maximum density — the physical, athletic peak of Part Two.",
+          "detail": "The Caveman section recurs in every Tubular Bells recording as the structural wild card — where the album shows its capacity for uninhibited noise."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Comic chaos maximum",
+          "description": "the most absurdist and vocally extreme point of the section.",
+          "detail": "The comic intent is clear — Oldfield has always positioned the Piltdown Man or Caveman section as the comic rupture that precedes the album's final ambient wind-down."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Gradual subsidence",
+          "description": "voices and percussion reduce — the chaos begins to organise itself.",
+          "detail": "The winding-down is proportional: a four-minute section requires a measured exit rather than a hard cut."
+        },
+        {
+          "timestamp": "4:25",
+          "section": "Final grunt and transition",
+          "description": "a last vocal exhalation, then Ambient Guitars begins its long fade-in.",
+          "detail": "The final grunt is a structural full stop — after it, the album enters its purely ambient closing arc."
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "title": "Ambient Guitars",
+      "duration": "5:10",
+      "energy": "low",
+      "tags": [
+        "Ambient",
+        "Guitar Drone",
+        "Part Two",
+        "Penultimate"
+      ],
+      "role": "Album role: The long penultimate exhale — five minutes of long-sustain guitar drones that bring the album's energy to near-zero before the brief, playful coda of The Sailor's Hornpipe.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Long-sustain guitar tones",
+          "description": "electric guitar with heavy reverb and long sustain fades in — a wide ambient texture.",
+          "detail": "TC Electronic M5000 and Lexicon 300 reverb units are among the outboard effects listed — likely contributors to the long reverb tails here."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Drone layer builds",
+          "description": "additional sustained guitar notes at different pitches join, building a static harmonic mass.",
+          "detail": "The ambient guitar approach places this section near the tradition of Brian Eno's ambient compositions — though predating Eno's formal ambient theory by several years in the 1973 original."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Immersive ambient texture",
+          "description": "the full drone is established — long sustains in multiple registers create a hovering, immersive space.",
+          "detail": "The 2003 digital production handles the sustain and reverb more precisely than the analogue original — the tones are stable rather than slowly drifting."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Subtle harmonic shifts",
+          "description": "the drone undergoes gentle harmonic movement — slowly changing the chord implied by the sustained notes.",
+          "detail": "Static ambient texture with minimal harmonic motion — the structural equivalent of a held breath before the album's final flourish."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Gradual diminuendo",
+          "description": "the drone layers begin to thin — the ambient texture starts its final fade.",
+          "detail": "Five minutes is precisely long enough for the section to function as a genuine reset, not just a pause."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Final resonance",
+          "description": "the last sustained tones ring down to near-silence before the playful eruption of The Sailor's Hornpipe.",
+          "detail": "The contrast with the following track is maximal — five minutes of stillness directly preceding a jaunty traditional melody."
+        }
+      ]
+    },
+    {
+      "num": 17,
+      "title": "The Sailor's Hornpipe",
+      "duration": "1:46",
+      "energy": "mid",
+      "tags": [
+        "Traditional Arrangement",
+        "Folk",
+        "Part Two Coda",
+        "Comic Exit"
+      ],
+      "role": "Album role: The album's comedic final flourish — the familiar British traditional melody that closes every Tubular Bells recording, here arranged for guitar in the same role it served in 1973 and in Tubular Bells II.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Traditional melody enters",
+          "description": "the familiar Sailor's Hornpipe melody played on guitar — jaunty, bright, and immediately recognisable.",
+          "detail": "The choice of the Hornpipe as the closing track has been maintained across all Tubular Bells recordings as a signature sign-off. Listed as a traditional arrangement."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Rhythm and accompaniment join",
+          "description": "light rhythmic accompaniment joins the melody — the arrangement grows beyond a single melody line.",
+          "detail": "Even at 1:46, the section receives a full small arrangement rather than a bare single-line performance."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Full arrangement",
+          "description": "the Hornpipe at full energy — lively and unambiguously comic in intent.",
+          "detail": "The Sailor's Hornpipe provides the tonal joke that closes the album — a reminder that Oldfield's seriousness of purpose coexists with a persistent comic sensibility."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Final bars",
+          "description": "the melody moves into its concluding phrases.",
+          "detail": "The closing bars are performed cleanly — no extended outro, no fade."
+        },
+        {
+          "timestamp": "1:42",
+          "section": "Closing cadence",
+          "description": "final chord — the album is complete.",
+          "detail": "A clean ending: the Tubular Bells series concludes with a traditional melody performed on the instrument Oldfield has played throughout his career. All three Tubular Bells albums — 1973, 1992, and 2003 — end with the Hornpipe."
+        }
+      ]
+    }
+  ]
+}

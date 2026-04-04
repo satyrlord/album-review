@@ -93,18 +93,19 @@ test.describe("album index regressions", () => {
     await expect(page.getByRole("link", { name: "SOUNDTRACKS" })).toHaveAttribute("href", /soundtracks\.html$/);
     await expect(page.getByRole("link", { name: "TOP 10" })).toHaveAttribute("href", /top-10\.html$/);
     await expect(page.getByRole("link", { name: "TOP 20" })).toHaveAttribute("href", /top-20\.html$/);
+    await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
     await expect(page.locator(".ix-card")).toHaveCount(totalAlbums);
     await expect(page.locator("#ixCount")).toHaveText(`${totalAlbums} / ${totalAlbums} albums`);
   });
 
-  test("soundtracks page currently shows Tubular Bells only", async ({ page }) => {
+  test("soundtracks page shows Tubular Bells, Cosmos, Hyperborea, 1492, Diablo, and VTMB", async ({ page }) => {
     await gotoSoundtracks(page);
 
     await expectPrimaryNav(page, "SOUNDTRACKS");
-    await expect(page.locator(".ix-card")).toHaveCount(1);
-    await expect(page.locator("#ixCount")).toHaveText("1 / 1 album");
-    await expect(page.locator(".ix-card-title")).toHaveText(["Tubular Bells"]);
-    await expect(page.locator(".ix-card-artist")).toHaveText(["Mike Oldfield"]);
+    await expect(page.locator(".ix-card")).toHaveCount(6);
+    await expect(page.locator("#ixCount")).toHaveText("6 / 6 albums");
+    await expect(page.locator(".ix-card-title")).toHaveText(["Tubular Bells", "Cosmos", "Hyperborea", "1492: Conquest of Paradise", "Diablo + Hellfire", "Vampire: The Masquerade - Bloodlines"]);
+    await expect(page.locator(".ix-card-artist")).toHaveText(["Mike Oldfield", "Vangelis", "Tangerine Dream", "Vangelis", "Matt Uelmen", "Rik Schaffer"]);
   });
 
   test("renders a shared footer with a clickable version badge", async ({ page }) => {
@@ -163,7 +164,8 @@ test.describe("album index regressions", () => {
 
     expect(rendered.navHtml).not.toContain('aria-current="page"');
     expect(rendered.footerHtml).not.toContain("site-footer-context");
-    expect(rendered.footerHtml).not.toContain("site-footer-link");
+    expect(rendered.footerHtml).toContain("site-footer-credits");
+    expect(rendered.footerHtml).toContain('href="credits.html"');
     expect(rendered.footerWithActionHtml).toContain("site-footer-context");
     expect(rendered.footerWithActionHtml).toContain('href="soundtracks.html"');
     expect(rendered.footerWithActionHtml).toContain("Jump");
@@ -375,6 +377,7 @@ test.describe("album index regressions", () => {
     await expect(page.getByRole("link", { name: "SOUNDTRACKS" })).toHaveAttribute("href", /soundtracks\.html$/);
     await expect(page.getByRole("link", { name: "TOP 10" })).toHaveAttribute("href", /top-10\.html$/);
     await expect(page.getByRole("link", { name: "TOP 20" })).toHaveAttribute("href", /top-20\.html$/);
+    await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
     await expect(page.locator(".hero-cover")).toBeVisible();
     await expect(page.locator(".hero-cover")).toHaveAttribute(
       "src",
@@ -692,5 +695,38 @@ test.describe("album index regressions", () => {
 
     await expect(page.locator(".page-state-title")).toHaveText("Could not load ranking data.");
     await expect(page.locator(".site-footer")).toContainText("Top 20 by Decade");
+  });
+
+  test("credits page renders all sections with nav and footer", async ({ page }) => {
+    await page.goto("/credits.html");
+
+    await expect(page.getByRole("heading", { name: /Credits/i })).toBeVisible();
+    await expectPrimaryNav(page);
+
+    await expect(page.getByText("Musical Sources")).toBeVisible();
+    await expect(page.getByText("Cover Art")).toBeVisible();
+    await expect(page.getByText("Research Sources")).toBeVisible();
+    await expect(page.getByText("Technology")).toBeVisible();
+
+    await expect(page.locator(".credits-section")).toHaveCount(4);
+    await expect(page.locator(".credits-entry")).not.toHaveCount(0);
+    await expect(page.locator(".credits-link").first()).toHaveAttribute("target", "_blank");
+    await expect(page.locator(".credits-link").first()).toHaveAttribute("rel", "noopener noreferrer");
+    await expect(page.locator(".site-footer")).toContainText("Credits & Sources");
+  });
+
+  test("credits page exits cleanly when the mount root is missing", async ({ page }) => {
+    await page.addInitScript(() => {
+      const originalGetElementById = Document.prototype.getElementById;
+      Document.prototype.getElementById = function(id: string): HTMLElement | null {
+        if (id === "creditsRoot") return null;
+        return originalGetElementById.call(this, id);
+      };
+    });
+
+    await page.goto("/credits.html");
+
+    await expect(page.locator("#creditsRoot")).toHaveCount(1);
+    await expect(page.locator(".credits-section")).toHaveCount(0);
   });
 });

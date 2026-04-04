@@ -12,7 +12,7 @@ interface SiteBuildMeta {
   generatedAt: string;
 }
 
-const COVERAGE_SOURCE_FILES = ["src/site.ts", "src/index.ts", "src/album.ts", "src/rankings.ts", "src/segment.ts"] as const;
+const COVERAGE_SOURCE_FILES = ["src/site.ts", "src/index.ts", "src/album.ts", "src/rankings.ts", "src/segment.ts", "src/credits.ts"] as const;
 
 interface RunGitOptions {
   logFailure?: boolean;
@@ -102,6 +102,7 @@ export default defineConfig({
         album: resolve(process.cwd(), "album.html"),
         top10: resolve(process.cwd(), "top-10.html"),
         top20: resolve(process.cwd(), "top-20.html"),
+        credits: resolve(process.cwd(), "credits.html"),
       },
     },
   },

@@ -29,7 +29,7 @@ export interface SegmentRow {
 }
 
 /** Names of the built-in color palettes. */
-export type BuiltInPalette = 'blue' | 'warm' | 'cool' | 'mono';
+export type BuiltInPalette = 'blue' | 'warm' | 'cool' | 'mono' | 'vivid';
 
 /** Configuration for `buildSegmentChart`. */
 export interface SegmentChartOptions {
@@ -59,6 +59,12 @@ const PALETTES: Record<BuiltInPalette, string[]> = {
   mono: [
     '#f5f5f5', '#e5e5e5', '#d4d4d4', '#a3a3a3', '#737373',
     '#525252', '#404040', '#303030', '#202020', '#101010',
+  ],
+  vivid: [
+    '#a78bfa', '#f9a8d4', '#5eead4', '#fba67b', '#93c5fd',
+    '#fde047', '#86efac', '#d8b4fe', '#7dd3fc', '#fca5a5',
+    '#6ee7b7', '#fdba74', '#c4b5fd', '#f0abfc', '#67e8f9',
+    '#bef264', '#fcd34d', '#a5f3fc', '#fbcfe8', '#bbf7d0',
   ],
 };
 

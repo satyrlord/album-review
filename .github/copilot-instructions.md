@@ -37,11 +37,15 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 
 1. Create a new album JSON directly, or use the scaffold with `npx tsx scripts/add-album.ts "Artist Name" "Album Title" YEAR --genre "Genre / Subgenre"`.
 
+When a request covers multiple albums, split the work by album and run the album-analysis workflow in parallel using multiple sub-agents whenever feasible. Assign one sub-agent per album, then reconcile the outputs in the main agent before the final build and validation pass.
+
 2. Ensure the JSON includes the album metadata, overview, track analysis, optional `coverUrl`, and `isSoundtrack: true` when the album should appear on the Soundtracks page.
 
-3. Run the quality gate with `npm run build` to regenerate `data/index.json` and the production `dist/` build.
+3. All albums shown on the Home page must also be present on either the Top 10 page or the Top 20 page.
 
-4. Verify locally with `npm run serve`.
+4. Run the quality gate with `npm run build` to regenerate `data/index.json` and the production `dist/` build.
+
+5. Verify locally with `npm run serve`.
 
 - `http://127.0.0.1:3000/index.html`
 - `http://127.0.0.1:3000/album.html?id=<id>`

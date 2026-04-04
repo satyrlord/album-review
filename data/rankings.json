@@ -163,12 +163,12 @@
   },
   {
     "rank": 19,
-    "artist": "Ashra",
-    "title": "New Age of Earth",
-    "year": 1976,
+    "artist": "Gustav Holst",
+    "title": "The Planets",
+    "year": 1916,
     "decade": "Early Pioneers",
-    "genre": "Berlin School / Electronic",
-    "note": "Kosmische guitar-and-synth warmth shaped into absorbing long-form journeys."
+    "genre": "Orchestral / Classical",
+    "note": "Seven-movement orchestral suite whose astrological tone-painting shaped six decades of film and electronic composition."
   },
   {
     "rank": 20,
@@ -487,24 +487,6 @@
   },
   {
     "rank": 15,
-    "artist": "Underworld",
-    "title": "Second Toughest in the Infants",
-    "year": 1996,
-    "decade": "1990s",
-    "genre": "Techno / Progressive",
-    "note": "Expansive techno with literary vocal streams and restless structural ambition."
-  },
-  {
-    "rank": 16,
-    "artist": "Air",
-    "title": "Moon Safari",
-    "year": 1998,
-    "decade": "1990s",
-    "genre": "Downtempo / Electronic",
-    "note": "Dreamy French electronic pop with analogue warmth and effortless melodic charm."
-  },
-  {
-    "rank": 17,
     "artist": "Vangelis",
     "title": "Voices",
     "year": 1995,
@@ -513,7 +495,7 @@
     "note": "Vocal-electronic fusion at its most atmospheric and thematically unified."
   },
   {
-    "rank": 18,
+    "rank": 16,
     "artist": "Jean-Michel Jarre",
     "title": "Oxygène 7–13",
     "year": 1997,
@@ -522,7 +504,7 @@
     "note": "A faithful sequel that revisits the original palette with matured production."
   },
   {
-    "rank": 19,
+    "rank": 17,
     "artist": "Mike Oldfield",
     "title": "Tubular Bells II",
     "year": 1992,
@@ -531,13 +513,31 @@
     "note": "A studio-polished reprise that reinterprets the original with orchestral scale."
   },
   {
-    "rank": 20,
+    "rank": 18,
     "artist": "Mike Oldfield",
     "title": "Tubular Bells III",
     "year": 1998,
     "decade": "1990s",
     "genre": "New Age / Electronic",
     "note": "A dance-era reinvention that stretches the Bells concept into new territory."
+  },
+  {
+    "rank": 19,
+    "artist": "Vangelis",
+    "title": "Oceanic",
+    "year": 1996,
+    "decade": "1990s",
+    "genre": "Electronic / Ambient",
+    "note": "An oceanic-themed ambient concept album built from layered synth and wordless soprano."
+  },
+  {
+    "rank": 20,
+    "artist": "Vangelis",
+    "title": "El Greco",
+    "year": 1998,
+    "decade": "1990s",
+    "genre": "Electronic / Classical",
+    "note": "A late-period Vangelis concept record evoking the life and palette of the Renaissance painter."
   },
   {
     "rank": 1,
@@ -712,12 +712,12 @@
   },
   {
     "rank": 20,
-    "artist": "Murcof",
-    "title": "Martes",
-    "year": 2002,
+    "artist": "Mike Oldfield",
+    "title": "Tubular Bells 2003",
+    "year": 2003,
     "decade": "2000s",
-    "genre": "Ambient / Glitch",
-    "note": "Minimal electronic tension built from classical samples and spectral silence."
+    "genre": "Progressive Rock / New Age",
+    "note": "A meticulous 30th-anniversary digital re-recording restoring every detail Oldfield could not fix in 1973."
   },
   {
     "rank": 1,
@@ -883,20 +883,20 @@
   },
   {
     "rank": 19,
-    "artist": "Ryuichi Sakamoto",
-    "title": "async",
-    "year": 2017,
+    "artist": "Jean-Michel Jarre",
+    "title": "Equinoxe Infinity",
+    "year": 2018,
     "decade": "Present Day",
-    "genre": "Ambient / Experimental",
-    "note": "Late-period minimalism merging field recordings, piano, and digital decay."
+    "genre": "Electronic / Ambient",
+    "note": "A forty-year sequel built on the same analogue instruments, arriving as Jarre's 20th studio album."
   },
   {
     "rank": 20,
-    "artist": "Oneohtrix Point Never",
-    "title": "Age Of",
-    "year": 2018,
+    "artist": "Jean-Michel Jarre",
+    "title": "Oxygène Trilogy",
+    "year": 2016,
     "decade": "Present Day",
-    "genre": "Experimental Electronic",
-    "note": "Baroque electronic collage blending harpsichord, noise, and fragmented pop."
+    "genre": "Electronic / Ambient",
+    "note": "Box set of all three Oxygène volumes, forming a twenty-part arc across forty years of synthesis."
   }
 ]

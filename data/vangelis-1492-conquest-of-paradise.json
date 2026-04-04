@@ -1,0 +1,574 @@
+{
+  "id": "vangelis-1492-conquest-of-paradise",
+  "artist": "Vangelis",
+  "title": "1492: Conquest of Paradise",
+  "year": 1992,
+  "label": "Atlantic/WEA",
+  "producer": "Vangelis",
+  "genre": "Electronic / Soundtrack",
+  "runtime": "54:44",
+  "isSoundtrack": true,
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a7/1492_Conquest_of_Paradise.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/79AO2MbfQQICI2H3oCYFPh?si=qoDAcxbcRlKZIszPtFLhMw",
+  "youtubeUrl": "https://youtu.be/vZILKYV7MzU",
+  "overview": "1492: Conquest of Paradise (1992) is Vangelis's score to Ridley Scott's epic historical film depicting Christopher Columbus's voyages to the New World, their second collaboration after Blade Runner (1982). Recorded at Vangelis's Epsilon Studios in London with the English Chamber Choir under Guy Protheroe, flamenco guitarists, violin, mandolin, and flutes, the soundtrack fuses synthesised orchestral textures with Iberian and choral elements across twelve cues totalling 54 minutes, from the pseudo-Latin hymnal of the title track to the 13-minute closing meditation Pinta, Nina, Santa Maria (Into Eternity). The album was nominated for Best Original Score at the 50th Golden Globe Awards (1993) and became a delayed commercial phenomenon in 1995 when German boxer Henry Maske adopted Conquest of Paradise as his ring entrance theme, driving 1.3 million copies sold in Germany alone, chart-topping positions in Austria, the Netherlands, Hungary, Norway, Portugal, and Switzerland, and gold or platinum certification in over 17 countries.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Opening",
+      "duration": "1:21",
+      "energy": "low",
+      "tags": [
+        "Atmospheric",
+        "Prelude",
+        "Synthesiser",
+        "Cinematic",
+        "Brief"
+      ],
+      "role": "Atmospheric prelude establishing the film's sonic world; a brief synthesiser invocation that sets the oceanic and spiritual register before the title theme arrives.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone",
+          "description": "Low sustained synthesiser chord; vast and indeterminate, evoking open ocean and unknown horizons."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Melodic Fragment",
+          "description": "Brief melodic gesture surfaces above the drone; a thematic preview of the material ahead."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Harmonic Swell",
+          "description": "Synthesiser layers accumulate gently; the sonic palette broadens without resolving."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Transition",
+          "description": "Texture thins and bridges directly into the opening of Conquest of Paradise."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Conquest of Paradise",
+      "duration": "4:47",
+      "energy": "peak",
+      "tags": [
+        "Title Theme",
+        "Choral",
+        "Pseudo-Latin",
+        "Iconic",
+        "English Chamber Choir"
+      ],
+      "role": "Title theme and the album's signature piece; the pseudo-Latin choral anthem became one of the most commercially successful single cues in film soundtrack history, reaching number one in six countries and selling 1.5 million copies in Germany alone.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Synthesiser pad with faint ethnic percussion; the tonal centre established in warm, open register."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Choir Entry",
+          "description": "English Chamber Choir enters with the pseudo-Latin text; the melody is immediately memorable and processional in character."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Orchestral Build",
+          "description": "Synthesised strings and brass swells accumulate beneath the choir; harmonic density rises toward the first chorus."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "First Chorus",
+          "description": "Full choral and orchestral-synth forces converge; the title phrase at its most emphatic."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Instrumental Bridge",
+          "description": "Choir withdraws; synthesiser melody carries the theme forward with ethnic percussion emphasis."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Final Chorus",
+          "description": "Choir returns at full density for the final statement; the dynamic apex of the entire soundtrack."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Outro",
+          "description": "Gradual diminuendo; choral and orchestral elements recede into reverberant silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Monastery of La Rabida",
+      "duration": "3:39",
+      "energy": "low",
+      "tags": [
+        "Latin Hymn",
+        "De Profundis",
+        "Choral",
+        "Sacred",
+        "Contemplative"
+      ],
+      "role": "Sacred choral setting of the Latin hymn De Profundis; scores Columbus's visit to the Franciscan monastery at La Rabida where he first found ecclesiastical support for his westward voyage.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Organ Pad",
+          "description": "Sustained synthesiser organ tone; ecclesiastical register evoking stone architecture and monastic stillness."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Choir Entry",
+          "description": "English Chamber Choir intones De Profundis; reverent, measured vocal delivery in Latin."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Harmonic Development",
+          "description": "Synthesiser strings layer beneath the choir; the sacred and electronic dimensions merge."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Mid-Section",
+          "description": "Choral texture at its most complex; multiple vocal parts in polyphonic interplay."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Recession",
+          "description": "Choir thins to unison; the texture returns to monastic simplicity."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Outro",
+          "description": "Final sustained chord with long reverb; the hymn dissolves into architectural silence."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "City of Isabel",
+      "duration": "2:16",
+      "energy": "mid",
+      "tags": [
+        "Regal",
+        "Flamenco",
+        "Spanish Court",
+        "Brief",
+        "Cinematic"
+      ],
+      "role": "Brief courtly cue depicting Columbus's audience with Queen Isabella I; the introduction of flamenco guitar textures anchors the score's Iberian identity alongside Vangelis's synthesiser orchestration.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Flamenco guitar arpeggios open with synthesiser pad support; Spanish tonal identity established immediately."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Orchestral Entry",
+          "description": "Synthesised strings enter beneath the guitar; regal character with measured forward motion."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Theme",
+          "description": "Brief melodic statement blending guitar and synthesiser; the court's grandeur rendered in miniature."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Fade",
+          "description": "Guitar and synth layers recede; the cue concludes without dramatic resolution."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Light and Shadow",
+      "duration": "3:46",
+      "energy": "mid",
+      "tags": [
+        "Pseudo-Latin",
+        "Choral",
+        "Atmospheric",
+        "Duality",
+        "Thematic"
+      ],
+      "role": "Choral-synthesiser meditation on the duality of exploration — discovery and destruction, hope and hubris — using the same pseudo-Latin invented language as the title track to maintain thematic continuity.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric synthesiser texture; two contrasting tonal registers — bright and dark — established simultaneously."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Choir Entry",
+          "description": "English Chamber Choir in pseudo-Latin; the vocal quality more subdued than Conquest of Paradise, reflecting internal conflict."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Harmonic Deepening",
+          "description": "Synthesiser layers add minor-key harmonic weight beneath the choir; the shadow element intensifies."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Climax",
+          "description": "Full choral and synth density; the light-shadow duality at its most harmonically complex."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Recession",
+          "description": "Texture thins; the shadow element dominates as the choir withdraws."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Outro",
+          "description": "Sustained minor-key pad fades into silence."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Deliverance",
+      "duration": "3:28",
+      "energy": "high",
+      "tags": [
+        "Dies Irae",
+        "Latin Hymn",
+        "Choral",
+        "Dramatic",
+        "Liturgical"
+      ],
+      "role": "The score's most liturgically dramatic cue; the English Chamber Choir performs the Dies Irae sequence, scoring scenes of judgment, divine reckoning, and the moral consequences of Columbus's enterprise.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Percussive Intro",
+          "description": "Sharp rhythmic attack with synthesiser percussion; urgency established from the outset."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Dies Irae",
+          "description": "Choir enters with the Dies Irae text; solemn, measured, and ominous — the medieval hymn of divine wrath."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Orchestral Surge",
+          "description": "Synthesised orchestral layers build dramatically beneath the choir; the texture approaches full density."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Climax",
+          "description": "Full choral-orchestral convergence; the most dramatically intense sacred passage in the score."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Recession",
+          "description": "Dynamic withdrawal; the Dies Irae text fragments as the choir's cohesion dissolves."
+        },
+        {
+          "timestamp": "3:05",
+          "section": "Outro",
+          "description": "Sustained low pad with residual choral undertone; judgment rendered, silence approaching."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "West Across the Ocean Sea",
+      "duration": "2:53",
+      "energy": "mid",
+      "tags": [
+        "Oceanic",
+        "Synthesiser Solo",
+        "Atmospheric",
+        "Voyage",
+        "Contemplative"
+      ],
+      "role": "Atmospheric synthesiser vignette scoring the transatlantic crossing itself; Vangelis performs the piece entirely alone using piano, string, and harp patches to evoke the vast emptiness and slow temporal passage of weeks at sea.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Harp-patch arpeggios over sustained string pad; the open ocean rendered as harmonic vastness."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Piano Melody",
+          "description": "Electric piano enters with a contemplative melodic line; solitary character reflecting the isolation of the crossing."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "String Build",
+          "description": "Synthesised strings accumulate beneath the piano; the texture broadens as the voyage progresses."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Climactic Swell",
+          "description": "Full harmonic density; the most expansive moment of the piece before the journey's conclusion."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Outro",
+          "description": "Piano and strings recede; long reverb decay evokes distant horizons."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Eternity",
+      "duration": "1:59",
+      "energy": "low",
+      "tags": [
+        "Ambient",
+        "Interlude",
+        "Synthesiser",
+        "Atmospheric",
+        "Brief"
+      ],
+      "role": "Brief ambient interlude providing a moment of stillness between the voyage's arrival and the dramatic events of colonisation; the shortest substantive cue on the album, functioning as a temporal hinge.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone",
+          "description": "Sustained synthesiser pad; near-static tonal field with no rhythmic element."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Melodic Fragment",
+          "description": "Brief melodic gesture surfaces; tentative and unresolved, suggesting possibility without certainty."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Harmonic Swell",
+          "description": "Gentle density increase; the texture blooms momentarily before receding."
+        },
+        {
+          "timestamp": "1:35",
+          "section": "Fade",
+          "description": "All elements withdraw; the piece dissolves into silence."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Hispanola",
+      "duration": "4:56",
+      "energy": "high",
+      "tags": [
+        "Ethnic Percussion",
+        "Flamenco",
+        "Dramatic",
+        "New World",
+        "Extended"
+      ],
+      "role": "The score's primary dramatic cue for the New World sequences; Ridley Scott reportedly preferred this piece over the title track for setting the film's tone, its fusion of ethnic percussion, flamenco guitar, and synthesiser orchestration depicting the collision of European and indigenous worlds.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Percussion Intro",
+          "description": "Ethnic percussion patterns open without synthesiser support; rhythmic urgency from the outset."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Flamenco Guitar",
+          "description": "Flamenco guitar enters with rapid arpeggios; the Spanish character of the colonisers rendered in instrumental timbre."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Synth Orchestration",
+          "description": "Synthesised strings and brass layer beneath guitar and percussion; the full orchestral-ethnic texture established."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Climactic Build",
+          "description": "All elements intensify; rhythmic density and harmonic weight increase toward the dramatic peak."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Peak",
+          "description": "Full convergence of percussion, guitar, and synthesiser forces; the most rhythmically aggressive moment on the album."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Recession",
+          "description": "Percussion thins; guitar sustains alone as orchestral layers withdraw."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Final guitar phrase and sustained pad; the New World cue dissolves into aftermath."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Moxica and the Horse",
+      "duration": "7:06",
+      "energy": "peak",
+      "tags": [
+        "Dramatic",
+        "Villain Theme",
+        "Extended",
+        "Percussive",
+        "Conflict"
+      ],
+      "role": "Extended dramatic centrepiece scoring the antagonist Moxica's descent into violence and the resulting conflict between colonisers and indigenous peoples; the longest narrative cue on the album, its seven-minute arc traces the full trajectory from simmering tension to open warfare.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Tension Intro",
+          "description": "Low synthesiser drone with sparse percussive accents; menacing character established through harmonic ambiguity."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Melodic Motif",
+          "description": "Dark melodic fragment surfaces; angular and dissonant, functioning as Moxica's thematic identity."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Rhythmic Build",
+          "description": "Percussion intensifies; the conflict between Spanish factions rendered in escalating rhythmic density."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Ethnic Element",
+          "description": "Indigenous-influenced percussion patterns enter; the collision of two worlds expressed rhythmically."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Orchestral Surge",
+          "description": "Full synthesiser orchestration joins the percussion; harmonic weight reaches its most dramatic."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Battle Climax",
+          "description": "Peak density; all percussive, orchestral, and ethnic elements simultaneously active at maximum intensity."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Aftermath",
+          "description": "Percussion fragments; the orchestral texture collapses into sparse, wounded gestures."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Outro",
+          "description": "Sustained low pad with distant choral undertone; the violence subsides into uneasy stillness."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Twenty Eighth Parallel",
+      "duration": "5:14",
+      "energy": "mid",
+      "tags": [
+        "Atmospheric",
+        "Synthesiser Solo",
+        "Oceanic",
+        "Reflective",
+        "Navigation"
+      ],
+      "role": "Atmospheric synthesiser piece named after the latitude of the Canary Islands, the expedition's departure point; entirely performed by Vangelis using piano and string patches, its contemplative character provides reflective space after the conflict of the preceding cues.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained synthesiser string pad; oceanic vastness re-established after the preceding dramatic density."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Piano Melody",
+          "description": "Electric piano enters with the principal melodic line; reflective, measured, and solitary."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Harmonic Build",
+          "description": "String layers accumulate beneath the piano; the texture broadens into orchestral warmth."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Development",
+          "description": "Melodic variation and harmonic enrichment; the piece's central emotional weight."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Climax",
+          "description": "Full harmonic density; piano and strings at their most expansive convergence."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Recession",
+          "description": "Layers withdraw progressively; the texture returns to oceanic simplicity."
+        },
+        {
+          "timestamp": "4:50",
+          "section": "Outro",
+          "description": "Final piano note with long string decay; navigational contemplation resolves into open space."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Pinta, Nina, Santa Maria (Into Eternity)",
+      "duration": "13:19",
+      "energy": "mid",
+      "tags": [
+        "Extended",
+        "Meditative",
+        "Closing Suite",
+        "Three Ships",
+        "Atmospheric"
+      ],
+      "role": "Extended closing meditation named after Columbus's three ships; the 13-minute suite functions as a comprehensive recapitulation and valediction, synthesising the score's principal thematic material into a single sustained arc that carries the narrative from historical event into timeless reflection.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric synthesiser pad; open, vast harmonic register establishing the meditative frame."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "First Theme",
+          "description": "Piano melody enters; a distilled reference to the Conquest of Paradise theme, stripped of choral grandeur."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Harmonic Development",
+          "description": "String layers build gradually beneath the piano; the texture acquires orchestral depth without dramatic intensity."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Choral Echo",
+          "description": "Distant, faint choral texture surfaces briefly; a memory of the title theme's full choral statement."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Second Theme",
+          "description": "New melodic material emerges; more contemplative and inward-looking than the opening references."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Climax",
+          "description": "The suite's emotional peak; full synthesiser orchestration with piano melody at its most expansive."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Dissolution",
+          "description": "Orchestral density begins to dissipate; layers withdraw in long diminuendo."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Eternity Section",
+          "description": "Near-ambient texture; sparse tonal remnants of the melodic material sustain in reverberant space."
+        },
+        {
+          "timestamp": "12:30",
+          "section": "Outro",
+          "description": "Final sustained chord dissolves into silence; the three ships pass into eternity."
+        }
+      ]
+    }
+  ]
+}

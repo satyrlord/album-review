@@ -5,7 +5,8 @@
     "src/index.ts",
     "src/album.ts",
     "src/rankings.ts",
-    "src/segment.ts"
+    "src/segment.ts",
+    "src/credits.ts"
   ],
   "exclude": [
     "dist/**",

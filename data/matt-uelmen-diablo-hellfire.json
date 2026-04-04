@@ -1,0 +1,401 @@
+{
+  "id": "matt-uelmen-diablo-hellfire",
+  "artist": "Matt Uelmen",
+  "title": "Diablo + Hellfire",
+  "year": 1997,
+  "label": "Blizzard Entertainment / Sierra On-Line",
+  "producer": "Matt Uelmen",
+  "genre": "Dark Ambient / Soundtrack",
+  "runtime": "33:00",
+  "isSoundtrack": true,
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/3/3a/Diablo_Coverart.png",
+  "youtubeUrl": "https://www.youtube.com/watch?v=VEx4bItKqjE",
+  "overview": "Composed by Matt Uelmen at Blizzard North's San Mateo studio between 1995 and 1997, the Diablo and Hellfire soundtracks span nine cues totalling 33 minutes that accompany the player's descent from the sunlit village of Tristram through four tiers of increasingly hostile dungeon into Hell itself, followed by two expansion areas added by Synergistic Software. Uelmen's primary instruments are 12-string acoustic guitar, electric guitar, flute, keyboards, and synthesisers processed through heavy reverb and tape delay to produce a claustrophobic dark ambient palette punctuated by tribal percussion and industrial distortion. Distributed as Red Book CD audio on the game discs by Blizzard Entertainment (Diablo, January 1997) and Sierra On-Line (Hellfire, November 1997), the soundtrack anchored a game that sold over 2.5 million copies worldwide, won Game of the Year from GameSpot and Computer Gaming World, and received a 94/100 Metacritic aggregate; Uelmen's audio work across the Diablo series earned the inaugural IGDA Excellence in Audio award in 2001.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Intro",
+      "duration": "1:32",
+      "energy": "low",
+      "tags": ["Cinematic", "Dark Ambient", "Drone", "Prelude"],
+      "role": "Album role: brief cinematic prelude establishing the demonic mythos and medieval dread of the Diablo universe through sustained low drones and distant processed textures.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone",
+          "description": "Deep sustained low-frequency drone emerges; wind-like textures sweep across the stereo field."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Choral Fragment",
+          "description": "Distant, processed vocal-like tones surface, evoking ecclesiastical dread."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Textural Build",
+          "description": "Additional layers of metallic resonance and low percussion rumble accumulate beneath the drone."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Fade",
+          "description": "All layers dissipate into silence, bridging to the town theme."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Tristram",
+      "duration": "4:49",
+      "energy": "mid",
+      "tags": ["Acoustic Guitar", "Melodic", "Folk", "Melancholic", "Iconic"],
+      "role": "Album role: the emotional anchor of the entire soundtrack; a warm, melancholic 12-string guitar theme that provides the sole moment of safety and humanity between descents into the labyrinth.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Guitar Intro",
+          "description": "Solo 12-string acoustic guitar enters with the iconic descending melody in a minor key; fingerpicked arpeggios establish the harmonic foundation."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Melodic Statement",
+          "description": "Main theme fully stated; a second guitar voice adds counterpoint beneath the melody."
+        },
+        {
+          "timestamp": "1:35",
+          "section": "Variation",
+          "description": "The main theme returns with subtle variations; a lighter, mandolin-like texture appears in the upper register."
+        },
+        {
+          "timestamp": "2:25",
+          "section": "Development",
+          "description": "Expanded harmonic territory; the melodic line becomes more ornamental with added passing tones and displaced accents."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Climax",
+          "description": "Fuller strumming pattern intensifies the texture while maintaining the contemplative mood."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Decline",
+          "description": "Energy gradually recedes; the melodic line simplifies back toward the opening pattern."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Final notes decay naturally into ambient silence, ready for the dungeon descent."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Dungeon",
+      "duration": "4:25",
+      "energy": "mid",
+      "tags": ["Dark Ambient", "Reversed Guitar", "Atmospheric", "Tension"],
+      "role": "Album role: first descent cue covering the Cathedral levels; transitioning from the safety of Tristram into unsettling dissonance and reversed guitar textures that signal the dungeon's corrupting influence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ambient Bed",
+          "description": "Low drone establishes a cavernous reverberant space; distant metallic resonance suggests stone corridors."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Reversed Guitar",
+          "description": "Processed reversed guitar swells emerge, creating an otherworldly disoriented quality."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Percussive Element",
+          "description": "Sparse, muffled percussion enters with an irregular rhythm suggesting dripping water or distant footsteps."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Tonal Shift",
+          "description": "A new harmonic layer introduces dissonant intervals; the atmosphere darkens perceptibly."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Texture Peak",
+          "description": "Multiple reversed and processed guitar layers overlap, producing maximum textural density for this cue."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Decay",
+          "description": "Layers gradually thin; the drone returns to its solitary state."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Outro",
+          "description": "Final sustained tone fades into silence."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Catacombs",
+      "duration": "5:50",
+      "energy": "mid",
+      "tags": ["Dark Ambient", "Industrial", "Metallic", "Oppressive"],
+      "role": "Album role: deeper descent into the labyrinth; the catacombs cue intensifies the industrial textures and introduces metallic percussion elements that evoke bone-lined corridors and ancient tombs.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone Entry",
+          "description": "Deep, resonant low-frequency drone; more oppressive than the Cathedral cue, with added sub-bass rumble."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Metallic Clanging",
+          "description": "Irregular metallic percussion enters, processed to sound like chains or tools striking stone."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Guitar Stab",
+          "description": "Brief, distorted electric guitar stab cuts through the ambience; a momentary shock element."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Industrial Texture",
+          "description": "Grinding, machine-like textures layer into the drone; a slow rhythmic pulse emerges from the noise floor."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Harmonic Shift",
+          "description": "The tonal centre shifts downward; new dissonant harmonics create a sense of deeper descent."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Percussive Intensification",
+          "description": "Metallic percussion becomes more insistent and rhythmically defined."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Thinning",
+          "description": "Layers strip back to the core drone; the industrial textures recede into low-frequency rumble."
+        },
+        {
+          "timestamp": "5:35",
+          "section": "Fade",
+          "description": "The cue dissolves into sub-bass decay and silence."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Caves",
+      "duration": "5:00",
+      "energy": "high",
+      "tags": ["Tribal", "Percussive", "Subterranean", "Echo"],
+      "role": "Album role: third-tier descent cue representing the natural cave systems; tribal percussion and echo-heavy processing create a primal, subterranean atmosphere marking the transition from man-made structures to raw earth.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Subterranean Ambience",
+          "description": "Deep, wet-sounding reverb establishes the cave environment; water-like dripping sounds scattered across the stereo field."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Tribal Percussion",
+          "description": "Hand-drum-like percussion enters with an irregular tribal rhythm; heavy echo processing gives each strike a cavernous decay."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Guitar Texture",
+          "description": "Heavily processed guitar tones weave through the percussive pattern; organic and dissonant."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Rhythmic Build",
+          "description": "The percussion intensifies; additional hand-drum layers create polyrhythmic density."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Melodic Fragment",
+          "description": "A brief, eerie flute-like melodic line surfaces above the percussion; quickly absorbed back into the texture."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Peak",
+          "description": "Maximum percussive and textural density; the most rhythmically active section of the cue."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Deconstruction",
+          "description": "Percussion fragments; the pattern breaks down into isolated strikes with elongated reverb tails."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Outro",
+          "description": "Returns to the ambient cave-drip soundscape from the opening."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Hell",
+      "duration": "4:14",
+      "energy": "peak",
+      "tags": ["Distorted Guitar", "Aggressive", "Demonic", "Climactic"],
+      "role": "Album role: climactic descent cue for the deepest dungeon levels; maximum aggression achieved through distorted guitar, demonic vocal textures, and relentless industrial percussion, representing the direct approach to Diablo's lair.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Impact Entry",
+          "description": "Heavy, distorted guitar chord strikes; immediate aggression establishing the infernal register."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Demonic Texture",
+          "description": "Processed vocal-like growling textures and low screams layer beneath the guitar; inhuman and threatening."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Industrial Rhythm",
+          "description": "Aggressive percussion pattern emerges; industrial and relentless, driving the intensity forward."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Guitar Riff",
+          "description": "A grinding, repetitive guitar riff takes centre stage; heavily distorted and down-tuned."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Maximalist Layer",
+          "description": "Guitar, percussion, and demonic textures overlap at full intensity; the textural apex of the base game."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Breakdown",
+          "description": "Brief textural thinning before the final assault; dissonant harmonics sustain beneath the silence."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Final Surge",
+          "description": "Last wave of maximum intensity combining all elements for the climactic close."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Decay",
+          "description": "Abrupt energy drop; sustained distortion fades into ominous silence."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Hellfire Intro",
+      "duration": "0:36",
+      "energy": "low",
+      "tags": ["Cinematic", "Brief", "Transition", "Dark"],
+      "role": "Album role: brief cinematic bridge marking the transition from the base game into the Hellfire expansion's Na-Krul storyline.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Impact",
+          "description": "Sharp percussive impact with reverb; immediately establishes the expansion's darker tone."
+        },
+        {
+          "timestamp": "0:10",
+          "section": "Drone",
+          "description": "Low sustained drone with higher-register dissonant harmonics layered above."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Crescendo",
+          "description": "Brief swell of layered textures building tension toward the new dungeon areas."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Cut",
+          "description": "Abrupt termination; silence signals the new dungeon awaiting exploration."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Hive",
+      "duration": "3:58",
+      "energy": "mid",
+      "tags": ["Organic", "Insectoid", "Dark Ambient", "Textural"],
+      "role": "Album role: first expansion dungeon cue representing the insectoid Nest; organic buzzing textures and skittering percussion differentiate the expansion's sonic palette from the base game's stone-and-metal environments.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Buzzing Ambience",
+          "description": "Low-frequency buzzing and chittering sounds establish the insect-hive environment."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Percussive Skitter",
+          "description": "Light, rapid percussion imitating the movement of insects across organic surfaces."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Harmonic Layer",
+          "description": "A sustained, dissonant drone layer adds depth beneath the organic textures."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Intensification",
+          "description": "Buzzing textures grow louder and more agitated; the rhythm tightens around a central pulse."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Guitar Element",
+          "description": "Processed guitar tone enters briefly; organic distortion blends with the insectoid palette."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Resolution",
+          "description": "Textures gradually thin; the buzzing recedes to its opening level."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Fade",
+          "description": "Ambient decay to near-silence."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Crypts",
+      "duration": "2:36",
+      "energy": "mid",
+      "tags": ["Medieval", "Ecclesiastical", "Reverberant", "Gothic"],
+      "role": "Album role: final expansion cue representing the Crypt dungeon; ecclesiastical reverb and medieval tonal qualities bring the combined soundtrack full circle to the cathedral atmosphere of the opening dungeon.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Stone Reverb",
+          "description": "Long-decay reverb establishes a vast stone chamber; distant, bell-like tones ring out."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Chant-Like Texture",
+          "description": "Processed vocal-like drone evokes Gregorian chant; mournful and sustained."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Harmonic Movement",
+          "description": "Slow harmonic shifts create a processional quality; the tonal centre drifts downward."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Percussive Accent",
+          "description": "Sparse, heavy percussion punctuates the sustained textures; echoes decay slowly in the stone chamber."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Climactic Swell",
+          "description": "All elements reach maximum volume briefly before the final decline."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Outro",
+          "description": "Rapid fade to silence; the combined soundtrack ends in the reverberant darkness of the Crypt."
+        }
+      ]
+    }
+  ]
+}

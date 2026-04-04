@@ -80,7 +80,11 @@ interface CollectionDom {
       footerContext: 'Collection Index',
       emptyMessage: 'No albums available.',
       sortAndFilter(albums: AlbumEntry[]): AlbumEntry[] {
-        return albums.slice();
+        return albums.slice().sort((left, right) =>
+          left.year - right.year
+          || left.artist.localeCompare(right.artist)
+          || left.title.localeCompare(right.title)
+        );
       },
     },
     soundtracks: {

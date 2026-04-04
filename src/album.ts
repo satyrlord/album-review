@@ -314,7 +314,7 @@ interface AlbumData {
               segments,
             };
           }),
-          palette: 'cool',
+          palette: 'vivid',
           ariaLabel: `Track timeline breakdown for ${data.artist} \u2013 ${data.title}`,
         });
       }

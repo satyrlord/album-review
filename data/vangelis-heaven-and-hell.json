@@ -1,0 +1,455 @@
+{
+  "id": "vangelis-heaven-and-hell",
+  "artist": "Vangelis",
+  "title": "Heaven and Hell",
+  "year": 1975,
+  "label": "RCA Records",
+  "producer": "Vangelis",
+  "genre": "Electronic / Symphonic",
+  "runtime": "43:14",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e6/Vangelis_Heaven_and_Hell.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/3o7sGuBr4vf1A64DyT02QF?si=31RB0kYHQxGNhyGv0AsUug",
+  "youtubeUrl": "https://www.youtube.com/watch?v=R9QHqpdczH0",
+  "overview": "Heaven and Hell (1975) is Vangelis's first album recorded at his newly constructed Nemo Studios in London, and his most explicit attempt to realise a grand conceptual duality through purely electronic means. Structured as two opposing halves — Part I depicting Heaven through orchestral-choral grandeur and Part II depicting Hell through avant-garde dissonance — the album synthesises Gothic choral architecture, massed English Chamber Choir forces, and Vangelis's Bösendorfer grand piano with dense layered synthesiser orchestration at an unprecedented scale. Part I climaxes with the celebrated Movement 3, a celestial synthesiser theme later adopted as the title music for Carl Sagan's Cosmos: A Personal Voyage (1980), while its closing track marks the first collaboration between Vangelis and Jon Anderson, the partnership that would produce four Jon & Vangelis albums in the decade ahead. Part II abandons all melodic comfort for visceral percussion, chromatic dissonance, and hallucinatory ritual, with Vana Verouti's vocal performance on 12 O'Clock providing the Hell side's most dramatic moment before the ambiguous, unresolved stasis of the closing A Way.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Bacchanale",
+      "duration": "4:40",
+      "energy": "high",
+      "tags": [
+        "Orchestral-Synth",
+        "Choral",
+        "Ceremonial",
+        "Rhythmic",
+        "Opening"
+      ],
+      "role": "Album opener; establishes the orchestral-choral scale of Part I through rhythmic percussion and massed choir, announcing the album's grand duality concept as celebratory spectacle before the heavier architecture of 'Symphony to the Powers B.'",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Percussion and drone open without preamble; stark rhythmic energy asserts the ceremonial character immediately.",
+          "detail": "The title references Bacchic ritual; the opening percussion and choral orchestration invoke collective ecstatic celebration rather than intimate meditation."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Choir Entry",
+          "description": "English Chamber Choir enters in unison; processional, ceremonial character with no harmonic ambiguity.",
+          "detail": "Conductor Guy Protheroe shapes the choir into a single orchestral voice — the first deployment of what will be the album's primary 'Heaven' instrument."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Orchestral Build",
+          "description": "Synthesised string layers accumulate beneath the choir; orchestral density rises towards a first climactic wave."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Climax",
+          "description": "Full choir and orchestral synthesis at peak density; percussion drives the dynamic apex of the opening statement."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Recession",
+          "description": "Choir withdraws; melodic synthesiser line carries forward alone, announcing the richer developmental terrain ahead."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Transition",
+          "description": "Texture dissolves and bridges seamlessly into the opening of 'Symphony to the Powers B.'"
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Symphony to the Powers B (Movements 1 and 2)",
+      "duration": "8:18",
+      "energy": "peak",
+      "tags": [
+        "Choral",
+        "Gothic",
+        "Symphonic",
+        "Synthesizer",
+        "Extended"
+      ],
+      "role": "Structural summit of Part I; two formally conceived movements that deploy Gothic choral architecture and electronic orchestration at symphonic scale, representing the fullest realisation of Vangelis's Heaven soundworld.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Movement 1 Intro",
+          "description": "Sparse synth cells build from near-silence; hushed, anticipatory atmosphere before the first full choral entry."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Choir Movement 1",
+          "description": "Gothic choral entry: low, dense harmonics with cathedral resonance; the 'Heaven' aesthetic at its most architectural.",
+          "detail": "The English Chamber Choir, trained for Renaissance polyphony, is recontextualised here as a purely electronic orchestral instrument."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Orchestral Surge",
+          "description": "Synthesiser orchestration joins the choir; upward harmonic motion marks the first movement's dramatic peak."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "First Movement Climax",
+          "description": "Full density; choral and electronic orchestral forces simultaneously peak — the loudest dynamic point of the Heaven side."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Movement 2 Transition",
+          "description": "Texture thins to solitary melodic synthesiser phrase; the interval before Movement 2 begins building."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Choir Movement 2",
+          "description": "Second choral movement; brighter register and increased harmonic complexity — a richer, more luminous response to Movement 1's darkness."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Combined Climax",
+          "description": "Both movements' thematic material converges; the structural climax of Part I, all layers simultaneously present.",
+          "detail": "The combination of the two movements' distinct characters creates a harmonic richness neither movement achieves alone."
+        },
+        {
+          "timestamp": "7:50",
+          "section": "Decay",
+          "description": "Retreating dynamics and dissolving texture transition toward the intimate, meditative space of 'Movement 3.'"
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Movement 3",
+      "duration": "4:03",
+      "energy": "mid",
+      "tags": [
+        "Melodic",
+        "Cinematic",
+        "Contemplative",
+        "Cosmos Theme",
+        "Synthesizer"
+      ],
+      "role": "Tranquil emotional centre of Part I; the celestial synthesiser theme became the title music for Carl Sagan's Cosmos: A Personal Voyage (1980), lending the album its greatest cultural legacy and its most immediately recognisable moment.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro Pad",
+          "description": "Soft sustained synthesiser chords open; reverential, space-like quality after the preceding orchestral scale.",
+          "detail": "The sudden reduction in density is deliberate — the listener is brought from the symphony's peak down to a single lyrical statement."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Main Theme Entry",
+          "description": "The iconic synthesiser melody enters; clear, lyrical, and unhurried — the most immediately singable phrase in Vangelis's 1970s catalogue."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Countermelody",
+          "description": "Secondary synthesiser voice adds gentle harmonic counterpoint beneath the main theme."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Choir Undertone",
+          "description": "Distant choral texture surfaces beneath the dominant synth melody; a barely-there reminder of the orchestral forces surrounding this interlude."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Melodic Return",
+          "description": "Theme restated in a slightly richer harmonic setting; the material deepens without dramatising."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Fade",
+          "description": "Gradual diminuendo; melody and pads converge into a held chord that leads directly to 'So Long Ago, So Clear.'"
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "So Long Ago, So Clear",
+      "duration": "5:00",
+      "energy": "low",
+      "tags": [
+        "Vocals",
+        "Jon Anderson",
+        "Ethereal",
+        "Reflective",
+        "Closing Part I"
+      ],
+      "role": "Gentle closing benediction of Part I; Jon Anderson's debut collaboration with Vangelis establishes the partnership that would define the Jon & Vangelis albums of the 1980s, providing an intimate human counterpoint to the preceding orchestral scale.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Quiet, floating synthesiser pad; deliberately intimate scale after the grandeur of the preceding three tracks.",
+          "detail": "Vangelis recalled that the collaboration happened spontaneously — he began playing, Anderson joined and immediately started writing lyrics."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Vocal Entry",
+          "description": "Jon Anderson enters with an unaccompanied opening vocal phrase; pure, unprocessed tone with no reverb embellishment."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Accompaniment",
+          "description": "Gentle synthesiser chord support fills in beneath Anderson's vocal; sparse and unhurried."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Mid-Section",
+          "description": "Melodic expansion; Anderson's upper vocal range is explored as the accompaniment grows slightly more textured."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Instrumental Bridge",
+          "description": "Brief vocal pause; synthesiser melody carries the material forward as a breathing space mid-song."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Vocal Return",
+          "description": "Anderson re-enters with the same melody; increased harmonic richness beneath marks the emotional apex."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Vocal holds and fades; long reverb tail dissolves into brief silence before the violent rupture of Part II."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Intestinal Bat",
+      "duration": "3:18",
+      "energy": "high",
+      "tags": [
+        "Dissonant",
+        "Avant-Garde",
+        "Percussive",
+        "Visceral",
+        "Hell"
+      ],
+      "role": "Violent threshold into Part II; an abrupt tonal rupture that defines Hell's soundworld as dissonant, percussive, and anti-melodic — the conceptual opposite of Part I's celestial synthesis.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Assault",
+          "description": "Percussive and dissonant electronic attack without any introduction; listener is denied tonal orientation.",
+          "detail": "The contrast with 'So Long Ago, So Clear' is maximised by deliberate absence of transition — silence cuts directly to this."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Choir Dissonance",
+          "description": "English Chamber Choir deployed in discordant, clustered harmonics — the polar inversion of their Part I role."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Percussive Drive",
+          "description": "Rhythmic element intensifies; propulsive, unsettled pulse with no metronomic regularity."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Textural Peak",
+          "description": "Full orchestral-choral dissonance at maximum tension; the conceptual apex of Hell's first statement."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Rhythmic Fracture",
+          "description": "Beat structure disrupted; metric ambiguity reinforces the sense of loss of control."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Residual Fragment",
+          "description": "Fragment of near-melodic material before abrupt cut; no resolution, no fade."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Needles & Bones",
+      "duration": "3:22",
+      "energy": "high",
+      "tags": [
+        "Angular",
+        "Chromatic",
+        "Mechanical",
+        "Skeletal",
+        "Dark"
+      ],
+      "role": "Sustains Hell's oppressive atmosphere through sharp mechanical rhythm and chromatic synthesiser figures; the most explicitly industrial-adjacent texture in Vangelis's 1970s catalogue.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse angular synthesiser motif; repetitive and metronomic, establishing a skeletal mechanical pulse."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Rhythm Entry",
+          "description": "Percussion joins the angular synth; sharp, dry attack with no reverb — deliberately unadorned."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Chromatic Figure",
+          "description": "Dissonant ascending chromatic pattern in synthesiser mid-register; the title's imagery of physical pain reflected in sharp interval leaps."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Choir Fragment",
+          "description": "Brief choral utterance deployed percussively rather than melodically; voices used as rhythmic texture."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Intensification",
+          "description": "All layers stack; volume increases without melodic development — pressure without release."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Cut",
+          "description": "Abrupt end with no fade or resolution; the Hell side's pattern of refusing closure continues."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "12 O'Clock",
+      "duration": "8:48",
+      "energy": "peak",
+      "tags": [
+        "Vocals",
+        "Vana Verouti",
+        "Two-Part",
+        "Ritual",
+        "Extended"
+      ],
+      "role": "Centrepiece of Part II; Vangelis's most ambitious Hell-side construction articulates the full range of Hell's musical vocabulary across two contrasting sections — frenzied dissonance and hypnotic dark ritual — within a single extended composition.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Part 1 Intro",
+          "description": "Frenzied, rapid synthesiser figures accelerate from the outset; tempo and density in continual forward motion."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Choir Eruption",
+          "description": "Choral forces enter at full dissonant intensity; chaotic and unpitched rather than harmonically controlled.",
+          "detail": "The choir here is at the furthest conceptual remove from its Heaven-side role — organised sound dissolving into noise."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Verouti Vocal Entry",
+          "description": "Vana Verouti's soprano cuts through the orchestral chaos; the vocal functions as a melodic anchor within the frenzy."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Part 1 Climax",
+          "description": "Peak orchestral-choral dissonance; the violent centre of the Hell side and the album's most turbulent moment."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Structural Hinge",
+          "description": "Sudden drop to near-silence; the hinge between the two compositional sub-parts.",
+          "detail": "The caesura is the most dramatic single moment of dynamic contrast on the album, more extreme even than the Part I / Part II transition."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Part 2 Intro",
+          "description": "Hypnotic, ostinato-driven texture replaces the frenzy; ritual rather than chaotic — a different mode of darkness."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Choral Return",
+          "description": "Choir reintroduced in controlled, processional mode; sinister rather than chaotic, recalling the Heaven-side choir in inverted context."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Dissolution",
+          "description": "Texture fragments and slowly recedes; transitional decay leading toward the interlude space of 'Aries.'"
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Aries",
+      "duration": "2:05",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Sparse",
+        "Zodiacal",
+        "Synthesizer",
+        "Transitional"
+      ],
+      "role": "Brief celestial interlude; the most sparse moment on the Hell side, offering an astrological pause between the extended violence of '12 O'Clock' and the album's closing resolution.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone Open",
+          "description": "Single held synthesiser pad; near-pure tone with minimal movement — the quietest moment of Part II."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Melodic Fragment",
+          "description": "Single ascending synthesiser phrase; recognisably closer in character to the Heaven side than the surrounding Hell material."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Harmonic Pivot",
+          "description": "Chord shift gradually orientates the harmonic centre away from Hell's dissonant world."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Outro",
+          "description": "Pad sustain dissolves; the piece flows without break into the opening chord of 'A Way.'"
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "A Way",
+      "duration": "3:45",
+      "energy": "mid",
+      "tags": [
+        "Resolution",
+        "Atmospheric",
+        "Ambient",
+        "Closing",
+        "Synthesis"
+      ],
+      "role": "Album coda; neither Heaven nor Hell achieves dominion — 'A Way' moves toward open-ended stasis that holds both forces in suspended tension, closing the duality concept without resolving it.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained chord with residual dissonant undertone; Hell's harmonic signature still present at the outset."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Melodic Emergence",
+          "description": "Melodic synthesiser line surfaces; recognisable as a gesture toward resolution but harmonically ambiguous."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Orchestral Swell",
+          "description": "Synthesiser layers accumulate; gentle density increase without the violence or chromatic edge of Part II."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Balance Point",
+          "description": "The first moment on Part II where Heaven and Hell textures coexist without one dominating the other.",
+          "detail": "This is the album's conceptual resolution: not victory or defeat, but a moment of neutral coexistence between the two forces."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Fade Begin",
+          "description": "Elements slowly withdraw; reverb field expands as acoustic space is returned to silence."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Outro",
+          "description": "Final synthesiser chord with trailing reverb; the album ends in open suspension — the duality unresolved."
+        }
+      ]
+    }
+  ]
+}

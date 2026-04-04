@@ -109,7 +109,7 @@ export function renderFooter(options: SiteFooterOptions = {}): string {
     ? `\n        <span class="site-footer-divider" aria-hidden="true">&middot;</span>\n        <span class="site-footer-context">${escapeHtml(options.context)}</span>`
     : '';
   const actionHtml = options.actionHref && options.actionLabel
-    ? `\n      <a class="site-footer-link btn btn-sm btn-ghost border border-base-300/60 bg-base-100/40 hover:border-primary/45 hover:bg-primary/10 hover:text-primary" href="${escapeHtml(options.actionHref)}">${escapeHtml(options.actionLabel)}</a>`
+    ? `\n      <a class="site-footer-btn site-footer-link badge badge-outline badge-lg h-auto rounded-full border-base-300/70 px-4 py-3 hover:border-primary/45 hover:bg-primary/10 hover:text-primary" href="${escapeHtml(options.actionHref)}">${escapeHtml(options.actionLabel)}</a>`
     : '';
 
   return (
@@ -121,7 +121,8 @@ export function renderFooter(options: SiteFooterOptions = {}): string {
     contextHtml + '\n' +
     `      </div>\n` +
     `      <div class="site-footer-meta">\n` +
-    `        <a class="site-footer-version badge badge-outline badge-lg h-auto rounded-full border-base-300/70 px-4 py-3 hover:border-primary/45 hover:bg-primary/10 hover:text-primary" href="${escapeHtml(PROJECT_URL)}" target="_blank" rel="noopener noreferrer">Version ${escapeHtml(meta.version)}</a>\n` +
+    `        <a class="site-footer-btn site-footer-version badge badge-outline badge-lg h-auto rounded-full border-base-300/70 px-4 py-3 hover:border-primary/45 hover:bg-primary/10 hover:text-primary" href="${escapeHtml(PROJECT_URL)}" target="_blank" rel="noopener noreferrer">Version ${escapeHtml(meta.version)}</a>\n` +
+    `        <a class="site-footer-btn site-footer-credits badge badge-outline badge-lg h-auto rounded-full border-base-300/70 px-4 py-3 hover:border-primary/45 hover:bg-primary/10 hover:text-primary" href="credits.html">CREDITS</a>\n` +
     `      </div>` +
     actionHtml + '\n' +
     `    </div>\n` +

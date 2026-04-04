@@ -1,0 +1,726 @@
+{
+  "id": "rik-schaffer-vampire-the-masquerade-bloodlines",
+  "artist": "Rik Schaffer",
+  "title": "Vampire: The Masquerade - Bloodlines",
+  "year": 2004,
+  "label": "Milan Records",
+  "producer": "Rik Schaffer",
+  "genre": "Dark Ambient / Soundtrack",
+  "runtime": "69:09",
+  "isSoundtrack": true,
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/96/Vampire_-_The_Masquerade_%E2%80%93_Bloodlines_Coverart.png",
+  "youtubeUrl": "https://youtu.be/0Fl9-359oeg",
+  "overview": "Composed by Rik Schaffer for Troika Games' cult action RPG Vampire: The Masquerade – Bloodlines (November 2004), published by Activision and set in White Wolf's World of Darkness universe, this 17-track score blends dark ambient, trip-hop, and post-rock textures through synthesiser layering, processed guitar, and sampled elements. Schaffer produced the soundtrack at Womb Music, the production studio he founded in 1996, building distinct sonic identities for each of the game's hub areas — the beachside calm of Santa Monica, the nocturnal glamour of Hollywood, the urban grit of Downtown, and the Eastern-tinged atmosphere of Chinatown — alongside dedicated combat cues, character themes, and a closing meditation adapted from his solo project Nectar. Several tracks derive from Schaffer's Womb album Bella, with instrumental reworkings of Clean, Selfless Doubt, and As Lonely As I Am (retitled Poinsettia) appearing in-game, while All That Could Ever Be reworks We Just Disagree from the Nectar album Afterglow. The score remained commercially unavailable until Milan Records issued a remastered album in October 2019, featuring eight previously unreleased cues alongside the core material, available on CD, digital download, and blood-red vinyl.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Bloodlines Main Theme",
+      "duration": "3:21",
+      "energy": "mid",
+      "tags": ["Title Theme", "Dark Ambient", "Cinematic", "Synthesiser", "Atmospheric"],
+      "role": "Opening title theme establishing the game's nocturnal, vampiric atmosphere; a dark synthesiser piece that introduces the tonal palette of the entire score and serves as the player's first encounter with the World of Darkness sonic identity.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low synthesiser drone emerges with faint percussive textures; dark and indeterminate, evoking urban night."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Theme Entry",
+          "description": "Primary melodic motif surfaces on processed synthesiser; measured and brooding, the main theme stated for the first time."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Layered Build",
+          "description": "Additional synthesiser pads and filtered guitar textures accumulate beneath the melody; harmonic density increases."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Mid-Section",
+          "description": "Rhythmic elements emerge subtly; the theme develops with percussive underpinning and tonal variation."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Reprise",
+          "description": "Main motif restated with deeper layering; the theme reaches its most textured form."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Outro",
+          "description": "Layers recede into sustained drone; the theme dissolves into darkness."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Hollywood Main Theme",
+      "duration": "5:37",
+      "energy": "mid",
+      "tags": ["Hub Theme", "Trip-Hop", "Nocturnal", "Brooding", "Layered"],
+      "role": "Sonic identity for the Hollywood hub area, the game's second major location; a trip-hop-influenced piece conveying the district's blend of vampiric glamour, nightclub culture, and underlying menace beneath the neon.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Filtered pad with slow attack; nocturnal atmosphere established through reverb-heavy synthesiser."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Beat Entry",
+          "description": "Trip-hop drum pattern enters at reduced velocity; slow tempo with brushed percussion textures."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Melodic Layer",
+          "description": "Processed guitar melody emerges above the beat; languid and melancholic with heavy delay effect."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Development",
+          "description": "Synthesiser countermelody added; the texture thickens as harmonic layers interweave with the guitar."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Bridge",
+          "description": "Beat drops briefly; ambient textures dominate before the groove re-enters with additional percussive detail."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Climax",
+          "description": "All layers converge at maximum density; the track reaches its fullest arrangement."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Gradual stripping of elements; the beat fades and sustained pads carry the piece to silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "World Spirit Map",
+      "duration": "5:29",
+      "energy": "low",
+      "tags": ["Ambient", "Cartographic", "Ethereal", "Synthesiser", "Meditative"],
+      "role": "Accompaniment for the in-game world map and travel interface; a floating ambient piece detached from the location-specific hub themes, providing a contemplative pause between areas.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone",
+          "description": "Sustained synthesiser chord with wide stereo spread; weightless and spacious."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Textural Layer",
+          "description": "Granular textures and faint bell-like tones emerge; ethereal character established."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Melodic Fragment",
+          "description": "Brief melodic gesture on high synthesiser; sparse and unhurried, evoking distance and overview."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Harmonic Shift",
+          "description": "Subtle chord change introduces modal colour; the ambient palette refreshes without disrupting the flow."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Textural Peak",
+          "description": "Multiple ambient layers active simultaneously; the most complex point in the cue's otherwise minimal arc."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Dissolution",
+          "description": "Layers thin progressively; the drone returns to near-solo prominence before fading."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Disturbed Combat",
+      "duration": "2:09",
+      "energy": "high",
+      "tags": ["Combat", "Industrial", "Percussive", "Distorted", "Aggressive"],
+      "role": "Combat music triggered during encounters with the Malkavian-linked disturbed enemies; a short, aggressive industrial loop designed to heighten tension during gameplay action sequences.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Attack",
+          "description": "Immediate entry with distorted percussion hit and industrial synthesiser riff; no introduction or build."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Loop A",
+          "description": "Primary combat loop established; driving percussion with distorted bass synthesiser and metallic textures."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Variation",
+          "description": "Additional percussive elements and filtered noise bursts layer over the base pattern."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Intensification",
+          "description": "Maximum textural density; all elements active with increased filter resonance on the synthesiser."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Outro",
+          "description": "Abrupt thinning; the loop collapses to a final percussive impact and silence."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Santa Monica Theme",
+      "duration": "5:04",
+      "energy": "mid",
+      "tags": ["Hub Theme", "Coastal", "Trip-Hop", "Nocturnal", "Atmospheric"],
+      "role": "Sonic identity for Santa Monica, the game's first explorable hub area; a relatively gentle trip-hop piece reflecting the beachside district's status as the player's introduction to the vampire underworld, balancing accessibility with nocturnal unease.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Warm synthesiser pad with slow filter sweep; coastal and open, the most inviting texture on the album."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Beat Entry",
+          "description": "Laid-back trip-hop beat enters; measured tempo with soft kick and hi-hat pattern."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Melody",
+          "description": "Processed guitar line emerges with generous delay; melodic and wistful, hinting at the player character's lost humanity."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Development",
+          "description": "Synthesiser strings add harmonic depth; the arrangement expands while maintaining the relaxed tempo."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Bridge",
+          "description": "Beat simplifies; ambient textures surface momentarily before the groove re-establishes."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Final Section",
+          "description": "Melody restated with variation; the track begins a gradual recession toward silence."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Outro",
+          "description": "Beat drops out; sustained pad and final guitar note decay into reverb."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Chinatown Theme",
+      "duration": "6:08",
+      "energy": "mid",
+      "tags": ["Hub Theme", "Eastern", "Atmospheric", "Synthesiser", "Textured"],
+      "role": "Sonic identity for the Chinatown hub area, the game's fourth and final explorable district; the longest hub theme, deploying Eastern-influenced melodic modes and pentatonic synthesiser lines over dark ambient foundations to reflect the Kuei-jin vampire faction's territorial presence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Deep synthesiser drone with Eastern modal inflection; immediately signals a tonal departure from the Western hub themes."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Pentatonic Melody",
+          "description": "Synthesiser melody using pentatonic scale enters; evocative of traditional Chinese instrumental music through electronic timbre."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Rhythmic Layer",
+          "description": "Subtle percussion enters with brushed textures; maintains the contemplative pace while adding forward motion."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Harmonic Expansion",
+          "description": "Additional synthesiser pads widen the harmonic palette; Eastern and Western tonal elements coexist."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Development",
+          "description": "Melodic variation with processed guitar textures; the fusion of acoustic and electronic timbres at its most complex."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Bridge",
+          "description": "Percussion withdraws; ambient drone and sparse melodic gestures create a moment of stillness."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Reprise",
+          "description": "Pentatonic melody restated with deeper layering; the theme at its fullest textural density."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Outro",
+          "description": "Progressive thinning; elements recede toward the opening drone and silence."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "China Boss Battle",
+      "duration": "2:33",
+      "energy": "high",
+      "tags": ["Boss Battle", "Eastern", "Aggressive", "Percussive", "Tense"],
+      "role": "Boss combat music for Chinatown encounters, particularly the confrontation with the Kuei-jin; retains the Eastern modal character of the Chinatown hub theme but intensified through aggressive percussion and distorted synthesiser bass.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Strike",
+          "description": "Immediate percussive entry with Eastern-inflected synthesiser stab; no build-up, signalling combat urgency."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Combat Loop",
+          "description": "Driving percussion pattern with pentatonic riff on distorted synthesiser; the Chinatown sonic identity under high-energy transformation."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Variation",
+          "description": "Rhythmic variation with additional metallic percussion; textural density increases."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Intensification",
+          "description": "Filter sweeps and rising pitch on synthesiser elements; maximum tension in the combat sequence."
+        },
+        {
+          "timestamp": "2:05",
+          "section": "Loop Decay",
+          "description": "Elements thin progressively; the combat energy dissipates toward a percussive conclusion."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Nosferatu Warrens",
+      "duration": "3:42",
+      "energy": "low",
+      "tags": ["Horror", "Subterranean", "Drone", "Claustrophobic", "Unsettling"],
+      "role": "Ambient scoring for the Nosferatu clan's underground warren, a network of sewers and tunnels beneath Los Angeles; among the score's most uncomfortable pieces, relying on claustrophobic drones and processed noise to convey the deformity and isolation of the sewer-dwelling vampires.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone",
+          "description": "Low-frequency synthesiser drone with faint water-like processing; subterranean space evoked through reverb and filtering."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Noise Layer",
+          "description": "Processed noise textures emerge; scraping and mechanical sounds suggesting decayed infrastructure."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Tonal Shift",
+          "description": "Dissonant synthesiser interval introduced; harmonic tension increases without traditional melodic content."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Textural Peak",
+          "description": "Multiple noise and drone layers active simultaneously; the most oppressive point in the cue's arc."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Recession",
+          "description": "Upper noise layers withdraw; the drone returns to relative simplicity with distant processed elements."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Outro",
+          "description": "Drone fades to near-silence; faint dripping textures persist before full cessation."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Downtown Theme",
+      "duration": "4:19",
+      "energy": "mid",
+      "tags": ["Hub Theme", "Urban", "Trip-Hop", "Nocturnal", "Layered"],
+      "role": "Sonic identity for Downtown Los Angeles, the game's third hub area and the political centre of the Camarilla vampire hierarchy; a darker and more rhythmically assertive trip-hop piece than the earlier hub themes, reflecting the increased danger and political complexity of the mid-game.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Dark synthesiser pad with urban texture; grittier tonal character than the earlier hub themes."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Beat Entry",
+          "description": "Trip-hop beat enters with more assertive kick pattern; tempo and groove darker than Santa Monica or Hollywood."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Melodic Layer",
+          "description": "Processed guitar and synthesiser melody emerge; the harmonic language is more minor-key and tense."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Development",
+          "description": "Layered textures accumulate; filtered strings and ambient details fill the stereo field."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Bridge",
+          "description": "Beat drops momentarily; ambient wash and isolated guitar tones create a tension pause."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Final Section",
+          "description": "Groove re-enters with full layering; the most dense arrangement in the track."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Elements strip away progressively; the beat and melody fade into sustained pad and silence."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Disturbed and Twisted",
+      "duration": "4:30",
+      "energy": "mid",
+      "tags": ["Horror", "Psychological", "Dark Ambient", "Dissonant", "Unsettling"],
+      "role": "Exploration music for areas associated with psychological horror and the Malkavian clan's madness-touched vampires; an extended dark ambient piece that deploys dissonance and unsettling textures to score the game's most disturbing non-combat environments.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone",
+          "description": "Deep, unstable synthesiser drone with microtonal fluctuation; the harmonic centre deliberately unclear."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Textural Intrusion",
+          "description": "Processed vocal-like samples and reversed textures emerge; psychological unease conveyed through timbral distortion."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Dissonance Build",
+          "description": "Additional dissonant intervals layer above the drone; harmonic tension accumulates without resolution."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Mid-Section",
+          "description": "Brief rhythmic pulse emerges and recedes; suggests threat without committing to combat energy."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Textural Peak",
+          "description": "Maximum density of unsettling elements; multiple processed layers active simultaneously."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Recession",
+          "description": "Layers thin toward the original drone; tension partially released but unease persists."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Outro",
+          "description": "Drone fades with final dissonant gesture; the piece ends without harmonic resolution."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Disturbed and Twisted Combat",
+      "duration": "2:14",
+      "energy": "high",
+      "tags": ["Combat", "Industrial", "Frantic", "Distorted", "Percussive"],
+      "role": "Combat variant of the Disturbed and Twisted exploration cue; transforms the psychological ambient material into aggressive industrial action music for encounters in Malkavian-related areas.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Attack",
+          "description": "Hard percussive entry with distorted synthesiser; the ambient unease of the exploration version weaponised into combat energy."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Combat Loop",
+          "description": "Driving industrial beat with dissonant synthesiser riff; frantic energy contrasting with the exploration cue's slow dread."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Variation",
+          "description": "Additional noise and percussive elements layer over the base loop; textural escalation."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Peak",
+          "description": "Maximum intensity; all combat elements at full density with filter resonance peaks."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Outro",
+          "description": "Loop collapses; final distorted impact and rapid decay to silence."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Edward's Theme",
+      "duration": "4:49",
+      "energy": "low",
+      "tags": ["Character Theme", "Melancholic", "Piano", "Atmospheric", "Intimate"],
+      "role": "Character theme associated with the Grout Mansion quest line; one of the score's most melodic and emotionally direct pieces, using piano and sparse synthesiser to convey isolation and tragedy in the context of a Malkavian elder's deteriorating sanity.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse piano notes with heavy reverb; intimate and exposed, the most acoustically naked texture on the album."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Theme Statement",
+          "description": "Piano melody emerges in full; melancholic and measured, the harmonic language is more traditional than the ambient cues."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Synthesiser Entry",
+          "description": "Warm synthesiser pad layers beneath the piano; electronic and acoustic timbres blending gently."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Development",
+          "description": "Piano melody develops with harmonic variation; the emotional weight of the character's tragedy conveyed through the progression."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Textural Expansion",
+          "description": "Additional ambient layers and processed textures create a wider sonic space around the piano."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Reprise",
+          "description": "Piano theme restated in a higher register; the final, most poignant statement of the melody."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Piano and synthesiser fade together; the theme dissolves into reverberant silence."
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "Crypts Combat",
+      "duration": "2:46",
+      "energy": "high",
+      "tags": ["Combat", "Gothic", "Percussive", "Underground", "Aggressive"],
+      "role": "Combat music for encounters in the game's crypt and burial environments; a gothic-inflected combat cue that pairs heavy percussion with minor-key synthesiser riffs to score undead-heavy battle sequences.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Strike",
+          "description": "Immediate heavy percussion entry with gothic synthesiser stab; burial-ground atmosphere under combat pressure."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Combat Loop",
+          "description": "Driving loop established; minor-key synthesiser riff with industrial percussion hits."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Variation",
+          "description": "Additional melodic element on processed synthesiser; gothic character intensified."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Bridge",
+          "description": "Brief percussive breakdown; the loop interrupted before restarting with added textural density."
+        },
+        {
+          "timestamp": "2:05",
+          "section": "Peak",
+          "description": "Maximum combat intensity; all elements at full density with driving rhythmic emphasis."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Outro",
+          "description": "Rapid decay; percussion and synthesiser collapse to a final sustained tone."
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "Moldy Old World",
+      "duration": "2:38",
+      "energy": "low",
+      "tags": ["Gothic", "Decayed", "Atmospheric", "Historical", "Eerie"],
+      "role": "Ambient scoring evoking the ancient European origins of the Camarilla vampire society; a brief, eerie piece suggesting centuries of accumulated decay and the weight of undead history through processed organ-like textures and dusty ambience.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Processed organ-like synthesiser tone; ecclesiastical register filtered through heavy decay and detuning."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Textural Layer",
+          "description": "Granular textures and faint string-like sounds emerge; dusty, archival quality suggesting aged surfaces."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Melodic Fragment",
+          "description": "Brief melodic gesture on detuned synthesiser; a ghost of European classical melody."
+        },
+        {
+          "timestamp": "1:35",
+          "section": "Development",
+          "description": "Multiple ambient layers create a sense of cavernous, ancient interior space."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Outro",
+          "description": "Textures thin to the original organ tone; the piece fades as though receding into historical distance."
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "title": "Dark Asia",
+      "duration": "4:27",
+      "energy": "mid",
+      "tags": ["Eastern", "Dark", "Mysterious", "Synthesiser", "Exploration"],
+      "role": "Secondary Chinatown exploration cue complementing the main hub theme; a darker, more mysterious piece that underscores the Kuei-jin subplot and the sense of entering foreign vampiric territory beyond the Camarilla's jurisdiction.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Dark synthesiser drone with Eastern modal inflection; deeper and more ominous than the Chinatown main theme."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Melodic Entry",
+          "description": "Pentatonic synthesiser melody enters; slower and more deliberate than in the hub theme."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Textural Layer",
+          "description": "Processed percussive textures and metallic resonances added; mysterious character intensified."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Development",
+          "description": "Melodic variation with added harmonics; the Eastern elements deepen as the drone evolves."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Bridge",
+          "description": "Sparse section with isolated gestures; the mystery amplified through withholding."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Reprise",
+          "description": "Melody restated with full textural accompaniment; the cue at its densest."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Outro",
+          "description": "Progressive fade; the Eastern melody dissolves into the underlying drone."
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "title": "The Prince's Dream",
+      "duration": "2:47",
+      "energy": "low",
+      "tags": ["Character Theme", "Ominous", "Power", "Synthesiser", "Brief"],
+      "role": "Theme associated with the Camarilla Prince LaCroix and the political machinations driving the game's main narrative; a brief, ominous piece conveying authority and hidden menace through sustained synthesiser textures.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Deep synthesiser tone with slow harmonic movement; ominous authority established."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Theme",
+          "description": "Measured synthesiser motif suggesting power and calculation; the Prince's political machinations rendered in sound."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Textural Build",
+          "description": "Additional layers create a sense of looming threat; the power accumulates beneath the surface."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Peak",
+          "description": "Maximum textural density; the ominous quality at its most pronounced."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Outro",
+          "description": "Layers recede; the synthesiser tone returns to its opening simplicity before fading."
+        }
+      ]
+    },
+    {
+      "num": 17,
+      "title": "All That Could Ever Be",
+      "duration": "6:36",
+      "energy": "mid",
+      "tags": ["Reflective", "Trip-Hop", "Adapted", "Closing", "Guitar"],
+      "role": "Closing track and the score's most emotionally reflective piece; an instrumental reworking of We Just Disagree from Schaffer's Nectar project (released on the album Afterglow), repurposed as a meditation on immortality and loss that closes the soundtrack with rare warmth and melodic directness.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Clean guitar arpeggios with reverb; the most acoustically transparent opening on the album."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Theme Statement",
+          "description": "Main guitar melody emerges; melodic and accessible, a tonal departure from the dark ambient palette."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Beat Entry",
+          "description": "Trip-hop beat enters softly beneath the guitar; groove established at moderate tempo."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Synthesiser Layer",
+          "description": "Warm synthesiser pads complement the guitar; the arrangement expands with gentle harmonic support."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Development",
+          "description": "Guitar melody develops with variation; emotional weight accumulates through harmonic movement."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Bridge",
+          "description": "Texture thins briefly; ambient elements surface before the main theme returns."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Reprise",
+          "description": "Guitar theme restated at full arrangement; the most emotionally resonant passage on the album."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Extended Outro",
+          "description": "Beat drops out; guitar and synthesiser sustain in slow decay, the track unwinding toward silence."
+        },
+        {
+          "timestamp": "6:10",
+          "section": "Fade",
+          "description": "Final guitar tone and reverb tail; the soundtrack closes with sustained resonance."
+        }
+      ]
+    }
+  ]
+}

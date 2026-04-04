@@ -1,0 +1,418 @@
+{
+  "id": "global-communication-76-14",
+  "artist": "Global Communication",
+  "title": "76:14",
+  "year": 1994,
+  "label": "Dedicated Records",
+  "producer": "Tom Middleton · Mark Pritchard",
+  "genre": "Ambient / Downtempo",
+  "runtime": "76:12",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/GC_7614.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/0CCYU4pfINH3Lt5krDd9JO",
+  "overview": "Recorded between 1991 and 1994 at Evolution studio in Crewkerne, Somerset, by Tom Middleton and Mark Pritchard under the Global Communication alias. The album's track titles are their own running times — a deliberate decision by Middleton and Pritchard to withhold conventional names and prevent listeners from projecting pre-formed associations onto the material. The duo drew on unreleased archive recordings, including a reworked Mystic Institute piece ('14:31') and a rejected Tangerine Dream remix repurposed as their own composition ('5:23'). Released on Dedicated Records on 1 June 1994; the album appeared in The Guardian's 1,000 Albums to Hear Before You Die.\n\nTimestamps are proportionally estimated to ±10 seconds; ambient track transitions are gradual and do not produce hard section boundaries.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "4:02",
+      "duration": "4:02",
+      "energy": "low",
+      "tags": [
+        "Album Opener",
+        "Sustained Pad",
+        "Ambient Introduction",
+        "Spacious Texture"
+      ],
+      "role": "Album role: The album's opening threshold — establishing the ambient sonic space before any harmonic development or melodic content, functioning as a slow acclimatisation to the record's register and pace.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sub-bass warmth",
+          "description": "the album opens with a deep, sustained synthesizer chord — low register, no transient attack.",
+          "detail": "The first sound of 76:14 is a decision about register: the lowest available frequencies, entered without announcement. The album begins below the range of most hearing, expanding upward as the listener adjusts."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Second pad layer",
+          "description": "a higher-register sustained tone fades in above the root — the first harmonic interval of the album.",
+          "detail": "The interval between the two tones is wide, leaving significant space in the mid-register unoccupied. The emptiness is compositional — the feel of a large, unfurnished room."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Soft rhythmic anchor",
+          "description": "a faint, periodic pulse appears — barely audible, providing minimal temporal reference.",
+          "detail": "At this volume level the pulse functions as a listener orientation point rather than a rhythmic driver. The album is not going to provide a beat — this is the only concession to metric time in the opening track."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Fade to near-silence",
+          "description": "the texture attenuates gradually, leaving only the sub-bass layer before the track ends.",
+          "detail": "The brief four-minute opener does not attempt development or climax. Its only purpose is immersion — by the time '14:31' begins the listener has been prepared to accept a fourteen-minute ambient piece without resistance."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "14:31",
+      "duration": "14:31",
+      "energy": "low",
+      "tags": [
+        "Long-Form Ambient",
+        "Mystic Institute Rework",
+        "Slow Evolution",
+        "Album Centrepiece"
+      ],
+      "role": "Album role: The album's first major structural pillar — a fourteen-minute piece developed from a Mystic Institute recording, occupying the same scale as a complete ambient EP and establishing the album's commitment to duration as expressive material.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Emergence from preceding track",
+          "description": "the opening texture flows seamlessly from '4:02' — a fundamental warmth already in place.",
+          "detail": "The track was originally released as a Mystic Institute piece — an alias Middleton and Pritchard used alongside Global Communication. The rework retains the evolutionary character of the source material while expanding its duration and harmonic range."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Chord progression begins",
+          "description": "a slow, three-chord movement establishes the harmonic basis — not a loop but a deliberate, spaced sequence.",
+          "detail": "The pace of harmonic change here is measured in minutes, not bars. A listener calibrated to conventional music will experience the chord movement as extremely slow; within the album's own temporal logic it feels natural."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Main melodic figure",
+          "description": "the track's central melodic phrase emerges — a sustained, unhurried line in the mid-register.",
+          "detail": "The melody does not repeat at a conventional cadence. It arrives once, develops slowly, and the track moves around it rather than returning to it as a hook. The distinction between melody and pad blurs as both operate at similar timescales."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Percussion element",
+          "description": "an extremely subtle, tambourine-adjacent texture enters — light and distant.",
+          "detail": "This is one of the most restrained rhythmic interventions in the album. At normal listening levels the element is almost inaudible; it functions as textural detail rather than pulse."
+        },
+        {
+          "timestamp": "10:30",
+          "section": "Second harmonic phrase",
+          "description": "the chord sequence shifts to a new set of intervals — new harmonic territory entered for the first time.",
+          "detail": "At ten and a half minutes the piece introduces its only significant departure from the opening harmonic area. The shift is neither abrupt nor telegraphed — it materialises gradually, as if the first chord had always been heading here."
+        },
+        {
+          "timestamp": "12:30",
+          "section": "Long withdrawal",
+          "description": "elements begin retreating one at a time — the reverse of the track's accumulation.",
+          "detail": "The final two minutes strip the arrangement back to its initial state: a single held chord, then near-silence. The track closes as it opened, completing a structural arc that the album will not repeat at this scale."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "9:25",
+      "duration": "9:25",
+      "energy": "low",
+      "tags": [
+        "Warm Chord Progression",
+        "Minor-Key Float",
+        "Mid-Album Pivot"
+      ],
+      "role": "Album role: The first piece after the album's longest track — a slightly warmer, more melodically present composition bridging the extended '14:31' and the more rhythmically inflected middle section.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Rhythmic shimmer",
+          "description": "a distant, flickering high-frequency texture introduces the faintest metric presence on the album so far.",
+          "detail": "What registers here is not a drum pattern but a filter-modulated pad — the sense of pulse without a literal beat. The album begins shifting its relationship with time at this point."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Floating melodic line",
+          "description": "a minor-key melodic phrase enters over the sustained chord — contemplative, unresolved.",
+          "detail": "The melodic character here is more defined than in the first two tracks, though still far from conventional melody. The phrase ends without cadential resolution, leaving the ear in productive suspension."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Rhythmic intensification",
+          "description": "the shimmer texture grows slightly more present — a barely perceptible increase in rhythmic definition.",
+          "detail": "9:25 introduces the album's interest in gradual rhythmic infiltration — moving from near-immobility toward something with a pulse in slow increments. The transition prepares the more rhythmically complex tracks to come."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Resolution",
+          "description": "the melodic activity withdraws — only pad and the diminishing shimmer remain.",
+          "detail": "The track's conclusion returns to near-ambient stasis, ensuring the transition into '9:39' feels like a new beginning rather than a continuation."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "9:39",
+      "duration": "9:39",
+      "energy": "mid",
+      "tags": [
+        "THX-1138 Sample",
+        "Cinematic Reference",
+        "Rhythmic Mid-Album",
+        "Ambient Electronic"
+      ],
+      "role": "Album role: The album's most cinematically referenced piece — opened with an audio sample from George Lucas's THX 1138 (1971), the track uses the film's sonic atmosphere as a launchpad for its most rhythmically engaged composition in the album's first half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "THX 1138 sample",
+          "description": "the track opens with a processed audio excerpt from the 1971 George Lucas film THX 1138.",
+          "detail": "THX 1138 was Lucas's debut feature, a science-fiction film set in a sterile, surveillance-state underground society. The sample carries immediate cultural weight — clinical, institutional, dystopian — that creates deliberate contrast with the ambient warmth surrounding it."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Pad emergence",
+          "description": "synthesizer pads enter beneath and around the sample — warmth enclosing the clinical reference material.",
+          "detail": "The gradual absorption of the film sample into the ambient texture is the track's central formal move. The cinematic source material is not quoted as a statement but slowly dissolved until it becomes indistinguishable from the surrounding sound environment."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Sample recession",
+          "description": "the THX 1138 material fades entirely — the track's own harmonic identity takes over.",
+          "detail": "Once the sample has been absorbed, the piece proceeds on its own terms. The cinematic origin remains as a slightly harder-edged quality in the timbre — a residue rather than a feature."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Rhythmic development",
+          "description": "a more active mid-register rhythm element enters — the most pronounced metric movement in the album to this point.",
+          "detail": "9:39 is the album's transitional piece between the first half's near-metric-free ambient work and the more rhythmically active middle section. The rhythmic element here is still restrained by any conventional standard, but within the album's context it functions as a gear change."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Fade toward interlude",
+          "description": "rhythm and pad layers reduce — a clean exit toward the brief '7:39'.",
+          "detail": "The transition out of '9:39' is more abrupt than transitions within the album's first half, reflecting the structural shift the track has introduced. The album is now operating on a slightly different energy level for its middle section."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "7:39",
+      "duration": "7:39",
+      "energy": "low",
+      "tags": [
+        "Mid-Album Interlude",
+        "Deep Ambient",
+        "Harmonic Continuation"
+      ],
+      "role": "Album role: The mid-album return to stillness after the rhythmic pivot of '9:39' — a transitional piece that re-establishes the ambient temperature before the brief interlude that follows.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Seamless harmonic entry",
+          "description": "the pad colour of '9:39' continues into the opening — the transition is near-imperceptible.",
+          "detail": "76:14's construction as a continuous listening object means track boundaries within the second portion of Side A feel deliberately blurred. The separate track identities are a technical convention imposed on what functions as a single extended movement."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Warmer pad register",
+          "description": "a new synthesizer timbre enters in the mid-register — slightly warmer in character than the preceding track.",
+          "detail": "Each piece in the album's middle section introduces a distinguishing timbral element rather than developing distinct melody. Identity here is harmonic texture rather than theme."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Minimal pitch movement",
+          "description": "the pad layer shifts pitch by a fractional interval — barely audible movement within sustained tones.",
+          "detail": "A detail that registers subconsciously rather than consciously: the sense that something is slowly moving, even when no melodic phrase or harmonic progression is explicitly stated. The album works extensively in this register of subliminal change."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Reduction",
+          "description": "the texture thins, preparing for the album's briefest track.",
+          "detail": "The abrupt transition to the 54-second '0:54' is one of the album's few structural surprises — a sharp breath before another extended piece."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "0:54",
+      "duration": "0:54",
+      "energy": "low",
+      "tags": [
+        "Micro Interlude",
+        "Transitional Bridge",
+        "Near-Silence"
+      ],
+      "role": "Album role: The album's structural fulcrum — a 54-second tonal pause between '7:39' and '8:07', functioning as a reset and marking the boundary between the album's middle section and its third quarter.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sparse tonal bridge",
+          "description": "a single, minimal texture — almost nothing, a faint sustained note barely above silence.",
+          "detail": "The placement of the album's shortest piece at approximately the halfway point is a structural decision. The near-silence of '0:54' functions as a paragraph break within the album's unbroken prose — a white space that makes the entry of '8:07' feel like a new beginning."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Melodic fragment",
+          "description": "a brief, isolated pitch — one note, held, then released.",
+          "detail": "The single note is the track's only definitively melodic event. Its isolation in this brief interlude amplifies its significance beyond what the duration alone would suggest."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Dissolution",
+          "description": "the tone fades to silence before '8:07' begins.",
+          "detail": "At under a minute, '0:54' is the clearest structural marker in an album otherwise resistant to obvious division. Its brevity emphasises everything that surrounds it."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "8:07",
+      "duration": "8:07",
+      "energy": "low",
+      "tags": [
+        "New Harmonic Register",
+        "Deep Ambient",
+        "Third Quarter Opening"
+      ],
+      "role": "Album role: The opening piece of the album's third quarter — entering a distinctly different harmonic register after the reset of '0:54', beginning the album's gradual movement toward its two concluding pieces.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "New register entry",
+          "description": "pad opens in a harmonic area distinctly different from the preceding section — a cooler, slightly more detached timbre.",
+          "detail": "The tonal character of '8:07' suggests a change of atmosphere rather than a continuation. After the structural break of '0:54', the album begins a new phase — the third of its four roughly equal sections."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Slow chord movement",
+          "description": "a gradual harmonic shift — the root position moves upward by a step.",
+          "detail": "The pace of harmonic change returns to the extreme slowness of the album's opening section. The middle section's relatively more active rhythmic character is now behind the album; the third quarter returns to pure ambient stasis."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Sustained melodic note",
+          "description": "a single sustained melody note enters — long, held without vibrato, a clear pitch in an otherwise textural landscape.",
+          "detail": "Across the album's second half, melodic elements tend to be single notes or two-note intervals rather than phrases. The reduction of melodic thinking to its smallest unit is consistent with the album's overall aesthetic of subtraction."
+        },
+        {
+          "timestamp": "7:15",
+          "section": "Exit preparation",
+          "description": "the texture begins to thin — the harmonic movement decelerates toward a single sustained chord.",
+          "detail": "The approach of '5:23' is the album's most anticipated structural moment; '8:07' prepares for it by reducing to minimal content, making the entry of the next track's more familiar melodic character feel like a revelation."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "5:23",
+      "duration": "5:23",
+      "energy": "mid",
+      "tags": [
+        "Tangerine Dream Reference",
+        "Rejected Remix Repurposed",
+        "GTA IV Appearance",
+        "Melodic High Point"
+      ],
+      "role": "Album role: The album's melodic summit — a piece derived from a rejected Tangerine Dream remix that shares structural elements with 'Love on a Real Train' (Risky Business, 1983), and the most melodically defined track on the record.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sweeping pad entry",
+          "description": "a broad, warm synthesizer sweep opens the piece — immediately distinct in warmth and forward momentum from what precedes it.",
+          "detail": "Global Communication had attempted to deliver a remix of Tangerine Dream material for a project that was ultimately declined. Rather than discard the work, Middleton and Pritchard reworked it as their own composition. The piece's resemblance to TD's 'Love on a Real Train' — from the Risky Business soundtrack — is structural rather than incidental."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Melodic sequence",
+          "description": "the arpeggiated melodic sequence enters — cyclic, warm, with a forward motion distinct from the album's predominantly static ambient pieces.",
+          "detail": "'5:23' is the piece on 76:14 most legible to listeners arriving from conventional melodic music. Its cyclical melody and forward harmonic motion provide a brief point of recognition before the album returns to its ambient register for the final two tracks."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Harmonic climax",
+          "description": "the full melodic and harmonic arrangement simultaneously active — the track at its expressive ceiling.",
+          "detail": "This is the most melodically saturated moment on the entire album. The track's peak is brief; the descent begins almost immediately after, ensuring the emotional impact does not dilute through repetition."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Resolution and fade",
+          "description": "the melodic sequence reduces in complexity — the piece withdraws toward a held chord.",
+          "detail": "The short duration of '5:23' means even its withdrawal is brief. The track functions as an island of melodic clarity between the long ambient spans of '8:07' and '4:14'."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "4:14",
+      "duration": "4:14",
+      "energy": "low",
+      "tags": [
+        "Penultimate Track",
+        "Harmonic Wind-Down",
+        "Pre-Closing Bridge"
+      ],
+      "role": "Album role: The penultimate piece — a brief return to the album's ambient register after the melodic exposition of '5:23', functioning as a harmonic bridge that prepares the context for the twelve-minute closing piece.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Near-ambient opening",
+          "description": "very quiet sustained pads — the melodic warmth of '5:23' drains away immediately.",
+          "detail": "The abruptness of the return to near-silence after '5:23' is the album's structural answer to '5:23's melodic brightness. The contrast emphasises both: the rarity of melody makes it more affecting; its swift departure makes the subsequent silence feel more complete."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Low-frequency tone",
+          "description": "a deep, sub-bass tone enters beneath the pads — the lowest fundamental in the piece.",
+          "detail": "The bass tone grounds the track harmonically without providing melodic direction. It functions as a root note reference — anchoring the listener's sense of where the album currently sits harmonically before the final movement."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Dissolution toward finale",
+          "description": "all elements thin out — the track reduces to near-nothing before '12:18' begins.",
+          "detail": "By the end of '4:14' the album has cleared every sonic element from the stage. The twelve-minute closing piece begins in a space that has been explicitly emptied — a compositional choice that gives the finale room to accumulate from zero."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "12:18",
+      "duration": "12:18",
+      "energy": "low",
+      "tags": [
+        "Album Closer",
+        "Extended Denouement",
+        "Final Movement",
+        "Long-Form Resolution"
+      ],
+      "role": "Album role: The album's terminal movement — a twelve-minute closing piece that mirrors the scale of '14:31' while providing a resolution to the harmonic journey the album has traced across its 76-minute duration.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Final movement begins",
+          "description": "a new harmonic opening — distinguished from preceding tracks by a quality of spacious finality.",
+          "detail": "The opening chord of '12:18' arrives with a sense of arrival rather than transition. After nine tracks of journey, the final piece announces itself as a destination. The harmonic character is warmer and more resolved than the middle-section pieces."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Closing chord progression",
+          "description": "a slow harmonic sequence — measured movement through the final harmonic landscape.",
+          "detail": "The pacing of this chord progression is slower than anything in the album's middle section. At this stage the album is not building toward a new event — it is extending and inhabiting a final state. The progression is circular rather than directional: a returning, not an arriving."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Melodic statement",
+          "description": "the track's central melodic phrase — the most fully formed melodic material in the closing piece.",
+          "detail": "The melodic content of '12:18' participates in a pattern set by '14:31': extensive harmonic preparation before a melodic phrase that, when it arrives, feels long overdue. The album's final melody is calm, unhurried, and without forward urgency — a statement rather than a gesture."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Long denouement begins",
+          "description": "elements begin the track's slow systematic withdrawal — the final extended exhale.",
+          "detail": "The denouement of '12:18' occupies approximately five of the track's twelve minutes — a withdrawal duration proportionally consistent with the album's structural approach throughout. The process is unhurried; nothing is dropped abruptly."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Minimal texture",
+          "description": "most elements removed — a single pad layer, fading, in a register approaching silence.",
+          "detail": "As the penultimate structural state, the near-silence here intensifies the weight of the single remaining element. The listener who has followed the album across 76 minutes arrives at this point prepared to receive very little as significant."
+        },
+        {
+          "timestamp": "11:15",
+          "section": "Terminal fade",
+          "description": "the album's final sustained tone attenuates gradually toward inaudibility.",
+          "detail": "76:14 ends as it began: a single sustained tone, below normal conversational volume, dissolving into the room. The album has described a circle: from near-silence to near-silence, with everything in between. The title runtime was chosen as the album's name specifically to resist the imposition of meaning — and the ending, offering nothing but cessation, honours that intention."
+        }
+      ]
+    }
+  ]
+}

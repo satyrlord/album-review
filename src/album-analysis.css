@@ -556,15 +556,11 @@ a {
   opacity: 0.35;
 }
 
-.site-footer-version,
-.site-footer-link {
+.site-footer-btn {
   font-family: var(--font-mono);
+  font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-.site-footer-link {
-  justify-self: end;
 }
 
 .ranking-heading {
@@ -694,8 +690,8 @@ a {
 }
 
 .segment-item-title {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.38), transparent);
-  color: white;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.35), transparent);
+  color: #000000;
   font-size: 0.64rem;
   inset: 0 auto 0 0.45rem;
   max-width: calc(100% - 0.55rem);
@@ -760,7 +756,7 @@ a {
     justify-content: center;
   }
 
-  .site-footer-link {
+  .site-footer-btn:last-child {
     justify-self: center;
   }
 }

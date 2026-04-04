@@ -8,5 +8,5 @@
     "noEmit": true,
     "skipLibCheck": true
   },
-  "include": ["src/site.ts", "src/index.ts", "src/album.ts", "src/rankings.ts", "src/segment.ts"]
+  "include": ["src/site.ts", "src/index.ts", "src/album.ts", "src/rankings.ts", "src/segment.ts", "src/credits.ts"]
 }

@@ -1,5 +1,23 @@
 [
   {
+    "id": "global-communication-76-14",
+    "artist": "Global Communication",
+    "title": "76:14",
+    "year": 1994,
+    "tracks": 10,
+    "genre": "Ambient / Downtempo",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/GC_7614.jpg"
+  },
+  {
+    "id": "gustav-holst-the-planets",
+    "artist": "Gustav Holst",
+    "title": "The Planets",
+    "year": 1916,
+    "tracks": 7,
+    "genre": "Orchestral / Classical",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/The-Planets-score-cover.jpg"
+  },
+  {
     "id": "jean-michel-jarre-oxygene",
     "artist": "Jean-Michel Jarre",
     "title": "Oxygène",
@@ -45,6 +63,34 @@
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/f/f5/Oxygene3.jpg"
   },
   {
+    "id": "jean-michel-jarre-oxygene-trilogy",
+    "artist": "Jean-Michel Jarre",
+    "title": "Oxygène Trilogy",
+    "year": 2016,
+    "tracks": 20,
+    "genre": "Electronic / Ambient",
+    "coverUrl": "https://cdn.ozone.ro/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/j/e/011b021c045210acb54e45ecd65ae656/jean-michel-jarre---oxygene-trilogy-cd-30.jpg"
+  },
+  {
+    "id": "jean-michel-jarre-equinoxe-infinity",
+    "artist": "Jean-Michel Jarre",
+    "title": "Equinoxe Infinity",
+    "year": 2018,
+    "tracks": 10,
+    "genre": "Electronic / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/11/Jarre_Equinoxe_Infinity_cover_1.jpg"
+  },
+  {
+    "id": "matt-uelmen-diablo-hellfire",
+    "artist": "Matt Uelmen",
+    "title": "Diablo + Hellfire",
+    "year": 1997,
+    "tracks": 9,
+    "genre": "Dark Ambient / Soundtrack",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/3/3a/Diablo_Coverart.png",
+    "isSoundtrack": true
+  },
+  {
     "id": "mike-oldfield-tubular-bells",
     "artist": "Mike Oldfield",
     "title": "Tubular Bells",
@@ -73,6 +119,35 @@
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/65/Mike_oldfield_tubular_bells_iii_album_cover.jpg"
   },
   {
+    "id": "mike-oldfield-tubular-bells-2003",
+    "artist": "Mike Oldfield",
+    "title": "Tubular Bells 2003",
+    "year": 2003,
+    "tracks": 17,
+    "genre": "Progressive Rock / New Age",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/9e/Tubular_Bells_2003_CD_Front_Cover.jpg"
+  },
+  {
+    "id": "rik-schaffer-vampire-the-masquerade-bloodlines",
+    "artist": "Rik Schaffer",
+    "title": "Vampire: The Masquerade - Bloodlines",
+    "year": 2004,
+    "tracks": 17,
+    "genre": "Dark Ambient / Soundtrack",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/96/Vampire_-_The_Masquerade_%E2%80%93_Bloodlines_Coverart.png",
+    "isSoundtrack": true
+  },
+  {
+    "id": "tangerine-dream-hyperborea",
+    "artist": "Tangerine Dream",
+    "title": "Hyperborea",
+    "year": 1983,
+    "tracks": 4,
+    "genre": "Berlin School / Ambient",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/10/Hyperborea.png",
+    "isSoundtrack": true
+  },
+  {
     "id": "the-prodigy-music-for-the-jilted-generation",
     "artist": "The Prodigy",
     "title": "Music for the Jilted Generation",
@@ -89,6 +164,44 @@
     "tracks": 10,
     "genre": "Electronic / Big Beat",
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/3/3b/TheProdigy-TheFatOfTheLand.jpg"
+  },
+  {
+    "id": "vangelis-heaven-and-hell",
+    "artist": "Vangelis",
+    "title": "Heaven and Hell",
+    "year": 1975,
+    "tracks": 9,
+    "genre": "Electronic / Symphonic",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e6/Vangelis_Heaven_and_Hell.jpg"
+  },
+  {
+    "id": "vangelis-spiral",
+    "artist": "Vangelis",
+    "title": "Spiral",
+    "year": 1977,
+    "tracks": 5,
+    "genre": "Electronic / Progressive",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7d/Vangelis_Spiral.jpg"
+  },
+  {
+    "id": "vangelis-cosmos",
+    "artist": "Vangelis",
+    "title": "Cosmos",
+    "year": 1980,
+    "tracks": 26,
+    "genre": "Electronic / Soundtrack",
+    "coverUrl": "https://m.media-amazon.com/images/S/pv-target-images/49432757286e279066a41e781edd0ca0ab8737ad0206656d87ca4857df15948f.jpg",
+    "isSoundtrack": true
+  },
+  {
+    "id": "vangelis-1492-conquest-of-paradise",
+    "artist": "Vangelis",
+    "title": "1492: Conquest of Paradise",
+    "year": 1992,
+    "tracks": 12,
+    "genre": "Electronic / Soundtrack",
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a7/1492_Conquest_of_Paradise.jpg",
+    "isSoundtrack": true
   },
   {
     "id": "vangelis-voices",

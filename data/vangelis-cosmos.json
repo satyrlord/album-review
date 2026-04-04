@@ -1,0 +1,1242 @@
+{
+  "id": "vangelis-cosmos",
+  "artist": "Vangelis",
+  "title": "Cosmos",
+  "year": 1980,
+  "label": "RCA Records",
+  "producer": "Vangelis",
+  "genre": "Electronic / Soundtrack",
+  "runtime": "2:32:49",
+  "isSoundtrack": true,
+  "coverUrl": "https://m.media-amazon.com/images/S/pv-target-images/49432757286e279066a41e781edd0ca0ab8737ad0206656d87ca4857df15948f.jpg",
+  "youtubeUrl": "https://www.youtube.com/watch?v=27cwjcdopfI",
+  "overview": "Cosmos (1980) compiles all of Vangelis's electronic compositions used in Carl Sagan's landmark PBS documentary Cosmos: A Personal Voyage, the most widely watched public television series in American history with over 500 million viewers worldwide. Drawing from seven Vangelis studio albums spanning 1972 to 1978 — L'Apocalypse des Animaux, Heaven and Hell, Albedo 0.39, Entends-Tu Les Chiens Aboyer?, Spiral, Beaubourg, and the 1986 Cosmos special edition — the 26-track, two-disc compilation recontextualises Vangelis's 1970s synthesiser catalogue as a unified cosmological narrative, from the celestial grandeur of Movement 3 (the series signature theme, here titled Heaven And Hell, Part 1) through the scientific wonder of Pulstar and Alpha to the ritualistic darkness of Beaubourg and 12 O'Clock. The compilation also includes Comet 16, composed specifically for the 1986 Cosmos special edition, and a closing Music Of The Cosmos medley that reprises the collection's principal themes.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Heaven And Hell, Part 1",
+      "duration": "4:05",
+      "energy": "mid",
+      "tags": [
+        "Cosmos Theme",
+        "Melodic",
+        "Cinematic",
+        "Contemplative",
+        "Signature"
+      ],
+      "role": "Series signature theme; the celestial synthesiser melody from Movement 3 of the Heaven and Hell album became the most recognised piece of music in the entire Cosmos franchise, opening and contextualising Carl Sagan's cosmic perspective from the first episode onward.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro Pad",
+          "description": "Soft sustained synthesiser chords; reverential, space-like quality sets the tone for the series."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Main Theme",
+          "description": "The iconic synthesiser melody enters; clear, lyrical, and unhurried — the defining musical identity of Cosmos."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Countermelody",
+          "description": "Secondary synthesiser voice adds harmonic counterpoint beneath the main theme."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Choir Undertone",
+          "description": "Distant choral texture surfaces beneath the synth melody; linking the electronic and orchestral dimensions."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Melodic Return",
+          "description": "Theme restated in slightly richer harmonic context; emotional depth increases without dramatising."
+        },
+        {
+          "timestamp": "3:35",
+          "section": "Fade",
+          "description": "Gradual diminuendo; melody and pads converge into a sustained chord."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "To the Unknown Man",
+      "duration": "9:03",
+      "energy": "peak",
+      "tags": [
+        "CS-80",
+        "Atmospheric",
+        "MIDEM Award",
+        "Extended",
+        "Contemplative"
+      ],
+      "role": "Extended centrepiece from Spiral (1977); the Midem Prize-winning composition provides Cosmos with its most sustained moment of cosmic awe, used to underscore sequences depicting deep-space exploration and the immensity of the observable universe.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone Open",
+          "description": "Deep bass synthesiser drone; vast and unmoving, establishing infinite spatial register."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "CS-80 Theme",
+          "description": "Principal CS-80 melody emerges; slow, measured phrases with extensive portamento."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Harmonic Thickening",
+          "description": "Additional synthesiser voices sustain beneath the melody; chordal fabric deepens."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Rhythmic Pulse",
+          "description": "Soft percussion pulse enters; temporal marking rather than rhythmic drive."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Development",
+          "description": "Melodic material transposed and varied across a wider pitch range."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Climax",
+          "description": "Full orchestral-synthesiser density with melody at its most emphatic."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Dissolution",
+          "description": "Layers withdraw; the drone reasserts beneath the departing melody."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Outro",
+          "description": "Solitary bass drone and long reverb trail; presence dissipates into silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "12 O'Clock",
+      "duration": "5:20",
+      "energy": "high",
+      "tags": [
+        "Dissonant",
+        "Vocals",
+        "Vana Verouti",
+        "Ritual",
+        "Edited"
+      ],
+      "role": "Edited excerpt from the Hell side of Heaven and Hell; Vana Verouti's soprano and dissonant choral forces represent the series' encounters with cosmic violence — asteroid impacts, volcanic upheaval, and stellar death.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Frenzied Opening",
+          "description": "Rapid synthesiser figures and choral dissonance from the outset; chaotic energy immediately established."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Choir Eruption",
+          "description": "Full choral forces at dissonant intensity; organised sound dissolving toward noise."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Verouti Vocal",
+          "description": "Soprano cuts through the orchestral chaos as melodic anchor within the frenzy."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Climax",
+          "description": "Peak dissonance; the most turbulent dynamic point of the excerpt."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Structural Hinge",
+          "description": "Sudden drop to near-silence; dramatic caesura before the second section."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Hypnotic Ostinato",
+          "description": "Ostinato-driven texture replaces frenzy; ritual darkness in a different mode."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Fade",
+          "description": "Texture fragments and recedes; extract fades before the original's full resolution."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Bacchanale",
+      "duration": "4:40",
+      "energy": "high",
+      "tags": [
+        "Orchestral-Synth",
+        "Choral",
+        "Ceremonial",
+        "Rhythmic",
+        "Processional"
+      ],
+      "role": "Opening movement of Heaven and Hell Part I; the ceremonial percussion and massed choir supplied Cosmos with music for sequences depicting ancient civilisations, the Library of Alexandria, and humanity's earliest communal encounters with the cosmos.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Percussion Intro",
+          "description": "Stark rhythmic attack opens without preamble; ceremonial energy asserted immediately."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Choir Entry",
+          "description": "English Chamber Choir in unison; processional character with no harmonic ambiguity."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Orchestral Build",
+          "description": "Synthesised string layers accumulate beneath the choir; density rises."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Climax",
+          "description": "Full choir and orchestral synthesis at peak density; percussion drives the apex."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Recession",
+          "description": "Choir withdraws; melodic synthesiser line carries forward alone."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Transition",
+          "description": "Texture dissolves; long decay into silence."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Pulstar",
+      "duration": "5:20",
+      "energy": "high",
+      "tags": [
+        "Sequencer",
+        "Pulsating",
+        "Albedo 0.39",
+        "Rhythmic",
+        "Iconic"
+      ],
+      "role": "Sequencer-driven centrepiece from Albedo 0.39 (1976); the pulsating electronic rhythm and propulsive arpeggios scored Cosmos sequences depicting stellar physics, pulsars, and the rhythmic regularity of cosmic phenomena.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequencer Intro",
+          "description": "Pulsating sequencer pattern opens; metronomic precision establishing a stellar heartbeat."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Melodic Layer",
+          "description": "Synthesiser melody enters above the pulse; bright, forward-moving harmonic character."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Harmonic Expansion",
+          "description": "Secondary synth voice adds parallel motion; the texture broadens without losing rhythmic focus."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Peak Density",
+          "description": "All layers simultaneously active; sequencer, melody, and harmonic pads at full convergence."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Variation",
+          "description": "Melodic material varied and extended; development without structural break."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Sequencer pattern thins as upper melodic layers withdraw; pulse remains to the end."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Beaubourg",
+      "duration": "7:50",
+      "energy": "mid",
+      "tags": [
+        "Avant-Garde",
+        "Abstract",
+        "Experimental",
+        "Textural",
+        "Dissonant"
+      ],
+      "role": "Extended excerpt from Beaubourg (1978), Vangelis's most abstract and experimental album; used in Cosmos to underscore sequences depicting cosmic cataclysms, the Rite of Spring chapter, and the more violent, entropic aspects of the universe.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Textural Opening",
+          "description": "Abstract electronic textures from the outset; no recognisable melody or rhythm — pure sonic mass."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Percussive Element",
+          "description": "Sparse percussive impacts punctuate the texture; irregular intervals create tension."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Density Surge",
+          "description": "Layered synthesiser noise reaches peak density; the most aggressive sonic moment in the excerpt."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Thinning",
+          "description": "Texture begins to dissipate; individual electronic elements become distinguishable."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Residual Fragments",
+          "description": "Sparse tones and electronic remnants; the violence subsides toward uneasy stillness."
+        },
+        {
+          "timestamp": "7:15",
+          "section": "Outro",
+          "description": "Near-silence; long decay trails dissolve the excerpt into its conclusion."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Dervish D.",
+      "duration": "5:17",
+      "energy": "peak",
+      "tags": [
+        "Sufi Whirling",
+        "Percussive",
+        "Rhythmic",
+        "World Influence",
+        "Spiral"
+      ],
+      "role": "Rhythmic centrepiece from Spiral (1977) inspired by Sufi whirling; used in Cosmos to accompany sequences exploring ancient astronomical traditions and the cultural universality of humanity's relationship with celestial motion.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Percussion Intro",
+          "description": "Hand percussion patterns establish forward motion immediately; no ambient introduction."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Synthesiser Entry",
+          "description": "CS-80 melodic figure enters; modal, Middle-Eastern inflected interval choices."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Acceleration",
+          "description": "Rhythmic density increases; additional percussion layers compound the rotational momentum."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Melodic Spiral",
+          "description": "Melodic line circles its central note in increasingly rapid motion — the Dervish figure rendered musically."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Peak",
+          "description": "All layers simultaneously active; full percussion, multiple synth voices, fastest rotation."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Recession",
+          "description": "Percussion thins; melodic motion slows after the ecstatic peak."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Outro",
+          "description": "Final chord held as percussion drops away; returning stillness."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Himalaya",
+      "duration": "10:34",
+      "energy": "mid",
+      "tags": [
+        "Pastoral",
+        "Orchestral",
+        "Film Score",
+        "L'Apocalypse des Animaux",
+        "Extended"
+      ],
+      "role": "Extended piece from L'Apocalypse des Animaux (1972), Vangelis's early documentary soundtrack for Frédéric Rossif; used in Cosmos to underscore natural world sequences and the evolutionary origins of life on Earth, its pastoral orchestral warmth providing emotional contrast to the surrounding electronic material.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Gentle synthesiser pad with pastoral quality; warm, open harmonic register."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Melodic Statement",
+          "description": "Principal melody unfolds; lyrical, unhurried, with a documentary score's functional clarity."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Harmonic Development",
+          "description": "Supporting harmonic layers thicken beneath the melody; orchestral density increases."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Mid-Section",
+          "description": "Textural variation; the melodic material is restated with different voicing."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Climactic Build",
+          "description": "Gradual dynamic increase toward the piece's emotional apex; harmonic weight concentrated."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Resolution",
+          "description": "Melodic material resolves into its tonic; the longest sustained tonal stability in the piece."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Outro",
+          "description": "Gentle fade; pastoral character maintained to the final bar."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Summit",
+      "duration": "4:14",
+      "energy": "mid",
+      "tags": [
+        "Pastoral",
+        "Reflective",
+        "L'Apocalypse des Animaux",
+        "Orchestral",
+        "Brief"
+      ],
+      "role": "Companion piece to Himalaya from L'Apocalypse des Animaux; the reflective, pastoral character provided Cosmos with scoring for contemplative passages about humanity's place in the natural order and the evolutionary continuity of life.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained chord with gentle melodic inflection; reflective and unhurried."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Theme",
+          "description": "Principal melody enters; simple, lyrical, with the direct emotional clarity of documentary scoring."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Development",
+          "description": "Harmonic supporting texture expands beneath the melody."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Climax",
+          "description": "Gentle dynamic peak; the most harmonically complete moment of the piece."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Recession",
+          "description": "Melody withdraws; supporting pad sustains alone."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Final chord held into silence."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Entends Tu Les Chiens Aboyer",
+      "duration": "2:44",
+      "energy": "low",
+      "tags": [
+        "Atmospheric",
+        "Sparse",
+        "Ambient",
+        "Interlude",
+        "Mysterious"
+      ],
+      "role": "Brief atmospheric excerpt from Entends-Tu Les Chiens Aboyer? (1977); its sparse, mysterious quality provided Cosmos with transitional scoring between major thematic sequences, evoking the silence and darkness of interstellar space.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse electronic texture; near-silence with isolated tonal elements."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Melodic Fragment",
+          "description": "Brief melodic gesture surfaces then recedes; enigmatic and unresolved."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Textural Expansion",
+          "description": "Additional synthesiser elements introduce faint harmonic shading."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Fade",
+          "description": "All elements withdraw; the piece dissolves into ambient silence."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Comet 16",
+      "duration": "3:50",
+      "energy": "mid",
+      "tags": [
+        "Cosmos Special Edition",
+        "Title Theme",
+        "CS-80",
+        "Cinematic",
+        "Original Score"
+      ],
+      "role": "The only track composed specifically for Cosmos rather than drawn from a prior album; written for the 1986 special edition of the series, Comet 16 served as opening and closing credits music for all six episodes and is the sole officially released cue from the unique special edition soundtrack.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric synthesiser opening; celestial register with cinematic intent."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Theme Entry",
+          "description": "Principal melodic line establishes the Comet identity; distinct from the Movement 3 Cosmos theme but similarly contemplative."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Harmonic Build",
+          "description": "Supporting chordal layers accumulate; the texture approaches orchestral density."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Development",
+          "description": "Melodic variation and harmonic intensification; the piece's central dramatic moment."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Climax",
+          "description": "Full synthesiser density with theme at its most emphatic."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Outro",
+          "description": "Gradual recession; melody dissolves into sustained pad and reverb tail."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Entends Tu Les Chiens Aboyer (Mv. 1)",
+      "duration": "4:13",
+      "energy": "low",
+      "tags": [
+        "Atmospheric",
+        "Extended",
+        "Ambient",
+        "Mysterious",
+        "Slow Build"
+      ],
+      "role": "First movement of the extended Entends-Tu Les Chiens Aboyer? suite; its slow-building atmospheric tension provided Cosmos with scoring for sequences exploring the unknown — deep space, uncharted planetary surfaces, and the limits of human knowledge.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Drone",
+          "description": "Low sustained tone; near-static atmospheric foundation."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Texture Entry",
+          "description": "Faint synthesiser elements emerge above the drone; slowly increasing presence."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Melodic Fragment",
+          "description": "Brief melodic gesture; tentative and exploratory in character."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Build",
+          "description": "Harmonic density gradually increases; the slow accumulation of texture building toward the second movement."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Transition",
+          "description": "Texture reaches a plateau and holds; the movement sustains its tension without resolution."
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "Entends Tu Les Chiens Aboyer (Mv. 2)",
+      "duration": "13:03",
+      "energy": "mid",
+      "tags": [
+        "Extended",
+        "Progressive",
+        "Atmospheric",
+        "Long-Form",
+        "Developmental"
+      ],
+      "role": "Longest single track on the compilation; the second movement unfolds as a 13-minute electronic meditation that provided Cosmos with its most sustained atmospheric underscore, used across multiple episodes to accompany extended passages of narrative reflection and the contemplation of cosmic time scales.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Continuation from Movement 1; atmospheric textures sustained from the preceding transition."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Melodic Development",
+          "description": "Extended melodic material emerges; unhurried development characteristic of Vangelis's long-form approach."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Rhythmic Element",
+          "description": "Subtle rhythmic pulse enters beneath the melodic fabric; temporal structure asserted for the first time."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Harmonic Peak",
+          "description": "Synthesiser layers reach maximum harmonic density; the movement's central dramatic weight."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Mid-Section",
+          "description": "Textural variation; the piece explores secondary harmonic territory."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Recession",
+          "description": "Gradual withdrawal of layered elements; long diminuendo begins."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Dissolution",
+          "description": "Sparse remnants of the melodic material; the texture thins toward silence."
+        },
+        {
+          "timestamp": "12:20",
+          "section": "Outro",
+          "description": "Final sustained tone dissolves; closing the first disc of the compilation."
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "Creation Du Monde",
+      "duration": "9:59",
+      "energy": "mid",
+      "tags": [
+        "L'Apocalypse des Animaux",
+        "Genesis",
+        "Orchestral",
+        "Pastoral",
+        "Extended"
+      ],
+      "role": "Extended piece from L'Apocalypse des Animaux; the title translates as 'Creation of the World,' and the piece opens disc two by scoring Cosmos sequences depicting the origins of life, evolution, and the emergence of biological complexity on Earth.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Gentle synthesiser pad; the Creation narrative begins in quiet harmonic simplicity."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Theme Entry",
+          "description": "Principal melody unfolds; pastoral, warm, and unhurried in character."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Harmonic Depth",
+          "description": "Supporting harmonic layers develop beneath the melody; the orchestral texture fills out."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Development",
+          "description": "Melodic variation and harmonic enrichment; the piece expands in scope."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Climax",
+          "description": "Dynamic peak; the fullest expression of the Creation theme's emotional weight."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Resolution",
+          "description": "Harmonic resolution toward tonic; the evolutionary narrative achieves stability."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Outro",
+          "description": "Gentle fade; the pastoral warmth sustained to the final beat."
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "title": "Alpha",
+      "duration": "5:48",
+      "energy": "high",
+      "tags": [
+        "Sequencer",
+        "Rhythmic",
+        "Albedo 0.39",
+        "Propulsive",
+        "Iconic"
+      ],
+      "role": "Propulsive sequencer piece from Albedo 0.39 (1976); alongside Pulstar, Alpha provided Cosmos with its most rhythmically driven scoring, used for sequences depicting space exploration, the Voyager probes, and humanity's first tentative journeys beyond Earth.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequencer Intro",
+          "description": "Propulsive sequencer arpeggio opens immediately; rhythmic momentum from the first bar."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Melodic Layer",
+          "description": "Synthesiser melody enters above the sequencer; upward-moving, optimistic character."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Harmonic Build",
+          "description": "Additional synthesiser voices layer beneath; the texture thickens toward full density."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Peak",
+          "description": "All elements simultaneously active; sequencer, melody, and harmony at full convergence."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Variation",
+          "description": "Melodic development continues over the sustained sequencer pulse."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Sequencer pattern continues as upper layers withdraw; propulsive energy maintained to the end."
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "title": "Albedo 0.39",
+      "duration": "4:24",
+      "energy": "mid",
+      "tags": [
+        "Scientific",
+        "Spoken Data",
+        "Conceptual",
+        "Atmospheric",
+        "Title Track"
+      ],
+      "role": "Title track from Albedo 0.39 (1976), named after Earth's planetary reflectivity coefficient; its fusion of scientific data recitation with synthesiser atmosphere made it a natural fit for Cosmos sequences exploring planetary physics and Earth's relationship to solar radiation.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric synthesiser texture; the scientific framework established by the sonic register."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Data Recitation",
+          "description": "Spoken planetary data enters; numerical facts interwoven with electronic texture."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Harmonic Development",
+          "description": "Synthesiser layers build beneath the spoken content; the musical dimension deepens."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Textural Peak",
+          "description": "Full harmonic density with continued data recitation; science and music integrated."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Recession",
+          "description": "Texture thins; the data recitation subsides."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Sustained pad fades into silence."
+        }
+      ]
+    },
+    {
+      "num": 17,
+      "title": "A Way",
+      "duration": "3:30",
+      "energy": "low",
+      "tags": [
+        "Resolution",
+        "Ambient",
+        "Heaven and Hell",
+        "Contemplative",
+        "Atmospheric"
+      ],
+      "role": "Closing coda from Heaven and Hell; its open-ended, unresolved stasis provided Cosmos with scoring for passages of philosophical reflection, where Sagan contemplated the unknowable and the unresolved questions of cosmic existence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained chord with residual dissonant undertone; atmospheric ambiguity."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Melodic Emergence",
+          "description": "Melodic synthesiser line surfaces; harmonically ambiguous gesture toward resolution."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Swell",
+          "description": "Synthesiser layers accumulate; gentle density increase."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Balance Point",
+          "description": "Textures coexist in neutral equilibrium; neither tension nor release dominates."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Outro",
+          "description": "Elements withdraw; final chord dissolves into silence."
+        }
+      ]
+    },
+    {
+      "num": 18,
+      "title": "Heaven And Hell, Part 3",
+      "duration": "4:07",
+      "energy": "mid",
+      "tags": [
+        "Cosmos Theme",
+        "Melodic",
+        "Cinematic",
+        "Contemplative",
+        "Variant Edit"
+      ],
+      "role": "Second presentation of the Movement 3 Cosmos signature theme in an alternate edit; its reappearance on disc two reinforces the theme's centrality to the Cosmos musical identity and its use across multiple episodes of the series.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro Pad",
+          "description": "Sustained synthesiser chords; the familiar celestial register re-established."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Theme Entry",
+          "description": "The Cosmos melody returns; familiar and lyrical, restating the series' musical identity."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Countermelody",
+          "description": "Secondary voice adds harmonic counterpoint beneath the main theme."
+        },
+        {
+          "timestamp": "2:05",
+          "section": "Choir Element",
+          "description": "Choral texture enters; linking the electronic and orchestral dimensions more prominently."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Melodic Reprise",
+          "description": "Full statement of the theme in its richest harmonic context."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Outro",
+          "description": "Gradual recession; theme dissolves into sustained pad."
+        }
+      ]
+    },
+    {
+      "num": 19,
+      "title": "So Long Ago, So Clear",
+      "duration": "5:04",
+      "energy": "low",
+      "tags": [
+        "Vocals",
+        "Jon Anderson",
+        "Ethereal",
+        "Reflective",
+        "Heaven and Hell"
+      ],
+      "role": "Jon Anderson's vocal collaboration from Heaven and Hell; its intimate, ethereal quality provided Cosmos with its most human and emotionally direct moment, used for sequences reflecting on humanity's brief presence in cosmic time.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Quiet synthesiser pad; intimate scale in deliberate contrast to surrounding orchestral material."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Vocal Entry",
+          "description": "Jon Anderson enters with pure, unprocessed vocal tone."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Accompaniment",
+          "description": "Gentle synthesiser support fills in beneath the vocal line."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Mid-Section",
+          "description": "Melodic expansion; Anderson's upper range explored as accompaniment grows textured."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Instrumental Bridge",
+          "description": "Brief vocal pause; synthesiser melody sustains the material."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Vocal Return",
+          "description": "Anderson re-enters with increased harmonic richness beneath."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Vocal fades with long reverb tail; extended decay into silence."
+        }
+      ]
+    },
+    {
+      "num": 20,
+      "title": "Ballad",
+      "duration": "8:29",
+      "energy": "low",
+      "tags": [
+        "Vocals",
+        "Processed Voice",
+        "CS-80",
+        "Introspective",
+        "Spiral"
+      ],
+      "role": "The only vocal track from Spiral (1977); processed vocals dissolve human identity into synthesised texture, providing Cosmos with scoring for its most introspective passages about consciousness, memory, and the persistence of intelligence in the universe.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained CS-80 chord with long attack; meditative and near-static."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Vocal Entry",
+          "description": "Processed vocals emerge; unintelligible as language, functioning as another synthesised instrument."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "CS-80 Melody",
+          "description": "Principal synth melody joins the voice in loose counterpoint."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Mid-Section",
+          "description": "Bass synth layer deepens; gentle harmonic density increase."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Thinning",
+          "description": "Bass withdraws; texture reduced to melody and voice."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Vocal Solo",
+          "description": "Processed voice holds the line unaccompanied; extended passage of vulnerability."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Outro",
+          "description": "CS-80 pad returns to support the voice decay; long reverb dissolves into silence."
+        }
+      ]
+    },
+    {
+      "num": 21,
+      "title": "Heaven And Hell, Part 2",
+      "duration": "3:15",
+      "energy": "high",
+      "tags": [
+        "Dissonant",
+        "Percussive",
+        "Hell Side",
+        "Avant-Garde",
+        "Excerpt"
+      ],
+      "role": "Excerpt from the Hell side of Heaven and Hell; the dissonant, percussive material scored Cosmos sequences depicting cosmic violence, planetary destruction, and the hostile conditions of inhospitable worlds like Venus.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Attack",
+          "description": "Percussive dissonant electronic attack; no tonal orientation provided."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Choir Dissonance",
+          "description": "English Chamber Choir in discordant harmonics; the inverse of their Heaven-side deployment."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Percussive Drive",
+          "description": "Rhythmic intensity increases; unsettled pulse without metronomic regularity."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Peak",
+          "description": "Full dissonance at maximum tension; the excerpt's dynamic apex."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Fragmentation",
+          "description": "Rhythmic structure disrupted; metric ambiguity before the cut."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Cut",
+          "description": "Abrupt ending with no resolution; consistent with the Hell side's anti-closure aesthetic."
+        }
+      ]
+    },
+    {
+      "num": 22,
+      "title": "Spiral",
+      "duration": "6:56",
+      "energy": "high",
+      "tags": [
+        "CS-80",
+        "Sequencer",
+        "Progressive",
+        "Title Track",
+        "Conceptual"
+      ],
+      "role": "Title track from Spiral (1977); the forward-driving sequencer arpeggios and CS-80 melodies provided Cosmos with scoring for sequences depicting orbital mechanics, planetary motion, and the spiralling dynamics of galactic structure.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse CS-80 chord bloom; warm attack envelope immediately audible."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Sequencer Entry",
+          "description": "Rotational arpeggio pattern begins; the spiral motion rendered as rhythmic figure."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Melodic Development",
+          "description": "CS-80 melody unfolds above the sequencer; lyrical line with pronounced portamento."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Density Peak",
+          "description": "Full texture; multiple synthesiser voices and bass ostinato simultaneously active."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Development",
+          "description": "Secondary melodic figure against continuing sequencer rotation."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Outro",
+          "description": "Sequencer thins as melody withdraws; long reverb decay into forward motion."
+        }
+      ]
+    },
+    {
+      "num": 23,
+      "title": "Main Sequence",
+      "duration": "8:10",
+      "energy": "mid",
+      "tags": [
+        "Albedo 0.39",
+        "Scientific",
+        "Extended",
+        "Atmospheric",
+        "Contemplative"
+      ],
+      "role": "Extended piece from Albedo 0.39 named after the stellar classification system; its measured atmospheric progression provided Cosmos with scoring for sequences exploring stellar evolution, the Hertzsprung-Russell diagram, and the life cycles of stars.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric synthesiser textures; scientific register established through tonal restraint."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Theme Entry",
+          "description": "Melodic line enters; measured and contemplative, with documentary scoring clarity."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Harmonic Build",
+          "description": "Supporting layers accumulate; the texture acquires orchestral weight."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Development",
+          "description": "Melodic variation and harmonic intensification; the piece's central dramatic period."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Peak",
+          "description": "Full harmonic density; the most emotionally weighted moment."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Recession",
+          "description": "Layers begin withdrawing; the texture thins progressively."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Outro",
+          "description": "Sustained pad dissolves into silence; atmospheric conclusion."
+        }
+      ]
+    },
+    {
+      "num": 24,
+      "title": "Damask Rose",
+      "duration": "7:04",
+      "energy": "low",
+      "tags": [
+        "Processed",
+        "Blade Runner",
+        "Ambient",
+        "Slowed",
+        "Atmospheric"
+      ],
+      "role": "Heavily processed and slowed-down version of a Blade Runner (1982) cue; its dreamlike, time-stretched quality provided Cosmos with uniquely ethereal scoring, the processing transforming recognisable melodic material into a near-ambient textural wash.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Time-stretched synthesiser texture; the original Blade Runner material rendered almost unrecognisable by processing."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Melodic Ghost",
+          "description": "Slowed melodic fragments surface; the original melody perceptible only in outline."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Textural Bloom",
+          "description": "Harmonic field expands as the processing reveals granular detail in the source material."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Mid-Section",
+          "description": "The most sustained and continuous passage; ambient wash at steady density."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Dissolution",
+          "description": "Texture begins to dissipate; the processed material fades gradually."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Outro",
+          "description": "Final remnants of the time-stretched signal dissolve into silence."
+        }
+      ]
+    },
+    {
+      "num": 25,
+      "title": "Sword Of Orion",
+      "duration": "2:00",
+      "energy": "mid",
+      "tags": [
+        "Albedo 0.39",
+        "Brief",
+        "Atmospheric",
+        "Cinematic",
+        "Celestial"
+      ],
+      "role": "Brief atmospheric piece from Albedo 0.39; its compact celestial character provided Cosmos with a transitional cue evoking the Orion Nebula and stellar-formation regions discussed in multiple episodes.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric synthesiser chord; immediate celestial register."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Melodic Element",
+          "description": "Brief melodic figure surfaces; compact and cinematic."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Harmonic Fill",
+          "description": "Supporting pad texture expands; short-lived harmonic density."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Outro",
+          "description": "Rapid recession; the piece concludes as quickly as it arrived."
+        }
+      ]
+    },
+    {
+      "num": 26,
+      "title": "Music Of The Cosmos",
+      "duration": "9:41",
+      "energy": "mid",
+      "tags": [
+        "Medley",
+        "Reprise",
+        "Closing",
+        "Compilation Summary",
+        "Extended"
+      ],
+      "role": "Closing medley reprising the collection's principal themes in a single continuous suite; its function is both structural — concluding two and a half hours of material with a coherent recapitulation — and conceptual, affirming the unity of Vangelis's diverse compositional voices as a single cosmic musical statement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Opening Theme",
+          "description": "Movement 3 / Cosmos signature theme restated; the medley begins with the series' musical identity."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Alpha Reference",
+          "description": "Sequencer-driven material referencing Alpha and the Albedo 0.39 propulsive aesthetic."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Pastoral Section",
+          "description": "L'Apocalypse des Animaux material surfaces; the medley acknowledges the pastoral documentary roots."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Spiral Reference",
+          "description": "CS-80 material from the Spiral era; the medley moves through the chronological arc of the source albums."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Heaven And Hell Reference",
+          "description": "Choral-orchestral textures from the Heaven and Hell era; the grandest harmonic moment of the medley."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Final Theme",
+          "description": "Movement 3 returns for the final statement; the Cosmos melody affirmed as the collection's closing gesture."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Outro",
+          "description": "Long diminuendo and reverb decay; the compilation closes in sustained silence."
+        }
+      ]
+    }
+  ]
+}
