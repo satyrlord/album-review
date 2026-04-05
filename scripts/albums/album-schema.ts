@@ -50,16 +50,20 @@ export interface AlbumData {
   label: string;
   producer: string;
   genre: string;
+  /** 1–9 individual genre/subgenre tags derived from genre by splitting "/" and trimming whitespace; must include at least one non-empty tag */
+  genreTags: string[];
   /** Total runtime in M:SS or H:MM:SS format */
   runtime: string;
   /** Optional remote or local album-cover image path */
   coverUrl?: string;
-  /** Presence-only flag: set to true for Soundtracks page inclusion and omit when false */
+  /** Presence-only flag for soundtrack albums; omit when false */
   isSoundtrack?: boolean;
   /** Spotify album URL */
   spotifyUrl?: string;
-  /** YouTube Music album URL */
+  /** YouTube album URL */
   youtubeUrl?: string;
+  /** Alternative audio streaming URL — used when Spotify is unavailable (e.g. Apple Music, Deezer) */
+  audioStreamUrl?: string;
   /** 3–4 sentence analytical overview */
   overview: string;
   tracks: AlbumTrack[];
@@ -74,6 +78,8 @@ export interface AlbumIndexEntry {
   year: number;
   tracks: number;
   genre: string;
+  /** 1–9 individual genre/subgenre tags derived from genre by splitting "/" and trimming whitespace */
+  genreTags: string[];
   /** Optional remote or local thumbnail URL for the album cover */
   coverUrl?: string;
   /** Presence-only flag copied into the index only when the source album sets true */

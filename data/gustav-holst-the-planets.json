@@ -6,8 +6,12 @@
   "label": "Boosey & Hawkes",
   "producer": "Gustav Holst",
   "genre": "Orchestral / Classical",
+  "genreTags": [
+    "Orchestral",
+    "Classical"
+  ],
   "runtime": "49:09",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/The-Planets-score-cover.jpg",
+  "coverUrl": "covers/gustav-holst-the-planets.jpg",
   "spotifyUrl": "https://open.spotify.com/album/4v0Xyz0LVToUsSTGdsvKSK?si=NdabD0BXRJWo-fnXgGco1w",
   "youtubeUrl": "https://youtu.be/Isic2Z2e2xs",
   "overview": "The Planets, Op. 32 (1914–1916), is a seven-movement orchestral suite scored for an expanded symphony orchestra including six French horns, organ, celesta, two harps, and an offstage women's chorus in the final movement. Holst composed the work over three years while teaching at St Paul's Girls' School and Morley College, with two colleagues — Vally Lasker and Nora Day — acting as scribes to copy the 198-page full score as chronic neuritis impaired his right arm. Each movement depicts a planet's astrological character rather than its astronomical properties, ordered for maximum musical contrast: Mars opens with a relentless 5/4 ostinato building to quadruple-forte dissonance, while Neptune closes with a wordless female chorus fading to inaudibility behind a closing door — an early acoustic precursor of the recorded fade-out. Premiered at Queen's Hall on 29 September 1918 under Adrian Boult, the suite has been recorded over eighty times and its harmonic vocabulary directly influenced John Williams's Star Wars score six decades later.",

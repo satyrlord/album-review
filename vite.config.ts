@@ -98,7 +98,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(process.cwd(), "index.html"),
-        soundtracks: resolve(process.cwd(), "soundtracks.html"),
         album: resolve(process.cwd(), "album.html"),
         credits: resolve(process.cwd(), "credits.html"),
       },

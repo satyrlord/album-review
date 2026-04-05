@@ -6,9 +6,14 @@
   "label": "Blizzard Entertainment / Sierra On-Line",
   "producer": "Matt Uelmen",
   "genre": "Dark Ambient / Soundtrack",
+  "genreTags": [
+    "Dark Ambient",
+    "Soundtrack",
+    "Gothic"
+  ],
   "runtime": "33:00",
   "isSoundtrack": true,
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/3/3a/Diablo_Coverart.png",
+  "coverUrl": "covers/matt-uelmen-diablo-hellfire.png",
   "youtubeUrl": "https://www.youtube.com/watch?v=VEx4bItKqjE",
   "overview": "Composed by Matt Uelmen at Blizzard North's San Mateo studio between 1995 and 1997, the Diablo and Hellfire soundtracks span nine cues totalling 33 minutes that accompany the player's descent from the sunlit village of Tristram through four tiers of increasingly hostile dungeon into Hell itself, followed by two expansion areas added by Synergistic Software. Uelmen's primary instruments are 12-string acoustic guitar, electric guitar, flute, keyboards, and synthesisers processed through heavy reverb and tape delay to produce a claustrophobic dark ambient palette punctuated by tribal percussion and industrial distortion. Distributed as Red Book CD audio on the game discs by Blizzard Entertainment (Diablo, January 1997) and Sierra On-Line (Hellfire, November 1997), the soundtrack anchored a game that sold over 2.5 million copies worldwide, won Game of the Year from GameSpot and Computer Gaming World, and received a 94/100 Metacritic aggregate; Uelmen's audio work across the Diablo series earned the inaugural IGDA Excellence in Audio award in 2001.",
   "tracks": [
@@ -17,7 +22,12 @@
       "title": "Intro",
       "duration": "1:32",
       "energy": "low",
-      "tags": ["Cinematic", "Dark Ambient", "Drone", "Prelude"],
+      "tags": [
+        "Cinematic",
+        "Dark Ambient",
+        "Drone",
+        "Prelude"
+      ],
       "role": "Album role: brief cinematic prelude establishing the demonic mythos and medieval dread of the Diablo universe through sustained low drones and distant processed textures.",
       "events": [
         {
@@ -47,7 +57,13 @@
       "title": "Tristram",
       "duration": "4:49",
       "energy": "mid",
-      "tags": ["Acoustic Guitar", "Melodic", "Folk", "Melancholic", "Iconic"],
+      "tags": [
+        "Acoustic Guitar",
+        "Melodic",
+        "Folk",
+        "Melancholic",
+        "Iconic"
+      ],
       "role": "Album role: the emotional anchor of the entire soundtrack; a warm, melancholic 12-string guitar theme that provides the sole moment of safety and humanity between descents into the labyrinth.",
       "events": [
         {
@@ -92,7 +108,12 @@
       "title": "Dungeon",
       "duration": "4:25",
       "energy": "mid",
-      "tags": ["Dark Ambient", "Reversed Guitar", "Atmospheric", "Tension"],
+      "tags": [
+        "Dark Ambient",
+        "Reversed Guitar",
+        "Atmospheric",
+        "Tension"
+      ],
       "role": "Album role: first descent cue covering the Cathedral levels; transitioning from the safety of Tristram into unsettling dissonance and reversed guitar textures that signal the dungeon's corrupting influence.",
       "events": [
         {
@@ -137,7 +158,12 @@
       "title": "Catacombs",
       "duration": "5:50",
       "energy": "mid",
-      "tags": ["Dark Ambient", "Industrial", "Metallic", "Oppressive"],
+      "tags": [
+        "Dark Ambient",
+        "Industrial",
+        "Metallic",
+        "Oppressive"
+      ],
       "role": "Album role: deeper descent into the labyrinth; the catacombs cue intensifies the industrial textures and introduces metallic percussion elements that evoke bone-lined corridors and ancient tombs.",
       "events": [
         {
@@ -187,7 +213,12 @@
       "title": "Caves",
       "duration": "5:00",
       "energy": "high",
-      "tags": ["Tribal", "Percussive", "Subterranean", "Echo"],
+      "tags": [
+        "Tribal",
+        "Percussive",
+        "Subterranean",
+        "Echo"
+      ],
       "role": "Album role: third-tier descent cue representing the natural cave systems; tribal percussion and echo-heavy processing create a primal, subterranean atmosphere marking the transition from man-made structures to raw earth.",
       "events": [
         {
@@ -237,7 +268,12 @@
       "title": "Hell",
       "duration": "4:14",
       "energy": "peak",
-      "tags": ["Distorted Guitar", "Aggressive", "Demonic", "Climactic"],
+      "tags": [
+        "Distorted Guitar",
+        "Aggressive",
+        "Demonic",
+        "Climactic"
+      ],
       "role": "Album role: climactic descent cue for the deepest dungeon levels; maximum aggression achieved through distorted guitar, demonic vocal textures, and relentless industrial percussion, representing the direct approach to Diablo's lair.",
       "events": [
         {
@@ -287,7 +323,12 @@
       "title": "Hellfire Intro",
       "duration": "0:36",
       "energy": "low",
-      "tags": ["Cinematic", "Brief", "Transition", "Dark"],
+      "tags": [
+        "Cinematic",
+        "Brief",
+        "Transition",
+        "Dark"
+      ],
       "role": "Album role: brief cinematic bridge marking the transition from the base game into the Hellfire expansion's Na-Krul storyline.",
       "events": [
         {
@@ -317,7 +358,12 @@
       "title": "Hive",
       "duration": "3:58",
       "energy": "mid",
-      "tags": ["Organic", "Insectoid", "Dark Ambient", "Textural"],
+      "tags": [
+        "Organic",
+        "Insectoid",
+        "Dark Ambient",
+        "Textural"
+      ],
       "role": "Album role: first expansion dungeon cue representing the insectoid Nest; organic buzzing textures and skittering percussion differentiate the expansion's sonic palette from the base game's stone-and-metal environments.",
       "events": [
         {
@@ -362,7 +408,12 @@
       "title": "Crypts",
       "duration": "2:36",
       "energy": "mid",
-      "tags": ["Medieval", "Ecclesiastical", "Reverberant", "Gothic"],
+      "tags": [
+        "Medieval",
+        "Ecclesiastical",
+        "Reverberant",
+        "Gothic"
+      ],
       "role": "Album role: final expansion cue representing the Crypt dungeon; ecclesiastical reverb and medieval tonal qualities bring the combined soundtrack full circle to the cathedral atmosphere of the opening dungeon.",
       "events": [
         {

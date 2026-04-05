@@ -6,9 +6,16 @@
   "label": "Polydor",
   "producer": "Vangelis",
   "genre": "Electronic / Soundtrack",
+  "genreTags": [
+    "Electronic",
+    "Soundtrack",
+    "Ambient"
+  ],
   "runtime": "45:29",
   "isSoundtrack": true,
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/69/Vangelis_Antarctica_album_cover.jpg",
+  "coverUrl": "covers/vangelis-antarctica.jpg",
+  "audioStreamUrl": "https://music.apple.com/us/album/antarctica-remastered/1443091305",
+  "youtubeUrl": "https://www.youtube.com/watch?v=KWqaJElyqAo",
   "overview": "Recorded at Nemo Studios, London, with engineer Raine Shine, Antarctica is Vangelis's synthesiser score for Koreyoshi Kurahara's 1983 Japanese drama Nankyoku Monogatari — a film based on the true story of fifteen Sakhalin huskies abandoned at Showa Base during the 1958 Japanese Antarctic expedition. The score draws primarily on the Yamaha CS-80, Roland VP-330 Vocoder Plus, and layered analogue synthesisers to evoke polar isolation, desolation, and vast open terrain across eight continuous cues totalling 45 minutes. The film became the highest-grossing domestic production in Japanese box-office history, holding that record for fourteen years until Princess Mononoke (1997), and the score received a Japan Academy Prize nomination for Best Music Score; Allmusic rated the album three stars, describing it as a 'dynamic and dramatic set' conveying 'angst, isolation, and desolation'. Chronologically the third of Vangelis's major film commissions — following Chariots of Fire (1981) and the Blade Runner sessions (1982) — Antarctica preceded Soil Festivities (1984) in the studio catalogue.",
   "tracks": [
     {

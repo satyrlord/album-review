@@ -1,0 +1,371 @@
+{
+  "id": "vangelis-chariots-of-fire",
+  "artist": "Vangelis",
+  "title": "Chariots of Fire",
+  "year": 1981,
+  "label": "Polydor",
+  "producer": "Vangelis",
+  "genre": "Electronic / Soundtrack",
+  "genreTags": [
+    "Electronic",
+    "Soundtrack",
+    "Ambient",
+    "New Age"
+  ],
+  "runtime": "42:03",
+  "coverUrl": "covers/vangelis-chariots-of-fire.jpg",
+  "isSoundtrack": true,
+  "spotifyUrl": "https://open.spotify.com/album/5Ute8c6J4epFluaZ4rcj6Q",
+  "youtubeUrl": "https://www.youtube.com/watch?v=8a-HfNE3EIo",
+  "overview": "Recorded at Nemo Studios in London in 1980, Chariots of Fire is an intentionally anachronistic electronic score for a 1920s period film — Vangelis composed and performed all parts using the Yamaha CS-80 synthesizer, acoustic piano, and layered electronic percussion. The album programme diverges from the film mix: Side One presents five discrete cues plus the Ambrosian Singers' choral setting of Parry's \"Jerusalem\", while Side Two is a single continuous 20-minute suite reworking score material into an extended listening piece. The title theme reached No. 1 on the US Billboard Hot 100 and the album topped the Billboard 200 for four weeks; the score won the 1982 Academy Award for Best Original Score, establishing the CS-80-led synthesizer soundtrack as a viable mainstream film-scoring model.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Chariots of Fire (Titles)",
+      "duration": "3:33",
+      "energy": "mid",
+      "tags": [
+        "CS-80",
+        "Signature Theme",
+        "Pulsing Sequencer",
+        "Lead Single"
+      ],
+      "role": "Album role: The defining statement — the most recognised synthesizer film theme of the 1980s and the album's commercial anchor, establishing the pulsing CS-80 motif that underpins the entire score.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Solo piano arpeggio over sustained electronic pad; sparse, unadorned opening.",
+          "detail": "The piano figure is deliberately simple — a rising arpeggio that sets up the synth entry by contrast."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Theme entry",
+          "description": "CS-80 lead melody enters with the signature pulsing synth accompaniment beneath.",
+          "detail": "The Yamaha CS-80's polyphonic aftertouch gives the lead its distinctive vocal expressiveness — each note responds to finger pressure in real time."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Build",
+          "description": "Secondary harmonic layer joins; bass synth pulse thickens the low-frequency foundation."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Peak",
+          "description": "Full textural convergence — melody, accompaniment, bass pulse, and pad all present at maximum density.",
+          "detail": "The arrangement peaks without percussion; the rhythmic drive comes entirely from the pulsing synth accompaniment."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Reprise",
+          "description": "Theme restated with slight timbral variation; melodic line carries additional harmonic weight."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Outro",
+          "description": "Piano arpeggio returns beneath fading synth sustain; melodic line dissolves into reverb tail."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Five Circles",
+      "duration": "5:20",
+      "energy": "mid",
+      "tags": [
+        "Sequenced",
+        "Olympic Motif",
+        "Rhythmic Drive",
+        "CS-80"
+      ],
+      "role": "Album role: The athletic-competition identity cue — pushes rhythmic momentum beyond the title theme's pulse, expanding the score's dramatic vocabulary with Olympic-ceremony gravitas.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Electronic percussion pattern establishes a metronomic pulse; synth pad sustains beneath.",
+          "detail": "The five-circle Olympic motif is evoked structurally rather than melodically — the piece functions as ceremony music."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Theme entry",
+          "description": "CS-80 melodic figure enters over the rhythmic base; a broader, more processional line than the title theme."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Development",
+          "description": "Sequenced arpeggios layer beneath the melody; harmonic texture thickens progressively."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Peak",
+          "description": "Full orchestral-synth density; melodic and rhythmic layers converge at maximum weight.",
+          "detail": "The processional character intensifies — every element drives forward without accelerating the tempo."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Recession",
+          "description": "Rhythmic layers thin; melody sustains over gradually stripped accompaniment."
+        },
+        {
+          "timestamp": "4:50",
+          "section": "Outro",
+          "description": "Pulse fades to sustained pad; final melodic fragment trails into silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Abraham's Theme",
+      "duration": "3:20",
+      "energy": "low",
+      "tags": [
+        "Character Theme",
+        "Piano-Synth",
+        "Reflective",
+        "Leitmotif"
+      ],
+      "role": "Album role: Harold Abrahams's identity motif — the score's first sustained introspective passage, establishing the dual-protagonist thematic architecture that gives the film its structural depth.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained synth string pad opens alone; no rhythmic element, no melodic identity yet.",
+          "detail": "The harmonic language is warmer and more intimate than the title theme — a deliberate shift to interior emotional register."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Theme entry",
+          "description": "Piano states the Abraham's Theme melody over the sustained pad; simple, unadorned phrasing."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Synth counterpoint",
+          "description": "CS-80 enters with a secondary melodic voice beneath the piano; harmonic register deepens."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Melodic peak",
+          "description": "Piano and synth align on the theme's emotional apex — sustained chords at maximum harmonic warmth."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Outro",
+          "description": "Piano withdraws; synth pad sustains alone as the theme dissolves into reverb."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Eric's Theme",
+      "duration": "4:18",
+      "energy": "low",
+      "tags": [
+        "Character Theme",
+        "Lyrical",
+        "CS-80 Lead",
+        "Pastoral"
+      ],
+      "role": "Album role: Eric Liddell's counterpart leitmotif — more outwardly lyrical than Abraham's Theme, reinforcing the dual-protagonist structure and completing the character-theme pair before the race sequence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Open synth pad with gentle high-register shimmer; pastoral tonal space established immediately.",
+          "detail": "The timbral palette is brighter and more open than Abraham's Theme — reflecting Liddell's outdoor, Scottish Highland associations."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Theme entry",
+          "description": "CS-80 lead melody enters with portamento phrasing; long, singing note durations.",
+          "detail": "Vangelis's CS-80 portamento technique gives the melody a vocal quality — each phrase breathes and bends like a singing voice."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Development",
+          "description": "Secondary harmonic layers join; the melody elaborates with ornamental variations."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Melodic peak",
+          "description": "Theme reaches its highest register and fullest harmonic support; all synth layers present."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Recession",
+          "description": "Melody simplifies; layers thin toward a sustained single-voice statement."
+        },
+        {
+          "timestamp": "3:55",
+          "section": "Outro",
+          "description": "Final CS-80 phrase with extended reverb decay; the theme dissolves into ambient space."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "100 Metres",
+      "duration": "2:04",
+      "energy": "high",
+      "tags": [
+        "Race Cue",
+        "Kinetic",
+        "Percussive Electronics",
+        "Sprint Intensity"
+      ],
+      "role": "Album role: The dramatic energy spike — a compact, tense race-sequence cue that breaks the reflective character-theme pair with sudden kinetic urgency before the choral close of Side One.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Abrupt rhythmic attack — electronic percussion and pulsing bass synth launch without preamble.",
+          "detail": "No gradual build; the cue begins at race-start intensity, mirroring the 100-metre sprint's explosive character."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Tension build",
+          "description": "Synth staccato figures layer over the percussive base; rhythmic density increases rapidly."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Peak",
+          "description": "Maximum rhythmic and harmonic density; all percussive and melodic elements firing simultaneously.",
+          "detail": "The cue reaches its ceiling in under a minute — pacing matched to sprint duration rather than standard musical form."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Resolution",
+          "description": "Rhythmic urgency drops sharply; sustained pad replaces percussive textures."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Outro",
+          "description": "Brief sustain and fade; the cue ends as abruptly as it began."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Jerusalem",
+      "duration": "2:47",
+      "energy": "mid",
+      "tags": [
+        "Choral",
+        "Hymn",
+        "Ambrosian Singers",
+        "Parry Arrangement"
+      ],
+      "role": "Album role: Historical-cultural grounding — the only non-Vangelis composition on the album, providing a choral-traditional counterweight to the electronic score and bridging Side One's discrete cues with Side Two's extended suite.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Organ introduction to Parry's hymn setting; establishing the ecclesiastical register.",
+          "detail": "Hubert Parry's 1916 setting of William Blake's poem — arranged by Harry Rabinowitz for the film and performed by the Ambrosian Singers."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Verse one",
+          "description": "Ambrosian Singers enter with the first verse; full choral texture, traditional hymn phrasing."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Verse two",
+          "description": "Second verse builds in choral weight; dynamic intensity increases.",
+          "detail": "The hymn functions as diegetic music within the film — sung at Harold Abrahams's funeral and the closing ceremony sequence."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Climax",
+          "description": "Final verse at full choral fortissimo; organ accompaniment at maximum registration."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Outro",
+          "description": "Sustained final chord with choral decay; the hymn closes with ritual finality."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Chariots of Fire",
+      "duration": "20:41",
+      "energy": "mid",
+      "tags": [
+        "Extended Suite",
+        "Thematic Reprise",
+        "Side Two",
+        "Ambient Development",
+        "CS-80"
+      ],
+      "role": "Album role: The album's long-form second half — a continuous 20-minute suite that transforms discrete film cues into an extended listening experience, functioning as Vangelis's creative reinterpretation of the score material rather than a scene-by-scene mirror.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency drone and distant pad; ambient space opens without melodic identity.",
+          "detail": "The suite begins from near-silence — a deliberate reset after the formal close of Side One's hymn."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "First theme fragment",
+          "description": "CS-80 states a quiet variant of the title theme motif over sustained pad; tentative, exploratory phrasing."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Rhythmic emergence",
+          "description": "Pulsing electronic accompaniment enters beneath the melodic development; the suite acquires forward momentum."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Abraham's reprise",
+          "description": "Piano-led passage echoing Abraham's Theme material; the character motif surfaces within the larger suite context.",
+          "detail": "The leitmotif is quoted rather than restated directly — melodic fragments appear over new harmonic support."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Ambient interlude",
+          "description": "All rhythmic elements strip away; pure pad and reverb-space passage with no melodic content."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Eric's reprise",
+          "description": "CS-80 portamento melody re-emerges with Eric's Theme contour; lyrical passage over minimal accompaniment."
+        },
+        {
+          "timestamp": "10:00",
+          "section": "Central build",
+          "description": "Sequenced arpeggios and bass pulse return; the suite's central energy phase begins escalating.",
+          "detail": "The texture density builds methodically — each layer added at approximately 30-second intervals."
+        },
+        {
+          "timestamp": "12:30",
+          "section": "Suite peak",
+          "description": "Maximum orchestral-electronic density; title theme, bass pulse, sequencer arpeggios, and pad all converge.",
+          "detail": "The climax of the entire album — the fullest textural moment across all seven tracks."
+        },
+        {
+          "timestamp": "14:30",
+          "section": "Deconstruction",
+          "description": "Layers peel away systematically; the post-peak recession mirrors the build in reverse."
+        },
+        {
+          "timestamp": "16:00",
+          "section": "Reflective passage",
+          "description": "Solo CS-80 melody over ambient drone; the suite enters its contemplative final phase."
+        },
+        {
+          "timestamp": "18:00",
+          "section": "Title echo",
+          "description": "Final quiet restatement of the title theme's pulsing motif; recognition without full resolution.",
+          "detail": "The motif appears at lower dynamic level and slower pace — a memory of the opening rather than a reprise."
+        },
+        {
+          "timestamp": "19:30",
+          "section": "Outro",
+          "description": "Sustained pad and reverb decay; the suite dissolves into silence over a gradual 70-second fade."
+        }
+      ]
+    }
+  ]
+}

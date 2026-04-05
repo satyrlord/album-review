@@ -6,10 +6,16 @@
   "label": "Virgin Records",
   "producer": "Edgar Froese · Christopher Franke · Johannes Schmoelling",
   "genre": "Berlin School / Ambient",
+  "genreTags": [
+    "Berlin School",
+    "Ambient",
+    "Electronic"
+  ],
   "runtime": "41:24",
   "isSoundtrack": true,
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/10/Hyperborea.png",
+  "coverUrl": "covers/tangerine-dream-hyperborea.png",
   "spotifyUrl": "https://open.spotify.com/album/4Mft3FkYzPHdWTmRW0yS1U",
+  "youtubeUrl": "https://www.youtube.com/watch?v=1LEV_W9AR5M",
   "overview": "Recorded in August 1983 by the three-piece lineup of Edgar Froese, Christopher Franke, and Johannes Schmoelling — a formation that ran from 1979 to 1987 and produced the group's most commercially successful period. The album employs PPG Wave 2.3 wavetable synthesis alongside analogue Moog sequencers and the Roland MC-8 Microcomposer, bridging the raw modularity of earlier Berlin-school records with the cleaner digital timbres of their mid-decade work. Released on Virgin Records on 30 August 1983, Hyperborea reached number 45 in the UK charts. Side A comprises three pieces in conventional track lengths; Side B is occupied entirely by the nineteen-minute sequencer piece 'Sphinx Lightning', making the vinyl format structurally essential to understanding the album's proportions.\n\nTimestamps are proportionally estimated to ±15 seconds; the album's continuous sequencer textures do not produce hard section boundaries.",
   "tracks": [
     {

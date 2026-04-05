@@ -5,9 +5,17 @@
   "year": 1975,
   "label": "Virgin · Brain",
   "producer": "Edgar Froese",
-  "genre": "Berlin School / Ambient / Kosmische",
+  "genre": "Berlin School / Ambient / Space",
+  "genreTags": [
+    "Berlin School",
+    "Ambient",
+    "Space",
+    "Electronic"
+  ],
   "runtime": "33:26",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/74/EpsilonInMalaysianPale.jpg",
+  "coverUrl": "covers/edgar-froese-epsilon-in-malaysian-pale.jpg",
+  "audioStreamUrl": "https://music.apple.com/us/album/epsilon-in-malaysian-pale/1818671795",
+  "youtubeUrl": "https://www.youtube.com/watch?v=pCfV21TAEuw",
   "overview": "Recorded in Berlin during June–July 1975 following Tangerine Dream's Australian tour, Froese's second solo album draws directly on the landscapes encountered during that journey — a Malaysian jungle for the title track, the Sydney suburb of Maroubra for the second. Two side-long instrumental pieces built primarily on Mellotron and synthesizers, with Froese operating alone rather than within the trio framework. Key equipment: Mellotron, EMS Synthi A, Farfisa organ, treated guitar, various analogue synthesizers. AllMusic awarded the album four and a half stars; Pitchfork included it in their 50 Best Ambient Albums of All Time list. David Bowie cited the album as a direct influence on his Berlin Trilogy (Low, \"Heroes\", Lodger), describing it as \"the soundtrack of my life when I lived in Berlin.\"\n\nTimestamps are proportionally estimated to ±20 seconds; both tracks are continuous pieces without hard section boundaries.",
   "tracks": [
     {

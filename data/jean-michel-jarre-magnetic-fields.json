@@ -6,10 +6,14 @@
   "label": "Disques Dreyfus · Polydor",
   "producer": "Jean-Michel Jarre",
   "genre": "Electronic / New Wave",
+  "genreTags": [
+    "Electronic",
+    "New Wave"
+  ],
   "runtime": "35:52",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Magnetic_Fields_Jarre_Album.jpg",
+  "coverUrl": "covers/jean-michel-jarre-magnetic-fields.jpg",
   "spotifyUrl": "https://open.spotify.com/album/4YrK0borbHBjzhf85hzz5M",
-  "youtubeUrl": "https://music.youtube.com/playlist?list=OLAK5uy_mSHL-66jjjfJ2SGx9sMFFZg7UZkil3dGk",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=OLAK5uy_mSHL-66jjjfJ2SGx9sMFFZg7UZkil3dGk",
   "overview": "The third major Jarre album and the first to incorporate the Fairlight CMI — the Australian computer music instrument that introduced digital sampling to popular music production. Recorded at Croissy Studio (not the apartment), the album signals a shift in Jarre's methodology: the analog sequencer dominance of Oxygène and Equinoxe is now joined by digital sample playback. \"Les Chants Magnétiques\" is a title pun — in French, chants (songs) is a homophone of champs (fields), so \"chants magnétiques\" reads simultaneously as \"magnetic songs\" and \"magnetic fields.\" The English title translates the second meaning.\n\nRecording team: Jean-Michel Jarre (production), Michel Geiss (recorded train sounds used in the album), Jean-Pierre Janiaud (recording and mixing), Patrick Foulon (mixing assistant). Equipment adds RSF Kobol, MDB Polysequencer, Moog Taurus Pedal Synthesizer, and Electro-Harmonix Echoflanger to the existing Jarre arsenal. UK #6, France #4. Led to the China invitation — Jarre became the first Western musician to perform in China after Mao. Singles: \"Part 2\" (April 1981), \"Part 4 Remix\" (November 1981). Timestamps for Part 1 approximate to ±8 seconds due to its continuous three-movement structure.",
   "tracks": [
     {

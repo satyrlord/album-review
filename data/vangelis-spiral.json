@@ -6,8 +6,12 @@
   "label": "RCA Records",
   "producer": "Vangelis",
   "genre": "Electronic / Progressive",
+  "genreTags": [
+    "Electronic",
+    "Progressive"
+  ],
   "runtime": "39:12",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7d/Vangelis_Spiral.jpg",
+  "coverUrl": "covers/vangelis-spiral.jpg",
   "spotifyUrl": "https://open.spotify.com/album/6Tz3gRyPvHv8eDT5RZ2xXX?si=tto3NbRVRzKOTZYO_cNnOg",
   "youtubeUrl": "https://www.youtube.com/watch?v=NZn0-k25tpo",
   "overview": "Spiral (1977) is the third album Vangelis recorded at Nemo Studios, London, and his most philosophically coherent work of the decade — a five-part concept album shaped entirely by Taoist cosmology, its front cover bearing the Tao Te Ching aphorism: Going on means going far — Going far means returning. The album is the first to feature the Yamaha CS-80, the polyphonic synthesiser that would become Vangelis's definitive instrument across Chariots of Fire, Blade Runner, and the Jon & Vangelis records of the following decade. Almost entirely instrumental save for processed vocals on Ballad, the record deploys sequencers, electric piano, hand percussion, and the CS-80's characteristically warm, breath-responsive timbre in five long-form pieces ranging from the opening title track's forward-spiralling momentum through the Sufi-dance propulsion of Dervish D to the meditative grandeur of the nine-minute To the Unknown Man, which was awarded the Midem International Instrumental Prize in 1978 and later used as theme music for the BBC's coverage of the 1979 World Snooker Championship.",

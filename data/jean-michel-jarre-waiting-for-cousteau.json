@@ -6,8 +6,14 @@
   "label": "Disques Dreyfus",
   "producer": "Jean-Michel Jarre",
   "genre": "Electronic / Ambient",
+  "genreTags": [
+    "Electronic",
+    "Ambient"
+  ],
   "runtime": "1:08:57",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/b/b6/En_attendant_Cousteau.jpg",
+  "coverUrl": "covers/jean-michel-jarre-waiting-for-cousteau.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/60vXLMUO9Usc7txfM7wmJL",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=OLAK5uy_lijI3-jCMwE-oDpkvgjLWd9gHnl5H95Nc",
   "overview": "Recorded at Coral Sound studio in Port of Spain, Trinidad and Tobago (Calypso tracks) and Jarre's Croissy studio in Paris (title track). The album divides into two distinct halves: three Calypso pieces featuring steel drums performed by The Amoco Renegades alongside Guy Delacroix (bass), Christophe Deschamps (drums), Michel Geiss and Dominique Perrier (keyboards); and the 46-minute ambient title track created largely with an Atari Mega-ST running algorithmic composition software, layered with hand-played synthesizer lines and time-stretched samples. Released 11 June 1990 on Jacques Cousteau's 80th birthday; reached UK No. 14 and sold approximately 1.55 million copies worldwide. Certified double Gold in France (550,000 units).\n\nTimestamps on the title track are proportional estimates given the continuous, slowly evolving nature of the piece (±30 seconds).",
   "tracks": [
     {

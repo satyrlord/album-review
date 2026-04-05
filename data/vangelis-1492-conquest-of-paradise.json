@@ -6,9 +6,14 @@
   "label": "Atlantic/WEA",
   "producer": "Vangelis",
   "genre": "Electronic / Soundtrack",
+  "genreTags": [
+    "Electronic",
+    "Soundtrack",
+    "Orchestral"
+  ],
   "runtime": "54:44",
   "isSoundtrack": true,
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a7/1492_Conquest_of_Paradise.jpg",
+  "coverUrl": "covers/vangelis-1492-conquest-of-paradise.jpg",
   "spotifyUrl": "https://open.spotify.com/album/79AO2MbfQQICI2H3oCYFPh?si=qoDAcxbcRlKZIszPtFLhMw",
   "youtubeUrl": "https://youtu.be/vZILKYV7MzU",
   "overview": "1492: Conquest of Paradise (1992) is Vangelis's score to Ridley Scott's epic historical film depicting Christopher Columbus's voyages to the New World, their second collaboration after Blade Runner (1982). Recorded at Vangelis's Epsilon Studios in London with the English Chamber Choir under Guy Protheroe, flamenco guitarists, violin, mandolin, and flutes, the soundtrack fuses synthesised orchestral textures with Iberian and choral elements across twelve cues totalling 54 minutes, from the pseudo-Latin hymnal of the title track to the 13-minute closing meditation Pinta, Nina, Santa Maria (Into Eternity). The album was nominated for Best Original Score at the 50th Golden Globe Awards (1993) and became a delayed commercial phenomenon in 1995 when German boxer Henry Maske adopted Conquest of Paradise as his ring entrance theme, driving 1.3 million copies sold in Germany alone, chart-topping positions in Austria, the Netherlands, Hungary, Norway, Portugal, and Switzerland, and gold or platinum certification in over 17 countries.",

@@ -6,8 +6,17 @@
   "label": "Ohr",
   "producer": "Klaus Schulze",
   "genre": "Berlin School / Ambient",
+  "genreTags": [
+    "Berlin School",
+    "Ambient",
+    "Space",
+    "Electronic",
+    "Drone"
+  ],
   "runtime": "50:27",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Irrlicht_Klaus_Schulze_Album.jpg",
+  "coverUrl": "covers/klaus-schulze-irrlicht.jpg",
+  "audioStreamUrl": "https://music.apple.com/us/album/irrlicht/1443338275",
+  "youtubeUrl": "https://www.youtube.com/watch?v=kzqH08xL6RQ",
   "overview": "Recorded in April 1972 in Berlin, Schulze's debut solo album was produced entirely without synthesizers — built from a broken and modified electric organ, a pre-recorded rehearsal of the Colloquium Musica Orchestra (four first violins, four second violins, three violas, eight cellos, one bass, two horns, two flutes, three oboes), a damaged amplifier used as a filter, guitar, percussion, and zither, all mixed and layered on tape into a three-movement quadraphonic symphony. Subtitled \"Quadrophonische Symphonie für Orchester und E-Maschinen\" (Quadraphonic Symphony for Orchestra and Electronic Machines), the album has closer ties to musique concrète than to the sequencer-driven Berlin School electronics Schulze would later pioneer. Released on the krautrock label Ohr — which claimed his solo work because he was signed to them as a member of Tangerine Dream — the album received five stars from AllMusic and is recognised as one of the earliest examples of sustained electronic drone composition.\n\nTimestamps are proportionally estimated to ±30 seconds; the album's continuous textures and tape-spliced passages do not produce hard section boundaries.",
   "tracks": [
     {

@@ -81,18 +81,19 @@ Shared navigation and footer are rendered by [src/site.ts](../src/site.ts).
 
 ## Collection Pages
 
-Home and Soundtracks still share [src/index.ts](../src/index.ts).
+Home page uses [src/index.ts](../src/index.ts).
 
 Structure:
 
 - Static HTML provides the hero shell, search input, pill container, results bar, grid root, and footer mount point.
+- The hero search shell is rendered by [src/site.ts](../src/site.ts) as a pill input with auto height plus a minimum height override so the `sm:text-lg` search text and placeholder do not clip.
 - `.ix-filters` contains DaisyUI `btn` pills rendered by the collection script.
 - `.ix-grid` remains the card grid and still hosts `.ix-card` anchors.
 
 Collection card rules:
 
 - `.ix-card` is now a DaisyUI `card` with the existing `--card-accent` hook preserved.
-- `.ix-card-media` remains optional. Cards with no cover art still render cleanly.
+- `.ix-card-media` now always renders. When an album has no cached cover, or its referenced file fails to load, the shared `public/covers/fallback-cd-case.svg` artwork is shown instead.
 - `.ix-card-title` remains the primary album title element.
 - `.ix-card-artist` and `.ix-card-footer` inherit the per-artist accent color.
 - Empty and error states still render as `.ix-empty` and `.ix-error`, now using DaisyUI `alert` styling.
@@ -103,11 +104,12 @@ Album detail pages are still rendered dynamically by [src/album.ts](../src/album
 
 Hero rules:
 
-- The hero shell still uses `.hero` and `.hero-layout`; `has-cover` still controls the split layout.
+- The hero shell still uses `.hero` and `.hero-layout`; rendered album pages now always use `has-cover`, because missing or broken art falls back to the shared CD-case SVG.
 - The subtitle is now rendered as a DaisyUI badge, but the hook class remains `.subtitle`.
 - Metadata still lives in `.meta`, now as a responsive grid of `.meta-item` panels.
 - The visible label format still includes a trailing colon, for example `Artist:` and `Label:`.
 - Streaming links remain `.hero-link hero-link--spotify` and `.hero-link hero-link--youtube`, but use DaisyUI buttons.
+- **`.hero-link--spotify` requires an explicit `color: var(--color-primary-content)` rule in [src/album-analysis.css](../src/album-analysis.css).** DaisyUI's `btn-primary` class does not reliably propagate `--color-primary-content` to the computed text colour on custom-classed elements, leaving it as the default `base-content` off-white. Any refactor of the Spotify button markup must keep this explicit rule, and the Playwright test `"Spotify button has dark text on bright primary background"` asserts the exact computed values (`background: rgb(0,255,136)`, `color: rgb(3,27,16)`) to catch regressions.
 
 Track rules:
 

@@ -6,10 +6,15 @@
   "label": "XL Recordings",
   "producer": "Liam Howlett · Neil McLellan",
   "genre": "Electronic / Rave",
+  "genreTags": [
+    "Electronic",
+    "Rave",
+    "Breakbeat"
+  ],
   "runtime": "78:07",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/8/86/TheProdigy-MusicForTheJiltedGeneration.jpg",
+  "coverUrl": "covers/the-prodigy-music-for-the-jilted-generation.jpg",
   "spotifyUrl": "https://open.spotify.com/album/4qhJwKBr2ksxAUFjfJd3rb",
-  "youtubeUrl": "https://music.youtube.com/playlist?list=OLAK5uy_mGfL-eeGfDLyRBHfG5dzGnbUwII92gAxY",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=OLAK5uy_mGfL-eeGfDLyRBHfG5dzGnbUwII92gAxY",
   "overview": "Music for the Jilted Generation is The Prodigy's second studio album and the definitive statement of UK rave's political moment — released 4 July 1994, conceived in direct response to the Criminal Justice and Public Order Act 1994, which was moving toward the criminalisation of gatherings featuring 'a succession of repetitive beats.' Produced by Liam Howlett with Neil McLellan mixing, the album spans 78 minutes across 13 tracks: a front-loaded assault of breakbeat rave and genre collision (Tracks 2–7) framed by a political spoken-word manifesto, concluded by the Narcotic Suite trilogy (Tracks 11–13) — a self-contained journey from downtempo through ambient bloom to industrial darkness. Equipment centres on Akai S1000 and S950 samplers, Roland TR-808, and a sourced-sample library including the Amen Break, Nirvana's \"Very Ape,\" Bernard Purdie's \"Good Livin',\" and Baby D's \"Casanova.\" Tracks 3 and 5 introduce live rock guitar via Pop Will Eat Itself and Lance Riddler respectively — the album's most aggressive genre-collision moments. UK No. 1; Mercury Music Prize nomination.\n\nTimestamps are approximate to ±2 seconds. Energy tags rate each track's overall intensity ceiling.",
   "tracks": [
     {

@@ -1,4 +1,4 @@
-import { escapeHtml, renderFooter, renderNav } from "./site";
+import { applyStoredBg, escapeHtml, pickAndStoreRandomBg, renderFooter } from "./site";
 
 interface CreditEntry {
   source: string;
@@ -19,13 +19,14 @@ interface CreditSection {
     { source: "MusicBrainz", usage: "Canonical track listings, durations, and release metadata for all album analyses", url: "https://musicbrainz.org/" },
     { source: "Wikipedia", usage: "Album context, production notes, release history, and genre classification", url: "https://en.wikipedia.org/" },
     { source: "Spotify", usage: "Streaming links on album detail pages", url: "https://open.spotify.com/" },
-    { source: "YouTube Music", usage: "Streaming links on album detail pages", url: "https://music.youtube.com/" },
+    { source: "YouTube", usage: "Streaming links on album detail pages", url: "https://www.youtube.com/" },
   ];
 
   const COVER_ART_SOURCES: CreditEntry[] = [
-    { source: "Wikimedia Commons / Wikipedia", usage: "Album cover thumbnails for 23 of 25 albums (upload.wikimedia.org)", url: "https://commons.wikimedia.org/" },
-    { source: "Amazon Product Images", usage: "Cover thumbnail for Vangelis — Cosmos (m.media-amazon.com)", url: "https://www.amazon.com/" },
-    { source: "Ozone.ro", usage: "Cover thumbnail for Jean-Michel Jarre — Oxygène Trilogy (cdn.ozone.ro)" },
+    { source: "Wikimedia Commons / Wikipedia", usage: "Original source for most locally cached album-cover files.", url: "https://commons.wikimedia.org/" },
+    { source: "Amazon Product Images", usage: "Original source for the locally cached Vangelis — Cosmos cover.", url: "https://www.amazon.com/" },
+    { source: "Ozone.ro", usage: "Original source for the locally cached Jean-Michel Jarre — Oxygène Trilogy cover." },
+    { source: "Deezer CDN", usage: "Original source for the locally cached Nine Inch Nails — Quake cover.", url: "https://www.deezer.com/" },
   ];
 
   const RESEARCH_SOURCES: CreditEntry[] = [
@@ -87,7 +88,10 @@ interface CreditSection {
   }
 
   function renderPage(): string {
-    const navHtml = renderNav();
+    const navHtml =
+      `<nav class="site-nav" aria-label="Primary">\n` +
+      `  <a class="site-nav-link btn btn-sm btn-ghost border border-transparent bg-base-100/40 hover:border-primary/35 hover:bg-primary/10 hover:text-primary" href="index.html" data-js="pick-random-bg">\u2190 Back to Home</a>\n` +
+      `</nav>`;
     const footerHtml = renderFooter({ context: "Credits & Sources" });
 
     return (
@@ -109,11 +113,16 @@ interface CreditSection {
   }
 
   function main(): void {
+    applyStoredBg();
+
     const root = document.getElementById("creditsRoot");
     if (!root) return;
 
-    document.title = "Credits | Album Analysis";
+    document.title = "Credits | ALBANA";
     root.outerHTML = renderPage();
+
+    document.querySelector<HTMLAnchorElement>('[data-js="pick-random-bg"]')
+      ?.addEventListener('click', () => { pickAndStoreRandomBg(); });
   }
 
   main();

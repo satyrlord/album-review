@@ -1,0 +1,41 @@
+{
+  "version": 1.1,
+  "atDirectives": [
+    {
+      "name": "@source",
+      "description": "Tailwind CSS v4 source directive used to register template files for class scanning."
+    },
+    {
+      "name": "@theme",
+      "description": "Tailwind CSS v4 theme directive used to define theme tokens as CSS custom properties."
+    },
+    {
+      "name": "@plugin",
+      "description": "Tailwind CSS v4 plugin directive used to load plugins such as DaisyUI from CSS."
+    },
+    {
+      "name": "@utility",
+      "description": "Tailwind CSS v4 directive used to define custom utilities in CSS."
+    },
+    {
+      "name": "@variant",
+      "description": "Tailwind CSS v4 directive used to apply styles inside a Tailwind variant context."
+    },
+    {
+      "name": "@custom-variant",
+      "description": "Tailwind CSS v4 directive used to declare a custom variant."
+    },
+    {
+      "name": "@reference",
+      "description": "Tailwind CSS v4 directive used to reference another stylesheet for theme and utility metadata."
+    },
+    {
+      "name": "@config",
+      "description": "Tailwind CSS directive used to reference a JavaScript config file in compatible setups."
+    },
+    {
+      "name": "@apply",
+      "description": "Tailwind CSS directive used to inline utility classes into a CSS rule."
+    }
+  ]
+}

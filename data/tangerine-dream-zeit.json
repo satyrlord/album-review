@@ -6,8 +6,17 @@
   "label": "Ohr",
   "producer": "Tangerine Dream",
   "genre": "Berlin School / Ambient",
+  "genreTags": [
+    "Berlin School",
+    "Ambient",
+    "Space",
+    "Electronic",
+    "Drone"
+  ],
   "runtime": "1:14:22",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/95/Zeit_%28Tangerine_Dream_album_-_cover_art%29.png",
+  "coverUrl": "covers/tangerine-dream-zeit.png",
+  "spotifyUrl": "https://open.spotify.com/album/2hWU2Jicgxzg9eWnkTS2Dj",
+  "youtubeUrl": "https://www.youtube.com/watch?v=w5js_AWq0zs",
   "overview": "Recorded at Dierks Studio in 1972 by the trio of Edgar Froese, Christopher Franke, and Peter Baumann — Baumann's first appearance on a Tangerine Dream record. Subtitled Largo in Four Movements, the double LP employed audio generators, VCS 3 synthesizers, organ, vibraphone, gliss guitar, and guest contributions from Florian Fricke on Moog synthesizer and the Cologne Cello Quartet on the opening track. Zeit predates the group's adoption of the Moog sequencer on Phaedra (1974) and Rubycon (1975), operating instead through sustained drones, tone clusters, and collectively improvised textures with no rhythmic grid. Julian Cope's Head Heritage described it as the group's 'most abstract and austere' album; Steven Wilson has cited it as the 'birth of ambient music' and his favourite album of all time.\n\nTimestamps are proportionally estimated to ±30 seconds; the album's continuous drone textures and improvised passages do not produce hard section boundaries.",
   "tracks": [
     {

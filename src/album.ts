@@ -6,7 +6,7 @@
  */
 
 import { buildSegmentChart } from "./segment";
-import { escapeHtml, renderFooter, renderNav } from "./site";
+import { applyStoredBg, bindCoverFallbacks, escapeHtml, FALLBACK_COVER_URL, pickAndStoreRandomBg, renderFooter, resolveCoverImageUrl } from "./site";
 
 interface TimelineEvent {
   timestamp:   string;
@@ -37,6 +37,7 @@ interface AlbumData {
   coverUrl?: string;
   spotifyUrl?: string;
   youtubeUrl?: string;
+  audioStreamUrl?: string;
   overview: string;
   tracks:   AlbumTrack[];
 }
@@ -150,16 +151,23 @@ interface AlbumData {
     );
   }
 
-  function renderHeroMedia(coverUrl: string, artist: string, title: string): string {
-    if (!coverUrl) return '';
+  function renderHeroMedia(coverUrl: string | undefined, artist: string, title: string): string {
+    const resolvedCoverUrl = resolveCoverImageUrl(coverUrl);
 
     return (
       `    <div class="hero-media">\n` +
       `      <div class="hero-cover-frame overflow-hidden rounded-[1.6rem] border border-base-300/70 bg-base-200/80 p-3 shadow-2xl backdrop-blur-xl">\n` +
-      `        <img class="hero-cover rounded-[1.1rem]" src="${escapeHtml(coverUrl)}" alt="Album cover for ${escapeHtml(artist)} - ${escapeHtml(title)}" decoding="async" referrerpolicy="no-referrer">\n` +
+      `        <img class="hero-cover rounded-[1.1rem]" src="${escapeHtml(resolvedCoverUrl)}" data-cover-fallback="${escapeHtml(FALLBACK_COVER_URL)}" alt="Album cover for ${escapeHtml(artist)} - ${escapeHtml(title)}" decoding="async" referrerpolicy="no-referrer">\n` +
       `      </div>\n` +
       `    </div>\n`
     );
+  }
+
+  function resolveStreamName(url: string): string {
+    if (url.includes('music.apple.com')) return 'Apple Music';
+    if (url.includes('deezer.com')) return 'Deezer';
+    if (url.includes('tidal.com')) return 'Tidal';
+    return 'Stream';
   }
 
   function renderStreamingLinks(d: AlbumData): string {
@@ -169,11 +177,16 @@ interface AlbumData {
       links.push(
         `        <a class="hero-link hero-link--spotify btn btn-primary btn-sm rounded-full sm:btn-md" href="${escapeHtml(d.spotifyUrl)}" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>`,
       );
+    } else if (d.audioStreamUrl) {
+      const serviceName = resolveStreamName(d.audioStreamUrl);
+      links.push(
+        `        <a class="hero-link hero-link--audio-stream btn btn-primary btn-sm rounded-full sm:btn-md" href="${escapeHtml(d.audioStreamUrl)}" target="_blank" rel="noopener noreferrer">Listen on ${escapeHtml(serviceName)}</a>`,
+      );
     }
 
     if (d.youtubeUrl) {
       links.push(
-        `        <a class="hero-link hero-link--youtube btn btn-outline btn-secondary btn-sm rounded-full sm:btn-md" href="${escapeHtml(d.youtubeUrl)}" target="_blank" rel="noopener noreferrer">Listen on YouTube Music</a>`,
+        `        <a class="hero-link hero-link--youtube btn btn-outline btn-secondary btn-sm rounded-full sm:btn-md" href="${escapeHtml(d.youtubeUrl)}" target="_blank" rel="noopener noreferrer">Listen on YouTube</a>`,
       );
     }
 
@@ -195,7 +208,11 @@ interface AlbumData {
   }
 
   function renderSiteNav(): string {
-    return renderNav();
+    return (
+      `<nav class="site-nav" aria-label="Primary">\n` +
+      `  <a class="site-nav-link btn btn-sm btn-ghost border border-transparent bg-base-100/40 hover:border-primary/35 hover:bg-primary/10 hover:text-primary" href="index.html" data-js="pick-random-bg">\u2190 Back to Home</a>\n` +
+      `</nav>`
+    );
   }
 
   function renderPage(d: AlbumData): string {
@@ -210,9 +227,9 @@ interface AlbumData {
     if (d.genre)    metaRows.push(renderMetaItem('Genre', d.genre));
 
     const tracksHtml = d.tracks.map(renderTrack).join('\n\n');
-    const heroMedia = renderHeroMedia(d.coverUrl ?? '', d.artist, d.title);
+    const heroMedia = renderHeroMedia(d.coverUrl, d.artist, d.title);
     const heroLinks = renderStreamingLinks(d);
-    const heroClass = d.coverUrl ? 'container hero-layout has-cover' : 'container hero-layout';
+    const heroClass = 'container hero-layout has-cover';
     const siteNav = renderSiteNav();
     const footerHtml = renderSiteFooter(`${d.artist} · ${d.title} · ${d.year}`);
 
@@ -271,6 +288,8 @@ interface AlbumData {
   }
 
   async function main(): Promise<void> {
+    applyStoredBg();
+
     const params = new URLSearchParams(window.location.search);
     const id     = params.get('id');
     if (!id) { showError('No album ID specified in URL (?id=…).'); return; }
@@ -283,12 +302,16 @@ interface AlbumData {
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const data = await resp.json() as AlbumData;
 
-      document.title = `Structural Analysis \u2014 ${data.artist} \u00b7 ${data.title} (${data.year})`;
+      document.title = `${data.artist} \u00b7 ${data.title} (${data.year}) | ALBANA`;
 
       const root = document.getElementById('albumRoot');
       if (!root) return;
 
       root.outerHTML = renderPage(data);
+      bindCoverFallbacks(document);
+
+      document.querySelector<HTMLAnchorElement>('[data-js="pick-random-bg"]')
+        ?.addEventListener('click', () => { pickAndStoreRandomBg(); });
 
       const chartEl = document.getElementById('timelineChart');
       if (chartEl) {

@@ -1,4 +1,4 @@
-import { escapeHtml, mountFooter, mountNav, normaliseText } from "./site";
+import { applyStoredBg, bindCoverFallbacks, escapeHtml, FALLBACK_COVER_URL, mountCollectionHero, mountFooter, normaliseText, resolveCoverImageUrl } from "./site";
 
 interface AlbumEntry {
   id:     string;
@@ -7,21 +7,13 @@ interface AlbumEntry {
   year:   number;
   tracks: number;
   genre:  string;
+  /** Individual genre/subgenre tags derived from `genre` by splitting on "/" and trimming whitespace; `genre` remains the display string. */
+  genreTags: string[];
   coverUrl?: string;
-  isSoundtrack?: boolean;
-}
-
-type CollectionPage = 'home' | 'soundtracks';
-
-interface CollectionPageConfig {
-  footerContext: string;
-  emptyMessage: string;
-  sortAndFilter(albums: AlbumEntry[]): AlbumEntry[];
 }
 
 interface CollectionDom {
   grid: HTMLElement;
-  filters: HTMLElement;
   search: HTMLInputElement;
   count: HTMLElement;
 }
@@ -40,21 +32,14 @@ interface CollectionDom {
 
   function getCollectionDom(): CollectionDom | null {
     const grid = document.getElementById('ixGrid');
-    const filters = document.getElementById('ixFilters');
     const search = document.getElementById('ixSearch');
     const count = document.getElementById('ixCount');
 
     if (!(grid instanceof HTMLElement)) return null;
-    if (!(filters instanceof HTMLElement)) return null;
     if (!(search instanceof HTMLInputElement)) return null;
     if (!(count instanceof HTMLElement)) return null;
 
-    return { grid, filters, search, count };
-  }
-
-  function displayGenre(value: string): string {
-    const genre = String(value || '').trim();
-    return genre && !/^<!--[\s\S]*-->$/.test(genre) ? genre : '';
+    return { grid, search, count };
   }
 
   function buildColorMap(albums: AlbumEntry[]): Record<string, string> {
@@ -66,53 +51,43 @@ interface CollectionDom {
     return map;
   }
 
+  function renderAlbumCardMedia(album: AlbumEntry): string {
+    const coverSrc = resolveCoverImageUrl(album.coverUrl);
+
+    return (
+      `<figure class="ix-card-media relative aspect-square border-b border-base-300/70 bg-base-100/60">` +
+        `<img class="ix-card-cover transition duration-500 group-hover:scale-[1.04]" ` +
+          `src="${escapeHtml(coverSrc)}" ` +
+          `data-cover-fallback="${escapeHtml(FALLBACK_COVER_URL)}" ` +
+          `alt="Album cover for ${escapeHtml(album.artist)} - ${escapeHtml(album.title)}" ` +
+          `loading="lazy" decoding="async" referrerpolicy="no-referrer">` +
+      `</figure>`
+    );
+  }
+
+  const pageEmptyMessage = 'No albums available.';
+
+  mountCollectionHero('ixHero', {
+    title: 'ALBANA',
+    titleClassName: 'ix-brand-title',
+    tagline: 'Your resource for structural album analysis',
+    searchPlaceholder: 'Search by title, artist or genre\u2026',
+    searchAriaLabel: 'Filter albums',
+  });
+
   const dom = getCollectionDom();
   if (!dom) return;
 
-  const { grid, filters, search, count } = dom;
-
-  const pageKey: CollectionPage = document.body.dataset['collection'] === 'soundtracks'
-    ? 'soundtracks'
-    : 'home';
-
-  const PAGE_CONFIG: Record<CollectionPage, CollectionPageConfig> = {
-    home: {
-      footerContext: 'Collection Index',
-      emptyMessage: 'No albums available.',
-      sortAndFilter(albums: AlbumEntry[]): AlbumEntry[] {
-        return albums.slice().sort((left, right) =>
-          left.year - right.year
-          || left.artist.localeCompare(right.artist)
-          || left.title.localeCompare(right.title)
-        );
-      },
-    },
-    soundtracks: {
-      footerContext: 'Soundtracks',
-      emptyMessage: 'No soundtrack albums available.',
-      sortAndFilter(albums: AlbumEntry[]): AlbumEntry[] {
-        return albums
-          .filter(album => album.isSoundtrack)
-          .sort((left, right) =>
-            left.year - right.year
-            || left.artist.localeCompare(right.artist)
-            || left.title.localeCompare(right.title)
-          );
-      },
-    },
-  };
-
-  mountNav('siteNav', {
-    activePage: pageKey,
-  });
+  const { grid, search, count } = dom;
 
   mountFooter('siteFooter', {
-    context: PAGE_CONFIG[pageKey].footerContext,
+    context: 'Collection Index',
   });
 
   let allAlbums: AlbumEntry[] = [];
   let colorMap: Record<string, string> = {};
-  let activeArtist = 'All';
+  const activeArtistTags = new Set<string>();
+  const activeGenreTags = new Set<string>();
 
   function showError(message: string): void {
     grid.innerHTML =
@@ -129,57 +104,83 @@ interface CollectionDom {
     return await response.json() as AlbumEntry[];
   }
 
-  function buildPills(): void {
-    const artists = ['All', ...Array.from(new Set(allAlbums.map(a => a.artist))).sort()];
-    filters.innerHTML = artists.map(name => {
-      const cls = name === 'All' ? ' active' : '';
-      return `<button type="button" class="ix-pill btn btn-sm btn-ghost border border-base-300/60 bg-base-100/40 hover:border-primary/35 hover:bg-primary/10 hover:text-primary${cls}" data-artist="${escapeHtml(name)}">${escapeHtml(name)}</button>`;
-    }).join('');
+  function toggleArtistTag(artist: string): void {
+    if (activeArtistTags.has(artist)) {
+      activeArtistTags.delete(artist);
+    } else {
+      activeArtistTags.add(artist);
+    }
+    syncTagButtons();
+    render();
+  }
 
-    filters.querySelectorAll<HTMLButtonElement>('.ix-pill').forEach(btn => {
-      btn.addEventListener('click', () => {
-        activeArtist = btn.dataset['artist'] ?? 'All';
-        filters.querySelectorAll('.ix-pill').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        render();
-      });
+  function toggleGenreTag(tag: string): void {
+    if (activeGenreTags.has(tag)) {
+      activeGenreTags.delete(tag);
+    } else {
+      activeGenreTags.add(tag);
+    }
+    syncTagButtons();
+    render();
+  }
+
+  function syncTagButtons(): void {
+    document.querySelectorAll<HTMLButtonElement>('.ix-genre-tag').forEach(btn => {
+      const tag = btn.dataset['genre'] ?? '';
+      btn.classList.toggle('active', activeGenreTags.has(tag));
     });
+    document.querySelectorAll<HTMLButtonElement>('.ix-artist-tag').forEach(btn => {
+      const artist = btn.dataset['artist'] ?? '';
+      btn.classList.toggle('active', activeArtistTags.has(artist));
+    });
+  }
+
+  function hasAllActiveGenreTags(tags: readonly string[]): boolean {
+    for (const tag of activeGenreTags) {
+      if (!tags.includes(tag)) {
+        return false;
+      }
+    }
+
+    return true;
   }
 
   function render(): void {
     const q = normaliseText(search.value.trim());
 
     const visible = allAlbums.filter(a => {
-      const genre = displayGenre(a.genre);
-      const matchArtist = activeArtist === 'All' || a.artist === activeArtist;
+      const tags = a.genreTags ?? [];
+      const matchArtist = activeArtistTags.size === 0 || activeArtistTags.has(a.artist);
+      const matchGenre = hasAllActiveGenreTags(tags);
       const matchSearch = !q
         || normaliseText(a.title).indexOf(q) !== -1
         || normaliseText(a.artist).indexOf(q) !== -1
-        || normaliseText(genre).indexOf(q) !== -1;
-      return matchArtist && matchSearch;
+        || tags.some(t => normaliseText(t).indexOf(q) !== -1);
+      return matchArtist && matchGenre && matchSearch;
     });
 
     count.textContent = `${visible.length} / ${allAlbums.length} album${allAlbums.length !== 1 ? 's' : ''}`;
 
     if (visible.length === 0 && !q && allAlbums.length === 0) {
-      grid.innerHTML = `<div class="ix-empty alert border border-base-300/70 bg-base-200/80 text-sm text-base-content/70 shadow-lg"><span>${PAGE_CONFIG[pageKey].emptyMessage}</span></div>`;
+      grid.innerHTML = `<div class="ix-empty alert border border-base-300/70 bg-base-200/80 text-sm text-base-content/70 shadow-lg"><span>${pageEmptyMessage}</span></div>`;
       return;
     }
 
     if (visible.length === 0) {
-      grid.innerHTML = `<div class="ix-empty alert border border-base-300/70 bg-base-200/80 text-sm text-base-content/70 shadow-lg"><span>No albums match &ldquo;${escapeHtml(search.value)}&rdquo;.</span></div>`;
+      grid.innerHTML = `<div class="ix-empty alert border border-base-300/70 bg-base-200/80 text-sm text-base-content/70 shadow-lg"><span>No results.</span></div>`;
       return;
     }
 
     grid.innerHTML = visible.map(a => {
       const color = colorMap[a.artist] ?? 'var(--accent)';
-      const genre = displayGenre(a.genre);
-      const genreHtml = genre
-        ? `<div class="ix-card-genre badge badge-outline badge-sm w-fit border-base-300/70 px-3 py-3 text-[0.65rem] uppercase tracking-[0.18em]">${escapeHtml(genre)}</div>`
+      const tags = a.genreTags ?? [];
+      const genreHtml = tags.length > 0
+        ? `<div class="ix-card-tags">${tags.map(t => {
+            const cls = activeGenreTags.has(t) ? ' active' : '';
+            return `<button type="button" class="ix-genre-tag ix-card-genre-tag${cls}" data-genre="${escapeHtml(t)}">${escapeHtml(t)}</button>`;
+          }).join('')}</div>`
         : '';
-      const mediaHtml = a.coverUrl
-        ? `<figure class="ix-card-media relative aspect-square border-b border-base-300/70 bg-base-100/60"><img class="ix-card-cover transition duration-500 group-hover:scale-[1.04]" src="${escapeHtml(a.coverUrl)}" alt="Album cover for ${escapeHtml(a.artist)} - ${escapeHtml(a.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure>`
-        : '';
+      const mediaHtml = renderAlbumCardMedia(a);
       const trackLabel = `${a.tracks} track${a.tracks !== 1 ? 's' : ''}`;
       return (
         `<a class="ix-card group card border border-base-300/70 bg-base-200/85 shadow-xl transition duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-2xl" href="album.html?id=${escapeHtml(a.id)}" style="--card-accent:${color}">` +
@@ -197,20 +198,79 @@ interface CollectionDom {
         `</a>`
       );
     }).join('');
+
+    bindCoverFallbacks(grid);
+
+    grid.querySelectorAll<HTMLButtonElement>('.ix-card-genre-tag').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleGenreTag(btn.dataset['genre'] ?? '');
+      });
+    });
+  }
+
+  function buildTagCloud(): void {
+    const nav = document.getElementById('ixGenreNav');
+    if (!nav) return;
+
+    // Artist tags (sorted A-Z)
+    const artists = Array.from(new Set(allAlbums.map(a => a.artist))).sort();
+
+    // Genre tag counts (sorted by count descending then alphabetically)
+    const tagCounts = new Map<string, number>();
+    for (const album of allAlbums) {
+      for (const tag of album.genreTags ?? []) {
+        tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+      }
+    }
+    const sortedGenres = Array.from(tagCounts.entries()).sort((a, b) =>
+      b[1] - a[1] || a[0].localeCompare(b[0])
+    );
+
+    nav.innerHTML =
+      `<div class="ix-nav-artist-tags">` +
+      artists.map(artist =>
+        `<button type="button" class="ix-artist-tag ix-nav-artist-tag" data-artist="${escapeHtml(artist)}">${escapeHtml(artist)}</button>`
+      ).join('') +
+      `</div>` +
+      `<div class="ix-nav-genre-tags">` +
+      sortedGenres.map(([tag, cnt]) =>
+        `<button type="button" class="ix-genre-tag ix-nav-genre-tag" data-genre="${escapeHtml(tag)}" title="${cnt} album${cnt !== 1 ? 's' : ''}">${escapeHtml(tag)}<span class="ix-genre-tag-count">${cnt}</span></button>`
+      ).join('') +
+      `</div>`;
+
+    nav.querySelectorAll<HTMLButtonElement>('.ix-nav-artist-tag').forEach(btn => {
+      btn.addEventListener('click', () => {
+        toggleArtistTag(btn.dataset['artist'] ?? '');
+      });
+    });
+
+    nav.querySelectorAll<HTMLButtonElement>('.ix-nav-genre-tag').forEach(btn => {
+      btn.addEventListener('click', () => {
+        toggleGenreTag(btn.dataset['genre'] ?? '');
+      });
+    });
   }
 
   search.addEventListener('input', render);
 
   async function main(): Promise<void> {
+    applyStoredBg();
+
     try {
-      allAlbums = PAGE_CONFIG[pageKey].sortAndFilter(await loadAlbums());
+      allAlbums = (await loadAlbums()).slice().sort((left, right) =>
+        left.year - right.year
+        || left.artist.localeCompare(right.artist)
+        || left.title.localeCompare(right.title)
+      );
     } catch (error: unknown) {
       showError(error instanceof Error ? error.message : 'Could not load album data.');
       return;
     }
 
     colorMap = buildColorMap(allAlbums);
-    buildPills();
+    buildTagCloud();
     render();
   }
 

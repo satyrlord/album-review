@@ -6,9 +6,15 @@
   "label": "Milan Records",
   "producer": "Rik Schaffer",
   "genre": "Dark Ambient / Soundtrack",
+  "genreTags": [
+    "Dark Ambient",
+    "Soundtrack",
+    "Gothic"
+  ],
   "runtime": "69:09",
   "isSoundtrack": true,
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/96/Vampire_-_The_Masquerade_%E2%80%93_Bloodlines_Coverart.png",
+  "coverUrl": "covers/rik-schaffer-vampire-the-masquerade-bloodlines.png",
+  "audioStreamUrl": "https://music.apple.com/us/album/vampire-the-masquerade-bloodlines-original-soundtrack/1482605261",
   "youtubeUrl": "https://youtu.be/0Fl9-359oeg",
   "overview": "Composed by Rik Schaffer for Troika Games' cult action RPG Vampire: The Masquerade – Bloodlines (November 2004), published by Activision and set in White Wolf's World of Darkness universe, this 17-track score blends dark ambient, trip-hop, and post-rock textures through synthesiser layering, processed guitar, and sampled elements. Schaffer produced the soundtrack at Womb Music, the production studio he founded in 1996, building distinct sonic identities for each of the game's hub areas — the beachside calm of Santa Monica, the nocturnal glamour of Hollywood, the urban grit of Downtown, and the Eastern-tinged atmosphere of Chinatown — alongside dedicated combat cues, character themes, and a closing meditation adapted from his solo project Nectar. Several tracks derive from Schaffer's Womb album Bella, with instrumental reworkings of Clean, Selfless Doubt, and As Lonely As I Am (retitled Poinsettia) appearing in-game, while All That Could Ever Be reworks We Just Disagree from the Nectar album Afterglow. The score remained commercially unavailable until Milan Records issued a remastered album in October 2019, featuring eight previously unreleased cues alongside the core material, available on CD, digital download, and blood-red vinyl.",
   "tracks": [
@@ -17,7 +23,13 @@
       "title": "Bloodlines Main Theme",
       "duration": "3:21",
       "energy": "mid",
-      "tags": ["Title Theme", "Dark Ambient", "Cinematic", "Synthesiser", "Atmospheric"],
+      "tags": [
+        "Title Theme",
+        "Dark Ambient",
+        "Cinematic",
+        "Synthesiser",
+        "Atmospheric"
+      ],
       "role": "Opening title theme establishing the game's nocturnal, vampiric atmosphere; a dark synthesiser piece that introduces the tonal palette of the entire score and serves as the player's first encounter with the World of Darkness sonic identity.",
       "events": [
         {
@@ -57,7 +69,13 @@
       "title": "Hollywood Main Theme",
       "duration": "5:37",
       "energy": "mid",
-      "tags": ["Hub Theme", "Trip-Hop", "Nocturnal", "Brooding", "Layered"],
+      "tags": [
+        "Hub Theme",
+        "Trip-Hop",
+        "Nocturnal",
+        "Brooding",
+        "Layered"
+      ],
       "role": "Sonic identity for the Hollywood hub area, the game's second major location; a trip-hop-influenced piece conveying the district's blend of vampiric glamour, nightclub culture, and underlying menace beneath the neon.",
       "events": [
         {
@@ -102,7 +120,13 @@
       "title": "World Spirit Map",
       "duration": "5:29",
       "energy": "low",
-      "tags": ["Ambient", "Cartographic", "Ethereal", "Synthesiser", "Meditative"],
+      "tags": [
+        "Ambient",
+        "Cartographic",
+        "Ethereal",
+        "Synthesiser",
+        "Meditative"
+      ],
       "role": "Accompaniment for the in-game world map and travel interface; a floating ambient piece detached from the location-specific hub themes, providing a contemplative pause between areas.",
       "events": [
         {
@@ -142,7 +166,13 @@
       "title": "Disturbed Combat",
       "duration": "2:09",
       "energy": "high",
-      "tags": ["Combat", "Industrial", "Percussive", "Distorted", "Aggressive"],
+      "tags": [
+        "Combat",
+        "Industrial",
+        "Percussive",
+        "Distorted",
+        "Aggressive"
+      ],
       "role": "Combat music triggered during encounters with the Malkavian-linked disturbed enemies; a short, aggressive industrial loop designed to heighten tension during gameplay action sequences.",
       "events": [
         {
@@ -177,7 +207,13 @@
       "title": "Santa Monica Theme",
       "duration": "5:04",
       "energy": "mid",
-      "tags": ["Hub Theme", "Coastal", "Trip-Hop", "Nocturnal", "Atmospheric"],
+      "tags": [
+        "Hub Theme",
+        "Coastal",
+        "Trip-Hop",
+        "Nocturnal",
+        "Atmospheric"
+      ],
       "role": "Sonic identity for Santa Monica, the game's first explorable hub area; a relatively gentle trip-hop piece reflecting the beachside district's status as the player's introduction to the vampire underworld, balancing accessibility with nocturnal unease.",
       "events": [
         {
@@ -222,7 +258,13 @@
       "title": "Chinatown Theme",
       "duration": "6:08",
       "energy": "mid",
-      "tags": ["Hub Theme", "Eastern", "Atmospheric", "Synthesiser", "Textured"],
+      "tags": [
+        "Hub Theme",
+        "Eastern",
+        "Atmospheric",
+        "Synthesiser",
+        "Textured"
+      ],
       "role": "Sonic identity for the Chinatown hub area, the game's fourth and final explorable district; the longest hub theme, deploying Eastern-influenced melodic modes and pentatonic synthesiser lines over dark ambient foundations to reflect the Kuei-jin vampire faction's territorial presence.",
       "events": [
         {
@@ -272,7 +314,13 @@
       "title": "China Boss Battle",
       "duration": "2:33",
       "energy": "high",
-      "tags": ["Boss Battle", "Eastern", "Aggressive", "Percussive", "Tense"],
+      "tags": [
+        "Boss Battle",
+        "Eastern",
+        "Aggressive",
+        "Percussive",
+        "Tense"
+      ],
       "role": "Boss combat music for Chinatown encounters, particularly the confrontation with the Kuei-jin; retains the Eastern modal character of the Chinatown hub theme but intensified through aggressive percussion and distorted synthesiser bass.",
       "events": [
         {
@@ -307,7 +355,13 @@
       "title": "Nosferatu Warrens",
       "duration": "3:42",
       "energy": "low",
-      "tags": ["Horror", "Subterranean", "Drone", "Claustrophobic", "Unsettling"],
+      "tags": [
+        "Horror",
+        "Subterranean",
+        "Drone",
+        "Claustrophobic",
+        "Unsettling"
+      ],
       "role": "Ambient scoring for the Nosferatu clan's underground warren, a network of sewers and tunnels beneath Los Angeles; among the score's most uncomfortable pieces, relying on claustrophobic drones and processed noise to convey the deformity and isolation of the sewer-dwelling vampires.",
       "events": [
         {
@@ -347,7 +401,13 @@
       "title": "Downtown Theme",
       "duration": "4:19",
       "energy": "mid",
-      "tags": ["Hub Theme", "Urban", "Trip-Hop", "Nocturnal", "Layered"],
+      "tags": [
+        "Hub Theme",
+        "Urban",
+        "Trip-Hop",
+        "Nocturnal",
+        "Layered"
+      ],
       "role": "Sonic identity for Downtown Los Angeles, the game's third hub area and the political centre of the Camarilla vampire hierarchy; a darker and more rhythmically assertive trip-hop piece than the earlier hub themes, reflecting the increased danger and political complexity of the mid-game.",
       "events": [
         {
@@ -392,7 +452,13 @@
       "title": "Disturbed and Twisted",
       "duration": "4:30",
       "energy": "mid",
-      "tags": ["Horror", "Psychological", "Dark Ambient", "Dissonant", "Unsettling"],
+      "tags": [
+        "Horror",
+        "Psychological",
+        "Dark Ambient",
+        "Dissonant",
+        "Unsettling"
+      ],
       "role": "Exploration music for areas associated with psychological horror and the Malkavian clan's madness-touched vampires; an extended dark ambient piece that deploys dissonance and unsettling textures to score the game's most disturbing non-combat environments.",
       "events": [
         {
@@ -437,7 +503,13 @@
       "title": "Disturbed and Twisted Combat",
       "duration": "2:14",
       "energy": "high",
-      "tags": ["Combat", "Industrial", "Frantic", "Distorted", "Percussive"],
+      "tags": [
+        "Combat",
+        "Industrial",
+        "Frantic",
+        "Distorted",
+        "Percussive"
+      ],
       "role": "Combat variant of the Disturbed and Twisted exploration cue; transforms the psychological ambient material into aggressive industrial action music for encounters in Malkavian-related areas.",
       "events": [
         {
@@ -472,7 +544,13 @@
       "title": "Edward's Theme",
       "duration": "4:49",
       "energy": "low",
-      "tags": ["Character Theme", "Melancholic", "Piano", "Atmospheric", "Intimate"],
+      "tags": [
+        "Character Theme",
+        "Melancholic",
+        "Piano",
+        "Atmospheric",
+        "Intimate"
+      ],
       "role": "Character theme associated with the Grout Mansion quest line; one of the score's most melodic and emotionally direct pieces, using piano and sparse synthesiser to convey isolation and tragedy in the context of a Malkavian elder's deteriorating sanity.",
       "events": [
         {
@@ -517,7 +595,13 @@
       "title": "Crypts Combat",
       "duration": "2:46",
       "energy": "high",
-      "tags": ["Combat", "Gothic", "Percussive", "Underground", "Aggressive"],
+      "tags": [
+        "Combat",
+        "Gothic",
+        "Percussive",
+        "Underground",
+        "Aggressive"
+      ],
       "role": "Combat music for encounters in the game's crypt and burial environments; a gothic-inflected combat cue that pairs heavy percussion with minor-key synthesiser riffs to score undead-heavy battle sequences.",
       "events": [
         {
@@ -557,7 +641,13 @@
       "title": "Moldy Old World",
       "duration": "2:38",
       "energy": "low",
-      "tags": ["Gothic", "Decayed", "Atmospheric", "Historical", "Eerie"],
+      "tags": [
+        "Gothic",
+        "Decayed",
+        "Atmospheric",
+        "Historical",
+        "Eerie"
+      ],
       "role": "Ambient scoring evoking the ancient European origins of the Camarilla vampire society; a brief, eerie piece suggesting centuries of accumulated decay and the weight of undead history through processed organ-like textures and dusty ambience.",
       "events": [
         {
@@ -592,7 +682,13 @@
       "title": "Dark Asia",
       "duration": "4:27",
       "energy": "mid",
-      "tags": ["Eastern", "Dark", "Mysterious", "Synthesiser", "Exploration"],
+      "tags": [
+        "Eastern",
+        "Dark",
+        "Mysterious",
+        "Synthesiser",
+        "Exploration"
+      ],
       "role": "Secondary Chinatown exploration cue complementing the main hub theme; a darker, more mysterious piece that underscores the Kuei-jin subplot and the sense of entering foreign vampiric territory beyond the Camarilla's jurisdiction.",
       "events": [
         {
@@ -637,7 +733,13 @@
       "title": "The Prince's Dream",
       "duration": "2:47",
       "energy": "low",
-      "tags": ["Character Theme", "Ominous", "Power", "Synthesiser", "Brief"],
+      "tags": [
+        "Character Theme",
+        "Ominous",
+        "Power",
+        "Synthesiser",
+        "Brief"
+      ],
       "role": "Theme associated with the Camarilla Prince LaCroix and the political machinations driving the game's main narrative; a brief, ominous piece conveying authority and hidden menace through sustained synthesiser textures.",
       "events": [
         {
@@ -672,7 +774,13 @@
       "title": "All That Could Ever Be",
       "duration": "6:36",
       "energy": "mid",
-      "tags": ["Reflective", "Trip-Hop", "Adapted", "Closing", "Guitar"],
+      "tags": [
+        "Reflective",
+        "Trip-Hop",
+        "Adapted",
+        "Closing",
+        "Guitar"
+      ],
       "role": "Closing track and the score's most emotionally reflective piece; an instrumental reworking of We Just Disagree from Schaffer's Nectar project (released on the album Afterglow), repurposed as a meditation on immortality and loss that closes the soundtrack with rare warmth and melodic directness.",
       "events": [
         {

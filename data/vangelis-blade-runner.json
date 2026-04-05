@@ -6,9 +6,16 @@
   "label": "East West (Europe) · Atlantic (U.S.)",
   "producer": "Vangelis",
   "genre": "Electronic / Soundtrack",
+  "genreTags": [
+    "Electronic",
+    "Soundtrack",
+    "Ambient"
+  ],
   "runtime": "57:53",
   "isSoundtrack": true,
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Bladerunnervangeliscover.jpg",
+  "coverUrl": "covers/vangelis-blade-runner.jpg",
+  "audioStreamUrl": "https://music.apple.com/us/album/blade-runner-original-score-from-the-motion-picture/73327394",
+  "youtubeUrl": "https://www.youtube.com/watch?v=iirttSa0VG4",
   "overview": "Blade Runner (1994) collects the electronic score Vangelis composed and recorded at Nemo Studios, London, between December 1981 and April 1982 for Ridley Scott's science-fiction noir film — though rights disputes delayed the official album release by over a decade. The Yamaha CS-80 is the defining instrument, supplemented by a Roland Jupiter-4, Roland VP-330 Vocoder Plus, Sequential Circuits Prophet-10, E-mu Emulator sampler, Yamaha GS1 FM synthesiser, and acoustic percussion including gamelan, glockenspiel, and tubular bells; Dick Morrissey contributes saxophone on \"Love Theme\" and Demis Roussos provides vocals on several cues. Chronologically the second of Vangelis's two Ridley Scott collaborations — preceding 1492: Conquest of Paradise (1992) in composition but following it on the release calendar — the score predates the late-period contemplative trilogy of Voices (1995), Oceanic (1996), and El Greco (1998) and represents his most commercially visible film work, nominated for a BAFTA and Golden Globe in 1983, rated the best film score of all time by Pitchfork in 2019, and certified Gold in the UK, Spain, and Brazil.",
   "tracks": [
     {

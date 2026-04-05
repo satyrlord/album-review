@@ -6,8 +6,15 @@
   "label": "Interscope · id Software",
   "producer": "Trent Reznor",
   "genre": "Dark Ambient / Industrial",
+  "genreTags": [
+    "Dark Ambient",
+    "Industrial",
+    "Soundtrack"
+  ],
   "runtime": "58:53",
   "isSoundtrack": true,
+  "audioStreamUrl": "https://music.apple.com/us/album/quake/1538397591",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Z1SsBMsauvE",
   "overview": "Composed and produced by Trent Reznor with Nine Inch Nails members Charlie Clouser, Robin Finck, Danny Lohner, and Chris Vrenna, the Quake soundtrack was recorded for id Software's first-person shooter during 1995–1996 — Reznor's first sustained experiment with dark ambient composition, delivered free of charge after American McGee suggested the band while listening to The Downward Spiral during level design. The ten tracks were pressed directly onto the game CD as audio tracks (track one containing game data), with no standalone commercial release until the 2020 vinyl LP that finally assigned official titles to the previously unnamed cues. The score won the 1997 Game Developers Choice Award for Best Music or Soundtrack, and GameSpot reviewer Trent Ward called it \"the greatest soundtrack ever produced for a PC game\" — a judgement that solidified Reznor's crossover from industrial rock into interactive media scoring, preceding his later film work on The Social Network (2010) and Soul (2020) by over a decade.",
   "tracks": [
     {
@@ -18,7 +25,6 @@
       "tags": [
         "Opening Theme",
         "Industrial Drone",
-        "Synthesizer",
         "Rhythmic Pulse"
       ],
       "role": "Album role: The identity statement — the only track with a recognisable rhythmic backbone, establishing the soundtrack's industrial-ambient register and functioning as the game's title-screen signature.",
@@ -464,5 +470,6 @@
         }
       ]
     }
-  ]
+  ],
+  "coverUrl": "covers/nine-inch-nails-quake.jpg"
 }

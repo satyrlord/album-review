@@ -6,10 +6,14 @@
   "label": "Disques Motors · Polydor",
   "producer": "Jean-Michel Jarre",
   "genre": "Electronic / Ambient",
+  "genreTags": [
+    "Electronic",
+    "Ambient"
+  ],
   "runtime": "39:39",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/25/Oxygene_album_cover.jpg",
+  "coverUrl": "covers/jean-michel-jarre-oxygene.jpg",
   "spotifyUrl": "https://open.spotify.com/album/3e7TxckusgnC1AYnAqbl2z",
-  "youtubeUrl": "https://music.youtube.com/watch?v=5ab7tIZNplM",
+  "youtubeUrl": "https://www.youtube.com/watch?v=5ab7tIZNplM",
   "overview": "Recorded in Jarre's Paris apartment kitchen on Rue de la Trémoille — no studio time, no recording budget, no label commission. Six continuous parts that function as a single atmospheric statement about air, breath, and the texture of space. Key equipment: ARP 2600, EMS Synthi AKS, EMS VCS 3, Farfisa Professional Organ, Eminent 310 Unique (the atmospheric string sound), Korg Mini-Pops 7 drum machine, RMI Harmonic Synthesizer, Mellotron, and Michel Geiss's custom Rhytmi-computer. Produced and mixed with Jean-Pierre Janiaud.\n\nReleased December 1976 on Disques Motors / Polydor (France); initially 50,000 copies given free to hi-fi shops as a demonstration record. Grew to 15–18 million copies worldwide. Oxygène Part IV became the UK hit single. Won the Grand Prix du Disque. Timestamps approximate to ±5 seconds given the continuous-tape nature of the album's original recording.",
   "tracks": [
     {

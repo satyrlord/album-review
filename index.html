@@ -3,36 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Album Analysis Index</title>
+<meta name="application-name" content="ALBANA">
+<meta name="description" content="ALBANA collection index for timestamp-based album structural analysis.">
+<title>ALBANA Index</title>
 <link rel="stylesheet" href="./src/album-analysis.css">
 </head>
 <body data-collection="home" class="min-h-screen bg-base-100 text-base-content antialiased">
 
-<header class="ix-hero">
-  <div class="container">
-    <div class="card border border-base-300/70 bg-base-200/85 shadow-2xl backdrop-blur-xl">
-      <div class="card-body items-center gap-5 px-6 py-8 text-center sm:px-10 sm:py-12">
-        <div class="badge badge-outline badge-secondary subtitle px-4 py-3 font-mono text-[0.68rem] uppercase tracking-[0.28em]">
-          Structural Notes Archive
-        </div>
-        <h1 class="font-display text-4xl font-semibold tracking-[-0.04em] text-base-content sm:text-5xl lg:text-6xl 2xl:text-7xl">
-          Album Analysis
-        </h1>
-        <p class="max-w-3xl text-sm font-mono uppercase tracking-[0.22em] text-base-content/55 sm:text-[0.78rem]">
-          Structural · Timestamp-Based · Deep Listening Notes
-        </p>
-        <div id="siteNav"></div>
-        <label class="input input-bordered flex w-full max-w-2xl items-center gap-3 border-base-300 bg-base-100/80 px-4 shadow-lg">
-          <span class="text-base-content/45" aria-hidden="true">⌕</span>
-          <input type="search" class="ix-search grow bg-transparent text-sm outline-none sm:text-base" id="ixSearch"
-                 placeholder="Search by title, artist or genre…"
-                 autocomplete="off" spellcheck="false" aria-label="Filter albums">
-        </label>
-        <div class="ix-filters" id="ixFilters"></div>
-      </div>
-    </div>
-  </div>
-</header>
+<header id="ixHero"></header>
 
 <main class="container pb-20">
   <div class="ix-results-bar">

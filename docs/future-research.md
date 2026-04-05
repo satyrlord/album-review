@@ -1,617 +1,329 @@
 # Future Research — Best Ambient Albums
 
-A cross-referenced database of albums drawn from curated "best ambient" lists and personal playlists, for use as a research shortlist when adding new album analyses.
-
-## Sources
-
-| Key | Source | Date | URL |
-| --- | --- | --- | --- |
-| P | Pitchfork — "The 50 Best Ambient Albums of All Time" | 2016-09-26 | <https://pitchfork.com/features/lists-and-guides/9948-the-50-best-ambient-albums-of-all-time/> |
-| S | SensCritique — "My 50 Best Ambient Albums of All Time" | ~2016 | <https://www.senscritique.com/liste/my_50_best_ambient_albums_of_all_time/1802044> |
-| O | Optimistic Underground — "32 Best Ambient Albums Ever Made" | 2016-10-05 | <https://optimisticunderground.com/2016/10/05/best-ambient-albums-ever/> |
-| H | Hyperreal — Classic Ambient Recordings: The 2001 Survey | 2002-01 | <http://music.hyperreal.org/epsilon/info/2001_classic_ambient.html> |
-| F | Scaruffi — "Best Ambient Albums of All Time" | — | <https://www.scaruffi.com/music/ambient.html> |
-| A | AOTY / AllMusic — Highest Rated Ambient Albums of All Time | ongoing | <https://www.albumoftheyear.org/genre/34-ambient/all/all-music/> |
-| D | Deep Cuts — "30 Records That Fuelled My Ambient Obsession" (Part I) | 2025-07-01 | <https://deepcutswrites.substack.com/p/30-records-that-fuelled-my-ambient> |
-| B | BBC Radio 3 — "10 Relaxing Ambient Albums for Meditation" | ~2016 | <https://www.bbc.co.uk/programmes/articles/2GPxB9sXQ04Jx92vG3S62Fs/10-relaxing-ambient-albums-for-meditation> |
-| R | RateYourMusic — "My Top 100 Ambient Albums" (kuszynier) | — | <https://rateyourmusic.com/list/kuszynier/my-top-100-ambient-albums-of-all-time/> |
-| T | Psy-Amb — "Best Ambient Music of All Time Top 25" (Darktremor via Listology) | ~2005 | <https://psy-amb.blogspot.com/2011/02/best-ambient-music-of-all-time-top-25.html> |
-| Re | Reddit r/ambientmusic — Top 100 Favorite Albums poll | 2024 | <https://www.reddit.com/r/ambientmusic/comments/1enxotj/results_for_rambientmusics_top_100_favorite/> |
-| Ac | AcclaimedMusic — Ambient genre chart | — | <https://www.acclaimedmusic.net/genre/genre1.htm> |
-
-> **Note:** Source **D** captured Part I only (14 of 30 albums); Part II is paywalled. Source **O** uses chronological order (no ranking), so the **O** column uses ✓ for presence. Detailed album lists for sources **H**, **F**, **A**, **D**, **B**, **R**, **T**, **Re**, and **Ac** appear in their own sections after the Master Album Table.
+A research shortlist for new album analyses, ordered by similarity to reviewed albums (with popularity as tiebreaker). Each album appears once.
 
 ---
 
-## Master Album Table
+## Album List
 
-Columns:
-
-- **P#** — rank on the Pitchfork list (1 = best)
-- **S#** — rank on the SensCritique list (1 = best; page only exposed positions 1–30)
-- **O** — ✓ if the album appears on the Optimistic Underground list (chronological, not ranked)
-- **In App** — ✅ if the album is already analysed in `data/`
-
-| P# | S# | O | Artist | Album | Year | Genre | In App |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 6 | — | Brian Eno | Ambient 1: Music for Airports | 1978 | Ambient | |
-| 2 | 13 | — | Aphex Twin | Selected Ambient Works Volume II | 1994 | Ambient / Experimental | |
-| 3 | — | — | William Basinski | The Disintegration Loops I–IV | 2002 | Ambient / Tape Loop | |
-| 5 | — | — | The KLF | Chill Out | 1990 | Ambient House | |
-| 6 | 7 | ✓ | Stars of the Lid | The Tired Sounds of Stars of the Lid | 2001 | Ambient / Drone | |
-| 7 | 30 | — | Oval | 94diskont | 1995 | Glitch / Ambient | |
-| 9 | 29 | — | Tim Hecker | Harmony in Ultraviolet | 2006 | Ambient / Drone | |
-| 10 | — | — | Fripp & Eno | Evening Star | 1975 | Ambient / Art Rock | |
-| 11 | 8 | — | GAS | Pop | 2000 | Ambient Techno | |
-| 12 | 5 | — | Laurie Spiegel | The Expanding Universe | 1980 | Electronic / Computer Music | |
-| 13 | 28 | — | Brian Eno | Apollo: Atmospheres & Soundtracks | 1983 | Ambient / Soundtrack | |
-| 14 | — | — | The Caretaker | An Empty Bliss Beyond This World | 2011 | Ambient / Hauntology | |
-| 18 | 26 | — | Stars of the Lid | And Their Refinement of the Decline | 2007 | Ambient / Post-Classical | |
-| 19 | — | — | The Orb | Orbus Terrarum | 1995 | Ambient House | |
-| 20 | — | — | Oneohtrix Point Never | Replica | 2011 | Electronic / Ambient | |
-| 21 | 1 | — | Grouper | A I A : Alien Observer | 2011 | Ambient / Dream Pop | |
-| 22 | — | ✓ | Fennesz | Endless Summer | 2001 | Glitch / Ambient | |
-| 23 | 25 | — | Keith Fullerton Whitman | Playthroughs | 2002 | Ambient / Electronic | |
-| 24 | 2 | — | Brian Eno | Ambient 4: On Land | 1982 | Ambient / Experimental | |
-| 26 | 24 | — | Iasos | Inter-Dimensional Music | 1975 | New Age / Ambient | |
-| 27 | — | — | Oneohtrix Point Never | Rifts | 2009 | Synth / Ambient | |
-| 29 | 23 | — | David Behrman | On the Other Ocean | 1977 | Electronic / Minimalism | |
-| 30 | 18 | — | Julianna Barwick | The Magic Place | 2011 | Ambient / Vocal | |
-| 31 | 22 | — | Ashra | New Age of Earth | 1976 | Berlin School / Ambient | |
-| 33 | 21 | — | Steve Roach | Structures from Silence | 1984 | New Age / Ambient | |
-| 35 | 20 | — | Laraaji | Ambient 3: Day of Radiance | 1980 | Ambient / New Age | |
-| 36 | 19 | — | Windy & Carl | Depths | 1998 | Ambient / Drone | |
-| 37 | — | — | Tim Hecker | Virgins | 2013 | Ambient / Electronic | |
-| 38 | 17 | — | Biosphere | Substrata | 1997 | Ambient / Electronic | |
-| 39 | 4 | — | Suzanne Ciani | Buchla Concerts 1975 | 1975 | Electronic / Modular Synth | |
-| 40 | 16 | — | Max Richter | Sleep | 2015 | Ambient / Post-Classical | |
-| 41 | 12 | — | Harold Budd / Brian Eno | The Pearl | 1984 | Ambient / Piano | |
-| 42 | 15 | — | Ekkehard Ehlers | Plays | 2002 | Ambient / Experimental | |
-| 43 | 11 | — | Eluvium | Talk Amongst the Trees | 2005 | Ambient / Drone | |
-| 44 | — | — | Microstoria | snd | 1996 | Glitch / Ambient | |
-| 45 | — | — | Huerco S. | For Those of You Who Have Never (And Also Those Who Have) | 2016 | Ambient Techno | |
-| 46 | 3 | — | Edgar Froese | Epsilon in Malaysian Pale | 1975 | Berlin School / Ambient | |
-| 47 | — | — | Jon Hassell | Vernal Equinox | 1977 | Fourth World / Ambient | |
-| 48 | — | — | Ernest Hood | Neighborhoods | 1975 | Ambient / Musique Concrète | |
-| 49 | 9 | — | Bing & Ruth | Tomorrow Was the Golden Age | 2014 | Ambient / Minimalism | |
-| 50 | 10 | — | Deathprod | Morals and Dogma | 2004 | Dark Ambient | |
-| — | 14 | ✓ | Slowdive | Pygmalion | 1995 | Space Rock / Ambient | |
-| — | — | ✓ | Brian Eno | Discreet Music | 1975 | Ambient | |
-| — | — | ✓ | Tangerine Dream | Rubycon | 1975 | Berlin School / Ambient | |
-| — | — | ✓ | Manuel Göttsching | Inventions for Electric Guitar | 1975 | Kosmische / Ambient | |
-| — | — | ✓ | Cluster | Sowiesoso | 1976 | Krautrock / Ambient | |
-| — | — | ✓ | Klaus Schulze | Mirage | 1977 | Berlin School / Ambient | |
-| — | — | ✓ | Steve Hillage | Rainbow Dome Musick | 1979 | Ambient | |
-| — | — | ✓ | Virginia Astley | From Gardens Where We Feel Secure | 1983 | Ambient / Piano | |
-| — | — | ✓ | Steve Roach | Dreamtime Return | 1988 | Ambient / Electronic | |
-| — | — | ✓ | The Orb | Adventures Beyond the Ultraworld | 1991 | Ambient House | |
-| — | — | ✓ | Aphex Twin | Selected Ambient Works 85–92 | 1992 | Ambient / Electronic | |
-| — | — | ✓ | Pete Namlook | Air | 1993 | Ambient Techno | |
-| — | — | ✓ | Seefeel | Starethrough | 1994 | Ambient / Electronic | |
-| — | — | ✓ | Global Communication | 76:14 | 1994 | Ambient Techno | ✅ |
-| — | — | ✓ | John Foxx | Cathedral Oceans | 1997 | Ambient / Synthesiser | |
-| — | — | ✓ | The Detroit Escalator Co. | Black Buildings | 2000 | Ambient Techno | |
-| — | — | ✓ | Susumu Yokota | Sakura | 2000 | Ambient / Electronic | |
-| — | — | ✓ | Loscil | Submers | 2002 | Ambient Techno | |
-| — | — | ✓ | Alva Noto | Xerrox Vol. 2 | 2009 | Ambient / Electronic | |
-| — | — | ✓ | Brock Van Wey | White Clouds Drift On and On | 2009 | Ambient / Drone | |
-| — | — | ✓ | Black to Comm | Alphabet 1968 | 2009 | Dark Ambient | |
-| — | — | ✓ | White Rainbow | New Clouds | 2010 | Ambient / Drone | |
-| — | — | ✓ | Oneohtrix Point Never | Returnal | 2010 | Electronic / Ambient | |
-| — | — | ✓ | Deepchord Presents Echospace | Liumin | 2010 | Dub Techno / Ambient | |
-| — | — | ✓ | KWJAZ | KWJAZ | 2011 | Ambient / Lo-fi | |
-| — | — | ✓ | Motion Sickness of Time Travel | Motion Sickness of Time Travel | 2012 | Ambient / Drone | |
-| — | — | ✓ | Steve Hauschildt | Where All Is Fled | 2015 | Ambient / Electronic | |
-| — | — | ✓ | 2814 | 新しい日の誕生 (Birth of a New Day) | 2015 | Vaporwave / Ambient | |
-
----
-
-## Hyperreal Classic Ambient Survey (Source H)
-
-Community poll from Hyperreal.org (January 2002). ~130 voters worldwide — listeners, composers, journalists, and radio programmers. Entries below received 7 or more votes. Albums already in the Master Album Table marked with ★.
-
-| Votes | Artist | Album | Year | In Master |
-| --- | --- | --- | --- | --- |
-| 34 | Biosphere | Substrata | 1997 | ★ |
-| 32 | Aphex Twin | Selected Ambient Works Vol. II | 1994 | ★ |
-| 25 | Brian Eno | On Land | 1982 | ★ |
-| 22 | Brian Eno | Apollo: Atmospheres & Soundtracks | 1983 | ★ |
-| 21 | Brian Eno | Music for Airports | 1978 | ★ |
-| 20 | Tetsu Inoue | Ambiant Otaku | 1995 | |
-| 19 | Harold Budd / Brian Eno | The Pearl | 1984 | ★ |
-| 18 | Global Communication | 76:14 | 1994 | ★ ✅ |
-| 17 | Future Sound of London | Lifeforms | 1994 | |
-| 16 | Harold Budd / Brian Eno | The Plateaux of Mirror | 1980 | |
-| 15 | Brian Eno | Thursday Afternoon | 1985 | |
-| 14 | Tetsu Inoue | Organic Cloud | 1996 | |
-| 13 | The KLF | Chill Out | 1990 | ★ |
-| 12 | Tetsu Inoue | World Receiver | 1996 | |
-| 12 | Robert Rich | Trances/Drones | 1983 | |
-| 12 | Robert Rich / Lustmord | Stalker | 1995 | |
-| 12 | Woob | 1194 | 1995 | |
-| 11 | Biosphere / HIA | Polar Sequences | 1996 | |
-| 10 | Jon Hassell / Brian Eno | Fourth World Vol. 1: Possible Musics | 1980 | |
-| 10 | Lustmord | The Place Where the Black Stars Hang | 1994 | |
-| 9 | Autechre | Amber | 1994 | |
-| 9 | Thomas Köner | Kaamos | 1998 | |
-| 9 | The Orb | Adventures Beyond the Ultraworld | 1991 | ★ |
-| 9 | Steve Roach | Dreamtime Return | 1988 | ★ |
-| 9 | Steve Roach | The Magnificent Void | 1996 | |
-| 9 | David Sylvian / Holger Czukay | Plight & Premonition | 1988 | |
-| 8 | Boards of Canada | Music Has the Right to Children | 1998 | |
-| 8 | Datacide | Flowerhead | 1994 | |
-| 8 | James Johnson / Robert Scott Thompson | Forgotten Places | 1999 | |
-| 8 | O Yuki Conjugate | Equator | 1993 | |
-| 7 | Pete Namlook / Tetsu Inoue | 2350 Broadway | 1993 | |
-| 7 | Pete Namlook / Tetsu Inoue | 2350 Broadway II | 1994 | |
-| 7 | The Orb | UFOrb | 1992 | |
-| 7 | Jeff Pearce | To the Shores of Heaven | 1998 | |
-| 7 | Plastikman | Consumed | 1998 | |
-| 7 | Robert Rich | Numena | 1987 | |
-| 7 | Steve Roach | Quiet Music | 1986 | |
-| 7 | Sun Electric | 30.7.94 | 1994 | |
-| 7 | Susumu Yokota | Sakura | 2000 | ★ |
-
-Also receiving significant votes (5–6): Brian Eno — Discreet Music ★, Fripp & Eno — Evening Star ★, GAS — Pop ★, Steve Hillage — Rainbow Dome Musick ★, Klaus Schulze — Mirage ★, Tangerine Dream — Rubycon ★, Aphex Twin — SAW 85–92 ★, Steve Roach — Structures from Silence ★, Pete Namlook — Air ★, Susumu Yokota — Sakura ★, Harold Budd — Lovely Thunder, Vidna Obmana — The River of Appearance, Vangelis — Blade Runner.
-
----
-
-## Scaruffi — Best Ambient Albums (Source F)
-
-Ranked list by critic Piero Scaruffi (one album per artist). Top 30 shown.
-
-| F# | Artist | Album | Year | In Master |
-| --- | --- | --- | --- | --- |
-| 1 | Brian Eno | Music for Airports | 1979 | ★ |
-| 2 | Steve Roach | Dreamtime Return | 1988 | ★ |
-| 3 | Jon Hassell | Dream Theory in Malaya | 1981 | |
-| 4 | Autechre | Tri Repetae | 1996 | |
-| 5 | Robert Rich | Somnium | 2001 | |
-| 6 | Harold Budd | Pavilion of Dreams | 1978 | |
-| 7 | Cluster | Cluster II | 1972 | |
-| 8 | The Orb | U.F.Orb | 1992 | |
-| 9 | Raphael | Angels of the Deep | 1995 | |
-| 10 | Alio Die | Password for Entheogenic Experience | 1997 | |
-| 11 | Vidna Obmana | Spiritual Bonding | 1994 | |
-| 12 | Jóhann Jóhannsson | Virðulegu Forsetar | 2004 | |
-| 13 | Loop Guru | Duniya | 1994 | |
-| 14 | Solar Quest | Orgship | 1994 | |
-| 15 | Orbital | II | 1993 | |
-| 16 | Liquid Mind | Ambience Minimus | 1994 | |
-| 17 | Kiln | Holo | 1998 | |
-| 18 | Doldrums | Acupuncture | 1997 | |
-| 19 | Global Communication | 76:14 | 1994 | ★ ✅ |
-| 20 | Future Sound of London | Lifeforms | 1994 | |
-| 21 | Aphex Twin | Selected Ambient Works Vol. II | 1994 | ★ |
-| 22 | DJ Spooky | Riddim Warfare | 1998 | |
-| 23 | Asmus Tietchens | Nachtstücke | 1980 | |
-| 24 | µ-Ziq | In Pine Effect | 1995 | |
-| 25 | Wagon Christ | Throbbing Pouch | 1995 | |
-| 26 | Michael Brook | Hybrid | 1985 | |
-| 27 | Jeff Greinke | Cities in Fog | 1985 | |
-| 28 | Stars of the Lid | The Tired Sounds of Stars of the Lid | 2001 | ★ |
-| 29 | Transglobal Underground | Dream of 100 Nations | 1993 | |
-| 30 | Susumu Yokota | Sakura | 2000 | ★ |
-
-Also on the Scaruffi list (31–64): Biosphere — Substrata ★ (#37), The KLF — Chill Out ★ (#49), Seefeel — Quique (#55), Thomas Köner — Permafrost (#54), Woob — 1194 (#57), Fennesz — Endless Summer ★ (single-vote tier).
-
----
-
-## AOTY / AllMusic — Highest Rated Ambient (Source A)
-
-AllMusic critic scores aggregated by Album of the Year. Top 25 shown (all scored 100).
-
-| A# | Artist | Album | Year | In Master |
-| --- | --- | --- | --- | --- |
-| 1 | Global Communication | 76:14 | 1994 | ★ ✅ |
-| 2 | Klaus Schulze | Irrlicht | 1972 | |
-| 3 | Brian Eno | Ambient 1: Music for Airports | 1979 | ★ |
-| 4 | Jon Hassell / Brian Eno | Fourth World Vol. 1: Possible Musics | 1980 | |
-| 7 | Steve Roach | Dreamtime Return | 1988 | ★ |
-| 8 | Brian Eno | Another Green World | 1975 | |
-| 10 | Brian Eno | Thursday Afternoon | 1985 | |
-| 11 | Brian Eno | Music for Films | 1978 | |
-| 12 | GAS | Pop | 2000 | ★ |
-| 13 | Biosphere | Microgravity | 1991 | |
-| 14 | The Caretaker | An Empty Bliss Beyond This World | 2011 | ★ |
-| 15 | Grouper | Dragging a Dead Deer Up a Hill | 2008 | |
-| 17 | Fennesz | Endless Summer | 2001 | ★ |
-| 18 | Oval | 94diskont | 1995 | ★ |
-| 19 | Kyle Dixon / Michael Stein | Stranger Things: Volume One | 2016 | |
-| 20 | Steve Roach | Structures from Silence | 1984 | ★ |
-| 21 | Vangelis | Blade Runner | 1994 | |
-| 22 | Tangerine Dream | Phaedra | 1974 | |
-| 23 | The KLF | Chill Out | 1990 | ★ |
-| 24 | Oneohtrix Point Never | Replica | 2011 | ★ |
-| 25 | Eduard Artemyev | Solaris / The Mirror / Stalker | — | |
-
----
-
-## Deep Cuts — 30 Records (Source D)
-
-Personal list by Oliver Kemp (Substack newsletter, July 2025). Part I only (14 of 30 albums); Part II is paywalled.
-
-| # | Artist | Album | Year | In Master |
-| --- | --- | --- | --- | --- |
-| 1 | Cluster / Brian Eno | Cluster & Eno | 1977 | |
-| 2 | Grouper | A I A: Alien Observer | 2011 | ★ |
-| 3 | Labradford | Fixed::Context | 2000 | |
-| 4 | Global Communication | 76:14 | 1994 | ★ ✅ |
-| 5 | Sarah Louise | Nighttime Birds and Morning Stars | 2019 | |
-| 6 | Hiroshi Yoshimura | GREEN | 1986 | |
-| 7 | Autechre | Garbage (EP) | 1995 | |
-| 8 | Julianna Barwick | The Magic Place | 2011 | ★ |
-| 9 | Monolake | Silence | 2009 | |
-| 10 | William Basinski | Lamentations | 2020 | |
-| 11 | The Dead Texan | The Dead Texan | 2004 | |
-| 12 | Aphex Twin | Selected Ambient Works Vol. II | 1994 | ★ |
-| 13 | Fennesz | Venice | 2004 | |
-| 14 | GAS | Pop | 2000 | ★ |
-
----
-
-## BBC Radio 3 — 10 Relaxing Ambient Albums (Source B)
-
-Curated by BBC Radio 3's Late Junction programme (~2016). Unranked.
-
-| Artist | Album | Year | In Master |
-| --- | --- | --- | --- |
-| Laraaji | Celestial Music 1978–2011 | 2011 | |
-| Michael Stearns | Planetary Unfolding | 1981 | |
-| Sun Araw | Beach Head | 2008 | |
-| Brian Eno | Ambient 4: On Land | 1982 | ★ |
-| Joanna Brouk | Healing Music | 1981 | |
-| Suzanne Ciani | Seven Waves | 1982 | |
-| Pauline Oliveros | Four Meditations and Sound Geometries | — | |
-| Alessandro Cortini | Forse 3 | 2015 | |
-
----
-
-## RateYourMusic — Top 100 Ambient Albums (Source R)
-
-Personal ranked list by user kuszynier on RateYourMusic. 101 entries (including an honorable mention at #101). Albums marked "Essential" by the author are flagged with ‡.
-
-| R# | Artist | Album | Year | In Master |
-| --- | --- | --- | --- | --- |
-| 1 | Brian Eno | Ambient 1: Music for Airports | 1979 | ★ ‡ |
-| 2 | Global Communication | 76:14 | 1994 | ★ ✅ ‡ |
-| 3 | GAS | Pop | 2000 | ★ ‡ |
-| 4 | Alio Die | Aura seminalis | 2008 | |
-| 5 | Harold Budd / Brian Eno | Ambient 2: The Plateaux of Mirror | 1980 | ‡ |
-| 6 | Aphex Twin | Selected Ambient Works Volume II | 1994 | ★ ‡ |
-| 7 | GAS | GAS | 1996 | |
-| 8 | Brian Eno | Ambient 4: On Land | 1982 | ★ ‡ |
-| 9 | GAS | Königsforst | 1999 | |
-| 10 | Harold Budd / Brian Eno with Daniel Lanois | The Pearl | 1984 | ★ ‡ |
-| 11 | Aphex Twin | Selected Ambient Works 85–92 | 1992 | ★ ‡ |
-| 12 | Tangerine Dream | Phaedra | 1974 | ‡ |
-| 13 | Alio Die | Password for Entheogenic Experience | 1998 | |
-| 14 | GAS | Zauberberg | 1997 | |
-| 15 | Various Artists | Complete Symphonies of the Planets: NASA Voyager Recordings | 2009 | |
-| 17 | Global Communication | Pentamerous Metamorphosis | 1998 | |
-| 18 | Pulusha | Isolation | 1997 | |
-| 19 | William Basinski | The Disintegration Loops | 2012 | ★ ‡ |
-| 20 | Slowdive | Pygmalion | 1995 | ★ |
-| 21 | Laraaji | Flow Goes the Universe | 1992 | |
-| 22 | Susumu Yokota | Sakura | 2000 | ★ ‡ |
-| 23 | Brian Eno with Daniel Lanois & Roger Eno | Apollo: Atmospheres & Soundtracks | 2019 | ★ ‡ |
-| 24 | Steve Roach | Structures From Silence | 1984 | ★ ‡ |
-| 25 | Brian Eno | Discreet Music | 1975 | ★ ‡ |
-| 26 | Oval | 94diskont. | 1995 | ★ ‡ |
-| 27 | Huerco S. | For Those of You Who Have Never (And Also Those Who Have) | 2016 | ★ |
-| 28 | Penjaga Insaf | Sama Sadja | 2010 | |
-| 29 | Vidna Obmana | The Spiritual Bonding | 1994 | |
-| 30 | Sun Electric | 30.7.94 Live | 1995 | |
-| 31 | Pendant | Make Me Know You Sweet | 2018 | |
-| 32 | Woob | Woob² 4495 | 1995 | |
-| 33 | Brian Eno | Another Green World | 1975 | |
-| 34 | Nala Sinephro | Space 1.8 | 2021 | |
-| 35 | Tetsu Inoue | Ambiant Otaku | 1994 | |
-| 36 | Tim Hecker | Ravedeath, 1972 | 2011 | |
-| 37 | Harold Budd | Luxa | 1996 | |
-| 38 | Michael Stearns | Encounter: A Journey in the Key of Space | 1988 | |
-| 39 | Julianna Barwick | The Magic Place | 2011 | ★ |
-| 40 | Rainforest Spiritual Enslavement | Green Graves | 2016 | |
-| 41 | Moby | Hotel: Ambient | 2014 | |
-| 42 | Rainforest Spiritual Enslavement | Ambient Black Magic | 2017 | |
-| 43 | Eluvium | Copia | 2007 | |
-| 44 | Michael Stearns | Planetary Unfolding | 1981 | |
-| 45 | The KLF | Chill Out | 1990 | ★ ‡ |
-| 46 | Tim Hecker | An Imaginary Country | 2009 | |
-| 47 | Tim Hecker | Virgins | 2013 | ★ |
-| 48 | Eluvium | Talk Amongst the Trees | 2005 | ★ |
-| 49 | Stars of the Lid | And Their Refinement of the Decline | 2007 | ★ ‡ |
-| 50 | Coil | Musick to Play in the Dark | 1999 | |
-| 51 | Art of Noise | The Ambient Collection | 1990 | |
-| 52 | Tangerine Dream | Rubycon | 1975 | ★ ‡ |
-| 53 | The Future Sound of London | Lifeforms | 1994 | |
-| 54 | Aeolian String Ensemble | Lassithi/Elysium | 1998 | |
-| 55 | Brian Eno | Foreverandevernomore | 2022 | |
-| 56 | André 3000 | New Blue Sun | 2023 | |
-| 57 | Stars of the Lid | The Tired Sounds Of | 2001 | ★ ‡ |
-| 58 | Huerco S. | Colonial Patterns | 2013 | |
-| 59 | The Irresistible Force | Flying High | 1992 | |
-| 60 | Air | You | 1993 | |
-| 61 | Bing & Ruth | Tomorrow Was the Golden Age | 2014 | ★ |
-| 62 | Tim Hecker | Radio Amor | 2003 | |
-| 63 | Steve Roach | Dreamtime Return | 1988 | ★ |
-| 64 | Popol Vuh | In den Gärten Pharaos | 1971 | |
-| 65 | The Irresistible Force | Global Chillage | 1994 | |
-| 66 | Biosphere | Substrata | 1997 | ★ ‡ |
-| 67 | Hiroshi Yoshimura | Wet Land | 1993 | |
-| 68 | How to Disappear Completely | Seraphim | 2019 | |
-| 69 | William Basinski | Watermusic | 2001 | |
-| 70 | Brian Eno | Thursday Afternoon | 1985 | |
-| 71 | Ryuichi Sakamoto | async | 2017 | |
-| 72 | Harold Budd | The Pavilion of Dreams | 1978 | |
-| 73 | Recyclebull | HQ | 2010 | |
-| 74 | 1991 | No More Dreams | 2016 | |
-| 76 | Hiroshi Yoshimura | Soundscape 1: Surround | 1986 | |
-| 77 | William Basinski | Melancholia | 2005 | |
-| 78 | The Caretaker | A Stairway to the Stars | 2002 | |
-| 79 | 1991 | 1991 | 2012 | |
-| 80 | Shackleton | Music for the Quiet Hour / The Drawbar Organ EPs | 2012 | |
-| 81 | James Ferraro | Clear | 2008 | |
-| 82 | James Ferraro | Pixarni | 2009 | |
-| 83 | James Ferraro | Marble Surf | 2008 | |
-| 84 | Laraaji | Essence/Universe | 1987 | |
-| 85 | Laraaji | Ambient 3: Day of Radiance | 1980 | ★ |
-| 86 | How to Disappear Completely | Mer de Revs II | 2017 | |
-| 87 | :zoviet\*france: | Shouting at the Ground | 1988 | |
-| 88 | Hiroshi Yoshimura | Wave Notation 1: Music for Nine Post Cards | 1982 | |
-| 89 | Tim Hecker | Haunt Me, Haunt Me Do It Again | 2001 | |
-| 90 | Jan Jelinek | Loop-Finding-Jazz-Records | 2001 | |
-| 91 | Pauline Oliveros, Stuart Dempster & Panaiotis | Deep Listening | 1989 | ★ |
-| 92 | Jüppala Kääpiö | Sporing Promenade | 2010 | |
-| 93 | Harold Budd | Agua | 1995 | |
-| 94 | Biosphere | Departed Glories | 2016 | |
-| 95 | Oval | Systemisch | 1994 | |
-| 96 | Tim Hecker | Harmony in Ultraviolet | 2006 | ★ |
-| 97 | Keith Fullerton Whitman | Playthroughs | 2002 | ★ |
-| 98 | Loscil | Plume | 2006 | |
-| 99 | 佐藤理 (Osamu Sato) | Collected Ambient Grooves 1993–2001 | 2020 | |
-| 100 | The Caretaker | An Empty Bliss Beyond This World | 2011 | ★ |
-| 101 | Dreamfish | Dreamfish | 1993 | |
-
-Author's "Essential ambient!" picks: Music for Airports, 76:14, Pop, SAW Vol. II, On Land, SAW 85–92, Phaedra, The Pearl, Disintegration Loops, Rubycon, Chill Out, And Their Refinement of the Decline, The Tired Sounds Of, Substrata, Discreet Music, Structures From Silence, Apollo, 94diskont., Sakura, Pygmalion.
-
----
-
-## Psy-Amb — Best Ambient Music of All Time (Source T)
-
-Personal top 26 by "Darktremor" (via Listology, ~2005), republished on Psy-Amb blog in 2011. Albums only — single tracks (#2, #16, #18, #25), DJ mixes (#17), and compilations (#9) omitted. Albums already in the Master Album Table marked with ★.
-
-| T# | Artist | Album | Year | In Master |
-| --- | --- | --- | --- | --- |
-| 1 | Biosphere | Substrata | 1997 | ★ |
-| 3 | Tim Hecker | Radio Amor | 2003 | |
-| 4 | Aglaia | Three Organic Experiences | 2003 | |
-| 5 | Monolake | Hongkong | 2000 | |
-| 6 | Tetsu Inoue | Ambiant Otaku | 1994 | |
-| 7 | Future Sound of London | Lifeforms | 1994 | |
-| 8 | Global Communication | 76:14 | 1994 | ★ ✅ |
-| 10 | The Orb | Adventures Beyond the Ultraworld | 1991 | ★ |
-| 11 | Helios | Eingya | 2006 | |
-| 12 | Echospace | The Coldest Season | 2007 | |
-| 13 | Aphex Twin | Selected Ambient Works 85–92 | 1992 | ★ |
-| 14 | Steve Roach | Dreamtime Return | 1988 | ★ |
-| 15 | Boards of Canada | Music Has the Right to Children | 1998 | |
-| 19 | Klaus Schulze | Irrlicht | 1972 | |
-| 20 | Biosphere | Shenzou | 2002 | |
-| 21 | Autechre | Amber | 1994 | |
-| 22 | Mute | The Sea Horse Limbo | 2006 | |
-| 23 | Steve Roach, Kevin Braheny & Michael Stearns | Desert Solitaire | 1989 | |
-| 24 | Vir Unis & Saul Stokes | Thermal Transfer | 2002 | |
-| 26 | GAS | Pop | 2000 | ★ |
-
----
-
-## Reddit r/ambientmusic — Top 100 Favorite Albums Poll (Source Re)
-
-Community poll results from r/ambientmusic (2024). Vote counts in parentheses. Asterisks (\*) denote tied placements. Albums already in the Master Album Table marked with ★.
-
-| Votes | Artist | Album | Year | In Master |
-| --- | --- | --- | --- | --- |
-| 114 | Aphex Twin | Selected Ambient Works Vol. II (+ 85–92) | 1994 | ★ |
-| 86 | Steve Roach | Structures from Silence | 1984 | ★ |
-| 84 | Biosphere | Substrata | 1997 | ★ |
-| 78 | Stars of the Lid | The Tired Sounds of Stars of the Lid | 2001 | ★ |
-| 77 | William Basinski | The Disintegration Loops I–IV | 2002 | ★ |
-| 72 | Stars of the Lid | And Their Refinement of the Decline | 2007 | ★ |
-| 69 | Brian Eno & Harold Budd | The Pearl | 1984 | ★ |
-| 67 | Hiroshi Yoshimura | Music for Nine Post Cards | 1982 | ★ |
-| 56 | Tim Hecker | Harmony in Ultraviolet | 2006 | ★ |
-| \*52 | Brian Eno | Apollo | 1983 | ★ |
-| 52 | Tim Hecker | Ravedeath, 1972 | 2011 | |
-| \*47 | GAS | Pop | 2000 | ★ |
-| 47 | Brian Eno (+Harold Budd, Laraaji) | Ambient 1–4 | 1978–82 | ★ |
-| 44 | A Winged Victory for the Sullen | A Winged Victory for the Sullen | 2011 | |
-| 40 | Loscil | Endless Falls | 2010 | |
-| \*35 | C418 | Minecraft Volume Alpha & Beta | — | |
-| 35 | The Caretaker | Everywhere at the End of Time | 2016–19 | |
-| 35 | Grouper | A.I.A.: Alien Observer | 2011 | ★ |
-| 35 | Global Communication | 76:14 | 1994 | ★ ✅ |
-| 34 | Hiroshi Yoshimura | Surround | 1986 | ★ |
-| \*33 | The KLF | Chill Out | 1990 | ★ |
-| 33 | Hiroshi Yoshimura | GREEN | 1986 | |
-| 33 | Huerco S. | For Those of You Who Have Never (And Also Those Who Have) | 2016 | ★ |
-| 30 | Grouper | Dragging a Dead Deer Up a Hill | 2008 | |
-| 29 | Oneohtrix Point Never | Replica | 2011 | ★ |
-| 28 | Brian Eno | Thursday Afternoon | 1985 | ★ |
-| 27 | Brian Eno | Discreet Music | 1975 | ★ |
-| 26 | The Orb | U.F.Orb | 1992 | |
-| \*24 | Stars of the Lid | Avec Laudanum | 2003 | |
-| 24 | Celer | Xièxie | — | |
-| 23 | Boards of Canada | Music Has the Right to Children | 1998 | |
-| 22 | Susumu Yokota | Sakura | 2000 | ★ |
-| 21 | Robert Fripp & Brian Eno | No Pussyfooting | 1973 | |
-| \*20 | The Future Sound of London | Lifeforms | 1994 | |
-| 20 | Rafael Anton Irisarri | A Fragile Geography | — | |
-| 19 | Ashra | New Age of Earth | 1976 | ★ |
-| 18 | Tim Hecker | Virgins | 2013 | ★ |
-| \*17 | Tangerine Dream | Phaedra | 1974 | |
-| 17 | The Dead Texan | The Dead Texan | 2004 | |
-| \*16 | Oval | 94diskont. | 1995 | ★ |
-| 16 | Jon Hopkins | Music for Psychedelic Therapy | 2021 | |
-| 15 | Biosphere | Patashnik | 1994 | |
-| 14 | 2814 | 2814 | — | |
-| \*13 | Hiroshi Yoshimura | Wet Land | 1993 | ★ |
-| 13 | Steve Roach | The Magnificent Void | 1996 | |
-| 13 | Max Richter | Sleep | 2015 | ★ |
-| \*12 | Harold Budd | The Pavilion of Dreams | 1978 | |
-| 12 | Fennesz | Venice | 2004 | |
-| \*11 | Woob | Woob 1194 | 1995 | |
-| 11 | Loscil | Plume | 2006 | |
-| 11 | William Basinski | A Shadow in Time | 2017 | |
-| 11 | Celer & Forest Management | Landmarks | — | |
-| 11 | Alio Die | Aura Seminalis | 2008 | |
-| \*10 | Leyland Kirby | We, so tired of all the darkness in our lives | 2017 | |
-| 10 | Bibio | Phantom Brickworks | 2017 | |
-| \*9 | William Basinski | Melancholia | 2005 | |
-| 9 | Klaus Schulze | Timewind | 1975 | |
-| 9 | Robert Fripp & Brian Eno | Evening Star | 1975 | ★ |
-| 9 | Alva Noto & Ryuichi Sakamoto | Insen | 2005 | |
-| 9 | Keith Fullerton Whitman | Lisbon | — | |
-| 9 | Keith Fullerton Whitman | Playthroughs | 2002 | ★ |
-| 9 | Belong | October Language | 2006 | |
-| 9 | Tetsu Inoue | World Receiver | 1996 | |
-| \*8 | Loscil | Equivalents | 2019 | |
-| 8 | Taylor Deupree | Stil. | 2002 | |
-| 8 | Kyle Bobby Dunn | Kyle Bobby Dunn and the Infinite Sadness | — | |
-| 8 | 36 & zakè | Stasis Sounds for Long-Distance Space Travel I & II | — | |
-| 8 | Pete Namlook | Air | 1993 | ★ |
-| 8 | Elaine Radigue | Trilogie de la Mort | 1998 | |
-| 8 | Eluvium | Talk Amongst the Trees | 2005 | ★ |
-| \*7 | Orbital | In Sides | 1996 | |
-| 7 | Natural Snow Buildings | The Winter Ray | 2006 | |
-| 7 | Carbon Based Lifeforms | World of Sleepers | 2006 | |
-| 7 | Brian Eno | Lux | 2012 | |
-| 7 | shuttle358 | Frame | 2002 | |
-| 7 | 36 | The Infinity Room | 2014 | |
-| 7 | Bowery Electric | Beat | 1996 | |
-| 7 | Nine Inch Nails | Quake (OST) | 1996 | |
-| 7 | Tetsu Inoue | Ambient Otaku | 1994 | |
-| 7 | Nils Frahm | Music for Animals | 2022 | |
-| 7 | Cluster & Brian Eno | Cluster & Eno | 1977 | |
-| 7 | Kali Malone | The Sacrificial Code | 2019 | |
-| \*6 | Jean-Michel Jarre | Oxygène (series) | 1976 | |
-| 6 | GAS | Zauberberg | 1997 | |
-| 6 | テレパシー能力者 (Telepath) | 星間性交 (Sekai Seikou) | — | |
-| 6 | Harold Budd | Abandoned Cities | 1984 | |
-| 6 | Brian Eno | Another Green World | 1975 | |
-| 6 | Coil | Time Machines | 1998 | |
-| 6 | 2003 Toyota Corolla | 2003 Toyota Corolla | — | |
-| 6 | Robert Rich & Alio Die | Fissures | 2010 | |
-| 6 | Masayoshi Fujita & Jan Jelinek | Schaum | 2013 | |
-| 6 | Sarah Davachi | Let Night Come On Bells End the Day | 2018 | |
-| 6 | David Sylvian & Holger Czukay | Plight & Premonition / Flux & Mutability | 1988 | |
-| \*5 | Tangerine Dream | Zeit | 1972 | |
-| 5 | Ryuichi Sakamoto | async | 2017 | |
-| 5 | Jean-Michel Jarre | Waiting for Cousteau | 1990 | |
-| 5 | Gas (0095) | Gas 0095 | — | |
-| 5 | Chihei Hatakeyama | Late Spring | 2016 | |
-| 5 | Loscil | Sketches from New Brighton | 2020 | |
-| 5 | How to Disappear Completely | Mer de Revs I–III | 2017 | |
-
-Honorable mentions (also 5 votes): Takashi Kokubo — バルセロナ～ガウディの夢～, K. Leimer — Land of Look Behind, Gigi Masin — Wind, Abul Mogard — Works & Circular Forms, Steve Roach & Robert Rich — Strata, Lustmord — The Place Where the Black Stars Hang, KMRU — Jar, Jefre Cantu-Ledesma — Love Is a Stream, Thom Brennan — Beneath Clouds.
-
----
-
-## AcclaimedMusic — Ambient Genre Chart (Source Ac)
-
-Aggregated critical consensus chart from AcclaimedMusic.net. Albums ranked by all-time score across thousands of critics' lists. Top 20 shown, plus "bubbling under" entries (outside top 3000). Albums already in the Master Album Table marked with ★.
-
-| Ac# | Score | Artist | Album | Year | Subgenre(s) | In Master |
+| # | Artist | Album | Year | Genre | Sources | In App |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 653 | The Orb | The Orb's Adventures Beyond the Ultraworld | 1991 | Ambient Dub, Ambient House | ★ |
-| 2 | 864 | Brian Eno | Ambient 1: Music for Airports | 1978 | — | ★ |
-| 3 | 1099 | The KLF | Chill Out | 1990 | — | ★ |
-| 5 | 1369 | Brian Eno | Discreet Music | 1975 | Modern Classical | ★ |
-| 6 | 1391 | Aphex Twin | Selected Ambient Works Volume II | 1994 | Electronic | ★ |
-| 7 | 1499 | William Basinski | The Disintegration Loops | 2002 | Minimalism, Tape Music | ★ |
-| 8 | 1588 | The Orb | U.F.Orb | 1992 | Ambient Dub, Ambient House | |
-| 9 | 1762 | Tim Hecker | Ravedeath, 1972 | 2011 | Drone | |
-| 10 | 1975 | The Caretaker | An Empty Bliss Beyond This World | 2011 | Turntable Music | ★ |
-| 11 | 2246 | GAS | Pop | 2000 | — | ★ |
-| 13 | 2441 | Popol Vuh | In den Gärten Pharaos | 1971 | Krautrock | |
-| 14 | 2446 | The Sabres of Paradise | Haunted Dancehall | 1994 | IDM | |
-| 15 | 2452 | Global Communication | 76:14 | 1994 | Ambient Techno | ★ ✅ |
-| 17 | 2788 | Stars of the Lid | And Their Refinement of the Decline | 2007 | Drone | ★ |
-| 18 | 2796 | Huerco S. | For Those of You Who Have Never (And Also Those Who Have) | 2016 | — | ★ |
-| 19 | 2915 | Brian Eno | Ambient 4: On Land | 1982 | — | ★ |
-| 20 | 2954 | Steve Roach | Dreamtime Return | 1988 | Tribal Ambient | ★ |
-
-Bubbling under the all-time top 3000 (unranked): Tangerine Dream — Rubycon ★, Klaus Schulze — Irrlicht, Tim Hecker — Virgins ★, Fripp & Eno — (No Pussyfooting), Emeralds — Does It Look Like I'm Here?, Julianna Barwick — The Magic Place ★, OPN — Returnal ★, One Dove — Morning Dove White, Vangelis — Blade Runner, Grouper — A I A: Alien Observer ★, Tangerine Dream — Zeit, Steve Roach — Structures from Silence ★, Fennesz — Venice, Tim Hecker — Konoyo, Constance Demby — Novus Magnificat, Labradford — A Stable Reference, Tim Hecker — Harmony in Ultraviolet ★, The Haxan Cloak — Excavation, Raime — Quarter Turns Over a Living Line, Shackleton — Music for the Quiet Hour ★, Gas — Narkopop, Brian Eno — Apollo ★, Ryuichi Sakamoto — async, Harold Budd & Brian Eno — Plateaux of Mirror, Tim Hecker — Love Streams, Eluvium — Copia ★, Labradford — Prazision LP, Harold Budd & Brian Eno — The Pearl ★, Fennesz — Black Sea, Nils Frahm — Spaces, Fennesz — Agora, Brian Eno — The Ship, A Winged Victory for the Sullen — s/t, Grouper — Dragging a Dead Deer Up a Hill, Grouper — The Man Who Died in His Boat, Gas — Rausch, Tim Hecker — An Imaginary Country ★, Murcof — Cosmos, Julianna Barwick — Nepenthe.
-
----
-
-## Highly Represented Artists
-
-Artists appearing more than once across all sources (P, S, O, H, F, A, D, B, R, T, Re, Ac), sorted by total distinct albums:
-
-| Artist | Count | Albums |
-| --- | --- | --- |
-| Brian Eno | 15 | Music for Airports, On Land, Apollo, The Pearl (w/ Budd), Evening Star (w/ Fripp), Discreet Music, Thursday Afternoon, Another Green World, Music for Films, Plateaux of Mirror (w/ Budd), Foreverandevernomore, Ambient 1–4, Lux, No Pussyfooting (w/ Fripp), Cluster & Eno, The Ship |
-| Tim Hecker | 9 | Harmony in Ultraviolet, Virgins, Ravedeath 1972, Radio Amor, An Imaginary Country, Haunt Me Haunt Me Do It Again, Konoyo, Love Streams, (P, R, Re, Ac) |
-| Grouper | 5 | A I A: Alien Observer, Dragging a Dead Deer Up a Hill, Ruins, The Man Who Died in His Boat, (P, D, Re, Ac) |
-| GAS | 5 | Pop, Königsforst, GAS, Zauberberg, Narkopop, Rausch |
-| Harold Budd | 6 | The Pearl (w/ Eno), Plateaux of Mirror (w/ Eno), Pavilion of Dreams, Luxa, Agua, Abandoned Cities |
-| Steve Roach | 7 | Structures from Silence, Dreamtime Return, The Magnificent Void, Quiet Music, Early Man, Strata (w/ Robert Rich), Desert Solitaire (w/ Braheny & Stearns) |
-| William Basinski | 5 | The Disintegration Loops, Lamentations, Melancholia, Watermusic, A Shadow in Time |
-| Fennesz | 5 | Endless Summer, Venice, Black Sea, Agora, Becs |
-| Hiroshi Yoshimura | 5 | GREEN, Wave Notation 1: Music for Nine Post Cards, Soundscape 1: Surround, Wet Land |
-| Julianna Barwick | 4 | The Magic Place, Will, Nepenthe, (P, D, R, Re, Ac) |
-| Loscil | 5 | Submers, Plume, Endless Falls, Equivalents, Sketches from New Brighton |
-| Biosphere | 5 | Substrata, Microgravity, Departed Glories, Patashnik, Shenzou |
-| Laraaji | 4 | Ambient 3: Day of Radiance, Essence/Universe, Flow Goes the Universe, Celestial Music 1978–2011 |
-| Stars of the Lid | 3 | The Tired Sounds…, And Their Refinement…, Avec Laudanum |
-| The Orb | 3 | Orbus Terrarum, Adventures Beyond the Ultraworld, UFOrb |
-| The Caretaker | 3 | An Empty Bliss Beyond This World, A Stairway to the Stars, Everywhere at the End of Time |
-| Tangerine Dream | 3 | Rubycon, Phaedra, Zeit |
-| Klaus Schulze | 3 | Mirage, Irrlicht, Timewind |
-| Robert Rich | 3 | Trances/Drones, Somnium, Fissures (w/ Alio Die) |
-| Alio Die | 3 | Password for Entheogenic Experience, Aura seminalis, Fissures (w/ Robert Rich) |
-| A Winged Victory for the Sullen | 3 | s/t, Atomos, (Re, Ac) |
-| Tetsu Inoue | 3 | Ambiant Otaku, Organic Cloud, World Receiver |
-| Oneohtrix Point Never | 3 | Rifts, Replica, Returnal |
-| Aphex Twin | 3 | SAW Vol. II, SAW 85–92, Garbage (EP) |
-| Jon Hassell | 3 | Vernal Equinox, Fourth World Vol. 1 (w/ Eno), Dream Theory in Malaya |
-| James Ferraro | 3 | Marble Surf, Pixarni, Clear |
-| Keith Fullerton Whitman | 3 | Playthroughs, Lisbon, (P, R, Re) |
-| Jean-Michel Jarre | 3 | Oxygène (series), Waiting for Cousteau, (Re; 5 albums already in app) |
-| Labradford | 2 | A Stable Reference, Prazision LP |
-| Nils Frahm | 2 | Music for Animals, Spaces, Felt |
-| Eluvium | 2 | Talk Amongst the Trees, Copia |
-| Global Communication | 2 | 76:14, Pentamerous Metamorphosis |
-| Huerco S. | 2 | For Those of You…, Colonial Patterns |
-| Michael Stearns | 2 | Planetary Unfolding, Encounter |
-| Oval | 2 | 94diskont, Systemisch |
-| Rainforest Spiritual Enslavement | 2 | Ambient Black Magic, Green Graves |
-| How to Disappear Completely | 2 | Seraphim, Mer de Revs I–III |
-| The Irresistible Force | 2 | Global Chillage, Flying High |
-| 1991 | 2 | 1991, No More Dreams |
-| Woob | 2 | 1194, Woob² 4495 |
-| Ryuichi Sakamoto | 2 | async, Insen (w/ Alva Noto) |
-| Shackleton | 2 | Music for the Quiet Hour, (R, Re, Ac) |
-| David Sylvian & Holger Czukay | 2 | Plight & Premonition (H), Plight & Premonition / Flux & Mutability (Re) |
-
----
-
-## Priority Candidates
-
-Albums most likely to fit this project's scope, ranked by cross-source consensus, genre proximity to existing entries, and electronic / synthesiser focus. Source counts in parentheses.
-
-1. **Aphex Twin — Selected Ambient Works Volume II (1994)** — P#2, S#13, H32, F#21, D, R#6, Re114, Ac#6. Eight-source consensus; highest vote-getter in the Reddit poll.
-2. **Brian Eno — Ambient 1: Music for Airports (1978)** — P#1, S#6, H21, F#1, A#3, R#1, Re47, Ac#2. Eight-source consensus; #1 on three lists.
-3. **GAS — Pop (2000)** — P#11, S#8, H(5–6), A#12, D, R#3, T#26, Re47, Ac#11. Nine-source consensus; ambient techno.
-4. **The KLF — Chill Out (1990)** — P#5, H13, F#49, A#23, R#45, Re33, Ac#3. Seven-source consensus; #3 on AcclaimedMusic.
-5. **Brian Eno — Ambient 4: On Land (1982)** — P#24, S#2, H25, B, R#8, Re47, Ac#19. Seven-source consensus; #2 on SensCritique.
-6. **Biosphere — Substrata (1997)** — P#38, S#17, H34, F#37, R#66, T#1, Re84. Seven-source consensus; top Hyperreal vote-getter; #1 on Psy-Amb.
-7. **Steve Roach — Dreamtime Return (1988)** — O, H9, F#2, A#7, R#63, T#14, Ac#20. Seven-source consensus; tribal ambient; #2 on Scaruffi.
-8. **Steve Roach — Structures from Silence (1984)** — P#33, S#21, H(5–6), A#20, R#24, Re86, Ac. Seven-source consensus; #2 in Reddit poll.
-9. **Harold Budd / Brian Eno — The Pearl (1984)** — P#41, S#12, H19, R#10, Re69, Ac. Six-source consensus; Eno's ambient synthesis over Budd's piano.
-10. **Stars of the Lid — And Their Refinement of the Decline (2007)** — P#18, S#26, R#49, Re72, Ac#17. Five-source consensus; cross-promoted with The Tired Sounds (P#6, S#7, O, F#28, R#57, Re78) across seven combined sources.
-
----
+| 1 | Tangerine Dream | Phaedra | 1974 | Berlin School / Ambient | A#22, R#12, Re, Ac | ✅ |
+| 2 | Cluster & Brian Eno | Cluster & Eno | 1977 | Krautrock / Ambient | D, Re |  |
+| 3 | Brian Eno | Music for Films | 1978 | Ambient / Soundtrack | A#11 |  |
+| 4 | Mike Oldfield | Ommadawn | 1975 | Progressive / Ambient | — |  |
+| 5 | Jon Hassell / Brian Eno | Fourth World Vol. 1: Possible Musics | 1980 | Fourth World / Ambient | H, A#4, Re |  |
+| 6 | Harold Budd / Brian Eno | The Pearl | 1984 | Ambient / Piano | P#41, S#12, H, R#10, Re, Ac |  |
+| 7 | Harold Budd / Brian Eno | Ambient 2: The Plateaux of Mirror | 1980 | Ambient / Piano | H, R#5, Re, Ac |  |
+| 8 | Fripp & Eno | Evening Star | 1975 | Ambient / Art Rock | P#10, H, Re |  |
+| 9 | Robert Fripp & Brian Eno | No Pussyfooting | 1973 | Ambient / Art Rock | Re, Ac |  |
+| 10 | Brian Eno | Ambient 4: On Land | 1982 | Ambient / Experimental | P#24, S#2, H, B, R#8, Re, Ac |  |
+| 11 | Tangerine Dream | Exit | 1981 | Berlin School / Electronic | — |  |
+| 12 | Klaus Schulze | Trancefer | 1981 | Berlin School / Electronic | — |  |
+| 13 | Brian Eno | Ambient 1: Music for Airports | 1978 | Ambient | P#1, S#6, H, F#1, A#3, R#1, Re, Ac |  |
+| 14 | Brian Eno | Discreet Music | 1975 | Ambient | O, H, R#25, Re, Ac |  |
+| 15 | Brian Eno | Thursday Afternoon | 1985 | Ambient | H, A, R#70, Re |  |
+| 16 | Brian Eno | Foreverandevernomore | 2022 | Ambient | R#55 |  |
+| 17 | Brian Eno | Lux | 2012 | Ambient | Re |  |
+| 18 | Brian Eno | The Ship | — | Ambient | Ac |  |
+| 19 | Vangelis | Chariots of Fire | 1981 | Electronic / Soundtrack | — |  |
+| 20 | Global Communication | Pentamerous Metamorphosis | 1998 | Ambient Techno | R#17 |  |
+| 21 | Brian Eno | Another Green World | 1975 | Electronic / Art Rock | A#8, R#33, Re |  |
+| 22 | Jean-Michel Jarre | Zoolook | 1984 | Electronic / Experimental | — |  |
+| 23 | Brian Eno | Another Day on Earth | 2005 | Electronic / Art Pop | — |  |
+| 24 | Ashra | New Age of Earth | 1976 | Berlin School / Ambient | P#31, S#22, Re |  |
+| 25 | Manuel Göttsching | Inventions for Electric Guitar | 1975 | Kosmische / Ambient | O |  |
+| 26 | Popol Vuh | In den Gärten Pharaos | 1971 | Krautrock / Ambient | R#64, Ac#13, Re |  |
+| 27 | Cluster | Cluster II | 1972 | Krautrock / Ambient | F#7 |  |
+| 28 | Eduard Artemyev | Solaris / The Mirror / Stalker | — | Ambient / Soundtrack | A#25 |  |
+| 29 | Cluster | Sowiesoso | 1976 | Krautrock / Ambient | O |  |
+| 30 | John Foxx | Cathedral Oceans | 1997 | Ambient / Synthesiser | O |  |
+| 31 | Steve Roach | Structures from Silence | 1984 | New Age / Ambient | P#33, S#21, H, A#20, R#24, Re, Ac |  |
+| 32 | Stars of the Lid | The Tired Sounds of Stars of the Lid | 2001 | Ambient / Drone | P#6, S#7, O, F#28, R#57, Re, Ac |  |
+| 33 | Tim Hecker | Harmony in Ultraviolet | 2006 | Ambient / Drone | P#9, S#29, R#96, Re, Ac |  |
+| 34 | Tim Hecker | Ravedeath, 1972 | 2011 | Ambient / Drone | T#3, R#36, Re, Ac |  |
+| 35 | Eluvium | Talk Amongst the Trees | 2005 | Ambient / Drone | P#43, S#11, R#48, Re |  |
+| 36 | Laraaji | Ambient 3: Day of Radiance | 1980 | Ambient / New Age | P#35, S#20, R#85 |  |
+| 37 | Eluvium | Copia | 2007 | Ambient / Drone | R#43, Re, Ac |  |
+| 38 | Windy & Carl | Depths | 1998 | Ambient / Drone | P#36, S#19 |  |
+| 39 | The Dead Texan | The Dead Texan | 2004 | Ambient / Drone | D, Re |  |
+| 40 | Iasos | Inter-Dimensional Music | 1975 | New Age / Ambient | P#26, S#24 |  |
+| 41 | Laraaji | Celestial Music 1978–2011 | 2011 | Ambient / New Age | B |  |
+| 42 | Laraaji | Flow Goes the Universe | 1992 | Ambient / New Age | R#21 |  |
+| 43 | Laraaji | Essence/Universe | 1987 | Ambient / New Age | R#84 |  |
+| 44 | Joanna Brouk | Healing Music | 1981 | Ambient / New Age | B |  |
+| 45 | Alessandro Cortini | Forse 3 | 2015 | Ambient / Modular Synth | B |  |
+| 46 | How to Disappear Completely | Seraphim | 2019 | Ambient / Drone | R#68 |  |
+| 47 | How to Disappear Completely | Mer de Revs I–III | 2017 | Ambient / Drone | Re |  |
+| 48 | Stars of the Lid | Avec Laudanum | 2003 | Ambient / Drone | Re |  |
+| 49 | Celer | Xièxie | — | Ambient / Drone | Re |  |
+| 50 | Rafael Anton Irisarri | A Fragile Geography | — | Ambient / Drone | Re |  |
+| 51 | Kyle Bobby Dunn | Kyle Bobby Dunn and the Infinite Sadness | — | Ambient / Drone | Re |  |
+| 52 | 36 & zakè | Stasis Sounds for Long-Distance Space Travel I & II | — | Ambient / Drone | Re |  |
+| 53 | Elaine Radigue | Trilogie de la Mort | 1998 | Ambient / Drone | Re |  |
+| 54 | Natural Snow Buildings | The Winter Ray | 2006 | Ambient / Drone | Re |  |
+| 55 | Kali Malone | The Sacrificial Code | 2019 | Ambient / Drone | Re |  |
+| 56 | Sarah Davachi | Let Night Come On Bells End the Day | 2018 | Ambient / Drone | Re |  |
+| 57 | Celer & Forest Management | Landmarks | — | Ambient / Drone | Re |  |
+| 58 | Constance Demby | Novus Magnificat | — | New Age / Ambient | Ac |  |
+| 59 | Tim Hecker | Haunt Me, Haunt Me Do It Again | 2001 | Ambient / Drone | R#89 |  |
+| 60 | Brock Van Wey | White Clouds Drift On and On | 2009 | Ambient / Drone | O |  |
+| 61 | White Rainbow | New Clouds | 2010 | Ambient / Drone | O |  |
+| 62 | Motion Sickness of Time Travel | Motion Sickness of Time Travel | 2012 | Ambient / Drone | O |  |
+| 63 | Liquid Mind | Ambience Minimus | 1994 | Ambient / New Age | F#16 |  |
+| 64 | Raphael | Angels of the Deep | 1995 | Ambient / New Age | F#9 |  |
+| 65 | Stars of the Lid | And Their Refinement of the Decline | 2007 | Ambient / Post-Classical | P#18, S#26, R#49, Re, Ac |  |
+| 66 | William Basinski | The Disintegration Loops I–IV | 2002 | Ambient / Tape Loop | P#3, R#19, Re, Ac |  |
+| 67 | Boards of Canada | Music Has the Right to Children | 1998 | IDM / Ambient | H, T#15, Re |  |
+| 68 | Max Richter | Sleep | 2015 | Ambient / Post-Classical | P#40, S#16, Re |  |
+| 69 | Slowdive | Pygmalion | 1995 | Space Rock / Ambient | S#14, O, R#20 |  |
+| 70 | A Winged Victory for the Sullen | A Winged Victory for the Sullen | 2011 | Ambient / Post-Classical | Re, Ac |  |
+| 71 | Autechre | Amber | 1994 | IDM / Ambient | H, T#21 |  |
+| 72 | William Basinski | Melancholia | 2005 | Ambient / Tape Loop | R#77, Re |  |
+| 73 | Jon Hassell | Dream Theory in Malaya | 1981 | Fourth World / Ambient | F#3 |  |
+| 74 | Oneohtrix Point Never | Rifts | 2009 | Synth / Ambient | P#27 |  |
+| 75 | Jon Hassell | Vernal Equinox | 1977 | Fourth World / Ambient | P#47 |  |
+| 76 | Autechre | Tri Repetae | 1996 | IDM / Ambient | F#4 |  |
+| 77 | Jóhann Jóhannsson | Virðulegu Forsetar | 2004 | Post-Classical / Ambient | F#12 |  |
+| 78 | Autechre | Garbage (EP) | 1995 | IDM / Ambient | D |  |
+| 79 | Kyle Dixon / Michael Stein | Stranger Things: Volume One | 2016 | Synth / Ambient | A#19 |  |
+| 80 | William Basinski | Lamentations | 2020 | Ambient / Tape Loop | D |  |
+| 81 | William Basinski | Watermusic | 2001 | Ambient / Tape Loop | R#69 |  |
+| 82 | William Basinski | A Shadow in Time | 2017 | Ambient / Tape Loop | Re |  |
+| 83 | :zoviet\*france: | Shouting at the Ground | 1988 | Ambient / Industrial | R#87 |  |
+| 84 | Echospace | The Coldest Season | 2007 | Dub Techno / Ambient | T#12 |  |
+| 85 | Nils Frahm | Music for Animals | 2022 | Ambient / Post-Classical | Re |  |
+| 86 | The Sabres of Paradise | Haunted Dancehall | 1994 | IDM / Ambient | Ac#14 |  |
+| 87 | Emeralds | Does It Look Like I'm Here? | — | Synth / Ambient | Ac |  |
+| 88 | Nils Frahm | Spaces | — | Ambient / Post-Classical | Ac |  |
+| 89 | Deepchord Presents Echospace | Liumin | 2010 | Dub Techno / Ambient | O |  |
+| 90 | µ-Ziq | In Pine Effect | 1995 | IDM / Ambient | F#24 |  |
+| 91 | Boards of Canada | Geogaddi | 2002 | IDM / Ambient | — |  |
+| 92 | Boards of Canada | The Campfire Headphase | 2005 | IDM / Ambient | — |  |
+| 93 | Biosphere | Substrata | 1997 | Ambient / Electronic | P#38, S#17, H, F#37, R#66, T#1, Re |  |
+| 94 | Steve Roach | Dreamtime Return | 1988 | Ambient / Electronic | O, H, F#2, A#7, R#63, T#14, Ac |  |
+| 95 | Aphex Twin | Selected Ambient Works 85–92 | 1992 | Ambient / Electronic | O, H, R#11, T#13, Re |  |
+| 96 | The Caretaker | An Empty Bliss Beyond This World | 2011 | Ambient / Hauntology | P#14, A#14, R#100, Re, Ac |  |
+| 97 | Grouper | A I A: Alien Observer | 2011 | Ambient / Dream Pop | P#21, S#1, D, Re, Ac |  |
+| 98 | Oval | 94diskont | 1995 | Glitch / Ambient | P#7, S#30, A#18, R#26, Re |  |
+| 99 | Susumu Yokota | Sakura | 2000 | Ambient / Electronic | O, H, F#30, R#22, Re |  |
+| 100 | Future Sound of London | Lifeforms | 1994 | Ambient / Electronic | H, F#20, R#53, T#7, Re |  |
+| 101 | Oneohtrix Point Never | Replica | 2011 | Electronic / Ambient | P#20, A#24, Re, Ac |  |
+| 102 | Tetsu Inoue | Ambiant Otaku | 1995 | Ambient / Electronic | H, R#35, T#6, Re |  |
+| 103 | Keith Fullerton Whitman | Playthroughs | 2002 | Ambient / Electronic | P#23, S#25, R#97, Re |  |
+| 104 | Fennesz | Endless Summer | 2001 | Glitch / Ambient | P#22, O, A#17, F |  |
+| 105 | Tim Hecker | Virgins | 2013 | Ambient / Electronic | P#37, R#47, Re, Ac |  |
+| 106 | Woob | 1194 | 1995 | Ambient / Electronic | H, F#57, R#32, Re |  |
+| 107 | Grouper | Dragging a Dead Deer Up a Hill | 2008 | Ambient / Dream Pop | A#15, Re, Ac |  |
+| 108 | Bing & Ruth | Tomorrow Was the Golden Age | 2014 | Ambient / Minimalism | P#49, S#9, R#61 |  |
+| 109 | Harold Budd | The Pavilion of Dreams | 1978 | Ambient / Piano | F#6, R#72, Re |  |
+| 110 | Tim Hecker | Radio Amor | 2003 | Ambient / Electronic | T#3, R#62, Re |  |
+| 111 | Steve Roach | The Magnificent Void | 1996 | Ambient / Electronic | H, T, Re |  |
+| 112 | Fennesz | Venice | 2004 | Glitch / Ambient | D, Re, Ac |  |
+| 113 | Vidna Obmana | The Spiritual Bonding | 1994 | Ambient / Electronic | F#11, R#29 |  |
+| 114 | Alio Die | Password for Entheogenic Experience | 1997 | Ambient / Electronic | F#10, R#13 |  |
+| 115 | Alio Die | Aura Seminalis | 2008 | Ambient / Electronic | R#4, Re |  |
+| 116 | Tetsu Inoue | World Receiver | 1996 | Ambient / Electronic | H, Re |  |
+| 117 | Hiroshi Yoshimura | GREEN | 1986 | Ambient / Electronic | D, Re |  |
+| 118 | Hiroshi Yoshimura | Music for Nine Post Cards | 1982 | Ambient / Electronic | R#88, Re |  |
+| 119 | Hiroshi Yoshimura | Surround (Soundscape 1) | 1986 | Ambient / Electronic | R#76, Re |  |
+| 120 | Hiroshi Yoshimura | Wet Land | 1993 | Ambient / Electronic | R#67, Re |  |
+| 121 | The Caretaker | Everywhere at the End of Time | 2016–19 | Ambient / Hauntology | Re, Ac |  |
+| 122 | Tim Hecker | An Imaginary Country | 2009 | Ambient / Electronic | R#46, Ac |  |
+| 123 | Ryuichi Sakamoto | async | 2017 | Ambient / Electronic | R#71, Re |  |
+| 124 | Oneohtrix Point Never | Returnal | 2010 | Electronic / Ambient | O, Ac |  |
+| 125 | Michael Stearns | Planetary Unfolding | 1981 | Ambient / Electronic | B, R#44 |  |
+| 126 | Microstoria | snd | 1996 | Glitch / Ambient | P#44 |  |
+| 127 | Ernest Hood | Neighborhoods | 1975 | Ambient / Musique Concrète | P#48 |  |
+| 128 | Robert Rich | Somnium | 2001 | Ambient / Electronic | F#5 |  |
+| 129 | Robert Rich | Trances/Drones | 1983 | Ambient / Electronic | H |  |
+| 130 | Biosphere | Microgravity | 1991 | Ambient / Electronic | A#13 |  |
+| 131 | Biosphere | Patashnik | 1994 | Ambient / Electronic | Re |  |
+| 132 | Biosphere | Shenzou | 2002 | Ambient / Electronic | T#20 |  |
+| 133 | Biosphere / HIA | Polar Sequences | 1996 | Ambient / Electronic | H |  |
+| 134 | Biosphere | Departed Glories | 2016 | Ambient / Electronic | R#94 |  |
+| 135 | Labradford | Fixed::Context | 2000 | Post-Rock / Ambient | D |  |
+| 136 | Labradford | A Stable Reference | — | Post-Rock / Ambient | Ac |  |
+| 137 | Labradford | Prazision LP | — | Post-Rock / Ambient | Ac |  |
+| 138 | Michael Stearns | Encounter: A Journey in the Key of Space | 1988 | Ambient / Electronic | R#38 |  |
+| 139 | Pauline Oliveros | Four Meditations and Sound Geometries | — | Ambient / Minimalism | B |  |
+| 140 | Pauline Oliveros, Stuart Dempster & Panaiotis | Deep Listening | 1989 | Ambient / Minimalism | R#91 |  |
+| 141 | Pulusha | Isolation | 1997 | Ambient / Electronic | R#18 |  |
+| 142 | Various Artists | Complete Symphonies of the Planets: NASA Voyager Recordings | 2009 | Ambient / Field Recording | R#15 |  |
+| 143 | Penjaga Insaf | Sama Sadja | 2010 | Ambient / Electronic | R#28 |  |
+| 144 | Pendant | Make Me Know You Sweet | 2018 | Ambient / Electronic | R#31 |  |
+| 145 | Harold Budd | Luxa | 1996 | Ambient / Piano | R#37 |  |
+| 146 | Harold Budd | Agua | 1995 | Ambient / Piano | R#93 |  |
+| 147 | Harold Budd | Abandoned Cities | 1984 | Ambient / Piano | Re |  |
+| 148 | Moby | Hotel: Ambient | 2014 | Ambient / Electronic | R#41 |  |
+| 149 | Coil | Time Machines | 1998 | Dark Ambient / Drone | Re |  |
+| 150 | Art of Noise | The Ambient Collection | 1990 | Ambient / Electronic | R#51 |  |
+| 151 | Aeolian String Ensemble | Lassithi/Elysium | 1998 | Ambient / Classical | R#54 |  |
+| 152 | Air | You | 1993 | Ambient / Electronic | R#60 |  |
+| 153 | Recyclebull | HQ | 2010 | Ambient / Electronic | R#73 |  |
+| 154 | James Ferraro | Pixarni | 2009 | Ambient / Electronic | R#82 |  |
+| 155 | James Ferraro | Marble Surf | 2008 | Ambient / Electronic | R#83 |  |
+| 156 | Jan Jelinek | Loop-Finding-Jazz-Records | 2001 | Ambient / Microhouse | R#90 |  |
+| 157 | Jüppala Kääpiö | Sporing Promenade | 2010 | Ambient / Electronic | R#92 |  |
+| 158 | Oval | Systemisch | 1994 | Glitch / Ambient | R#95 |  |
+| 159 | 佐藤理 (Osamu Sato) | Collected Ambient Grooves 1993–2001 | 2020 | Ambient / Electronic | R#99 |  |
+| 160 | The Caretaker | A Stairway to the Stars | 2002 | Ambient / Hauntology | R#78 |  |
+| 161 | Dreamfish | Dreamfish | 1993 | Ambient / Electronic | R#101 |  |
+| 162 | Aglaia | Three Organic Experiences | 2003 | Ambient / Electronic | T#4 |  |
+| 163 | Helios | Eingya | 2006 | Ambient / Electronic | T#11 |  |
+| 164 | Mute | The Sea Horse Limbo | 2006 | Ambient / Electronic | T#22 |  |
+| 165 | Steve Roach, Kevin Braheny & Michael Stearns | Desert Solitaire | 1989 | Ambient / Electronic | T#23 |  |
+| 166 | Vir Unis & Saul Stokes | Thermal Transfer | 2002 | Ambient / Electronic | T#24 |  |
+| 167 | Jon Hopkins | Music for Psychedelic Therapy | 2021 | Ambient / Electronic | Re |  |
+| 168 | C418 | Minecraft Volume Alpha & Beta | — | Ambient / Electronic | Re |  |
+| 169 | Taylor Deupree | Stil. | 2002 | Ambient / Electronic | Re |  |
+| 170 | Carbon Based Lifeforms | World of Sleepers | 2006 | Ambient / Electronic | Re |  |
+| 171 | shuttle358 | Frame | 2002 | Ambient / Glitch | Re |  |
+| 172 | 36 | The Infinity Room | 2014 | Ambient / Electronic | Re |  |
+| 173 | Alva Noto & Ryuichi Sakamoto | Insen | 2005 | Ambient / Glitch | Re |  |
+| 174 | Keith Fullerton Whitman | Lisbon | — | Ambient / Electronic | Re |  |
+| 175 | Leyland Kirby | We, so tired of all the darkness in our lives | 2017 | Ambient / Hauntology | Re |  |
+| 176 | Bibio | Phantom Brickworks | 2017 | Ambient / Electronic | Re |  |
+| 177 | Masayoshi Fujita & Jan Jelinek | Schaum | 2013 | Ambient / Electronic | Re |  |
+| 178 | Robert Rich & Alio Die | Fissures | 2010 | Ambient / Electronic | Re |  |
+| 179 | Chihei Hatakeyama | Late Spring | 2016 | Ambient / Electronic | Re |  |
+| 180 | Murcof | Cosmos | — | Ambient / Electronic | Ac |  |
+| 181 | Fennesz | Black Sea | — | Glitch / Ambient | Ac |  |
+| 182 | Fennesz | Agora | — | Glitch / Ambient | Ac |  |
+| 183 | Grouper | The Man Who Died in His Boat | — | Ambient / Dream Pop | Ac |  |
+| 184 | Tetsu Inoue | Organic Cloud | 1996 | Ambient / Electronic | H |  |
+| 185 | Robert Rich | Numena | 1987 | Ambient / Electronic | H |  |
+| 186 | Steve Roach | Quiet Music | 1986 | Ambient / Electronic | H |  |
+| 187 | James Johnson / Robert Scott Thompson | Forgotten Places | 1999 | Ambient / Electronic | H |  |
+| 188 | O Yuki Conjugate | Equator | 1993 | Ambient / Electronic | H |  |
+| 189 | Pete Namlook / Tetsu Inoue | 2350 Broadway | 1993 | Ambient / Electronic | H |  |
+| 190 | Pete Namlook / Tetsu Inoue | 2350 Broadway II | 1994 | Ambient / Electronic | H |  |
+| 191 | Jeff Pearce | To the Shores of Heaven | 1998 | Ambient / Electronic | H |  |
+| 192 | Virginia Astley | From Gardens Where We Feel Secure | 1983 | Ambient / Piano | O |  |
+| 193 | Seefeel | Starethrough | 1994 | Ambient / Electronic | O |  |
+| 194 | Seefeel | Quique | — | Ambient / Electronic | F#55 |  |
+| 195 | Alva Noto | Xerrox Vol. 2 | 2009 | Ambient / Electronic | O |  |
+| 196 | Steve Hauschildt | Where All Is Fled | 2015 | Ambient / Electronic | O |  |
+| 197 | Loop Guru | Duniya | 1994 | Ambient / Electronic | F#13 |  |
+| 198 | Kiln | Holo | 1998 | Ambient / Electronic | F#17 |  |
+| 199 | Doldrums | Acupuncture | 1997 | Ambient / Electronic | F#18 |  |
+| 200 | DJ Spooky | Riddim Warfare | 1998 | Ambient / Electronic | F#22 |  |
+| 201 | Michael Brook | Hybrid | 1985 | Ambient / Electronic | F#26 |  |
+| 202 | Jeff Greinke | Cities in Fog | 1985 | Ambient / Electronic | F#27 |  |
+| 203 | Harold Budd | Lovely Thunder | — | Ambient / Piano | H |  |
+| 204 | Vidna Obmana | The River of Appearance | — | Ambient / Electronic | H |  |
+| 205 | Woob | Woob² 4495 | 1995 | Ambient / Electronic | R#32 |  |
+| 206 | Manuel Göttsching | E2-E4 | 1984 | Electronic / Ambient | — |  |
+| 207 | Robert Rich | Rainforest | 1989 | Ambient / Electronic | — |  |
+| 208 | Ulrich Schnauss | A Strangely Isolated Place | 2003 | Ambient / Electronic | — |  |
+| 209 | Pantha du Prince | This Bliss | 2007 | Minimal Techno / Ambient | — |  |
+| 210 | Kelly Lee Owens | Inner Song | 2020 | Electronic / Ambient | — |  |
+| 211 | Aphex Twin | Selected Ambient Works Volume II | 1994 | Ambient / Experimental | P#2, S#13, H, F#21, D, R#6, Re, Ac |  |
+| 212 | Julianna Barwick | The Magic Place | 2011 | Ambient / Vocal | P#30, S#18, D, R#39, Ac |  |
+| 213 | Ekkehard Ehlers | Plays | 2002 | Ambient / Experimental | P#42, S#15 |  |
+| 214 | David Sylvian / Holger Czukay | Plight & Premonition | 1988 | Ambient / Experimental | H, Re |  |
+| 215 | Shackleton | Music for the Quiet Hour / The Drawbar Organ EPs | 2012 | Ambient / Experimental | R#80, Ac |  |
+| 216 | Sarah Louise | Nighttime Birds and Morning Stars | 2019 | Ambient / Folk | D |  |
+| 217 | Sun Araw | Beach Head | 2008 | Psychedelic / Ambient | B |  |
+| 218 | Nala Sinephro | Space 1.8 | 2021 | Ambient / Jazz | R#34 |  |
+| 219 | André 3000 | New Blue Sun | 2023 | Ambient / Experimental | R#56 |  |
+| 220 | James Ferraro | Clear | 2008 | Ambient / Experimental | R#81 |  |
+| 221 | Bowery Electric | Beat | 1996 | Ambient / Shoegaze | Re |  |
+| 222 | Belong | October Language | 2006 | Ambient / Shoegaze | Re |  |
+| 223 | 2003 Toyota Corolla | 2003 Toyota Corolla | — | Ambient / Experimental | Re |  |
+| 224 | Tim Hecker | Love Streams | — | Ambient / Choral | Ac |  |
+| 225 | Julianna Barwick | Nepenthe | — | Ambient / Vocal | Ac |  |
+| 226 | Asmus Tietchens | Nachtstücke | 1980 | Ambient / Experimental | F#23 |  |
+| 227 | Wagon Christ | Throbbing Pouch | 1995 | Ambient / Trip-Hop | F#25 |  |
+| 228 | Transglobal Underground | Dream of 100 Nations | 1993 | Ambient / World | F#29 |  |
+| 229 | Floating Points, Pharoah Sanders & The London Symphony Orchestra | Promises | 2021 | Ambient / Spiritual Jazz | — |  |
+| 230 | Andy Stott | Luxury Problems | 2012 | Techno / Ambient | — |  |
+| 231 | 2814 | 新しい日の誕生 (Birth of a New Day) | 2015 | Vaporwave / Ambient | O, Re |  |
+| 232 | 1991 | No More Dreams | 2016 | Ambient / Lo-fi | R#74 |  |
+| 233 | 1991 | 1991 | 2012 | Ambient / Lo-fi | R#79 |  |
+| 234 | テレパシー能力者 (Telepath) | 星間性交 (Sekai Seikou) | — | Vaporwave / Ambient | Re |  |
+| 235 | Tim Hecker | Konoyo | — | Ambient / Gagaku | Ac |  |
+| 236 | KWJAZ | KWJAZ | 2011 | Ambient / Lo-fi | O |  |
+| 237 | Steve Hillage | Rainbow Dome Musick | 1979 | Ambient | O, H |  |
+| 238 | Kraftwerk | Trans-Europe Express | 1977 | Electronic / Krautrock | — |  |
+| 239 | Kraftwerk | Autobahn | 1974 | Electronic / Krautrock | — |  |
+| 240 | Popol Vuh | Hosianna Mantra | 1972 | Krautrock / Sacred | — |  |
+| 241 | Suzanne Ciani | Buchla Concerts 1975 | 1975 | Electronic / Modular Synth | P#39, S#4 |  |
+| 242 | Deathprod | Morals and Dogma | 2004 | Dark Ambient | P#50, S#10 |  |
+| 243 | Lustmord | The Place Where the Black Stars Hang | 1994 | Dark Ambient | H, Re |  |
+| 244 | Robert Rich / Lustmord | Stalker | 1995 | Dark Ambient | H |  |
+| 245 | Thomas Köner | Kaamos | 1998 | Dark Ambient | H |  |
+| 246 | Thomas Köner | Permafrost | — | Dark Ambient | F#54 |  |
+| 247 | Suzanne Ciani | Seven Waves | 1982 | Electronic / Modular Synth | B |  |
+| 248 | Rainforest Spiritual Enslavement | Green Graves | 2016 | Dark Ambient | R#40 |  |
+| 249 | Rainforest Spiritual Enslavement | Ambient Black Magic | 2017 | Dark Ambient | R#42 |  |
+| 250 | Coil | Musick to Play in the Dark | 1999 | Dark Ambient | R#50 |  |
+| 251 | The Haxan Cloak | Excavation | — | Dark Ambient | Ac |  |
+| 252 | Raime | Quarter Turns Over a Living Line | — | Dark Ambient | Ac |  |
+| 253 | Black to Comm | Alphabet 1968 | 2009 | Dark Ambient | O |  |
+| 254 | Kitarō | Silk Road | 1980 | New Age / Electronic | — |  |
+| 255 | GAS | Pop | 2000 | Ambient Techno | P#11, S#8, H, A#12, D, R#3, T#26, Re, Ac |  |
+| 256 | Huerco S. | For Those of You Who Have Never (And Also Those Who Have) | 2016 | Ambient Techno | P#45, R#27, Re, Ac |  |
+| 257 | Pete Namlook | Air | 1993 | Ambient Techno | O, H, Re |  |
+| 258 | Laurie Spiegel | The Expanding Universe | 1980 | Electronic / Computer Music | P#12, S#5 |  |
+| 259 | GAS | Zauberberg | 1997 | Ambient Techno | R#14, Re |  |
+| 260 | Sun Electric | 30.7.94 Live | 1994 | Ambient Techno | H, R#30 |  |
+| 261 | Loscil | Plume | 2006 | Ambient Techno | R#98, Re |  |
+| 262 | GAS | Königsforst | 1999 | Ambient Techno | R#9 |  |
+| 263 | GAS | GAS | 1996 | Ambient Techno | R#7 |  |
+| 264 | Orbital | II | 1993 | IDM / Electronic | F#15 |  |
+| 265 | Orbital | In Sides | 1996 | IDM / Electronic | Re |  |
+| 266 | Monolake | Silence | 2009 | Ambient Techno | D |  |
+| 267 | Monolake | Hongkong | 2000 | Ambient Techno | T#5 |  |
+| 268 | Huerco S. | Colonial Patterns | 2013 | Ambient Techno | R#58 |  |
+| 269 | Loscil | Endless Falls | 2010 | Ambient Techno | Re |  |
+| 270 | Loscil | Equivalents | 2019 | Ambient Techno | Re |  |
+| 271 | Loscil | Sketches from New Brighton | 2020 | Ambient Techno | Re |  |
+| 272 | GAS | Narkopop | — | Ambient Techno | Ac |  |
+| 273 | GAS | Rausch | — | Ambient Techno | Ac |  |
+| 274 | Datacide | Flowerhead | 1994 | Ambient Techno | H |  |
+| 275 | Plastikman | Consumed | 1998 | Ambient Techno | H |  |
+| 276 | The Detroit Escalator Co. | Black Buildings | 2000 | Ambient Techno | O |  |
+| 277 | Loscil | Submers | 2002 | Ambient Techno | O |  |
+| 278 | Solar Quest | Orgship | 1994 | Ambient Techno | F#14 |  |
+| 279 | Enya | Watermark | 1988 | New Age / Celtic | — |  |
+| 280 | Andreas Vollenweider | …Behind the Gardens | 1981 | New Age / World | — |  |
+| 281 | Aphex Twin | Drukqs | 2001 | IDM / Electronic | — |  |
+| 282 | Nils Frahm | All Melody | 2018 | Post-Classical / Electronic | — |  |
+| 283 | Aphex Twin | Syro | 2014 | IDM / Electronic | — |  |
+| 284 | The KLF | Chill Out | 1990 | Ambient House | P#5, H, F#49, A#23, R#45, Re, Ac |  |
+| 285 | The Orb | Adventures Beyond the Ultraworld | 1991 | Ambient House | O, H, T#10, Re, Ac |  |
+| 286 | The Orb | U.F.Orb | 1992 | Ambient House | H, F#8, Re, Ac |  |
+| 287 | David Behrman | On the Other Ocean | 1977 | Electronic / Minimalism | P#29, S#23 |  |
+| 288 | The Orb | Orbus Terrarum | 1995 | Ambient House | P#19 |  |
+| 289 | The Irresistible Force | Flying High | 1992 | Ambient House | R#59 |  |
+| 290 | The Irresistible Force | Global Chillage | 1994 | Ambient House | R#65 |  |
+| 291 | One Dove | Morning Dove White | — | Ambient House | Ac |  |
+| 292 | Wendy Carlos | Switched-On Bach | 1968 | Electronic / Classical | — |  |
+| 293 | Isao Tomita | Snowflakes Are Dancing | 1974 | Electronic / Classical | — |  |
+| 294 | Terry Riley | A Rainbow in Curved Air | 1969 | Minimalism / Electronic | — |  |
+| 295 | Autechre | Confield | 2001 | IDM / Experimental | — |  |
+| 296 | Telefon Tel Aviv | Fahrenheit Fair Enough | 2001 | IDM / Glitch Pop | — |  |
+| 297 | Kraftwerk | Computer World | 1981 | Electronic / Synth-Pop | — |  |
+| 298 | Depeche Mode | Music for the Masses | 1987 | Synth-Pop / Electronic | — |  |
+| 299 | Art of Noise | Who's Afraid of the Art of Noise? | 1984 | Electronic / Art Pop | — |  |
+| 300 | Massive Attack | Mezzanine | 1998 | Trip-Hop / Electronic | — |  |
+| 301 | The Chemical Brothers | Dig Your Own Hole | 1997 | Big Beat / Electronic | — |  |
+| 302 | Four Tet | Rounds | 2003 | Folktronica / Electronic | — |  |
+| 303 | M83 | Dead Cities, Red Seas & Lost Ghosts | 2003 | Shoegaze / Electronic | — |  |
+| 304 | Jon Hopkins | Immunity | 2013 | Electronic / Techno | — |  |
+| 305 | Nicolas Jaar | Space Is Only Noise | 2011 | Experimental / Electronic | — |  |
+| 306 | Ben Frost | A U R O R A | 2014 | Experimental / Electronic | — |  |
+| 307 | Holly Herndon | PROTO | 2019 | Experimental / Electronic | — |  |
+| 308 | Actress | R.I.P. | 2012 | Experimental / Electronic | — |  |
+| 309 | Four Tet | New Energy | 2017 | Electronic / Folktronica | — |  |
+| 310 | Bicep | Isles | 2021 | Electronic / Breakbeat | — |  |
+| 311 | Arca | KiCk i | 2020 | Experimental / Electronic | — |  |
+| 312 | Burial | Untrue | 2007 | Dubstep / Electronic | — |  |
+| 313 | Daft Punk | Discovery | 2001 | French House / Electronic | — |  |
+| 314 | Caribou | Andorra | 2007 | Psychedelic Pop / Electronic | — |  |
+| 315 | James Blake | James Blake | 2011 | Post-Dubstep / Electronic | — |  |
+| 316 | The Knife | Silent Shout | 2006 | Electropop / Experimental | — |  |
+| 317 | Art of Noise | The Seduction of Claude Debussy | 1999 | Electronica / Drum and Bass | — |  |
 
 Last updated: 2026-04-04

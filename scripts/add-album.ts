@@ -4,8 +4,8 @@
  * and a Wikipedia album-cover thumbnail when available.
  *
  * Usage:
- *   npx tsx scripts/add-album.ts "Artist Name" "Album Title" YEAR [OPTIONS]
- *   npm run add-album -- "Artist Name" "Album Title" YEAR [OPTIONS]
+ *   npx tsx scripts/add-album.ts "Artist Name" "Album Title" YEAR --genre "Genre / Sub-genre" [OPTIONS]
+ *   npm run add-album -- "Artist Name" "Album Title" YEAR --genre "Genre / Sub-genre" [OPTIONS]
  *
  * Options:
  *   --genre "Genre / Sub-genre"   Genre string for the card
@@ -13,17 +13,17 @@
  *   --dry-run                     Print what would be generated without writing any files
  *
  * Examples:
- *   npx tsx scripts/add-album.ts "Aphex Twin" "Selected Ambient Works 85-92" 1992
  *   npx tsx scripts/add-album.ts "Boards of Canada" "Music Has the Right to Children" 1998 --genre "Electronic / Ambient"
- *   npx tsx scripts/add-album.ts "Massive Attack" "Mezzanine" 1998 --mbid 9c5a764d-be29-4b16-9c35-e7e58b5d4f66
- *   npx tsx scripts/add-album.ts "Autechre" "Tri Repetae" 1995 --dry-run
+ *   npx tsx scripts/add-album.ts "Massive Attack" "Mezzanine" 1998 --genre "Trip Hop / Alternative Dance" --mbid 9c5a764d-be29-4b16-9c35-e7e58b5d4f66
+ *   npx tsx scripts/add-album.ts "Autechre" "Tri Repetae" 1995 --genre "IDM / Experimental Electronic" --dry-run
  */
 
 import { writeFileSync, existsSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { toAlbumIndexEntry, writeAlbumIndexFile } from "./albums/album-index.js";
-import { Track, slugify, msToMmss, buildJson } from "./albums/album-scaffold.js";
+import { cacheCover, getCoverCachePath } from "./albums/cover-cache.js";
+import { Track, slugify, msToMmss, buildJson, getGenreTags } from "./albums/album-scaffold.js";
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 
@@ -199,8 +199,8 @@ function parseArgs(): {
   const args = process.argv.slice(2);
   if (args.length < 2 || args[0].startsWith("--")) {
     console.error(
-      "Usage: npx tsx scripts/add-album.ts \"Artist\" \"Album Title\" [YEAR] [--genre \"...\"] [--mbid ID] [--dry-run]\n" +
-      "  or:  npm run add-album -- \"Artist\" \"Album Title\" [YEAR] [OPTIONS]"
+      "Usage: npx tsx scripts/add-album.ts \"Artist\" \"Album Title\" [YEAR] --genre \"...\" [--mbid ID] [--dry-run]\n" +
+      "  or:  npm run add-album -- \"Artist\" \"Album Title\" [YEAR] --genre \"...\" [--mbid ID] [--dry-run]"
     );
     process.exit(1);
   }
@@ -221,6 +221,11 @@ function parseArgs(): {
 
 async function main(): Promise<void> {
   const { artist, title, year, genre, mbid: mbidArg, dryRun } = parseArgs();
+
+  if (getGenreTags(genre).length === 0) {
+    console.error('ERROR: --genre must include at least one non-empty genre tag, e.g. "Electronic / Ambient".');
+    process.exit(1);
+  }
 
   const id      = `${slugify(artist)}-${slugify(title)}`;
   const dataDir = join(ROOT, "data");
@@ -274,16 +279,24 @@ async function main(): Promise<void> {
 
   // 3. Resolve cover art
   console.log("[3/4] Searching Wikipedia for album cover…");
-  const coverUrl = await findWikipediaCoverUrl(artist, title);
-  if (coverUrl) {
-    console.log(`      Found cover: ${coverUrl}`);
+  const coverSourceUrl = await findWikipediaCoverUrl(artist, title);
+  let cachedCoverUrl = "";
+  if (coverSourceUrl) {
+    console.log(`      Found cover: ${coverSourceUrl}`);
+    cachedCoverUrl = getCoverCachePath(id, coverSourceUrl);
+    if (dryRun) {
+      console.log(`      Dry run: would cache to ${cachedCoverUrl}`);
+    } else {
+      await cacheCover(ROOT, id, coverSourceUrl);
+      console.log(`      Cached to : ${cachedCoverUrl}`);
+    }
   } else {
     console.log("      No Wikipedia thumbnail found. Continuing without coverUrl.");
   }
 
   // 4. Generate and write
   console.log("[4/4] Generating scaffold…");
-  const jsonData = buildJson(id, artist, title, resolvedYear, genre, tracks, coverUrl);
+  const jsonData = buildJson(id, artist, title, resolvedYear, genre, tracks, cachedCoverUrl);
 
   if (dryRun) {
     console.log("\n─── JSON preview (first 2 000 chars) ──────────────────────────────");

@@ -6,8 +6,16 @@
   "label": "Virgin Records",
   "producer": "Tangerine Dream",
   "genre": "Berlin School / Ambient",
+  "genreTags": [
+    "Berlin School",
+    "Ambient",
+    "Space",
+    "Electronic"
+  ],
   "runtime": "34:53",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/6e/Rubycon.png",
+  "coverUrl": "covers/tangerine-dream-rubycon.png",
+  "audioStreamUrl": "https://music.apple.com/us/album/rubycon-remastered/724883072",
+  "youtubeUrl": "https://www.youtube.com/watch?v=jd6XL_IOS3I",
   "overview": "Recorded at The Manor Studio in Shipton-on-Cherwell, Oxfordshire during January 1975 — the same facility used for Phaedra one year earlier — by the trio of Edgar Froese, Christopher Franke, and Peter Baumann. The album refines the Moog sequencer methodology introduced on its predecessor into a more controlled and compositionally deliberate form, deploying double Moog synthesizer, Mellotron, EMS VCS 3, EMS Synthi A, modified Elka organ, prepared piano, Fender Rhodes, ARP 2600, guitar, gong, and voice across two side-long pieces. Rubycon reached UK No. 10 in a fourteen-week chart run — the group's highest UK chart position — and is included in Tom Moon's 1,000 Recordings to Hear Before You Die. The two-part structure mirrors Phaedra's Side One/Side Two division but eliminates the shorter contrasting pieces, committing the entire album to the sequencer-driven long-form arc.\n\nTimestamps are proportionally estimated to ±20 seconds; the album's continuous textures and improvised passages do not produce hard section boundaries.",
   "tracks": [
     {

@@ -6,9 +6,14 @@
   "label": "RCA Records",
   "producer": "Vangelis",
   "genre": "Electronic / Soundtrack",
+  "genreTags": [
+    "Electronic",
+    "Soundtrack",
+    "Space"
+  ],
   "runtime": "2:32:49",
   "isSoundtrack": true,
-  "coverUrl": "https://m.media-amazon.com/images/S/pv-target-images/49432757286e279066a41e781edd0ca0ab8737ad0206656d87ca4857df15948f.jpg",
+  "coverUrl": "covers/vangelis-cosmos.jpg",
   "youtubeUrl": "https://www.youtube.com/watch?v=27cwjcdopfI",
   "overview": "Cosmos (1980) compiles all of Vangelis's electronic compositions used in Carl Sagan's landmark PBS documentary Cosmos: A Personal Voyage, the most widely watched public television series in American history with over 500 million viewers worldwide. Drawing from seven Vangelis studio albums spanning 1972 to 1978 — L'Apocalypse des Animaux, Heaven and Hell, Albedo 0.39, Entends-Tu Les Chiens Aboyer?, Spiral, Beaubourg, and the 1986 Cosmos special edition — the 26-track, two-disc compilation recontextualises Vangelis's 1970s synthesiser catalogue as a unified cosmological narrative, from the celestial grandeur of Movement 3 (the series signature theme, here titled Heaven And Hell, Part 1) through the scientific wonder of Pulstar and Alpha to the ritualistic darkness of Beaubourg and 12 O'Clock. The compilation also includes Comet 16, composed specifically for the 1986 Cosmos special edition, and a closing Music Of The Cosmos medley that reprises the collection's principal themes.",
   "tracks": [

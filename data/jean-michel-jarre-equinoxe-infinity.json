@@ -6,9 +6,14 @@
   "label": "Columbia Records",
   "producer": "Jean-Michel Jarre",
   "genre": "Electronic / Ambient",
+  "genreTags": [
+    "Electronic",
+    "Ambient"
+  ],
   "runtime": "39:55",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/11/Jarre_Equinoxe_Infinity_cover_1.jpg",
+  "coverUrl": "covers/jean-michel-jarre-equinoxe-infinity.jpg",
   "spotifyUrl": "https://open.spotify.com/album/4jgAODRrzEoKHSBOAp7g3y",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=OLAK5uy_lahMoz0X0xdsL7OI852rr3uoJoUM1XRKM",
   "overview": "Released 16 November 2018 on Columbia Records, Jarre's 20th studio album arrives exactly forty years after Equinoxe (1978), using Yamaha CS-80, ARP 2600, EMS VCS 3, EMS Synthi AKS, Eminent 310 Unique, Mellotron, Korg MS-20, Moog Sub 37, Moog Taurus 1, Erica Synths Modular, and a prototype GR-1 granular synthesizer (Tasty Chips Electronics) alongside Arturia virtual instruments and Spectrasonics Omnisphere. Ten movements form a continuous arc from sparse atmospheric prelude through mechanical intensity to a seven-minute finale; Movement 5 is intentionally brief — a structural callback to 'Band In The Rain' (Equinoxe Part 8, 1978), processed using the GR-1 on a child's voice recording. Recorded at JMJ Studio, Paris; cover artwork by Filip Hodas in two variants — a hopeful ecological image and a dystopian alternate — both reworking Michel Granger's original Le trac composition. Charts: Germany #11, France #20, UK #33.",
   "tracks": [
     {

@@ -1,0 +1,604 @@
+{
+  "id": "vangelis-direct",
+  "artist": "Vangelis",
+  "title": "Direct",
+  "year": 1988,
+  "label": "Arista",
+  "producer": "Vangelis",
+  "genre": "Electronic / Progressive",
+  "genreTags": [
+    "Electronic",
+    "Progressive Electronic",
+    "Ambient",
+    "Synth-Pop"
+  ],
+  "runtime": "62:42",
+  "coverUrl": "covers/vangelis-direct.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/1Ia0VRhvOAowBCxm3ncUuZ",
+  "youtubeUrl": "https://www.youtube.com/watch?v=JNTaFnzFABU",
+  "overview": "Recorded at Vangelis's private studio in Athens in 1987, Direct applies his principle of simultaneous composition and performance — all twelve tracks were created in real-time sessions with minimal overdubbing, the album title itself a declaration of method. The instrumentation centres on layered synthesizers, drum machines, and the Zyklus MIDI Performance System (engineered by Bill Marshall and Pete Kellock), which allowed Vangelis to control multiple MIDI instruments from a single performance surface. Structurally, the album alternates between rhythmically driven pieces and contemplative ambient passages, with \"Glorianna (Hymn à la Femme)\" as the vocal-operatic centrepiece and the CD-exclusive \"Intergalactic Radio Station\" as a spoken-word sci-fi epilogue. The record charted at No. 26 in the Netherlands and No. 33 in Sweden, representing a transitional phase between Vangelis's high-profile soundtrack period and the later contemplative trilogy of Voices (1995), Oceanic (1996), and El Greco (1998).",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Motion of Stars",
+      "duration": "4:17",
+      "energy": "mid",
+      "tags": [
+        "Symphonic Electronica",
+        "Sequenced",
+        "String-Synth Layers",
+        "Cosmic"
+      ],
+      "role": "Album role: Cinematic overture — establishes the album's spaceward vocabulary and layered synth-orchestral palette, setting the tonal register for the eleven tracks that follow.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained string-synth chord with slow-attack envelope; ambient space established before any rhythmic content.",
+          "detail": "The opening timbre is warm and expansive — setting up the cosmic theme announced by the title."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Sequence entry",
+          "description": "Arpeggiated synth sequence enters beneath the pad; metronomic pulse provides the first rhythmic anchor."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Melody entry",
+          "description": "Lead synth melody enters with broad, legato phrasing over the sequenced base; the album's first thematic statement."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Build",
+          "description": "Secondary string-synth harmonics layer; bass sequence deepens; textural density increases steadily.",
+          "detail": "The layering technique is characteristic of the album's 'direct' method — each element added in real-time to the running mix."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Peak",
+          "description": "Full orchestral-electronic convergence; all melodic, harmonic, and rhythmic layers present simultaneously."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Outro",
+          "description": "Sequence thins; melody sustains over fading pad; gradual dissolution into silence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "The Will of the Wind",
+      "duration": "4:41",
+      "energy": "mid",
+      "tags": [
+        "Drum Machine",
+        "Shakuhachi Sample",
+        "Rhythmic Drive",
+        "Hybrid Acoustic-Electronic"
+      ],
+      "role": "Album role: Rhythmic accelerant — drives momentum forward from the opener's symphonic register into a more physically propulsive groove, introducing the drum-machine framework that recurs throughout the album.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Drum-machine pattern establishes a mid-tempo pulse; sparse, dry percussion with minimal reverb.",
+          "detail": "The rhythmic character is more assertive than the opener — signalling a move from ambient contemplation to physical groove."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Flute entry",
+          "description": "Shakuhachi-like sampled wind instrument enters as lead voice over the drum pattern; breathy, expressive phrasing.",
+          "detail": "The timbral contrast — dry machine rhythm against airy organic lead — is central to the track's hybrid identity."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Synth layer",
+          "description": "Sustained synth pad joins beneath the flute lead; harmonic foundation broadens."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Development",
+          "description": "Flute melody elaborates with ornamental variations; drum pattern adds secondary percussive accents."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Peak",
+          "description": "Full ensemble density — flute, drum machine, synth pad, and bass all present; the groove reaches maximum momentum."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Outro",
+          "description": "Flute withdraws; drum pattern continues briefly before fading to sustained pad tail."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Metallic Rain",
+      "duration": "6:10",
+      "energy": "high",
+      "tags": [
+        "Drone Opening",
+        "Distorted Synth",
+        "Dynamic Contrast",
+        "Rock-Influenced"
+      ],
+      "role": "Album role: The first major energy crest — opens with ambient introspection then pivots into a rock-inflected, distortion-heavy climax, establishing the album's willingness to shift register dramatically within a single track.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Synth solo over static drone; contemplative, near-ambient opening with no rhythmic content.",
+          "detail": "The opening is deliberately misleading — the quiet, reflective texture gives no advance warning of the driving section ahead."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Build",
+          "description": "Low-frequency bass pulse enters; subtle rhythmic element begins to undermine the ambient surface."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Rhythmic shift",
+          "description": "Drum machine kicks in with assertive mid-tempo pattern; the track pivots from ambient to driven.",
+          "detail": "The transition is abrupt — a deliberate structural rupture rather than a gradual crossfade."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Distortion entry",
+          "description": "Heavily distorted guitar-like synth enters as lead voice; aggressive, rock-influenced timbral character.",
+          "detail": "The 'metallic' in the title is literalised through overdriven synth processing — filter resonance pushed beyond clean thresholds."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Peak",
+          "description": "Maximum intensity — distorted lead, heavy bass, full drum pattern, and layer harmonics at maximum convergence."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Deconstruction",
+          "description": "Distorted elements pull back; the texture thins toward a sustained bass drone."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Outro",
+          "description": "Return to ambient drone texture; the track closes in the same register it opened, completing a structural arch."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Elsewhere",
+      "duration": "5:39",
+      "energy": "mid",
+      "tags": [
+        "Sequenced Base",
+        "Lyrical Melody",
+        "Transitional",
+        "Drum Machine Entry"
+      ],
+      "role": "Album role: Transitional bridge — balances melodic lyricism with mechanical sequencing, providing a measured structural passage between the aggressive peak of \"Metallic Rain\" and the contemplative mid-album zone.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sequenced synth base pattern opens alone; precise, metronomic, harmonically neutral.",
+          "detail": "The 'elsewhere' displacement is established immediately — the sequence operates in a tonal space unrelated to the preceding track."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Melody entry",
+          "description": "Lyrical synth lead enters over the sequence; long, sustained melodic phrases.",
+          "detail": "The lead timbre is softer and more rounded than Metallic Rain's distorted voice — a deliberate palette recalibration."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Percussion entry",
+          "description": "Drum machine enters mid-track; the piece shifts from floating ambient-sequence to grounded groove.",
+          "detail": "The delayed percussion entry is a recurring structural device across the album — letting listeners settle into the sequence before adding rhythmic weight."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Development",
+          "description": "Melodic elaboration over fully established groove; secondary harmonic layers added."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Peak",
+          "description": "All elements converge — sequence, melody, percussion, and harmonic pad at full density."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Percussion strips away first; melody sustains over thinning sequence before final fade."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Dial Out",
+      "duration": "5:20",
+      "energy": "mid",
+      "tags": [
+        "Communication Metaphor",
+        "Synth Layers",
+        "CD-Exclusive",
+        "Bridge Piece"
+      ],
+      "role": "Album role: Connective tissue between the album's rhythmic first half and the vocal-operatic centrepiece — a CD-exclusive addition absent from the original LP running order.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Electronic tonal fragments over ambient space; sparse, suggestive of signal and static.",
+          "detail": "The communication/contact metaphor in the title is echoed by the opening texture — signal-like clusters in an otherwise empty field."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Sequence entry",
+          "description": "Rhythmic synth sequence establishes a moderate pulse; the track acquires forward movement."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Melody entry",
+          "description": "Lead synth voice enters with a mid-range melodic line; contemplative, unhurried phrasing."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Build",
+          "description": "Harmonic pad deepens beneath the melody; bass frequency content increases progressively."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Peak",
+          "description": "Full textural density; melody, sequence, pad, and bass all present at equilibrium."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Outro",
+          "description": "Gradual recession; layers strip sequentially, returning to ambient signal fragments before silence."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Glorianna (Hymn à la Femme)",
+      "duration": "4:20",
+      "energy": "mid",
+      "tags": [
+        "Operatic Vocal",
+        "Ceremonial",
+        "Orchestral Electronics",
+        "Centrepiece"
+      ],
+      "role": "Album role: Emotional centrepiece and the album's most distinctive identity track — the only overtly vocal-led moment, with operatic voice transforming the synth-orchestral palette into ceremonial devotional music.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Orchestral synth pad in a reverential, quasi-sacred harmonic register; ceremonial opening.",
+          "detail": "The sub-title 'Hymn à la Femme' declares the devotional intent — the harmonic language draws on liturgical tradition."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Vocal entry",
+          "description": "Operatic soprano voice enters over the synth-orchestral bed; melismatic, formally trained phrasing.",
+          "detail": "The vocal performance is attributed to Markella Hatziano — uncredited on the original release but confirmed in later documentation."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Orchestral build",
+          "description": "Synth-orchestral percussion and string layers intensify beneath the vocal line; the arrangement expands."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Vocal-orchestral peak",
+          "description": "Voice and synth orchestra converge at maximum harmonic and dynamic density; the album's emotional climax.",
+          "detail": "The convergence of operatic voice and electronic orchestra defines the track's unique position in Vangelis's catalogue."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Recession",
+          "description": "Vocal phrase extends into sustained conclusion; orchestral layers thin beneath."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Outro",
+          "description": "Final synth pad sustain with voice fading into reverb; ceremonial close."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Rotation's Logic",
+      "duration": "3:27",
+      "energy": "mid",
+      "tags": [
+        "Pop-Electronica",
+        "Motif-Driven",
+        "Concise",
+        "Cyclical Structure"
+      ],
+      "role": "Album role: Post-centrepiece decompression — the shortest track in the main programme, providing a lighter, pop-leaning palette reset after the operatic weight of \"Glorianna\".",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Synth motif in repeating cyclical pattern; the 'rotation' concept expressed through structural repetition.",
+          "detail": "The motif-loop construction is literal — the track's architecture mirrors its title's concept of cyclical logic."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Rhythm entry",
+          "description": "Drum machine provides a compact, pop-tempo pulse beneath the rotating motif."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Melody entry",
+          "description": "Lead synth voice enters with a brief, efficient melodic statement over the groove."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Peak",
+          "description": "Full arrangement density — motif, rhythm, melody, and bass all converging in tight formation."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Outro",
+          "description": "Motif continues cycling as other elements strip away; fade to the cyclical pattern alone."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "The Oracle of Apollo",
+      "duration": "3:55",
+      "energy": "low",
+      "tags": [
+        "Harp Sample",
+        "Mythic",
+        "Mystery",
+        "String-Synth Bass"
+      ],
+      "role": "Album role: The second contemplative focal point — a mythic, oracle-themed reflective piece that re-establishes the album's introspective register before the late-album epic statement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Harp-like sampled tones over ambient space; sparse, oracle-chamber atmosphere.",
+          "detail": "The harp timbral quality evokes classical Greek instrumentation — aligning the sonic palette with the mythological title."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Melody entry",
+          "description": "Synth lead enters with a slow, contemplative melodic line; mystery-oriented harmonic language."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "String-bass entry",
+          "description": "Low string-synth bass adds harmonic weight; the texture deepens without accelerating.",
+          "detail": "The bass register anchors the floating harp and lead timbres — grounding the mythic atmosphere in physical frequency."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Tension build",
+          "description": "Harmonic tension increases through dissonant intervals beneath the melody; the oracle's ambiguity expressed musically."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Resolution",
+          "description": "Tension resolves to consonant harmony; the mystery dissipates into clarity."
+        },
+        {
+          "timestamp": "3:35",
+          "section": "Outro",
+          "description": "Harp fragments return alone; the track ends as it began, in sparse oracle-chamber space."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Message",
+      "duration": "7:07",
+      "energy": "high",
+      "tags": [
+        "Symphonic Build",
+        "Sequenced Bass",
+        "Crescendo Structure",
+        "Late-Album Epic"
+      ],
+      "role": "Album role: The late-album epic statement — the longest purely instrumental track, built on a sustained crescendo from sequenced bass to full symphonic-electronic density, serving as the album's dramatic climax.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sequenced bass pattern establishes a low-frequency rhythmic foundation; sparse, mechanical pulse.",
+          "detail": "The sequence-first construction mirrors the album's opening approach — establishing machine rhythm before human-voiced melody."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "String entry",
+          "description": "Layered string-synth voices join above the bass sequence; warm, sustained phrasing."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Vocal texture",
+          "description": "Wordless vocal-like synth patches and sound fragments enter the mid-range; human presence suggested electronically."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Build",
+          "description": "Textural density escalates — each 30-second interval adds a new harmonic or rhythmic element.",
+          "detail": "The crescendo is methodical and patient — a seven-minute build toward the transmission's full signal strength."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Orchestral convergence",
+          "description": "Full synth-orchestral ensemble present; bass, strings, vocal textures, and percussion aligned."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Peak",
+          "description": "Maximum dynamic and textural density; the 'message' arrives at full signal strength — grand, sustained, unambiguous.",
+          "detail": "The album's loudest and most fully orchestrated moment; every synthesizer layer converges on a single harmonic statement."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Recession",
+          "description": "Post-peak thinning; elements withdraw in reverse order of their entry."
+        },
+        {
+          "timestamp": "6:40",
+          "section": "Outro",
+          "description": "Bass sequence continues alone briefly before final fade; the message transmitted, the channel closes."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Ave",
+      "duration": "5:04",
+      "energy": "mid",
+      "tags": [
+        "Pop-Rock Synth",
+        "Song-Like Structure",
+        "Invocation",
+        "Compact Arrangement"
+      ],
+      "role": "Album role: Post-climax counterbalance — a tighter, more song-structured piece that provides relief after the extended crescendo of \"Message\" before the album's contemplative final phase.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Synth chord progression with pop-rock tonal character; brighter harmonic palette than surrounding tracks.",
+          "detail": "The invocatory title ('Ave') aligns with the track's greeting-like tonal openness — direct, welcoming harmonic language."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Rhythm entry",
+          "description": "Drum machine establishes a compact, song-tempo groove; tighter phrasing than the album's ambient passages."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Melody entry",
+          "description": "Lead synth melody with song-like phrase lengths; structured around verse-scale repetitions."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Development",
+          "description": "Melodic variation over the established groove; harmonic register shifts modestly."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Peak",
+          "description": "All elements at full density; the arrangement reaches its modest ceiling without overdriving."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Groove and melody fade together; no prolonged ambient tail — a clean, song-style exit."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "First Approach",
+      "duration": "4:58",
+      "energy": "low",
+      "tags": [
+        "Contemplative",
+        "Synth-Cello",
+        "Flute-Like Lead",
+        "Emotional Resolution"
+      ],
+      "role": "Album role: Emotional resolution — the album's penultimate track and the final instrumental statement, shifting from the rhythmic drive of the preceding tracks into a contemplative close that resolves the album's main arc.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Quiet synth-cello sustain with minimal harmonic movement; intimate, chamber-scale opening.",
+          "detail": "The title 'First Approach' works in counterpoint to its late-album position — arrival at the beginning, not the end."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Flute entry",
+          "description": "Flute-like synth solo enters with slow, expressive phrasing; breathy timbral quality over the cello bed."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "String-vocal bed",
+          "description": "Layered string-synth and wordless vocal pad expand the harmonic space beneath the flute lead."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Gradual crescendo",
+          "description": "All elements build slowly toward a mid-piece climax; each phrase slightly louder and harmonically richer.",
+          "detail": "The crescendo is restrained — reaching a chamber-music peak rather than the full orchestral weight of \"Message\"."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Thematic return",
+          "description": "Flute melody restates its opening phrase; structural arch closes through melodic recapitulation."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "All elements fade to synth-cello sustain; the main album arc closes in the same intimate register it opened."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Intergalactic Radio Station",
+      "duration": "7:44",
+      "energy": "low",
+      "tags": [
+        "Spoken Word",
+        "Sci-Fi Narrative",
+        "CD-Exclusive",
+        "Epilogue",
+        "Progressive Electronic"
+      ],
+      "role": "Album role: Coda and epilogue — a CD-exclusive spoken-word piece that reframes the preceding eleven tracks as transmissions received from deep space, adding a conceptual narrative layer absent from the LP programme.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Static-like electronic textures and distant signal fragments; radio-transmission atmosphere established.",
+          "detail": "The sci-fi framing is immediate — the listener is positioned as receiving a signal from the 'Intergalactic Radio Station'."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Spoken entry",
+          "description": "Spoken vocal narrative begins over the electronic background; measured, declarative delivery."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Synth bed expansion",
+          "description": "Progressive synthesized background deepens beneath the spoken voice; ambient orchestration develops."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Narrative development",
+          "description": "Spoken content develops thematic material about communication and distance; synth texture evolves independently beneath.",
+          "detail": "The spoken layer and the electronic layer operate semi-independently — neither dictates the other's pacing."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Atmospheric peak",
+          "description": "Synth orchestration reaches its fullest density beneath the narration; the transmission at maximum signal strength."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Signal decay",
+          "description": "Spoken voice becomes intermittent; electronic textures fragment as though the signal is degrading.",
+          "detail": "The structural metaphor — signal loss — mirrors the album's overall recession from energy toward silence."
+        },
+        {
+          "timestamp": "6:45",
+          "section": "Outro",
+          "description": "Static and ambient fragments; the transmission fades to interstellar noise, then silence. The album closes."
+        }
+      ]
+    }
+  ]
+}

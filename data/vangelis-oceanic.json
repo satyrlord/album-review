@@ -6,8 +6,15 @@
   "label": "East West (Europe) · Atlantic (USA)",
   "producer": "Vangelis",
   "genre": "Electronic / Ambient",
+  "genreTags": [
+    "Electronic",
+    "Ambient",
+    "New Age"
+  ],
   "runtime": "50:42",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/c/c8/Oceanic_%28Vangelis%29_album_cover.jpg",
+  "coverUrl": "covers/vangelis-oceanic.jpg",
+  "audioStreamUrl": "https://music.apple.com/us/album/oceanic/208024277",
+  "youtubeUrl": "https://www.youtube.com/watch?v=GF_xSWzpcRY",
   "overview": "Oceanic (1996) is the second panel of Vangelis's late-period contemplative trilogy, following Voices (1995) and preceding El Greco (1998), and his most sustained exploration of aquatic imagery as compositional architecture. Produced at Nemo Studios in London with assistant producer Frederick Rousseau and engineer Philippe Colonna, the album deploys layered synth-pad orchestration, sampled ocean sound effects — waves, whale song, ship horns, seagulls — and acoustic piano alongside sequencer-driven passages and choral textures. The nine tracks describe a continuous arc from departure (\"Bon Voyage\") through deep-water exploration to a cyclic return, with surf sounds bookending the album. Nominated for a Grammy Award in the Best New Age Album category — Vangelis's first Grammy nomination — the album charted at No. 22 in Austria, No. 29 in France, and No. 5 on the Billboard New Age Albums chart.",
   "tracks": [
     {

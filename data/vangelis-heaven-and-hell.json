@@ -6,8 +6,13 @@
   "label": "RCA Records",
   "producer": "Vangelis",
   "genre": "Electronic / Symphonic",
+  "genreTags": [
+    "Electronic",
+    "Symphonic",
+    "Progressive"
+  ],
   "runtime": "43:14",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e6/Vangelis_Heaven_and_Hell.jpg",
+  "coverUrl": "covers/vangelis-heaven-and-hell.jpg",
   "spotifyUrl": "https://open.spotify.com/album/3o7sGuBr4vf1A64DyT02QF?si=31RB0kYHQxGNhyGv0AsUug",
   "youtubeUrl": "https://www.youtube.com/watch?v=R9QHqpdczH0",
   "overview": "Heaven and Hell (1975) is Vangelis's first album recorded at his newly constructed Nemo Studios in London, and his most explicit attempt to realise a grand conceptual duality through purely electronic means. Structured as two opposing halves — Part I depicting Heaven through orchestral-choral grandeur and Part II depicting Hell through avant-garde dissonance — the album synthesises Gothic choral architecture, massed English Chamber Choir forces, and Vangelis's Bösendorfer grand piano with dense layered synthesiser orchestration at an unprecedented scale. Part I climaxes with the celebrated Movement 3, a celestial synthesiser theme later adopted as the title music for Carl Sagan's Cosmos: A Personal Voyage (1980), while its closing track marks the first collaboration between Vangelis and Jon Anderson, the partnership that would produce four Jon & Vangelis albums in the decade ahead. Part II abandons all melodic comfort for visceral percussion, chromatic dissonance, and hallucinatory ritual, with Vana Verouti's vocal performance on 12 O'Clock providing the Hell side's most dramatic moment before the ambiguous, unresolved stasis of the closing A Way.",
@@ -69,7 +74,6 @@
         "Choral",
         "Gothic",
         "Symphonic",
-        "Synthesizer",
         "Extended"
       ],
       "role": "Structural summit of Part I; two formally conceived movements that deploy Gothic choral architecture and electronic orchestration at symphonic scale, representing the fullest realisation of Vangelis's Heaven soundworld.",
@@ -127,8 +131,7 @@
         "Melodic",
         "Cinematic",
         "Contemplative",
-        "Cosmos Theme",
-        "Synthesizer"
+        "Cosmos Theme"
       ],
       "role": "Tranquil emotional centre of Part I; the celestial synthesiser theme became the title music for Carl Sagan's Cosmos: A Personal Voyage (1980), lending the album its greatest cultural legacy and its most immediately recognisable moment.",
       "events": [
@@ -377,7 +380,6 @@
         "Interlude",
         "Sparse",
         "Zodiacal",
-        "Synthesizer",
         "Transitional"
       ],
       "role": "Brief celestial interlude; the most sparse moment on the Hell side, offering an astrological pause between the extended violence of '12 O'Clock' and the album's closing resolution.",

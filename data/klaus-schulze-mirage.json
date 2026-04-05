@@ -6,8 +6,16 @@
   "label": "Brain",
   "producer": "Klaus Schulze",
   "genre": "Berlin School / Ambient",
+  "genreTags": [
+    "Berlin School",
+    "Ambient",
+    "Electronic",
+    "Space"
+  ],
   "runtime": "57:31",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/06/Mirage_Klaus_Schulze_Album.jpg",
+  "coverUrl": "covers/klaus-schulze-mirage.jpg",
+  "audioStreamUrl": "https://www.deezer.com/album/53122162",
+  "youtubeUrl": "https://www.youtube.com/watch?v=HVZsYrLLwPI",
   "overview": "Recorded in January 1977, Mirage is Schulze's eighth solo album, subtitled \"Eine elektronische Winterlandschaft\" (An Electronic Winter Landscape) and dedicated to Hans Dieter Schulze. The album deploys the sequencer architecture Schulze had established on Timewind and Moondawn at its most expansive — two side-long pieces totalling nearly an hour, each subdivided into named sections though strict divisions between them are not present within the music. In 2005 it was the first Schulze album reissued by Revisited Records, and a newly remastered 40th Anniversary Edition followed in 2017. AllMusic awarded the album four and a half stars.\n\nTimestamps are proportionally estimated to ±30 seconds; both tracks are continuous compositions without hard structural boundaries between their named sub-sections.",
   "tracks": [
     {

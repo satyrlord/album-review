@@ -6,8 +6,16 @@
   "label": "Virgin Records",
   "producer": "Edgar Froese",
   "genre": "Berlin School / Ambient",
+  "genreTags": [
+    "Berlin School",
+    "Ambient",
+    "Space",
+    "Electronic"
+  ],
   "runtime": "37:33",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/d/de/Phaedra_%28Tangerine_Dream_album_-_cover_art%29.png",
+  "coverUrl": "covers/tangerine-dream-phaedra.png",
+  "spotifyUrl": "https://open.spotify.com/album/7KRXWeJYBkyUmwOFTayiQk",
+  "youtubeUrl": "https://www.youtube.com/watch?v=i_TN6KH9q1g",
   "overview": "Recorded at The Manor Studio in Shipton-on-Cherwell, Oxfordshire during November–December 1973, completed in under six weeks by the trio of Edgar Froese, Christopher Franke, and Peter Baumann. The album introduced the Moog sequencer as Tangerine Dream's primary structural engine — the first time the device had been used to drive an entire long-form composition — alongside Mellotron, EMS VCS 3, organ, guitar, and electric piano. Phaedra reached UK No. 15 on word of mouth alone with no radio airplay, earned gold discs in seven countries, and is listed in 1001 Albums You Must Hear Before You Die. Side One is occupied entirely by the seventeen-minute title track; Side Two presents three shorter pieces that function as contrasting perspectives on the same equipment and methodology.\n\nTimestamps are proportionally estimated to ±20 seconds; the album's continuous textures and improvised passages do not produce hard section boundaries.",
   "tracks": [
     {

@@ -6,9 +6,17 @@
   "label": "EG Records",
   "producer": "Brian Eno · Daniel Lanois",
   "genre": "Ambient",
+  "genreTags": [
+    "Ambient",
+    "Electronic",
+    "Space",
+    "Soundtrack"
+  ],
   "runtime": "48:08",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a0/Brianenoapollo.jpg",
+  "coverUrl": "covers/brian-eno-apollo.jpg",
   "isSoundtrack": true,
+  "audioStreamUrl": "https://music.apple.com/us/album/apollo-atmospheres-and-soundtracks/714861155",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=PLLiASlrfxhsWbvNkIS5aYRDHZ5AgtriV7",
   "overview": "Apollo: Atmospheres & Soundtracks (1983) was composed by Brian Eno, Daniel Lanois, and Roger Eno at Lanois's Grant Avenue Studio in Hamilton, Ontario, as the score for Al Reinert's Apollo program documentary For All Mankind — though the film was not released until 1989. The production employs reversed tape playback with heavy multi-layered reverb, Lanois's Sho-Bud pedal steel guitar, the Yamaha CS-80, and a Suzuki Omnichord drastically slowed from its original recording tempo to form the foundation of \"Deep Blue Day.\" The country-ambient hybrid introduced here — pedal steel guitar framed by synthetic drones — would influence subsequent ambient and post-rock movements; \"An Ending (Ascent)\" became one of Eno's most licensed compositions, appearing in Traffic (2000), 28 Days Later (2002), and the 2012 London Olympics opening ceremony, while \"Deep Blue Day\" featured on the four-million-selling Trainspotting soundtrack.",
   "tracks": [
     {
@@ -16,7 +24,12 @@
       "title": "Under Stars",
       "duration": "4:25",
       "energy": "low",
-      "tags": ["Treated guitar", "Dark ambient bed", "Reverb processing", "Recurring motif"],
+      "tags": [
+        "Treated guitar",
+        "Dark ambient bed",
+        "Reverb processing",
+        "Recurring motif"
+      ],
       "role": "Album role: Opening thematic statement — establishes the album's dark-textured ambient language and introduces the \"Under Stars\" motif that recurs in tracks 6 and 12.",
       "events": [
         {
@@ -52,7 +65,12 @@
       "title": "The Secret Place",
       "duration": "3:27",
       "energy": "low",
-      "tags": ["Processed guitar", "Cavernous reverb", "Tape manipulation", "Dark texture"],
+      "tags": [
+        "Processed guitar",
+        "Cavernous reverb",
+        "Tape manipulation",
+        "Dark texture"
+      ],
       "role": "Album role: Deepens the nocturnal atmosphere established by the opener, functioning as the album's most enclosed and claustrophobic sonic environment.",
       "events": [
         {
@@ -88,7 +106,12 @@
       "title": "Matta",
       "duration": "4:14",
       "energy": "low",
-      "tags": ["Synthetic drone", "Spectral texture", "Dark ambient", "Solo Eno composition"],
+      "tags": [
+        "Synthetic drone",
+        "Spectral texture",
+        "Dark ambient",
+        "Solo Eno composition"
+      ],
       "role": "Album role: The album's most austere and isolated piece — a Brian Eno solo composition that strips the palette to pure synthetic texture, serving as Side One's contemplative centre.",
       "events": [
         {
@@ -124,7 +147,12 @@
       "title": "Signals",
       "duration": "2:44",
       "energy": "low",
-      "tags": ["Electronic pulse", "Short-form interlude", "Signal processing", "Radio motif"],
+      "tags": [
+        "Electronic pulse",
+        "Short-form interlude",
+        "Signal processing",
+        "Radio motif"
+      ],
       "role": "Album role: Brief transitional interlude simulating distant communications; bridges the dark-ambient first half toward the emotional centre of \"An Ending (Ascent).\"",
       "events": [
         {
@@ -154,7 +182,12 @@
       "title": "An Ending (Ascent)",
       "duration": "4:18",
       "energy": "mid",
-      "tags": ["Yamaha CS-80", "Ascending pad", "Synth choir", "Signature piece"],
+      "tags": [
+        "Yamaha CS-80",
+        "Ascending pad",
+        "Synth choir",
+        "Signature piece"
+      ],
       "role": "Album role: The album's emotional and structural apex — an ascending synthesizer meditation that became one of Eno's most widely licensed and recognised compositions.",
       "events": [
         {
@@ -196,7 +229,12 @@
       "title": "Under Stars II",
       "duration": "3:15",
       "energy": "low",
-      "tags": ["Variant arrangement", "Re-treatment", "Ambient reprise", "Effects differentiation"],
+      "tags": [
+        "Variant arrangement",
+        "Re-treatment",
+        "Ambient reprise",
+        "Effects differentiation"
+      ],
       "role": "Album role: Structural mirror of the opening track — the same composition subjected to alternative effects processing, marking the threshold between the album's darker first half and its warmer second half.",
       "events": [
         {
@@ -232,7 +270,12 @@
       "title": "Drift",
       "duration": "3:03",
       "energy": "low",
-      "tags": ["Piano", "Reverb wash", "Roger Eno co-write", "Atmospheric drift"],
+      "tags": [
+        "Piano",
+        "Reverb wash",
+        "Roger Eno co-write",
+        "Atmospheric drift"
+      ],
       "role": "Album role: Transitional piece introducing Roger Eno's keyboard sensibility — a gentle piano-led drift that pivots the album from synthetic darkness toward the country-ambient warmth of the final movement.",
       "events": [
         {
@@ -267,7 +310,12 @@
       "title": "Silver Morning",
       "duration": "2:35",
       "energy": "mid",
-      "tags": ["Sho-Bud steel guitar", "Country-ambient", "Pedal steel", "Daniel Lanois solo"],
+      "tags": [
+        "Sho-Bud steel guitar",
+        "Country-ambient",
+        "Pedal steel",
+        "Daniel Lanois solo"
+      ],
       "role": "Album role: The first of three country-ambient pieces — a brief, luminous interlude showcasing Daniel Lanois's Sho-Bud pedal steel guitar, released as a 7\" single B-side with \"Deep Blue Day.\"",
       "events": [
         {
@@ -298,7 +346,12 @@
       "title": "Deep Blue Day",
       "duration": "3:53",
       "energy": "mid",
-      "tags": ["Suzuki Omnichord", "Pedal steel guitar", "Tempo-shifted recording", "Country-ambient"],
+      "tags": [
+        "Suzuki Omnichord",
+        "Pedal steel guitar",
+        "Tempo-shifted recording",
+        "Country-ambient"
+      ],
       "role": "Album role: The album's warmest and most melodically accessible piece — its Omnichord-and-steel-guitar foundation became a touchstone of ambient pop after its inclusion on the Trainspotting soundtrack.",
       "events": [
         {
@@ -340,7 +393,12 @@
       "title": "Weightless",
       "duration": "4:28",
       "energy": "low",
-      "tags": ["Pedal steel guitar", "Zero-gravity motif", "Floating texture", "Country-ambient hybrid"],
+      "tags": [
+        "Pedal steel guitar",
+        "Zero-gravity motif",
+        "Floating texture",
+        "Country-ambient hybrid"
+      ],
       "role": "Album role: The final country-ambient piece — the most literally programmatic track, its drifting steel guitar and airy pads designed to evoke the physical sensation of weightlessness in orbit.",
       "events": [
         {
@@ -375,7 +433,12 @@
       "title": "Always Returning",
       "duration": "3:49",
       "energy": "mid",
-      "tags": ["Melodic ambient", "Keyboard lead", "Cyclical motif", "Roger Eno co-write"],
+      "tags": [
+        "Melodic ambient",
+        "Keyboard lead",
+        "Cyclical motif",
+        "Roger Eno co-write"
+      ],
       "role": "Album role: Penultimate emotional resolution — its cyclical ascending-descending melody provides narrative closure before the extended ambient dissolution of \"Stars.\"",
       "events": [
         {
@@ -410,7 +473,12 @@
       "title": "Stars",
       "duration": "7:57",
       "energy": "low",
-      "tags": ["Extended drone", "Pure ambient texture", "Deep space", "Closing meditation"],
+      "tags": [
+        "Extended drone",
+        "Pure ambient texture",
+        "Deep space",
+        "Closing meditation"
+      ],
       "role": "Album role: Extended closing piece — the pure background texture stripped of the guitar overlay heard in \"Under Stars,\" functioning as the album's final dissolution into deep-space silence.",
       "events": [
         {

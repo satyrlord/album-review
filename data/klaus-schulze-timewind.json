@@ -6,8 +6,16 @@
   "label": "Brain",
   "producer": "Klaus Schulze",
   "genre": "Berlin School / Ambient",
+  "genreTags": [
+    "Berlin School",
+    "Ambient",
+    "Space",
+    "Electronic"
+  ],
   "runtime": "59:10",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/48/Timewind.jpg",
+  "coverUrl": "covers/klaus-schulze-timewind.jpg",
+  "audioStreamUrl": "https://music.apple.com/us/album/timewind/714562581",
+  "youtubeUrl": "https://www.youtube.com/watch?v=qBn0Jnf7_3M",
   "overview": "Recorded in March and June 1975, Timewind is Schulze's fifth solo album and his first to employ an analogue sequencer — the Synthanorma Sequencer that would become central to his compositional method for the next decade. Key equipment: ARP 2600, ARP Odyssey, EMS Synthi A, Elka String Synthesizer, Farfisa Professional Duo Organ and Piano, Synthanorma Sequencer. Both track titles reference Richard Wagner — 'Bayreuth Return' names the Bavarian town where Wagner built the Festspielhaus for the Ring Cycle premiere, and 'Wahnfried' names Wagner's Bayreuth home where he was buried in 1883. Timewind was awarded the Grand Prix du Disque by L'Académie Charles Cros in 1976, and Schulze later adopted 'Wahnfried' as an alias for several albums. Cover art by Urs Amann.\n\nTimestamps are proportionally estimated to ±30 seconds; 'Bayreuth Return' was recorded in one take on two-track equipment and its internal structure is continuous rather than sectional.",
   "tracks": [
     {

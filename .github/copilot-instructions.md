@@ -19,7 +19,6 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 | File | Purpose |
 | ------ | --------- |
 | `index.html` | Album index — filterable card grid, fetches `data/index.json` |
-| `soundtracks.html` | Soundtrack-only collection view using the same card grid, sorted chronologically |
 | `album.html` | Dynamic album detail page, fetches `data/<id>.json` |
 | `src/site.ts` | Shared site utilities, including the footer renderer and version display logic |
 | `vite.config.ts` | Multi-page Vite config, build metadata injection, and Istanbul coverage setup |
@@ -37,7 +36,7 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 
    When a request covers multiple albums, split the work by album and run the album-analysis workflow in parallel using multiple sub-agents whenever feasible. Assign one sub-agent per album, then reconcile the outputs in the main agent before the final build and validation pass.
 
-2. Ensure the JSON includes the album metadata, overview, track analysis, optional `coverUrl`, and `isSoundtrack: true` when the album should appear on the Soundtracks page.
+2. Ensure the JSON includes the album metadata, overview, track analysis, and optional `coverUrl`.
 
 3. Run the quality gate with `npm run build` to regenerate `data/index.json` and the production `dist/` build.
 

@@ -6,8 +6,12 @@
   "label": "Sony · Columbia",
   "producer": "Jean-Michel Jarre",
   "genre": "Electronic / Ambient",
+  "genreTags": [
+    "Electronic",
+    "Ambient"
+  ],
   "runtime": "120:45",
-  "coverUrl": "https://cdn.ozone.ro/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/j/e/011b021c045210acb54e45ecd65ae656/jean-michel-jarre---oxygene-trilogy-cd-30.jpg",
+  "coverUrl": "covers/jean-michel-jarre-oxygene-trilogy.jpg",
   "spotifyUrl": "https://open.spotify.com/album/469JDZgyHrDdZT25FeLKgT?si=eGrJ4Wj-R5O48qR_W7y66Q",
   "youtubeUrl": "https://www.youtube.com/playlist?list=PLxSsc9NkU8NB4cbWIUtxxMq12GVvEMw5k",
   "overview": "Released 2 December 2016 — the 40th anniversary of the original Oxygène to the day — this box set collects all three volumes of the Oxygène series: the 1976 original (Parts I–VI), Oxygène 7–13 (1997, Parts 7–13), and Oxygène 3 (2016, Parts 14–20). The same core instrument palette anchors all three albums — ARP 2600, EMS Synthi AKS, EMS VCS 3, Eminent 310 Unique, Mellotron — each volume supplementing it with instruments available in its era: TR-808, Yamaha CS-80 and Nord Lead in 1997; Moog Sub 37, Teenage Engineering OP-1, Elektron Analog Keys and Ableton Live in 2016. Parts I through XX form a twenty-part narrative arc spanning four decades; Part 20 directly samples the wind and white-noise material from Part VI, suturing the circle across forty years. The physical release includes a coffee-table book alongside vinyl, CD, and digital editions.",

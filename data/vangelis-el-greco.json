@@ -6,8 +6,15 @@
   "label": "East West (Europe) · Atlantic (USA)",
   "producer": "Vangelis",
   "genre": "Electronic / Classical",
+  "genreTags": [
+    "Electronic",
+    "Classical",
+    "Symphonic"
+  ],
   "runtime": "1:12:36",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Vangelis_El_Greco_album_art.jpeg/330px-Vangelis_El_Greco_album_art.jpeg",
+  "coverUrl": "covers/vangelis-el-greco.jpeg",
+  "audioStreamUrl": "https://music.apple.com/us/album/el-greco/358591655",
+  "youtubeUrl": "https://www.youtube.com/watch?v=IlWj7pH2KiM",
   "overview": "El Greco (1998) completes the contemplative trilogy that began with Voices (1995) and continued with Oceanic (1996), and is Vangelis's most sustained engagement with Byzantine choral-electronic fusion. An expanded reworking of the limited-edition Foros Timis Ston Greco (1995), the album reorders the original seven movements and adds three new ones — Movements III, V, and VII — to create a ten-part, 72-minute suite inspired by the painter Dominikos Theotokópoulos (El Greco, 1541–1614). Produced at Nemo Studios with engineer Philippe Colonna and assistant Frederick Rousseau, the album features soprano Montserrat Caballé on one movement and tenor Konstantinos Paliatsaras on another, with a choir conducted by Ivan Cassar complementing Vangelis's layered synthesiser orchestration throughout. The album charted at No. 66 in France, No. 74 in Germany, No. 11 in Hungary, and No. 9 on the Billboard New Age Albums chart.",
   "tracks": [
     {

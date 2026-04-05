@@ -11,6 +11,7 @@ interface AlbumIndexEntry {
   year: number;
   tracks: number;
   genre: string;
+  genreTags?: string[];
   coverUrl?: string;
   isSoundtrack?: boolean;
 }
@@ -22,6 +23,7 @@ interface AlbumData {
   coverUrl?: string;
   spotifyUrl?: string;
   youtubeUrl?: string;
+  audioStreamUrl?: string;
 }
 
 function escapeRegex(text: string): string {
@@ -42,12 +44,7 @@ async function readAlbumData(page: Page, id: string): Promise<AlbumData> {
 
 async function gotoIndex(page: Page): Promise<void> {
   await page.goto("/index.html");
-  await expect(page.getByRole("heading", { name: "Album Analysis" })).toBeVisible();
-}
-
-async function gotoSoundtracks(page: Page): Promise<void> {
-  await page.goto("/soundtracks.html");
-  await expect(page.getByRole("heading", { name: "Soundtracks" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "ALBANA" })).toBeVisible();
 }
 
 async function readBuildMeta(page: Page): Promise<{ pushedCommitCount: number; version: string }> {
@@ -70,36 +67,15 @@ async function readBuildMeta(page: Page): Promise<{ pushedCommitCount: number; v
   return meta;
 }
 
-async function expectPrimaryNav(page: Page, currentLabel?: "HOME PAGE" | "SOUNDTRACKS"): Promise<void> {
-  const navLinks = page.locator(".site-nav-link");
-
-  await expect(navLinks).toHaveCount(2);
-  await expect(navLinks).toHaveText(["HOME PAGE", "SOUNDTRACKS"]);
-  if (currentLabel) {
-    await expect(page.getByRole("link", { name: currentLabel, exact: true })).toHaveAttribute("aria-current", "page");
-  }
-}
-
 test.describe("album index regressions", () => {
   test("renders all registered albums on first load", async ({ page }) => {
     const totalAlbums = (await readAlbumIndex(page)).length;
 
     await gotoIndex(page);
 
-    await expectPrimaryNav(page, "HOME PAGE");
-    await expect(page.getByRole("link", { name: "SOUNDTRACKS", exact: true })).toHaveAttribute("href", /soundtracks\.html$/);
     await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
     await expect(page.locator(".ix-card")).toHaveCount(totalAlbums);
     await expect(page.locator("#ixCount")).toHaveText(`${totalAlbums} / ${totalAlbums} albums`);
-  });
-
-  test("soundtracks page shows all registered soundtrack albums", async ({ page }) => {
-    await gotoSoundtracks(page);
-
-    await expectPrimaryNav(page, "SOUNDTRACKS");
-    const soundtrackAlbums = (await readAlbumIndex(page)).filter((a) => a.isSoundtrack);
-    await expect(page.locator(".ix-card")).toHaveCount(soundtrackAlbums.length);
-    await expect(page.locator("#ixCount")).toHaveText(`${soundtrackAlbums.length} / ${soundtrackAlbums.length} albums`);
   });
 
   test("renders a shared footer with a clickable version badge", async ({ page }) => {
@@ -130,9 +106,17 @@ test.describe("album index regressions", () => {
     const rendered = await page.evaluate(() => {
       const siteWindow = window as Window & {
         AlbumReviewSite?: {
-          renderNav(options?: { activePage?: "home" | "soundtracks" | null }): string;
+          renderNav(options?: { activePage?: "home" | null }): string;
           renderFooter(options?: { context?: string; actionHref?: string; actionLabel?: string }): string;
-          mountNav(elementId: string, options?: { activePage?: "home" | "soundtracks" | null }): void;
+          renderCollectionHero(options: {
+            title: string;
+            subtitle?: string;
+            subtitleVariant?: string;
+            tagline?: string;
+            searchPlaceholder?: string;
+            searchAriaLabel?: string;
+          }): string;
+          mountNav(elementId: string, options?: { activePage?: "home" | null }): void;
           mountFooter(elementId: string, options?: { context?: string; actionHref?: string; actionLabel?: string }): void;
         };
       };
@@ -147,22 +131,37 @@ test.describe("album index regressions", () => {
 
       return {
         navHtml: site.renderNav(),
+        navActiveHtml: site.renderNav({ activePage: "home" }),
         footerHtml: site.renderFooter(),
         footerWithActionHtml: site.renderFooter({
           context: "Coverage Pass",
-          actionHref: "soundtracks.html",
+          actionHref: "credits.html",
           actionLabel: "Jump",
+        }),
+        heroMinimal: site.renderCollectionHero({ title: "Test" }),
+        heroFull: site.renderCollectionHero({
+          title: "Test Full",
+          subtitle: "Sub Label",
+          subtitleVariant: "badge-accent",
+          tagline: "A tagline for coverage",
+          searchPlaceholder: "Search here…",
+          searchAriaLabel: "Filter test",
         }),
       };
     });
 
     expect(rendered.navHtml).not.toContain('aria-current="page"');
+    expect(rendered.navActiveHtml).toContain('aria-current="page"');
     expect(rendered.footerHtml).not.toContain("site-footer-context");
     expect(rendered.footerHtml).toContain("site-footer-credits");
     expect(rendered.footerHtml).toContain('href="credits.html"');
     expect(rendered.footerWithActionHtml).toContain("site-footer-context");
-    expect(rendered.footerWithActionHtml).toContain('href="soundtracks.html"');
+    expect(rendered.footerWithActionHtml).toContain('href="credits.html"');
     expect(rendered.footerWithActionHtml).toContain("Jump");
+    expect(rendered.heroMinimal).not.toContain("subtitle");
+    expect(rendered.heroFull).toContain("Sub Label");
+    expect(rendered.heroFull).toContain("A tagline for coverage");
+    expect(rendered.heroFull).toContain("badge-accent");
   });
 
   test("renders album cover thumbnails when cover URLs are present", async ({ page }) => {
@@ -172,8 +171,8 @@ test.describe("album index regressions", () => {
 
     const covers = page.locator(".ix-card-cover");
 
-    await expect(covers).toHaveCount(indexedAlbums.filter((album) => Boolean(album.coverUrl)).length);
-    await expect(covers.first()).toHaveAttribute("src", /upload\.wikimedia\.org/);
+    await expect(covers).toHaveCount(indexedAlbums.length);
+    await expect(covers.first()).toHaveAttribute("src", /covers\//);
     await expect(covers.first()).toHaveAttribute("alt", /Album cover for/);
   });
 
@@ -195,73 +194,85 @@ test.describe("album index regressions", () => {
     await expect(page.getByText("Oxygène 3", { exact: true })).toBeVisible();
   });
 
-  test("filters by artist pill without leaking other artists", async ({ page }) => {
+  test("filters by artist tag without leaking other artists", async ({ page }) => {
     const indexedAlbums = await readAlbumIndex(page);
     await gotoIndex(page);
 
     const totalAlbums = indexedAlbums.length;
     const expectedMatches = indexedAlbums.filter((album) => album.artist === "Mike Oldfield").length;
 
-    await page.getByRole("button", { name: "Mike Oldfield" }).click();
+    await page.locator(".ix-artist-tag").filter({ hasText: "Mike Oldfield" }).click();
 
     await expect(page.locator(".ix-card")).toHaveCount(expectedMatches);
     await expect(page.locator("#ixCount")).toHaveText(`${expectedMatches} / ${totalAlbums} albums`);
     await expect(page.locator(".ix-card-artist")).toHaveText(Array(expectedMatches).fill("Mike Oldfield"));
   });
 
-  test("soundtracks page filters non-soundtracks and keeps soundtrack albums chronological", async ({ page }) => {
+  test("filters by genre tags additively and toggles off", async ({ page }) => {
     await page.route("**/data/index.json", async (route) => {
       await route.fulfill({
         contentType: "application/json",
         body: JSON.stringify([
-          {
-            id: "late-score",
-            artist: "Late Composer",
-            title: "Late Score",
-            year: 1999,
-            tracks: 12,
-            genre: "Movie Soundtrack",
-            isSoundtrack: true,
-          },
-          {
-            id: "regular-album",
-            artist: "Non Soundtrack Artist",
-            title: "Regular Album",
-            year: 1971,
-            tracks: 9,
-            genre: "Electronic",
-          },
-          {
-            id: "early-score",
-            artist: "Early Composer",
-            title: "Early Score",
-            year: 1982,
-            tracks: 8,
-            genre: "Game Soundtrack",
-            isSoundtrack: true,
-          },
-          {
-            id: "mid-score",
-            artist: "Mid Composer",
-            title: "Mid Score",
-            year: 1987,
-            tracks: 10,
-            genre: "Movie Soundtrack",
-            isSoundtrack: true,
-          },
+          { id: "a1", artist: "A", title: "Alpha", year: 2000, tracks: 1, genre: "X", genreTags: ["Ambient", "Electronic"] },
+          { id: "a2", artist: "B", title: "Beta", year: 2001, tracks: 1, genre: "Y", genreTags: ["Electronic", "Rave"] },
+          { id: "a3", artist: "C", title: "Gamma", year: 2002, tracks: 1, genre: "Z", genreTags: ["Ambient"] },
         ]),
       });
     });
 
-    await gotoSoundtracks(page);
+    await gotoIndex(page);
 
+    // Nav genre tags should be present, ordered by count descending
+    const navTags = page.locator(".ix-nav-genre-tag");
+    await expect(navTags).toHaveCount(3);
+
+    // Card genre tags should render
+    await expect(page.locator(".ix-card-genre-tag")).toHaveCount(5);
+
+    // Click "Ambient" nav tag — filters to albums with Ambient tag
+    await navTags.filter({ hasText: "Ambient" }).click();
+    await expect(page.locator(".ix-card")).toHaveCount(2);
+    await expect(navTags.filter({ hasText: "Ambient" })).toHaveClass(/active/);
+
+    // Additive: click "Electronic" — now only albums with BOTH Ambient AND Electronic
+    await navTags.filter({ hasText: "Electronic" }).click();
+    await expect(page.locator(".ix-card")).toHaveCount(1);
+    await expect(page.locator(".ix-card-title")).toHaveText(["Alpha"]);
+
+    // Toggle off "Ambient" — back to only Electronic filter
+    await navTags.filter({ hasText: "Ambient" }).click();
+    await expect(navTags.filter({ hasText: "Ambient" })).not.toHaveClass(/active/);
+    await expect(page.locator(".ix-card")).toHaveCount(2);
+
+    // Toggle off "Electronic" — back to all
+    await navTags.filter({ hasText: "Electronic" }).click();
     await expect(page.locator(".ix-card")).toHaveCount(3);
-    await expect(page.locator("#ixCount")).toHaveText("3 / 3 albums");
-    await expect(page.locator(".ix-card-title")).toHaveText(["Early Score", "Mid Score", "Late Score"]);
-    await expect(page.locator("body")).not.toContainText("Regular Album");
+
+    // Click a card genre tag to filter
+    const cardTag = page.locator(".ix-card-genre-tag").filter({ hasText: "Rave" }).first();
+    await cardTag.click();
+    await expect(page.locator(".ix-card")).toHaveCount(1);
+    await expect(page.locator(".ix-card-title")).toHaveText(["Beta"]);
   });
 
-  test("collection pages expose empty states when the index is empty", async ({ page }) => {
+  test("genre tag search matches tag text", async ({ page }) => {
+    await page.route("**/data/index.json", async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify([
+          { id: "a1", artist: "A", title: "Alpha", year: 2000, tracks: 1, genre: "X", genreTags: ["Ambient", "Electronic"] },
+          { id: "a2", artist: "B", title: "Beta", year: 2001, tracks: 1, genre: "Y", genreTags: ["Rave"] },
+        ]),
+      });
+    });
+
+    await gotoIndex(page);
+    await page.getByRole("searchbox", { name: "Filter albums" }).fill("rave");
+    await expect(page.locator(".ix-card")).toHaveCount(1);
+    await expect(page.locator(".ix-card-title")).toHaveText(["Beta"]);
+  });
+
+  test("collection page exposes empty state when the index is empty", async ({ page }) => {
     await page.route("**/data/index.json", async (route) => {
       await route.fulfill({
         contentType: "application/json",
@@ -272,10 +283,6 @@ test.describe("album index regressions", () => {
     await gotoIndex(page);
     await expect(page.locator("#ixCount")).toHaveText("0 / 0 albums");
     await expect(page.locator(".ix-empty")).toHaveText("No albums available.");
-
-    await gotoSoundtracks(page);
-    await expect(page.locator("#ixCount")).toHaveText("0 / 0 albums");
-    await expect(page.locator(".ix-empty")).toHaveText("No soundtrack albums available.");
   });
 
   test("index bootstrap exits cleanly when required collection DOM nodes are missing", async ({ page }) => {
@@ -283,7 +290,6 @@ test.describe("album index regressions", () => {
       const originalGetElementById = Document.prototype.getElementById;
       const blockedIds: Record<string, string> = {
         "missing-grid": "ixGrid",
-        "missing-filters": "ixFilters",
         "missing-search": "ixSearch",
         "missing-count": "ixCount",
       };
@@ -297,13 +303,12 @@ test.describe("album index regressions", () => {
       };
     });
 
-    for (const fixture of ["missing-grid", "missing-filters", "missing-search", "missing-count"]) {
+    for (const fixture of ["missing-grid", "missing-search", "missing-count"]) {
       await page.goto(`/index.html?fixture=${fixture}`);
-      await expect(page.getByRole("heading", { name: "Album Analysis" })).toBeVisible();
-      await expect(page.locator("#siteNav")).toHaveCount(1);
-      await expect(page.locator("#siteFooter")).toHaveCount(1);
-      await expect(page.locator(".site-nav")).toHaveCount(0);
-      await expect(page.locator(".site-footer")).toHaveCount(0);
+      await expect(page.getByRole("heading", { name: "ALBANA" })).toBeVisible();
+      await expect(page.locator("#siteNav")).toHaveCount(0);      // replaced by hero
+      await expect(page.locator("#siteFooter")).toHaveCount(1);   // footer placeholder untouched
+      await expect(page.locator(".site-footer")).toHaveCount(0);  // footer not mounted
     }
   });
 
@@ -326,13 +331,37 @@ test.describe("album index regressions", () => {
 
     await gotoIndex(page);
 
-    await expect(page.locator(".ix-card-cover")).toHaveCount(0);
+    await expect(page.locator(".ix-card-cover")).toHaveCount(1);
+    await expect(page.locator(".ix-card-cover")).toHaveAttribute("src", /covers\/fallback-cd-case\.svg$/);
     await expect(page.locator(".ix-card-meta")).toHaveText(["2024  ·  1 track"]);
 
     await page.getByRole("searchbox", { name: "Filter albums" }).fill("no hits here");
 
-    await expect(page.locator(".ix-empty")).toContainText("No albums match");
-    await expect(page.locator(".ix-empty")).toContainText("no hits here");
+    await expect(page.locator(".ix-empty")).toContainText("No results");
+  });
+
+  test("index page falls back when a cover file cannot be loaded", async ({ page }) => {
+    await page.route("**/data/index.json", async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify([
+          {
+            id: "broken-cover",
+            artist: "Broken Cover Artist",
+            title: "Signal Loss",
+            year: 2024,
+            tracks: 2,
+            genre: "Ambient",
+            genreTags: ["Ambient"],
+            coverUrl: "covers/does-not-exist.png",
+          },
+        ]),
+      });
+    });
+
+    await gotoIndex(page);
+
+    await expect(page.locator(".ix-card-cover")).toHaveAttribute("src", /covers\/fallback-cd-case\.svg$/);
   });
 
   test("index page falls back to a generic load error for non-Error fetch failures", async ({ page }) => {
@@ -353,10 +382,10 @@ test.describe("album index regressions", () => {
     await expect(page).toHaveURL(/album\.html\?id=mike-oldfield-tubular-bells-ii$/);
     await expect(page.getByRole("heading", { name: "Tubular Bells II" })).toBeVisible();
 
-    await page.getByRole("link", { name: "HOME PAGE" }).click();
+    await page.getByRole("link", { name: "← Back to Home" }).click();
 
     await expect(page).toHaveURL(/\/index\.html$/);
-    await expect(page.getByRole("heading", { name: "Album Analysis" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "ALBANA" })).toBeVisible();
   });
 
   test("album page renders JSON data via dynamic renderer", async ({ page }) => {
@@ -366,9 +395,8 @@ test.describe("album index regressions", () => {
     await page.goto("/album.html?id=jean-michel-jarre-oxygene");
 
     await expect(page.getByRole("heading", { name: "Oxygène" })).toBeVisible();
-    await expectPrimaryNav(page);
-    await expect(page.getByRole("link", { name: "HOME PAGE", exact: true })).toHaveAttribute("href", /index\.html$/);
-    await expect(page.getByRole("link", { name: "SOUNDTRACKS", exact: true })).toHaveAttribute("href", /soundtracks\.html$/);
+    await expect(page.getByRole("link", { name: "← Back to Home", exact: true })).toBeVisible();
+    await expect(page.getByRole("link", { name: "← Back to Home", exact: true })).toHaveAttribute("href", /index\.html$/);
     await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
     await expect(page.locator(".hero-cover")).toBeVisible();
     await expect(page.locator(".hero-cover")).toHaveAttribute(
@@ -383,7 +411,7 @@ test.describe("album index regressions", () => {
     await expect(page.locator(".timeline").first()).toBeVisible();
     await expect(page.getByRole("link", { name: "← All Albums" })).toHaveCount(0);
 
-    await page.getByRole("link", { name: "HOME PAGE" }).click();
+    await page.getByRole("link", { name: "← Back to Home" }).click();
     await expect(page).toHaveURL(/\/index\.html$/);
   });
 
@@ -395,9 +423,84 @@ test.describe("album index regressions", () => {
     await expect(page.getByRole("link", { name: "Listen on Spotify" })).toHaveAttribute("href", album.spotifyUrl ?? "");
     await expect(page.getByRole("link", { name: "Listen on Spotify" })).toHaveAttribute("target", "_blank");
     await expect(page.getByRole("link", { name: "Listen on Spotify" })).toHaveAttribute("rel", "noopener noreferrer");
-    await expect(page.getByRole("link", { name: "Listen on YouTube Music" })).toHaveAttribute("href", album.youtubeUrl ?? "");
-    await expect(page.getByRole("link", { name: "Listen on YouTube Music" })).toHaveAttribute("target", "_blank");
-    await expect(page.getByRole("link", { name: "Listen on YouTube Music" })).toHaveAttribute("rel", "noopener noreferrer");
+    await expect(page.getByRole("link", { name: "Listen on YouTube" })).toHaveAttribute("href", album.youtubeUrl ?? "");
+    await expect(page.getByRole("link", { name: "Listen on YouTube" })).toHaveAttribute("target", "_blank");
+    await expect(page.getByRole("link", { name: "Listen on YouTube" })).toHaveAttribute("rel", "noopener noreferrer");
+  });
+
+  test("Spotify button has dark text on bright primary background", async ({ page }) => {
+    await page.goto("/album.html?id=jean-michel-jarre-oxygene");
+
+    const spotifyBtn = page.getByRole("link", { name: "Listen on Spotify" });
+    await expect(spotifyBtn).toBeVisible();
+
+    const colors = await spotifyBtn.evaluate((el) => {
+      const cs = getComputedStyle(el);
+      return { color: cs.color, backgroundColor: cs.backgroundColor };
+    });
+
+    // Background should be the primary green (#00ff88 → rgb(0,255,136))
+    expect(colors.backgroundColor).toBe("rgb(0, 255, 136)");
+    // Text must NOT be the light base-content colour — it must be near-black primary-content (#031b10 → rgb(3,27,16))
+    expect(colors.color).toBe("rgb(3, 27, 16)");
+  });
+
+  test("YouTube link points to www.youtube.com and is labelled Listen on YouTube", async ({ page }) => {
+    const album = await readAlbumData(page, "jean-michel-jarre-oxygene");
+
+    await page.goto("/album.html?id=jean-michel-jarre-oxygene");
+
+    const ytBtn = page.getByRole("link", { name: "Listen on YouTube" });
+    await expect(ytBtn).toBeVisible();
+    await expect(ytBtn).toHaveAttribute("href", album.youtubeUrl ?? "");
+    // URL must be on www.youtube.com, not music.youtube.com
+    expect(album.youtubeUrl).toMatch(/^https:\/\/www\.youtube\.com\//);
+    await expect(page.getByRole("link", { name: "Listen on YouTube Music" })).toHaveCount(0);
+  });
+
+  test("Back to Home button is visible and ghost-styled on album and credits pages", async ({ page }) => {
+    // Album page
+    await page.goto("/album.html?id=jean-michel-jarre-oxygene");
+    const albumBack = page.getByRole("link", { name: "← Back to Home" });
+    await expect(albumBack).toBeVisible();
+    await expect(albumBack).toHaveAttribute("href", /index\.html$/);
+    const albumBtnClasses = await albumBack.getAttribute("class");
+    expect(albumBtnClasses).toContain("btn");
+    expect(albumBtnClasses).toContain("btn-ghost");
+
+    // Credits page
+    await page.goto("/credits.html");
+    const creditsBack = page.getByRole("link", { name: "← Back to Home" });
+    await expect(creditsBack).toBeVisible();
+    await expect(creditsBack).toHaveAttribute("href", /index\.html$/);
+    const creditsBtnClasses = await creditsBack.getAttribute("class");
+    expect(creditsBtnClasses).toContain("btn");
+    expect(creditsBtnClasses).toContain("btn-ghost");
+  });
+
+  test("footer version badge and credits button are present on all three pages", async ({ page }) => {
+    const pages = [
+      "/index.html",
+      "/album.html?id=jean-michel-jarre-oxygene",
+      "/credits.html",
+    ];
+
+    for (const url of pages) {
+      await page.goto(url);
+      await expect(page.locator(".site-footer-version")).toBeVisible();
+      await expect(page.locator(".site-footer-version")).toHaveAttribute("href", "https://github.com/satyrlord/album-review");
+      await expect(page.locator(".site-footer-credits")).toBeVisible();
+      await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
+    }
+  });
+
+  test("All Albums footer action button is present on the album page", async ({ page }) => {
+    await page.goto("/album.html?id=jean-michel-jarre-oxygene");
+    const allAlbumsBtn = page.getByRole("link", { name: "All Albums" });
+    await expect(allAlbumsBtn).toBeVisible();
+    await expect(allAlbumsBtn).toHaveAttribute("href", /index\.html$/);
+    const classes = await allAlbumsBtn.getAttribute("class");
+    expect(classes).toContain("site-footer-btn");
   });
 
   test("album page renders the optional label row when present", async ({ page }) => {
@@ -465,7 +568,7 @@ test.describe("album index regressions", () => {
     await expect(page.locator(".page-state-title")).toHaveText("Invalid album ID.");
   });
 
-  test("album page renders minimal albums without optional media or meta fields", async ({ page }) => {
+  test("album page renders minimal albums with fallback cover and no optional meta fields", async ({ page }) => {
     await page.route("**/data/minimal-album.json", async (route) => {
       await route.fulfill({
         contentType: "application/json",
@@ -503,14 +606,57 @@ test.describe("album index regressions", () => {
     await page.goto("/album.html?id=minimal-album");
 
     await expect(page.getByRole("heading", { name: "Monolith" })).toBeVisible();
-    await expect(page.locator(".hero-layout.has-cover")).toHaveCount(0);
-    await expect(page.locator(".hero-cover")).toHaveCount(0);
+    await expect(page.locator(".hero-layout.has-cover")).toHaveCount(1);
+    await expect(page.locator(".hero-cover")).toHaveAttribute("src", /covers\/fallback-cd-case\.svg$/);
     await expect(page.locator(".hero-link")).toHaveCount(0);
     await expect(page.locator(".meta")).not.toContainText("Label:");
     await expect(page.locator(".meta")).not.toContainText("Producer:");
     await expect(page.locator(".meta")).not.toContainText("Genre:");
     await expect(page.locator(".event-desc strong")).toHaveCount(0);
     await expect(page.locator(".event-desc .detail")).toHaveCount(0);
+  });
+
+  test("album page falls back when a cover file cannot be loaded", async ({ page }) => {
+    await page.route("**/data/broken-cover-album.json", async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify({
+          id: "broken-cover-album",
+          artist: "Test Artist",
+          title: "Black Signal",
+          year: 2024,
+          label: "",
+          producer: "",
+          genre: "Ambient",
+          genreTags: ["Ambient"],
+          runtime: "2:34",
+          coverUrl: "covers/does-not-exist.png",
+          overview: "Fallback cover fixture.",
+          tracks: [
+            {
+              num: 1,
+              title: "Pulse",
+              duration: "2:34",
+              energy: "mid",
+              tags: [],
+              role: "Fixture.",
+              events: [
+                {
+                  timestamp: "0:00",
+                  section: "Intro",
+                  description: "Fixture event.",
+                },
+              ],
+            },
+          ],
+        }),
+      });
+    });
+
+    await page.goto("/album.html?id=broken-cover-album");
+
+    await expect(page.locator(".hero-layout.has-cover")).toHaveCount(1);
+    await expect(page.locator(".hero-cover")).toHaveAttribute("src", /covers\/fallback-cd-case\.svg$/);
   });
 
   test("album page renders a track timeline segment chart", async ({ page }) => {
@@ -609,7 +755,7 @@ test.describe("album index regressions", () => {
     await gotoIndex(page);
 
     await expect(page.locator("#ixCount")).toHaveText("1 / 1 album");
-    await expect(page.locator(".ix-card-genre")).toHaveCount(0);
+    await expect(page.locator(".ix-card-genre-tag")).toHaveCount(0);
     await expect(page.locator("body")).not.toContainText("TODO");
   });
 
@@ -622,6 +768,9 @@ test.describe("album index regressions", () => {
       "",
       [{ num: 1, title: "Voices", lengthMs: 422000 }],
     );
+
+    expect(scaffoldJson.genre).toBe("");
+    expect(scaffoldJson.genreTags).toEqual([]);
 
     await page.route("**/data/generated-scaffold.json", async (route) => {
       await route.fulfill({ contentType: "application/json", body: JSON.stringify(scaffoldJson) });
@@ -638,11 +787,126 @@ test.describe("album index regressions", () => {
     await expect(page.locator(".event-desc")).toContainText("Detailed timestamp notes pending.");
   });
 
+  test("generated scaffold JSON trims slash-delimited genre tags", () => {
+    const scaffoldJson = buildJson(
+      "genre-tag-fixture",
+      "Test Artist",
+      "Tagged Album",
+      2024,
+      " Electronic / Ambient / Berlin School ",
+      [{ num: 1, title: "Signal", lengthMs: 61000 }],
+    );
+
+    expect(scaffoldJson.genre).toBe("Electronic / Ambient / Berlin School");
+    expect(scaffoldJson.genreTags).toEqual(["Electronic", "Ambient", "Berlin School"]);
+  });
+
+  test("generated scaffold JSON keeps a single trimmed genre as one tag", () => {
+    const scaffoldJson = buildJson(
+      "single-genre-fixture",
+      "Test Artist",
+      "Single Genre Album",
+      2024,
+      " Ambient ",
+      [{ num: 1, title: "Pulse", lengthMs: 61000 }],
+    );
+
+    expect(scaffoldJson.genre).toBe("Ambient");
+    expect(scaffoldJson.genreTags).toEqual(["Ambient"]);
+  });
+
+  test("site cover helpers resolve blank sources and bind fallbacks safely", async ({ page }) => {
+    await gotoIndex(page);
+
+    const result = await page.evaluate(async () => {
+      const sitePath = "/src/site.ts";
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const site: any = await import(sitePath);
+      const {
+        FALLBACK_COVER_URL,
+        bindCoverFallbacks,
+        resolveCoverImageUrl,
+      } = site;
+
+      const container = document.createElement("div");
+      const broken = document.createElement("img");
+      const blankFallback = document.createElement("img");
+      const stale = document.createElement("img");
+      const alreadyFallback = document.createElement("img");
+
+      broken.dataset.coverFallback = "covers/custom-fallback.png";
+      broken.setAttribute("src", "covers/missing.png");
+
+      blankFallback.dataset.coverFallback = "   ";
+      blankFallback.setAttribute("src", "covers/missing-blank.png");
+
+      stale.dataset.coverFallback = "covers/stale-fallback.png";
+      stale.setAttribute("src", "covers/stale.png");
+      Object.defineProperty(stale, "complete", { configurable: true, get: () => true });
+      Object.defineProperty(stale, "naturalWidth", { configurable: true, get: () => 0 });
+
+      alreadyFallback.dataset.coverFallback = "covers/custom-fallback.png";
+      alreadyFallback.setAttribute("src", "covers/custom-fallback.png");
+
+      container.append(broken, blankFallback, stale, alreadyFallback);
+      document.body.appendChild(container);
+
+      bindCoverFallbacks(container);
+
+      broken.dispatchEvent(new Event("error"));
+      blankFallback.dispatchEvent(new Event("error"));
+      alreadyFallback.dispatchEvent(new Event("error"));
+
+      return {
+        resolved: {
+          missing: resolveCoverImageUrl(),
+          empty: resolveCoverImageUrl(""),
+          whitespace: resolveCoverImageUrl("   "),
+          valid: resolveCoverImageUrl("covers/test-cover.png"),
+        },
+        fallbackSrcs: {
+          broken: broken.getAttribute("src"),
+          blankFallback: blankFallback.getAttribute("src"),
+          stale: stale.getAttribute("src"),
+          alreadyFallback: alreadyFallback.getAttribute("src"),
+        },
+        fallbackClasses: {
+          broken: broken.classList.contains("is-fallback-cover"),
+          blankFallback: blankFallback.classList.contains("is-fallback-cover"),
+          stale: stale.classList.contains("is-fallback-cover"),
+          alreadyFallback: alreadyFallback.classList.contains("is-fallback-cover"),
+        },
+        defaultFallback: FALLBACK_COVER_URL,
+      };
+    });
+
+    expect(result.resolved).toEqual({
+      missing: "covers/fallback-cd-case.svg",
+      empty: "covers/fallback-cd-case.svg",
+      whitespace: "covers/fallback-cd-case.svg",
+      valid: "covers/test-cover.png",
+    });
+    expect(result.fallbackSrcs).toEqual({
+      broken: "covers/custom-fallback.png",
+      blankFallback: "covers/fallback-cd-case.svg",
+      stale: "covers/stale-fallback.png",
+      alreadyFallback: "covers/custom-fallback.png",
+    });
+    expect(result.fallbackClasses).toEqual({
+      broken: true,
+      blankFallback: true,
+      stale: true,
+      alreadyFallback: false,
+    });
+    expect(result.defaultFallback).toBe("covers/fallback-cd-case.svg");
+  });
+
   test("credits page renders all sections with nav and footer", async ({ page }) => {
     await page.goto("/credits.html");
 
     await expect(page.getByRole("heading", { name: /Credits/i })).toBeVisible();
-    await expectPrimaryNav(page);
+    await expect(page.locator(".site-nav")).toBeVisible();
+    await expect(page.locator(".site-nav a[href='index.html']")).toBeVisible();
 
     await expect(page.getByText("Musical Sources")).toBeVisible();
     await expect(page.getByText("Cover Art")).toBeVisible();
@@ -654,6 +918,13 @@ test.describe("album index regressions", () => {
     await expect(page.locator(".credits-link").first()).toHaveAttribute("target", "_blank");
     await expect(page.locator(".credits-link").first()).toHaveAttribute("rel", "noopener noreferrer");
     await expect(page.locator(".site-footer")).toContainText("Credits & Sources");
+  });
+
+  test("credits page Back to Home link picks a random background and navigates", async ({ page }) => {
+    await page.goto("/credits.html");
+    await page.getByRole("link", { name: "← Back to Home" }).click();
+    await expect(page).toHaveURL(/\/index\.html$/);
+    await expect(page.getByRole("heading", { name: "ALBANA" })).toBeVisible();
   });
 
   test("credits page exits cleanly when the mount root is missing", async ({ page }) => {
@@ -669,5 +940,46 @@ test.describe("album index regressions", () => {
 
     await expect(page.locator("#creditsRoot")).toHaveCount(1);
     await expect(page.locator(".credits-section")).toHaveCount(0);
+  });
+
+  test("every album JSON has a youtubeUrl", async ({ page }) => {
+    const index = await readAlbumIndex(page);
+    for (const entry of index) {
+      const album = await readAlbumData(page, entry.id);
+      expect(album.youtubeUrl, `${entry.id} is missing youtubeUrl`).toBeTruthy();
+      expect(album.youtubeUrl, `${entry.id} youtubeUrl is not a valid URL`).toMatch(
+        /^https:\/\/(www\.youtube\.com|youtu\.be)\//,
+      );
+    }
+  });
+
+  test("every album JSON has spotifyUrl or audioStreamUrl", async ({ page }) => {
+    const index = await readAlbumIndex(page);
+    const exceptions = ["matt-uelmen-diablo-hellfire", "vangelis-cosmos"];
+    for (const entry of index) {
+      if (exceptions.includes(entry.id)) continue;
+      const album = await readAlbumData(page, entry.id);
+      const hasAudio = Boolean(album.spotifyUrl) || Boolean(album.audioStreamUrl);
+      expect(hasAudio, `${entry.id} is missing both spotifyUrl and audioStreamUrl`).toBe(true);
+    }
+  });
+
+  test("audioStreamUrl albums show alternative streaming button instead of Spotify", async ({ page }) => {
+    await page.goto("/album.html?id=klaus-schulze-irrlicht");
+
+    await expect(page.getByRole("link", { name: "Listen on Spotify" })).toHaveCount(0);
+    const audioBtn = page.getByRole("link", { name: "Listen on Apple Music" });
+    await expect(audioBtn).toBeVisible();
+    await expect(audioBtn).toHaveAttribute("target", "_blank");
+    await expect(audioBtn).toHaveAttribute("rel", "noopener noreferrer");
+  });
+
+  test("Deezer audioStreamUrl resolves to Listen on Deezer label", async ({ page }) => {
+    await page.goto("/album.html?id=klaus-schulze-mirage");
+
+    await expect(page.getByRole("link", { name: "Listen on Spotify" })).toHaveCount(0);
+    const deezerBtn = page.getByRole("link", { name: "Listen on Deezer" });
+    await expect(deezerBtn).toBeVisible();
+    await expect(deezerBtn).toHaveAttribute("href", "https://www.deezer.com/album/53122162");
   });
 });

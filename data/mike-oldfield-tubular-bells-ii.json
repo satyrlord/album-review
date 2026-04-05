@@ -6,10 +6,15 @@
   "label": "WEA Records",
   "producer": "Trevor Horn · Tom Newman · Mike Oldfield",
   "genre": "New Age / Progressive",
+  "genreTags": [
+    "New Age",
+    "Progressive",
+    "Electronic"
+  ],
   "runtime": "58:34",
-  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/Mike_oldfield_tubular_bells_2_album_cover.jpg",
+  "coverUrl": "covers/mike-oldfield-tubular-bells-ii.jpg",
   "spotifyUrl": "https://open.spotify.com/album/0Z9Uio2xZCDztGCuozTPaH",
-  "youtubeUrl": "https://music.youtube.com/playlist?list=OLAK5uy_nIpP0efsbYEjTYuFbbykI_vEYNhttWTvE",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=OLAK5uy_nIpP0efsbYEjTYuFbbykI_vEYNhttWTvE",
   "overview": "Tubular Bells II arrived 19 years after the original — a deliberate sequel that honours its predecessor's architecture while applying high-budget 1990s production (Trevor Horn, the most technically perfectionist producer of the era). The album's 14 tracks abandon the original's continuous-suite format in favour of shorter, individually titled pieces, each named after or referencing Arthur C. Clarke short stories and concepts. Alan Rickman performs the Master of Ceremonies role in homage to Vivian Stanshall. The album reached UK #1 and sold 2 million copies — a reunion between Oldfield and the record-buying public that his experimental 1980s output never achieved.\n\nTrack titles reference Arthur C. Clarke stories: \"Sentinel\" (precursor to 2001: A Space Odyssey), \"Sunjammer\" (solar sail story), among others. Timestamps approximate to ±5 seconds.",
   "tracks": [
     {

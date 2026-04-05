@@ -43,6 +43,16 @@ export function getDisplayGenre(genre: string): string {
   return value && !COMMENT_ONLY.test(value) ? value : "";
 }
 
+export function getGenreTags(genre: string): string[] {
+  const value = getDisplayGenre(genre);
+  if (!value) return [];
+
+  return value
+    .split("/")
+    .map(tag => tag.trim())
+    .filter(Boolean);
+}
+
 /**
  * Build a scaffold album JSON document from imported metadata.
  * Empty or whitespace-only cover URLs are treated as missing and omitted.
@@ -59,6 +69,7 @@ export function buildJson(
   const totalMs   = tracks.reduce((sum, t) => sum + t.lengthMs, 0);
   const totalDur  = totalMs ? msToMmss(totalMs) : '?:??';
   const cleanCoverUrl = coverUrl?.trim() ?? '';
+  const displayGenre = getDisplayGenre(genre);
 
   const albumTracks: AlbumTrack[] = tracks.map(t => ({
     num:      t.num,
@@ -81,7 +92,8 @@ export function buildJson(
     year,
     label:    '',
     producer: '',
-    genre:    getDisplayGenre(genre),
+    genre:    displayGenre,
+    genreTags: getGenreTags(genre),
     runtime:  totalDur,
     ...(cleanCoverUrl ? { coverUrl: cleanCoverUrl } : {}),
     overview: 'Initial scaffold generated from MusicBrainz metadata. Detailed structural analysis pending.\n\nTimestamps are approximate to ±3 seconds. BPM values are estimated from listen analysis.',

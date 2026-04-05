@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "add-album": "tsx scripts/add-album.ts",
+    "cache-covers": "tsx scripts/cache-cover-art.ts",
     "build": "tsx scripts/build.ts",
     "serve": "vite",
     "preview": "vite preview",
