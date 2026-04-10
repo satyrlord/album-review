@@ -176,6 +176,28 @@ test.describe("album index regressions", () => {
     await expect(covers.first()).toHaveAttribute("alt", /Album cover for/);
   });
 
+  test("centers the cover focal point for albums that need it", async ({ page }) => {
+    const centeredAlbums: Array<{ id: string; expectedPosition: string }> = [
+      { id: "matt-uelmen-diablo-hellfire",   expectedPosition: "50% 50%" },
+      { id: "gustav-holst-the-planets",      expectedPosition: "50% 38%" },
+    ];
+
+    await gotoIndex(page);
+
+    for (const { id, expectedPosition } of centeredAlbums) {
+      const cardCover = page.locator(`.ix-card-cover[data-album-id="${id}"]`);
+      await expect(cardCover).toBeVisible();
+      expect(await cardCover.evaluate((el) => getComputedStyle(el).objectPosition)).toBe(expectedPosition);
+    }
+
+    for (const { id, expectedPosition } of centeredAlbums) {
+      await page.goto(`/album.html?id=${id}`);
+      const heroCover = page.locator(`.hero-cover[data-album-id="${id}"]`);
+      await expect(heroCover).toBeVisible();
+      expect(await heroCover.evaluate((el) => getComputedStyle(el).objectPosition)).toBe(expectedPosition);
+    }
+  });
+
   test("matches accent-insensitive album title searches", async ({ page }) => {
     const indexedAlbums = await readAlbumIndex(page);
     await gotoIndex(page);

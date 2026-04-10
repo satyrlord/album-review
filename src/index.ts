@@ -58,6 +58,7 @@ interface CollectionDom {
       `<figure class="ix-card-media relative aspect-square border-b border-base-300/70 bg-base-100/60">` +
         `<img class="ix-card-cover transition duration-500 group-hover:scale-[1.04]" ` +
           `src="${escapeHtml(coverSrc)}" ` +
+          `data-album-id="${escapeHtml(album.id)}" ` +
           `data-cover-fallback="${escapeHtml(FALLBACK_COVER_URL)}" ` +
           `alt="Album cover for ${escapeHtml(album.artist)} - ${escapeHtml(album.title)}" ` +
           `loading="lazy" decoding="async" referrerpolicy="no-referrer">` +

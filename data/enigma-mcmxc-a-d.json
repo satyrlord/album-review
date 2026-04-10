@@ -1,0 +1,363 @@
+{
+  "id": "enigma-mcmxc-a-d",
+  "artist": "Enigma",
+  "title": "MCMXC a.D.",
+  "year": 1990,
+  "label": "Virgin · Charisma",
+  "producer": "Michael Cretu",
+  "genre": "New-Age / Worldbeat / Dance",
+  "genreTags": [
+    "New-Age",
+    "Worldbeat",
+    "Dance"
+  ],
+  "runtime": "40:16",
+  "coverUrl": "covers/enigma-mcmxc-a-d.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/2PkstTUo2zJbgatbT2JkTU",
+  "youtubeUrl": "https://youtu.be/_4tJ2iQPkY4",
+  "overview": "Recorded over eight months in 1990 at Michael Cretu's private A.R.T. Studios on Ibiza. Cretu conceived the album as one continuous 40-minute piece, layering sampled Gregorian chant from Capella Antiqua München over hip-hop beats, ambient synthesiser textures, and dance rhythms — a production methodology built on sampling and sequencing rather than live performance. The two extended suites (\"Principles of Lust\" at 11:43 and \"Back to the Rivers of Belief\" at 10:32) anchor the album's arc, with three shorter tracks and two interludes serving as connective tissue. MCMXC a.D. sold over 12 million copies worldwide by 1994, topped the UK Albums Chart, reached US No. 6 on the Billboard 200 where it spent 262 weeks, and was certified quadruple platinum by the RIAA.\n\nTimestamps are approximate to ±5 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Voice of Enigma",
+      "duration": "2:21",
+      "energy": "low",
+      "tags": [
+        "Spoken Word",
+        "Ambient Soundscape",
+        "Album Prologue"
+      ],
+      "role": "Album role: The portal — a spoken-word invocation over environmental soundscape that establishes the album's meditative register before any rhythm appears.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Enigma horn",
+          "description": "Foghorn-like synthesiser tone announces the album — the signature 'Enigma horn' that became the project's sonic logo.",
+          "detail": "A single sustained tone processed to evoke a ship's foghorn. Immediately signals departure from conventional pop territory."
+        },
+        {
+          "timestamp": "0:08",
+          "section": "Spoken word",
+          "description": "Louisa Stanley (Virgin Records executive) invites the listener to 'relax and take a deep breath' over environmental textures.",
+          "detail": "Uncredited on the original release. The spoken invitation functions as a ritual framing device, positioning the album as a guided experience."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Ambient expansion",
+          "description": "Water, nature, and synthetic pad textures layer beneath the spoken vocal, establishing the album's atmospheric vocabulary."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Pad deepening",
+          "description": "Synthesiser pads widen the stereo field and deepen the harmonic bed."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Crossfade",
+          "description": "Soundscape begins dissolving toward silence, preparing the seamless transition into 'Principles of Lust'."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Principles of Lust",
+      "duration": "11:43",
+      "energy": "high",
+      "tags": [
+        "Gregorian Chant Sample",
+        "Lead Single",
+        "Three-Part Suite",
+        "Soul II Soul Beat"
+      ],
+      "role": "Album role: The album's centrepiece and commercial engine — an 11-minute three-part suite containing 'Sadeness', 'Find Love', and 'Sadeness (Reprise)' that established the Enigma sound through collision of sacred chant with secular dance rhythm.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric fade-in with whispered vocals and sparse electronic textures.",
+          "detail": "The opening seconds set up the rhythmic anticipation before the beat materialises."
+        },
+        {
+          "timestamp": "0:22",
+          "section": "Beat entry",
+          "description": "Hip-hop-influenced drum pattern enters — groove closely modelled on Soul II Soul's 'Keep On Movin'' (1989).",
+          "detail": "The crisp, shuffled breakbeat became the rhythmic signature of early Enigma. Compressed and looped with minimal variation."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Gregorian chant",
+          "description": "Sampled Capella Antiqua München vocal — taken from 'Procedamus in Pace' — enters over the beat.",
+          "detail": "The sample that triggered a lawsuit from Polydor Germany for infringement of 'right of personality'. Settled out of court with compensation."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Whispered verse",
+          "description": "Cretu's whispered vocal referencing the Marquis de Sade layers over the chant-and-beat foundation.",
+          "detail": "The juxtaposition of sacred choral music with references to sexual violence and domination — Cretu's central paradox."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Transition to Find Love",
+          "description": "'Sadeness' dissolves — rhythm shifts and new melodic content emerges as 'Find Love' begins.",
+          "detail": "The suite's internal transitions are seamless, reinforcing Cretu's continuous-album concept."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Find Love",
+          "description": "Flute-like synth lines and breathy vocal textures take over — more uptempo, danceable feel.",
+          "detail": "Orgasmic breathing and whispered breaks mark the transitions. The rhythmic energy stays constant while timbral palette shifts."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Sadeness (Reprise)",
+          "description": "Gregorian chant samples return with heavier beat emphasis — the suite circles back to its opening material.",
+          "detail": "Structural callback that bookends the three-part arc. The chant-beat collision hits harder the second time through familiarity."
+        },
+        {
+          "timestamp": "10:30",
+          "section": "Final build",
+          "description": "Rhythmic elements intensify in a final push before the suite's resolution."
+        },
+        {
+          "timestamp": "11:15",
+          "section": "Outro",
+          "description": "Elements strip away, leaving reverb tails and atmospheric remnants."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Callas Went Away",
+      "duration": "4:27",
+      "energy": "low",
+      "tags": [
+        "Maria Callas Sample",
+        "Ambient",
+        "Vocal Tribute"
+      ],
+      "role": "Album role: The album's reflective interlude — a homage to Maria Callas that introduces acoustic space and emotional cooldown after the dense 11-minute suite.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse ambient texture opens — wide stereo field with minimal harmonic content."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Callas sample",
+          "description": "Sampled Maria Callas vocal fragment emerges — operatic register contrasting sharply with the preceding electronic textures.",
+          "detail": "Cretu treats the Callas sample as a found-sound object rather than a musical quotation — pitch-shifted and reverb-processed."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Pad build",
+          "description": "Synthesiser pads expand beneath the vocal sample, thickening the harmonic bed."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Emotional peak",
+          "description": "Layered Callas fragments reach the track's highest emotional density."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Gradual fade — the tribute dissolves back into ambient space."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Mea Culpa",
+      "duration": "5:03",
+      "energy": "mid",
+      "tags": [
+        "Gregorian Chant",
+        "Second Single",
+        "Dance Rhythm",
+        "Sandra Cretu Vocal"
+      ],
+      "role": "Album role: Thematic follow-up to 'Sadeness' — maintains the chant-over-beat formula but centres on guilt rather than desire. Released as the second single, charting at Germany No. 7.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric opening with whispered textural elements and ambient bed."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Beat entry",
+          "description": "Dance rhythm locks in — more measured and restrained than the 'Sadeness' groove.",
+          "detail": "The beat sits further back in the mix, allowing the harmonic content more space."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Chant layer",
+          "description": "Gregorian chant sample (Capella Antiqua München) emerges — evoking the same sacred atmosphere as 'Sadeness' without duplicating it.",
+          "detail": "Cretu considers 'Mea Culpa' his favourite track from the album."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Vocal entry",
+          "description": "Sandra Cretu's uncredited vocal contribution weaves through the arrangement — breathy, layered, partially buried in the mix.",
+          "detail": "Sandra's presence on the album was not acknowledged in the original credits."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Build",
+          "description": "Rhythmic intensity increases — additional percussion and synth layers push toward the track's climactic passage."
+        },
+        {
+          "timestamp": "4:40",
+          "section": "Outro",
+          "description": "Elements dissolve progressively into reverb, clearing space for the interlude that follows."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "The Voice & the Snake",
+      "duration": "1:39",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Aphrodite's Child 666 Sample",
+        "Book of Revelation"
+      ],
+      "role": "Album role: A brief spoken-word interlude functioning as a narrative hinge — sampling Aphrodite's Child's 666, it marks the transition from the album's secular middle section toward the spiritual resolution of the finale.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Dark ambient texture — low-frequency drone and processed reverb establish an ominous register."
+        },
+        {
+          "timestamp": "0:15",
+          "section": "666 sample",
+          "description": "Sample from Aphrodite's Child 'The Seven Bowls' (from the 1972 album 666) enters — voice and eerie atmosphere rooted in the Book of Revelation.",
+          "detail": "Cretu and Frank Peterson co-wrote this interlude. The prog-rock source material adds an unexpected genealogy to the new-age surface."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Tension build",
+          "description": "Layered samples and effects processing increase the atmospheric pressure."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Fade",
+          "description": "Passage dissolves into silence — clearing the path for 'Knocking on Forbidden Doors'."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Knocking on Forbidden Doors",
+      "duration": "4:31",
+      "energy": "mid",
+      "tags": [
+        "Electronic",
+        "Percussive",
+        "Mid-Tempo Groove"
+      ],
+      "role": "Album role: The album's most purely electronic track — rhythm-driven without chant or vocal samples, functioning as a palette cleanser before the 10-minute finale suite.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Percussive electronic elements build from silence — ticking, metallic textures."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Beat lock",
+          "description": "Full drum pattern establishes a mid-tempo groove — harder and more mechanical than the beats on 'Sadeness' or 'Mea Culpa'."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Synth melody",
+          "description": "Processed synthesiser line enters over the rhythm — a single repeated motif that anchors the track's identity."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Breakdown",
+          "description": "Brief stripped-back section — drums drop to a skeletal pattern, leaving only the synth line and ambience."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Rebuild",
+          "description": "Full arrangement returns with additional percussive layering — density exceeds the first section."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Outro",
+          "description": "Rhythm fragments and fades, preparing the segue into the final suite."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Back to the Rivers of Belief",
+      "duration": "10:32",
+      "energy": "mid",
+      "tags": [
+        "Three-Part Suite",
+        "Album Finale",
+        "Ganges Reference",
+        "Spiritual Resolution"
+      ],
+      "role": "Album role: The closing suite and spiritual resolution — three movements ('Way to Eternity', 'Hallelujah', 'The Rivers of Belief') chart a journey from eternity through devotion to the sacred Ganges, completing the narrative arc begun in the opening prologue.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Way to Eternity intro",
+          "description": "Spare ambient opening — slow, contemplative, with wide reverb space and minimal harmonic movement."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Atmospheric build",
+          "description": "Synthesiser pads and subtle percussive elements accumulate — the movement gains mass without accelerating."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Transition to Hallelujah",
+          "description": "'Way to Eternity' dissolves — new choral textures signal the second movement's arrival."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Hallelujah",
+          "description": "Devotional choral textures enter — brighter, more consonant than the Gregorian samples used earlier on the album.",
+          "detail": "The shift from minor-key ambiguity to open harmonics mirrors the spiritual progression the album narrates."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Rhythmic entry",
+          "description": "Subtle beat anchors the choral passage — gentle pulse rather than full dance groove."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Transition to Rivers of Belief",
+          "description": "'Hallelujah' fades as the final movement begins — more soulful, more emotionally direct."
+        },
+        {
+          "timestamp": "6:15",
+          "section": "The Rivers of Belief",
+          "description": "The suite's most melodically exposed passage — Fabrice Cuitad's lyrical contribution references the Ganges, distinguishing this movement from the album's European-sacred register.",
+          "detail": "The final movement was released as the album's fourth single, charting at UK No. 68."
+        },
+        {
+          "timestamp": "7:45",
+          "section": "Emotional peak",
+          "description": "Layered synthesiser and vocal textures reach maximum density — the album's spiritual climax."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Deconstruction",
+          "description": "Elements begin stripping away — the reverse of the album's opening build."
+        },
+        {
+          "timestamp": "10:10",
+          "section": "Outro",
+          "description": "Album resolves into silence — the journey from foghorn to final fade completes a single continuous arc."
+        }
+      ]
+    }
+  ]
+}

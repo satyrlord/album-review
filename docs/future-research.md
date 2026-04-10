@@ -8,7 +8,6 @@ A research shortlist for new album analyses, ordered by similarity to reviewed a
 
 | # | Artist | Album | Year | Genre | Sources | In App |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Tangerine Dream | Phaedra | 1974 | Berlin School / Ambient | A#22, R#12, Re, Ac | ✅ |
 | 2 | Cluster & Brian Eno | Cluster & Eno | 1977 | Krautrock / Ambient | D, Re |  |
 | 3 | Brian Eno | Music for Films | 1978 | Ambient / Soundtrack | A#11 |  |
 | 4 | Mike Oldfield | Ommadawn | 1975 | Progressive / Ambient | — |  |
@@ -26,7 +25,6 @@ A research shortlist for new album analyses, ordered by similarity to reviewed a
 | 16 | Brian Eno | Foreverandevernomore | 2022 | Ambient | R#55 |  |
 | 17 | Brian Eno | Lux | 2012 | Ambient | Re |  |
 | 18 | Brian Eno | The Ship | — | Ambient | Ac |  |
-| 19 | Vangelis | Chariots of Fire | 1981 | Electronic / Soundtrack | — |  |
 | 20 | Global Communication | Pentamerous Metamorphosis | 1998 | Ambient Techno | R#17 |  |
 | 21 | Brian Eno | Another Green World | 1975 | Electronic / Art Rock | A#8, R#33, Re |  |
 | 22 | Jean-Michel Jarre | Zoolook | 1984 | Electronic / Experimental | — |  |

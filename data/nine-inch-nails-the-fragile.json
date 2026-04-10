@@ -1,0 +1,1102 @@
+{
+  "id": "nine-inch-nails-the-fragile",
+  "artist": "Nine Inch Nails",
+  "title": "The Fragile",
+  "year": 1999,
+  "label": "Nothing · Interscope",
+  "producer": "Trent Reznor · Alan Moulder",
+  "genre": "Industrial Rock / Art Rock",
+  "genreTags": [
+    "Industrial Rock",
+    "Art Rock",
+    "Alternative Rock"
+  ],
+  "runtime": "1:43:39",
+  "coverUrl": "covers/nine-inch-nails-the-fragile.png",
+  "spotifyUrl": "https://open.spotify.com/album/4uiVwLbTzE6VMkXpaDAwB8",
+  "youtubeUrl": "https://youtu.be/NloXeC9IK_8",
+  "overview": "Recorded January 1997 – July 1999 at Nothing Studios in New Orleans — a two-and-a-half-year production that Reznor later described as shaped by fear, addiction, and creative paralysis following the death of his grandmother Clara Clark. Co-produced with Alan Moulder and assembled on a Clavia Nord Lead 2, Waldorf Pulse and Microwave, Minimoog, Oberheim Xpander, Novation Bass Station, Sequential Circuits Prophet-VS, and Access Virus, with Steve Albini engineering supplemental drum recording and Dr. Dre contributing additional production on 'Even Deeper'. The 23-track double album — released as Left (12 tracks, 54:51) and Right (11 tracks, 48:48) — functions as a sequel to The Downward Spiral (1994), beginning from the endpoint of its predecessor's narrative and attempting to rebuild order from chaos without ever reaching that goal. The Fragile debuted at US Billboard 200 No. 1 (229,000 first-week copies) but fell to No. 16 the following week — the largest single-week drop from the top position at that time — and was certified double platinum by the RIAA; Pitchfork revised its original 2.0/10 score to 8.7/10 in 2017, calling it Reznor's 'magnum opus'.\n\nTimestamps are approximate to ±5 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Somewhat Damaged",
+      "duration": "4:31",
+      "energy": "high",
+      "tags": [
+        "Album Opener",
+        "Danny Lohner Guitar",
+        "Escalating Structure",
+        "Left Disc"
+      ],
+      "role": "Album role: The fractured re-entry — the album begins 'somewhat damaged', picking up from the endpoint of The Downward Spiral and establishing the pattern of incremental accumulation that defines the record's architecture.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse, looped percussive texture and a single clean guitar note repeat — a tentative pulse emerging from silence.",
+          "detail": "Co-written with Danny Lohner, who contributes guitar. The repetitive opening figure establishes the album's foundational sonic vocabulary: loops, textures, and incremental layering."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "First layer",
+          "description": "Additional guitar and bass textures enter — the arrangement building in slow, deliberate increments over the looped foundation."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — restrained, almost whispered, describing damage and disintegration."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Build",
+          "description": "Distortion layers accumulate — the arrangement gaining volume and density with each repetition of the loop."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Peak",
+          "description": "Full aggressive assault — all elements converging at maximum intensity, the controlled build releasing into distorted catharsis."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Elements fragment and recede — the aggression subsiding into the spacious opening of 'The Day the World Went Away'."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "The Day the World Went Away",
+      "duration": "4:33",
+      "energy": "mid",
+      "tags": [
+        "First Single",
+        "Buddha Debutante Choir",
+        "Atmospheric Build",
+        "Grandmother Tribute"
+      ],
+      "role": "Album role: The first single and the album's emotional thesis statement — a meditation on loss and disconnection featuring the Buddha Debutante Choir, dedicated to Reznor's grandmother Clara Clark.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Clean, open guitar chord rings out into reverberant space — a sudden shift from the preceding track's claustrophobia.",
+          "detail": "Released as the first single on 20 July 1999, two months before the album. The Buddha Debutante Choir — seven New Orleans vocalists — provides backing vocals."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Verse",
+          "description": "Reznor's vocal enters over the sustained guitar — soft, measured, each word carrying weight."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Choir entry",
+          "description": "The Buddha Debutante Choir emerges beneath the guitar — wordless vocal harmonies widening the sonic field."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Build",
+          "description": "Distorted bass and percussion layers enter — the arrangement gradually darkening as the choir and guitar coexist."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Climax",
+          "description": "Full arrangement peaks — distorted instruments, choir, and Reznor's vocal converging at the track's emotional summit."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Elements dissolve into feedback and noise — decaying into the piano passage that opens 'The Frail'."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "The Frail",
+      "duration": "1:54",
+      "energy": "low",
+      "tags": [
+        "Piano Instrumental",
+        "Interlude",
+        "Title Motif"
+      ],
+      "role": "Album role: The first of the album's instrumental interludes — a solo piano piece that introduces the melodic motif referenced in the title track 'The Fragile', functioning as a breath between the atmospheric weight of the surrounding tracks.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Piano entry",
+          "description": "Solo piano — a simple, descending melody played with deliberate restraint, unadorned and exposed.",
+          "detail": "The melodic figure introduced here recurs in modified form in the title track 'The Fragile'. The piano's isolation after the preceding track's noise creates the album's starkest dynamic contrast."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Development",
+          "description": "The melody repeats with slight harmonic variation — subtle textural additions at the edges of the piano's frequency range."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Fade",
+          "description": "Piano recedes — the melody's final statement dissolving into silence before 'The Wretched' enters."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "The Wretched",
+      "duration": "5:25",
+      "energy": "high",
+      "tags": [
+        "Driving Rhythm",
+        "Self-Reckoning",
+        "Chuck Palahniuk Cited"
+      ],
+      "role": "Album role: The album's first sustained aggressive statement — an active, hostile reckoning that Chuck Palahniuk singled out as 'not rock 'n' roll and not classical, something in between'.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Processed electronic pulse and bass synth establish a driving, mechanical groove."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Beat lock",
+          "description": "Full drum pattern engages — a propulsive, mid-tempo beat layered with distorted textures."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — rhythmically delivered, cataloguing failures and self-disgust with clinical detachment.",
+          "detail": "Fight Club author Chuck Palahniuk cited the track as exemplifying 'an active, aggressive, angry lack of caring' — not passive despair but confrontational nihilism."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Chorus",
+          "description": "Melodic chorus emerges — the hook arriving with additional guitar distortion and harmonic widening."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Bridge",
+          "description": "Textural passage — processed noise and filtered vocals before the final section."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Final chorus",
+          "description": "Full-intensity reprise — all elements at maximum density."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Arrangement fragments — residual distortion clearing for the anthemic arrival of 'We're in This Together'."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "We're in This Together",
+      "duration": "7:16",
+      "energy": "peak",
+      "tags": [
+        "Second Single",
+        "Jerome Dillon Drums",
+        "Anthem",
+        "Left Disc Climax"
+      ],
+      "role": "Album role: The left disc's climactic peak and second single — seven minutes of escalating anthemic intensity featuring Jerome Dillon's chorus drums, the album's most direct statement of connection and defiance.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Processed guitar riff and electronic textures build from nothing — a slow ignition.",
+          "detail": "Released as the second single on 27 September 1999. Jerome Dillon performs chorus drums — his first recorded contribution with the band after replacing Chris Vrenna."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Beat entry",
+          "description": "Full drum pattern and bass engage — the groove establishing a driving, mid-tempo pulse."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Verse",
+          "description": "Reznor's vocal enters with restrained intensity — the lyrics addressing a second person directly, a rare moment of outward connection."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Chorus",
+          "description": "'We're in this together now' — the album's most anthemic hook, delivered with full-band intensity and Dillon's chorus drums."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Second verse",
+          "description": "Vocal and arrangement rebuild — additional guitar layers and harmonic complexity."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Bridge",
+          "description": "Textural shift — processed noise and filtered elements create a disorienting passage before the final build."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Final build",
+          "description": "Progressive accumulation toward the track's climactic summit — drums, guitar, bass, and vocals converging."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Outro",
+          "description": "Extended decay — the anthem dissolving into residual texture, yielding to the title track's fragility."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "The Fragile",
+      "duration": "4:35",
+      "energy": "mid",
+      "tags": [
+        "Title Track",
+        "The Frail Motif",
+        "Vulnerable Dynamic",
+        "Structural Centre"
+      ],
+      "role": "Album role: The title track and emotional pivot of the left disc — a restrained, vulnerable song that develops the piano motif introduced in 'The Frail', marking the transition from the disc's anthemic first half to its ambient second half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Electronic textures and filtered guitar — an atmospheric bed establishing the track's restrained palette.",
+          "detail": "The piano motif from 'The Frail' recurs here in modified form, now integrated into a full vocal arrangement — binding the left disc's instrumental interlude to its title statement."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — soft, fragile, the quietest sustained vocal passage in the album's first half."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Chorus",
+          "description": "Melodic chorus with subdued dynamic — the arrangement expanding slightly without breaking its restrained surface."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Build",
+          "description": "Additional layers emerge — processed guitar and synthesiser textures thickening the arrangement gradually."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Climax",
+          "description": "The track's modest peak — a brief intensification before pulling back to its vulnerable baseline."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Outro",
+          "description": "Elements diminish — the title track dissolving into the cinematic energy of 'Just Like You Imagined'."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Just Like You Imagined",
+      "duration": "3:49",
+      "energy": "high",
+      "tags": [
+        "Instrumental",
+        "Adrian Belew Guitar",
+        "Mike Garson Piano",
+        "Cinematic Build"
+      ],
+      "role": "Album role: The left disc's instrumental centrepiece — a cinematic build featuring Adrian Belew's guitar and Mike Garson's piano, later used in the trailer for 300 (2007), demonstrating the album's capacity for wordless emotional architecture.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Piano intro",
+          "description": "Mike Garson's piano establishes a repeating harmonic figure — clean, rhythmic, providing the structural foundation.",
+          "detail": "Garson — known for his work with David Bowie — contributes piano. Adrian Belew provides guitar. Danny Lohner adds additional guitar layers. The track was used in the trailer for Zack Snyder's 300 (2007)."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Guitar entry",
+          "description": "Belew's guitar enters over Garson's piano — a melodic line building intensity against the rhythmic base."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Full arrangement",
+          "description": "Drums, bass, and additional guitar layers engage — the track escalating from chamber intimacy to full-band power."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Peak",
+          "description": "Maximum intensity — all instrumental elements converging in the track's cinematic climax."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Deconstruction",
+          "description": "Elements strip back — the peak subsiding through layered reduction."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Outro",
+          "description": "Final piano and guitar residue — dissolving into the groove of 'Even Deeper'."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Even Deeper",
+      "duration": "5:47",
+      "energy": "mid",
+      "tags": [
+        "Dr. Dre Production",
+        "Danny Lohner Synths",
+        "Choir",
+        "Groove-Based"
+      ],
+      "role": "Album role: The album's most unlikely production credit — a groove-based track with additional production from Dr. Dre and a ten-member choir, combining hip-hop-influenced rhythmic sensibility with industrial textures.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Electronic pulse and filtered textures establish a hypnotic, groove-oriented foundation.",
+          "detail": "Co-written with Danny Lohner, who contributes drum programming and synthesisers. Dr. Dre is credited with additional production and mixing assistance — one of the most surprising collaborations in the NIN catalogue."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Beat entry",
+          "description": "Full rhythmic pattern locks in — a measured, mid-tempo groove with hip-hop-inflected drum programming."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — a controlled, melodic delivery riding the groove."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Choir",
+          "description": "A ten-member choir enters — adding harmonic depth and textural warmth to the electronic arrangement.",
+          "detail": "The choir includes Di Coleman, Tracy Hardin, Gary L. Neal, Traci Nelson, and six additional vocalists."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Build",
+          "description": "Arrangement density increases — synthesiser layers and processed guitar accumulating over the groove."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Climax",
+          "description": "Track reaches its peak — choir, beat, and vocal converging."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Outro",
+          "description": "Elements dissolve — the groove fading into the processional opening of 'Pilgrimage'."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Pilgrimage",
+      "duration": "3:31",
+      "energy": "mid",
+      "tags": [
+        "Instrumental",
+        "Trumpet",
+        "Marching Percussion",
+        "Buddha Boys Choir"
+      ],
+      "role": "Album role: The processional centrepiece — an instrumental march built on Cherry Holly's trumpet, Steve Duda's marching percussion, and the Buddha Boys Choir, evoking a ritualistic procession toward the album's darker second half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Marching percussion establishes a processional rhythm — steady, ritualistic, military-influenced.",
+          "detail": "Steve Duda contributes marching percussion and programming. Cherry Holly performs trumpet. The Buddha Boys Choir — including Clint Mansell (formerly of Pop Will Eat Itself) — provides backing vocals."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Trumpet entry",
+          "description": "Holly's trumpet enters — a melodic, plaintive line riding the marching rhythm."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Choir entry",
+          "description": "The Buddha Boys Choir joins — wordless male voices adding processional weight."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Full arrangement",
+          "description": "All elements converge — trumpet, choir, marching percussion, and synthesiser textures at full density."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Climax",
+          "description": "The march reaches its peak — maximum layering before the track begins to thin."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Outro",
+          "description": "Elements recede — the procession dissolving into the aggression of 'No, You Don't'."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "No, You Don't",
+      "duration": "3:35",
+      "energy": "high",
+      "tags": [
+        "Aggressive",
+        "Confrontational",
+        "Short Form"
+      ],
+      "role": "Album role: The left disc's aggressive counter-statement — a sharp, confrontational track that disrupts the instrumental passages preceding it, reasserting the album's capacity for direct hostility.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Distorted guitar and electronic noise slam in — an abrupt tonal shift from the preceding processional."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — aggressive, spat, confrontational delivery over the distorted bed."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Chorus",
+          "description": "Full-intensity hook — the arrangement reaching its first peak of distorted aggression."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Bridge",
+          "description": "Brief textural shift — processed noise and filtered elements before the final assault."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Final section",
+          "description": "Full-band reprise — the track's final aggressive passage."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Outro",
+          "description": "Abrupt decay — the aggression clearing for the ambient arrival of 'La Mer'."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "La Mer",
+      "duration": "4:37",
+      "energy": "low",
+      "tags": [
+        "French Vocals",
+        "Bill Rieflin Drums",
+        "Cello",
+        "Ambient Centrepiece"
+      ],
+      "role": "Album role: The left disc's emotional nadir — an ambient piece featuring Denise Milfort's French-language vocals, Bill Rieflin's drums, and a cello, written during Reznor's isolated period in a house on the ocean where he later said he was 'trying to kill myself'.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ambient intro",
+          "description": "Oceanic textures and synthesiser pads build from silence — a wash of aquatic, submerged sound.",
+          "detail": "Reznor described writing the song alone in a house on the ocean. At a 2009 performance, he said: 'What I was really doing was trying to kill myself.' Bill Rieflin performs drums. Willie contributes cello."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Vocal entry",
+          "description": "Denise Milfort's vocals enter — sung in French, layered into the ambient texture as another instrument rather than a focal point."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Cello entry",
+          "description": "Cello emerges — a warm, sustained melodic line weaving through the synthesised textures."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Mid-section",
+          "description": "Rieflin's drums enter with a quiet, brushed pattern — adding subtle forward motion without disrupting the ambient character."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Swell",
+          "description": "Arrangement reaches a gentle peak — all elements converging at the track's warmest moment."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Fade",
+          "description": "Elements dissolve — the oceanic atmosphere receding into the opening of 'The Great Below'."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "The Great Below",
+      "duration": "5:17",
+      "energy": "low",
+      "tags": [
+        "Left Disc Closer",
+        "Adrian Belew Guitar",
+        "Danny Lohner Guitar",
+        "Charlie Clouser Atmospheres"
+      ],
+      "role": "Album role: The left disc's closing descent — a slow, oceanic conclusion featuring guitars from Adrian Belew and Danny Lohner with Charlie Clouser's atmospheric programming, the protagonist sinking beneath the surface before the right disc begins.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Subaqueous textures and synthesiser pads emerge — a continuation of 'La Mer's oceanic world.",
+          "detail": "Belew and Lohner contribute guitar. Clouser provides atmospheric programming. The track closes the left disc in a descending arc — the protagonist symbolically drowning."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — restrained, mournful, one of the album's softest performances."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Guitar entry",
+          "description": "Belew's guitar emerges — a clean, textural line adding melodic space to the ambient bed."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Build",
+          "description": "Arrangement slowly expands — additional synthesiser and guitar layers accumulating without disrupting the submerged atmosphere."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Climax",
+          "description": "The track reaches its emotional peak — a subdued swell of all elements before the descent resumes."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Descent",
+          "description": "Elements thin progressively — the track sinking into silence, closing the left disc."
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "The Way Out Is Through",
+      "duration": "4:17",
+      "energy": "high",
+      "tags": [
+        "Right Disc Opener",
+        "Mike Garson Piano",
+        "Keith Hillebrandt Programming",
+        "Industrial Build"
+      ],
+      "role": "Album role: The right disc's aggressive re-entry — a driving industrial track featuring Mike Garson's piano and Keith Hillebrandt's programming, reasserting rhythmic intensity after the left disc's ambient conclusion.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Mechanical, rhythmic textures build from silence — the right disc beginning with industrial purpose.",
+          "detail": "Co-written with Keith Hillebrandt and Charlie Clouser. Garson contributes piano. Hillebrandt provides programming and additional production."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Beat entry",
+          "description": "Full drum pattern and bass engage — a propulsive, driving rhythm."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — determined, forward-driving, the lyrics asserting that endurance requires passage through pain."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Piano entry",
+          "description": "Garson's piano emerges — percussive, rhythmic, adding harmonic complexity to the industrial bed."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Build",
+          "description": "Arrangement density increases — additional layers driving toward the track's climax."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Peak",
+          "description": "Maximum intensity — all elements converging before the track resolves."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Elements cut cleanly — transitioning to the groove of 'Into the Void'."
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "Into the Void",
+      "duration": "4:49",
+      "energy": "high",
+      "tags": [
+        "Third Single",
+        "Charlie Clouser Drum Programming",
+        "Kim Prevost Vocals",
+        "Driving Groove"
+      ],
+      "role": "Album role: The right disc's most commercially successful track and third single — a driving groove anchored by Charlie Clouser's drum programming and Kim Prevost's backing vocals.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Percussive electronic textures and bass synth establish a propulsive foundation.",
+          "detail": "Released as the third single on 10 January 2000. Clouser provides drum programming. Kim Prevost contributes backing vocals."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Beat lock",
+          "description": "Full rhythmic pattern engages — a driving, groove-heavy beat layered with processed textures."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — energetic, rhythmically locked, riding the propulsive beat."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Chorus",
+          "description": "Hook arrives with additional vocal layers — Prevost's backing vocals widening the harmonic field."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Second verse",
+          "description": "Arrangement intensifies — additional distortion and synthesiser layers."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Build",
+          "description": "Progressive escalation toward the track's climactic passage."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Outro",
+          "description": "Elements fragment and dissolve — the groove breaking apart."
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "title": "Where Is Everybody?",
+      "duration": "5:40",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Danny Lohner Guitar",
+        "Electronic Groove",
+        "Isolation Theme"
+      ],
+      "role": "Album role: The right disc's electronic exploration — a groove-based track combining Adrian Belew's guitar textures with Danny Lohner's contributions, articulating the protagonist's deepening isolation through increasingly processed sonic layers.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Filtered electronic textures and a sparse rhythmic pulse establish an alienated atmosphere.",
+          "detail": "Belew and Lohner both contribute guitar. The track's processed, electronic palette marks a departure from the album's more organic textures."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Beat entry",
+          "description": "Electronic drum pattern locks in — a mid-tempo, programmed groove."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — delivered through processing, reinforcing the track's theme of alienation."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Chorus",
+          "description": "Melodic chorus emerges — Belew's guitar textures adding harmonic depth."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Bridge",
+          "description": "Textural breakdown — processed noise and filtered elements in isolation."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Build",
+          "description": "Arrangement rebuilds toward a modest climax — all elements returning."
+        },
+        {
+          "timestamp": "5:10",
+          "section": "Outro",
+          "description": "Elements dissolve — transitioning to the atmospheric 'The Mark Has Been Made'."
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "title": "The Mark Has Been Made",
+      "duration": "5:15",
+      "energy": "mid",
+      "tags": [
+        "Atmospheric",
+        "Instrumental Sections",
+        "Hidden 10 Miles High Intro",
+        "Transitional"
+      ],
+      "role": "Album role: The right disc's atmospheric bridge — a heavily textured track with extended instrumental passages and a hidden intro to the unreleased '10 Miles High', marking the transition between the disc's commercial singles and its darker final quarter.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric textures and sparse electronic pulses build slowly — the track establishing a contemplative, spacious mood.",
+          "detail": "Contains a hidden intro to '10 Miles High', a track that did not appear on the final album but was later included on Deviations 1 (2016)."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Verse",
+          "description": "Brief vocal passage — Reznor's voice emerging from the atmospheric bed before receding."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Instrumental section",
+          "description": "Extended instrumental passage — layered synthesiser and processed guitar textures."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Build",
+          "description": "Arrangement density increases — additional percussion and noise layers."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Peak",
+          "description": "The track's modest climax — all elements converging briefly before thinning."
+        },
+        {
+          "timestamp": "4:40",
+          "section": "Outro",
+          "description": "Elements dissolve into ambient residue — clearing space for 'Please'."
+        }
+      ]
+    },
+    {
+      "num": 17,
+      "title": "Please",
+      "duration": "3:31",
+      "energy": "high",
+      "tags": [
+        "Desperate Plea",
+        "Aggressive Build",
+        "Short Form"
+      ],
+      "role": "Album role: The right disc's most desperate moment — a compressed, three-and-a-half-minute escalation from quiet pleading to full-throated aggression, the word 'please' transformed from request into demand.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse, quiet textures — a tentative, fragile opening."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — restrained, pleading, the delivery at its most exposed."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Build",
+          "description": "Arrangement begins to thicken — distortion and percussion layers entering progressively."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Escalation",
+          "description": "Vocal intensity increases in parallel with the arrangement — the plea becoming more frantic."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Peak",
+          "description": "Full distorted aggression — the quiet plea transformed into a screamed demand."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Outro",
+          "description": "Abrupt cut — the aggression clearing for the satirical energy of 'Starfuckers, Inc.'."
+        }
+      ]
+    },
+    {
+      "num": 18,
+      "title": "Starfuckers, Inc.",
+      "duration": "5:00",
+      "energy": "peak",
+      "tags": [
+        "Promotional Single",
+        "Satirical",
+        "Buddha Boys Choir",
+        "Charlie Clouser Sound Design"
+      ],
+      "role": "Album role: The right disc's aggressive peak and a last-minute addition to the tracklist — a satirical attack on celebrity culture featuring the Buddha Boys Choir and Charlie Clouser's sound design, released as a promotional single.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Distorted guitar riff and electronic percussion slam in — immediate full-intensity entry.",
+          "detail": "Co-written with Charlie Clouser, who provides sound design. Steve Duda and Keith Hillebrandt contribute to the chorus. The Buddha Boys Choir — including Clint Mansell — provides backing vocals. Added to the tracklist at the last minute."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — aggressive, mocking, targeting celebrity culture and industry sycophancy."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Chorus",
+          "description": "Full-band chorus with choir — the hook delivered with maximum aggression and backing vocal density."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Second verse",
+          "description": "Continued assault — the satirical energy unrelenting."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Bridge",
+          "description": "Brief textural shift — processed elements and choir before the final section."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Final chorus",
+          "description": "Maximum intensity reprise — all elements converging for the track's climactic passage."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Outro",
+          "description": "Extended decay — the aggression dissolving into noise residue."
+        }
+      ]
+    },
+    {
+      "num": 19,
+      "title": "Complication",
+      "duration": "2:31",
+      "energy": "mid",
+      "tags": [
+        "Danny Lohner Guitar",
+        "Transitional",
+        "Short Form"
+      ],
+      "role": "Album role: The album's shortest vocal track and a transitional passage — a brief, restrained moment that bridges the satirical aggression of 'Starfuckers, Inc.' and the mournful dedication of the track that follows.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse electronic textures and a minimal rhythmic pulse — a compressed, restrained opening.",
+          "detail": "Danny Lohner contributes guitar. At two and a half minutes, the shortest vocal track on the album."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — quiet, introspective, a dramatic reduction in intensity from the preceding track."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Build",
+          "description": "Arrangement expands slightly — additional guitar and synthesiser layers."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Peak",
+          "description": "Brief climactic passage — a modest intensification before the track resolves."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Outro",
+          "description": "Elements dissolve rapidly — the track ending with minimal residue."
+        }
+      ]
+    },
+    {
+      "num": 20,
+      "title": "I'm Looking Forward to Joining You, Finally",
+      "duration": "4:14",
+      "energy": "mid",
+      "tags": [
+        "Grandmother Tribute",
+        "For Clara",
+        "Mournful",
+        "Personal"
+      ],
+      "role": "Album role: The album's most personal dedication — credited in the liner notes as 'for Clara' (Reznor's grandmother Clara Clark), a mournful contemplation of reunion through death that pairs with 'The Day the World Went Away' as the album's twin grief statements.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse, mournful textures emerge — a quiet, contemplative opening.",
+          "detail": "Credited 'for Clara' in the album booklet — referring to Clara Clark, Reznor's grandmother who raised him and whose death precipitated his descent into addiction. The title's 'finally' carries the weight of anticipated reunion."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — intimate, direct, addressing Clara in the second person."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Chorus",
+          "description": "Melodic passage with harmonic expansion — the arrangement gaining emotional weight."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Build",
+          "description": "Additional synthesiser and percussion layers enter — the mournful atmosphere intensifying."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Climax",
+          "description": "The track's emotional peak — a brief, contained swell of all elements."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Outro",
+          "description": "Elements recede — the grief settling into silence."
+        }
+      ]
+    },
+    {
+      "num": 21,
+      "title": "The Big Come Down",
+      "duration": "4:12",
+      "energy": "high",
+      "tags": [
+        "Relentless Rhythm",
+        "Distorted",
+        "Aggressive",
+        "Descent Theme"
+      ],
+      "role": "Album role: The right disc's penultimate aggressive statement — a relentless, distorted track that accelerates the album's trajectory toward disintegration, the 'big come down' arriving as both drug-crash metaphor and structural collapse.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Distorted electronic textures and a relentless rhythmic pulse enter immediately — no gradual build."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — aggressive, distorted, rhythmically locked to the driving beat."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Chorus",
+          "description": "Full-intensity hook — the arrangement at maximum density."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Second verse",
+          "description": "Continued assault — additional distortion layers and vocal intensity."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Bridge",
+          "description": "Brief textural shift — processed noise before the final section."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Final peak",
+          "description": "Maximum distorted intensity — all elements converging for the track's climax."
+        },
+        {
+          "timestamp": "3:55",
+          "section": "Outro",
+          "description": "Abrupt fragmentation — the relentless rhythm shattering, yielding to the quiet devastation of 'Underneath It All'."
+        }
+      ]
+    },
+    {
+      "num": 22,
+      "title": "Underneath It All",
+      "duration": "2:46",
+      "energy": "low",
+      "tags": [
+        "Quiet Devastation",
+        "Sparse",
+        "Penultimate",
+        "Stripped Back"
+      ],
+      "role": "Album role: The album's final moment of exposure — a sparse, devastated pause before the closing track, stripping away all sonic armour to reveal what remains underneath the layered production of the preceding 100 minutes.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Near-silence — minimal ambient textures emerging from the wreckage of 'The Big Come Down'."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — barely above a whisper, the quietest and most exposed delivery on the album."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Expansion",
+          "description": "Slight harmonic widening — additional synthesiser tones entering at the edges without disrupting the silence."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Peak",
+          "description": "The track's subdued climax — a gentle swell that never approaches conventional intensity."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Fade",
+          "description": "Elements dissolve — the track ending in near-silence, clearing space for the album's final statement."
+        }
+      ]
+    },
+    {
+      "num": 23,
+      "title": "Ripe (With Decay)",
+      "duration": "6:34",
+      "energy": "mid",
+      "tags": [
+        "Album Closer",
+        "Mike Garson Piano",
+        "Steve Duda Violin",
+        "Cyclical Structure"
+      ],
+      "role": "Album role: The album's closing statement — a six-and-a-half-minute meditation on entropy featuring Mike Garson's piano and Steve Duda's violin, arriving back where the album began, fulfilling Reznor's stated intent that the album 'arrives back where it starts — the same emotion'.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse textures and a low-frequency drone build from silence — a slow, deliberate opening.",
+          "detail": "Garson contributes piano. Duda provides violin. Bob Ezrin is credited with additional production for the album's sequencing — the ordering of Right's final tracks. Reznor described the album's structure: 'It begins Somewhat Damaged and ends Ripe (With Decay).'"
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Piano entry",
+          "description": "Garson's piano emerges — a repeating figure that functions as the track's harmonic anchor."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Verse",
+          "description": "Reznor's vocal enters briefly — sparse, fragmented, words emerging and receding."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Violin entry",
+          "description": "Duda's violin enters — a sustained, mournful line weaving through the piano and synthesiser textures.",
+          "detail": "The violin introduces a timbral warmth absent from the album's preceding tracks — an acoustic presence amid the electronic decay."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Build",
+          "description": "Arrangement density increases — additional layers accumulating toward the album's final climax."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Climax",
+          "description": "The album's final peak — piano, violin, synthesiser, and noise converging before the decay begins."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Decay",
+          "description": "Progressive disintegration — elements fragmenting and receding, the album literally decaying."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Silence",
+          "description": "Final textures dissolve into silence — the album ends as it began, with damage and fragility, completing its circular structure."
+        }
+      ]
+    }
+  ]
+}

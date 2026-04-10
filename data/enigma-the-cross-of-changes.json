@@ -1,0 +1,453 @@
+{
+  "id": "enigma-the-cross-of-changes",
+  "artist": "Enigma",
+  "title": "The Cross of Changes",
+  "year": 1993,
+  "label": "Virgin · Charisma",
+  "producer": "Michael Cretu",
+  "genre": "New-Age / Ambient / Worldbeat",
+  "genreTags": [
+    "New-Age",
+    "Ambient",
+    "Worldbeat"
+  ],
+  "runtime": "44:12",
+  "coverUrl": "covers/enigma-the-cross-of-changes.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/1t4hf9yHMQBoTz2CxTBJKj",
+  "youtubeUrl": "https://youtu.be/KTnVr1K3kjM",
+  "overview": "Recorded at Michael Cretu's private A.R.T. Studios on Ibiza, Spain, and released 6 December 1993 — three years after the debut MCMXC a.D. Cretu replaced the Gregorian chant sampling of the first album with a broader palette of ethnic vocal sources: Amis Taiwanese folk chant (Difang and Igay Duana on 'Return to Innocence'), Middle Eastern and Southeast Asian vocal textures, and ambient washes built from layered synthesiser pads. Personnel expanded to include Jens Gad and Peter Cornelius on guitar, with Sandra Cretu and Andreas Harde providing additional voices. The Cross of Changes topped the UK Albums Chart, reached No. 9 on the Billboard 200, sold over eight million copies worldwide, and was certified double platinum in the US and UK. Lead single 'Return to Innocence' peaked at US Billboard Hot 100 No. 4 and topped charts in over ten countries.\n\nTimestamps are approximate to ±5 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Second Chapter",
+      "duration": "2:16",
+      "energy": "low",
+      "tags": [
+        "Album Prologue",
+        "Ambient Soundscape",
+        "Spoken Word"
+      ],
+      "role": "Album role: The gateway — a brief atmospheric invocation that mirrors the opening function of 'The Voice of Enigma' on MCMXC a.D., resetting the listener's frame before the main body begins.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ambient opening",
+          "description": "Dark atmospheric pad fades in — low-frequency synthesiser drone establishes the register.",
+          "detail": "The deliberate parallel to 'The Voice of Enigma' signals continuity with the first album while the altered timbral palette signals evolution."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Spoken word",
+          "description": "Whispered spoken-word fragment enters — reflective, ritualistic in tone, over the evolving ambient bed."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Textural build",
+          "description": "Additional synthesiser layers and processed vocal textures accumulate — the sonic field widens."
+        },
+        {
+          "timestamp": "1:35",
+          "section": "Climactic swell",
+          "description": "Pad intensity reaches its peak — a brief crescendo before the track begins dissolving."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Crossfade",
+          "description": "Elements thin and blur into the opening of 'The Eyes of Truth' — the prologue yields to the album's first full arrangement."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "The Eyes of Truth",
+      "duration": "7:13",
+      "energy": "high",
+      "tags": [
+        "Second Single",
+        "Ethnic Vocal Sample",
+        "Dance Rhythm",
+        "Extended Arrangement"
+      ],
+      "role": "Album role: The album's first full statement and second single — a seven-minute layered construction that introduces the broader ethnic-vocal palette replacing the Gregorian chant of the debut.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric continuation from 'Second Chapter' — ambient pads and distant vocal textures set up the entry.",
+          "detail": "Released as the second single in April 1994."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Beat entry",
+          "description": "Drum pattern locks in — a mid-tempo groove with hip-hop-influenced compression and shuffled hi-hats."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Vocal layer",
+          "description": "Ethnic vocal sample enters over the rhythm — Middle Eastern-inflected chant replaces the Gregorian register of MCMXC a.D.",
+          "detail": "Cretu's shift from Western sacred to non-Western vocal sources broadened the project's timbral vocabulary while maintaining the signature layered-sample methodology."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Chorus build",
+          "description": "Synthesiser harmonics and additional vocal processing layers drive the arrangement toward its first climactic passage."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Breakdown",
+          "description": "Rhythm drops to a skeletal pulse — percussion thins, leaving vocal textures and ambient pad exposed."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Rebuild",
+          "description": "Full arrangement returns with heightened rhythmic density — additional percussion and bass synthesiser layers."
+        },
+        {
+          "timestamp": "5:50",
+          "section": "Extended peak",
+          "description": "Maximum instrumental density — all layers converging for the track's climactic passage."
+        },
+        {
+          "timestamp": "6:45",
+          "section": "Outro",
+          "description": "Elements fragment and recede into reverb — clearing space for the transition to 'Return to Innocence'."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Return to Innocence",
+      "duration": "4:17",
+      "energy": "high",
+      "tags": [
+        "Lead Single",
+        "Amis Chant Sample",
+        "Led Zeppelin Beat Sample",
+        "Difang and Igay Duana"
+      ],
+      "role": "Album role: The commercial centrepiece and lead single — the album's most widely heard track, peaking at US Billboard Hot 100 No. 4, UK No. 3, and topping charts in ten countries including Ireland, Norway, and Sweden.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Amis chant intro",
+          "description": "Sampled Amis folk chant ('Weeding and Paddyfield Song No. 1' by Difang and Igay Duana) opens the track — the melodic hook that defines the single.",
+          "detail": "The Duanas were recorded during a 1988 cultural exchange in Paris by the Maison des Cultures du Monde. Cretu obtained the CD and sampled it believing the material was public domain. A 1998 lawsuit was settled out of court with full attribution."
+        },
+        {
+          "timestamp": "0:18",
+          "section": "Beat entry",
+          "description": "Drum pattern enters — sampled from Led Zeppelin's 'When the Levee Breaks' (John Bonham), processed and looped.",
+          "detail": "The Bonham drum sample provides the propulsive, organic shuffle that distinguishes the track from the more programmed beats elsewhere on the album."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Vocal verse",
+          "description": "Andreas Harde (as Angel X) delivers the English-language vocal — melodic and declamatory over the chant-and-beat foundation."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Chorus",
+          "description": "Amis chant and English vocal merge — the two vocal streams converging into the track's emotional peak.",
+          "detail": "Sandra Cretu's spoken passage ('That's not the beginning of the end, that's the return to yourself, the return to innocence') punctuates the arrangement."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Second verse",
+          "description": "Harde's vocal returns over a slightly thickened arrangement — additional synthesiser harmonics and percussion detail."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Final chorus",
+          "description": "Full-density chorus reprise — chant, vocal, beat, and pad layers all present at maximum intensity."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Outro",
+          "description": "Arrangement thins progressively — Amis chant persists as the last surviving element before the track resolves."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "I Love You … I'll Kill You",
+      "duration": "8:51",
+      "energy": "mid",
+      "tags": [
+        "Extended Arrangement",
+        "Guitar Texture",
+        "Dark Ambient",
+        "Jens Gad Guitar"
+      ],
+      "role": "Album role: The album's darkest and longest track — an eight-minute slow-burn that shifts the emotional register from the euphoric singles toward introspection and menace, functioning as the album's dramatic weight.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Dark ambient opening — low drone and sparse, processed textures create an ominous atmosphere.",
+          "detail": "The title's juxtaposition of love and violence reprises the sacred/profane tension of 'Sadeness' from the first album."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Beat entry",
+          "description": "Restrained drum pattern enters — slower tempo than the preceding tracks, with heavier low-end emphasis."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Guitar texture",
+          "description": "Jens Gad's processed electric guitar emerges — distorted, atmospheric, layered with reverb and delay.",
+          "detail": "Gad's guitar work on this album expanded the Enigma palette beyond the purely synthesiser-and-sample foundation of MCMXC a.D."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Vocal entry",
+          "description": "Whispered and breathy vocal layer enters — fragmented phrases over the slow-moving rhythmic bed."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Midpoint build",
+          "description": "Synthesiser pads and guitar layers accumulate — density increases gradually without tempo change."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Breakdown",
+          "description": "Arrangement strips back to ambient textures — a breath of space in the track's long arc."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Rebuild",
+          "description": "Rhythmic and harmonic elements return with added intensity — the track's second half pushes darker."
+        },
+        {
+          "timestamp": "8:15",
+          "section": "Outro",
+          "description": "Elements dissolve into reverb and ambient residue — the eight-minute arc resolves into silence."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Silent Warrior",
+      "duration": "6:10",
+      "energy": "mid",
+      "tags": [
+        "Percussive",
+        "Ethnic Texture",
+        "Peter Cornelius Guitar"
+      ],
+      "role": "Album role: The rhythmic bridge between the dark extended middle and the ambient interlude — maintains forward momentum through percussive density while beginning the album's tonal shift toward resolution.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Percussive elements and processed vocal fragments build from silence — establishing a martial, rhythmic character."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Beat lock",
+          "description": "Full drum pattern and bass synthesiser engage — mid-tempo groove with stronger percussive emphasis than preceding tracks."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Guitar entry",
+          "description": "Peter Cornelius's acoustic-textured guitar enters — warmer tone than Gad's electric work on 'I Love You … I'll Kill You'.",
+          "detail": "Cornelius had collaborated with Cretu previously. His acoustic-register guitar provides a counterpoint to the electronic foundation."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Ethnic vocal layer",
+          "description": "Processed ethnic vocal sample weaves through the arrangement — adding depth without taking the foreground."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Build",
+          "description": "Layered percussion and synthesiser harmonics drive the arrangement toward its climactic passage."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Peak",
+          "description": "Maximum rhythmic and harmonic density — all percussive, vocal, and synthesiser elements converge."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Outro",
+          "description": "Arrangement fragments and thins — percussion drops away, leaving ambient textures to transition into 'The Dream of the Dolphin'."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "The Dream of the Dolphin",
+      "duration": "2:47",
+      "energy": "low",
+      "tags": [
+        "Ambient Interlude",
+        "Nature Soundscape",
+        "Oceanic Imagery"
+      ],
+      "role": "Album role: The album's contemplative centre of gravity — a brief aquatic interlude that creates a tonal valley between the percussive middle tracks and the album's final arc.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Water textures and oceanic ambient wash open the track — a sharp contrast to the percussive density of 'Silent Warrior'."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Melodic entry",
+          "description": "Synthesiser melody emerges — simple, lyrical, high-register tone over the aquatic bed.",
+          "detail": "The dolphin-song synthesiser line uses pitch-bending and portamento to evoke cetacean communication — a common new-age trope deployed here with restraint."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Pad expansion",
+          "description": "Harmonic pads widen beneath the melody — the sonic field deepens without introducing rhythmic elements."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Melodic peak",
+          "description": "Synthesiser melody reaches its highest emotional register — the track's brief climax."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Fade",
+          "description": "All elements recede into oceanic ambient — the interlude dissolves, preparing the transition to 'Age of Loneliness'."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Age of Loneliness (Carly's Song)",
+      "duration": "5:22",
+      "energy": "high",
+      "tags": [
+        "Third Single",
+        "Dance Rhythm",
+        "Vocal Hook"
+      ],
+      "role": "Album role: The album's late-stage energy surge and third single — released August 1994, it re-establishes rhythmic drive after the ambient interlude and provides the final high-energy moment before the closing tracks.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Electronic textures and rhythmic anticipation build from the post-interlude silence."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Beat entry",
+          "description": "Full dance rhythm locks in — uptempo, propulsive groove with prominent bass synthesiser line.",
+          "detail": "The subtitle 'Carly's Song' references the film Carly's Web (1987), which featured early Enigma-adjacent material."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Vocal hook",
+          "description": "Processed vocal phrase enters — the repeating melodic hook that anchors the track's identity."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Build",
+          "description": "Additional synthesiser layers and percussion accumulate — arrangement density increases progressively."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Breakdown",
+          "description": "Rhythm drops to a minimal pulse — vocal and ambient elements carry the track through the stripped-back passage."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Final build",
+          "description": "Full arrangement returns with heightened intensity — the track's climactic push."
+        },
+        {
+          "timestamp": "4:50",
+          "section": "Outro",
+          "description": "Elements fragment and thin — the dance energy dissipates into ambient residue."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Out from the Deep",
+      "duration": "4:53",
+      "energy": "mid",
+      "tags": [
+        "Fourth Single",
+        "Choral Texture",
+        "Spiritual Theme"
+      ],
+      "role": "Album role: The album's penultimate statement and fourth single — a gradual descent from the preceding dance energy toward the meditative close, thematically concerned with emergence and spiritual depth.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Atmospheric pads and sparse percussion open — slower tempo, more spacious than 'Age of Loneliness'."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Beat entry",
+          "description": "Mid-tempo rhythm establishes a gentler groove — the deceleration from the preceding track is palpable."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Choral entry",
+          "description": "Layered choral textures enter — processed vocal harmony that bridges the ethnic-sample register with more conventional choral arrangement.",
+          "detail": "The track's spiritual vocabulary ('out from the deep') invokes a baptismal or emergence metaphor — the album preparing for its close."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Verse development",
+          "description": "Vocal and synthesiser elements develop the arrangement — new harmonic content emerges over the steady rhythmic bed."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Emotional peak",
+          "description": "Choral and synthesiser layers reach maximum convergence — the track's most emotionally dense passage."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Outro",
+          "description": "Arrangement dissolves gradually — choral elements persist longest, fading into the ambient space that precedes the title track."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "The Cross of Changes",
+      "duration": "2:23",
+      "energy": "low",
+      "tags": [
+        "Album Epilogue",
+        "Ambient Resolution",
+        "Title Track"
+      ],
+      "role": "Album role: The closing meditation — a brief, ambient title track that mirrors the prologue's function, resolving the album's 44-minute arc into silence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse ambient texture opens — slow-moving pads and faint vocal traces, the album at its most exposed.",
+          "detail": "The structural symmetry with 'Second Chapter' is deliberate — both are sub-2:30 ambient bookends framing the seven core tracks."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Pad development",
+          "description": "Synthesiser harmonics evolve slowly — no rhythm, no beat, purely harmonic and textural content."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Vocal trace",
+          "description": "Faint processed vocal fragment surfaces briefly — a last echo of the album's vocal vocabulary before it fades."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Resolution",
+          "description": "Harmonic content thins and resolves — the album's final moments of sustained sound."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Silence",
+          "description": "All elements dissolve into silence — the album ends as it began, with absence framing the content."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,698 @@
+{
+  "id": "nine-inch-nails-the-downward-spiral",
+  "artist": "Nine Inch Nails",
+  "title": "The Downward Spiral",
+  "year": 1994,
+  "label": "Nothing · Interscope",
+  "producer": "Trent Reznor · Flood",
+  "genre": "Industrial Rock / Alternative Rock",
+  "genreTags": [
+    "Industrial Rock",
+    "Alternative Rock",
+    "Industrial Metal"
+  ],
+  "runtime": "65:02",
+  "coverUrl": "covers/nine-inch-nails-the-downward-spiral.png",
+  "spotifyUrl": "https://open.spotify.com/album/5I7lLu8xXJfGRdFUqHaLQU",
+  "youtubeUrl": "https://youtu.be/fNhoVJDBqBk",
+  "overview": "Recorded 1992–1993 at Le Pig — a home studio Reznor built inside 10050 Cielo Drive, the house where Sharon Tate was murdered in 1969 — with additional sessions at the Record Plant, Los Angeles, and A&M Studios, Hollywood. Reznor and co-producer Flood assembled the album's sound from processed guitar sessions recorded in 20–25 minute improvised takes on a hard disc recorder, live drum performances by Chris Vrenna, Stephen Perkins, and Andy Kubiszewski rendered into looped samples, and synthesiser textures from an Oberheim OB-Mx, Minimoog, and Sequential Circuits Prophet VS, all routed through Digidesign TurboSynth, Zoom 9030 effects, and Pro Tools. The 14-track concept album charts a protagonist's descent through self-destruction, dehumanization, and suicide — Reznor's semi-autobiographical allegory emerging from his own isolation, addiction, and creative paralysis. The Downward Spiral debuted at US Billboard 200 No. 2 (119,000 first-week copies), reached UK No. 9, was certified quadruple platinum by the RIAA (4 million US sales), and ranked No. 122 on Rolling Stone's 2020 revision of the 500 Greatest Albums of All Time.\n\nTimestamps are approximate to ±5 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Mr. Self Destruct",
+      "duration": "4:31",
+      "energy": "peak",
+      "tags": [
+        "THX 1138 Sample",
+        "Adrian Belew Guitar",
+        "Concept Opener",
+        "Industrial Assault"
+      ],
+      "role": "Album role: The detonation — the album's most violent opening statement, introducing the protagonist's destructive persona through a wall of processed noise, sampled film audio, and Adrian Belew's texture-generating guitar.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "THX 1138 sample",
+          "description": "Sampled audio from George Lucas's THX 1138 (1971) — a man being beaten by a prison guard — opens the album over a rising industrial drone.",
+          "detail": "The film sample immediately establishes the album's themes of institutional violence and dehumanisation. The sound of a pinion rotating loops beneath the surface."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Industrial roar",
+          "description": "Full distorted assault enters — layered guitar noise, processed percussion, and Reznor's screamed vocal emerge simultaneously.",
+          "detail": "Adrian Belew's guitar contribution was recorded in his first session at Le Pig. Reznor instructed him to play freely, react to melodies, concentrate on rhythm, and use noise."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Verse",
+          "description": "Reznor's vocal settles into a rhythmic spoken delivery over the distorted bed — 'I am the voice inside your head' establishing the protagonist's internal monologue."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Build",
+          "description": "Arrangement density increases — additional percussion layers and processed guitar feedback accumulate."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Peak",
+          "description": "Maximum sonic intensity — all elements converge in a wall of industrial noise and screamed vocals."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Deconstruction",
+          "description": "Elements fragment abruptly — the assault cuts to sparse, ringing textures that prepare the transition to 'Piggy'."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Piggy",
+      "duration": "4:24",
+      "energy": "low",
+      "tags": [
+        "Acoustic Guitar",
+        "Quiet Dynamic",
+        "Reznor Live Drums",
+        "Promotional Single"
+      ],
+      "role": "Album role: The first dramatic inversion — after the opening assault, the album drops to its lowest energy, exposing vulnerability through clean acoustic guitar and whispered vocals before the frantic drum outburst in the outro.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Clean acoustic guitar arpeggiation enters — a stark contrast to the industrial violence of 'Mr. Self Destruct'.",
+          "detail": "The phrase 'nothing can stop me now' recurs through the album — appearing also in 'Ruiner' and 'Big Man with a Gun'. Released as a promotional single in December 1994, reaching the Billboard Modern Rock Top 20."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Verse",
+          "description": "Reznor's whispered vocal enters over the arpeggiated guitar — intimate, restrained, almost confessional."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Build",
+          "description": "Additional synthesiser textures emerge beneath the acoustic bed — subtle harmonic thickening without rhythm."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Second verse",
+          "description": "Vocal gains slight intensity — the arrangement remains sparse but the emotional weight increases."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Drum outburst",
+          "description": "Frantic, unhinged drumming erupts — Reznor's only live drum performance on the album, originally recorded as a microphone test.",
+          "detail": "Reznor was testing the mic setup in studio and began playing. He kept the take because the raw energy was impossible to reproduce. The chaotic performance contradicts the track's controlled surface."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Outro",
+          "description": "Drum chaos cuts abruptly — returning to the acoustic guitar before the track ends."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Heresy",
+      "duration": "3:54",
+      "energy": "high",
+      "tags": [
+        "Anti-Religion",
+        "Power Chords",
+        "Drop D Tuning",
+        "Recurring Piano Motif"
+      ],
+      "role": "Album role: The ideological assault — the protagonist's rejection of God delivered through drop-D power chords that carry a chromatic piano motif recurring across 'Piggy', 'Closer', and the title track.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Distorted guitar riff enters with immediate aggression — drop-D tuning powering the rhythmic foundation."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Verse",
+          "description": "Reznor's vocal attacks — declaratory, rhythmically locked to the guitar riff, thematically focused on the death of God.",
+          "detail": "The chromatic motif that first appeared as an organ line in 'Piggy' reappears here as power chords in the chorus — a structural thread that binds the album's middle section."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Chorus",
+          "description": "'God is dead and no one cares' — the album's most direct ideological statement, delivered over distorted power-chord stabs."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Bridge",
+          "description": "Brief textural shift — layered noise and processed vocals create a disorienting mid-track passage."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Final chorus",
+          "description": "Full-intensity reprise of the chorus — additional distortion layers and vocal doubling."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Outro",
+          "description": "Guitar riff fragments into feedback — dissolution clearing space for the rhythmic assault of 'March of the Pigs'."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "March of the Pigs",
+      "duration": "2:59",
+      "energy": "peak",
+      "tags": [
+        "First Single",
+        "7/8 Time Signature",
+        "Peter Christopherson Video",
+        "Piano Breakdown"
+      ],
+      "role": "Album role: The first single and most viscerally aggressive track — a sub-three-minute assault in alternating 7/8 and 8/8 time that punctuates the album's first quarter with two disarming piano interludes.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Explosive entry — drums, distorted guitar, and bass locked into the alternating 7/8-8/8 metric pattern that defines the track.",
+          "detail": "The metre alternates three bars of 7/8 with one bar of 8/8. Released as the first single on 25 February 1994; music video directed by Peter Christopherson (Throbbing Gristle, Coil), shot twice — the first version scrapped."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — spat, aggressive, rhythmically syncopated against the irregular beat."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Piano breakdown",
+          "description": "Full band drops out — a quiet, plaintive piano passage emerges, exposing a brief moment of melodic vulnerability.",
+          "detail": "The piano interludes function as structural antidotes to the surrounding violence — the album's internal 'A Warm Place' in miniature."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Resume assault",
+          "description": "Full industrial arrangement slams back in — the tempo and intensity returning without transition."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Second piano",
+          "description": "Second piano interlude — slightly longer, harmonically darker than the first."
+        },
+        {
+          "timestamp": "2:05",
+          "section": "Final assault",
+          "description": "Final full-band passage — the rhythmic intensity pushes to peak level."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Outro",
+          "description": "Track resolves abruptly — the shortest song on the album cuts cleanly."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Closer",
+      "duration": "6:14",
+      "energy": "high",
+      "tags": [
+        "Second Single",
+        "Iggy Pop Beat Sample",
+        "Mark Romanek Video",
+        "Chromatic Piano Motif"
+      ],
+      "role": "Album role: The commercial centrepiece and second single — a six-minute meditation on self-hatred disguised as sexual aggression, built on a modified Iggy Pop drum sample and concluding with the chromatic piano motif that connects four tracks across the album.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Minimal pulse — processed kick drum and sparse metallic textures establish a slow, mechanical groove.",
+          "detail": "The bass drum is a heavily modified sample from Iggy Pop's 'Nightclubbing' (1977, The Idiot). The track also contains a sped-up, reversed sample from Roxy Music's 'Take a Chance with Me'."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Beat lock",
+          "description": "Full drum pattern and bass synthesiser engage — the groove settling into a mid-tempo, mechanical pulse."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — controlled, flat affect, delivery at odds with the lyrical content of obsessive self-loathing.",
+          "detail": "Reznor later expressed dismay that the song was misinterpreted as a lust anthem due to its chorus. He described it as 'supernegative and superhateful'."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Chorus",
+          "description": "Explicit chorus arrives over the unvarying mechanical beat — the hook that secured MTV rotation despite heavy censorship of the Mark Romanek music video.",
+          "detail": "The Romanek video became part of the Museum of Modern Art's permanent collection. A radio edit partially censored explicit lyrics for extensive airtime."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Breakdown",
+          "description": "Arrangement strips back — ambient textures and filtered noise replace the beat briefly."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Rebuild",
+          "description": "Beat and vocal return for the final section — intensity builds progressively."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Chromatic piano",
+          "description": "The chromatic piano motif enters — first introduced in 'Piggy', recurring through 'Heresy', and reaching its most prominent statement here.",
+          "detail": "This recurring motif connects 'Piggy', 'Heresy', 'Closer', and 'The Downward Spiral' — functioning as the album's structural spine, a melodic thread binding the concept's narrative arc."
+        },
+        {
+          "timestamp": "5:55",
+          "section": "Outro",
+          "description": "Piano motif fades beneath distortion residue — the track dissolves into ambient aftermath."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Ruiner",
+      "duration": "4:58",
+      "energy": "mid",
+      "tags": [
+        "Controlled Aggression",
+        "Layered Arrangement",
+        "Recurring Lyric Motif"
+      ],
+      "role": "Album role: The album's pivot point — positioned between the commercial singles and the darker second half, it marks the protagonist's transition from outward rebellion to inward collapse.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Filtered electronic textures and sparse percussion build a tense, compressed atmosphere."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Beat entry",
+          "description": "Rhythmic pattern establishes a measured, mid-tempo groove — less explosive than the preceding tracks."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Verse",
+          "description": "Reznor's vocal shifts between whisper and controlled intensity — 'nothing can stop me now' returning from 'Piggy'.",
+          "detail": "The lyrical motif 'nothing can stop me now' appears across three tracks ('Piggy', 'Ruiner', 'Big Man with a Gun'), charting the protagonist's increasingly hollow assertion of control."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Chorus",
+          "description": "Melodic chorus emerges — one of the album's more conventional song structures, grounding the listener before the dissolution ahead."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Bridge",
+          "description": "Textural expansion — processed guitar and noise layers build toward the track's climax."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Elements thin progressively — the track fades into residual noise."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "The Becoming",
+      "duration": "5:31",
+      "energy": "high",
+      "tags": [
+        "Robot Jox Sample",
+        "Flood ARP 2600",
+        "Belew Ring Mod Guitar",
+        "Transformation Theme"
+      ],
+      "role": "Album role: The protagonist's dehumanisation made literal — a five-minute portrayal of transformation into machine, featuring Flood's ARP 2600 and Adrian Belew's ring-modulated guitar creating an increasingly inhuman sonic landscape.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Mechanical textures and processed vocal fragments build from silence — the sound of a human becoming something else.",
+          "detail": "Screams sampled from the film Robot Jox (1989) — a giant robot falling on spectators — play throughout the track."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Beat entry",
+          "description": "Drum pattern locks in — processed, metallic percussion with an industrial pulse."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Verse",
+          "description": "Reznor's vocal describes the process of becoming dead, of transformation into non-human — flat, affectless delivery.",
+          "detail": "Flood plays ARP 2600 on this track — the analogue synthesiser adding a layer of textural unpredictability to the otherwise digitally processed arrangement. Belew contributes ring-modulated guitar."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Build",
+          "description": "Arrangement density increases — ring-mod guitar textures and synthesiser layers accumulate."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Breakdown",
+          "description": "Rhythmic elements strip back — exposing the processed guitar and vocal textures in isolation."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Peak",
+          "description": "Full arrangement returns at maximum intensity — the mechanical transformation reaching its climax."
+        },
+        {
+          "timestamp": "5:10",
+          "section": "Outro",
+          "description": "Elements fragment into digital residue — the transformation complete."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "I Do Not Want This",
+      "duration": "5:41",
+      "energy": "high",
+      "tags": [
+        "Stephen Perkins Drums",
+        "Rejection Anthem",
+        "Escalating Structure"
+      ],
+      "role": "Album role: The protagonist's breaking point — five minutes of escalating rage featuring Stephen Perkins's live drum performance, the album's most sustained build from restraint to total collapse.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse, minimal opening — distant textures and quiet rhythmic pulse."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Verse",
+          "description": "Reznor's vocal begins restrained — listing rejections and denials, the structure building incrementally.",
+          "detail": "Stephen Perkins (Jane's Addiction, Porno for Pyros) performed the drums live in studio; the takes were then rendered into looped samples, consistent with Reznor's method across the album."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "First escalation",
+          "description": "Additional percussion and synthesiser layers enter — the arrangement expanding outward."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Build",
+          "description": "Vocal intensity and arrangement density increase in parallel — the controlled delivery beginning to crack.",
+          "detail": "Flood and Reznor share drum treatment credits on this track — processing Perkins's live takes into the hybrid live/electronic rhythmic language."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Peak",
+          "description": "Maximum vocal and instrumental intensity — Reznor screaming over the full arrangement."
+        },
+        {
+          "timestamp": "5:10",
+          "section": "Outro",
+          "description": "Elements shatter and recede — the rage exhausting itself."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Big Man with a Gun",
+      "duration": "1:36",
+      "energy": "peak",
+      "tags": [
+        "Satire",
+        "Danny Lohner Guitar",
+        "Political Controversy",
+        "Shortest Track"
+      ],
+      "role": "Album role: The album's most provocative and shortest track — a 96-second gangsta-rap satire that drew condemnation from Senator Bob Dole and William Bennett, functioning as a deliberate provocation before the emotional valley of 'A Warm Place'.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sample intro",
+          "description": "Processed sample opens the track — credited as 'Steakhouse' by Tommy Lee in the liner notes.",
+          "detail": "Danny Lohner provides additional guitar. The track satirises gangsta rap's power fantasies — Reznor later called C. Delores Tucker, who erroneously labelled NIN a gangsta rap act, 'such a fucking idiot'."
+        },
+        {
+          "timestamp": "0:15",
+          "section": "Verse",
+          "description": "Distorted vocal delivery over heavy guitar riff — deliberately crude, adopting a cartoonish aggressor persona."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Peak",
+          "description": "Full distorted assault — the track's brief runtime compressed to maximum density."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Outro",
+          "description": "Abrupt fragmentary decay — elements cut out, leaving distortion residue that dissolves into the ambient opening of 'A Warm Place'."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "A Warm Place",
+      "duration": "3:22",
+      "energy": "low",
+      "tags": [
+        "Ambient",
+        "Instrumental",
+        "Emotional Core",
+        "Flood Co-Production"
+      ],
+      "role": "Album role: The album's emotional centre and most vulnerable moment — a pure ambient instrumental that exposes fragility after the surrounding violence, the eye of the album's storm.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Warm synthesiser pad fades in — the first genuinely gentle sound on the album, a major-key opening after 40 minutes of dissonance.",
+          "detail": "Flood co-produced this track. The absence of percussion, distortion, and vocals creates a stark structural void at the album's geographical centre."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Melodic entry",
+          "description": "Simple synthesiser melody emerges — lyrical, unprocessed, ascending over the sustained pad."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Harmonic expansion",
+          "description": "Additional pad layers widen the stereo field — the arrangement reaching a gentle, sustained warmth."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Climactic swell",
+          "description": "Melodic and harmonic elements converge at the track's emotional peak — the warmest moment on the album."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Fade",
+          "description": "Elements dissolve gradually — the warmth receding, yielding to the violence that resumes with 'Eraser'."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Eraser",
+      "duration": "4:53",
+      "energy": "high",
+      "tags": [
+        "Self-Destruction",
+        "Industrial Build",
+        "Flood Co-Production"
+      ],
+      "role": "Album role: The violent return — following the ambient respite, the album reasserts its destructive trajectory with escalating industrial noise, the protagonist's self-erasure made sonically literal.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency industrial textures rebuild from 'A Warm Place's residual silence — a slow, ominous re-entry."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Beat entry",
+          "description": "Distorted percussion pattern locks in — heavier and more deliberate than the album's earlier rhythms."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Verse",
+          "description": "Reznor's vocal returns — themes of self-obliteration delivered with controlled menace."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Build",
+          "description": "Layered distortion and noise textures accumulate — the arrangement driving toward its climactic passage."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Peak",
+          "description": "Maximum distorted density — vocals, processed guitars, and rhythmic elements converge."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Elements dissolve into noise residue — transitioning into the album's penultimate extended piece."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Reptile",
+      "duration": "6:52",
+      "energy": "peak",
+      "tags": [
+        "Extended Arrangement",
+        "Texas Chain Saw Massacre Sample",
+        "Aliens Sample",
+        "Climactic Suite"
+      ],
+      "role": "Album role: The album's climactic peak — a seven-minute sustained assault that represents the protagonist's final confrontation with sexuality, violence, and degradation before the spiral's terminal descent.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Dark ambient textures build slowly — distant processed sounds and low-frequency drone establishing an ominous atmosphere."
+        },
+        {
+          "timestamp": "0:58",
+          "section": "Mechanical entry",
+          "description": "Mechanical, rhythmic sounds emerge — sampled from the cargo loader exosuit in the 1986 film Aliens.",
+          "detail": "The film sample grounds the track in industrial-mechanical imagery, complementing the album's recurring theme of human-machine convergence."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Beat lock",
+          "description": "Full drum pattern and bass engage — heavy, deliberate groove building beneath layers of processed texture."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — shifting between whisper and scream, the lyrical content escalating in extremity."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Build",
+          "description": "Arrangement density increases relentlessly — additional guitar, noise, and percussion layers."
+        },
+        {
+          "timestamp": "5:06",
+          "section": "Break",
+          "description": "Brief textural break — sampled audio from The Texas Chain Saw Massacre (1974), a woman falling down a hill.",
+          "detail": "The film sample functions as a sonic disruption — a moment of recognisable human terror amid the album's processed industrial landscape."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Final peak",
+          "description": "Maximum intensity passage — all elements converging in the album's loudest, most sustained climax."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Outro",
+          "description": "Elements collapse — the peak exhausting itself, dissolving into the fragmented aftermath that begins the title track."
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "The Downward Spiral",
+      "duration": "3:58",
+      "energy": "mid",
+      "tags": [
+        "Title Track",
+        "Andy Kubiszewski Drums",
+        "Chromatic Motif Return",
+        "Narrative Climax"
+      ],
+      "role": "Album role: The narrative climax — the protagonist's attempted suicide rendered as the final return of the chromatic piano motif, the concept's structural and thematic resolution before the epilogue.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse, fragmented textures — post-climactic aftermath from 'Reptile', the album at its most structurally exposed.",
+          "detail": "Andy Kubiszewski performs drums. The chromatic piano motif — threaded through 'Piggy', 'Heresy', and 'Closer' — makes its final appearance here."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Build",
+          "description": "Slow accumulation of distorted elements — the arrangement rebuilding from near-silence with deliberate restraint."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Motif entry",
+          "description": "Chromatic piano motif returns — the recurring melodic thread reaching its final, most exposed statement."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Verse",
+          "description": "Reznor's vocal enters — quiet, defeated, the protagonist at the bottom of the spiral."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Climax",
+          "description": "Brief intensification — the track peaks abruptly before collapsing."
+        },
+        {
+          "timestamp": "3:35",
+          "section": "Collapse",
+          "description": "All elements disintegrate — the narrative climax resolving into silence, clearing space for 'Hurt'."
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "Hurt",
+      "duration": "6:16",
+      "energy": "low",
+      "tags": [
+        "Album Epilogue",
+        "Tritone Guitar",
+        "Chris Vrenna Drums",
+        "Johnny Cash Cover"
+      ],
+      "role": "Album role: The epilogue — the last song written for the album, a six-minute confession built on a dissonant tritone guitar figure that became Nine Inch Nails' most culturally enduring statement after Johnny Cash's 2002 cover.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Quiet, sustained guitar tone — the tritone dyad (B/E#, a B5#11) establishing the harmonic foundation.",
+          "detail": "The tritone is emphasised each time Reznor sings 'I' over the dyad. The song was the last written for the album, recorded as 'an afterthought' at A&M Studios. Chris Vrenna performs drums."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "First verse",
+          "description": "Reznor's vocal enters — restrained, confessional, the quietest vocal performance on the album.",
+          "detail": "Lyrics reference self-harm and addiction. Reznor described the song as emerging 'straight from my soul' about 'a bleak and desperate place I was in, totally isolated and alone'."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Chorus",
+          "description": "Arrangement expands slightly — the chorus arriving as a gentle harmonic widening rather than a dynamic escalation."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Second verse",
+          "description": "Vocal delivery gains emotional weight — the instrumental bed thickens with additional guitar and synthesiser layers."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Build",
+          "description": "Progressive accumulation — noise textures, additional guitar layers, and increasing vocal intensity driving toward the climax.",
+          "detail": "Johnny Cash covered the song for American IV: The Man Comes Around (2002). Reznor initially felt it 'sounded weird' hearing Cash's voice on his most personal song, until he saw the Mark Romanek video: 'Tears welling, silence, goose-bumps… I just lost my girlfriend, because that song isn't mine any more.'"
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Climax",
+          "description": "Full distorted peak — the album's final explosion of volume, all restraint abandoned."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Deconstruction",
+          "description": "Elements strip away rapidly — returning to the lone tritone guitar figure."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Resolution",
+          "description": "Final sustained tone and silence — the album ends as the protagonist's spiral reaches its terminus.",
+          "detail": "Nominated for Grammy Award for Best Rock Song. The song's cultural meaning shifted again after Cash's death in 2003, the cover becoming one of the most discussed acts of musical reinterpretation in popular music."
+        }
+      ]
+    }
+  ]
+}

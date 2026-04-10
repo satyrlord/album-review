@@ -1,0 +1,2304 @@
+{
+  "id": "nine-inch-nails-ghosts",
+  "artist": "Nine Inch Nails",
+  "title": "Ghosts",
+  "year": 2008,
+  "label": "The Null Corporation",
+  "producer": "Trent Reznor · Atticus Ross · Alan Moulder",
+  "genre": "Dark Ambient / Ambient / Experimental",
+  "genreTags": [
+    "Dark Ambient",
+    "Ambient",
+    "Experimental"
+  ],
+  "runtime": "4:23:30",
+  "coverUrl": "covers/nine-inch-nails-ghosts.png",
+  "spotifyUrl": "https://open.spotify.com/album/0lOn8nKk4dzzRfnCCCRbwp",
+  "youtubeUrl": "https://youtu.be/45bWRErlsVc",
+  "overview": "Conceived as a 10-week experiment in improvisation — 'no clear agenda, no overthinking, everything driven by impulse' — Ghosts originates from sessions at Trent Reznor's studio between October and December 2007, expanded twelve years later with two companion volumes released during the COVID-19 pandemic on March 26, 2020. The original 36-track Ghosts I–IV was produced by Reznor, Atticus Ross, and Alan Moulder, with instrumental contributions from Alessandro Cortini (bass, guitar, dulcimer, electronics), Adrian Belew (guitars, electronics, marimba), and Brian Viglione (drums built from found objects including a 50-gallon trash can and water cooler jugs); Ghosts V: Together and Ghosts VI: Locusts were produced solely by Reznor and Ross. Instrumentation spans piano, synthesiser, guitar, bass, marimba, banjo, dulcimer, xylophone, and modular synthesis alongside processed field recordings and sampled percussion. The series collectively earned two Grammy nominations for Ghosts I–IV — Best Rock Instrumental Performance for '34 Ghosts IV' and Best Boxed or Special Limited Edition Package — and indirectly produced a Billboard Hot 100 number-one single when YoungKio sampled '34 Ghosts IV' for Lil Nas X's 'Old Town Road' (2019); released independently on The Null Corporation under Creative Commons BY-NC-SA licensing, the first volume amassed $1.6 million in its opening week online.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "1 Ghosts I",
+      "duration": "2:48",
+      "energy": "low",
+      "tags": [
+        "Piano",
+        "Opening Statement",
+        "Atmospheric Drone"
+      ],
+      "role": "Album role: The entry point — a delicate piano-led sketch that establishes the project's improvisatory, instrumental register from the first measure.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Solo piano figure enters over quiet room ambience; sparse, unhurried phrasing sets the intimate scale."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Textural layer",
+          "description": "Sustained synthesiser pad emerges beneath the piano, adding harmonic depth without disrupting the melodic line."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Development",
+          "description": "Piano motif shifts register; low-frequency hum intensifies the sense of enclosure."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Outro",
+          "description": "Piano thins to single notes; drone recedes into silence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "2 Ghosts I",
+      "duration": "3:16",
+      "energy": "mid",
+      "tags": [
+        "Rhythmic Pulse",
+        "Filtered Texture",
+        "Layered Build"
+      ],
+      "role": "Album role: First rhythmic statement — introduces a mechanical pulse that signals the project will not remain purely static.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Filtered loop establishes a stuttering rhythmic cell; processed clicks and hiss fill the stereo field."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Build",
+          "description": "Melodic fragment enters — distant, reverb-heavy tones that float above the percussive bed."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Peak",
+          "description": "All layers converge; the rhythmic pulse drives forward under accumulating harmonic content."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Outro",
+          "description": "Elements strip away in reverse order; the loop continues briefly before cutting to silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "3 Ghosts I",
+      "duration": "3:51",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Melodic Fragment",
+        "Layered Arrangement"
+      ],
+      "role": "Album role: The first guest colour — Adrian Belew's guitar introduces an identifiable melodic voice to the otherwise textural landscape.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Ambient wash opens with slow-attack synthesiser tones and faint room noise."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Guitar entry",
+          "description": "Belew's processed guitar enters — clean-toned, looping a short melodic phrase that becomes the track's focal point.",
+          "detail": "Adrian Belew contributed guitar parts to twelve of the 36 original Ghosts tracks, his first collaboration with Reznor since The Fragile sessions."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Build",
+          "description": "Additional layers of guitar and electronics thicken the arrangement; harmonic movement becomes more pronounced."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Decay",
+          "description": "Melodic fragments dissolve into reverb tail; the track fades through sustained resonance."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "4 Ghosts I",
+      "duration": "2:13",
+      "energy": "mid",
+      "tags": [
+        "Alessandro Cortini",
+        "Bass Guitar",
+        "Collaborative Sketch"
+      ],
+      "role": "Album role: The first multi-instrumentalist collaboration — Cortini and Belew join Reznor and Ross for a compact, layered miniature.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Cortini's bass guitar anchors a low-register groove; Belew's processed guitar adds upper-register colour.",
+          "detail": "Written by Reznor, Ross, and Cortini — one of ten tracks featuring the NIN live-band member, who was brought onto the project two weeks into the sessions."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Development",
+          "description": "Electronic textures and additional guitar layers accumulate over the bass foundation."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Peak",
+          "description": "Full instrumental density — bass, dual guitar, and electronics converge in a brief climax."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Outro",
+          "description": "Rapid deconstruction; layers peel away and the track ends abruptly."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "5 Ghosts I",
+      "duration": "2:51",
+      "energy": "low",
+      "tags": [
+        "Drone",
+        "Textural",
+        "Sustained Tones"
+      ],
+      "role": "Album role: The first pure ambient piece — suspends the rhythmic momentum established in tracks 2–4 and resets the palette.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Long-decay drone fades in from near-silence; a single sustained tone dominates the stereo field."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Textural shift",
+          "description": "Secondary harmonic layer enters at a different pitch; overtones interact to produce slow beating patterns."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Development",
+          "description": "Filtered noise elements appear — faint crackle and hiss add organic imperfection to the synthetic drones."
+        },
+        {
+          "timestamp": "2:25",
+          "section": "Outro",
+          "description": "All tones gradually attenuate; the track dissolves into residual room tone."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "6 Ghosts I",
+      "duration": "4:18",
+      "energy": "mid",
+      "tags": [
+        "Piano",
+        "Rhythmic Texture",
+        "Cinematic"
+      ],
+      "role": "Album role: Ghosts I's centrepiece — the longest track in the opening section, bridging intimate piano with accumulating electronic texture.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Delicate piano opens with a repeating two-bar phrase; room reverb and faint hum establish spatial depth."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Build",
+          "description": "Synthesiser layers rise beneath the piano; rhythmic clicking enters at low volume."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Peak",
+          "description": "Full arrangement — piano, synthesiser pad, rhythmic texture, and high-frequency shimmer coexist at maximum density."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Deconstruction",
+          "description": "Layers recede one by one; piano returns to its opening phrase before fading."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Final piano note sustains into natural decay; ambient bed disappears."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "7 Ghosts I",
+      "duration": "2:00",
+      "energy": "low",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Miniature",
+        "Sparse"
+      ],
+      "role": "Album role: A fleeting vignette — the shortest track in Ghosts I, offering Belew's guitar as a solitary voice.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's guitar enters immediately — clean, sustained tone with light reverb."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Development",
+          "description": "A second guitar layer responds antiphonally; electronic undercurrent adds subtle motion."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Peak",
+          "description": "Brief convergence of guitar voices and synthesiser; harmonic tension reaches its zenith."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Outro",
+          "description": "Guitar sustains a final note; electronics fade beneath it."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "8 Ghosts I",
+      "duration": "2:56",
+      "energy": "low",
+      "tags": [
+        "Atmospheric",
+        "Processed Texture",
+        "Slow Drift"
+      ],
+      "role": "Album role: A transitional ambient passage — bridges the melodic miniatures of mid-Ghosts I toward the section's close.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency drone and filtered white noise establish a subaquatic atmosphere."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Textural layer",
+          "description": "Granular synthesis texture enters — shimmering, high-pitched particles scattered across the stereo image."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Development",
+          "description": "A barely audible melodic fragment appears deep in the mix; processed beyond recognition but adding human warmth."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Outro",
+          "description": "All textures converge into a narrow frequency band before cutting out."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "9 Ghosts I",
+      "duration": "2:47",
+      "energy": "low",
+      "tags": [
+        "Closing Statement",
+        "Piano",
+        "Reflective"
+      ],
+      "role": "Album role: Ghosts I's coda — a reflective piano-based close that bookends the section with the opening track's intimate register.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Piano returns as the dominant voice; two-note oscillation over a sustained low drone."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Development",
+          "description": "Piano phrase expands — wider intervals, more deliberate pacing — while a faint synthesiser choir appears."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Peak",
+          "description": "Piano and synthesiser reach their fullest combined voicing; the arrangement briefly suggests resolution."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Outro",
+          "description": "Piano reduces to single notes; drone fades to silence, closing Ghosts I."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "10 Ghosts II",
+      "duration": "2:42",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Opening Statement",
+        "Melodic"
+      ],
+      "role": "Album role: Ghosts II's overture — Belew's guitar and a more defined rhythmic structure signal a shift toward greater musical variety.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's layered guitar opens with a cyclical melodic figure; electronics provide rhythmic underpinning."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Build",
+          "description": "Additional guitar textures and filtered synthesiser expand the harmonic field."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Peak",
+          "description": "Full arrangement converges — guitar melody, electronic rhythm, and synthesiser pad at maximum density."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Outro",
+          "description": "Layers thin rapidly; guitar sustains a final sustained tone."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "11 Ghosts II",
+      "duration": "2:17",
+      "energy": "mid",
+      "tags": [
+        "Cortini Guitar",
+        "Adrian Belew",
+        "Collaborative"
+      ],
+      "role": "Album role: A dual-guitar sketch — Cortini and Belew combine for a brief, harmonically rich interaction.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Two guitar voices enter simultaneously — Cortini's rhythmic pattern interlocking with Belew's melodic line.",
+          "detail": "Co-written by Reznor, Ross, and Cortini; one of the tracks where Cortini's involvement evolved from adding parts to full collaboration."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Development",
+          "description": "Electronic textures fill the space between guitar parts; harmonic movement accelerates."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Peak",
+          "description": "Both guitar voices converge on a shared harmonic centre; density peaks briefly."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Outro",
+          "description": "Guitars separate and fade independently; electronics sustain momentarily."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "12 Ghosts II",
+      "duration": "2:17",
+      "energy": "low",
+      "tags": [
+        "Drone",
+        "Textural",
+        "Interlude"
+      ],
+      "role": "Album role: A brief ambient reset between the guitar-driven 11 and the darker material ahead.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low drone emerges gradually; pitch modulation creates a slow, undulating quality."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Textural layer",
+          "description": "High-frequency shimmer enters — metallic resonance processed through heavy reverb."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Development",
+          "description": "Drone shifts pitch; new harmonic overtones appear in the upper register."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Outro",
+          "description": "All elements attenuate simultaneously; the track ends with a clean cut."
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "13 Ghosts II",
+      "duration": "3:13",
+      "energy": "mid",
+      "tags": [
+        "Rhythmic Loop",
+        "Dark Texture",
+        "Evolving Pattern"
+      ],
+      "role": "Album role: Ghosts II's rhythmic anchor — a persistent loop-driven piece that introduces a more mechanical, industrial quality.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Clicking rhythmic loop enters immediately — dry, processed, insistent."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Build",
+          "description": "Synthesiser tones layer over the loop; dark harmonic content creates tension."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Peak",
+          "description": "Loop and synthesiser reach maximum density; distortion edges the overall texture."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Outro",
+          "description": "Loop continues as other elements withdraw; ends with a dry cut."
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "14 Ghosts II",
+      "duration": "3:05",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Melodic",
+        "Cinematic Texture"
+      ],
+      "role": "Album role: One of the more melodically developed sketches in Ghosts II — Belew's guitar provides a haunting, film-score-adjacent quality.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's guitar opens with a sustained, reverb-drenched melodic line over ambient electronics."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Development",
+          "description": "Piano joins beneath the guitar; a two-instrument dialogue emerges."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Peak",
+          "description": "Guitar and piano converge harmonically; electronic textures swell to fill the remaining frequency space."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Outro",
+          "description": "Guitar sustains its final phrase; piano drops out first, followed by the ambient bed."
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "title": "15 Ghosts II",
+      "duration": "1:53",
+      "energy": "low",
+      "tags": [
+        "Miniature",
+        "Sparse",
+        "Transitional"
+      ],
+      "role": "Album role: The shortest track in Ghosts II — a compressed pause that prevents listener fatigue before the section's second half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A single sustained tone fades in; minimal processing, maximum space."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Development",
+          "description": "A second tone enters a fifth above; the interval hangs unresolved."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Shift",
+          "description": "Both tones modulate simultaneously; pitch bends create momentary dissonance."
+        },
+        {
+          "timestamp": "1:35",
+          "section": "Outro",
+          "description": "Tones fade symmetrically into silence."
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "title": "16 Ghosts II",
+      "duration": "2:30",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Groove",
+        "Percussive Electronics"
+      ],
+      "role": "Album role: A groove-oriented interlude — Belew's rhythmic guitar playing adds forward momentum to the mid-section of Ghosts II.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Percussive electronic pattern establishes a head-nodding tempo; Belew's guitar adds a choppy rhythmic counterpoint."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Build",
+          "description": "Bass-frequency synthesiser enters; the groove thickens into a fuller arrangement."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Peak",
+          "description": "Guitar, electronics, and bass synthesiser lock into a unified rhythmic cell at maximum density."
+        },
+        {
+          "timestamp": "2:05",
+          "section": "Outro",
+          "description": "Groove elements drop out sequentially; the track ends with isolated electronic clicks."
+        }
+      ]
+    },
+    {
+      "num": 17,
+      "title": "17 Ghosts II",
+      "duration": "2:13",
+      "energy": "low",
+      "tags": [
+        "Cortini Guitar",
+        "Atmospheric",
+        "Melancholic"
+      ],
+      "role": "Album role: A subdued collaboration with Cortini — quiet guitar work over sustained electronics creates one of the section's most introspective moments.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Cortini's guitar enters with a sparse, clean-toned phrase; long pauses between notes.",
+          "detail": "Co-written by Reznor, Ross, and Cortini; guitar recorded during the latter half of the 10-week session."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Development",
+          "description": "Synthesiser pad rises slowly beneath the guitar; harmonic warmth increases."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Peak",
+          "description": "Guitar and synthesiser reach a brief moment of combined fullness before retreating."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Outro",
+          "description": "Guitar plays a final descending phrase; electronics fade to nothing."
+        }
+      ]
+    },
+    {
+      "num": 18,
+      "title": "18 Ghosts II",
+      "duration": "5:22",
+      "energy": "mid",
+      "tags": [
+        "Extended Piece",
+        "Cumulative Build",
+        "Cinematic Arc"
+      ],
+      "role": "Album role: Ghosts II's climax and longest track — a slow-building arc that brings the section to its most fully developed musical statement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sparse piano opens over a bed of filtered electronic noise; pacing is deliberately slow."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Build",
+          "description": "Synthesiser layers begin accumulating; rhythmic elements emerge at low volume."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Development",
+          "description": "Piano drops out; synthesiser and processed textures carry the arrangement through an extended middle section."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Peak",
+          "description": "Full textural density — layered synthesisers, rhythmic processing, and harmonic content at their richest."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Deconstruction",
+          "description": "Elements strip back layer by layer; piano returns briefly before the final fade."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Residual drone sustains for the final seconds; Ghosts II ends in sustained resonance."
+        }
+      ]
+    },
+    {
+      "num": 19,
+      "title": "19 Ghosts III",
+      "duration": "2:11",
+      "energy": "high",
+      "tags": [
+        "Brian Viglione Drums",
+        "Found-Object Percussion",
+        "Industrial Rhythm"
+      ],
+      "role": "Album role: The most percussively aggressive track in the series — Brian Viglione's handmade drum kit transforms the ambient landscape into a rhythmic assault.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Viglione's found-object percussion enters immediately — metallic crashes and irregular accents.",
+          "detail": "Viglione built a makeshift kit from a 50-gallon trash can, water cooler jugs, and a cookie tray with a chain — Reznor simply told him to 'be creative.'"
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Build",
+          "description": "Cortini's additional electronics layer beneath the percussion; a driving rhythmic pattern solidifies."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Peak",
+          "description": "Drums and electronics converge at full intensity; the track reaches its most aggressive moment."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Outro",
+          "description": "Percussion thins; electronics sustain briefly before cutting out."
+        }
+      ]
+    },
+    {
+      "num": 20,
+      "title": "20 Ghosts III",
+      "duration": "3:39",
+      "energy": "mid",
+      "tags": [
+        "Cortini Guitar",
+        "Melodic Interplay",
+        "Textured"
+      ],
+      "role": "Album role: A recovery from the percussive shock of track 19 — Cortini's guitar restores melodic content over a calmer electronic bed.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Cortini's guitar opens with a looping phrase; clean tone with subtle modulation effects."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Build",
+          "description": "Synthesiser pads and electronic textures accumulate beneath the guitar."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Peak",
+          "description": "Full arrangement — guitar melody, synthesiser harmony, and filtered rhythmic elements coexist."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Outro",
+          "description": "Guitar melody sustains its final iteration; backing elements fade."
+        }
+      ]
+    },
+    {
+      "num": 21,
+      "title": "21 Ghosts III",
+      "duration": "2:54",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Dark Melody",
+        "Atmospheric"
+      ],
+      "role": "Album role: A darkly melodic guitar sketch — Belew's contribution here leans toward dissonance and tension rather than the warmth of his earlier appearances.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's guitar enters with a dissonant, sustained chord; electronic hum provides the harmonic foundation."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Development",
+          "description": "Guitar shifts to single-note phrases; a second electronic layer adds rhythmic pulsation."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Peak",
+          "description": "Guitar and electronics reach maximum harmonic tension; the arrangement is dense and unsettling."
+        },
+        {
+          "timestamp": "2:25",
+          "section": "Outro",
+          "description": "Guitar sustains a final dissonant interval; electronics decay slowly."
+        }
+      ]
+    },
+    {
+      "num": 22,
+      "title": "22 Ghosts III",
+      "duration": "2:31",
+      "energy": "high",
+      "tags": [
+        "Brian Viglione Drums",
+        "Cortini Dulcimer",
+        "Collaborative"
+      ],
+      "role": "Album role: The second percussive centrepiece — Viglione's drums return alongside Cortini's dulcimer, producing the most texturally unusual track in the series.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Cortini's dulcimer provides a metallic, folk-tinged drone; Viglione's percussion enters with syncopated accents.",
+          "detail": "Written by Reznor, Ross, Cortini, and Viglione — one of only two tracks featuring Viglione's found-object percussion."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Build",
+          "description": "Dulcimer and drums establish a rhythmic dialogue; additional electronics add bass content."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Peak",
+          "description": "All elements converge — dulcimer, found-object drums, and electronics at full intensity."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Outro",
+          "description": "Drums drop first; dulcimer sustains before fading with the electronic bed."
+        }
+      ]
+    },
+    {
+      "num": 23,
+      "title": "23 Ghosts III",
+      "duration": "2:43",
+      "energy": "low",
+      "tags": [
+        "Atmospheric Drone",
+        "Meditative",
+        "Sustained"
+      ],
+      "role": "Album role: A breath after the percussive intensity of tracks 19 and 22 — pure ambient suspension.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency drone fades in slowly; almost inaudible at first, gradually filling the listening space."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Textural layer",
+          "description": "High-pitched harmonics appear — thin, wispy tones that contrast the bass drone."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Development",
+          "description": "The drone shifts pitch imperceptibly; new overtones emerge as old ones decay."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Outro",
+          "description": "All frequencies converge to a single sustained tone before fading out."
+        }
+      ]
+    },
+    {
+      "num": 24,
+      "title": "24 Ghosts III",
+      "duration": "2:39",
+      "energy": "low",
+      "tags": [
+        "Cortini Guitar",
+        "Reflective",
+        "Sparse"
+      ],
+      "role": "Album role: A quiet guitar meditation — Cortini's contribution strips the arrangement to its barest elements.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Cortini's guitar enters with wide intervals and long pauses; minimal electronic accompaniment."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Development",
+          "description": "A second guitar layer — possibly processed further — adds gentle harmonic support."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Peak",
+          "description": "The two guitar voices briefly align before diverging again."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Outro",
+          "description": "Guitar sustains a final open chord; room tone fills the remaining space."
+        }
+      ]
+    },
+    {
+      "num": 25,
+      "title": "25 Ghosts III",
+      "duration": "1:58",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Electronics",
+        "Adrian Belew Guitar",
+        "Compact"
+      ],
+      "role": "Album role: A dual-role Belew contribution — both guitar and electronics from a single collaborator in the series' most condensed arrangement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's electronics open with a rhythmic, sequenced pattern; guitar adds melodic counterpoint.",
+          "detail": "Co-written by Reznor, Ross, and Belew — one of only two tracks where Belew received a writing credit, reflecting his expanded involvement as the project evolved."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Build",
+          "description": "Guitar and electronics interlock; density increases rapidly."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Peak",
+          "description": "Both instruments at maximum intensity; a brief, concentrated burst of energy."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Outro",
+          "description": "Electronics cut first; guitar sustains a final harmonic before fading."
+        }
+      ]
+    },
+    {
+      "num": 26,
+      "title": "26 Ghosts III",
+      "duration": "2:25",
+      "energy": "low",
+      "tags": [
+        "Drone",
+        "Dark Ambient",
+        "Subterranean"
+      ],
+      "role": "Album role: One of the darkest ambient passages in Ghosts III — a low-register drone that pushes the series toward its most overtly brooding territory.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sub-bass drone emerges from silence; rumbling, almost tectonic in character."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Textural layer",
+          "description": "Distorted upper-register noise enters — scraping, metallic, uncomfortable."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Peak",
+          "description": "Bass drone and upper noise coexist at maximum textural contrast."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Outro",
+          "description": "Upper noise recedes; bass drone sustains alone before fading."
+        }
+      ]
+    },
+    {
+      "num": 27,
+      "title": "27 Ghosts III",
+      "duration": "2:51",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Closing Statement",
+        "Co-written"
+      ],
+      "role": "Album role: Ghosts III's conclusion — co-written with Belew, it functions as a summary of the section's guitar-and-electronics vocabulary.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's guitar opens with a melodic figure that recalls earlier entries; warmer tone than track 21.",
+          "detail": "Co-written by Reznor, Ross, and Belew — the second of two Belew co-writes, closing the section he contributed most actively to."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Build",
+          "description": "Synthesiser and processed textures layer beneath the guitar; the arrangement broadens."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Peak",
+          "description": "Guitar melody reaches its most expressive phrasing; supporting electronics provide harmonic warmth."
+        },
+        {
+          "timestamp": "2:25",
+          "section": "Outro",
+          "description": "Guitar sustains; electronics fade first, leaving the guitar alone to close Ghosts III."
+        }
+      ]
+    },
+    {
+      "num": 28,
+      "title": "28 Ghosts IV",
+      "duration": "5:22",
+      "energy": "mid",
+      "tags": [
+        "Cortini Guitar",
+        "Extended Piece",
+        "Cinematic Arc"
+      ],
+      "role": "Album role: Ghosts IV's overture and a return to extended form — Cortini's guitar anchors a slow-building arc that establishes the final section's more deliberate pacing.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Cortini's guitar enters with a reverb-heavy, sustained melodic line; sparse electronic accompaniment."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Build",
+          "description": "Additional synthesiser layers emerge; filtered rhythmic elements provide gentle forward motion."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Development",
+          "description": "Guitar phrase evolves — wider intervals, more deliberate phrasing — while electronics thicken."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Peak",
+          "description": "Full arrangement at maximum density; guitar and electronics fully integrated."
+        },
+        {
+          "timestamp": "4:40",
+          "section": "Deconstruction",
+          "description": "Layers strip back; guitar returns to its opening phrase."
+        },
+        {
+          "timestamp": "5:05",
+          "section": "Outro",
+          "description": "Guitar sustains a final note; electronics fade to silence."
+        }
+      ]
+    },
+    {
+      "num": 29,
+      "title": "29 Ghosts IV",
+      "duration": "2:54",
+      "energy": "mid",
+      "tags": [
+        "Cortini Electronics",
+        "Processed Texture",
+        "Rhythmic"
+      ],
+      "role": "Album role: An electronics-driven sketch — Cortini's synthesiser work provides rhythmic texture distinct from the guitar-based pieces.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Cortini's additional electronics establish a pulsing, rhythmic bed; processed tones with rapid modulation."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Build",
+          "description": "Reznor's synthesiser layers add harmonic content over the rhythmic bed."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Peak",
+          "description": "All electronic elements reach their densest configuration; rhythmic and harmonic layers fully interlocked."
+        },
+        {
+          "timestamp": "2:25",
+          "section": "Outro",
+          "description": "Rhythmic pulse continues as harmonic layers withdraw; ends with a dry cut."
+        }
+      ]
+    },
+    {
+      "num": 30,
+      "title": "30 Ghosts IV",
+      "duration": "2:58",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Marimba",
+        "Unpitched Percussion",
+        "Unusual Timbre"
+      ],
+      "role": "Album role: The most unusual timbral choice in the series — Belew's marimba introduces an acoustic woodblock colour absent from the rest of the project.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's marimba enters with a descending melodic pattern; the acoustic, wooden timbre stands in stark contrast to the surrounding electronic textures.",
+          "detail": "One of Belew's most unusual contributions — marimba is his only non-guitar/electronics instrument on the album."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Development",
+          "description": "Electronic textures layer beneath the marimba; filtered synthesiser adds bass depth."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Peak",
+          "description": "Marimba and electronics reach a combined climax; the acoustic instrument remains clearly audible above the electronic bed."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Outro",
+          "description": "Marimba fades; electronics sustain briefly before silence."
+        }
+      ]
+    },
+    {
+      "num": 31,
+      "title": "31 Ghosts IV",
+      "duration": "2:25",
+      "energy": "low",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Dark",
+        "Dissonant"
+      ],
+      "role": "Album role: A darkly dissonant passage — Belew's guitar at its least melodic, contributing raw harmonic friction.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's guitar enters with a dissonant, heavily processed chord; no rhythmic underpinning."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Development",
+          "description": "Electronic drone rises beneath the guitar; harmonic clash intensifies."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Peak",
+          "description": "Guitar and drone reach maximum dissonance; the texture is abrasive and confrontational."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Outro",
+          "description": "Guitar drops out; drone sustains alone before fading."
+        }
+      ]
+    },
+    {
+      "num": 32,
+      "title": "32 Ghosts IV",
+      "duration": "4:25",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Extended Sketch",
+        "Cinematic"
+      ],
+      "role": "Album role: Ghosts IV's emotional core — an extended guitar-and-electronics piece that achieves the most sustained melodic development in the original 36 tracks.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's guitar opens with a warm, sustained melodic line; electronics provide a bed of filtered harmonic content."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Build",
+          "description": "Piano enters beneath the guitar; a three-voice arrangement develops slowly."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Peak",
+          "description": "Guitar, piano, and electronics at full combined density; the arrangement achieves genuine emotional weight."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Deconstruction",
+          "description": "Piano drops out; guitar simplifies to sustained tones over thinning electronics."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Guitar plays a final descending phrase; all elements fade."
+        }
+      ]
+    },
+    {
+      "num": 33,
+      "title": "33 Ghosts IV",
+      "duration": "4:01",
+      "energy": "mid",
+      "tags": [
+        "Cortini Electronics",
+        "Cumulative Build",
+        "Evolving Texture"
+      ],
+      "role": "Album role: A process piece — Cortini's electronics drive a gradual textural transformation across the track's four minutes.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Cortini's additional electronics establish a granular texture; fine particles of sound in constant motion."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Build",
+          "description": "Synthesiser pads emerge beneath the granular layer; the texture expands into lower frequencies."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Development",
+          "description": "Granular texture transforms — particles coalesce into longer sustains, the timbre darkens."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Peak",
+          "description": "All electronic layers at maximum density; the difference between Cortini's contribution and Reznor's is indistinguishable."
+        },
+        {
+          "timestamp": "3:35",
+          "section": "Outro",
+          "description": "Density reduces rapidly; a single sustained tone closes the track."
+        }
+      ]
+    },
+    {
+      "num": 34,
+      "title": "34 Ghosts IV",
+      "duration": "5:52",
+      "energy": "mid",
+      "tags": [
+        "Piano",
+        "Grammy-Nominated",
+        "Old Town Road Sample Source"
+      ],
+      "role": "Album role: The most consequential track in the series — a piano-driven meditation that earned a Grammy nomination for Best Rock Instrumental Performance and was later sampled for Lil Nas X's 'Old Town Road,' a 19-week Billboard #1.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Piano enters with a simple, repeating harmonic pattern — sparse, evenly paced, with natural room ambience.",
+          "detail": "This piano figure was sampled by YoungKio in 2018 for the beat that became Lil Nas X's 'Old Town Road,' earning Reznor and Ross a co-writing credit and a CMA nomination."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Build",
+          "description": "Synthesiser pads layer beneath the piano; the arrangement grows warmer and more enveloping."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Development",
+          "description": "The piano pattern modulates subtly — same rhythm, shifted harmony — while electronic textures continue to accumulate."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Peak",
+          "description": "Full arrangement at its most emotionally resonant; piano and synthesiser achieve a moment of genuine beauty.",
+          "detail": "Nominated for the Grammy Award for Best Rock Instrumental Performance — the first Creative Commons-licensed music nominated for a Grammy."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Deconstruction",
+          "description": "Synthesiser layers thin; piano returns to its original unaccompanied phrasing."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Outro",
+          "description": "Piano sustains a final chord; room tone fills the gap before silence."
+        }
+      ]
+    },
+    {
+      "num": 35,
+      "title": "35 Ghosts IV",
+      "duration": "3:29",
+      "energy": "mid",
+      "tags": [
+        "Adrian Belew Guitar",
+        "Penultimate",
+        "Reflective"
+      ],
+      "role": "Album role: The penultimate track of Ghosts I–IV — Belew's final guitar appearance, bringing a reflective quality before the close.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Belew's guitar enters with a contemplative, sustained melodic phrase; electronics provide a warm harmonic bed."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Development",
+          "description": "Guitar phrase extends — longer sustains, wider intervals — while synthesiser textures shift beneath."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Peak",
+          "description": "Guitar reaches its most expressive moment; electronics swell in support."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Outro",
+          "description": "Guitar and electronics fade simultaneously; a brief moment of silence separates this from the final track."
+        }
+      ]
+    },
+    {
+      "num": 36,
+      "title": "36 Ghosts IV",
+      "duration": "2:19",
+      "energy": "low",
+      "tags": [
+        "Closing Statement",
+        "Ambient Coda",
+        "Final Resonance"
+      ],
+      "role": "Album role: The original series' coda — a brief, quiet close that mirrors the intimacy of '1 Ghosts I,' bookending 110 minutes of improvisation.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A single sustained tone fades in — warm, enveloping, unhurried."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Development",
+          "description": "A second harmonic layer enters; the two tones interact to produce gentle beating patterns."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Peak",
+          "description": "Both tones at full volume; the simplest possible arrangement at its fullest expression."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Outro",
+          "description": "Both tones fade symmetrically; Ghosts I–IV closes in silence after 109 minutes and 56 seconds."
+        }
+      ]
+    },
+    {
+      "num": 37,
+      "title": "Letting Go While Holding On",
+      "duration": "9:40",
+      "energy": "low",
+      "tags": [
+        "Opening Statement",
+        "Piano",
+        "Modular Synthesis",
+        "Meditative"
+      ],
+      "role": "Album role: Ghosts V's overture and the gateway to the 2020 material — a glacially paced, piano-centred meditation that signals a deliberate shift from the 2008 sessions' textural sketches toward fully realised ambient compositions.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "An extended silence gives way to a resonant piano chord — sustained, reverberant, occupying the full stereo width."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Textural layer",
+          "description": "Modular synthesiser tones emerge beneath the piano; warm, slowly modulating buzzing and humming sounds.",
+          "detail": "Spin described the Ghosts V tracks as showing 'a particular mastery of modular synthesis,' reflecting Reznor and Ross's deepened engagement with hardware synthesiser systems in the twelve years since Ghosts I–IV."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Development",
+          "description": "Piano phrases become more melodically defined; the synthesiser bed thickens with additional harmonic layers."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Build",
+          "description": "New tonal elements — bell-like tones and drone layers — enter gradually; the arrangement expands without increasing tempo."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Peak",
+          "description": "All elements at their fullest combined voicing; piano, synthesiser, and ancillary tones coexist in warm, consonant harmony."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Deconstruction",
+          "description": "Piano thins to single notes; synthesiser layers attenuate."
+        },
+        {
+          "timestamp": "9:15",
+          "section": "Outro",
+          "description": "Final piano note decays naturally; ambient bed fades to silence."
+        }
+      ]
+    },
+    {
+      "num": 38,
+      "title": "Together",
+      "duration": "10:04",
+      "energy": "low",
+      "tags": [
+        "Title Track",
+        "Piano",
+        "Sampled Voices",
+        "Drone"
+      ],
+      "role": "Album role: The title track and thematic centre of Ghosts V — an extended piano-and-drone piece whose sampled choral voices embody the album's theme of human connection during isolation.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low drone establishes a sustained harmonic foundation; piano enters after several seconds with a simple repeating figure."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Vocal entry",
+          "description": "Sampled, processed vocal tones appear — distant, choir-like, wordless — floating above the piano and drone.",
+          "detail": "Jon Pareles of The New York Times noted the album 'touches down in consonance' with 'choirs of sampled voices' — a textural element largely absent from Ghosts I–IV."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Build",
+          "description": "Additional synthesiser layers and bell-like tones join; the harmonic palette brightens."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Peak",
+          "description": "Piano, drone, sampled voices, and bell tones at maximum combined density; the warmest moment on Ghosts V."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Development",
+          "description": "Voices recede; piano continues alone over the sustained drone, returning to the opening's simplicity."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Deconstruction",
+          "description": "Drone begins to thin; piano phrases widen in spacing."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Outro",
+          "description": "Final piano note sustains; drone fades beneath it."
+        },
+        {
+          "timestamp": "9:55",
+          "section": "Silence",
+          "description": "Natural room decay fills the final seconds."
+        }
+      ]
+    },
+    {
+      "num": 39,
+      "title": "Out in the Open",
+      "duration": "5:16",
+      "energy": "low",
+      "tags": [
+        "Atmospheric",
+        "Spatial",
+        "Gentle Drones"
+      ],
+      "role": "Album role: A spacious interlude — the most open-textured track on Ghosts V, evoking physical space through wide stereo imaging and minimal harmonic content.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Wide-panned drones establish an expansive stereo field; low density, maximum space."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Textural layer",
+          "description": "High-frequency shimmer enters — delicate, almost inaudible — adding brightness to the drone foundation."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Development",
+          "description": "A faint melodic fragment appears in the mid-register; the arrangement hints at structure without committing."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Peak",
+          "description": "All three layers — bass drone, high shimmer, and mid-register melody — briefly align."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Outro",
+          "description": "Melodic fragment fades first; drones sustain and thin before silence."
+        }
+      ]
+    },
+    {
+      "num": 40,
+      "title": "With Faith",
+      "duration": "9:40",
+      "energy": "low",
+      "tags": [
+        "Piano",
+        "Sustained Drones",
+        "Elegiac"
+      ],
+      "role": "Album role: Ghosts V's most sustained emotional statement — an elegiac piano piece over slowly evolving drone layers, described by The New York Times as 'serenely elegiac.'",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained drone fades in slowly; harmonic content is consonant and warm."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Piano entry",
+          "description": "Piano enters with a slow, deliberate melodic line — minor key, wide intervals, long pauses between phrases."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Build",
+          "description": "Additional drone layers accumulate; the harmonic foundation becomes richer and warmer."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Development",
+          "description": "Piano melody evolves — new intervals, shifted rhythm — while maintaining its measured pacing."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Peak",
+          "description": "Piano and drones at their fullest combined expression; the track reaches a moment of quiet emotional intensity."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Deconstruction",
+          "description": "Piano simplifies; drones begin their slow recession."
+        },
+        {
+          "timestamp": "9:15",
+          "section": "Outro",
+          "description": "Final piano note sustains over a thinning drone; silence arrives gradually."
+        }
+      ]
+    },
+    {
+      "num": 41,
+      "title": "Apart",
+      "duration": "13:36",
+      "energy": "low",
+      "tags": [
+        "Extended Piece",
+        "Glacial Pace",
+        "Emotional Climax",
+        "Piano"
+      ],
+      "role": "Album role: Ghosts V's centrepiece and longest track across the entire series — a 13-minute arc that takes the meditative approach to its most extreme duration, demanding sustained attention.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Near-silence; a faint drone gradually becomes audible over the first minute."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Textural entry",
+          "description": "Synthesiser tones emerge — warm, consonant, slowly modulating — establishing the harmonic palette."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Piano entry",
+          "description": "Piano appears with widely spaced notes; each note allowed to decay fully before the next."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Build",
+          "description": "Piano phrases become more melodically developed; drone layers thicken beneath."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Development",
+          "description": "Additional textural elements — processed bell tones, filtered noise — add complexity without disrupting the glacial pace."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Peak",
+          "description": "The fullest arrangement point; piano, drones, and ancillary tones coexist at maximum warmth and density."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Deconstruction",
+          "description": "Elements recede one by one; piano returns to its initial sparse phrasing."
+        },
+        {
+          "timestamp": "12:30",
+          "section": "Outro",
+          "description": "Final drone tone sustains; piano plays one last note before silence envelops the track."
+        }
+      ]
+    },
+    {
+      "num": 42,
+      "title": "Your Touch",
+      "duration": "4:28",
+      "energy": "low",
+      "tags": [
+        "Intimate",
+        "Piano",
+        "Warm Drones"
+      ],
+      "role": "Album role: A compact, intimate piece that provides relief after the 13-minute 'Apart' — personal in scale, directly addressed in its title.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Warm drone establishes an immediately intimate atmosphere; close-miked quality suggests physical proximity."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Piano entry",
+          "description": "Piano enters with a gentle, repetitive figure — consonant, comforting, unhurried."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Peak",
+          "description": "Piano and drone at their warmest combined voicing; the arrangement achieves a quiet emotional directness."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Deconstruction",
+          "description": "Piano simplifies to single notes; drone begins thinning."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Outro",
+          "description": "Final piano note decays; drone fades to silence."
+        }
+      ]
+    },
+    {
+      "num": 43,
+      "title": "Hope We Can Again",
+      "duration": "7:28",
+      "energy": "mid",
+      "tags": [
+        "Featured in The Bear",
+        "Piano",
+        "Building Optimism",
+        "Cinematic"
+      ],
+      "role": "Album role: The emotional climax of Ghosts V — a more dynamically expressive piano piece whose title and forward-leaning energy provide the album's most explicit statement of hope.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Piano opens with a rising melodic phrase — more rhythmically active than previous tracks, with a sense of forward motion.",
+          "detail": "Featured in the Season 2 finale of FX's The Bear — the track's placement underscored the show's themes of striving and reconnection."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Build",
+          "description": "Synthesiser layers enter beneath the piano; harmonic content brightens, moving toward major-key territory."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Development",
+          "description": "Piano melody evolves into more complex phrasing; the arrangement gains warmth and momentum."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Peak",
+          "description": "Full arrangement at its most dynamically assertive; piano and synthesiser achieve genuine optimism — rare in the Ghosts series."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Deconstruction",
+          "description": "Energy recedes gradually; piano returns to simpler phrases over a thinning electronic bed."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Outro",
+          "description": "Piano sustains a final consonant chord; synthesiser fades beneath it."
+        }
+      ]
+    },
+    {
+      "num": 44,
+      "title": "Still Right Here",
+      "duration": "10:12",
+      "energy": "low",
+      "tags": [
+        "Closing Statement",
+        "Piano",
+        "Sustained Drones",
+        "Resolution"
+      ],
+      "role": "Album role: Ghosts V's coda and the series' emotional resolution — a ten-minute farewell that closes the 'Together' arc with quiet finality, its title affirming presence and continuity.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Drone fades in from silence; the slowest entry on the album, requiring over a minute to become fully audible."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Piano entry",
+          "description": "Piano appears with a simple, four-note descending phrase; each note weighted with deliberate intention."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Build",
+          "description": "Drone layers multiply; piano continues its deliberate pacing over an increasingly warm harmonic bed."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Development",
+          "description": "Piano melody shifts to a new harmonic centre; the mood darkens slightly before resolving back to warmth."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Peak",
+          "description": "Piano and drones at their final combined fullness; the track reaches its emotional centre."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Deconstruction",
+          "description": "Piano thins to isolated notes; drones begin a long, slow fade."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Outro",
+          "description": "Final piano note sustains over a vanishing drone; Ghosts V: Together closes in near-silence."
+        }
+      ]
+    },
+    {
+      "num": 45,
+      "title": "The Cursed Clock",
+      "duration": "7:00",
+      "energy": "mid",
+      "tags": [
+        "Opening Statement",
+        "Rhythmic Tension",
+        "Dark Ambient",
+        "Ticking Motif"
+      ],
+      "role": "Album role: Ghosts VI's overture — a ticking, clock-like rhythmic motif establishes the anxious, time-obsessed register that pervades the darker companion volume.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A ticking, metronomic pulse opens the track — dry, mechanical, insistent; dark synthesiser drone emerges beneath.",
+          "detail": "Pitchfork described Ghosts VI as 'anxious and anxiety-inducing' — the ticking motif in the opener encodes that tension from the first second."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Build",
+          "description": "Additional synthesiser layers enter; the harmonic content darkens, moving into minor-key territory."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Development",
+          "description": "Ticking motif shifts rhythm subtly; new electronic textures — scraping, metallic — appear in the upper register."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Peak",
+          "description": "All elements at maximum density and dissonance; the arrangement is dense, uncomfortable, and unresolved."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Deconstruction",
+          "description": "Synthesiser layers thin; ticking continues alone over a residual drone."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Outro",
+          "description": "Ticking slows and stops; drone sustains briefly before cutting out."
+        }
+      ]
+    },
+    {
+      "num": 46,
+      "title": "Around Every Corner",
+      "duration": "10:53",
+      "energy": "mid",
+      "tags": [
+        "Extended Piece",
+        "Paranoid Atmosphere",
+        "Evolving Texture",
+        "Industrial"
+      ],
+      "role": "Album role: Ghosts VI's longest and most ominous track — an extended exercise in sustained dread that builds and recedes without resolution across nearly eleven minutes.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low-frequency rumble and distant metallic scraping establish an immediately threatening atmosphere."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Build",
+          "description": "Pulsing electronic elements enter; a slow, insistent rhythmic pattern emerges from the noise floor."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Development",
+          "description": "New textural elements — processed impacts, filtered distortion — accumulate; the density increases without providing melodic relief."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Peak",
+          "description": "Maximum textural density; the track achieves a sustained plateau of tension.",
+          "detail": "The New York Times noted Ghosts VI 'thrusts the anxiety upfront' with 'the tensest kind of minimalistic repetition.'"
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Shift",
+          "description": "The rhythmic pulse destabilises; new timbres enter while others drop away, reshuffling the textural balance."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Deconstruction",
+          "description": "Elements recede; the rumble returns as the dominant sound."
+        },
+        {
+          "timestamp": "10:20",
+          "section": "Outro",
+          "description": "Rumble fades to sub-audible frequencies; the track ends in near-silence."
+        }
+      ]
+    },
+    {
+      "num": 47,
+      "title": "The Worriment Waltz",
+      "duration": "9:26",
+      "energy": "mid",
+      "tags": [
+        "Triple Metre",
+        "Piano",
+        "Anxious",
+        "Dark"
+      ],
+      "role": "Album role: The most rhythmically defined piece on Ghosts VI — a triple-metre framework that references the waltz form while subverting its elegance with anxiety and distortion.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A halting triple-metre rhythmic pattern emerges — piano and electronics in an uneasy three-beat cycle."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Build",
+          "description": "Piano becomes more assertive within the waltz framework; electronic textures add dissonant harmony."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Development",
+          "description": "The waltz rhythm destabilises — missed beats, tempo fluctuations — creating a sense of controlled collapse."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Peak",
+          "description": "Piano and electronics at their most agitated; the waltz becomes a vehicle for rhythmic anxiety."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Deconstruction",
+          "description": "Rhythmic framework dissolves; piano plays isolated chords without clear metre."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Outro",
+          "description": "Final piano chord sustains over a thinning drone; the waltz is abandoned."
+        }
+      ]
+    },
+    {
+      "num": 48,
+      "title": "Run Like Hell",
+      "duration": "5:38",
+      "energy": "high",
+      "tags": [
+        "Aggressive",
+        "Industrial",
+        "Rhythmic Drive",
+        "Forward Momentum"
+      ],
+      "role": "Album role: Ghosts VI's most aggressive track — relentless forward momentum and industrial rhythmic intensity make this the energetic peak of the 2020 material.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Driving rhythmic pulse enters immediately — no build-up, no preamble; distorted bass and percussive electronics.",
+          "detail": "Spin noted 'a feeling of forward momentum to the entire album but we might not like where it's headed' — this track embodies that propulsive anxiety."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Build",
+          "description": "Additional noise layers and processed percussion intensify the forward drive."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Peak",
+          "description": "Maximum intensity — all elements at full volume and density; the most conventionally aggressive moment in the Ghosts series."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Development",
+          "description": "Rhythmic pattern shifts; new timbres replace old ones while maintaining the same energy level."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Deconstruction",
+          "description": "Percussive elements thin; the drive recedes slowly."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Outro",
+          "description": "Final rhythmic pulse cuts out; residual distortion fades."
+        }
+      ]
+    },
+    {
+      "num": 49,
+      "title": "When It Happens (Don't Mind Me)",
+      "duration": "2:56",
+      "energy": "mid",
+      "tags": [
+        "Compact",
+        "Sardonic Title",
+        "Processed"
+      ],
+      "role": "Album role: A brief, darkly humorous interjection — its parenthetical title and compact form provide a momentary break from the surrounding extended pieces.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Filtered electronic texture enters immediately; a restless, shifting pattern with no stable centre."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Build",
+          "description": "Additional layers add harmonic content; the texture darkens and thickens."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Peak",
+          "description": "Maximum density — distorted and dissonant; the track's brevity concentrates its impact."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Outro",
+          "description": "Sharp cutoff; the track ends abruptly."
+        }
+      ]
+    },
+    {
+      "num": 50,
+      "title": "Another Crashed Car",
+      "duration": "2:24",
+      "energy": "mid",
+      "tags": [
+        "Impact Sounds",
+        "Industrial Texture",
+        "Brief"
+      ],
+      "role": "Album role: A visceral miniature — metallic impact sounds and distortion evoke mechanical violence in under two-and-a-half minutes.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Metallic crash sound opens the track; distorted resonance fills the stereo field immediately."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Build",
+          "description": "Rhythmic industrial textures layer over the initial impact; the arrangement gains momentum."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Peak",
+          "description": "Multiple impact sounds and distortion layers at maximum density."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Outro",
+          "description": "Impacts cease; distorted resonance decays naturally to silence."
+        }
+      ]
+    },
+    {
+      "num": 51,
+      "title": "Temp Fix",
+      "duration": "1:46",
+      "energy": "mid",
+      "tags": [
+        "Shortest Track",
+        "Fragment",
+        "Transitional"
+      ],
+      "role": "Album role: The shortest track on Ghosts VI — a compressed transitional fragment whose title suggests impermanence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Electronic texture enters mid-stream — as if captured from an ongoing process."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Development",
+          "description": "The texture shifts timbre; new frequency content appears briefly."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Peak",
+          "description": "Brief maximum density — all elements aligned for a single concentrated moment."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Outro",
+          "description": "Abrupt cutoff; the track ends without resolution."
+        }
+      ]
+    },
+    {
+      "num": 52,
+      "title": "Trust Fades",
+      "duration": "3:13",
+      "energy": "mid",
+      "tags": [
+        "Dissonant",
+        "Erosion",
+        "Electronic"
+      ],
+      "role": "Album role: A slowly disintegrating texture — the arrangement mirrors its title, with harmonic elements gradually losing coherence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A relatively consonant synthesiser chord opens; fragile, unstable, on the verge of dissolution."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Development",
+          "description": "The chord begins to fragment — individual notes drift out of tune; noise content increases."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Peak",
+          "description": "Dissonance reaches its maximum; the original chord is barely recognisable beneath accumulated distortion."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Outro",
+          "description": "All harmonic content dissolves into noise; the track fades through pure texture."
+        }
+      ]
+    },
+    {
+      "num": 53,
+      "title": "A Really Bad Night",
+      "duration": "4:54",
+      "energy": "mid",
+      "tags": [
+        "Unsettling",
+        "Piano",
+        "Dark Ambient",
+        "Lynchian"
+      ],
+      "role": "Album role: The most cinematically unsettling track on Ghosts VI — piano and dark ambient textures combine to evoke what Sputnikmusic called 'an all-out Lynchian nightmare.'",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Brittle piano notes enter over a dark, low-frequency drone; deliberately discomforting spacing.",
+          "detail": "Sputnikmusic critic Simon characterised Ghosts VI as 'an all-out Lynchian nightmare' — this track's combination of sparse piano and dark ambience is the closest analogue."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Build",
+          "description": "Drone intensifies; processed noise textures appear — scraping, hissing, movements at the edge of perception."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Peak",
+          "description": "Piano increases in rhythmic urgency; drone and noise at maximum unsettling density."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Deconstruction",
+          "description": "Piano thins to isolated notes; drone continues but noise recedes."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Final piano note decays; drone sustains briefly before silence."
+        }
+      ]
+    },
+    {
+      "num": 54,
+      "title": "Your New Normal",
+      "duration": "3:46",
+      "energy": "mid",
+      "tags": [
+        "Pandemic Reference",
+        "Rhythmic Pulse",
+        "Industrial"
+      ],
+      "role": "Album role: The most explicitly pandemic-referencing title on Ghosts VI — a rhythmic, industrial-tinged piece that suggests enforced adaptation.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Pulsing electronic rhythm enters — steady, unrelenting, metronomic; synthesiser drone provides harmonic context."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Build",
+          "description": "Additional electronic textures layer over the pulse; the arrangement thickens."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Peak",
+          "description": "Maximum density — rhythmic pulse, synthesiser layers, and processed noise textures converge."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Deconstruction",
+          "description": "Textures thin; the rhythmic pulse continues alone."
+        },
+        {
+          "timestamp": "3:25",
+          "section": "Outro",
+          "description": "Pulse slows and stops; residual drone fades."
+        }
+      ]
+    },
+    {
+      "num": 55,
+      "title": "Just Breathe",
+      "duration": "7:00",
+      "energy": "low",
+      "tags": [
+        "Cathartic",
+        "Piano",
+        "Atmospheric",
+        "Respite"
+      ],
+      "role": "Album role: A rare moment of quiet on Ghosts VI — the title suggests self-soothing, and the piano-driven arrangement provides temporary respite from the surrounding darkness.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained drone opens — warmer than surrounding tracks; a deliberate tonal shift toward consonance."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Piano entry",
+          "description": "Piano enters with a gentle, repeating figure; the simplest melodic content on Ghosts VI."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Build",
+          "description": "Drone layers thicken; piano continues its repetitive pattern without complication."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Peak",
+          "description": "Piano and drones at their warmest combined voicing — the single most consonant moment on Ghosts VI."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Deconstruction",
+          "description": "Piano thins; drone begins a slow recession."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Outro",
+          "description": "Final drone tone fades; silence arrives as the respite ends."
+        }
+      ]
+    },
+    {
+      "num": 56,
+      "title": "Right Behind You",
+      "duration": "1:44",
+      "energy": "mid",
+      "tags": [
+        "Threatening",
+        "Miniature",
+        "Paranoid"
+      ],
+      "role": "Album role: A brief threatening interlude — its title and compact, aggressive form shatter the calm of 'Just Breathe' and reassert Ghosts VI's anxious register.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Abrupt entry — processed noise and distorted electronics with no fade-in or preparation."
+        },
+        {
+          "timestamp": "0:25",
+          "section": "Build",
+          "description": "Additional layers of distortion and percussive impact sounds intensify rapidly."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Peak",
+          "description": "Maximum density and aggression — concentrated into barely a minute."
+        },
+        {
+          "timestamp": "1:25",
+          "section": "Outro",
+          "description": "Abrupt cutoff; the track ends as suddenly as it began."
+        }
+      ]
+    },
+    {
+      "num": 57,
+      "title": "Turn This Off Please",
+      "duration": "13:10",
+      "energy": "mid",
+      "tags": [
+        "Extended Piece",
+        "Harrowing",
+        "Cumulative Build",
+        "Climax"
+      ],
+      "role": "Album role: Ghosts VI's centrepiece and the series' most harrowing track — 13 minutes of accumulating dread whose title reads as a plea for relief, functioning as the dark counterpart to Ghosts V's 'Apart.'",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sub-bass rumble and faint electronic noise emerge from silence; the slowest opening on Ghosts VI."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Build",
+          "description": "Rhythmic pulsation enters — mechanical, insistent, metronomic; the first sign of the approaching intensity."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Development",
+          "description": "New noise textures layer — metallic scraping, filtered distortion — accumulating at a glacial pace."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Intensification",
+          "description": "The rhythmic pulse accelerates subtly; harmonic content darkens into pure dissonance."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Peak",
+          "description": "Maximum density and sustained duration — the track holds at its most oppressive level for an extended passage.",
+          "detail": "Jon Pareles described Ghosts VI as 'harrowing from end to end, stoked with rhythmic tension, dissonance and amorphous noise: a soundscape of impending collapse and inexorable entropy.'"
+        },
+        {
+          "timestamp": "10:00",
+          "section": "Sustained peak",
+          "description": "The intensity plateaus rather than resolving; new textures replace old ones at the same energy level."
+        },
+        {
+          "timestamp": "11:30",
+          "section": "Deconstruction",
+          "description": "Elements begin to thin grudgingly; the rhythmic pulse continues long after the noise recedes."
+        },
+        {
+          "timestamp": "12:30",
+          "section": "Outro",
+          "description": "Pulse finally stops; residual drone and room tone fill the last seconds."
+        }
+      ]
+    },
+    {
+      "num": 58,
+      "title": "So Tired",
+      "duration": "3:45",
+      "energy": "low",
+      "tags": [
+        "Exhaustion",
+        "Piano",
+        "Post-Climax"
+      ],
+      "role": "Album role: The emotional aftermath — following the 13-minute ordeal of 'Turn This Off Please,' this brief piano piece expresses spent exhaustion.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Piano enters immediately — slow, heavy, deliberate; each chord lands with physical weight."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Development",
+          "description": "Drone layer appears beneath the piano; muted, drained of the energy heard in earlier tracks."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Peak",
+          "description": "Piano and drone at their modest combined fullness — the quietest peak on the entire album."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Outro",
+          "description": "Piano reduces to single notes; drone fades; the track ends in near-silence."
+        }
+      ]
+    },
+    {
+      "num": 59,
+      "title": "Almost Dawn",
+      "duration": "5:35",
+      "energy": "low",
+      "tags": [
+        "Closing Statement",
+        "Final Resolution",
+        "Dawn",
+        "Piano"
+      ],
+      "role": "Album role: The series finale — its title suggests survival through darkness, and the track's gradual brightening provides the only moment across Ghosts VI that hints at the possibility of light.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Dark drone fades in — the final expression of Ghosts VI's prevailing atmosphere; a sustained low tone."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Textural shift",
+          "description": "Drone timbre gradually brightens; high-frequency harmonics appear, suggesting a tonal shift from darkness toward light."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Piano entry",
+          "description": "Piano enters with a simple, ascending melodic figure — the first upward-moving phrase in the album's final section."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Build",
+          "description": "Additional warm synthesiser tones join; the harmonic palette shifts perceptibly toward consonance."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Peak",
+          "description": "Piano and brightened drones reach their warmest combined moment — not joy, but the faintest promise of it."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Piano sustains a final consonant chord; drones thin and fade. The Ghosts series closes after four hours, 23 minutes, and 30 seconds — almost, but not quite, at dawn."
+        }
+      ]
+    }
+  ]
+}

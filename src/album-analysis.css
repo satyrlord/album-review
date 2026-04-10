@@ -402,6 +402,16 @@ a {
   width: 100%;
 }
 
+.ix-card-cover[data-album-id="matt-uelmen-diablo-hellfire"],
+.hero-cover[data-album-id="matt-uelmen-diablo-hellfire"] {
+  object-position: center;
+}
+
+.ix-card-cover[data-album-id="gustav-holst-the-planets"],
+.hero-cover[data-album-id="gustav-holst-the-planets"] {
+  object-position: center 38%;
+}
+
 .ix-card-title {
   font-family: var(--font-display);
 }

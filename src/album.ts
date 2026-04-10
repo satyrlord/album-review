@@ -151,13 +151,13 @@ interface AlbumData {
     );
   }
 
-  function renderHeroMedia(coverUrl: string | undefined, artist: string, title: string): string {
+  function renderHeroMedia(id: string, coverUrl: string | undefined, artist: string, title: string): string {
     const resolvedCoverUrl = resolveCoverImageUrl(coverUrl);
 
     return (
       `    <div class="hero-media">\n` +
       `      <div class="hero-cover-frame overflow-hidden rounded-[1.6rem] border border-base-300/70 bg-base-200/80 p-3 shadow-2xl backdrop-blur-xl">\n` +
-      `        <img class="hero-cover rounded-[1.1rem]" src="${escapeHtml(resolvedCoverUrl)}" data-cover-fallback="${escapeHtml(FALLBACK_COVER_URL)}" alt="Album cover for ${escapeHtml(artist)} - ${escapeHtml(title)}" decoding="async" referrerpolicy="no-referrer">\n` +
+      `        <img class="hero-cover rounded-[1.1rem]" src="${escapeHtml(resolvedCoverUrl)}" data-album-id="${escapeHtml(id)}" data-cover-fallback="${escapeHtml(FALLBACK_COVER_URL)}" alt="Album cover for ${escapeHtml(artist)} - ${escapeHtml(title)}" decoding="async" referrerpolicy="no-referrer">\n` +
       `      </div>\n` +
       `    </div>\n`
     );
@@ -227,7 +227,7 @@ interface AlbumData {
     if (d.genre)    metaRows.push(renderMetaItem('Genre', d.genre));
 
     const tracksHtml = d.tracks.map(renderTrack).join('\n\n');
-    const heroMedia = renderHeroMedia(d.coverUrl, d.artist, d.title);
+    const heroMedia = renderHeroMedia(d.id, d.coverUrl, d.artist, d.title);
     const heroLinks = renderStreamingLinks(d);
     const heroClass = 'container hero-layout has-cover';
     const siteNav = renderSiteNav();

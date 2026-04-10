@@ -31,6 +31,34 @@
     "coverUrl": "covers/edgar-froese-epsilon-in-malaysian-pale.jpg"
   },
   {
+    "id": "enigma-mcmxc-a-d",
+    "artist": "Enigma",
+    "title": "MCMXC a.D.",
+    "year": 1990,
+    "tracks": 7,
+    "genre": "New-Age / Worldbeat / Dance",
+    "genreTags": [
+      "New-Age",
+      "Worldbeat",
+      "Dance"
+    ],
+    "coverUrl": "covers/enigma-mcmxc-a-d.jpg"
+  },
+  {
+    "id": "enigma-the-cross-of-changes",
+    "artist": "Enigma",
+    "title": "The Cross of Changes",
+    "year": 1993,
+    "tracks": 9,
+    "genre": "New-Age / Ambient / Worldbeat",
+    "genreTags": [
+      "New-Age",
+      "Ambient",
+      "Worldbeat"
+    ],
+    "coverUrl": "covers/enigma-the-cross-of-changes.jpg"
+  },
+  {
     "id": "global-communication-76-14",
     "artist": "Global Communication",
     "title": "76:14",
@@ -280,6 +308,20 @@
     "coverUrl": "covers/mike-oldfield-tubular-bells-2003.jpg"
   },
   {
+    "id": "nine-inch-nails-the-downward-spiral",
+    "artist": "Nine Inch Nails",
+    "title": "The Downward Spiral",
+    "year": 1994,
+    "tracks": 14,
+    "genre": "Industrial Rock / Alternative Rock",
+    "genreTags": [
+      "Industrial Rock",
+      "Alternative Rock",
+      "Industrial Metal"
+    ],
+    "coverUrl": "covers/nine-inch-nails-the-downward-spiral.png"
+  },
+  {
     "id": "nine-inch-nails-quake",
     "artist": "Nine Inch Nails",
     "title": "Quake",
@@ -293,6 +335,34 @@
     ],
     "coverUrl": "covers/nine-inch-nails-quake.jpg",
     "isSoundtrack": true
+  },
+  {
+    "id": "nine-inch-nails-the-fragile",
+    "artist": "Nine Inch Nails",
+    "title": "The Fragile",
+    "year": 1999,
+    "tracks": 23,
+    "genre": "Industrial Rock / Art Rock",
+    "genreTags": [
+      "Industrial Rock",
+      "Art Rock",
+      "Alternative Rock"
+    ],
+    "coverUrl": "covers/nine-inch-nails-the-fragile.png"
+  },
+  {
+    "id": "nine-inch-nails-ghosts",
+    "artist": "Nine Inch Nails",
+    "title": "Ghosts",
+    "year": 2008,
+    "tracks": 59,
+    "genre": "Dark Ambient / Ambient / Experimental",
+    "genreTags": [
+      "Dark Ambient",
+      "Ambient",
+      "Experimental"
+    ],
+    "coverUrl": "covers/nine-inch-nails-ghosts.png"
   },
   {
     "id": "rik-schaffer-vampire-the-masquerade-bloodlines",

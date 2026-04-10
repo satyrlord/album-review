@@ -94,6 +94,7 @@ Collection card rules:
 
 - `.ix-card` is now a DaisyUI `card` with the existing `--card-accent` hook preserved.
 - `.ix-card-media` now always renders. When an album has no cached cover, or its referenced file fails to load, the shared `public/covers/fallback-cd-case.svg` artwork is shown instead.
+- Card and hero covers default to `object-position: top center`; if a specific sleeve needs a different focal point, scope that override with the image `data-album-id` hook instead of changing the shared default.
 - `.ix-card-title` remains the primary album title element.
 - `.ix-card-artist` and `.ix-card-footer` inherit the per-artist accent color.
 - Empty and error states still render as `.ix-empty` and `.ix-error`, now using DaisyUI `alert` styling.
