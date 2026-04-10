@@ -26,7 +26,7 @@
     "nyc": "^18.0.0",
     "tailwindcss": "^4.2.2",
     "tsx": "^4.19.3",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.2",
     "vite": "^8.0.3",
     "vite-plugin-istanbul": "^8.0.0"
   }
