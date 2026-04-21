@@ -24,7 +24,7 @@
     "daisyui": "^5.5.19",
     "markdownlint-cli2": "^0.22.0",
     "nyc": "^18.0.0",
-    "tailwindcss": "^4.2.2",
+    "tailwindcss": "^4.2.3",
     "tsx": "^4.19.3",
     "typescript": "^6.0.3",
     "vite": "^8.0.8",
