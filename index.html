@@ -5,16 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="application-name" content="ALBANA">
 <meta name="description" content="ALBANA collection index for timestamp-based album structural analysis.">
+<meta property="og:site_name" content="ALBANA">
+<meta property="og:title" content="ALBANA — structural album analysis">
+<meta property="og:description" content="Timestamp-based structural analysis for landmark electronic, ambient, and soundtrack albums.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
 <title>ALBANA Index</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&family=Orbitron:wght@700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="./src/album-analysis.css">
 </head>
 <body data-collection="home" class="min-h-screen bg-base-100 text-base-content antialiased">
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header id="ixHero"></header>
 
-<main class="container pb-20">
+<main id="main" class="container pb-20">
   <div class="ix-results-bar">
     <span class="ix-count badge badge-ghost badge-lg h-auto rounded-full px-4 py-3" id="ixCount"></span>
+    <div class="ix-active-filters" id="ixActiveFilters"></div>
   </div>
   <div class="ix-grid" id="ixGrid"></div>
 </main>

@@ -1,4 +1,4 @@
-import { applyStoredBg, escapeHtml, pickAndStoreRandomBg, renderFooter } from "./site";
+import { applyStoredBg, bindFooterControls, escapeHtml, pickAndStoreRandomBg, renderBackNav, renderFooter } from "./site";
 
 interface CreditEntry {
   source: string;
@@ -88,19 +88,16 @@ interface CreditSection {
   }
 
   function renderPage(): string {
-    const navHtml =
-      `<nav class="site-nav" aria-label="Primary">\n` +
-      `  <a class="site-nav-link btn btn-sm btn-ghost border border-transparent bg-base-100/40 hover:border-primary/35 hover:bg-primary/10 hover:text-primary" href="index.html" data-js="pick-random-bg">\u2190 Back to Home</a>\n` +
-      `</nav>`;
+    const navHtml = renderBackNav();
     const footerHtml = renderFooter({ context: "Credits & Sources" });
 
     return (
-      `<div class="hero">\n` +
+      `<div class="hero" id="main">\n` +
       `  <div class="container">\n` +
       navHtml +
-      `    <div class="subtitle badge badge-outline badge-secondary mt-5 w-fit px-4 py-3 font-mono text-[0.68rem] uppercase tracking-[0.28em]">Acknowledgements</div>\n` +
+      `    <div class="subtitle badge badge-outline badge-accent mt-5 w-fit px-4 py-3 font-mono text-[0.68rem] uppercase tracking-[0.28em]">Acknowledgements</div>\n` +
       `    <div class="mt-5">\n` +
-      `      <h1 class="font-display text-4xl font-semibold leading-[1.02] tracking-[-0.04em] text-base-content sm:text-5xl lg:text-6xl 2xl:text-7xl"><span class="text-primary">Credits</span> &amp; Sources</h1>\n` +
+      `      <h1 class="font-display text-4xl font-semibold leading-[1.02] tracking-[-0.04em] text-base-content sm:text-5xl lg:text-6xl 2xl:text-7xl">Credits &amp; <span class="text-primary">Sources</span></h1>\n` +
       `    </div>\n` +
       `    <p class="mt-4 max-w-4xl text-base leading-8">Musical metadata, album artwork, research lists, and open-source tools that make this project possible.</p>\n` +
       `  </div>\n` +
@@ -120,6 +117,7 @@ interface CreditSection {
 
     document.title = "Credits | ALBANA";
     root.outerHTML = renderPage();
+    bindFooterControls();
 
     document.querySelector<HTMLAnchorElement>('[data-js="pick-random-bg"]')
       ?.addEventListener('click', () => { pickAndStoreRandomBg(); });

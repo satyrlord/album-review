@@ -110,9 +110,51 @@ export function toAlbumIndexEntry(album: AlbumData): AlbumIndexEntry {
   };
 }
 
+function genreTagFoldKey(tag: string): string {
+  return tag.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+/**
+ * Collapse spelling variants of the same genre tag ("New Age" vs "New-Age")
+ * to one canonical display form: the variant used by the most albums,
+ * with alphabetical order as the tie-breaker.
+ */
+export function canonicaliseGenreTags(entries: AlbumIndexEntry[]): AlbumIndexEntry[] {
+  const variantCounts = new Map<string, Map<string, number>>();
+
+  for (const entry of entries) {
+    for (const tag of entry.genreTags) {
+      const key = genreTagFoldKey(tag);
+      const counts = variantCounts.get(key) ?? new Map<string, number>();
+      counts.set(tag, (counts.get(tag) ?? 0) + 1);
+      variantCounts.set(key, counts);
+    }
+  }
+
+  const canonical = new Map<string, string>();
+  for (const [key, counts] of variantCounts) {
+    const winner = Array.from(counts.entries()).sort((a, b) =>
+      b[1] - a[1] || a[0].localeCompare(b[0])
+    )[0][0];
+    canonical.set(key, winner);
+  }
+
+  return entries.map(entry => {
+    const seen = new Set<string>();
+    const genreTags: string[] = [];
+    for (const tag of entry.genreTags) {
+      const display = canonical.get(genreTagFoldKey(tag)) ?? tag;
+      if (!seen.has(display)) {
+        seen.add(display);
+        genreTags.push(display);
+      }
+    }
+    return { ...entry, genreTags };
+  });
+}
+
 export function buildAlbumIndex(records: AlbumFileRecord[]): AlbumIndexEntry[] {
-  return records
-    .map(record => toAlbumIndexEntry(record.album))
+  return canonicaliseGenreTags(records.map(record => toAlbumIndexEntry(record.album)))
     .sort((left, right) =>
       left.artist.localeCompare(right.artist)
       || left.year - right.year

@@ -21,14 +21,20 @@ interface CollectionDom {
 (function (): void {
   'use strict';
 
-  // One colour per unique artist (sorted A-Z). Extend if needed.
+  // One colour per unique artist (sorted A-Z). Identity hues only — the
+  // functional colours (--time amber, --warn orange, secondary red) are
+  // reserved for timestamps, warnings, and errors. All pass WCAG AA on
+  // the card surface at the 12px artist-label size.
   const PALETTE: readonly string[] = [
-    'var(--accent)',   // green
-    'var(--time)',     // amber
-    'var(--accent3)',  // purple
-    'var(--accent2)',  // red
-    'var(--warn)',     // orange
+    '#00ff88', // green
+    '#ff6ec7', // pink
+    '#5ac8fa', // sky blue
+    '#c3f34d', // lime
+    '#b18aff', // violet
   ];
+
+  /** Genre tags shown before the "+ more" expander is opened. */
+  const VISIBLE_GENRE_TAGS = 10;
 
   function getCollectionDom(): CollectionDom | null {
     const grid = document.getElementById('ixGrid');
@@ -72,7 +78,7 @@ interface CollectionDom {
     title: 'ALBANA',
     titleClassName: 'ix-brand-title',
     tagline: 'Your resource for structural album analysis',
-    searchPlaceholder: 'Search by title, artist or genre\u2026',
+    searchPlaceholder: 'Search albums…',
     searchAriaLabel: 'Filter albums',
   });
 
@@ -89,6 +95,8 @@ interface CollectionDom {
   let colorMap: Record<string, string> = {};
   const activeArtistTags = new Set<string>();
   const activeGenreTags = new Set<string>();
+  let genreTagsExpanded = false;
+  let topGenreTags: string[] = [];
 
   function showError(message: string): void {
     grid.innerHTML =
@@ -125,42 +133,113 @@ interface CollectionDom {
     render();
   }
 
+  function clearAllFilters(): void {
+    activeArtistTags.clear();
+    activeGenreTags.clear();
+    search.value = '';
+    syncTagButtons();
+    render();
+  }
+
+  function matchesFilters(album: AlbumEntry, artists: ReadonlySet<string>, genres: ReadonlySet<string>, q: string): boolean {
+    const tags = album.genreTags ?? [];
+    const matchArtist = artists.size === 0 || artists.has(album.artist);
+
+    let matchGenre = true;
+    for (const tag of genres) {
+      if (!tags.includes(tag)) {
+        matchGenre = false;
+        break;
+      }
+    }
+
+    const matchSearch = !q
+      || normaliseText(album.title).indexOf(q) !== -1
+      || normaliseText(album.artist).indexOf(q) !== -1
+      || tags.some(t => normaliseText(t).indexOf(q) !== -1);
+
+    return matchArtist && matchGenre && matchSearch;
+  }
+
+  /** Would adding this genre tag to the current selection still match at least one album? */
+  function genreTagHasResults(tag: string): boolean {
+    const q = normaliseText(search.value.trim());
+    const candidate = new Set(activeGenreTags);
+    candidate.add(tag);
+    return allAlbums.some(a => matchesFilters(a, activeArtistTags, candidate, q));
+  }
+
   function syncTagButtons(): void {
-    document.querySelectorAll<HTMLButtonElement>('.ix-genre-tag').forEach(btn => {
+    document.querySelectorAll<HTMLButtonElement>('.ix-nav-genre-tag').forEach(btn => {
       const tag = btn.dataset['genre'] ?? '';
-      btn.classList.toggle('active', activeGenreTags.has(tag));
+      const active = activeGenreTags.has(tag);
+      btn.classList.toggle('active', active);
+
+      // Combining a genre with the current selection can dead-end at zero
+      // results (genres are AND-ed); disable those instead of letting the
+      // user walk into an empty grid.
+      const dead = !active && !genreTagHasResults(tag);
+      btn.disabled = dead;
+      btn.setAttribute('aria-disabled', String(dead));
+
+      // The collapsed row shows the most-used tags plus anything active.
+      const inTop = topGenreTags.includes(tag);
+      btn.hidden = !genreTagsExpanded && !inTop && !active;
     });
+
     document.querySelectorAll<HTMLButtonElement>('.ix-artist-tag').forEach(btn => {
       const artist = btn.dataset['artist'] ?? '';
       btn.classList.toggle('active', activeArtistTags.has(artist));
     });
+
+    const expander = document.querySelector<HTMLButtonElement>('.ix-tag-expander');
+    if (expander) {
+      const hiddenCount = Number(expander.dataset['hiddenCount'] ?? '0');
+      expander.textContent = genreTagsExpanded ? 'Show fewer' : `+${hiddenCount} more`;
+      expander.setAttribute('aria-expanded', String(genreTagsExpanded));
+    }
   }
 
-  function hasAllActiveGenreTags(tags: readonly string[]): boolean {
-    for (const tag of activeGenreTags) {
-      if (!tags.includes(tag)) {
-        return false;
-      }
+  function renderActiveFilterChips(): void {
+    const bar = document.getElementById('ixActiveFilters');
+    if (!bar) return;
+
+    const chips: string[] = [];
+    for (const artist of Array.from(activeArtistTags).sort()) {
+      chips.push(`<button type="button" class="ix-filter-chip badge badge-outline badge-warning h-auto rounded-full px-3 py-2" data-kind="artist" data-value="${escapeHtml(artist)}">${escapeHtml(artist)} ✕</button>`);
+    }
+    for (const tag of Array.from(activeGenreTags).sort()) {
+      chips.push(`<button type="button" class="ix-filter-chip badge badge-outline badge-accent h-auto rounded-full px-3 py-2" data-kind="genre" data-value="${escapeHtml(tag)}">${escapeHtml(tag)} ✕</button>`);
     }
 
-    return true;
+    const hasSearch = search.value.trim().length > 0;
+    const clearBtn = (chips.length > 0 || hasSearch)
+      ? `<button type="button" class="ix-clear-filters btn btn-xs btn-ghost border border-base-300/60 bg-base-100/40 rounded-full">Clear filters</button>`
+      : '';
+
+    bar.innerHTML = chips.join('') + clearBtn;
+
+    bar.querySelectorAll<HTMLButtonElement>('.ix-filter-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        if (chip.dataset['kind'] === 'artist') {
+          toggleArtistTag(chip.dataset['value'] ?? '');
+        } else {
+          toggleGenreTag(chip.dataset['value'] ?? '');
+        }
+      });
+    });
+    bar.querySelector<HTMLButtonElement>('.ix-clear-filters')
+      ?.addEventListener('click', clearAllFilters);
   }
 
   function render(): void {
     const q = normaliseText(search.value.trim());
 
-    const visible = allAlbums.filter(a => {
-      const tags = a.genreTags ?? [];
-      const matchArtist = activeArtistTags.size === 0 || activeArtistTags.has(a.artist);
-      const matchGenre = hasAllActiveGenreTags(tags);
-      const matchSearch = !q
-        || normaliseText(a.title).indexOf(q) !== -1
-        || normaliseText(a.artist).indexOf(q) !== -1
-        || tags.some(t => normaliseText(t).indexOf(q) !== -1);
-      return matchArtist && matchGenre && matchSearch;
-    });
+    const visible = allAlbums.filter(a => matchesFilters(a, activeArtistTags, activeGenreTags, q));
 
     count.textContent = `${visible.length} / ${allAlbums.length} album${allAlbums.length !== 1 ? 's' : ''}`;
+    renderActiveFilterChips();
+    syncTagButtons();
 
     if (visible.length === 0 && !q && allAlbums.length === 0) {
       grid.innerHTML = `<div class="ix-empty alert border border-base-300/70 bg-base-200/80 text-sm text-base-content/70 shadow-lg"><span>${pageEmptyMessage}</span></div>`;
@@ -168,7 +247,13 @@ interface CollectionDom {
     }
 
     if (visible.length === 0) {
-      grid.innerHTML = `<div class="ix-empty alert border border-base-300/70 bg-base-200/80 text-sm text-base-content/70 shadow-lg"><span>No results.</span></div>`;
+      grid.innerHTML =
+        `<div class="ix-empty alert border border-base-300/70 bg-base-200/80 text-sm text-base-content/70 shadow-lg">` +
+          `<span>No results for the current search and filters.</span>` +
+          `<button type="button" class="ix-clear-filters btn btn-xs btn-ghost border border-base-300/60 bg-base-100/40 rounded-full">Clear filters</button>` +
+        `</div>`;
+      grid.querySelector<HTMLButtonElement>('.ix-clear-filters')
+        ?.addEventListener('click', clearAllFilters);
       return;
     }
 
@@ -178,7 +263,7 @@ interface CollectionDom {
       const genreHtml = tags.length > 0
         ? `<div class="ix-card-tags">${tags.map(t => {
             const cls = activeGenreTags.has(t) ? ' active' : '';
-            return `<button type="button" class="ix-genre-tag ix-card-genre-tag${cls}" data-genre="${escapeHtml(t)}">${escapeHtml(t)}</button>`;
+            return `<span class="ix-genre-tag ix-card-genre-tag${cls}">${escapeHtml(t)}</span>`;
           }).join('')}</div>`
         : '';
       const mediaHtml = renderAlbumCardMedia(a);
@@ -187,10 +272,10 @@ interface CollectionDom {
         `<a class="ix-card group card border border-base-300/70 bg-base-200/85 shadow-xl transition duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-2xl" href="album.html?id=${escapeHtml(a.id)}" style="--card-accent:${color}">` +
           mediaHtml +
           `<div class="ix-card-body card-body gap-3 p-6">` +
-            genreHtml +
-            `<div class="ix-card-title text-2xl font-semibold leading-tight">${escapeHtml(a.title)}</div>` +
+            `<h2 class="ix-card-title text-2xl font-semibold leading-tight">${escapeHtml(a.title)}</h2>` +
             `<div class="ix-card-artist text-xs uppercase tracking-[0.18em]">${escapeHtml(a.artist)}</div>` +
             `<div class="ix-card-meta text-xs uppercase tracking-[0.18em]">${escapeHtml(a.year)} &nbsp;·&nbsp; ${escapeHtml(trackLabel)}</div>` +
+            genreHtml +
           `</div>` +
           `<div class="ix-card-footer card-actions items-center justify-between border-t border-base-300/70 px-6 py-4 text-xs uppercase tracking-[0.18em]">` +
             `<span>View Analysis</span>` +
@@ -201,14 +286,6 @@ interface CollectionDom {
     }).join('');
 
     bindCoverFallbacks(grid);
-
-    grid.querySelectorAll<HTMLButtonElement>('.ix-card-genre-tag').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        toggleGenreTag(btn.dataset['genre'] ?? '');
-      });
-    });
   }
 
   function buildTagCloud(): void {
@@ -228,17 +305,26 @@ interface CollectionDom {
     const sortedGenres = Array.from(tagCounts.entries()).sort((a, b) =>
       b[1] - a[1] || a[0].localeCompare(b[0])
     );
+    topGenreTags = sortedGenres.slice(0, VISIBLE_GENRE_TAGS).map(([tag]) => tag);
+    const hiddenCount = Math.max(0, sortedGenres.length - VISIBLE_GENRE_TAGS);
+
+    const expanderHtml = hiddenCount > 0
+      ? `<button type="button" class="ix-genre-tag ix-tag-expander" data-hidden-count="${hiddenCount}" aria-expanded="false">+${hiddenCount} more</button>`
+      : '';
 
     nav.innerHTML =
       `<div class="ix-nav-artist-tags">` +
+      `<span class="ix-tag-group-label">Artists</span>` +
       artists.map(artist =>
         `<button type="button" class="ix-artist-tag ix-nav-artist-tag" data-artist="${escapeHtml(artist)}">${escapeHtml(artist)}</button>`
       ).join('') +
       `</div>` +
       `<div class="ix-nav-genre-tags">` +
+      `<span class="ix-tag-group-label">Genres</span>` +
       sortedGenres.map(([tag, cnt]) =>
         `<button type="button" class="ix-genre-tag ix-nav-genre-tag" data-genre="${escapeHtml(tag)}" title="${cnt} album${cnt !== 1 ? 's' : ''}">${escapeHtml(tag)}<span class="ix-genre-tag-count">${cnt}</span></button>`
       ).join('') +
+      expanderHtml +
       `</div>`;
 
     nav.querySelectorAll<HTMLButtonElement>('.ix-nav-artist-tag').forEach(btn => {
@@ -252,6 +338,13 @@ interface CollectionDom {
         toggleGenreTag(btn.dataset['genre'] ?? '');
       });
     });
+
+    nav.querySelector<HTMLButtonElement>('.ix-tag-expander')?.addEventListener('click', () => {
+      genreTagsExpanded = !genreTagsExpanded;
+      syncTagButtons();
+    });
+
+    syncTagButtons();
   }
 
   search.addEventListener('input', render);

@@ -2,6 +2,8 @@
 // Segment — Stacked Segmented Horizontal Bar Chart (TypeScript)
 // Zero-dependency, accessible, palette-aware chart builder.
 // Each row is one track; segments are timeline sections.
+// Bar lengths are proportional to track duration, so the chart
+// reads as a true structural map of the album.
 // ──────────────────────────────────────────────────────────────
 
 // ── Types ────────────────────────────────────────────────────
@@ -24,6 +26,8 @@ export interface SegmentRow {
   duration: number;
   /** Formatted duration string for display. */
   durationLabel: string;
+  /** Optional anchor target — when set, the row label links to it. */
+  href?: string;
   /** Timeline sections within this track. */
   segments: SegmentData[];
 }
@@ -76,11 +80,25 @@ function getSegmentPercentages(segments: SegmentData[]): number[] {
   return segments.map((s) => s.value / sum);
 }
 
+/**
+ * Stable palette slot per section name, so "Peak" is the same color in
+ * every row of the chart instead of depending on segment position.
+ */
+export function sectionColorIndex(title: string, paletteSize: number): number {
+  const key = title.toLowerCase().replace(/[^a-z0-9]/g, '');
+  let hash = 5381;
+  for (let i = 0; i < key.length; i++) {
+    hash = ((hash * 33) ^ key.charCodeAt(i)) >>> 0;
+  }
+  return hash % paletteSize;
+}
+
 // ── Public API ───────────────────────────────────────────────
 
 /**
  * Render a stacked segmented bar chart: one horizontal bar per track,
- * each bar divided into timeline sections. All bars span full width.
+ * each bar divided into timeline sections. Bar width is proportional
+ * to the track duration relative to the longest track.
  */
 export function buildSegmentChart(
   element: HTMLElement,
@@ -94,36 +112,71 @@ export function buildSegmentChart(
 
   element.textContent = '';
   element.classList.add('segment-chart');
-  element.setAttribute('role', 'img');
+  element.setAttribute('role', 'list');
   element.setAttribute('aria-label', ariaLabel);
 
   const colors = PALETTES[palette];
+  const maxDuration = rows.reduce((max, row) => Math.max(max, row.duration), 0);
 
   for (const row of rows) {
     const rowEl = document.createElement('div');
     rowEl.classList.add('segment-row');
+    rowEl.setAttribute('role', 'listitem');
+
+    // Screen readers get one plain-language summary per track instead of
+    // a pile of unlabeled colored boxes and hover-only tooltips. It lives
+    // on the row link when one exists, otherwise on a hidden span.
+    const sectionNames = row.segments.map((s) => s.title).filter(Boolean).join(', ');
+    const summaryText = `${row.label}, ${row.durationLabel}. Sections: ${sectionNames || 'none listed'}.`;
 
     const labelEl = document.createElement('div');
     labelEl.classList.add('segment-row-label');
-    labelEl.textContent = row.label;
+    if (row.href) {
+      const linkEl = document.createElement('a');
+      linkEl.href = row.href;
+      linkEl.textContent = row.label;
+      linkEl.setAttribute('aria-label', summaryText);
+      labelEl.appendChild(linkEl);
+    } else {
+      labelEl.setAttribute('aria-hidden', 'true');
+      labelEl.textContent = row.label;
+      const summaryEl = document.createElement('span');
+      summaryEl.classList.add('sr-only');
+      summaryEl.textContent = summaryText;
+      rowEl.appendChild(summaryEl);
+    }
 
     const durationEl = document.createElement('div');
     durationEl.classList.add('segment-row-duration');
+    durationEl.setAttribute('aria-hidden', 'true');
     durationEl.textContent = row.durationLabel;
 
-    // Bar container — full width for every track
+    // Bar container — width proportional to track duration
     const barEl = document.createElement('div');
     barEl.classList.add('segment-bar');
+    barEl.setAttribute('aria-hidden', 'true');
+    if (maxDuration > 0) {
+      const rowPct = (row.duration / maxDuration) * 100;
+      barEl.style.width = `${parseFloat(rowPct.toFixed(4))}%`;
+    }
 
     const percentages = getSegmentPercentages(row.segments);
 
+    let previousColorIndex = -1;
     for (let i = 0; i < row.segments.length; i++) {
       const seg = row.segments[i];
       const pct = percentages[i];
 
+      let colorIndex = sectionColorIndex(seg.title, colors.length);
+      if (colorIndex === previousColorIndex) {
+        // Avoid two different adjacent sections blending into one block.
+        colorIndex = (colorIndex + 1) % colors.length;
+      }
+      previousColorIndex = colorIndex;
+
       const wrapper = document.createElement('div');
       wrapper.style.width = `${parseFloat((pct * 100).toFixed(4))}%`;
-      wrapper.style.backgroundColor = colors[i % colors.length];
+      wrapper.style.backgroundColor = colors[colorIndex];
       wrapper.classList.add('segment-item-wrapper');
       wrapper.title = seg.tooltip;
 

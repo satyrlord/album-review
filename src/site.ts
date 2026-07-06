@@ -33,6 +33,7 @@ export interface CollectionHeroOptions {
 interface SiteHelpers {
   getBuildMeta(): SiteBuildInfo;
   renderNav(options?: SiteNavOptions): string;
+  renderBackNav(): string;
   mountNav(elementId: string, options?: SiteNavOptions): void;
   renderFooter(options?: SiteFooterOptions): string;
   mountFooter(elementId: string, options?: SiteFooterOptions): void;
@@ -132,6 +133,15 @@ export function renderNav(options: SiteNavOptions = {}): string {
   );
 }
 
+/** Canonical "Back to Home" nav used by album and credits pages. */
+export function renderBackNav(): string {
+  return (
+    `<nav class="site-nav" aria-label="Primary">\n` +
+    `  <a class="site-nav-link btn btn-sm btn-ghost border border-transparent bg-base-100/40 hover:border-primary/35 hover:bg-primary/10 hover:text-primary" href="index.html" data-js="pick-random-bg">\u2190 Back to Home</a>\n` +
+    `</nav>`
+  );
+}
+
 export function mountNav(elementId: string, options: SiteNavOptions = {}): void {
   const target = document.getElementById(elementId);
   if (!target) return;
@@ -190,12 +200,13 @@ export function renderFooter(options: SiteFooterOptions = {}): string {
   return (
     `<footer class="site-footer border-t border-base-300/70">\n` +
     `  <div class="container">\n` +
-    `    <div class="site-footer-inner rounded-[1.6rem] border border-base-300/70 bg-base-200/72 px-4 py-5 shadow-xl backdrop-blur-xl sm:px-5">\n` +
+    `    <div class="site-footer-inner rounded-box border border-base-300/70 bg-base-200/72 px-4 py-5 shadow-xl backdrop-blur-xl sm:px-5">\n` +
     `      <div class="site-footer-copy">\n` +
     `        <span class="site-footer-brand">ALBANA</span>` +
     contextHtml + '\n' +
     `      </div>\n` +
     `      <div class="site-footer-meta">\n` +
+    `        <button type="button" class="site-footer-btn site-footer-shuffle-bg badge badge-outline badge-lg h-auto cursor-pointer rounded-full border-base-300/70 px-4 py-3 hover:border-primary/45 hover:bg-primary/10 hover:text-primary" title="Pick a new random page backdrop">◱ Backdrop</button>\n` +
     `        <a class="site-footer-btn site-footer-version badge badge-outline badge-lg h-auto rounded-full border-base-300/70 px-4 py-3 hover:border-primary/45 hover:bg-primary/10 hover:text-primary" href="${escapeHtml(PROJECT_URL)}" target="_blank" rel="noopener noreferrer">Version ${escapeHtml(meta.version)}</a>\n` +
     `        <a class="site-footer-btn site-footer-credits badge badge-outline badge-lg h-auto rounded-full border-base-300/70 px-4 py-3 hover:border-primary/45 hover:bg-primary/10 hover:text-primary" href="credits.html">CREDITS</a>\n` +
     `      </div>` +
@@ -206,10 +217,17 @@ export function renderFooter(options: SiteFooterOptions = {}): string {
   );
 }
 
+/** Wire up footer controls after footer markup lands in the DOM. */
+export function bindFooterControls(): void {
+  document.querySelector<HTMLButtonElement>('.site-footer-shuffle-bg')
+    ?.addEventListener('click', () => { shuffleBg(); });
+}
+
 export function mountFooter(elementId: string, options: SiteFooterOptions = {}): void {
   const target = document.getElementById(elementId);
   if (!target) return;
   target.outerHTML = renderFooter(options);
+  bindFooterControls();
 }
 
 // ── Dynamic background ────────────────────────────────────────────────────────
@@ -230,6 +248,12 @@ export function pickAndStoreRandomBg(): void {
   localStorage.setItem(BG_LS_KEY, String(index));
 }
 
+/** Footer control: pick a new random backdrop and apply it immediately. */
+export function shuffleBg(): void {
+  pickAndStoreRandomBg();
+  applyStoredBg();
+}
+
 const siteWindow = window as SiteWindow;
 const rawBuildMeta = __ALBUM_REVIEW_BUILD__ ?? {};
 
@@ -237,6 +261,7 @@ siteWindow.__ALBUM_REVIEW_BUILD__ = Object.freeze({ ...rawBuildMeta });
 siteWindow.AlbumReviewSite = {
   getBuildMeta,
   renderNav,
+  renderBackNav,
   mountNav,
   renderFooter,
   mountFooter,

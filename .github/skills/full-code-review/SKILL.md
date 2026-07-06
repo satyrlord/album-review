@@ -4,7 +4,7 @@ description: Extremely strict maintainability review hunting code-judo restructu
 disable-model-invocation: true
 ---
 
-# Thermo-Nuclear Code Quality Review
+# Full Code Review
 
 An unusually strict review focused on implementation quality, maintainability,
 abstraction quality, and codebase health.

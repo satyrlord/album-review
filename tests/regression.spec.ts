@@ -270,11 +270,109 @@ test.describe("album index regressions", () => {
     await navTags.filter({ hasText: "Electronic" }).click();
     await expect(page.locator(".ix-card")).toHaveCount(3);
 
-    // Click a card genre tag to filter
-    const cardTag = page.locator(".ix-card-genre-tag").filter({ hasText: "Rave" }).first();
-    await cardTag.click();
-    await expect(page.locator(".ix-card")).toHaveCount(1);
-    await expect(page.locator(".ix-card-title")).toHaveText(["Beta"]);
+    // Card genre tags are decorative labels now — no interactive elements
+    // may be nested inside the card anchor.
+    await expect(page.locator(".ix-card button")).toHaveCount(0);
+    await expect(page.locator(".ix-card-genre-tag").first()).toBeVisible();
+  });
+
+  test("genre tags that would produce zero results are disabled", async ({ page }) => {
+    await page.route("**/data/index.json", async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify([
+          { id: "a1", artist: "A", title: "Alpha", year: 2000, tracks: 1, genre: "X", genreTags: ["Ambient", "Electronic"] },
+          { id: "a2", artist: "B", title: "Beta", year: 2001, tracks: 1, genre: "Y", genreTags: ["Rave"] },
+        ]),
+      });
+    });
+
+    await gotoIndex(page);
+
+    const navTags = page.locator(".ix-nav-genre-tag");
+    await navTags.filter({ hasText: "Rave" }).click();
+
+    // No album combines Rave with Ambient, so Ambient must be disabled.
+    await expect(navTags.filter({ hasText: "Ambient" })).toBeDisabled();
+    await expect(navTags.filter({ hasText: "Rave" })).toBeEnabled();
+
+    await navTags.filter({ hasText: "Rave" }).click();
+    await expect(navTags.filter({ hasText: "Ambient" })).toBeEnabled();
+  });
+
+  test("active filters render as removable chips with a clear-all control", async ({ page }) => {
+    await gotoIndex(page);
+
+    await page.locator(".ix-artist-tag").filter({ hasText: "Vangelis" }).click();
+    await page.locator(".ix-nav-genre-tag").filter({ hasText: "Ambient" }).first().click();
+
+    const chips = page.locator(".ix-filter-chip");
+    await expect(chips).toHaveCount(2);
+
+    // Removing a chip removes only that filter
+    await chips.filter({ hasText: "Ambient" }).click();
+    await expect(page.locator(".ix-filter-chip")).toHaveCount(1);
+
+    // Clear-all resets tags and search
+    await page.getByRole("searchbox", { name: "Filter albums" }).fill("blade");
+    await page.locator(".ix-results-bar .ix-clear-filters").click();
+    await expect(page.locator(".ix-filter-chip")).toHaveCount(0);
+    await expect(page.getByRole("searchbox", { name: "Filter albums" })).toHaveValue("");
+
+    const totalAlbums = (await readAlbumIndex(page)).length;
+    await expect(page.locator(".ix-card")).toHaveCount(totalAlbums);
+  });
+
+  test("no-results state offers a working clear-filters action", async ({ page }) => {
+    const totalAlbums = (await readAlbumIndex(page)).length;
+    await gotoIndex(page);
+
+    await page.getByRole("searchbox", { name: "Filter albums" }).fill("zzzz-no-hits");
+    await expect(page.locator(".ix-empty")).toContainText("No results");
+
+    await page.locator(".ix-empty .ix-clear-filters").click();
+    await expect(page.locator(".ix-card")).toHaveCount(totalAlbums);
+  });
+
+  test("genre tag cloud is labelled and collapses behind an expander", async ({ page }) => {
+    await gotoIndex(page);
+
+    await expect(page.locator(".ix-tag-group-label").nth(0)).toHaveText("Artists");
+    await expect(page.locator(".ix-tag-group-label").nth(1)).toHaveText("Genres");
+
+    const expander = page.locator(".ix-tag-expander");
+    await expect(expander).toBeVisible();
+    await expect(expander).toContainText("more");
+
+    const visibleBefore = await page.locator(".ix-nav-genre-tag:visible").count();
+    await expander.click();
+    const visibleAfter = await page.locator(".ix-nav-genre-tag:visible").count();
+    expect(visibleAfter).toBeGreaterThan(visibleBefore);
+    await expect(expander).toHaveText("Show fewer");
+
+    await expander.click();
+    await expect(expander).toContainText("more");
+  });
+
+  test("album cards expose their titles as headings", async ({ page }) => {
+    await gotoIndex(page);
+    await expect(page.locator("h2.ix-card-title").first()).toBeVisible();
+  });
+
+  test("footer shuffle control applies and stores a new backdrop", async ({ page }) => {
+    await gotoIndex(page);
+
+    await page.locator(".site-footer-shuffle-bg").click();
+
+    const state = await page.evaluate(() => ({
+      applied: document.documentElement.dataset["bg"] ?? "",
+      stored: localStorage.getItem("siteBgIndex") ?? "",
+    }));
+
+    expect(state.applied).toBe(state.stored);
+    const index = Number(state.applied);
+    expect(index).toBeGreaterThanOrEqual(1);
+    expect(index).toBeLessThanOrEqual(40);
   });
 
   test("genre tag search matches tag text", async ({ page }) => {
@@ -416,7 +514,7 @@ test.describe("album index regressions", () => {
 
     await page.goto("/album.html?id=jean-michel-jarre-oxygene");
 
-    await expect(page.getByRole("heading", { name: "Oxygène" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Oxygène", level: 1 })).toBeVisible();
     await expect(page.getByRole("link", { name: "← Back to Home", exact: true })).toBeVisible();
     await expect(page.getByRole("link", { name: "← Back to Home", exact: true })).toHaveAttribute("href", /index\.html$/);
     await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
@@ -684,17 +782,79 @@ test.describe("album index regressions", () => {
   test("album page renders a track timeline segment chart", async ({ page }) => {
     await page.goto("/album.html?id=vangelis-voices");
 
-    await expect(page.getByRole("heading", { name: "Voices" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Voices", level: 1 })).toBeVisible();
     const chart = page.locator("#timelineChart");
-    await expect(chart).toHaveAttribute("role", "img");
+    await expect(chart).toHaveAttribute("role", "list");
     await expect(chart).toHaveAttribute("aria-label", /Track timeline breakdown/);
     await expect(chart.locator(".segment-row")).toHaveCount(9);
     await expect(chart.locator(".segment-item-wrapper").first()).toBeVisible();
+
+    // Row labels deep-link to their track cards.
+    const firstLabelLink = chart.locator(".segment-row-label a").first();
+    await expect(firstLabelLink).toHaveAttribute("href", "#track-1");
+    await expect(page.locator("#track-1")).toHaveCount(1);
+
+    // Bars are proportional: the longest track spans 100%, others less.
+    const widths = await chart.locator(".segment-bar").evaluateAll(
+      (bars) => bars.map((bar) => parseFloat((bar as HTMLElement).style.width)),
+    );
+    expect(Math.max(...widths)).toBe(100);
+    expect(Math.min(...widths)).toBeLessThan(100);
+    for (const width of widths) {
+      expect(width).toBeGreaterThan(0);
+    }
+  });
+
+  test("album page provides a back-to-top control on long pages", async ({ page }) => {
+    await page.goto("/album.html?id=vangelis-blade-runner");
+    await expect(page.getByRole("heading", { name: /Blade Runner/, level: 1 })).toBeVisible();
+
+    const topBtn = page.locator(".back-to-top");
+    await expect(topBtn).not.toHaveClass(/is-visible/);
+
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await expect(topBtn).toHaveClass(/is-visible/);
+
+    await topBtn.click();
+    await expect
+      .poll(() => page.evaluate(() => window.scrollY))
+      .toBe(0);
+  });
+
+  test("audio-stream button has dark text on bright primary background", async ({ page }) => {
+    await page.goto("/album.html?id=klaus-schulze-irrlicht");
+
+    const streamBtn = page.getByRole("link", { name: "Listen on Apple Music" });
+    await expect(streamBtn).toBeVisible();
+
+    const colors = await streamBtn.evaluate((el) => {
+      const cs = getComputedStyle(el);
+      return { color: cs.color, backgroundColor: cs.backgroundColor };
+    });
+
+    // Same contract as the Spotify button: primary green with near-black text.
+    expect(colors.backgroundColor).toBe("rgb(0, 255, 136)");
+    expect(colors.color).toBe("rgb(3, 27, 16)");
+  });
+
+  test("every page exposes a skip-to-content link targeting main content", async ({ page }) => {
+    const pages = [
+      "/index.html",
+      "/album.html?id=jean-michel-jarre-oxygene",
+      "/credits.html",
+    ];
+
+    for (const url of pages) {
+      await page.goto(url);
+      const skipLink = page.locator(".skip-link");
+      await expect(skipLink).toHaveAttribute("href", "#main");
+      await expect(page.locator("#main")).toHaveCount(1);
+    }
   });
 
   test("segment chart covers default palette and zero-sum edge case", async ({ page }) => {
     await page.goto("/album.html?id=vangelis-voices");
-    await expect(page.getByRole("heading", { name: "Voices" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Voices", level: 1 })).toBeVisible();
 
     const result = await page.evaluate(async () => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -719,8 +879,11 @@ test.describe("album index regressions", () => {
         ariaLabel: "Test defaults",
       });
       const defaultRows = defaultEl.querySelectorAll(".segment-row").length;
-      const hasBarWidth = (defaultEl.querySelectorAll(".segment-bar")[0] as HTMLElement)?.style.width ?? "";
+      const barWidths = Array.from(defaultEl.querySelectorAll(".segment-bar"))
+        .map((bar) => (bar as HTMLElement).style.width);
       const hasNoPctSpan = defaultEl.querySelector(".segment-item-percentage") === null;
+      const srSummaries = Array.from(defaultEl.querySelectorAll(".sr-only"))
+        .map((el) => el.textContent ?? "");
 
       // Exercise zero-sum data
       const zeroEl = document.createElement("div");
@@ -732,14 +895,23 @@ test.describe("album index regressions", () => {
         ariaLabel: "Zero sum",
       });
       const zeroSegWidth = (zeroEl.querySelector(".segment-item-wrapper") as HTMLElement)?.style.width ?? "";
+      const zeroBarWidth = (zeroEl.querySelector(".segment-bar") as HTMLElement)?.style.width ?? "";
 
-      return { defaultRows, hasBarWidth, hasNoPctSpan, zeroSegWidth };
+      return { defaultRows, barWidths, hasNoPctSpan, srSummaries, zeroSegWidth, zeroBarWidth };
     });
 
     expect(result.defaultRows).toBe(2);
-    expect(result.hasBarWidth).toBe("");
+    // Proportional bars: 120s track spans 100%, 60s track spans 50%.
+    expect(result.barWidths).toEqual(["100%", "50%"]);
     expect(result.hasNoPctSpan).toBe(true);
+    // Rows without links carry a hidden per-track summary for screen readers.
+    expect(result.srSummaries).toEqual([
+      "Track A, 2:00. Sections: Intro, Outro.",
+      "Track B, 1:00. Sections: Main.",
+    ]);
     expect(result.zeroSegWidth).toBe("0%");
+    // A zero-duration row cannot be scaled; it keeps the default width.
+    expect(result.zeroBarWidth).toBe("");
   });
 
   test("does not render the removed initial analysis controls", async ({ page }) => {
@@ -800,7 +972,7 @@ test.describe("album index regressions", () => {
 
     await page.goto("/album.html?id=generated-scaffold");
 
-    await expect(page.getByRole("heading", { name: "Voices" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Voices", level: 1 })).toBeVisible();
     await expect(page.locator(".meta")).not.toContainText("Genre:");
     await expect(page.locator("body")).not.toContainText("TODO");
     await expect(page.locator(".track-role")).toHaveText(

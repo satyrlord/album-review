@@ -31,9 +31,9 @@ export interface AlbumTrack {
   energy: EnergyLevel;
   /** 2–5 descriptive tags (genre, technique, mood, etc.) — no energy modifier */
   tags: string[];
-  /** One-sentence narrative role of the track in the album arc */
+  /** 1–3 sentence narrative role of the track in the album arc, prefixed "Album role:" */
   role: string;
-  /** 4–8 timestamped structural moments */
+  /** 2–14 timestamped structural moments, scaled to track length */
   events: TimelineEvent[];
 }
 
@@ -64,7 +64,7 @@ export interface AlbumData {
   youtubeUrl?: string;
   /** Alternative audio streaming URL — used when Spotify is unavailable (e.g. Apple Music, Deezer) */
   audioStreamUrl?: string;
-  /** 3–4 sentence analytical overview */
+  /** 3–8 sentence analytical overview, one or two paragraphs */
   overview: string;
   tracks: AlbumTrack[];
 }

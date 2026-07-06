@@ -6,7 +6,7 @@
  */
 
 import { buildSegmentChart } from "./segment";
-import { applyStoredBg, bindCoverFallbacks, escapeHtml, FALLBACK_COVER_URL, pickAndStoreRandomBg, renderFooter, resolveCoverImageUrl } from "./site";
+import { applyStoredBg, bindCoverFallbacks, bindFooterControls, escapeHtml, FALLBACK_COVER_URL, pickAndStoreRandomBg, renderBackNav, renderFooter, resolveCoverImageUrl } from "./site";
 
 interface TimelineEvent {
   timestamp:   string;
@@ -25,6 +25,7 @@ interface AlbumTrack {
   events:   TimelineEvent[];
 }
 
+/** Mirrors scripts/albums/album-schema.ts:AlbumData — keep in sync when the schema changes. */
 interface AlbumData {
   id:       string;
   artist:   string;
@@ -77,7 +78,7 @@ interface AlbumData {
 
   function renderMetaItem(label: string, value: string | number): string {
     return (
-      `        <div class="meta-item rounded-[1.15rem] border border-base-300/70 bg-base-100/45 p-4 shadow-lg">` +
+      `        <div class="meta-item rounded-2xl border border-base-300/70 bg-base-100/45 p-4 shadow-lg">` +
         `<strong>${escapeHtml(label)}:</strong>` +
         `<span>${escapeHtml(value)}</span>` +
       `</div>`
@@ -129,12 +130,12 @@ interface AlbumData {
       .join('\n');
 
     return (
-      `  <article class="track card border border-base-300/70 bg-base-200/80 shadow-xl backdrop-blur-xl">\n` +
+      `  <article class="track card border border-base-300/70 bg-base-200/80 shadow-xl backdrop-blur-xl" id="track-${track.num}">\n` +
       `    <div class="card-body gap-5 p-6 sm:p-8">\n` +
       `      <div class="track-header">\n` +
       `        <span class="track-num badge badge-outline badge-primary badge-lg h-auto rounded-full px-4 py-3">${num}</span>\n` +
       `        <div class="min-w-0 flex-1">\n` +
-      `          <div class="track-title text-2xl font-semibold leading-tight">${escapeHtml(track.title)}</div>\n` +
+      `          <h2 class="track-title text-2xl font-semibold leading-tight">${escapeHtml(track.title)}</h2>\n` +
       `        </div>\n` +
       `        <span class="track-duration badge badge-outline badge-warning h-auto rounded-full px-4 py-3">${escapeHtml(track.duration)}</span>\n` +
       `      </div>\n` +
@@ -156,8 +157,8 @@ interface AlbumData {
 
     return (
       `    <div class="hero-media">\n` +
-      `      <div class="hero-cover-frame overflow-hidden rounded-[1.6rem] border border-base-300/70 bg-base-200/80 p-3 shadow-2xl backdrop-blur-xl">\n` +
-      `        <img class="hero-cover rounded-[1.1rem]" src="${escapeHtml(resolvedCoverUrl)}" data-album-id="${escapeHtml(id)}" data-cover-fallback="${escapeHtml(FALLBACK_COVER_URL)}" alt="Album cover for ${escapeHtml(artist)} - ${escapeHtml(title)}" decoding="async" referrerpolicy="no-referrer">\n` +
+      `      <div class="hero-cover-frame overflow-hidden rounded-box border border-base-300/70 bg-base-200/80 p-3 shadow-2xl backdrop-blur-xl">\n` +
+      `        <img class="hero-cover rounded-2xl" src="${escapeHtml(resolvedCoverUrl)}" data-album-id="${escapeHtml(id)}" data-cover-fallback="${escapeHtml(FALLBACK_COVER_URL)}" alt="Album cover for ${escapeHtml(artist)} - ${escapeHtml(title)}" decoding="async" referrerpolicy="no-referrer">\n` +
       `      </div>\n` +
       `    </div>\n`
     );
@@ -206,21 +207,6 @@ interface AlbumData {
     );
   }
 
-  function renderSiteFooter(context: string): string {
-    return renderFooter({
-      context,
-      actionHref: 'index.html',
-      actionLabel: 'All Albums',
-    });
-  }
-
-  function renderSiteNav(): string {
-    return (
-      `<nav class="site-nav" aria-label="Primary">\n` +
-      `  <a class="site-nav-link btn btn-sm btn-ghost border border-transparent bg-base-100/40 hover:border-primary/35 hover:bg-primary/10 hover:text-primary" href="index.html" data-js="pick-random-bg">\u2190 Back to Home</a>\n` +
-      `</nav>`
-    );
-  }
 
   function renderPage(d: AlbumData): string {
     const metaRows: string[] = [
@@ -237,16 +223,20 @@ interface AlbumData {
     const heroMedia = renderHeroMedia(d.id, d.coverUrl, d.artist, d.title);
     const heroLinks = renderStreamingLinks(d);
     const heroClass = 'container hero-layout has-cover';
-    const siteNav = renderSiteNav();
-    const footerHtml = renderSiteFooter(`${d.artist} · ${d.title} · ${d.year}`);
+    const siteNav = renderBackNav();
+    const footerHtml = renderFooter({
+      context: `${d.artist} · ${d.title} · ${d.year}`,
+      actionHref: 'index.html',
+      actionLabel: 'All Albums',
+    });
 
     return (
-      `<div class="hero">\n` +
+      `<div class="hero" id="main">\n` +
       `  <div class="${heroClass}">\n` +
-      `    <div class="hero-copy rounded-[1.8rem] border border-base-300/70 bg-base-200/75 p-6 shadow-2xl backdrop-blur-xl sm:p-8">\n` +
+      `    <div class="hero-copy rounded-box border border-base-300/70 bg-base-200/75 p-6 shadow-2xl backdrop-blur-xl sm:p-8">\n` +
       siteNav +
-      `      <div class="subtitle badge badge-outline badge-secondary mt-5 w-fit px-4 py-3 font-mono text-[0.68rem] uppercase tracking-[0.28em]">Timestamp-Based Structural Analysis</div>\n` +
-      `      <h1 class="mt-5 text-4xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-6xl 2xl:text-7xl">${titleH1(d.title)}</h1>\n` +
+      `      <div class="subtitle badge badge-outline badge-accent mt-5 w-fit px-4 py-3 font-mono text-[0.68rem] uppercase tracking-[0.28em]">Timestamp-Based Structural Analysis</div>\n` +
+      `      <h1 class="mt-5 font-mono text-4xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-6xl 2xl:text-7xl">${titleH1(d.title)}</h1>\n` +
       `      <div class="meta">\n` +
       metaRows.join('\n') + '\n' +
       `      </div>\n` +
@@ -267,31 +257,53 @@ interface AlbumData {
       `    <div class="card-body gap-5 p-6 sm:p-8">\n` +
       `      <div class="badge badge-outline badge-primary w-fit px-4 py-3 font-mono text-[0.68rem] uppercase tracking-[0.28em]">Track Timeline</div>\n` +
       `      <h2 class="text-sm text-base-content/55">Proportional structural map</h2>\n` +
-      `      <div id="timelineChart" class="rounded-[1.25rem] border border-base-300/60 bg-base-100/45 p-4 shadow-inner sm:p-5"></div>\n` +
+      `      <div id="timelineChart" class="rounded-box border border-base-300/60 bg-base-100/45 p-4 shadow-inner sm:p-5"></div>\n` +
       `    </div>\n` +
       `  </section>\n\n` +
       tracksHtml + '\n\n' +
       `</div>\n\n` +
+      `<button type="button" class="back-to-top btn btn-sm rounded-full border border-base-300/70 bg-base-200/85 shadow-xl backdrop-blur-xl" aria-label="Back to top">↑ Top</button>\n\n` +
       footerHtml
     );
+  }
+
+  function bindBackToTop(): void {
+    const btn = document.querySelector<HTMLButtonElement>('.back-to-top');
+    if (!btn) return;
+
+    const sync = (): void => {
+      btn.classList.toggle('is-visible', window.scrollY > 600);
+    };
+    window.addEventListener('scroll', sync, { passive: true });
+    sync();
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0 });
+    });
   }
 
   function showError(msg: string): void {
     const root = document.getElementById('albumRoot');
     if (!root) return;
 
-    const footerHtml = renderSiteFooter('Album Page');
+    const footerHtml2 = renderFooter({
+      context: 'Album Page',
+      actionHref: 'index.html',
+      actionLabel: 'All Albums',
+    });
     root.outerHTML =
-      `<div class="hero">\n` +
+      `<div class="hero" id="main">\n` +
       `  <div class="container">\n` +
-      renderSiteNav() +
-      `    <div class="page-state page-state--error mt-5 rounded-[1.6rem] border border-error/25 bg-base-200/82 p-6 shadow-xl backdrop-blur-xl">\n` +
+      renderBackNav() +
+      `    <div class="page-state page-state--error mt-5 rounded-box border border-error/45 bg-base-200/82 p-6 shadow-xl backdrop-blur-xl">\n` +
       `      <p class="page-state-title">${escapeHtml(msg)}</p>\n` +
       `      <p class="page-state-copy mt-4"><a class="page-state-link btn btn-sm btn-ghost border border-base-300/60 bg-base-100/40" href="index.html">&#8592; All Albums</a></p>\n` +
       `    </div>\n` +
       `  </div>\n` +
         `</div>\n\n` +
-        footerHtml;
+        footerHtml2;
+    bindFooterControls();
+    bindBackToTop();
   }
 
   async function main(): Promise<void> {
@@ -316,6 +328,8 @@ interface AlbumData {
 
       root.outerHTML = renderPage(data);
       bindCoverFallbacks(document);
+      bindFooterControls();
+      bindBackToTop();
 
       document.querySelector<HTMLAnchorElement>('[data-js="pick-random-bg"]')
         ?.addEventListener('click', () => { pickAndStoreRandomBg(); });
@@ -341,6 +355,7 @@ interface AlbumData {
               label: t.title,
               duration: trackSeconds,
               durationLabel: t.duration,
+              href: `#track-${t.num}`,
               segments,
             };
           }),
