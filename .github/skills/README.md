@@ -1,6 +1,8 @@
 # Album Review — Agent Skills
 
-Agent skills for the Album Review static web app. Organised by invocation type.
+This file is the skills **router**: the single place to find every skill,
+what it does, and how it's invoked. Read this before reaching for a skill
+you haven't used before.
 
 ## Development Workflow
 

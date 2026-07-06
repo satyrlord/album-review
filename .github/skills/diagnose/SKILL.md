@@ -23,8 +23,10 @@ Work through these in order:
 3. **Hypothesise** — 3–5 ranked, falsifiable hypotheses; show the user.
 4. **Instrument** — one variable at a time; tagged debug logs or perf baseline.
 5. **Fix + regression test** — only at a correct seam; document missing seams.
-6. **Cleanup + post-mortem** — remove instrumentation; hand off architecture
-   findings to `improve-codebase-architecture` when warranted.
+6. **Cleanup + post-mortem** — remove instrumentation; when architectural
+   change would have prevented the bug (no good test seam, tangled callers,
+   hidden coupling), tell the user to invoke `improve-codebase-architecture`
+   with the specifics.
 
 ## Completion Criterion
 
