@@ -1,7 +1,7 @@
 ---
 name: writing-great-skills
 description: Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.
-disable-model-invocation: true
+disable-model-invocation: false
 ---
 
 # Writing Great Skills

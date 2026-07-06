@@ -12,7 +12,7 @@ The source of truth is the existing high-quality entries in the `data/` director
 ## Related Files
 
 - [Architecture notes](architecture-notes.md)
-- [Album schema](../scripts/albums/album-schema.ts)
+- [Album schema](../src/shared/schema.ts)
 - [Example: Oxygène](../data/jean-michel-jarre-oxygene.json) — benchmark for instrument-level detail
 - [Example: Voices](../data/vangelis-voices.json) — benchmark for vocal/choral analysis
 - [Example: The Fat of the Land](../data/the-prodigy-fat-of-the-land.json) — benchmark for electronic/rave albums

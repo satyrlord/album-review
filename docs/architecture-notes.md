@@ -13,10 +13,16 @@ tsconfig.browser.json      ← browser-runtime TypeScript project
 .nycrc.json                ← nyc coverage reporting config
 
 src/album-analysis.css     ← shared stylesheet (Tailwind import, DaisyUI theme layer, and bespoke component CSS)
-src/site.ts                ← shared nav, footer, and build-metadata helpers
+src/site.ts                ← shared page chrome: footer, hero, cover fallbacks, build metadata, mountPage seam
 src/index.ts               ← collection renderer for index.html
 src/album.ts               ← album detail renderer driven by data/<id>.json
 src/credits.ts             ← credits page renderer listing musical, graphical, and technology sources
+
+src/shared/schema.ts       ← canonical AlbumData/AlbumIndexEntry/EnergyLevel/SiteBuildMeta types
+src/shared/text.ts         ← escapeHtml, normaliseText, foldKey — one dialect of each
+src/shared/tags.ts         ← genre-tag derivation and canonicalisation
+src/shared/format.ts       ← parseDuration, formatDuration, msToMmss
+src/shared/validate.ts     ← per-record AlbumData validation (beside the schema)
 
 public/covers/             ← versioned local cover-art cache served directly by Vite
 
@@ -24,16 +30,19 @@ scripts/build.ts           ← full quality gate: data validation, Vite build, t
 scripts/test-coverage.ts   ← Playwright + nyc coverage runner and threshold enforcement
 scripts/add-album.ts       ← MusicBrainz/Wikipedia album JSON scaffolder
 scripts/cache-cover-art.ts ← downloads remote cover sources into public/covers/ and rewrites data/*.json to local paths
-scripts/albums/*.ts        ← album data indexing, schema, and scaffold helpers
+scripts/albums/*.ts        ← album data indexing, cross-file checks, and scaffold helpers
 
+vitest.config.ts           ← Vitest unit-test config with the src/shared coverage gate
 tests/baseFixtures.ts      ← Playwright fixtures, including Istanbul coverage capture
 tests/regression.spec.ts   ← browser regression coverage for collection and detail pages
+tests/unit/*.test.ts       ← Vitest unit tests for shared core and exported page helpers
 
 data/<id>.json             ← source of truth for each album
 data/index.json            ← generated summary index derived from album JSON files (do not edit manually)
 
 dist/                      ← generated production build output published to GitHub Pages
-coverage/                  ← generated Istanbul HTML/LCOV coverage report
+coverage/                  ← generated Istanbul HTML/LCOV coverage report (browser gate)
+coverage-unit/             ← generated Vitest coverage output (shared-core gate)
 playwright-report/         ← generated Playwright HTML report
 test-results/              ← generated Playwright artifacts
 .nyc_output/               ← generated raw Istanbul coverage JSON
@@ -80,52 +89,63 @@ The `data/` directory is copied into `dist/data/` during the build.
 2. Runs the multi-page Vite production build.
 3. Type-checks the Node/tooling and browser-runtime TypeScript projects separately.
 4. Runs markdownlint across the workspace.
-5. Runs the browser coverage gate through Playwright and nyc.
+5. Runs the Vitest unit suite with the `src/shared/**` coverage gate.
+6. Runs the browser coverage gate through Playwright and nyc.
 
 `npm run serve` and the Playwright web server both use Vite directly rather than a custom local server script.
 
-## Agreed Architecture Decisions (2026-07-06 review — not yet implemented)
+## Architecture Decisions (2026-07-06 review — implemented)
 
 - **Shared core module at `src/shared/`**: one home for code needed by
   both the browser runtime and `scripts/` tooling. Dependency direction
-  is one-way: `scripts/` may import from `src/shared/`, never the
-  reverse. Layout is themed files: `schema.ts` (AlbumData,
-  AlbumIndexEntry, EnergyLevel), `text.ts` (escapeHtml, normaliseText,
-  fold-key), `tags.ts` (genre-tag helpers), `format.ts` (duration and
-  version formatting). The duplicated copies in `src/album.ts`,
-  `src/index.ts`, and `scripts/albums/` are deleted, not deprecated.
-  The `escapeHtml` that survives is the `src/site.ts` dialect (escapes
-  `"`).
-- **Shared files must satisfy both module-resolution modes**:
+  is one-way: `scripts/` imports from `src/shared/`, never the reverse.
+  Layout is themed files: `schema.ts` (AlbumData, AlbumIndexEntry,
+  EnergyLevel, SiteBuildMeta), `text.ts` (escapeHtml, normaliseText,
+  foldKey), `tags.ts` (genre-tag helpers), `format.ts` (duration
+  formatting). The duplicated copies that used to live in
+  `src/album.ts`, `src/index.ts`, and `scripts/albums/` were deleted,
+  not deprecated. The surviving `escapeHtml` is the old `src/site.ts`
+  dialect (escapes `"`).
+- **Shared files satisfy both module-resolution modes**:
   `tsconfig.json` uses NodeNext, `tsconfig.browser.json` uses Bundler —
-  relative imports in `src/shared/` use explicit `.js` extensions, which
-  both accept.
-- **Browser file lists become globs**: `vite.config.ts` (istanbul
-  include), `tsconfig.browser.json`, and `.nycrc.json` all switch from
-  the hand-synced five-file list to `src/**/*.ts`. New browser modules
-  are picked up with zero config edits; stray files become visible in
-  typecheck and coverage rather than silently excluded.
+  relative imports across `src/` use explicit `.js` extensions, which
+  both modes (and Vite, tsx, and Vitest) accept.
+- **Browser file lists are globs**: `vite.config.ts` (istanbul
+  include), `tsconfig.browser.json`, and `.nycrc.json` all use
+  `src/**/*.ts` instead of a hand-synced file list. New browser modules
+  are picked up with zero config edits. The istanbul/nyc configs
+  additionally exclude `src/shared/**`, because the shared core has its
+  own gate (see below).
 - **Page-specific pure functions stay in their page modules**: helpers
   with a single caller (e.g. `matchesFilters`, `resolveStreamName`) are
   exported for direct testing but not moved to `src/shared/` — shared is
   only for code both sides of the seam need.
-- **Unit tests run on Vitest**: pure-logic tests migrate from Playwright
-  round-trips to a Vitest suite with direct imports. Playwright keeps
-  only real page flows. The `window.AlbumReviewSite` global in
-  `src/site.ts` is deleted once no test consumes it.
-- **Two separate coverage gates**: the existing browser-only nyc gate
-  (80% per file) stays unchanged; Vitest gets its own independent 80%
-  coverage threshold scoped to `src/shared/**`. No merging of coverage
-  streams.
-- **Validation split by concern**: per-record checks move to
+- **Unit tests run on Vitest** (`npm run test:unit`, `tests/unit/`):
+  pure-logic tests import their targets directly. Playwright
+  (`tests/*.spec.ts`) keeps real page flows, plus a small number of
+  dynamic-import tests that exercise DOM-coupled `src/site.ts` branches
+  the real flows cannot reach — those keep the browser per-file gate
+  honest. The `window.AlbumReviewSite` global was deleted.
+- **Two separate coverage gates**: the browser-only nyc gate (80% per
+  file) covers the page modules; Vitest enforces its own independent
+  80% threshold scoped to `src/shared/**` (report in `coverage-unit/`).
+  No merging of coverage streams.
+- **Validation split by concern**: per-record checks live in
   `src/shared/validate.ts` (pure, beside the schema type, unit-gated by
-  Vitest); cross-file checks (id↔filename, duplicate ids) stay in
-  `scripts/albums/album-index.ts`; `scripts/build.ts` becomes a plain
-  caller and its redundant inline re-checks are deleted.
+  Vitest); cross-file checks (id↔filename, duplicate ids) live in
+  `scripts/albums/album-index.ts` and run inside `readAlbumDataDir`;
+  `scripts/build.ts` is a plain caller with no inline re-checks.
 - **The browser keeps trusting build-validated data**: `src/album.ts`
   does not validate fetched JSON at runtime — everything in `dist/data/`
   has passed the build gate, and the fetch-error fallback covers real
   failure modes.
+- **Pages mount through one seam**: `mountPage(rootId, html)` in
+  `src/site.ts` replaces the placeholder root and binds the shared
+  chrome (footer controls, cover fallbacks, random-backdrop link) in
+  one place. Album and credits pages use it for both success and error
+  states. Dead chrome was deleted with it: `renderNav`/`mountNav` had
+  no page callers, and the hero subtitle options had no callers outside
+  tests.
 
 ## Language Constraints
 
@@ -148,10 +168,11 @@ updated.
 - **Cover art should be cached locally**: store versioned cover files under `public/covers/` and point `coverUrl` at the local `covers/<id>.<ext>` path.
 - **`data/index.json` is generated**: never hand-edit it; regenerate it via `npm run build` or the scaffolder.
 - **Generated report/temp directories are disposable**: do not treat `coverage/`, `playwright-report/`, `test-results/`, `.nyc_output/`, `dist/`, or `tmp/` as hand-maintained source folders.
-- **When adding a new browser runtime file**, update the browser file
-  lists in `vite.config.ts`, `.nycrc.json`, and `tsconfig.browser.json`
-  so instrumentation, reporting, and browser type-checking remain
-  aligned.
+- **New browser runtime files need no config edits**: `vite.config.ts`,
+  `.nycrc.json`, and `tsconfig.browser.json` all glob `src/**/*.ts`, so
+  instrumentation, reporting, and browser type-checking pick new files
+  up automatically. New files under `src/shared/` are gated by the
+  Vitest threshold instead — give them unit tests.
 - **Analytical writing style**: precise, concise, technical music terminology. Avoid fluff. Third-person or noun-phrase constructions preferred.
 
 ## Extending the Project
@@ -160,5 +181,5 @@ updated.
 
 1. Create or update `data/<id>.json`, or scaffold it with `npx tsx scripts/add-album.ts "Artist" "Album" YEAR --genre "..."`.
 2. Keep `id` equal to the filename slug, cache cover art under `public/covers/`, and store the local `covers/<id>.<ext>` path in `coverUrl`.
-3. Populate all tracks, roles, tags, and timeline events in the JSON structure defined by `scripts/albums/album-schema.ts`.
+3. Populate all tracks, roles, tags, and timeline events in the JSON structure defined by `src/shared/schema.ts`.
 4. Run `npm run build` to regenerate `data/index.json`, rebuild `dist/`, and validate the current test/coverage gate.

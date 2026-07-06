@@ -1,17 +1,40 @@
-# Album Review — Agent Skills
+# Agent Skills
 
-This file is the skills **router**: the single place to find every skill,
-what it does, and how it's invoked. Read this before reaching for a skill
-you haven't used before.
+This directory contains modular skills that extend the AI agent's capabilities
+for the ALBANA album-review project. Each skill lives in its own subfolder with
+a `SKILL.md` file that defines the skill's behavior and invocation rules.
 
-## Development Workflow|Skill|Invocation|Purpose||---|---|---||[`album-analysis`](./album-analysis/SKILL.md)|Model-invoked|Generate a new album analysis entry: research track listing, durations, structural notes, and cover art via MusicBrainz/Wikipedia, then create `data/<id>.json` and refresh `data/index.json`.||[`diagnose`](./diagnose/SKILL.md)|Model-invoked|Structured debugging loop for hard bugs and performance regressions. Build a feedback loop, hypothesise, instrument, fix.||[`run-quality-gate`](./run-quality-gate/SKILL.md)|Model-invoked|Deterministic quality gate: clear Problems, markdownlint, typecheck, dead-code audit, unit/e2e tests, and enforce >=80% in every coverage cell without suppression by default.|## Design & Architecture|Skill|Invocation|Purpose||---|---|---||[`bar-chart`](./bar-chart/SKILL.md)|Model-invoked|Create segmented horizontal bar charts with vanilla TypeScript and CSS. Zero-dependency, accessible, palette-aware.||[`improve-codebase-architecture`](./improve-codebase-architecture/SKILL.md)|User-invoked|Scan for architectural friction, generate a visual HTML report, then grill through candidates.|## Code Review|Skill|Invocation|Purpose||---|---|---||[`full-code-review`](./full-code-review/SKILL.md)|User-invoked|Thermo-nuclear code quality review: code-judo restructurings, 1k-line rule, spaghetti-growth detection, abstraction quality, and maintainability.|## Productivity & Meta|Skill|Invocation|Purpose||---|---|---||[`grill-me`](./grill-me/SKILL.md)|Model-invoked|Interview the user relentlessly about a plan or design before building.||[`handoff`](./handoff/SKILL.md)|User-invoked|Compact the conversation into a handoff document for another agent to continue. Includes a self-critique phase that surfaces uninvestigated gaps, skipped work, and unstated assumptions.||[`teach`](./teach/SKILL.md)|User-invoked|Multi-session teaching of a new skill or concept.||[`writing-great-skills`](./writing-great-skills/SKILL.md)|User-invoked|Reference for authoring skills: vocabulary and principles.|## Removed Skills
+- **Model-invoked** — triggered automatically by the agent when it detects a
+  matching task.
+- **User-invoked** — requires the user to explicitly call the skill (e.g., via
+  a slash command or direct request).
 
-The following skills were originally imported from the MixJam Electron project and have been removed as they are not applicable to this static-web-app codebase:
+---
 
-- `ablation-test` — MJE-specific import/playback/UI bug ablation with IPC and SQLite context
-- `add-feature` — References MJE-specific docs (Web Audio, SQLite, FTS5, data model)
-- `dead-code-audit` — Scoped to Electron main/renderer processes, React components, IPC, and Fallow
-- `design-critique` — Heavy MJE-specific conventions section (React windowing, Electron sandboxing, SQLite)
-- `deslop` — Guardrails are Electron/IPC/React/SQLite-specific
-- `goal` — References `better-sqlite3` and MJE-specific documentation
-- `refactor` — Named MJE and contains IPC/React/Web Audio/SQLite hazard sections
+## Development Workflow
+
+| Skill | Invocation | What It Does |
+|---|---|---|
+| [`album-analysis`](./album-analysis/SKILL.md) | Model-invoked | Scaffolds a new album analysis entry. Uses MusicBrainz and Wikipedia to research track listings, durations, structural notes, and cover art, then creates `data/<id>.json` and regenerates `data/index.json`. |
+| [`run-quality-gate`](./run-quality-gate/SKILL.md) | Model-invoked | Runs the full quality pipeline: clears Problems, runs markdownlint and type-checking, audits for dead code, executes unit and E2E tests, and enforces ≥80% coverage in every Istanbul cell. |
+
+## Design & Architecture
+
+| Skill | Invocation | What It Does |
+|---|---|---|
+| [`bar-chart`](./bar-chart/SKILL.md) | Model-invoked | Renders segmented horizontal bar charts using vanilla TypeScript and CSS. Zero dependencies, accessible, and palette-aware. |
+| [`improve-codebase-architecture`](./improve-codebase-architecture/SKILL.md) | User-invoked | Scans the codebase for architectural friction points, generates a visual HTML report, and walks through candidate improvements. |
+
+## Code Review
+
+| Skill | Invocation | What It Does |
+|---|---|---|
+| [`full-code-review`](./full-code-review/SKILL.md) | User-invoked | Comprehensive code quality review covering structural refactoring opportunities, file-length discipline, spaghetti-growth detection, abstraction quality, and maintainability scoring. |
+
+## Productivity & Meta
+
+| Skill | Invocation | What It Does |
+|---|---|---|
+| [`grill-me`](./grill-me/SKILL.md) | Model-invoked | Relentlessly interviews the user about a plan or design before any code is written, surfacing hidden assumptions and risks. |
+| [`handoff`](./handoff/SKILL.md) | User-invoked | Compacts the current conversation into a handoff document so another agent can pick up where this one left off. Includes a self-critique pass that flags uninvestigated gaps, skipped work, and unstated assumptions. |
+| [`writing-great-skills`](./writing-great-skills/SKILL.md) | Model-invoked | Reference guide for authoring effective agent skills: structure, invocation patterns, and best practices. |
