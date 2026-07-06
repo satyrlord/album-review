@@ -34,6 +34,7 @@ memories conflict, or references go stale, you are the one who fixes it.
 ### 1. SURVEY
 
 Identify what needs checking:
+
 - Has any file referenced in docs moved or been renamed?
 - Do memory files contradict each other or current code?
 - Are skill descriptions in the router accurate?
@@ -42,6 +43,7 @@ Identify what needs checking:
 ### 2. VERIFY
 
 For each potential drift:
+
 - Read the doc claim.
 - Read the actual code/config/file.
 - If they match: PASS.

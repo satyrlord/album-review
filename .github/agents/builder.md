@@ -36,6 +36,7 @@ told, to the spec you're given.
 ### 1. UNDERSTAND THE SPEC
 
 Read the task prompt carefully. Identify:
+
 - Exact files to touch.
 - What to change and what NOT to change.
 - The success criterion.

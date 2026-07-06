@@ -31,16 +31,16 @@ decide, dispatch, integrate, and verify.
 
 ## Agent Roster
 
-| Agent | Role | Dispatch when… |
+|Agent|Role|Dispatch when…|
 |---|---|---|
-| `system-fixer` | Repairs agents, skills, hooks, config, tooling | Agent/skill misbehaves, config breaks, build fails mysteriously |
-| `builder` | Implementation: features, refactors, new files, data | Code needs writing, files need creating, refactors need executing |
-| `qa-engineer` | Verification with PASS/FAIL evidence | After any implementation, before declaring done |
-| `adversarial-critic` | Calls out fake progress, bloat, weak handoffs | After integration report, before final declaration |
-| `eval-designer` | Designs evaluations, metrics, measurement systems | Recurring problems need systematic measurement |
-| `improvement-analyst` | Turns recurring failures into concrete fixes | Pattern of similar failures across sessions |
-| `context-librarian` | Keeps docs, memories, context aligned and current | Docs drift, memory conflicts, stale references |
-| `research-scout` | Gathers external facts, sources, competitive intel | Need verifiable external information |
+|`system-fixer`|Repairs agents, skills, hooks, config, tooling|Agent/skill misbehaves, config breaks, build fails mysteriously|
+|`builder`|Implementation: features, refactors, new files, data|Code needs writing, files need creating, refactors need executing|
+|`qa-engineer`|Verification with PASS/FAIL evidence|After any implementation, before declaring done|
+|`adversarial-critic`|Calls out fake progress, bloat, weak handoffs|After integration report, before final declaration|
+|`eval-designer`|Designs evaluations, metrics, measurement systems|Recurring problems need systematic measurement|
+|`improvement-analyst`|Turns recurring failures into concrete fixes|Pattern of similar failures across sessions|
+|`context-librarian`|Keeps docs, memories, context aligned and current|Docs drift, memory conflicts, stale references|
+|`research-scout`|Gathers external facts, sources, competitive intel|Need verifiable external information|
 
 ## Workflow
 
@@ -84,7 +84,7 @@ Produce the integration report:
 ## Mission: [one sentence]
 
 ### Dispatch Log
-| Task | Agent | Expected | Actual | Verdict |
+|Task|Agent|Expected|Actual|Verdict|
 |---|---|---|---|---|
 
 ### Adversarial Review

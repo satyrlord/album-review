@@ -6,23 +6,23 @@ Markdown file with YAML frontmatter. Agents are dispatched by the
 
 ## Roster
 
-| Agent | Role | Dispatch when… |
+|Agent|Role|Dispatch when…|
 |---|---|---|
-| [`chief-operator`](./chief-operator.md) | Decision maker, orchestrator | Mission spans multiple agents |
-| [`system-fixer`](./system-fixer.md) | Quick repairs | Agent/skill/config/tooling breaks |
-| [`builder`](./builder.md) | Implementation | Code, files, refactors, data |
-| [`qa-engineer`](./qa-engineer.md) | Verification | After implementation, before declaring done |
-| [`adversarial-critic`](./adversarial-critic.md) | Skeptic, bloat detector | After integration, before final declaration |
-| [`eval-designer`](./eval-designer.md) | Evaluation design | Recurring problems need measurement |
-| [`improvement-analyst`](./improvement-analyst.md) | Pattern → fix | Same failure keeps happening |
-| [`context-librarian`](./context-librarian.md) | Docs, memories, context | Drift, conflicts, stale references |
-| [`research-scout`](./research-scout.md) | External facts | Need verifiable web-sourced information |
+|[`chief-operator`](./chief-operator.md)|Decision maker, orchestrator|Mission spans multiple agents|
+|[`system-fixer`](./system-fixer.md)|Quick repairs|Agent/skill/config/tooling breaks|
+|[`builder`](./builder.md)|Implementation|Code, files, refactors, data|
+|[`qa-engineer`](./qa-engineer.md)|Verification|After implementation, before declaring done|
+|[`adversarial-critic`](./adversarial-critic.md)|Skeptic, bloat detector|After integration, before final declaration|
+|[`eval-designer`](./eval-designer.md)|Evaluation design|Recurring problems need measurement|
+|[`improvement-analyst`](./improvement-analyst.md)|Pattern → fix|Same failure keeps happening|
+|[`context-librarian`](./context-librarian.md)|Docs, memories, context|Drift, conflicts, stale references|
+|[`research-scout`](./research-scout.md)|External facts|Need verifiable web-sourced information|
 
 ## How to Use
 
 ### Via Chief Operator
 
-```
+```text
 @chief-operator Add a new album analysis for Vangelis - Albedo 0.39
 ```
 
@@ -33,7 +33,7 @@ returns an integration report with PASS/FAIL verdicts.
 
 Any agent can be dispatched directly:
 
-```
+```text
 @builder Create data/vangelis-albedo-039.json with track listing from MusicBrainz
 ```
 

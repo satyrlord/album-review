@@ -47,21 +47,24 @@ coverage policy details, final report template, and stop conditions.
    - Fix any type errors found.
    - Completion criterion: `npm run typecheck` exits clean.
 
-4. **Dead-code gate**
-   - Run `npx fallow dead-code --format json` for cleanup candidates.
-   - Fix every valid issue (remove dead code, unused exports, orphan references,
-     or update code paths).
-   - Do not suppress findings without explicit user permission.
-   - Completion criterion: `npx fallow dead-code` reports zero issues, or
-     remaining issues are documented as verified false positives.
-
-5. **Fallow gate**
+4. **Fallow gate**
    - Run `npx fallow --format json` for full codebase intelligence: dead code,
      duplication, complexity, dependency hygiene, and architecture.
    - Fix every valid issue identified.
    - Do not suppress findings without explicit user permission.
    - Completion criterion: `npx fallow` reports zero issues, or remaining
      issues are documented as verified false positives.
+
+5. **Fallow hotspots**
+   - Run `npx fallow health --score --hotspots --targets` to surface high-CRAP
+     functions, large files, and churn hotspots with actionable refactoring
+     targets.
+   - Review each hotspot. Fix issues that can be addressed within the current
+     turn (extract functions, reduce branching, break up large files).
+   - Document long-tail items that require deeper restructuring in the final
+     report rather than leaving them open.
+   - Completion criterion: command exits clean, and any unfixed hotspots are
+     explicitly listed with rationale in the final report.
 
 6. **Unit-test gate**
    - Discover and run unit tests using repository scripts (`npm test`,
@@ -108,7 +111,7 @@ Never claim the full quality gate passed when any gate remains open.
 
 Return results in this order:
 
-1. Gate status table (Problems, Markdown, TypeCheck, DeadCode, Fallow, Unit, E2E, Coverage).
+1. Gate status table (Problems, Markdown, TypeCheck, Fallow, FallowHotspots, Unit, E2E, Coverage).
 2. Files changed.
 3. Commands run.
 4. Remaining blockers (if any).

@@ -1,7 +1,9 @@
 # MISSION.md Format
 
-`MISSION.md` lives at the workspace root. It captures the _reason_ the user is learning this topic. Every teaching decision —
-what to teach next, which resources to surface, which exercises to design — should trace back to this document.
+`MISSION.md` lives at the workspace root. It captures the _reason_ the user
+is learning this topic. Every teaching decision — what to teach next,
+which resources to surface, which exercises to design — should trace back
+to this document.
 
 ## Template
 
@@ -9,7 +11,10 @@ what to teach next, which resources to surface, which exercises to design — sh
 # Mission: {Topic}
 
 ## Why
-{1-3 sentences. The concrete real-world goal the user is chasing. What changes in their life or work when they have this skill? Avoid abstract framings like "to understand X" — push for the underlying outcome.}
+{1-3 sentences. The concrete real-world goal the user is chasing.
+What changes in their life or work when they have this skill? Avoid
+abstract framings like "to understand X" — push for the underlying
+outcome.}
 
 ## Success looks like
 - {A specific, observable thing the user will be able to do}

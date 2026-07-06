@@ -9,7 +9,10 @@ Produces a complete new album entry for the current app, not a standalone HTML f
 
 Leading word: **entry** — every run produces one finished `data/<id>.json` entry, validated end-to-end.
 
-When the user asks for multiple albums in one request, fan the work out in parallel using multiple sub-agents. Give each album to its own sub-agent whenever feasible, then merge the results in the main agent and run one shared validation pass after all album files are in place.
+When the user asks for multiple albums in one request, fan the work out in
+parallel using multiple sub-agents. Give each album to its own sub-agent
+whenever feasible, then merge the results in the main agent and run one
+shared validation pass after all album files are in place.
 
 ## Deep Reference
 

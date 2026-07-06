@@ -40,16 +40,37 @@ test-results/              ← generated Playwright artifacts
 tmp/                       ← temporary/generated workspace files
 ```
 
-The current root is intentionally narrower than before: browser runtime code now lives in `src/`, album tooling lives in `scripts/albums/`, and the remaining root-level source files are either public HTML entry points or toolchain config.
+The current root is intentionally narrower than before: browser runtime
+code now lives in `src/`, album tooling lives in `scripts/albums/`, and
+the remaining root-level source files are either public HTML entry points
+or toolchain config.
 
-Vite serves each HTML file as an application entry point and bundles the browser code into `dist/assets/` for production. The frontend styling pipeline now runs through the Vite Tailwind plugin plus DaisyUI, while build metadata is still injected at bundle time via `vite.config.ts`. The `data/` directory is copied into `dist/data/` during the build.
+Vite serves each HTML file as an application entry point and bundles the
+browser code into `dist/assets/` for production. The frontend styling
+pipeline now runs through the Vite Tailwind plugin plus DaisyUI, while
+build metadata is still injected at bundle time via `vite.config.ts`.
+The `data/` directory is copied into `dist/data/` during the build.
 
 ## Root-Level Contract
 
-- **The HTML entry files are part of the runtime contract**: `index.html`, `album.html`, and `credits.html` are referenced by `vite.config.ts`, shared navigation in `src/site.ts`, renderer links in `src/index.ts` and `src/album.ts`, Playwright tests, and the scaffolder output. Moving or renaming them is a route change, not a cosmetic cleanup.
-- **Toolchain configs belong at the root**: `package.json`, `vite.config.ts`, `playwright.config.ts`, `tsconfig.json`, `tsconfig.browser.json`, and `.nycrc.json` are loaded from the workspace root by their respective tools.
-- **Generated artifact folders are not source architecture**: `dist/`, `coverage/`, `playwright-report/`, `test-results/`, `.nyc_output/`, and `tmp/` are disposable outputs. If the next cleanup step is to move root clutter, these are the first candidates.
-- **Generated artifact locations are currently hard-coded**: moving the coverage/report/temp directories would require coordinated edits in `.gitignore`, `.nycrc.json`, `playwright.config.ts`, `scripts/test-coverage.ts`, and `tests/baseFixtures.ts`.
+- **The HTML entry files are part of the runtime contract**:
+  `index.html`, `album.html`, and `credits.html` are referenced by
+  `vite.config.ts`, shared navigation in `src/site.ts`, renderer links
+  in `src/index.ts` and `src/album.ts`, Playwright tests, and the
+  scaffolder output. Moving or renaming them is a route change, not a
+  cosmetic cleanup.
+- **Toolchain configs belong at the root**: `package.json`,
+  `vite.config.ts`, `playwright.config.ts`, `tsconfig.json`,
+  `tsconfig.browser.json`, and `.nycrc.json` are loaded from the
+  workspace root by their respective tools.
+- **Generated artifact folders are not source architecture**: `dist/`,
+  `coverage/`, `playwright-report/`, `test-results/`, `.nyc_output/`,
+  and `tmp/` are disposable outputs. If the next cleanup step is to move
+  root clutter, these are the first candidates.
+- **Generated artifact locations are currently hard-coded**: moving the
+  coverage/report/temp directories would require coordinated edits in
+  `.gitignore`, `.nycrc.json`, `playwright.config.ts`,
+  `scripts/test-coverage.ts`, and `tests/baseFixtures.ts`.
 
 ## Build and Runtime Flow
 
@@ -65,12 +86,46 @@ Vite serves each HTML file as an application entry point and bundles the browser
 
 ## Agreed Architecture Decisions (2026-07-06 review — not yet implemented)
 
-- **Shared core module at `src/shared/`**: one home for code needed by both the browser runtime and `scripts/` tooling. Dependency direction is one-way: `scripts/` may import from `src/shared/`, never the reverse. Layout is themed files: `schema.ts` (AlbumData, AlbumIndexEntry, EnergyLevel), `text.ts` (escapeHtml, normaliseText, fold-key), `tags.ts` (genre-tag helpers), `format.ts` (duration and version formatting). The duplicated copies in `src/album.ts`, `src/index.ts`, and `scripts/albums/` are deleted, not deprecated. The `escapeHtml` that survives is the `src/site.ts` dialect (escapes `"`).
-- **Shared files must satisfy both module-resolution modes**: `tsconfig.json` uses NodeNext, `tsconfig.browser.json` uses Bundler — relative imports in `src/shared/` use explicit `.js` extensions, which both accept.
-- **Browser file lists become globs**: `vite.config.ts` (istanbul include), `tsconfig.browser.json`, and `.nycrc.json` all switch from the hand-synced five-file list to `src/**/*.ts`. New browser modules are picked up with zero config edits; stray files become visible in typecheck and coverage rather than silently excluded.
-- **Page-specific pure functions stay in their page modules**: helpers with a single caller (e.g. `matchesFilters`, `resolveStreamName`) are exported for direct testing but not moved to `src/shared/` — shared is only for code both sides of the seam need.
-- **Unit tests run on Vitest**: pure-logic tests migrate from Playwright round-trips to a Vitest suite with direct imports. Playwright keeps only real page flows. The `window.AlbumReviewSite` global in `src/site.ts` is deleted once no test consumes it.
-- **Two separate coverage gates**: the existing browser-only nyc gate (80% per file) stays unchanged; Vitest gets its own independent 80% coverage threshold scoped to `src/shared/**`. No merging of coverage streams.
+- **Shared core module at `src/shared/`**: one home for code needed by
+  both the browser runtime and `scripts/` tooling. Dependency direction
+  is one-way: `scripts/` may import from `src/shared/`, never the
+  reverse. Layout is themed files: `schema.ts` (AlbumData,
+  AlbumIndexEntry, EnergyLevel), `text.ts` (escapeHtml, normaliseText,
+  fold-key), `tags.ts` (genre-tag helpers), `format.ts` (duration and
+  version formatting). The duplicated copies in `src/album.ts`,
+  `src/index.ts`, and `scripts/albums/` are deleted, not deprecated.
+  The `escapeHtml` that survives is the `src/site.ts` dialect (escapes
+  `"`).
+- **Shared files must satisfy both module-resolution modes**:
+  `tsconfig.json` uses NodeNext, `tsconfig.browser.json` uses Bundler —
+  relative imports in `src/shared/` use explicit `.js` extensions, which
+  both accept.
+- **Browser file lists become globs**: `vite.config.ts` (istanbul
+  include), `tsconfig.browser.json`, and `.nycrc.json` all switch from
+  the hand-synced five-file list to `src/**/*.ts`. New browser modules
+  are picked up with zero config edits; stray files become visible in
+  typecheck and coverage rather than silently excluded.
+- **Page-specific pure functions stay in their page modules**: helpers
+  with a single caller (e.g. `matchesFilters`, `resolveStreamName`) are
+  exported for direct testing but not moved to `src/shared/` — shared is
+  only for code both sides of the seam need.
+- **Unit tests run on Vitest**: pure-logic tests migrate from Playwright
+  round-trips to a Vitest suite with direct imports. Playwright keeps
+  only real page flows. The `window.AlbumReviewSite` global in
+  `src/site.ts` is deleted once no test consumes it.
+- **Two separate coverage gates**: the existing browser-only nyc gate
+  (80% per file) stays unchanged; Vitest gets its own independent 80%
+  coverage threshold scoped to `src/shared/**`. No merging of coverage
+  streams.
+- **Validation split by concern**: per-record checks move to
+  `src/shared/validate.ts` (pure, beside the schema type, unit-gated by
+  Vitest); cross-file checks (id↔filename, duplicate ids) stay in
+  `scripts/albums/album-index.ts`; `scripts/build.ts` becomes a plain
+  caller and its redundant inline re-checks are deleted.
+- **The browser keeps trusting build-validated data**: `src/album.ts`
+  does not validate fetched JSON at runtime — everything in `dist/data/`
+  has passed the build gate, and the fetch-error fallback covers real
+  failure modes.
 
 ## Language Constraints
 
@@ -79,9 +134,13 @@ Vite serves each HTML file as an application entry point and bundles the browser
 
 ## UI and Style Documentation
 
-See [style-guide.md](style-guide.md) for the current DaisyUI theme tokens, typography, component anatomy, layout rules, and responsive behavior.
+See [style-guide.md](style-guide.md) for the current DaisyUI theme tokens,
+typography, component anatomy, layout rules, and responsive behavior.
 
-The live source of truth is the code in `src/album-analysis.css`, `src/site.ts`, `src/album.ts`, `src/index.ts`, and `src/segment.ts`. If documentation drifts, the code wins and the style guide should be updated.
+The live source of truth is the code in `src/album-analysis.css`,
+`src/site.ts`, `src/album.ts`, `src/index.ts`, and `src/segment.ts`.
+If documentation drifts, the code wins and the style guide should be
+updated.
 
 ## Editing Guidelines
 
@@ -89,7 +148,10 @@ The live source of truth is the code in `src/album-analysis.css`, `src/site.ts`,
 - **Cover art should be cached locally**: store versioned cover files under `public/covers/` and point `coverUrl` at the local `covers/<id>.<ext>` path.
 - **`data/index.json` is generated**: never hand-edit it; regenerate it via `npm run build` or the scaffolder.
 - **Generated report/temp directories are disposable**: do not treat `coverage/`, `playwright-report/`, `test-results/`, `.nyc_output/`, `dist/`, or `tmp/` as hand-maintained source folders.
-- **When adding a new browser runtime file**, update the browser file lists in `vite.config.ts`, `.nycrc.json`, and `tsconfig.browser.json` so instrumentation, reporting, and browser type-checking remain aligned.
+- **When adding a new browser runtime file**, update the browser file
+  lists in `vite.config.ts`, `.nycrc.json`, and `tsconfig.browser.json`
+  so instrumentation, reporting, and browser type-checking remain
+  aligned.
 - **Analytical writing style**: precise, concise, technical music terminology. Avoid fluff. Third-person or noun-phrase constructions preferred.
 
 ## Extending the Project

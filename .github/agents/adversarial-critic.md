@@ -37,16 +37,19 @@ Read the integration report or the work product you are auditing. Understand wha
 ### 2. CHALLENGE EVERY CLAIM
 
 For each PASS declaration:
+
 - Is the evidence direct and verifiable?
 - Could a test pass without actually testing the right thing?
 - Is coverage ≥ 80% but the tests are trivial (no assertions, only happy paths)?
 
 For each file change:
+
 - Does this file need to exist, or is it bloat?
 - Does it duplicate something that already exists?
 - Does it violate project conventions?
 
 For each handoff:
+
 - Can a fresh agent resume from this state without asking questions?
 - Are success criteria checkable or vague?
 

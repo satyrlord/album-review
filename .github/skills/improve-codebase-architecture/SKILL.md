@@ -78,9 +78,14 @@ Ask the user: "Which of these would you like me to implement?"
 
 Once the user picks a candidate, apply the deepening improvement to the best of your ability. This means:
 
-- **Read the relevant code thoroughly** before making changes. Understand the current interface, implementation, and callers.
-- **Design the deepened module**: shrink the interface, expand the implementation behind it. Apply the deletion test — after the refactor, would deleting this module concentrate complexity or just move it?
-- **Implement the change**: restructure files, extract and consolidate logic, tighten seams. Prefer locality — code that changes together should live together.
+- **Read the relevant code thoroughly** before making changes. Understand
+  the current interface, implementation, and callers.
+- **Design the deepened module**: shrink the interface, expand the
+  implementation behind it. Apply the deletion test — after the refactor,
+  would deleting this module concentrate complexity or just move it?
+- **Implement the change**: restructure files, extract and consolidate
+  logic, tighten seams. Prefer locality — code that changes together
+  should live together.
 - **Preserve existing tests** and add new ones for the deepened interface. If a test was hard to write before and easy now, that's the signal you got it right.
 - **Run the full build and test suite** (`npm run build`, `npm run test:coverage`). Fix any regressions. Maintain the minimum 80% coverage threshold in every reported Istanbul cell.
 - **Update relevant docs** under `docs/` when the change introduces a new concept, sharpens a fuzzy term, or alters a documented decision.

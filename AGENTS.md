@@ -36,7 +36,10 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 
 1. Create a new album JSON directly, or use the scaffold with `npx tsx scripts/add-album.ts "Artist Name" "Album Title" YEAR --genre "Genre / Subgenre"`.
 
-   When a request covers multiple albums, split the work by album and run the album-analysis workflow in parallel using multiple sub-agents whenever feasible. Assign one sub-agent per album, then reconcile the outputs in the main agent before the final build and validation pass.
+   When a request covers multiple albums, split the work by album and run
+   the album-analysis workflow in parallel using multiple sub-agents
+   whenever feasible. Assign one sub-agent per album, then reconcile the
+   outputs in the main agent before the final build and validation pass.
 
 2. Ensure the JSON includes the album metadata, overview, track analysis, and optional `coverUrl`.
 
@@ -59,9 +62,15 @@ Update the style guide whenever `src/album-analysis.css` or the page renderers c
 
 Use VSCode simple browser for visual inspection. Avoid opening external browsers.
 
-When running `npm run test:coverage`, maintain a minimum of 80% in every reported Istanbul coverage table cell. This applies to the overall summary and to each reported file across statements, branches, functions, and lines.
+When running `npm run test:coverage`, maintain a minimum of 80% in every
+reported Istanbul coverage table cell. This applies to the overall summary
+and to each reported file across statements, branches, functions, and
+lines.
 
-When adding a new browser runtime TypeScript file, update the browser-file include lists in `vite.config.ts`, `.nycrc.json`, and `tsconfig.browser.json` so instrumentation, reporting, and browser type-checking stay aligned.
+When adding a new browser runtime TypeScript file, update the browser-file
+include lists in `vite.config.ts`, `.nycrc.json`, and
+`tsconfig.browser.json` so instrumentation, reporting, and browser
+type-checking stay aligned.
 
 If any coverage cell drops below 80%, add or update tests before considering the work complete.
 

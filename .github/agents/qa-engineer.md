@@ -33,6 +33,7 @@ and produce evidence-backed PASS/FAIL verdicts.
 ### 1. GATHER EVIDENCE
 
 Run these in order:
+
 ```bash
 npm run build
 npm test
@@ -44,6 +45,7 @@ Capture full output. If any command fails, capture the exact error.
 ### 2. CHECK EACH CRITERION
 
 Against the spec you were given:
+
 - Does the build pass?
 - Do all tests pass?
 - Is coverage ≥ 80% in every reported cell?
