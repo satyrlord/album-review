@@ -6,6 +6,8 @@
 // reads as a true structural map of the album.
 // ──────────────────────────────────────────────────────────────
 
+import { foldKey } from './shared/text.js';
+
 // ── Types ────────────────────────────────────────────────────
 
 /** A single segment (timeline section) within a track bar. */
@@ -85,7 +87,7 @@ function getSegmentPercentages(segments: SegmentData[]): number[] {
  * every row of the chart instead of depending on segment position.
  */
 export function sectionColorIndex(title: string, paletteSize: number): number {
-  const key = title.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const key = foldKey(title);
   let hash = 5381;
   for (let i = 0; i < key.length; i++) {
     hash = ((hash * 33) ^ key.charCodeAt(i)) >>> 0;

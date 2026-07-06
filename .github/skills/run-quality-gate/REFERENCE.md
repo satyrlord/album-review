@@ -38,7 +38,7 @@ Notes:
 
 - No suppressions unless user explicitly approves.
 
-### ESLint gate
+### TypeCheck gate
 
 This project uses TypeScript compiler checks and markdownlint; there is no
 ESLint configuration. Run:
@@ -143,8 +143,8 @@ Before unit/e2e/coverage gates, inspect scripts once:
    - Problems: PASS/FAIL/BLOCKED
    - Markdown: PASS/FAIL/BLOCKED/N-A
    - TypeCheck: PASS/FAIL/BLOCKED/N-A
-   - DeadCode: PASS/FAIL/BLOCKED/N-A
    - Fallow: PASS/FAIL/BLOCKED/N-A
+   - FallowHotspots: PASS/FAIL/BLOCKED/N-A
    - Unit: PASS/FAIL/BLOCKED/N-A
    - E2E: PASS/FAIL/BLOCKED/N-A
    - Coverage: PASS/FAIL/BLOCKED/N-A

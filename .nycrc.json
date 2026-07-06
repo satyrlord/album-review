@@ -1,13 +1,10 @@
 {
   "all": false,
   "include": [
-    "src/site.ts",
-    "src/index.ts",
-    "src/album.ts",
-    "src/segment.ts",
-    "src/credits.ts"
+    "src/**/*.ts"
   ],
   "exclude": [
+    "src/shared/**",
     "dist/**",
     "coverage/**",
     "node_modules/**"

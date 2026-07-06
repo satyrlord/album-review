@@ -82,7 +82,7 @@ For each track, derive `energy`, `tags`, `role`, and `events` per the reference 
 
 **Completion criterion:** every track has all derived fields populated, every
 timestamp uses `M:SS` or `MM:SS` format, and the JSON validates against
-`album-schema.ts`.
+`src/shared/schema.ts`.
 
 ### Step 5 — Refresh the App Index
 

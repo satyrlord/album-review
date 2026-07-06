@@ -1,8 +1,5 @@
-interface SiteBuildMeta {
-  pushedCommitCount: number;
-  sourceRef: string;
-  generatedAt: string;
-}
+import type { SiteBuildMeta } from './shared/schema.js';
+import { escapeHtml } from './shared/text.js';
 
 interface SiteBuildInfo extends SiteBuildMeta {
   version: string;
@@ -14,61 +11,18 @@ interface SiteFooterOptions {
   actionLabel?: string;
 }
 
-type SiteNavPage = 'home';
-
-interface SiteNavOptions {
-  activePage?: SiteNavPage | null;
-}
-
 export interface CollectionHeroOptions {
   title: string;
   titleClassName?: string;
-  subtitle?: string;
-  subtitleVariant?: string;
   tagline?: string;
   searchPlaceholder?: string;
   searchAriaLabel?: string;
-}
-
-interface SiteHelpers {
-  getBuildMeta(): SiteBuildInfo;
-  renderNav(options?: SiteNavOptions): string;
-  renderBackNav(): string;
-  mountNav(elementId: string, options?: SiteNavOptions): void;
-  renderFooter(options?: SiteFooterOptions): string;
-  mountFooter(elementId: string, options?: SiteFooterOptions): void;
-  renderCollectionHero(options: CollectionHeroOptions): string;
-  mountCollectionHero(elementId: string, options: CollectionHeroOptions): void;
 }
 
 declare const __ALBUM_REVIEW_BUILD__: Partial<SiteBuildMeta>;
 
 const PROJECT_URL = 'https://github.com/satyrlord/album-review';
 export const FALLBACK_COVER_URL = 'covers/fallback-cd-case.svg';
-
-const PRIMARY_NAV_LINKS = [
-  { href: 'index.html', label: 'HOME PAGE', page: 'home' },
-] as const;
-
-type SiteWindow = Window & {
-  __ALBUM_REVIEW_BUILD__?: Readonly<Partial<SiteBuildMeta>>;
-  AlbumReviewSite?: SiteHelpers;
-};
-
-export function escapeHtml(value: string | number): string {
-  return String(value)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-export function normaliseText(value: string): string {
-  return String(value || '')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase();
-}
 
 export function resolveCoverImageUrl(coverUrl?: string): string {
   const value = typeof coverUrl === 'string' ? coverUrl.trim() : '';
@@ -117,22 +71,6 @@ export function getBuildMeta(): SiteBuildInfo {
   };
 }
 
-export function renderNav(options: SiteNavOptions = {}): string {
-  const activePage = options.activePage ?? null;
-
-  return (
-    `<nav class="site-nav p-2" aria-label="Primary">\n` +
-    PRIMARY_NAV_LINKS.map(link => {
-      const classes = link.page === activePage
-        ? "site-nav-link btn btn-sm border border-primary/30 bg-primary text-primary-content shadow-lg shadow-primary/10"
-        : "site-nav-link btn btn-sm btn-ghost border border-transparent bg-base-100/40 hover:border-primary/35 hover:bg-primary/10 hover:text-primary";
-      const current = link.page === activePage ? ' aria-current="page"' : '';
-      return `  <a class="${classes}" href="${link.href}"${current}>${link.label}</a>`;
-    }).join('\n') + '\n' +
-    `</nav>`
-  );
-}
-
 /** Canonical "Back to Home" nav used by album and credits pages. */
 export function renderBackNav(): string {
   return (
@@ -142,18 +80,9 @@ export function renderBackNav(): string {
   );
 }
 
-export function mountNav(elementId: string, options: SiteNavOptions = {}): void {
-  const target = document.getElementById(elementId);
-  if (!target) return;
-  target.outerHTML = renderNav(options);
-}
-
 export function renderCollectionHero(options: CollectionHeroOptions): string {
   const titleClass = options.titleClassName
     ? ` ${escapeHtml(options.titleClassName)}`
-    : '';
-  const badgeHtml = options.subtitle
-    ? `\n        <div class="badge badge-outline ${options.subtitleVariant ?? 'badge-secondary'} subtitle px-4 py-3 font-mono text-[0.68rem] uppercase tracking-[0.28em]">${escapeHtml(options.subtitle)}</div>`
     : '';
   const taglineHtml = options.tagline
     ? `\n        <p class="max-w-3xl text-sm leading-7 text-base-content/72 sm:text-base">${escapeHtml(options.tagline)}</p>`
@@ -166,7 +95,6 @@ export function renderCollectionHero(options: CollectionHeroOptions): string {
 
     `  <div class="container">\n` +
     `    <div class="flex flex-col items-center gap-5 px-6 py-8 text-center sm:px-10 sm:py-12">` +
-    badgeHtml +
     `\n        <h1 class="font-display text-4xl font-semibold tracking-[-0.04em] text-base-content sm:text-5xl lg:text-6xl 2xl:text-7xl${titleClass}">${escapeHtml(options.title)}</h1>` +
     taglineHtml +
     `\n        <label class="input input-bordered flex h-auto min-h-14 w-full max-w-3xl items-center gap-3 border-base-300/60 bg-base-200/50 px-5 py-3 text-lg backdrop-blur-sm">\n` +
@@ -254,17 +182,23 @@ export function shuffleBg(): void {
   applyStoredBg();
 }
 
-const siteWindow = window as SiteWindow;
-const rawBuildMeta = __ALBUM_REVIEW_BUILD__ ?? {};
+// ── Page mounting ─────────────────────────────────────────────────────────────
 
-siteWindow.__ALBUM_REVIEW_BUILD__ = Object.freeze({ ...rawBuildMeta });
-siteWindow.AlbumReviewSite = {
-  getBuildMeta,
-  renderNav,
-  renderBackNav,
-  mountNav,
-  renderFooter,
-  mountFooter,
-  renderCollectionHero,
-  mountCollectionHero,
-};
+/**
+ * Replace the placeholder root with a fully rendered page and wire up the
+ * shared chrome behaviors every page repeats: footer controls, cover-image
+ * fallbacks, and the "Back to Home" random-backdrop link. Returns false
+ * when the root element is missing (the page is left untouched).
+ */
+export function mountPage(rootId: string, html: string): boolean {
+  const root = document.getElementById(rootId);
+  if (!root) return false;
+
+  root.outerHTML = html;
+  bindCoverFallbacks(document);
+  bindFooterControls();
+  document.querySelector<HTMLAnchorElement>('[data-js="pick-random-bg"]')
+    ?.addEventListener('click', () => { pickAndStoreRandomBg(); });
+
+  return true;
+}

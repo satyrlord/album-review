@@ -5,7 +5,7 @@ remedy patterns and a quick-reference checklist.
 
 ## Extended Remedy Patterns
 
-When the body's "Preferred Remedies" list feels abstract, reach for these
+When the remedies in the body's "Standards" feel abstract, reach for these
 patterns:
 
 ### Delete-a-layer

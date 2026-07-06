@@ -67,10 +67,10 @@ reported Istanbul coverage table cell. This applies to the overall summary
 and to each reported file across statements, branches, functions, and
 lines.
 
-When adding a new browser runtime TypeScript file, update the browser-file
-include lists in `vite.config.ts`, `.nycrc.json`, and
-`tsconfig.browser.json` so instrumentation, reporting, and browser
-type-checking stay aligned.
+`vite.config.ts`, `.nycrc.json`, and `tsconfig.browser.json` glob
+`src/**/*.ts`, so new browser runtime files are picked up automatically —
+no config edits needed. New files under `src/shared/` are gated by the
+Vitest unit-coverage threshold instead; give them unit tests.
 
 If any coverage cell drops below 80%, add or update tests before considering the work complete.
 
@@ -80,4 +80,4 @@ If any coverage cell drops below 80%, add or update tests before considering the
 
 The site deploys automatically to GitHub Pages on every push to `main` via `.github/workflows/deploy.yml`.
 
-GitHub Actions now builds the site with Vite and publishes `dist/`, so local pushes only need the source files plus a clean `npm run build` result.
+GitHub Actions builds the site with Vite and publishes `dist/`, so local pushes only need the source files plus a clean `npm run build` result.

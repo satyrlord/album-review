@@ -1,16 +1,6 @@
-import { applyStoredBg, bindCoverFallbacks, escapeHtml, FALLBACK_COVER_URL, mountCollectionHero, mountFooter, normaliseText, resolveCoverImageUrl } from "./site";
-
-interface AlbumEntry {
-  id:     string;
-  artist: string;
-  title:  string;
-  year:   number;
-  tracks: number;
-  genre:  string;
-  /** Individual genre/subgenre tags derived from `genre` by splitting on "/" and trimming whitespace; `genre` remains the display string. */
-  genreTags: string[];
-  coverUrl?: string;
-}
+import type { AlbumIndexEntry } from "./shared/schema.js";
+import { escapeHtml, normaliseText } from "./shared/text.js";
+import { applyStoredBg, bindCoverFallbacks, FALLBACK_COVER_URL, mountCollectionHero, mountFooter, resolveCoverImageUrl } from "./site.js";
 
 interface CollectionDom {
   grid: HTMLElement;
@@ -18,60 +8,78 @@ interface CollectionDom {
   count: HTMLElement;
 }
 
-(function (): void {
-  'use strict';
+// One colour per unique artist (sorted A-Z). Identity hues only — the
+// functional colours (--time amber, --warn orange, secondary red) are
+// reserved for timestamps, warnings, and errors. All pass WCAG AA on
+// the card surface at the 12px artist-label size.
+const PALETTE: readonly string[] = [
+  '#00ff88', // green
+  '#ff6ec7', // pink
+  '#5ac8fa', // sky blue
+  '#c3f34d', // lime
+  '#b18aff', // violet
+];
 
-  // One colour per unique artist (sorted A-Z). Identity hues only — the
-  // functional colours (--time amber, --warn orange, secondary red) are
-  // reserved for timestamps, warnings, and errors. All pass WCAG AA on
-  // the card surface at the 12px artist-label size.
-  const PALETTE: readonly string[] = [
-    '#00ff88', // green
-    '#ff6ec7', // pink
-    '#5ac8fa', // sky blue
-    '#c3f34d', // lime
-    '#b18aff', // violet
-  ];
+/** Genre tags shown before the "+ more" expander is opened. */
+const VISIBLE_GENRE_TAGS = 10;
 
-  /** Genre tags shown before the "+ more" expander is opened. */
-  const VISIBLE_GENRE_TAGS = 10;
+export function buildColorMap(albums: AlbumIndexEntry[]): Record<string, string> {
+  const artists = Array.from(new Set(albums.map(a => a.artist))).sort();
+  const map: Record<string, string> = {};
+  artists.forEach((name, i) => {
+    map[name] = PALETTE[i % PALETTE.length];
+  });
+  return map;
+}
 
-  function getCollectionDom(): CollectionDom | null {
-    const grid = document.getElementById('ixGrid');
-    const search = document.getElementById('ixSearch');
-    const count = document.getElementById('ixCount');
+export function matchesFilters(album: AlbumIndexEntry, artists: ReadonlySet<string>, genres: ReadonlySet<string>, q: string): boolean {
+  const tags = album.genreTags ?? [];
+  const matchArtist = artists.size === 0 || artists.has(album.artist);
 
-    if (!(grid instanceof HTMLElement)) return null;
-    if (!(search instanceof HTMLInputElement)) return null;
-    if (!(count instanceof HTMLElement)) return null;
-
-    return { grid, search, count };
+  let matchGenre = true;
+  for (const tag of genres) {
+    if (!tags.includes(tag)) {
+      matchGenre = false;
+      break;
+    }
   }
 
-  function buildColorMap(albums: AlbumEntry[]): Record<string, string> {
-    const artists = Array.from(new Set(albums.map(a => a.artist))).sort();
-    const map: Record<string, string> = {};
-    artists.forEach((name, i) => {
-      map[name] = PALETTE[i % PALETTE.length];
-    });
-    return map;
-  }
+  const matchSearch = !q
+    || normaliseText(album.title).indexOf(q) !== -1
+    || normaliseText(album.artist).indexOf(q) !== -1
+    || tags.some(t => normaliseText(t).indexOf(q) !== -1);
 
-  function renderAlbumCardMedia(album: AlbumEntry): string {
-    const coverSrc = resolveCoverImageUrl(album.coverUrl);
+  return matchArtist && matchGenre && matchSearch;
+}
 
-    return (
-      `<figure class="ix-card-media relative aspect-square border-b border-base-300/70 bg-base-100/60">` +
-        `<img class="ix-card-cover transition duration-500 group-hover:scale-[1.04]" ` +
-          `src="${escapeHtml(coverSrc)}" ` +
-          `data-album-id="${escapeHtml(album.id)}" ` +
-          `data-cover-fallback="${escapeHtml(FALLBACK_COVER_URL)}" ` +
-          `alt="Album cover for ${escapeHtml(album.artist)} - ${escapeHtml(album.title)}" ` +
-          `loading="lazy" decoding="async" referrerpolicy="no-referrer">` +
-      `</figure>`
-    );
-  }
+function getCollectionDom(): CollectionDom | null {
+  const grid = document.getElementById('ixGrid');
+  const search = document.getElementById('ixSearch');
+  const count = document.getElementById('ixCount');
 
+  if (!(grid instanceof HTMLElement)) return null;
+  if (!(search instanceof HTMLInputElement)) return null;
+  if (!(count instanceof HTMLElement)) return null;
+
+  return { grid, search, count };
+}
+
+function renderAlbumCardMedia(album: AlbumIndexEntry): string {
+  const coverSrc = resolveCoverImageUrl(album.coverUrl);
+
+  return (
+    `<figure class="ix-card-media relative aspect-square border-b border-base-300/70 bg-base-100/60">` +
+      `<img class="ix-card-cover transition duration-500 group-hover:scale-[1.04]" ` +
+        `src="${escapeHtml(coverSrc)}" ` +
+        `data-album-id="${escapeHtml(album.id)}" ` +
+        `data-cover-fallback="${escapeHtml(FALLBACK_COVER_URL)}" ` +
+        `alt="Album cover for ${escapeHtml(album.artist)} - ${escapeHtml(album.title)}" ` +
+        `loading="lazy" decoding="async" referrerpolicy="no-referrer">` +
+    `</figure>`
+  );
+}
+
+function bootCollectionPage(): void {
   const pageEmptyMessage = 'No albums available.';
 
   mountCollectionHero('ixHero', {
@@ -91,7 +99,7 @@ interface CollectionDom {
     context: 'Collection Index',
   });
 
-  let allAlbums: AlbumEntry[] = [];
+  let allAlbums: AlbumIndexEntry[] = [];
   let colorMap: Record<string, string> = {};
   const activeArtistTags = new Set<string>();
   const activeGenreTags = new Set<string>();
@@ -105,12 +113,12 @@ interface CollectionDom {
       '</div>';
   }
 
-  async function loadAlbums(): Promise<AlbumEntry[]> {
+  async function loadAlbums(): Promise<AlbumIndexEntry[]> {
     const response = await fetch('data/index.json', { cache: 'no-store' });
     if (!response.ok) {
       throw new Error(`Could not load data/index.json (${response.status}).`);
     }
-    return await response.json() as AlbumEntry[];
+    return await response.json() as AlbumIndexEntry[];
   }
 
   function toggleArtistTag(artist: string): void {
@@ -139,26 +147,6 @@ interface CollectionDom {
     search.value = '';
     syncTagButtons();
     render();
-  }
-
-  function matchesFilters(album: AlbumEntry, artists: ReadonlySet<string>, genres: ReadonlySet<string>, q: string): boolean {
-    const tags = album.genreTags ?? [];
-    const matchArtist = artists.size === 0 || artists.has(album.artist);
-
-    let matchGenre = true;
-    for (const tag of genres) {
-      if (!tags.includes(tag)) {
-        matchGenre = false;
-        break;
-      }
-    }
-
-    const matchSearch = !q
-      || normaliseText(album.title).indexOf(q) !== -1
-      || normaliseText(album.artist).indexOf(q) !== -1
-      || tags.some(t => normaliseText(t).indexOf(q) !== -1);
-
-    return matchArtist && matchGenre && matchSearch;
   }
 
   /** Would adding this genre tag to the current selection still match at least one album? */
@@ -371,4 +359,6 @@ interface CollectionDom {
   main().catch((error: unknown) => {
     showError(error instanceof Error ? error.message : 'Unexpected error.');
   });
-}());
+}
+
+bootCollectionPage();

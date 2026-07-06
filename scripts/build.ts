@@ -16,7 +16,7 @@ import { execSync } from "child_process";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
-import { expectedAlbumId, readAlbumDataDir, writeAlbumIndexFile } from "./albums/album-index.js";
+import { writeAlbumIndexFile } from "./albums/album-index.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -43,34 +43,10 @@ function step(label: string, fn: () => void): void {
 console.log("\n── album-review build ──────────────────────────────────────\n");
 
 step("Data folder consistency", () => {
-  const dataDir = join(ROOT, "data");
-  const records = readAlbumDataDir(dataDir);
-  const seenIds = new Set<string>();
-  const issues: string[] = [];
-
-  for (const record of records) {
-    const expectedId = expectedAlbumId(record.fileName);
-    const album = record.album;
-
-    if (album.id !== expectedId) {
-      issues.push(`${record.fileName}: id must be \"${expectedId}\", got \"${album.id}\"`);
-    }
-
-    if (seenIds.has(album.id)) {
-      issues.push(`${record.fileName}: duplicate album id \"${album.id}\"`);
-    }
-    seenIds.add(album.id);
-
-    if (!String(album.artist || "").trim()) issues.push(`${record.fileName}: artist is required`);
-    if (!String(album.title || "").trim()) issues.push(`${record.fileName}: title is required`);
-    if (!Array.isArray(album.tracks) || album.tracks.length === 0) {
-      issues.push(`${record.fileName}: tracks must be a non-empty array`);
-    }
-  }
-
-  if (issues.length) throw new Error(issues.join("\n      "));
-
-  writeAlbumIndexFile(dataDir);
+  // Per-record validation lives in src/shared/validate.ts; cross-file
+  // checks live in scripts/albums/album-index.ts. Both run inside
+  // writeAlbumIndexFile — this step is a plain caller.
+  writeAlbumIndexFile(join(ROOT, "data"));
 });
 
 step("Vite build", () => {
@@ -84,7 +60,7 @@ step("TypeScript typecheck", () => {
 
 step("Markdownlint", () => {
   try {
-    execSync('npx markdownlint-cli2 "**/*.md" "#node_modules" "#.github/skills/**" "#coverage/**" "#.nyc_output/**" "#tmp/**" "#playwright-report/**" "#test-results/**" "#.playwright-mcp/**"', {
+    execSync('npx markdownlint-cli2 "**/*.md" "#node_modules" "#.github/skills/**" "#.claude/**" "#coverage/**" "#.nyc_output/**" "#tmp/**" "#playwright-report/**" "#test-results/**" "#.playwright-mcp/**"', {
       cwd: ROOT,
       stdio: "pipe",
     });
@@ -94,6 +70,10 @@ step("Markdownlint", () => {
     }
     throw e;
   }
+});
+
+step("Unit tests (Vitest)", () => {
+  execSync("npx vitest run --coverage", { cwd: ROOT, stdio: "pipe" });
 });
 
 step("Test coverage", () => {

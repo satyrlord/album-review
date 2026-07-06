@@ -26,7 +26,7 @@ told, to the spec you're given.
 
 - Follow `AGENTS.md`, `docs/architecture-notes.md`, `docs/business-rules.md`, `docs/style-guide.md`.
 - Maintain the 80% coverage threshold in every Istanbul cell.
-- When adding a new browser runtime file, update `vite.config.ts`, `.nycrc.json`, and `tsconfig.browser.json`.
+- New browser runtime files are picked up by the `src/**/*.ts` globs in `vite.config.ts`, `.nycrc.json`, and `tsconfig.browser.json`; give new `src/shared/` files unit tests instead.
 - Do NOT edit `data/index.json` directly — it is generated.
 - Do NOT edit generated artifacts (`dist/`, `coverage/`, `playwright-report/`, `test-results/`, `.nyc_output/`, `tmp/`).
 - Use the domain vocabulary from the project docs.

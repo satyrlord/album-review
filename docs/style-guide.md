@@ -1,8 +1,5 @@
 # Style Guide
 
-This document describes the current UI system for the site after the DaisyUI
-migration.
-
 The source of truth is the shipped code in
 [src/album-analysis.css](../src/album-analysis.css),
 [src/site.ts](../src/site.ts), [src/index.ts](../src/index.ts),
@@ -21,20 +18,20 @@ If this guide and the code disagree, update this guide to match the code.
 
 ## Core Rules
 
-- All runtime CSS still lives in [src/album-analysis.css](../src/album-analysis.css). Do not add page-local `<style>` blocks or extra stylesheets.
-- The stylesheet now starts with Tailwind CSS and DaisyUI configuration.
+- All runtime CSS lives in [src/album-analysis.css](../src/album-analysis.css). Do not add page-local `<style>` blocks or extra stylesheets.
+- The stylesheet starts with Tailwind CSS and DaisyUI configuration.
   Treat it as three layers in one file: Tailwind import, DaisyUI theme
   definition, and custom CSS for the bespoke pieces DaisyUI does not cover
   directly.
-- Every HTML entry point sets `data-theme="dark"` on the root `<html>` element. The site remains dark-theme only.
-- Prefer DaisyUI component classes in renderer output: `card`, `btn`, `badge`, `input`, and `alert` are now the default primitives.
-- Keep the existing hook classes that the runtime and tests rely on: `site-nav`, `site-nav-link`, `site-footer`, `ix-card`, `track`, `timeline`, and the `segment-*` chart classes.
-- When a per-instance accent is needed on collection cards, continue using the existing `style="--card-accent:..."` hook from [src/index.ts](../src/index.ts).
+- Every HTML entry point sets `data-theme="dark"` on the root `<html>` element. The site is dark-theme only.
+- Prefer DaisyUI component classes in renderer output: `card`, `btn`, `badge`, `input`, and `alert` are the default primitives.
+- Keep the hook classes that the runtime and tests rely on: `site-nav`, `site-nav-link`, `site-footer`, `ix-card`, `track`, `timeline`, and the `segment-*` chart classes.
+- When a per-instance accent is needed on collection cards, use the `style="--card-accent:..."` hook from [src/index.ts](../src/index.ts).
 - Use custom CSS only for shared atmosphere or genuinely custom UI: page background treatment, track-event timeline rails, artist accent handling, and the segment chart.
 
 ## Theme System
 
-The app customizes DaisyUI's `dark` theme directly inside [src/album-analysis.css](../src/album-analysis.css). Primary tokens are still exposed to the rest of the code through the legacy custom properties:
+The app customizes DaisyUI's `dark` theme directly inside [src/album-analysis.css](../src/album-analysis.css). Primary tokens are exposed to the rest of the code through custom-property aliases:
 
 | Variable | Source | Use |
 | --- | --- | --- |
@@ -69,7 +66,7 @@ The active index is stored in `localStorage` (`siteBgIndex`). Users can
 re-roll it with the "◱ Backdrop" button in the footer
 (`.site-footer-shuffle-bg`, bound by `bindFooterControls()` in
 [src/site.ts](../src/site.ts)); the Back to Home links on album and credits
-pages still pick a fresh random backdrop.
+pages also pick a fresh random backdrop.
 
 ## Typography
 
@@ -96,7 +93,7 @@ Current usage:
   font rule, so other pages can request `font-display`) and is used for
   navigation, labels, metadata, timestamps, pills, badges, and footer
   chrome.
-- `DM Sans` remains the default body copy face for long-form overview and note text.
+- `DM Sans` is the default body copy face for long-form overview and note text.
 
 Album and credits h1s accent one word with `--accent`: always the **last** word of the title.
 
@@ -106,18 +103,18 @@ Shared navigation and footer are rendered by [src/site.ts](../src/site.ts).
 
 ### Navigation
 
-- The nav shell is still `.site-nav`.
-- Links are still `.site-nav-link` but are now DaisyUI `btn` variants.
+- The nav shell is `.site-nav`.
+- Links are `.site-nav-link`, styled as DaisyUI `btn` variants.
 - Collection pages center the nav; album heroes left-align it through shared CSS.
-- Active page state is still expressed with `aria-current="page"`.
+- Active page state is expressed with `aria-current="page"`.
 
 ### Footer
 
-- The footer root is still `.site-footer`.
-- The version badge remains `.site-footer-version` and links to the GitHub repository.
+- The footer root is `.site-footer`.
+- The version badge is `.site-footer-version` and links to the GitHub repository.
 - The backdrop shuffle control is `.site-footer-shuffle-bg`; pages that render the footer as a string must call `bindFooterControls()` after mounting.
-- Optional context text still uses `.site-footer-context`.
-- Optional action links still use `.site-footer-link`, but they are now DaisyUI-styled ghost buttons.
+- Optional context text uses `.site-footer-context`.
+- Optional action links use `.site-footer-link`, styled as DaisyUI ghost buttons.
 
 ### Accessibility chrome
 
@@ -142,40 +139,39 @@ Structure:
   zero results is `disabled` with `aria-disabled` instead of leading the
   user into an empty grid.
 - Active filters render as removable `.ix-filter-chip` badges next to the count, with a `.ix-clear-filters` button that also resets the search. The no-results empty state repeats the clear action.
-- `.ix-grid` remains the card grid and still hosts `.ix-card` anchors.
+- `.ix-grid` is the card grid and hosts `.ix-card` anchors.
 
 Collection card rules:
 
-- `.ix-card` is now a DaisyUI `card` with the existing `--card-accent`
-  hook preserved. Because the whole card is an anchor, nothing
-  interactive may be nested inside it.
-- `.ix-card-media` now always renders. When an album has no cached cover,
+- `.ix-card` is a DaisyUI `card` with the `--card-accent` hook. Because
+  the whole card is an anchor, nothing interactive may be nested inside
+  it.
+- `.ix-card-media` always renders. When an album has no cached cover,
   or its referenced file fails to load, the shared
   `public/covers/fallback-cd-case.svg` artwork is shown instead.
 - Card and hero covers default to `object-position: top center`; if a
   specific sleeve needs a different focal point, scope that override
   with the image `data-album-id` hook instead of changing the shared
   default.
-- `.ix-card-title` remains the primary album title element and is an `h2` heading.
+- `.ix-card-title` is the primary album title element and is an `h2` heading.
 - Card body order is title → artist → year/tracks → genre tags. `.ix-card-genre-tag` elements are decorative `span`s with `pointer-events: none` — filtering happens only in the hero tag cloud.
 - `.ix-card-artist` inherits the per-artist identity color; `.ix-card-footer` stays dim (`--text-dim`) and only takes the accent on card hover/focus.
-- Empty and error states still render as `.ix-empty` and `.ix-error`, now using DaisyUI `alert` styling.
+- Empty and error states render as `.ix-empty` and `.ix-error`, using DaisyUI `alert` styling.
 - The grid caps at 7 columns on 2xl viewports.
 
 ## Album Pages
 
-Album detail pages are still rendered dynamically by [src/album.ts](../src/album.ts).
+Album detail pages are rendered dynamically by [src/album.ts](../src/album.ts).
 
 Hero rules:
 
-- The hero shell still uses `.hero` and `.hero-layout`; rendered album pages now always use `has-cover`, because missing or broken art falls back to the shared CD-case SVG.
-- The subtitle is now rendered as a DaisyUI badge (`badge-accent`, not
-  the alarm-red secondary), but the hook class remains `.subtitle`.
-  Shared CSS lets long badge text wrap inside the pill instead of
-  overflowing on small screens.
-- Metadata still lives in `.meta`, now as a responsive grid of `.meta-item` panels (`minmax(7.5rem, 1fr)` so phones keep two columns).
-- The visible label format still includes a trailing colon, for example `Artist:` and `Label:`.
-- Streaming links remain `.hero-link hero-link--spotify` / `.hero-link--audio-stream` / `.hero-link--youtube`, but use DaisyUI buttons.
+- The hero shell uses `.hero` and `.hero-layout`; rendered album pages always use `has-cover`, because missing or broken art falls back to the shared CD-case SVG.
+- The subtitle is a DaisyUI badge (`badge-accent`, not the alarm-red
+  secondary); the hook class is `.subtitle`. Shared CSS lets long badge
+  text wrap inside the pill instead of overflowing on small screens.
+- Metadata lives in `.meta` as a responsive grid of `.meta-item` panels (`minmax(7.5rem, 1fr)` so phones keep two columns).
+- The visible label format includes a trailing colon, for example `Artist:` and `Label:`.
+- Streaming links are `.hero-link hero-link--spotify` / `.hero-link--audio-stream` / `.hero-link--youtube`, styled as DaisyUI buttons.
 - **Both `.hero-link--spotify` and `.hero-link--audio-stream` require the
   explicit `color: var(--color-primary-content)` rule in
   [src/album-analysis.css](../src/album-analysis.css).** DaisyUI's
@@ -191,24 +187,24 @@ Hero rules:
 
 Track rules:
 
-- Each track is still `.track`, now styled as a DaisyUI card, and carries `id="track-<num>"` so the segment chart can deep-link to it.
-- The header still exposes `.track-num`, `.track-title` (an `h2` heading), and `.track-duration`.
-- Tags still live in `.track-tags` and remain `.tag` elements. The first tag is still the energy tag.
-- Timeline entries still use `.timeline`, `.event`, `.event-time`, `.event-desc`, and `.detail`.
-- The event rail and dots are still custom CSS, not DaisyUI components.
+- Each track is a `.track` card (DaisyUI `card`) and carries `id="track-<num>"` so the segment chart can deep-link to it.
+- The header exposes `.track-num`, `.track-title` (an `h2` heading), and `.track-duration`.
+- Tags live in `.track-tags` as `.tag` elements. The first tag is the energy tag.
+- Timeline entries use `.timeline`, `.event`, `.event-time`, `.event-desc`, and `.detail`.
+- The event rail and dots are custom CSS, not DaisyUI components.
 
 ## Segment Chart
 
-The track timeline chart remains a bespoke component rendered by [src/segment.ts](../src/segment.ts).
+The track timeline chart is a bespoke component rendered by [src/segment.ts](../src/segment.ts).
 
 Rules:
 
 - Keep `buildSegmentChart()` zero-dependency and DOM-safe.
-- Continue building the chart with `createElement()` and `textContent` only.
-- The chart root remains `.segment-chart`, now with `role="list"` and a descriptive `aria-label`; each `.segment-row` is a `listitem`.
+- Build the chart with `createElement()` and `textContent` only.
+- The chart root is `.segment-chart` with `role="list"` and a descriptive `aria-label`; each `.segment-row` is a `listitem`.
 - Bars are proportional: each `.segment-bar` gets a width of
   `duration / maxDuration`, so the chart is a true structural map across
-  tracks. Segments inside a bar remain proportional to their section
+  tracks. Segments inside a bar are proportional to their section
   span.
 - Section colors are stable per section name (hashed into the palette by
   `sectionColorIndex()`), so "Peak" is the same color in every row;

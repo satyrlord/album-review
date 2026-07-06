@@ -49,15 +49,14 @@ test-results/              ← generated Playwright artifacts
 tmp/                       ← temporary/generated workspace files
 ```
 
-The current root is intentionally narrower than before: browser runtime
-code now lives in `src/`, album tooling lives in `scripts/albums/`, and
-the remaining root-level source files are either public HTML entry points
-or toolchain config.
+The root is intentionally narrow: browser runtime code lives in `src/`,
+album tooling lives in `scripts/albums/`, and the remaining root-level
+source files are either public HTML entry points or toolchain config.
 
 Vite serves each HTML file as an application entry point and bundles the
 browser code into `dist/assets/` for production. The frontend styling
-pipeline now runs through the Vite Tailwind plugin plus DaisyUI, while
-build metadata is still injected at bundle time via `vite.config.ts`.
+pipeline runs through the Vite Tailwind plugin plus DaisyUI, and build
+metadata is injected at bundle time via `vite.config.ts`.
 The `data/` directory is copied into `dist/data/` during the build.
 
 ## Root-Level Contract
@@ -94,7 +93,7 @@ The `data/` directory is copied into `dist/data/` during the build.
 
 `npm run serve` and the Playwright web server both use Vite directly rather than a custom local server script.
 
-## Architecture Decisions (2026-07-06 review — implemented)
+## Architecture Decisions
 
 - **Shared core module at `src/shared/`**: one home for code needed by
   both the browser runtime and `scripts/` tooling. Dependency direction
@@ -102,10 +101,9 @@ The `data/` directory is copied into `dist/data/` during the build.
   Layout is themed files: `schema.ts` (AlbumData, AlbumIndexEntry,
   EnergyLevel, SiteBuildMeta), `text.ts` (escapeHtml, normaliseText,
   foldKey), `tags.ts` (genre-tag helpers), `format.ts` (duration
-  formatting). The duplicated copies that used to live in
-  `src/album.ts`, `src/index.ts`, and `scripts/albums/` were deleted,
-  not deprecated. The surviving `escapeHtml` is the old `src/site.ts`
-  dialect (escapes `"`).
+  formatting). Each transform has exactly one dialect; page modules and
+  scaffolding must not re-implement them. `escapeHtml` escapes `&`,
+  `<`, `>`, and `"`.
 - **Shared files satisfy both module-resolution modes**:
   `tsconfig.json` uses NodeNext, `tsconfig.browser.json` uses Bundler —
   relative imports across `src/` use explicit `.js` extensions, which
@@ -125,7 +123,7 @@ The `data/` directory is copied into `dist/data/` during the build.
   (`tests/*.spec.ts`) keeps real page flows, plus a small number of
   dynamic-import tests that exercise DOM-coupled `src/site.ts` branches
   the real flows cannot reach — those keep the browser per-file gate
-  honest. The `window.AlbumReviewSite` global was deleted.
+  honest.
 - **Two separate coverage gates**: the browser-only nyc gate (80% per
   file) covers the page modules; Vitest enforces its own independent
   80% threshold scoped to `src/shared/**` (report in `coverage-unit/`).
@@ -143,9 +141,7 @@ The `data/` directory is copied into `dist/data/` during the build.
   `src/site.ts` replaces the placeholder root and binds the shared
   chrome (footer controls, cover fallbacks, random-backdrop link) in
   one place. Album and credits pages use it for both success and error
-  states. Dead chrome was deleted with it: `renderNav`/`mountNav` had
-  no page callers, and the hero subtitle options had no callers outside
-  tests.
+  states.
 
 ## Language Constraints
 

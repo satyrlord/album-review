@@ -1,4 +1,7 @@
-import type { AlbumData, AlbumTrack } from './album-schema.js';
+import { msToMmss } from '../../src/shared/format.js';
+import type { AlbumData, AlbumTrack } from '../../src/shared/schema.js';
+import { getDisplayGenre, getGenreTags } from '../../src/shared/tags.js';
+import { normaliseText } from '../../src/shared/text.js';
 
 export interface Track {
   num: number;
@@ -6,51 +9,20 @@ export interface Track {
   lengthMs: number;
 }
 
-const COMMENT_ONLY = /^\s*<!--[\s\S]*?-->\s*$/;
-
-function stripCombiningMarks(text: string): string {
-  return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-}
-
 export function slugify(text: string): string {
   let value = text.toLowerCase();
 
   value = value
-    .replace(/[\u2019\u2018']/g, "")
-    .replace(/[\u2013\u2014]/g, "-")
-    .replace(/\u00df/g, "ss")
-    .replace(/\u2026/g, "");
+    .replace(/[’‘']/g, "")
+    .replace(/[–—]/g, "-")
+    .replace(/ß/g, "ss")
+    .replace(/…/g, "");
 
-  value = stripCombiningMarks(value);
+  value = normaliseText(value);
   value = value.replace(/[^a-z0-9\s-]/g, "");
   value = value.replace(/[\s_]+/g, "-").trim();
   value = value.replace(/-{2,}/g, "-");
   return value.replace(/^-|-$/g, "");
-}
-
-export function msToMmss(ms: number): string {
-  const total = Math.floor(ms / 1000);
-  const secs  = total % 60;
-  return `${Math.floor(total / 60)}:${String(secs).padStart(2, "0")}`;
-}
-
-export function htmlEscape(text: string): string {
-  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-export function getDisplayGenre(genre: string): string {
-  const value = genre.trim();
-  return value && !COMMENT_ONLY.test(value) ? value : "";
-}
-
-export function getGenreTags(genre: string): string[] {
-  const value = getDisplayGenre(genre);
-  if (!value) return [];
-
-  return value
-    .split("/")
-    .map(tag => tag.trim())
-    .filter(Boolean);
 }
 
 /**

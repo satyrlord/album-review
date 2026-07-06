@@ -6,13 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, type Plugin, type ResolvedConfig } from "vite";
 import vitePluginIstanbul from "vite-plugin-istanbul";
 
-interface SiteBuildMeta {
-  pushedCommitCount: number;
-  sourceRef: string;
-  generatedAt: string;
-}
-
-const COVERAGE_SOURCE_FILES = ["src/site.ts", "src/index.ts", "src/album.ts", "src/segment.ts", "src/credits.ts"] as const;
+import type { SiteBuildMeta } from "./src/shared/schema.js";
 
 interface RunGitOptions {
   logFailure?: boolean;
@@ -111,7 +105,10 @@ export default defineConfig({
     copyDataDirectory(),
     ...(process.env.VITE_COVERAGE === "true"
       ? [vitePluginIstanbul({
-          include: [...COVERAGE_SOURCE_FILES],
+          // Browser page modules only — src/shared/** has its own
+          // independent Vitest coverage gate (no merged streams).
+          include: ["src/**/*.ts"],
+          exclude: ["node_modules", "src/shared/**"],
           extension: [".ts", ".js"],
           requireEnv: true,
         })]

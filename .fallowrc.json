@@ -14,6 +14,7 @@
     "test-results/**",
     ".nyc_output/**",
     "coverage/**",
+    "coverage-unit/**",
     ".github/skills/**",
     ".claude/skills/**"
   ],

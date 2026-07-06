@@ -1,8 +1,9 @@
 /**
- * album-schema.ts — shared TypeScript types for album analysis JSON data.
+ * schema.ts — shared TypeScript types for album analysis JSON data.
  *
  * AlbumData is the canonical shape stored in data/<id>.json.
- * All other tooling (renderer, scaffold, build checker) imports from here.
+ * Both the browser runtime (src/) and the tooling (scripts/) import from
+ * here; scripts/ may depend on src/shared/, never the reverse.
  */
 
 /** Energy level for a track — maps to CSS class `energy-<level>` */
@@ -84,4 +85,11 @@ export interface AlbumIndexEntry {
   coverUrl?: string;
   /** Presence-only flag copied into the index only when the source album sets true */
   isSoundtrack?: boolean;
+}
+
+/** Build metadata injected by vite.config.ts as `__ALBUM_REVIEW_BUILD__`. */
+export interface SiteBuildMeta {
+  pushedCommitCount: number;
+  sourceRef: string;
+  generatedAt: string;
 }

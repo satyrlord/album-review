@@ -21,9 +21,12 @@
 import { writeFileSync, existsSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { msToMmss } from "../src/shared/format.js";
+import { getGenreTags } from "../src/shared/tags.js";
+import { normaliseText } from "../src/shared/text.js";
 import { toAlbumIndexEntry, writeAlbumIndexFile } from "./albums/album-index.js";
 import { cacheCover, getCoverCachePath } from "./albums/cover-cache.js";
-import { Track, slugify, msToMmss, buildJson, getGenreTags } from "./albums/album-scaffold.js";
+import { Track, slugify, buildJson } from "./albums/album-scaffold.js";
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 
@@ -57,13 +60,6 @@ interface WikiSummaryResponse {
 
 function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-function normaliseLoose(text: string): string {
-  return text
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
 }
 
 // ── MusicBrainz API ────────────────────────────────────────────────────────────
@@ -135,9 +131,9 @@ async function wikiSummary(pageTitle: string): Promise<WikiSummaryResponse | nul
 }
 
 function scoreWikiPageTitle(pageTitle: string, albumTitle: string, artist: string): number {
-  const page   = normaliseLoose(pageTitle);
-  const album  = normaliseLoose(albumTitle);
-  const artistName = normaliseLoose(artist);
+  const page   = normaliseText(pageTitle);
+  const album  = normaliseText(albumTitle);
+  const artistName = normaliseText(artist);
 
   let score = 0;
 

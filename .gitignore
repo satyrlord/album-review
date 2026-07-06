@@ -5,6 +5,7 @@ node_modules/
 dist/
 build/
 coverage/
+coverage-unit/
 .nyc_output/
 tmp/
 playwright-report/

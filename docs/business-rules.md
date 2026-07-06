@@ -1,9 +1,5 @@
 # Business Rules
 
-This document defines non-technical product requirements for ALBANA.
-
-It consolidates current expectations from existing project documentation and live product behavior.
-
 ## Brand Identity
 
 - The official brand name of this application shall be "ALBANA".
@@ -81,7 +77,7 @@ It consolidates current expectations from existing project documentation and liv
 
 ## Visual and Accessibility Expectations
 
-- The product remains dark-theme presentation across all pages.
+- The product uses dark-theme presentation across all pages.
 - Responsive behavior is required for mobile and desktop reading.
 - Key interactive controls (search, tags, navigation links) must remain visible and understandable across breakpoints.
 - Timeline visualizations must preserve readable labels and meaningful textual context.

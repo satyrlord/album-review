@@ -86,8 +86,8 @@ timestamps are exact.
 One to three sentences identifying the track's function within the album arc. Lead with the structural function; add historical or musical context only when the track carries enough weight to earn it.
 
 - Prefix convention: `Album role: …` — required for new entries. A few
-  legacy entries (e.g. `vangelis-cosmos`, `gustav-holst-the-planets`)
-  predate the prefix; do not copy that.
+  entries (e.g. `vangelis-cosmos`, `gustav-holst-the-planets`) lack the
+  prefix; do not copy that.
 - State *what the track does structurally*, not how it sounds.
 - Noun-phrase or subordinate-clause constructions preferred over full predicate sentences.
 - Mention chart position, single release, or guest vocalist only when directly relevant to the track's structural role on the album.

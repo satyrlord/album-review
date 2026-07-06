@@ -47,24 +47,10 @@ async function gotoIndex(page: Page): Promise<void> {
   await expect(page.getByRole("heading", { name: "ALBANA" })).toBeVisible();
 }
 
-async function readBuildMeta(page: Page): Promise<{ pushedCommitCount: number; version: string }> {
-  const meta = await page.evaluate(() => {
-    const siteWindow = window as Window & {
-      AlbumReviewSite?: {
-        getBuildMeta(): { pushedCommitCount: number; version: string };
-      };
-    };
-
-    return siteWindow.AlbumReviewSite ? siteWindow.AlbumReviewSite.getBuildMeta() : null;
-  });
-
-  expect(meta).not.toBeNull();
-
-  if (!meta) {
-    throw new Error("Build metadata was not available in the page context.");
-  }
-
-  return meta;
+async function readFooterVersion(page: Page): Promise<string> {
+  const versionText = (await page.locator(".site-footer-version").textContent()) ?? "";
+  expect(versionText).toMatch(/^Version 0\.\d{3}$/);
+  return versionText;
 }
 
 test.describe("album index regressions", () => {
@@ -81,9 +67,9 @@ test.describe("album index regressions", () => {
   test("renders a shared footer with a clickable version badge", async ({ page }) => {
     await gotoIndex(page);
 
-    const meta = await readBuildMeta(page);
+    const version = await readFooterVersion(page);
 
-    await expect(page.locator(".site-footer")).toContainText(`Version ${meta.version}`);
+    await expect(page.locator(".site-footer")).toContainText(version);
     await expect(page.locator('.site-footer-version')).toHaveAttribute("href", "https://github.com/satyrlord/album-review");
     await expect(page.locator('.site-footer-version')).toHaveAttribute("target", "_blank");
     await expect(page.locator('.site-footer-version')).toHaveAttribute("rel", "noopener noreferrer");
@@ -92,7 +78,7 @@ test.describe("album index regressions", () => {
 
     await page.locator('.ix-card[href="album.html?id=jean-michel-jarre-oxygene"]').click();
 
-    await expect(page.locator(".site-footer")).toContainText(`Version ${meta.version}`);
+    await expect(page.locator(".site-footer")).toContainText(version);
     await expect(page.locator('.site-footer-version')).toHaveAttribute("href", "https://github.com/satyrlord/album-review");
     await expect(page.locator('.site-footer-version')).toHaveAttribute("target", "_blank");
     await expect(page.locator('.site-footer-version')).toHaveAttribute("rel", "noopener noreferrer");
@@ -100,68 +86,48 @@ test.describe("album index regressions", () => {
     await expect(page.locator(".site-footer")).not.toContainText("github.com/satyrlord/album-review");
   });
 
-  test("site helpers render optional nav and footer states safely", async ({ page }) => {
+  test("site helpers render optional footer and hero states safely", async ({ page }) => {
     await gotoIndex(page);
 
-    const rendered = await page.evaluate(() => {
-      const siteWindow = window as Window & {
-        AlbumReviewSite?: {
-          renderNav(options?: { activePage?: "home" | null }): string;
-          renderFooter(options?: { context?: string; actionHref?: string; actionLabel?: string }): string;
-          renderCollectionHero(options: {
-            title: string;
-            subtitle?: string;
-            subtitleVariant?: string;
-            tagline?: string;
-            searchPlaceholder?: string;
-            searchAriaLabel?: string;
-          }): string;
-          mountNav(elementId: string, options?: { activePage?: "home" | null }): void;
-          mountFooter(elementId: string, options?: { context?: string; actionHref?: string; actionLabel?: string }): void;
-        };
-      };
+    const rendered = await page.evaluate(async () => {
+      const sitePath = "/src/site.ts";
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const site: any = await import(sitePath);
 
-      const site = siteWindow.AlbumReviewSite;
-      if (!site) {
-        throw new Error("AlbumReviewSite helpers were not available.");
-      }
-
-      site.mountNav("missing-nav");
       site.mountFooter("missing-footer");
+      site.mountCollectionHero("missing-hero", { title: "Nowhere" });
 
       return {
-        navHtml: site.renderNav(),
-        navActiveHtml: site.renderNav({ activePage: "home" }),
-        footerHtml: site.renderFooter(),
+        footerHtml: site.renderFooter() as string,
         footerWithActionHtml: site.renderFooter({
           context: "Coverage Pass",
           actionHref: "credits.html",
           actionLabel: "Jump",
-        }),
-        heroMinimal: site.renderCollectionHero({ title: "Test" }),
+        }) as string,
+        heroMinimal: site.renderCollectionHero({ title: "Test" }) as string,
         heroFull: site.renderCollectionHero({
           title: "Test Full",
-          subtitle: "Sub Label",
-          subtitleVariant: "badge-accent",
+          titleClassName: "ix-brand-title",
           tagline: "A tagline for coverage",
           searchPlaceholder: "Search here…",
           searchAriaLabel: "Filter test",
-        }),
+        }) as string,
+        mountedMissing: site.mountPage("missing-root", "<div></div>") as boolean,
       };
     });
 
-    expect(rendered.navHtml).not.toContain('aria-current="page"');
-    expect(rendered.navActiveHtml).toContain('aria-current="page"');
     expect(rendered.footerHtml).not.toContain("site-footer-context");
     expect(rendered.footerHtml).toContain("site-footer-credits");
     expect(rendered.footerHtml).toContain('href="credits.html"');
     expect(rendered.footerWithActionHtml).toContain("site-footer-context");
     expect(rendered.footerWithActionHtml).toContain('href="credits.html"');
     expect(rendered.footerWithActionHtml).toContain("Jump");
-    expect(rendered.heroMinimal).not.toContain("subtitle");
-    expect(rendered.heroFull).toContain("Sub Label");
+    expect(rendered.heroMinimal).not.toContain("ix-brand-title");
+    expect(rendered.heroMinimal).toContain("Search…");
+    expect(rendered.heroFull).toContain("ix-brand-title");
     expect(rendered.heroFull).toContain("A tagline for coverage");
-    expect(rendered.heroFull).toContain("badge-accent");
+    expect(rendered.heroFull).toContain("Search here…");
+    expect(rendered.mountedMissing).toBe(false);
   });
 
   test("renders album cover thumbnails when cover URLs are present", async ({ page }) => {
@@ -270,7 +236,7 @@ test.describe("album index regressions", () => {
     await navTags.filter({ hasText: "Electronic" }).click();
     await expect(page.locator(".ix-card")).toHaveCount(3);
 
-    // Card genre tags are decorative labels now — no interactive elements
+    // Card genre tags are decorative labels — no interactive elements
     // may be nested inside the card anchor.
     await expect(page.locator(".ix-card button")).toHaveCount(0);
     await expect(page.locator(".ix-card-genre-tag").first()).toBeVisible();
@@ -914,7 +880,7 @@ test.describe("album index regressions", () => {
     expect(result.zeroBarWidth).toBe("");
   });
 
-  test("does not render the removed initial analysis controls", async ({ page }) => {
+  test("does not render initial analysis controls", async ({ page }) => {
     await gotoIndex(page);
 
     await expect(page.getByText("Initial Analysis", { exact: true })).toHaveCount(0);
@@ -922,7 +888,7 @@ test.describe("album index regressions", () => {
     await expect(page.getByRole("button", { name: "Analyse" })).toHaveCount(0);
   });
 
-  test("does not expose the removed add-album endpoint", async ({ page }) => {
+  test("does not expose an add-album endpoint", async ({ page }) => {
     const response = await page.request.post("/api/add-album", {
       data: { input: "Vangelis - Voices" },
       failOnStatusCode: false,
@@ -979,34 +945,6 @@ test.describe("album index regressions", () => {
       "Initial scaffold only. Narrative role pending detailed listen.",
     );
     await expect(page.locator(".event-desc")).toContainText("Detailed timestamp notes pending.");
-  });
-
-  test("generated scaffold JSON trims slash-delimited genre tags", () => {
-    const scaffoldJson = buildJson(
-      "genre-tag-fixture",
-      "Test Artist",
-      "Tagged Album",
-      2024,
-      " Electronic / Ambient / Berlin School ",
-      [{ num: 1, title: "Signal", lengthMs: 61000 }],
-    );
-
-    expect(scaffoldJson.genre).toBe("Electronic / Ambient / Berlin School");
-    expect(scaffoldJson.genreTags).toEqual(["Electronic", "Ambient", "Berlin School"]);
-  });
-
-  test("generated scaffold JSON keeps a single trimmed genre as one tag", () => {
-    const scaffoldJson = buildJson(
-      "single-genre-fixture",
-      "Test Artist",
-      "Single Genre Album",
-      2024,
-      " Ambient ",
-      [{ num: 1, title: "Pulse", lengthMs: 61000 }],
-    );
-
-    expect(scaffoldJson.genre).toBe("Ambient");
-    expect(scaffoldJson.genreTags).toEqual(["Ambient"]);
   });
 
   test("site cover helpers resolve blank sources and bind fallbacks safely", async ({ page }) => {

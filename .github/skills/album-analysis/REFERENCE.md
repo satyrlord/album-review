@@ -13,7 +13,7 @@ This workspace is app-driven.
 - The album JSON can include an optional `coverUrl` field for the thumbnail and hero image
 - The album detail page is rendered dynamically by `album.html` / `album.ts`
 
-Do not generate a per-album standalone HTML page unless the user explicitly asks for that old format.
+Do not generate a per-album standalone HTML page unless the user explicitly asks for one.
 
 ## Schema Fields
 
@@ -90,7 +90,7 @@ Then enrich the generated JSON with full structural analysis if the scaffold is 
 
 Before declaring the entry done, verify:
 
-- [ ] `data/<id>.json` matches `album-schema.ts`
+- [ ] `data/<id>.json` matches `src/shared/schema.ts`
 - [ ] Every track has exactly one energy level
 - [ ] All timestamps use `M:SS` or `MM:SS`
 - [ ] `data/index.json` was regenerated from the album JSON files

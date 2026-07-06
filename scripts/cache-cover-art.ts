@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 
 import { readAlbumDataDir, writeAlbumIndexFile } from "./albums/album-index.js";
 import { cacheCover, getCoverCachePath, isRemoteCoverUrl, resolveCoverCacheFile } from "./albums/cover-cache.js";
-import type { AlbumData } from "./albums/album-schema.js";
+import type { AlbumData } from "../src/shared/schema.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA_DIR = join(ROOT, "data");

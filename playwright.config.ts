@@ -1,4 +1,3 @@
-
 import { defineConfig } from "@playwright/test";
 
 const PORT = 3100;
@@ -10,6 +9,8 @@ const workers = 10;
 
 export default defineConfig({
   testDir: "./tests",
+  // Vitest owns tests/unit/**/*.test.ts; Playwright owns *.spec.ts.
+  testMatch: "**/*.spec.ts",
   fullyParallel: false,
   retries,
   reporter: [["list"], ["html", { open: "never" }]],
