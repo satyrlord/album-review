@@ -63,6 +63,15 @@ Vite serves each HTML file as an application entry point and bundles the browser
 
 `npm run serve` and the Playwright web server both use Vite directly rather than a custom local server script.
 
+## Agreed Architecture Decisions (2026-07-06 review — not yet implemented)
+
+- **Shared core module at `src/shared/`**: one home for code needed by both the browser runtime and `scripts/` tooling. Dependency direction is one-way: `scripts/` may import from `src/shared/`, never the reverse. Layout is themed files: `schema.ts` (AlbumData, AlbumIndexEntry, EnergyLevel), `text.ts` (escapeHtml, normaliseText, fold-key), `tags.ts` (genre-tag helpers), `format.ts` (duration and version formatting). The duplicated copies in `src/album.ts`, `src/index.ts`, and `scripts/albums/` are deleted, not deprecated. The `escapeHtml` that survives is the `src/site.ts` dialect (escapes `"`).
+- **Shared files must satisfy both module-resolution modes**: `tsconfig.json` uses NodeNext, `tsconfig.browser.json` uses Bundler — relative imports in `src/shared/` use explicit `.js` extensions, which both accept.
+- **Browser file lists become globs**: `vite.config.ts` (istanbul include), `tsconfig.browser.json`, and `.nycrc.json` all switch from the hand-synced five-file list to `src/**/*.ts`. New browser modules are picked up with zero config edits; stray files become visible in typecheck and coverage rather than silently excluded.
+- **Page-specific pure functions stay in their page modules**: helpers with a single caller (e.g. `matchesFilters`, `resolveStreamName`) are exported for direct testing but not moved to `src/shared/` — shared is only for code both sides of the seam need.
+- **Unit tests run on Vitest**: pure-logic tests migrate from Playwright round-trips to a Vitest suite with direct imports. Playwright keeps only real page flows. The `window.AlbumReviewSite` global in `src/site.ts` is deleted once no test consumes it.
+- **Two separate coverage gates**: the existing browser-only nyc gate (80% per file) stays unchanged; Vitest gets its own independent 80% coverage threshold scoped to `src/shared/**`. No merging of coverage streams.
+
 ## Language Constraints
 
 - **Only TypeScript and JavaScript** — all scripting, tooling, and browser runtime code must be written in `.ts` or `.js`/`.mjs`.

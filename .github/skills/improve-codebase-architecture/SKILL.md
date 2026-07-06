@@ -1,6 +1,6 @@
 ---
 name: improve-codebase-architecture
-description: Surface architectural friction in a codebase, package it as a visual HTML report, and grill through the strongest deepening opportunity.
+description: Surface architectural friction in a codebase and apply deepening improvements.
 disable-model-invocation: true
 ---
 
@@ -52,27 +52,17 @@ Then use the Agent tool with `subagent_type=Explore` to walk the codebase. Don't
 
 Apply the **deletion test** to anything you suspect is shallow: would deleting it concentrate complexity, or just move it? A "yes, concentrates" is the signal you want.
 
-### 2. Present candidates as an HTML report
+### 2. Present candidates
 
-Write a self-contained HTML file to the OS temp directory so nothing lands in the repo. Resolve the temp dir from `$TMPDIR`,
-falling back to `/tmp` (or `%TEMP%` on Windows), and write to `<tmpdir>/architecture-review-<timestamp>.html` so each run gets a fresh file.
-Open it for the user — `xdg-open <path>` on Linux, `open <path>` on macOS, `start <path>` on Windows — and tell them the absolute path.
-
-The report uses **Tailwind via CDN** for layout and styling, and **Mermaid via CDN** for diagrams where a graph/flow/sequence reliably
-communicates the structure. Mix Mermaid with hand-crafted CSS/SVG visuals — use Mermaid when relationships are graph-shaped
-(call graphs, dependencies, sequences), and hand-built divs/SVG when you want something more editorial (mass diagrams, cross-sections,
-collapse animations). Each candidate gets a **before/after visualisation**. Be visual.
-
-For each candidate, render a card with:
+Summarize the candidates directly in conversation. For each candidate, describe:
 
 - **Files** — which files/modules are involved
 - **Problem** — why the current architecture is causing friction
 - **Solution** — plain English description of what would change
 - **Benefits** — explained in terms of locality and leverage, and how tests would improve
-- **Before / After diagram** — side-by-side, custom-drawn, illustrating the shallowness and the deepening
-- **Recommendation strength** — one of `Strong`, `Worth exploring`, `Speculative`, rendered as a badge
+- **Recommendation strength** — one of `Strong`, `Worth exploring`, `Speculative`
 
-End the report with a **Top recommendation** section: which candidate you'd tackle first and why.
+End the summary with a **Top recommendation**: which candidate you'd tackle first and why.
 
 **Use the domain vocabulary from `docs/architecture-notes.md`,
 `docs/business-rules.md`, and the terms defined above.** If
@@ -80,40 +70,31 @@ End the report with a **Top recommendation** section: which candidate you'd tack
 "service," "API," or "boundary."
 
 **Existing decision conflicts**: if a candidate contradicts a decision recorded in an existing doc, only surface it when the friction is
-real enough to warrant revisiting that decision. Mark it clearly in the card. Don't list every theoretical refactor a past decision forbids.
+real enough to warrant revisiting that decision. Mark it clearly. Don't list every theoretical refactor a past decision forbids.
 
-See [HTML-REPORT.md](HTML-REPORT.md) for the full HTML scaffold, diagram patterns, and styling guidance.
+Ask the user: "Which of these would you like me to implement?"
 
-Do NOT propose interfaces yet. After the file is written, ask the user: "Which of these would you like to explore?"
+### 3. Apply improvements
 
-### 3. Grilling loop
+Once the user picks a candidate, apply the deepening improvement to the best of your ability. This means:
 
-Once the user picks a candidate, run the `grill-me` skill to walk the design tree with them — constraints, dependencies, the shape of the deepened module, what sits behind the seam, what tests survive.
+- **Read the relevant code thoroughly** before making changes. Understand the current interface, implementation, and callers.
+- **Design the deepened module**: shrink the interface, expand the implementation behind it. Apply the deletion test — after the refactor, would deleting this module concentrate complexity or just move it?
+- **Implement the change**: restructure files, extract and consolidate logic, tighten seams. Prefer locality — code that changes together should live together.
+- **Preserve existing tests** and add new ones for the deepened interface. If a test was hard to write before and easy now, that's the signal you got it right.
+- **Run the full build and test suite** (`npm run build`, `npm run test:coverage`). Fix any regressions. Maintain the minimum 80% coverage threshold in every reported Istanbul cell.
+- **Update relevant docs** under `docs/` when the change introduces a new concept, sharpens a fuzzy term, or alters a documented decision.
 
-Side effects happen inline as decisions crystallize — record durable
-decisions as you go:
+Record durable decisions as you go:
 
-- **Naming a deepened module after a concept not yet documented?** Add the
-  term to the relevant doc under `docs/`. Create `docs/glossary.md` lazily
-  if a cross-cutting glossary is needed.
-- **Sharpening a fuzzy term during the conversation?** Update the relevant
-  doc right there.
-- **User rejects the candidate with a load-bearing reason?** Offer to record
-  it as a durable decision in the relevant doc, framed as: _"Want me to
-  record this so future architecture reviews don't re-suggest it?"_ Only
-  offer when the reason would actually be needed by a future explorer to
-  avoid re-suggesting the same thing — skip ephemeral reasons ("not worth it
-  right now") and self-evident ones.
-- **Want to explore alternative interfaces for the deepened module?** Design
-  two competing interfaces in parallel, compare them against the deletion
-  test and leverage, and record the winner.
+- **Naming a deepened module after a concept not yet documented?** Add the term to the relevant doc under `docs/`. Create `docs/glossary.md` lazily if a cross-cutting glossary is needed.
+- **Sharpening a fuzzy term during the conversation?** Update the relevant doc right there.
+- **Want to explore alternative interfaces for the deepened module?** Design two competing interfaces in parallel, compare them against the deletion test and leverage, and record the winner.
 
 ## Completion Criterion
 
 The architecture review is complete when:
 
-- the HTML report is written to the temp directory, opened for the user, and
-  clearly communicates the candidate trade-offs,
-- the top recommendation is explicit,
-- and any durable architecture decisions that emerge are recorded in the
-  relevant docs.
+- the candidates and trade-offs are clearly communicated and the top recommendation is explicit,
+- the chosen deepening improvement is implemented, the build passes, and the test suite meets the 80% coverage threshold,
+- and any durable architecture decisions that emerge are recorded in the relevant docs.
