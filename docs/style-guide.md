@@ -55,8 +55,11 @@ Typography is configured through Tailwind theme variables in [src/album-analysis
 | `font-mono` | `JetBrains Mono` |
 | `font-display` | `Space Grotesk` |
 
+In addition, `Orbitron` is imported and applied directly (not through a Tailwind utility) to `.ix-brand-title` as the brand wordmark face, falling back to `--font-display`.
+
 Current usage:
 
+- `Orbitron` is the brand wordmark face for the ALBANA title.
 - `Space Grotesk` is the display face for collection titles.
 - `JetBrains Mono` is used for navigation, labels, metadata, timestamps, pills, badges, and footer chrome.
 - `DM Sans` remains the default body copy face for long-form overview and note text.

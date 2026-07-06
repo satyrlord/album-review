@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json",
+  "entry": [
+    "src/*.ts",
+    "scripts/*.ts",
+    "*.html",
+    "vite.config.ts",
+    "playwright.config.ts"
+  ],
+  "ignorePatterns": [
+    "dist/**",
+    "tmp/**",
+    "playwright-report/**",
+    "test-results/**",
+    ".nyc_output/**",
+    "coverage/**",
+    ".github/skills/**",
+    ".claude/skills/**"
+  ],
+  "ignoreDependencies": [
+    "@babel/generator",
+    "daisyui",
+    "tailwindcss"
+  ],
+  "ignoreExportsUsedInFile": true,
+  "rules": {
+    "unused-files": "error",
+    "unused-exports": "error",
+    "unused-dependencies": "error",
+    "circular-dependencies": "error"
+  },
+  "health": {
+    "maxCyclomatic": 20,
+    "maxCognitive": 15,
+    "maxCrap": 30
+  }
+}

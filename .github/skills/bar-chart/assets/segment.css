@@ -1,0 +1,107 @@
+/* ──────────────────────────────────────────────────────────────
+   Segment — Segmented Horizontal Bar Chart Styles
+   All tokens use --segment-* custom properties for easy theming.
+   ────────────────────────────────────────────────────────────── */
+
+/* ── Reset & container ────────────────────────────────────── */
+
+.segment-bar *,
+.segment-bar *::before,
+.segment-bar *::after {
+  box-sizing: border-box;
+}
+
+.segment-bar {
+  --segment-gap: 2px;
+  --segment-radius: 3px;
+  --segment-font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --segment-font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --segment-label-size: 12px;
+  --segment-title-bg: rgba(0, 0, 0, 0.35);
+  --segment-hover-overlay: rgba(0, 0, 0, 0.25);
+  --segment-hover-expand: 128px;
+  --segment-transition: 0.4s cubic-bezier(0.83, 0, 0.17, 1);
+
+  font-family: var(--segment-font-family);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--segment-gap);
+}
+
+/* ── Segment wrapper ──────────────────────────────────────── */
+
+.segment-item-wrapper {
+  display: inline-flex;
+  height: 100%;
+  padding: 0 4px;
+  position: relative;
+  overflow: hidden;
+  transition: padding var(--segment-transition);
+  min-width: 0;
+}
+
+.segment-item-wrapper:first-child {
+  border-radius: var(--segment-radius) 0 0 var(--segment-radius);
+}
+
+.segment-item-wrapper:last-child {
+  border-radius: 0 var(--segment-radius) var(--segment-radius) 0;
+}
+
+.segment-item-wrapper:only-child {
+  border-radius: var(--segment-radius);
+}
+
+/* ── Hover effect ─────────────────────────────────────────── */
+
+.segment-item-wrapper:hover {
+  z-index: 1;
+  box-shadow: inset 0 0 0 60px var(--segment-hover-overlay);
+  padding: 0 var(--segment-hover-expand);
+}
+
+.segment-item-wrapper:hover .segment-item-percentage {
+  opacity: 1;
+}
+
+/* ── Title label (top-left) ───────────────────────────────── */
+
+.segment-item-title {
+  position: absolute;
+  inset-block-start: 8px;
+  inset-inline-start: 8px;
+  display: inline-block;
+  background-color: var(--segment-title-bg);
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: var(--segment-radius);
+  white-space: nowrap;
+  color: white;
+  font-size: var(--segment-label-size);
+  font-weight: 500;
+}
+
+/* ── Value label (bottom-left) ────────────────────────────── */
+
+.segment-item-value {
+  color: white;
+  position: absolute;
+  inset-block-end: 8px;
+  inset-inline-start: 8px;
+  font-size: var(--segment-label-size);
+  white-space: nowrap;
+}
+
+/* ── Percentage label (bottom-right, shown on hover) ─────── */
+
+.segment-item-percentage {
+  opacity: 0;
+  color: white;
+  position: absolute;
+  inset-block-end: 8px;
+  inset-inline-end: 8px;
+  font-size: var(--segment-label-size);
+  font-family: var(--segment-font-mono);
+  transition: opacity var(--segment-transition);
+  white-space: nowrap;
+}
