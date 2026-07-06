@@ -164,9 +164,16 @@ interface AlbumData {
   }
 
   function resolveStreamName(url: string): string {
-    if (url.includes('music.apple.com')) return 'Apple Music';
-    if (url.includes('deezer.com')) return 'Deezer';
-    if (url.includes('tidal.com')) return 'Tidal';
+    try {
+      const host = new URL(url).hostname.toLowerCase();
+
+      if (host === 'music.apple.com' || host.endsWith('.music.apple.com')) return 'Apple Music';
+      if (host === 'deezer.com' || host.endsWith('.deezer.com')) return 'Deezer';
+      if (host === 'tidal.com' || host.endsWith('.tidal.com')) return 'Tidal';
+    } catch {
+      return 'Stream';
+    }
+
     return 'Stream';
   }
 
