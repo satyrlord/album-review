@@ -47,8 +47,12 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 
 4. Verify locally with `npm run serve`.
 
-- `http://127.0.0.1:3000/index.html`
-- `http://127.0.0.1:3000/album.html?id=<id>`
+   - `http://127.0.0.1:3000/index.html`
+   - `http://127.0.0.1:3000/album.html?id=<id>`
+
+5. After the album JSON is committed, remove the corresponding entry from
+   `docs/future-research.md` if it is still listed there. Check by matching
+   the artist and album title against the table rows.
 
 ---
 

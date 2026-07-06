@@ -1,0 +1,398 @@
+{
+  "id": "harold-budd-brian-eno-the-pearl",
+  "artist": "Harold Budd / Brian Eno",
+  "title": "The Pearl",
+  "year": 1984,
+  "label": "Editions EG",
+  "producer": "Brian Eno · Daniel Lanois",
+  "genre": "Ambient / Piano",
+  "genreTags": [
+    "Ambient",
+    "Piano",
+    "Electronic",
+    "Neo-Classical"
+  ],
+  "runtime": "42:51",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/65/Budd_%26_Eno%27s_The_Pearl.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/5SSf6lNbSoaAUx6PxQVjlP",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=PLfimnwaZdumgM7qHD0Xtk1QzVZv1JSql5",
+  "overview": "The Pearl (1984) is the second collaborative studio album by Harold Budd and Brian Eno, recorded at Daniel Lanois's Grant Avenue Studio in Hamilton, Ontario, and issued by Editions EG. The method centres on Budd's soft-pedal piano — spare, slow-decaying figures played with the sustain pedal held down — routed through Eno's tape processing and Lanois's studio treatments, so that each note is reverb-drenched and its harmonic suspension extended far beyond the acoustic instrument's natural decay. Lanois served as co-producer and engineer, shaping the spatial character of the recordings and layering discreet electronic textures and nature sounds beneath the keyboard.\n\nThe record is the companion piece to their 1980 collaboration Ambient 2: The Plateaux of Mirror, extending that album's treated-piano language with darker, more pronounced electronic processing and a more focused sequence. Critics have received it as a landmark of ambient music, and its structure is best understood not as songs but as a sequence of related miniatures — eleven short, tonally linked meditations that share a single reverberant world. Timestamps are proportionally estimated to ±8 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Late October",
+      "duration": "4:43",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Reverb-drenched",
+        "Harmonic suspension",
+        "Opening statement"
+      ],
+      "role": "Album role: Opening miniature that establishes the album's core language — Budd's sustained piano figures suspended in Eno and Lanois's reverberant treatment.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Soft-pedal piano enters from silence with widely spaced notes, each sustained and blurred by a long reverb tail.",
+          "detail": "The sustain pedal is held throughout, allowing successive notes to overlap into a continuous harmonic wash rather than discrete attacks."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Development",
+          "description": "A slow melodic contour emerges over the sustained bed as reverb decay lengthens, deepening the sense of harmonic suspension."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Sustain",
+          "description": "Piano phrases thin to isolated notes held against the treated space, temporal motion nearly halting."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Outro",
+          "description": "Final figures dissolve into reverb tail, closing the piece in near-silence and setting the album's contemplative baseline."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "A Stream with Bright Fish",
+      "duration": "3:56",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Tape processing",
+        "Flowing figures",
+        "Nature imagery"
+      ],
+      "role": "Album role: A gently mobile piece whose rippling piano figures animate the reverberant space established by the opener.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Cascading piano notes enter over a treated ambient bed, their overlapping decays suggesting flowing water."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Development",
+          "description": "The figures gain a loose melodic direction as Eno's tape processing widens the stereo image around them."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Plateau",
+          "description": "Piano and reverberant bed reach a sustained equilibrium, motion reduced to shimmering harmonic detail."
+        },
+        {
+          "timestamp": "3:35",
+          "section": "Outro",
+          "description": "Notes recede one by one into the reverb tail, the stream imagery dissolving into stillness."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "The Silver Ball",
+      "duration": "3:30",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Bell-like tone",
+        "Sparse phrasing",
+        "Harmonic suspension"
+      ],
+      "role": "Album role: A sparse, bell-toned miniature whose isolated notes sit at the album's most delicate dynamic level.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Isolated piano notes with a bell-like clarity enter over minimal ambient support, each ringing into extended decay."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Development",
+          "description": "Sparse phrases accumulate into a loose harmonic field as sustained tones overlap through reverb."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Suspension",
+          "description": "The texture holds on a single suspended harmony, treated decay merging the notes into one sustained colour."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Outro",
+          "description": "Final tones fade into silence, preserving the piece's fragile stillness to the end."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Against the Sky",
+      "duration": "4:53",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Deep reverb",
+        "Expansive texture",
+        "Slow arc"
+      ],
+      "role": "Album role: The most expansive piece of the first half — a slow, wide arc whose deep reverb opens the album's sonic horizon.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Piano figures enter into an unusually deep reverb space, their long decays implying a vast, open horizon."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Development",
+          "description": "A slow ascending melodic line emerges as Lanois's spatial treatment stretches the decay across the stereo field."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Plateau",
+          "description": "The piece settles onto sustained harmony, all elements held in an expansive, weightless suspension."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Outro",
+          "description": "Piano thins to isolated notes that trail off into the reverberant space, closing the album's widest passage."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Lost in the Humming Air",
+      "duration": "4:23",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Drifting motif",
+        "Reverb wash",
+        "Harmonic suspension"
+      ],
+      "role": "Album role: Closes the first half with a drifting, weightless motif that dissolves the piano into the surrounding treated air.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A soft, repeated piano motif drifts in over a humming ambient bed, its edges softened by heavy reverb."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Development",
+          "description": "The motif circles gently as treated harmonics thicken beneath it, blurring the line between piano and ambient wash."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Suspension",
+          "description": "Piano and bed merge into a single sustained field, the motif barely distinguishable from its own reverb."
+        },
+        {
+          "timestamp": "4:05",
+          "section": "Outro",
+          "description": "The humming air recedes and the piano dissolves fully, closing Side One in suspended stillness."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Dark-Eyed Sister",
+      "duration": "4:40",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Minor tonality",
+        "Somber mood",
+        "Deep reverb"
+      ],
+      "role": "Album role: Opens the second half with a darker, minor-tinged tonality that deepens the album's emotional register.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Low piano figures enter in a minor-tinged tonality, treated reverb lending a somber, enclosed atmosphere."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Development",
+          "description": "A slow melodic line unfolds over the darker bed as sustained decays accumulate into brooding harmony."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Plateau",
+          "description": "The texture holds at its most shadowed density, all elements sustained in a single suspended chord."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Outro",
+          "description": "Piano recedes into the reverberant dark, dissolving the piece into silence."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Their Memories",
+      "duration": "2:57",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Brief miniature",
+        "Wistful tone",
+        "Reverb tail"
+      ],
+      "role": "Album role: A brief, wistful interlude whose short span provides a moment of intimate pause between the longer pieces.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A small, tender piano phrase enters over minimal treated backing, its wistful character set immediately."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Development",
+          "description": "The phrase repeats with slight variation, sustained decay lending the brief figure an air of recollection."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Outro",
+          "description": "The piano settles onto a final sustained note that fades into the reverb tail, ending the miniature."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "The Pearl",
+      "duration": "3:13",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Title piece",
+        "Luminous tone",
+        "Harmonic suspension"
+      ],
+      "role": "Album role: The title piece — a luminous, centred miniature that distills the album's method into its clearest statement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Clear, luminous piano notes enter over a subtle treated bed, each ringing with an unusually pure reverb decay."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Development",
+          "description": "A gentle melodic centre forms as sustained tones overlap, the treatment lending the piano a glassy sheen."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Suspension",
+          "description": "The piece holds on a suspended harmony, notes merging into a single sustained resonance."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Outro",
+          "description": "Final notes fade into reverb, closing the title track in serene stillness."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Foreshadowed",
+      "duration": "3:55",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Tape processing",
+        "Uneasy tone",
+        "Electronic bed"
+      ],
+      "role": "Album role: A subtly uneasy piece whose more pronounced electronic treatment darkens the texture beneath the piano.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Piano figures enter over a more pronounced electronic bed, treated processing lending an uneasy undertone."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Development",
+          "description": "The bed shifts subtly beneath the piano as Eno's tape processing introduces slow harmonic movement."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Plateau",
+          "description": "Piano and electronics sustain together at their densest, the uneasy tone held in suspension."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Outro",
+          "description": "Elements recede into the reverberant bed, the shadowed mood dissolving into quiet."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "An Echo of Night",
+      "duration": "2:27",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Brief miniature",
+        "Nocturnal mood",
+        "Reverb wash"
+      ],
+      "role": "Album role: The album's shortest piece — a nocturnal fragment that functions as a brief transition toward the closing track.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Faint piano notes enter over a dark treated wash, their sparse spacing evoking a nocturnal stillness."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Development",
+          "description": "A short melodic gesture surfaces and fades, sustained decay stretching the fragment across the reverberant space."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Outro",
+          "description": "The last note dissolves into the dark wash, ending the brief nocturne."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Still Return",
+      "duration": "4:14",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Closing meditation",
+        "Deep reverb",
+        "Harmonic suspension"
+      ],
+      "role": "Album role: The closing meditation — a slow, resolving piece whose sustained piano returns the album to the stillness of its opening.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Slow piano figures enter into deep reverb, their spacing and tone recalling the album's opening statement."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Development",
+          "description": "A resolving melodic line unfolds over the treated bed, sustained decays drawing the piece toward closure."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Suspension",
+          "description": "The texture holds on a final suspended harmony, all motion reduced to sustained resonance."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Outro",
+          "description": "Piano and reverb fade together into silence, returning the album to the stillness from which it began."
+        }
+      ]
+    }
+  ]
+}

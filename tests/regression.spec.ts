@@ -1085,7 +1085,7 @@ test.describe("album index regressions", () => {
       const album = await readAlbumData(page, entry.id);
       expect(album.youtubeUrl, `${entry.id} is missing youtubeUrl`).toBeTruthy();
       expect(album.youtubeUrl, `${entry.id} youtubeUrl is not a valid URL`).toMatch(
-        /^https:\/\/(www\.youtube\.com|youtu\.be)\//,
+        /^https:\/\/(www\.youtube\.com|music\.youtube\.com|youtu\.be)\//,
       );
     }
   });

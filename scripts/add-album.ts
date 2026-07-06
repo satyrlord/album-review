@@ -26,6 +26,7 @@ import { getGenreTags } from "../src/shared/tags.js";
 import { normaliseText } from "../src/shared/text.js";
 import { toAlbumIndexEntry, writeAlbumIndexFile } from "./albums/album-index.js";
 import { cacheCover, getCoverCachePath } from "./albums/cover-cache.js";
+import type { AlbumData } from "../src/shared/schema.js";
 import { Track, slugify, buildJson } from "./albums/album-scaffold.js";
 
 // ── Constants ──────────────────────────────────────────────────────────────────
@@ -215,25 +216,16 @@ function parseArgs(): {
   return { artist, title, year, genre, mbid, dryRun };
 }
 
-async function main(): Promise<void> {
-  const { artist, title, year, genre, mbid: mbidArg, dryRun } = parseArgs();
+interface ResolvedRelease {
+  mbid: string;
+  releaseDate: string;
+  resolvedYear: number;
+}
 
-  if (getGenreTags(genre).length === 0) {
-    console.error('ERROR: --genre must include at least one non-empty genre tag, e.g. "Electronic / Ambient".');
-    process.exit(1);
-  }
-
-  const id      = `${slugify(artist)}-${slugify(title)}`;
-  const dataDir = join(ROOT, "data");
-  const outPath = join(dataDir, `${id}.json`);
-
-  if (!dryRun && existsSync(outPath)) {
-    console.error(`ERROR: data/${id}.json already exists. Remove it first or use --dry-run.`);
-    process.exit(1);
-  }
-
-  // 1. Resolve MBID
-  let mbid = mbidArg;
+async function resolveRelease(
+  artist: string, title: string, year: number, providedMbid: string,
+): Promise<ResolvedRelease> {
+  let mbid = providedMbid;
   let resolvedYear = year;
   let releaseDate = year ? String(year) : "";
 
@@ -258,42 +250,50 @@ async function main(): Promise<void> {
     if (!resolvedYear) resolvedYear = new Date().getFullYear();
   }
 
-  // 2. Fetch tracks
+  return { mbid, releaseDate, resolvedYear };
+}
+
+async function getTracks(mbid: string, mbidProvided: boolean): Promise<{ tracks: Track[]; releaseDate: string }> {
   console.log("[2/4] Fetching track listing…");
-  const { tracks, releaseDate: mbDate } = await fetchTracks(mbid);
-  if (mbDate && !mbidArg) releaseDate = mbDate;
-  if (!tracks.length) {
+  const result = await fetchTracks(mbid);
+  const releaseDate = (result.releaseDate && !mbidProvided) ? result.releaseDate : "";
+  if (!result.tracks.length) {
     console.error("      No tracks returned. Check the MBID or try a different release.");
     process.exit(1);
   }
-  const totalMs = tracks.reduce((s, t) => s + t.lengthMs, 0);
-  console.log(`      ${tracks.length} tracks — ${msToMmss(totalMs)}`);
-  for (const t of tracks) {
+  const totalMs = result.tracks.reduce((s, t) => s + t.lengthMs, 0);
+  console.log(`      ${result.tracks.length} tracks — ${msToMmss(totalMs)}`);
+  for (const t of result.tracks) {
     const dur = t.lengthMs ? msToMmss(t.lengthMs) : "?:??";
     console.log(`        ${String(t.num).padStart(2)}. ${t.title}  [${dur}]`);
   }
+  return { tracks: result.tracks, releaseDate: releaseDate || result.releaseDate };
+}
 
-  // 3. Resolve cover art
+async function resolveCover(
+  artist: string, title: string, id: string, dryRun: boolean,
+): Promise<string> {
   console.log("[3/4] Searching Wikipedia for album cover…");
   const coverSourceUrl = await findWikipediaCoverUrl(artist, title);
-  let cachedCoverUrl = "";
-  if (coverSourceUrl) {
-    console.log(`      Found cover: ${coverSourceUrl}`);
-    cachedCoverUrl = getCoverCachePath(id, coverSourceUrl);
-    if (dryRun) {
-      console.log(`      Dry run: would cache to ${cachedCoverUrl}`);
-    } else {
-      await cacheCover(ROOT, id, coverSourceUrl);
-      console.log(`      Cached to : ${cachedCoverUrl}`);
-    }
-  } else {
+  if (!coverSourceUrl) {
     console.log("      No Wikipedia thumbnail found. Continuing without coverUrl.");
+    return "";
   }
+  console.log(`      Found cover: ${coverSourceUrl}`);
+  const cachedCoverUrl = getCoverCachePath(id, coverSourceUrl);
+  if (dryRun) {
+    console.log(`      Dry run: would cache to ${cachedCoverUrl}`);
+  } else {
+    await cacheCover(ROOT, id, coverSourceUrl);
+    console.log(`      Cached to : ${cachedCoverUrl}`);
+  }
+  return cachedCoverUrl;
+}
 
-  // 4. Generate and write
+function writeOutput(
+  jsonData: AlbumData, dataDir: string, outPath: string, id: string, dryRun: boolean,
+): void {
   console.log("[4/4] Generating scaffold…");
-  const jsonData = buildJson(id, artist, title, resolvedYear, genre, tracks, cachedCoverUrl);
-
   if (dryRun) {
     console.log("\n─── JSON preview (first 2 000 chars) ──────────────────────────────");
     console.log(JSON.stringify(jsonData, null, 2).slice(0, 2000), "\n…");
@@ -302,15 +302,37 @@ async function main(): Promise<void> {
     console.log("\n(dry-run: no files written)");
     return;
   }
-
   mkdirSync(dataDir, { recursive: true });
   writeFileSync(outPath, `${JSON.stringify(jsonData, null, 2)}\n`, "utf-8");
   console.log(`      Created : data/${id}.json`);
-
   writeAlbumIndexFile(dataDir);
   console.log("      Updated : data/index.json");
-
   console.log(`\nDone.\n  File  → ${outPath}\n  Open  → http://127.0.0.1:3000/album.html?id=${id}`);
+}
+
+async function main(): Promise<void> {
+  const { artist, title, year, genre, mbid: mbidArg, dryRun } = parseArgs();
+
+  if (getGenreTags(genre).length === 0) {
+    console.error('ERROR: --genre must include at least one non-empty genre tag, e.g. "Electronic / Ambient".');
+    process.exit(1);
+  }
+
+  const id      = `${slugify(artist)}-${slugify(title)}`;
+  const dataDir = join(ROOT, "data");
+  const outPath = join(dataDir, `${id}.json`);
+
+  if (!dryRun && existsSync(outPath)) {
+    console.error(`ERROR: data/${id}.json already exists. Remove it first or use --dry-run.`);
+    process.exit(1);
+  }
+
+  const release = await resolveRelease(artist, title, year, mbidArg);
+  const { tracks } = await getTracks(release.mbid, !!mbidArg);
+  const cachedCoverUrl = await resolveCover(artist, title, id, dryRun);
+
+  const jsonData = buildJson(id, artist, title, release.resolvedYear, genre, tracks, cachedCoverUrl);
+  writeOutput(jsonData, dataDir, outPath, id, dryRun);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

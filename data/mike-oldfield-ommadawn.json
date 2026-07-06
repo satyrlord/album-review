@@ -1,0 +1,178 @@
+{
+  "id": "mike-oldfield-ommadawn",
+  "artist": "Mike Oldfield",
+  "title": "Ommadawn",
+  "year": 1975,
+  "label": "Virgin Records",
+  "producer": "Mike Oldfield · David Bedford",
+  "genre": "Progressive / Ambient",
+  "genreTags": [
+    "Progressive",
+    "Ambient",
+    "Folk"
+  ],
+  "runtime": "36:31",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/16/Mike_oldfield_ommadawn_album_cover.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/5ZLSCZha9fXVby8V4HKx31",
+  "youtubeUrl": "https://music.youtube.com/playlist?list=OLAK5uy_mn46rYchfVibdOzCxpYO1bCDB0XCVHnbA",
+  "overview": "Ommadawn is Mike Oldfield's third studio album, recorded between January and September 1975 at The Beacon, his own home studio in Kington, Herefordshire, and released on Virgin Records on 7 November 1975. As on Tubular Bells (1973) and Hergest Ridge (1974), Oldfield built the record largely alone through dense multitracked overdubbing of acoustic and electric guitars, bass, keyboards, recorders and percussion, but here he opened the arrangement to guests — Paddy Moloney of The Chieftains on uilleann pipes, the South African drummers Jabula (Julian Bahula, Ernest Mothle, Lucky Ranku and Eddie Tatane) recorded at The Manor, and vocalists Clodagh Simonds, Bridget St John and Sally Oldfield. The title derives from the Irish Gaelic amadán, meaning \"fool\" or \"idiot,\" drawn from a Gaelic phrase Simonds supplied for the choral refrain.\n\nThe work is a single continuous composition presented as two side-long movements — Part One a slow harmonic accumulation rising to a massed choral-percussive climax, Part Two a folk-inflected second arc that resolves into the pastoral coda \"On Horseback,\" banded separately on the vinyl but treated here as the closing section of Part Two. Ommadawn reached No. 4 on the UK Albums Chart and is widely regarded as the strongest of Oldfield's early long-form trilogy. Timestamps are proportionally estimated to ±15 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Ommadawn (Part One)",
+      "duration": "19:14",
+      "energy": "peak",
+      "tags": [
+        "Progressive",
+        "Overdubbed Guitars",
+        "Uilleann Pipes",
+        "Multitracked Choir",
+        "African Percussion"
+      ],
+      "role": "Album role: The album's principal statement — a nineteen-minute cumulative arc that grows from a single acoustic guitar figure to a massed choral and percussive climax before receding, establishing the harmonic material the whole record develops.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Opening guitar figure",
+          "description": "an overdubbed acoustic guitar ostinato states the primary theme over a sustained drone, minimal and modal.",
+          "detail": "The figure is layered against a low pedal tone that anchors the tonic for the movement's long harmonic climb."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Harmonic layering",
+          "description": "additional guitar and keyboard voices stack over the ostinato, widening the harmonic field without changing tempo.",
+          "detail": "Oldfield builds density by overdubbing rather than modulating, a technique carried forward from Hergest Ridge (1974)."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Recorders and glockenspiel",
+          "description": "recorder and tuned-percussion lines add a bright upper register above the accumulating strings.",
+          "detail": "The pastoral timbres foreshadow the folk character that dominates Part Two."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "First thematic shift",
+          "description": "a harmonic modulation lifts the piece into a new tonal area, and electric guitar enters for the first time.",
+          "detail": "The electric line is played legato, doubling the melodic contour rather than soloing against it."
+        },
+        {
+          "timestamp": "7:40",
+          "section": "Uilleann pipes enter",
+          "description": "Paddy Moloney's uilleann pipes carry a sustained melodic line over the layered ensemble.",
+          "detail": "The Chieftains piper's tone introduces an overt Irish-folk register into the arrangement's core."
+        },
+        {
+          "timestamp": "9:45",
+          "section": "Rhythmic consolidation",
+          "description": "bass and a steady drum pulse solidify beneath the melody, converting drift into forward motion.",
+          "detail": "The measured groove sets up the accelerating drive toward the movement's climax."
+        },
+        {
+          "timestamp": "12:00",
+          "section": "African drumming enters",
+          "description": "the Jabula drummers add polyrhythmic hand-percussion, raising the energy and rhythmic complexity sharply.",
+          "detail": "Recorded separately at The Manor in Shipton-on-Cherwell, the drums were overdubbed into the Herefordshire mix."
+        },
+        {
+          "timestamp": "14:00",
+          "section": "Choir enters",
+          "description": "a multitracked choir sings the wordless \"ommadawn\" refrain over the full ensemble.",
+          "detail": "Vocalists Clodagh Simonds, Bridget St John and Sally Oldfield are multitracked into a massed choral texture."
+        },
+        {
+          "timestamp": "15:40",
+          "section": "Climactic peak",
+          "description": "choir, drums, pipes and stacked guitars converge at the movement's fullest and loudest configuration.",
+          "detail": "The peak resolves nearly sixteen minutes of cumulative harmonic and rhythmic tension in a single sustained plateau."
+        },
+        {
+          "timestamp": "17:30",
+          "section": "Descent",
+          "description": "layers withdraw in sequence and the dynamic level falls back toward the opening drone.",
+          "detail": "The disassembly mirrors the accumulation, restoring the modal calm of the introduction."
+        },
+        {
+          "timestamp": "18:40",
+          "section": "Close",
+          "description": "the texture thins to a residual sustained tone that carries the movement to its final cadence.",
+          "detail": "The unresolved calm sets up the continuous transition into Part Two."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Ommadawn (Part Two)",
+      "duration": "17:17",
+      "energy": "mid",
+      "tags": [
+        "Folk",
+        "Overdubbed Guitars",
+        "Bagpipes",
+        "Pastoral Coda"
+      ],
+      "role": "Album role: The resolving second half — a folk-driven arc that answers Part One's climb, moving through a bagpipe-led section and settling into the pastoral song \"On Horseback,\" banded separately on the vinyl and closing the album.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "New guitar theme",
+          "description": "an overdubbed acoustic guitar states a fresh melodic figure, brighter and more song-like than Part One.",
+          "detail": "The material is related to the first movement's mode but set in a warmer, more consonant register."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Ensemble builds",
+          "description": "bass, keyboards and additional guitars layer in beneath the melody, thickening the arrangement.",
+          "detail": "The buildup is quicker and more directly rhythmic than the slow accumulation of Part One."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Percussion drive",
+          "description": "a steady drum groove pushes the section into its most propulsive passage.",
+          "detail": "The rhythmic momentum carries a mid-tempo folk-rock feel rather than the drone-based drift of the opening movement."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Harmonic modulation",
+          "description": "the piece shifts key and thins slightly, opening space for a solo melodic voice.",
+          "detail": "The modulation resets the harmonic energy before the bagpipe entry."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Bagpipe section",
+          "description": "a band of Northumbrian-style pipes carries a martial, drone-backed melody over the ensemble.",
+          "detail": "The pipe passage is the loudest and most emphatic moment of the second movement."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Wind-down",
+          "description": "the pipes and drums recede and the arrangement strips back toward solo acoustic guitar.",
+          "detail": "The reduction clears the texture for the pastoral coda that closes the album."
+        },
+        {
+          "timestamp": "13:20",
+          "section": "\"On Horseback\" begins",
+          "description": "a gentle acoustic guitar accompanies Oldfield's sung verse, banded separately on the original vinyl.",
+          "detail": "Lyrics by Oldfield and William Murray; the song was also issued as a single in November 1975."
+        },
+        {
+          "timestamp": "14:40",
+          "section": "Children's chorus",
+          "description": "a young chorus joins the refrain, adding a warm communal vocal layer to the coda.",
+          "detail": "The Hereford Cathedral choristers were added to give the closing song its choral warmth."
+        },
+        {
+          "timestamp": "16:10",
+          "section": "Final verse",
+          "description": "the song settles into its last verse with light guitar and voice, easing toward the ending.",
+          "detail": "The dynamic stays low and unhurried, a deliberate contrast to Part One's climactic scale."
+        },
+        {
+          "timestamp": "17:00",
+          "section": "Close",
+          "description": "the guitar and voices fade to silence, ending the continuous two-part work.",
+          "detail": "The quiet resolution closes the album on its most intimate texture."
+        }
+      ]
+    }
+  ]
+}

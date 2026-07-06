@@ -108,3 +108,13 @@ Then verify locally:
 **Completion criterion:** `npm run build` and `npm test` both pass, and the
 entry renders correctly on both pages. Every item on the quality checklist in
 [REFERENCE.md](REFERENCE.md) is satisfied.
+
+### Step 7 — Remove from Future Research
+
+After the new album entry is committed, check `docs/future-research.md` and
+remove the matching row if it is still listed. Match by artist and album title
+against the table rows — do not rely on the row number. If the entry is not
+found in the file, skip this step.
+
+**Completion criterion:** the album no longer appears in
+`docs/future-research.md`.

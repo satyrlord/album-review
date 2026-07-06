@@ -1,0 +1,233 @@
+{
+  "id": "fripp-eno-evening-star",
+  "artist": "Fripp & Eno",
+  "title": "Evening Star",
+  "year": 1975,
+  "label": "Island Records",
+  "producer": "Robert Fripp · Brian Eno",
+  "genre": "Ambient / Art Rock",
+  "genreTags": [
+    "Ambient",
+    "Art Rock",
+    "Electronic"
+  ],
+  "runtime": "47:52",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Fripp_%26_Eno%27s_Evening_Star.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/1nVnbkq96iZzBMp57Xzx1V",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=OLAK5uy_lb6Gs8YDHfc_diePa5pXWBq1pYQuwHK4E",
+  "overview": "Evening Star (1975, Island Records) is the second collaboration between Robert Fripp and Brian Eno, following (No Pussyfooting) (1973). It was recorded from 1974 to 1975 using Frippertronics — Fripp's sustained guitar fed into Eno's tape-delay system, in which two Revox reel-to-reel machines are linked so that the take-up reel of the first supplies the second, looping the signal on a delay of several seconds and layering each phrase over its own decaying repetitions. Eno enhanced the guitar loops with synthesizer, piano, and further tape treatments. Critics received it as a warmer, more melodic and varied record than its abrasive predecessor, and it later entered the ambient canon, placing in Pitchfork's ranking of the genre's landmark albums.\n\nThe album is structured as two contrasting halves: the four shorter pieces of side one — including the title track's lyrical Fripp solo and \"Wind on Wind,\" a remix of an excerpt from Eno's Discreet Music — sustain a bright, resonant tone, while side two is given over to \"An Index of Metals,\" a twenty-eight-minute Frippertronics drone whose distortion and density steadily increase toward an abrasive climax. Timestamps are proportionally estimated to ±10 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Wind on Water",
+      "duration": "5:30",
+      "energy": "low",
+      "tags": [
+        "Frippertronics",
+        "Tape-delay loop",
+        "Sustained guitar",
+        "Synthesizer treatment"
+      ],
+      "role": "Album role: Opening statement — establishes the melodic-side language of resonant guitar loops treated with Eno's synthesizer and piano.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained guitar tones fade in through the tape-delay loop, each phrase overlapping its own decaying repetitions.",
+          "detail": "The signal circulates between two Revox reel-to-reel machines set several seconds apart, building a self-accompanying harmonic bed."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Theme",
+          "description": "A principal guitar melody emerges above the looped bed, its long sustain blurring successive notes into a continuous line."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Treatment",
+          "description": "Eno's synthesizer and piano treatments thicken the harmonic field, widening the stereo image without adding rhythmic pulse."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Plateau",
+          "description": "Layered loops sustain at full density, the guitar and treated pads settling into a bright, resonant equilibrium."
+        },
+        {
+          "timestamp": "4:50",
+          "section": "Outro",
+          "description": "Loop feedback is allowed to decay; the accumulated layers thin toward silence as new input ceases."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Evening Star",
+      "duration": "7:48",
+      "energy": "mid",
+      "tags": [
+        "Lyrical guitar solo",
+        "Tape-delay loop",
+        "Melodic ambient",
+        "Keyboard treatment"
+      ],
+      "role": "Album role: Melodic centrepiece of side one — an extended, lyrical Fripp solo carried over a sustained loop bed.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A slow-moving harmonic bed of looped guitar establishes the tonal centre before the lead voice enters."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Solo entry",
+          "description": "Fripp's sustained lead guitar enters with a singing, vocal-like tone over the tape-delay accompaniment."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Development",
+          "description": "The melodic line ascends and elaborates as keyboard treatments deepen the harmonic support beneath it."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Peak",
+          "description": "Lead guitar reaches its most expressive register, the loop bed at fullest resonance beneath the sustained phrasing."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Resolution",
+          "description": "The solo relaxes back toward the tonal centre, phrases lengthening as intensity recedes."
+        },
+        {
+          "timestamp": "7:10",
+          "section": "Outro",
+          "description": "The lead voice withdraws and the looped bed decays into a soft harmonic haze."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Evensong",
+      "duration": "2:53",
+      "energy": "low",
+      "tags": [
+        "Interlocking loops",
+        "Frippertronics",
+        "Miniature",
+        "Resonant texture"
+      ],
+      "role": "Album role: Brief interlude — a compact study of interlocking tape loops that sustains the side's gentle, resonant character.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Short guitar figures enter the delay system and begin overlapping into an interlocking loop pattern."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Interlock",
+          "description": "Successive repetitions phase against one another, generating a shifting harmonic weave from a small set of notes."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Fullness",
+          "description": "The loops reach their densest overlap, the resonant texture holding steady without melodic development."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Outro",
+          "description": "Fresh input stops and the interlocking figures decay in sequence into silence."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Wind on Wind",
+      "duration": "2:56",
+      "energy": "low",
+      "tags": [
+        "Discreet Music excerpt",
+        "Synthesizer loop",
+        "Drone",
+        "Ambient bed"
+      ],
+      "role": "Album role: Closing piece of side one — a remix of an excerpt from Eno's Discreet Music, its pure synthesizer loops previewing the drone method of side two.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A soft synthesizer loop fades in, its slowly recirculating tones drawn from the source material of Eno's Discreet Music."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Layering",
+          "description": "Overlapping loop cycles accumulate into a warm, gently shifting harmonic drone with no rhythmic content."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Sustain",
+          "description": "The layered synthesizer bed holds at a stable resonance, motion reduced to slow timbral drift."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Outro",
+          "description": "The loops fade evenly, closing the melodic half and clearing space for the long drone that follows."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "An Index of Metals",
+      "duration": "28:45",
+      "energy": "high",
+      "tags": [
+        "Extended drone",
+        "Frippertronics",
+        "Feedback",
+        "Distortion build",
+        "Side-long piece"
+      ],
+      "role": "Album role: Side-long finale — a twenty-eight-minute Frippertronics drone whose distortion and density escalate from resonant calm to abrasive climax, inverting the album's sunnier first half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Opening drone",
+          "description": "Sustained guitar tones enter the tape-delay system and settle into a slow, resonant drone with minimal harmonic movement."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Accretion",
+          "description": "Successive loop layers accumulate, each new phrase overlaid on the decaying repetitions of the last to thicken the texture."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Harmonic shift",
+          "description": "The tonal centre darkens as lower-register loops enter, introducing dissonant overtones against the sustained bed."
+        },
+        {
+          "timestamp": "10:30",
+          "section": "Density build",
+          "description": "Feedback within the delay loop begins to reinforce the layered tones, gradually raising the overall intensity."
+        },
+        {
+          "timestamp": "14:00",
+          "section": "Distortion onset",
+          "description": "Edges of the sustained loops begin to distort as accumulated feedback pushes the recirculating signal harder."
+        },
+        {
+          "timestamp": "18:00",
+          "section": "Escalation",
+          "description": "Distortion and density increase steadily, the once-calm drone growing more abrasive and harmonically saturated."
+        },
+        {
+          "timestamp": "22:00",
+          "section": "Climax",
+          "description": "The layered feedback reaches maximum intensity, a dense wall of distorted sustain at the piece's most shocking point."
+        },
+        {
+          "timestamp": "25:30",
+          "section": "Decay",
+          "description": "Input ceases and the saturated loops are left to feed back and decay, the distortion slowly dissolving into silence."
+        }
+      ]
+    }
+  ]
+}

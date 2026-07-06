@@ -1,0 +1,145 @@
+{
+  "id": "robert-fripp-brian-eno-no-pussyfooting",
+  "artist": "Robert Fripp & Brian Eno",
+  "title": "(No Pussyfooting)",
+  "year": 1973,
+  "label": "Island Records",
+  "producer": "Robert Fripp · Brian Eno",
+  "genre": "Ambient / Art Rock",
+  "genreTags": [
+    "Ambient",
+    "Art Rock",
+    "Electronic"
+  ],
+  "runtime": "39:44",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Frippenopussyfooting.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/3gHpX5wJn0kzAXJvwORG6u",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=PLbnpw-XH5DOGTS7hnEZTb4BxOje4iR4d_",
+  "overview": "(No Pussyfooting) is the debut collaboration between Robert Fripp and Brian Eno, released 9 November 1973 on Island Records. The record grew out of a session at Eno's Maida Vale home studio on 8 September 1972, with the second piece completed at Command Studios in Piccadilly on 4–5 August 1973. Its sound rests entirely on Eno's twin-Revox tape-delay system — two reel-to-reel machines placed side by side, the take-up reel of the first feeding the play head of the second so that any signal recorded on one deck returned seconds later and re-accumulated into slowly thickening loops. Over these evolving beds Fripp played sustained, feedback-rich guitar lines, a treated looping method that would later be branded \"Frippertronics.\"\n\nThe album divides into two side-long pieces and nothing else — \"The Heavenly Music Corporation\" and \"Swastika Girls\" — a structure that abandons song form for continuous layered accretion. It failed to chart in Britain or the United States and Island initially resisted its release, but later criticism reappraised it as a foundational proto-ambient statement, and the duo extended the approach two years later on Evening Star (1975). Timestamps are proportionally estimated to ±15 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "The Heavenly Music Corporation",
+      "duration": "21:00",
+      "energy": "mid",
+      "tags": [
+        "Tape-delay loop",
+        "Twin Revox",
+        "Sustained guitar",
+        "Layered accretion",
+        "Frippertronics"
+      ],
+      "role": "Album role: The full side-A statement that establishes the twin-Revox tape-loop method, moving from a bare looped bed toward densely layered guitar accretion.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Loop bed",
+          "description": "A single sustained guitar tone enters the twin-Revox tape-delay system and begins recirculating, seeding the first looped drone layer.",
+          "detail": "Signal recorded on the first Revox A77 plays back through the second deck seconds later and feeds again into the first, so each phrase re-accumulates rather than decaying."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Accretion",
+          "description": "Successive sustained notes overlap within the delay window, thickening the drone into a shifting chordal bed."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Guitar entry",
+          "description": "Fripp begins soloing above the looped bed, his live lines answering the delayed echoes of earlier phrases."
+        },
+        {
+          "timestamp": "7:45",
+          "section": "Layering",
+          "description": "Fresh melodic figures are committed to the loop while the sustained bed continues, deepening the harmonic stack."
+        },
+        {
+          "timestamp": "10:30",
+          "section": "Dense passage",
+          "description": "The accumulated layers reach their thickest point, feedback-rich guitar tones piling into a shimmering wall of treated sound."
+        },
+        {
+          "timestamp": "13:00",
+          "section": "Sustained plateau",
+          "description": "Density holds at a plateau as new phrases replace decaying ones, keeping the layered texture in slow motion."
+        },
+        {
+          "timestamp": "15:45",
+          "section": "Thinning",
+          "description": "Fripp withdraws active soloing and the loop bed gradually sheds upper layers, exposing the underlying drone."
+        },
+        {
+          "timestamp": "18:15",
+          "section": "Recession",
+          "description": "The remaining loops recirculate without renewal, each pass quieter than the last as the system is left to decay."
+        },
+        {
+          "timestamp": "20:10",
+          "section": "Outro",
+          "description": "The final delayed tones fade below audibility, closing side A in near-silence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Swastika Girls",
+      "duration": "18:44",
+      "energy": "mid",
+      "tags": [
+        "Tape-delay loop",
+        "Treated guitar",
+        "Rhythmic pulse",
+        "Layered accretion",
+        "Feedback"
+      ],
+      "role": "Album role: The side-B companion piece, built on a more agitated pulsing loop bed over which Fripp layers sharper, more insistent guitar lines.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Pulse bed",
+          "description": "A treated, faintly pulsing figure enters the tape-delay system, establishing a more rhythmic loop foundation than side A.",
+          "detail": "Recorded at Command Studios in August 1973, the piece opens on a keyboard-like treated texture fed into the same twin-Revox delay chain."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Accretion",
+          "description": "Overlapping repetitions thicken the pulse into a churning bed of recirculating tone."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Guitar entry",
+          "description": "Fripp's sustained guitar enters with sharper, more cutting lines than the opener, tracking the underlying pulse."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Layering",
+          "description": "Additional guitar phrases are looped over the bed, feedback edges building the harmonic density."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Dense passage",
+          "description": "Live and delayed lines interlock at peak thickness, the treated guitar carving bright figures across the churning loop."
+        },
+        {
+          "timestamp": "12:00",
+          "section": "Sustained plateau",
+          "description": "The layered texture holds as fresh phrases continually replace decaying loops, sustaining the driving character."
+        },
+        {
+          "timestamp": "14:30",
+          "section": "Thinning",
+          "description": "Guitar activity recedes and the pulse bed begins shedding its upper layers, loosening the density."
+        },
+        {
+          "timestamp": "16:45",
+          "section": "Recession",
+          "description": "The remaining loops recirculate unfed, thinning steadily toward the close."
+        },
+        {
+          "timestamp": "18:00",
+          "section": "Outro",
+          "description": "The final delayed tones dissolve into silence, ending the album."
+        }
+      ]
+    }
+  ]
+}

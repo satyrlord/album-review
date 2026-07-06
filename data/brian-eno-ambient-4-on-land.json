@@ -1,0 +1,346 @@
+{
+  "id": "brian-eno-ambient-4-on-land",
+  "artist": "Brian Eno",
+  "title": "Ambient 4: On Land",
+  "year": 1982,
+  "label": "Editions EG",
+  "producer": "Brian Eno",
+  "genre": "Ambient / Experimental",
+  "genreTags": [
+    "Ambient",
+    "Experimental",
+    "Drone",
+    "Electronic"
+  ],
+  "runtime": "44:33",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/93/Brian_Eno_On_Land.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/6siM9Wpdrdlt5xQYohETIh",
+  "youtubeUrl": "https://music.youtube.com/browse/MPREb_dix5oKxNqxk",
+  "overview": "Ambient 4: On Land (Editions EG, 1982) is the fourth and final instalment in Brian Eno's Ambient series — following Ambient 1: Music for Airports (Eno, 1978), Ambient 2: The Plateaux of Mirror (Harold Budd and Eno, 1980), and Ambient 3: Day of Radiance (Laraaji, 1980) — and the only entry to abandon melody and tonal centre almost entirely in favour of dark, landscape-evoking texture. Assembled over an extended span between September 1978 and January 1982 across studios in London, New York, Brooklyn, and Canada, its palette moves, in Eno's own description, from electro-mechanical and acoustic instruments toward non-instruments — pieces of chain, sticks, and stones — folded together with field recordings of frogs, rooks, and insects and with treated fragments salvaged from earlier sessions.\n\nEno printed a diagram in the sleeve recommending a custom three-speaker system — a third speaker fed from the summed left and right channels and placed to reinforce the low end, effectively a sub-bass channel beneath the mixing desk — to reproduce the record's broad, enveloping stereo image. Guest contributions are sparing and specific: Jon Hassell's processed trumpet on \"Shadow\", Michael Brook's electric guitar on \"Dunwich Beach, Autumn, 1960\", the trio of Bill Laswell (bass), Michael Beinhorn (synthesizer), and Axel Gros (guitar) on \"Lizard Point\", and Daniel Lanois's live equalisation on the closing track. The track titles map the East Anglian geography of Eno's Suffolk childhood — Lantern Marsh, Leeks Hills near Woodbridge, the eroded seaport at Dunwich — remembered as much through maps and imagination as through direct experience, and the record is widely regarded as a landmark of the ambient and dark-ambient genres. Timestamps are proportionally estimated to ±8 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Lizard Point",
+      "duration": "4:34",
+      "energy": "low",
+      "tags": [
+        "Field recording",
+        "Treated instruments",
+        "Sub-bass drone",
+        "Non-pitched percussion"
+      ],
+      "role": "Album role: Opening statement that establishes the record's method — a slowly shifting dark-ambient field in which treated bass, synthesizer, and guitar dissolve into non-instrumental texture.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low, non-tonal drone fades in from silence, occupying the sub-bass and low-mid range with no fixed pitch centre.",
+          "detail": "Bill Laswell (bass), Michael Beinhorn (synthesizer), and Axel Gros (electric guitar) contribute source material later processed beyond recognition."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Texture entry",
+          "description": "Scattered non-pitched percussive detail and treated instrumental fragments surface across a wide stereo field."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Development",
+          "description": "Layered drones thicken as filtered harmonics drift in and out of audibility without rhythmic anchoring."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Density",
+          "description": "The texture reaches its fullest weight, sub-bass and mid-range strata sustaining in a churning, unresolved mass."
+        },
+        {
+          "timestamp": "4:05",
+          "section": "Outro",
+          "description": "Layers recede from the top of the frequency range downward, leaving the low drone to fade into silence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "The Lost Day",
+      "duration": "9:12",
+      "energy": "low",
+      "tags": [
+        "Extended drone",
+        "Dark ambient",
+        "Field recording",
+        "Granular texture"
+      ],
+      "role": "Album role: The album's longest and most immersive piece — an extended, near-static drone environment that sets the record's contemplative, disoriented mood.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A deep sustained drone emerges alongside indistinct treated sounds, establishing a vast, dim sonic space."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Accretion",
+          "description": "Granular textural fragments and processed field-recording detail accumulate slowly over the fundamental drone."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Drift",
+          "description": "Tonal colours phase in and out without progression; the piece appears to suspend temporal motion."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Deepening",
+          "description": "Low-frequency weight increases as sub-bass content enlarges the sense of enclosure."
+        },
+        {
+          "timestamp": "7:10",
+          "section": "Plateau",
+          "description": "All strata sustain at equilibrium, the texture held at maximum density without new material."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Outro",
+          "description": "Upper partials fade first, darkening the timbre as the drone thins toward silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Tal Coat",
+      "duration": "5:28",
+      "energy": "low",
+      "tags": [
+        "Drone",
+        "Treated instruments",
+        "Spectral texture",
+        "Slow build"
+      ],
+      "role": "Album role: Named for the painter Pierre Tal-Coat, a gradually intensifying drone piece whose overlapping treated tones form the darkest textural centre of Side One.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low drone opens beneath faint spectral overtones, the two registers held in unresolved tension."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Layering",
+          "description": "Additional treated instrumental voices phase in, broadening the harmonic spread across the stereo image."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Development",
+          "description": "Dissonant overtones accumulate, generating an oppressive density at the midpoint of the piece."
+        },
+        {
+          "timestamp": "4:05",
+          "section": "Sustain",
+          "description": "The full texture holds at its ceiling, all layers sounding simultaneously without rhythmic pulse."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Upper harmonics dissolve, leaving the original low drone to close the piece in isolation."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Shadow",
+      "duration": "3:00",
+      "energy": "low",
+      "tags": [
+        "Processed trumpet",
+        "Jon Hassell",
+        "Dark ambient",
+        "Short-form piece"
+      ],
+      "role": "Album role: Brief interior interlude built around Jon Hassell's processed trumpet, threading a faint melodic breath through the surrounding textural darkness.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A hushed drone bed establishes a cavernous reverberant space in the low-mid range."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Trumpet entry",
+          "description": "Jon Hassell's processed trumpet surfaces as a smeared, non-Western vocal-like tone over the bed.",
+          "detail": "Hassell's characteristic harmonised, heavily treated trumpet extends the \"Fourth World\" language he developed with Eno on earlier collaborations."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Development",
+          "description": "The trumpet phrase blurs into the drone as reverb and processing dissolve its transient attack."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Outro",
+          "description": "Elements decay into residual reverb tail, transitioning toward the close of Side One."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Lantern Marsh",
+      "duration": "5:34",
+      "energy": "low",
+      "tags": [
+        "Field recording",
+        "Dark ambient",
+        "Place evocation",
+        "Sub-bass drone"
+      ],
+      "role": "Album role: Opening of Side Two and one of the record's clearest landscape evocations — a marshland Eno knew near Woodbridge chiefly through maps and imagination.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A dark drone rises beneath intermittent field-recording detail, sketching a submerged, watery expanse."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Texture entry",
+          "description": "Non-pitched environmental fragments drift across the stereo field over the sustaining low bed."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Development",
+          "description": "Treated tones swell and recede in slow waves, deepening the sense of an unbounded outdoor space."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Density",
+          "description": "Sub-bass weight and mid-range texture reach their fullest, enveloping the stereo image."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Layers thin gradually, the drone dissolving into scattered residual detail."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Unfamiliar Wind (Leeks Hills)",
+      "duration": "5:26",
+      "energy": "low",
+      "tags": [
+        "Field recording",
+        "Frog recording",
+        "Place evocation",
+        "Granular texture"
+      ],
+      "role": "Album role: A woodland evocation of Leeks Hills between Woodbridge and Melton, its texture carrying recordings of frogs captured in Choloma, Honduras by Felipe Orrego.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low drone opens beneath dispersed animal and environmental sounds suggesting a wooded nocturne.",
+          "detail": "The frog recordings on this track were made in Choloma, Honduras by Felipe Orrego."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Texture entry",
+          "description": "Granular non-instrumental detail scatters across the stereo field over the sustaining bed."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Development",
+          "description": "Treated tones drift through the mix, phasing between foreground and background without progression."
+        },
+        {
+          "timestamp": "3:55",
+          "section": "Density",
+          "description": "The environmental layers and drone reach their fullest, the wood seeming to close in around the listener."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Outro",
+          "description": "Sounds thin and recede, the drone fading last into near-silence."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "A Clearing",
+      "duration": "4:09",
+      "energy": "low",
+      "tags": [
+        "Drone",
+        "Dark ambient",
+        "Spectral texture",
+        "Sustained tone"
+      ],
+      "role": "Album role: A comparatively still, exposed piece — the album's brief moment of openness before the extended closing dissolution.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A sustained drone opens in a sparser register, admitting more space between its constituent tones."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Development",
+          "description": "Faint spectral overtones emerge above the fundamental, adding colour without harmonic direction."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Sustain",
+          "description": "The texture settles into equilibrium, holding a single unresolved harmonic point."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Outro",
+          "description": "The drone thins to its most elemental form and fades toward the album's final movement."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Dunwich Beach, Autumn, 1960",
+      "duration": "7:10",
+      "energy": "low",
+      "tags": [
+        "Extended drone",
+        "Michael Brook",
+        "Live equalisation",
+        "Closing meditation"
+      ],
+      "role": "Album role: Extended closing piece evoking the eroded Suffolk seaport of Dunwich — a slow, dissolving drone shaped by Michael Brook's guitar and Daniel Lanois's live equalisation.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A deep, resonant drone establishes a vast coastal space, the timbre suggesting mist and distance.",
+          "detail": "Michael Brook contributes electric guitar; Daniel Lanois performs live equalisation across the piece."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Accretion",
+          "description": "Treated guitar and textural layers phase in slowly, thickening the harmonic field."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Development",
+          "description": "Live equalisation reshapes the spectrum in real time, sweeping emphasis between frequency bands."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Apex",
+          "description": "The texture reaches maximum density, all layers sustaining in enveloping equilibrium."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Recession",
+          "description": "Upper partials fade first as the equalisation darkens the timbre and the mass begins to retreat."
+        },
+        {
+          "timestamp": "6:50",
+          "section": "Outro",
+          "description": "The drone thins to a single sustained tone that fades to silence, closing the Ambient series."
+        }
+      ]
+    }
+  ]
+}

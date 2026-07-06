@@ -1,0 +1,147 @@
+{
+  "id": "klaus-schulze-trancefer",
+  "artist": "Klaus Schulze",
+  "title": "Trancefer",
+  "year": 1981,
+  "label": "IC",
+  "producer": "Klaus Schulze",
+  "genre": "Berlin School / Electronic",
+  "genreTags": [
+    "Berlin School",
+    "Electronic",
+    "Ambient"
+  ],
+  "runtime": "37:17",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/Trancefer_Klaus_Schulze_Album.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/6mv7HDwzBiJfzE04teEQWF",
+  "youtubeUrl": "https://www.youtube.com/watch?v=NJENFSZC0j4",
+  "overview": "Recorded in 1981 at Schulze's Hambühren studio and released on his own Innovative Communication (IC) label on 1 October 1981, Trancefer is his second album built around digital sequencing rather than the analogue Synthanorma Sequencer of the previous decade. The computer-controlled sequencing produces tightly quantised, machine-precise patterns that Schulze layers against two live guest contributions — Michael Shrieve on percussion and Wolfgang Tiepold on cello — the same collaborators who framed the transitional Dig It (1980) and would return for Audentity (1983). The two long pieces, 'A Few Minutes After Trancefer' and 'Silent Running,' each run roughly eighteen minutes and share a method: a driving digital sequencer pulse over which cello drones, resonant filter sweeps, and Shrieve's polyrhythmic percussion accumulate toward dense climaxes. At roughly thirty-seven minutes across two tracks, it is among the most compact statements in Schulze's catalogue, and critics have read it as one of the sharpest realisations of his sequencer aesthetic.\n\nTimestamps are proportionally estimated to ±15 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "A Few Minutes After Trancefer",
+      "duration": "18:20",
+      "energy": "high",
+      "tags": [
+        "Digital Sequencing",
+        "Live Percussion",
+        "Resonant Filter",
+        "Side One"
+      ],
+      "role": "Album role: The album's opening statement and rhythmic engine — a digitally sequenced side-long piece whose quantised pattern is progressively driven by Michael Shrieve's percussion and coloured by Wolfgang Tiepold's cello into the record's densest passages.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Filtered synthesizer tones and low drones establish a harmonic ground before any rhythmic pattern enters, the texture sparse and slowly resolving.",
+          "detail": "The opening withholds the sequencer, foregrounding the timbral character of Schulze's digital instruments — the same computer-sequencing setup he first explored on Dig It (1980) — before the machine pulse arrives."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Sequencer entry",
+          "description": "The digital sequencer enters with a tightly quantised arpeggiated pattern, its machine-precise timing distinct from the looser feel of the earlier analogue Synthanorma method.",
+          "detail": "Computer-controlled sequencing produces exact, repeatable step timing, giving the pattern a mechanical rigidity that the live guest players are set against for contrast."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Cello entry",
+          "description": "Wolfgang Tiepold's cello enters as a sustained drone above the sequencer, its bowed overtones adding an acoustic layer to the electronic pulse.",
+          "detail": "The cello's continuous bowed tone counterbalances the sequencer's clicking precision — an organic sustain against a quantised grid, a textural pairing central to the piece."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Percussion entry",
+          "description": "Michael Shrieve's percussion joins the pattern, layering polyrhythmic accents across the sequencer's steady digital pulse.",
+          "detail": "Shrieve, formerly of Santana, brings a human rhythmic elasticity that plays against the sequencer's fixed timing, pushing the piece toward greater drive."
+        },
+        {
+          "timestamp": "10:00",
+          "section": "Build",
+          "description": "Additional synthesizer layers and resonant filter sweeps thicken the texture as the combined electronic and live rhythmic forces intensify.",
+          "detail": "Resonant filter modulation sweeps across the sequenced voices, animating the otherwise static pattern with continuous timbral motion."
+        },
+        {
+          "timestamp": "13:00",
+          "section": "Peak",
+          "description": "Maximum density — the digital sequencer, cello drone, and Shrieve's percussion drive together at the piece's most propulsive point.",
+          "detail": "The convergence of quantised sequencing and live percussion produces the album's densest driving passage, the sequencer aesthetic realised at full force."
+        },
+        {
+          "timestamp": "16:00",
+          "section": "Thinning",
+          "description": "Percussion and melodic voices begin to withdraw, reducing the texture toward the sequencer and cello alone.",
+          "detail": "The gradual removal of layers mirrors the accumulation of the first half, returning the piece toward its sparser opening character."
+        },
+        {
+          "timestamp": "17:45",
+          "section": "Outro",
+          "description": "The sequencer pattern recedes beneath fading drones, the piece dissolving into residual electronic tones as the side ends.",
+          "detail": "On the original vinyl the listener turns the record over here before the contrasting opening of 'Silent Running.'"
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Silent Running",
+      "duration": "18:57",
+      "energy": "high",
+      "tags": [
+        "Digital Sequencing",
+        "Cello Drone",
+        "Polyrhythmic Percussion",
+        "Side Two"
+      ],
+      "role": "Album role: The album's second long piece and driving counterpart — a digitally sequenced structure, its title drawn from the 1972 science-fiction film, that builds cello drones and Michael Shrieve's polyrhythmic percussion over a resonant sequencer pattern to a second percussive climax.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained synthesizer pads and low drones open the side, a slow harmonic field forming before any pulse enters.",
+          "detail": "The title references the 1972 Douglas Trumbull science-fiction film Silent Running, and the meditative opening evokes its spacebound, elegiac tone."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Sequencer entry",
+          "description": "A digitally sequenced arpeggiated figure enters, its resonant timbre and quantised timing establishing the piece's rhythmic ground.",
+          "detail": "As on the first side, computer sequencing supplies an exact, cycling pattern that the live players will animate and push against."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Cello layer",
+          "description": "Wolfgang Tiepold's cello drone rises over the sequencer, bowed overtones adding acoustic depth to the electronic figure.",
+          "detail": "The cello sustains long tones across the pattern's harmonic changes, threading an organic line through the machine pulse."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Percussion entry",
+          "description": "Michael Shrieve's percussion enters with polyrhythmic accents, driving the sequencer pattern forward.",
+          "detail": "Shrieve's playing introduces rhythmic tension against the sequencer's fixed grid, the same live-versus-quantised interplay that shapes the opening piece."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Build",
+          "description": "Resonant filter sweeps and additional synthesizer voices accumulate as the combined forces intensify toward the piece's core.",
+          "detail": "The filter's moving resonance animates the sequenced voices while the density of live and electronic layers steadily increases."
+        },
+        {
+          "timestamp": "14:00",
+          "section": "Peak",
+          "description": "Maximum drive — sequencer, cello, and percussion converge at the album's second and final densest climax.",
+          "detail": "The percussive climax matches the intensity of the first piece, giving the compact two-track album a symmetrical pair of high-energy peaks."
+        },
+        {
+          "timestamp": "16:30",
+          "section": "Thinning",
+          "description": "Percussion and upper voices withdraw, leaving the sequencer and cello to carry the closing minutes.",
+          "detail": "The withdrawal reverses the earlier accumulation, thinning the texture toward the album's final gestures."
+        },
+        {
+          "timestamp": "18:00",
+          "section": "Outro",
+          "description": "The sequencer decelerates beneath fading drones and cello, the album closing as the pattern dissolves into silence.",
+          "detail": "The ending returns to the sparse, drone-based character of both pieces' openings, closing the record's tightly framed arc."
+        }
+      ]
+    }
+  ]
+}

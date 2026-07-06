@@ -1,0 +1,372 @@
+{
+  "id": "cluster-eno-cluster-eno",
+  "artist": "Cluster & Eno",
+  "title": "Cluster & Eno",
+  "year": 1977,
+  "label": "Sky Records",
+  "producer": "Conny Plank · Cluster",
+  "genre": "Krautrock / Ambient",
+  "genreTags": [
+    "Krautrock",
+    "Ambient",
+    "Electronic"
+  ],
+  "runtime": "36:10",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/77/Cluster_%26_Eno.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/0VSmGsL1RtyjE7bdAaSAvy",
+  "youtubeUrl": "https://www.youtube.com/watch?v=XOCSkXzLRJs",
+  "overview": "Cluster & Eno (1977) documents the first studio meeting of the German duo Cluster — Hans-Joachim Roedelius and Dieter Moebius — with Brian Eno, recorded in June 1977 at Conny Plank's studio outside Cologne with Plank engineering and co-producing. Eno had relocated to Germany during the sessions that also fed his work with David Bowie on \"Low\" and \"Heroes,\" and the album channels that period's fascination with treated electronics and impressionistic miniatures rather than extended drones. The palette pairs Cluster's analogue synthesizers, electric piano, and processed guitar with Eno's tape treatments and EMS-style tone-shaping; Holger Czukay of Can contributes bass to \"Ho Renomo,\" while Okko Bekker and Asmus Tietchens add guitar and synthesizer to the closing side-two piece \"One.\"\n\nStructurally the record favours short, self-contained sketches over the side-long forms common to Krautrock, with only \"One\" and \"Ho Renomo\" passing the five-minute mark. Critical reappraisal has been strong — reissue-era coverage from Pitchfork and Spin placed it among the essential documents of the Cluster–Eno partnership that continued on \"After the Heat\" (1978). The collaboration bridges Cluster's avant-garde Kosmische lineage and Eno's emerging ambient method into a set of gentle, melodically legible textures.\n\nTimestamps are proportionally estimated to ±10 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Ho Renomo",
+      "duration": "5:10",
+      "energy": "low",
+      "tags": [
+        "Electric piano",
+        "Holger Czukay bass",
+        "Slow drift",
+        "Analogue synth"
+      ],
+      "role": "Album role: Opening statement — establishes the record's gentle, melody-forward register and introduces Czukay's understated bass as a rare rhythmic anchor across an otherwise ambient palette.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Soft electric piano figures enter over a sustained synthesizer pad, establishing a slow harmonic drift with no fixed pulse.",
+          "detail": "The gentle keyboard motif reflects Roedelius's melodic tendency, distinct from Moebius's more abrasive electronic textures elsewhere on the album."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Bass entry",
+          "description": "Holger Czukay's bass surfaces low in the mix, tracing a minimal figure that grounds the floating keyboard material."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Development",
+          "description": "Additional synthesizer voices phase in, widening the stereo field as the harmonic bed thickens beneath the piano."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Plateau",
+          "description": "Layers sustain at a steady equilibrium; the bass and piano interlock without introducing new material."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Outro",
+          "description": "Elements recede in sequence, the pad decaying last as the piece dissolves into near-silence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Schöne Hände",
+      "duration": "3:00",
+      "energy": "low",
+      "tags": [
+        "Treated keyboard",
+        "Miniature",
+        "Reverb wash",
+        "Impressionistic"
+      ],
+      "role": "Album role: A brief impressionistic miniature — its title translating to \"Beautiful Hands,\" it consolidates the delicate keyboard mood set by the opener in a compressed form.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A single treated keyboard line emerges from reverb, spare and unhurried against a near-silent background."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Theme",
+          "description": "A repeating melodic cell establishes itself, coloured by tape-delay reflections that blur note boundaries."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Layering",
+          "description": "A secondary voice doubles the motif at a shifted register, thickening the texture without altering the pulse."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Outro",
+          "description": "The motif thins to a single line; reverb tail carries the miniature to its close."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Steinsame",
+      "duration": "4:20",
+      "energy": "mid",
+      "tags": [
+        "Sequenced pattern",
+        "Motorik pulse",
+        "Analogue synth",
+        "Kosmische"
+      ],
+      "role": "Album role: Introduces measured forward motion — a mid-tempo sequenced pattern that lends the album its most overtly Krautrock, motorik-leaning momentum.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A repeating synthesizer sequence establishes a steady pulse, its short envelopes creating a percussive, gridded feel."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Layering",
+          "description": "A sustained pad enters above the sequence, adding harmonic context to the mechanical repetition."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Development",
+          "description": "Filter movement sweeps across the sequence, opening and closing the timbre to animate the static pattern."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Peak",
+          "description": "The full arrangement locks in, sequence and pad reaching maximum density at a sustained mid-tempo drive."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Outro",
+          "description": "The sequence is gradually stripped of layers until the bare pattern fades out."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Wehrmut",
+      "duration": "5:00",
+      "energy": "low",
+      "tags": [
+        "Dark drone",
+        "Melancholic",
+        "Sustained pad",
+        "Treated guitar"
+      ],
+      "role": "Album role: Side-one's contemplative centre — its title glossed as \"Wormwood,\" a slow, melancholic drone piece that darkens the album's otherwise gentle palette.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low sustained drone fades in, occupying the low-mid range with slow, unresolved harmonic movement."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Texture shift",
+          "description": "Treated guitar tones surface above the drone, their attack softened into a bowed, atmospheric quality."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Development",
+          "description": "Overtones accumulate as additional pad layers phase in, deepening the piece's melancholic weight."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Tension",
+          "description": "Dissonant partials sustain against the fundamental, generating the album's densest harmonic tension."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Outro",
+          "description": "Upper voices fade, leaving the original drone to close the piece in isolation."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Mit Simaen",
+      "duration": "1:30",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Spectral texture",
+        "Fragment",
+        "Tape treatment"
+      ],
+      "role": "Album role: The album's shortest track — a brief spectral interlude that resets the palette between the dark centre of side one and the lighter pieces that follow.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A fragile high-register texture materialises from tape treatment, unmoored from any pulse."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Development",
+          "description": "The texture shifts spectrally, partials rising and receding without settling into a fixed harmony."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Outro",
+          "description": "The fragment thins and dissolves, clearing space for the next piece."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Selange",
+      "duration": "3:30",
+      "energy": "mid",
+      "tags": [
+        "Rhythmic pulse",
+        "Electric piano",
+        "Groove",
+        "Analogue synth"
+      ],
+      "role": "Album role: Opens side two with renewed motion — an electric-piano-led piece over a light rhythmic pulse, one of the record's most groove-oriented moments.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A light rhythmic figure establishes a gentle pulse, quickly joined by an electric piano riff."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Theme",
+          "description": "The electric piano states a repeating melodic phrase, locking to the underlying pulse."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Development",
+          "description": "Synthesizer counter-lines weave around the piano, broadening the harmonic field."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Plateau",
+          "description": "The arrangement settles into a steady groove, all elements sustaining at consistent dynamics."
+        },
+        {
+          "timestamp": "3:05",
+          "section": "Outro",
+          "description": "The pulse and piano fade together, closing the piece cleanly."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Die Bunge",
+      "duration": "3:50",
+      "energy": "mid",
+      "tags": [
+        "Sequenced synth",
+        "Playful motif",
+        "Analogue texture",
+        "Kosmische"
+      ],
+      "role": "Album role: A playful, sequenced synthesizer sketch — its bright repeating figure balancing the darker material of side one with side two's lighter mood.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A bright sequenced synthesizer figure enters, its clipped envelopes forming a bouncing, playful pattern."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Layering",
+          "description": "A sustained pad joins beneath the sequence, grounding the animated top line."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Development",
+          "description": "Filter and modulation shift the sequence's timbre, varying the repetition over time."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Peak",
+          "description": "The full texture converges, sequence and pad at maximum density."
+        },
+        {
+          "timestamp": "3:25",
+          "section": "Outro",
+          "description": "Layers drop away until the sequence fades to silence."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "One",
+      "duration": "6:00",
+      "energy": "low",
+      "tags": [
+        "Extended texture",
+        "Okko Bekker guitar",
+        "Asmus Tietchens synth",
+        "Guest ensemble"
+      ],
+      "role": "Album role: The album's longest and most collaborative piece — augmented by Okko Bekker's guitar and Asmus Tietchens's synthesizer, it functions as the record's expansive textural centrepiece.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A wide ambient bed fades in, layered synthesizers establishing a slowly evolving harmonic space."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Guitar entry",
+          "description": "Okko Bekker's guitar surfaces within the texture, its treated tone blending into the synthetic field."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Development",
+          "description": "Asmus Tietchens's synthesizer adds a further layer, thickening the ensemble across the stereo image."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Peak",
+          "description": "All voices sustain simultaneously at maximum density, the album's fullest textural convergence."
+        },
+        {
+          "timestamp": "4:55",
+          "section": "Recession",
+          "description": "Layers begin to retreat; upper partials thin first, darkening the timbre."
+        },
+        {
+          "timestamp": "5:35",
+          "section": "Outro",
+          "description": "The bed decays to a single sustained tone that fades into silence."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Für Luise",
+      "duration": "3:50",
+      "energy": "low",
+      "tags": [
+        "Melodic ambient",
+        "Keyboard lead",
+        "Gentle closer",
+        "Reverb wash"
+      ],
+      "role": "Album role: Closing piece — a tender, melody-forward keyboard meditation, its title translating to \"For Louise,\" that resolves the album on its most affectionate note.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A gentle keyboard melody enters over soft reverb, establishing a warm, consonant harmonic centre."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Theme",
+          "description": "The principal melody develops, notes overlapping through reverb rather than fixed pulse."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Layering",
+          "description": "A sustained pad underpins the melody, broadening the harmonic bed beneath the lead."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Reprise",
+          "description": "The theme returns in its fullest voicing, the album's warmest and most complete melodic statement."
+        },
+        {
+          "timestamp": "3:25",
+          "section": "Outro",
+          "description": "Melodic elements recede; a final sustained chord fades to silence, closing the album."
+        }
+      ]
+    }
+  ]
+}

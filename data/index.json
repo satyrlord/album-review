@@ -1,5 +1,35 @@
 [
   {
+    "id": "brian-eno-music-for-films",
+    "artist": "Brian Eno",
+    "title": "Music for Films",
+    "year": 1978,
+    "tracks": 18,
+    "genre": "Ambient / Soundtrack",
+    "genreTags": [
+      "Ambient",
+      "Soundtrack",
+      "Electronic"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Brian_Eno_-_Music_for_Films.jpg/330px-Brian_Eno_-_Music_for_Films.jpg",
+    "isSoundtrack": true
+  },
+  {
+    "id": "brian-eno-ambient-4-on-land",
+    "artist": "Brian Eno",
+    "title": "Ambient 4: On Land",
+    "year": 1982,
+    "tracks": 8,
+    "genre": "Ambient / Experimental",
+    "genreTags": [
+      "Ambient",
+      "Experimental",
+      "Drone",
+      "Electronic"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/93/Brian_Eno_On_Land.jpg"
+  },
+  {
     "id": "brian-eno-apollo",
     "artist": "Brian Eno",
     "title": "Apollo: Atmospheres & Soundtracks",
@@ -14,6 +44,20 @@
     ],
     "coverUrl": "covers/brian-eno-apollo.jpg",
     "isSoundtrack": true
+  },
+  {
+    "id": "cluster-eno-cluster-eno",
+    "artist": "Cluster & Eno",
+    "title": "Cluster & Eno",
+    "year": 1977,
+    "tracks": 9,
+    "genre": "Krautrock / Ambient",
+    "genreTags": [
+      "Krautrock",
+      "Ambient",
+      "Electronic"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/77/Cluster_%26_Eno.jpg"
   },
   {
     "id": "edgar-froese-epsilon-in-malaysian-pale",
@@ -59,6 +103,20 @@
     "coverUrl": "covers/enigma-the-cross-of-changes.jpg"
   },
   {
+    "id": "fripp-eno-evening-star",
+    "artist": "Fripp & Eno",
+    "title": "Evening Star",
+    "year": 1975,
+    "tracks": 5,
+    "genre": "Ambient / Art Rock",
+    "genreTags": [
+      "Ambient",
+      "Art Rock",
+      "Electronic"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Fripp_%26_Eno%27s_Evening_Star.jpg"
+  },
+  {
     "id": "global-communication-76-14",
     "artist": "Global Communication",
     "title": "76:14",
@@ -85,6 +143,36 @@
       "Classical"
     ],
     "coverUrl": "covers/gustav-holst-the-planets.jpg"
+  },
+  {
+    "id": "harold-budd-brian-eno-ambient-2-the-plateaux-of-mirror",
+    "artist": "Harold Budd / Brian Eno",
+    "title": "Ambient 2: The Plateaux of Mirror",
+    "year": 1980,
+    "tracks": 10,
+    "genre": "Ambient / Piano",
+    "genreTags": [
+      "Ambient",
+      "Piano",
+      "Neo-Classical",
+      "Electronic"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a5/The_Plateaux_of_Mirror.jpg"
+  },
+  {
+    "id": "harold-budd-brian-eno-the-pearl",
+    "artist": "Harold Budd / Brian Eno",
+    "title": "The Pearl",
+    "year": 1984,
+    "tracks": 11,
+    "genre": "Ambient / Piano",
+    "genreTags": [
+      "Ambient",
+      "Piano",
+      "Electronic",
+      "Neo-Classical"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/65/Budd_%26_Eno%27s_The_Pearl.jpg"
   },
   {
     "id": "jean-michel-jarre-oxygene",
@@ -191,6 +279,21 @@
     "coverUrl": "covers/jean-michel-jarre-equinoxe-infinity.jpg"
   },
   {
+    "id": "jon-hassell-brian-eno-fourth-world-vol-1",
+    "artist": "Jon Hassell / Brian Eno",
+    "title": "Fourth World Vol. 1: Possible Musics",
+    "year": 1980,
+    "tracks": 6,
+    "genre": "Fourth World / Ambient",
+    "genreTags": [
+      "Fourth World",
+      "Ambient",
+      "Electronic",
+      "World"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e9/PossibleMusics%28Eno%26Hassell%29.jpg"
+  },
+  {
     "id": "klaus-schulze-irrlicht",
     "artist": "Klaus Schulze",
     "title": "Irrlicht",
@@ -237,6 +340,20 @@
     "coverUrl": "covers/klaus-schulze-mirage.jpg"
   },
   {
+    "id": "klaus-schulze-trancefer",
+    "artist": "Klaus Schulze",
+    "title": "Trancefer",
+    "year": 1981,
+    "tracks": 2,
+    "genre": "Berlin School / Electronic",
+    "genreTags": [
+      "Berlin School",
+      "Electronic",
+      "Ambient"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/Trancefer_Klaus_Schulze_Album.jpg"
+  },
+  {
     "id": "matt-uelmen-diablo-hellfire",
     "artist": "Matt Uelmen",
     "title": "Diablo + Hellfire",
@@ -265,6 +382,20 @@
     ],
     "coverUrl": "covers/mike-oldfield-tubular-bells.jpg",
     "isSoundtrack": true
+  },
+  {
+    "id": "mike-oldfield-ommadawn",
+    "artist": "Mike Oldfield",
+    "title": "Ommadawn",
+    "year": 1975,
+    "tracks": 2,
+    "genre": "Progressive / Ambient",
+    "genreTags": [
+      "Progressive",
+      "Ambient",
+      "Folk"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/16/Mike_oldfield_ommadawn_album_cover.jpg"
   },
   {
     "id": "mike-oldfield-tubular-bells-ii",
@@ -380,6 +511,20 @@
     "isSoundtrack": true
   },
   {
+    "id": "robert-fripp-brian-eno-no-pussyfooting",
+    "artist": "Robert Fripp & Brian Eno",
+    "title": "(No Pussyfooting)",
+    "year": 1973,
+    "tracks": 2,
+    "genre": "Ambient / Art Rock",
+    "genreTags": [
+      "Ambient",
+      "Art Rock",
+      "Electronic"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Frippenopussyfooting.jpg"
+  },
+  {
     "id": "tangerine-dream-zeit",
     "artist": "Tangerine Dream",
     "title": "Zeit",
@@ -424,6 +569,20 @@
       "Electronic"
     ],
     "coverUrl": "covers/tangerine-dream-rubycon.png"
+  },
+  {
+    "id": "tangerine-dream-exit",
+    "artist": "Tangerine Dream",
+    "title": "Exit",
+    "year": 1981,
+    "tracks": 6,
+    "genre": "Berlin School / Electronic",
+    "genreTags": [
+      "Berlin School",
+      "Electronic",
+      "Ambient"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/45/Exit_%28Tangerine_Dream_album%29.png"
   },
   {
     "id": "tangerine-dream-hyperborea",

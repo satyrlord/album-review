@@ -1,0 +1,282 @@
+{
+  "id": "jon-hassell-brian-eno-fourth-world-vol-1",
+  "artist": "Jon Hassell / Brian Eno",
+  "title": "Fourth World Vol. 1: Possible Musics",
+  "year": 1980,
+  "label": "Editions EG",
+  "producer": "Jon Hassell · Brian Eno",
+  "genre": "Fourth World / Ambient",
+  "genreTags": [
+    "Fourth World",
+    "Ambient",
+    "Electronic",
+    "World"
+  ],
+  "runtime": "45:28",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e9/PossibleMusics%28Eno%26Hassell%29.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/5vXMwvBidoteqCN6APRPo9",
+  "youtubeUrl": "https://www.youtube.com/watch?v=l77WYIQcpKI",
+  "overview": "Fourth World Vol. 1: Possible Musics (1980) was recorded at Celestial Sounds in New York City and issued by Editions EG, pairing trumpeter Jon Hassell with Brian Eno as co-producers. The record is the founding document of Hassell's \"Fourth World\" concept — a hypothetical unified music that fuses the timbres and modal logic of world ethnic traditions with advanced electronic technique, described by Hassell as a \"primitive/futuristic\" sound belonging to no single geography. Its defining voice is Hassell's trumpet routed through a Harmonizer, which stacks parallel intervals beneath each note to produce dense, vocalized chords that blur the line between wind instrument and synthesizer, set against Eno's Prophet-5, MiniMoog, guitar treatments, and tape processing. The rhythmic foundation is carried by Brazilian percussionist Naná Vasconcelos alongside Aïyb Dieng on ghatam and congas, with Percy Jones, Michael Brook, and Jerome Harris contributing bass across individual tracks.\n\nCritically the album ranked sixth on the 1980 Pazz & Jop poll — Robert Christgau called it the most seductive thing Eno had put his name to since Another Green World — and its syncretic method prefigured much of the world-music experimentation of the decade that followed. The structure moves from five compact Side One pieces built on hypnotic polyrhythm and drone toward the twenty-one-minute Side Two centerpiece \"Charm,\" which sustains a single modal groove over its full length. Timestamps are proportionally estimated to ±10 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Chemistry",
+      "duration": "6:55",
+      "energy": "mid",
+      "tags": [
+        "Harmonizer trumpet",
+        "Polyrhythmic percussion",
+        "Modal groove",
+        "Prophet-5"
+      ],
+      "role": "Album role: Opening statement — establishes the Fourth World language of Harmonizer-processed trumpet over interlocking percussion and defines the record's hypnotic mid-tempo pulse.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Percussion enters first with a repeating polyrhythmic figure from Naná Vasconcelos, establishing the modal groove before any melodic content appears.",
+          "detail": "Percy Jones plays fretless bass on this track, anchoring the low register beneath the percussion loop."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Trumpet entry",
+          "description": "Hassell's Harmonizer-processed trumpet enters, each note thickened by parallel harmonized intervals that suggest a chorus of voices."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Development",
+          "description": "Eno layers Prophet-5 and synthesizer treatments beneath the trumpet, widening the harmonic field without disturbing the percussion pulse."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Interplay",
+          "description": "Trumpet phrases grow more melismatic, weaving around the percussion accents in call-and-response with the electronic layers."
+        },
+        {
+          "timestamp": "5:10",
+          "section": "Plateau",
+          "description": "The arrangement settles into a sustained equilibrium of trumpet, bass, and percussion at full density."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Outro",
+          "description": "Melodic elements thin as the percussion figure carries the piece toward a fade."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Delta Rain Dream",
+      "duration": "3:29",
+      "energy": "low",
+      "tags": [
+        "Drone texture",
+        "Harmonizer trumpet",
+        "Tape treatments",
+        "Modal"
+      ],
+      "role": "Album role: A short, static interlude that suspends the percussion pulse in favour of a slow harmonized-trumpet drone, providing contemplative contrast after the opener.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low sustained drone fades in, built from harmonized trumpet tones and synthesizer that hang without rhythmic movement."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Trumpet line",
+          "description": "Hassell traces a slow modal melody above the drone, each phrase blurred by the Harmonizer into overlapping intervals."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Treatment shift",
+          "description": "Eno's tape treatments alter the timbre of the sustained bed, introducing subtle spectral motion beneath the melody."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Outro",
+          "description": "The trumpet withdraws and the drone thins to its fundamental before dissolving into silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Griot (Over \"Contagious Magic\")",
+      "duration": "4:02",
+      "energy": "mid",
+      "tags": [
+        "Handclaps",
+        "Harmonizer trumpet",
+        "Percussion loop",
+        "Call and response"
+      ],
+      "role": "Album role: Reintroduces rhythm through layered handclaps and percussion, framing the trumpet as a griot-like narrative voice over a repeating groove.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A dense pattern of handclaps and hand percussion establishes an interlocking rhythmic bed with no fixed downbeat.",
+          "detail": "The handclaps are credited to Paul Fitzgerald, Gordon Phillips, Andrew Timar, and Tina Pearson; Michael Brook plays bass."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Trumpet entry",
+          "description": "Harmonized trumpet enters as a lead voice, phrasing in short vocal-like utterances over the clapping pattern."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Build",
+          "description": "Additional percussion and synthesizer colour accumulate, thickening the texture while the tempo holds steady."
+        },
+        {
+          "timestamp": "2:55",
+          "section": "Peak",
+          "description": "Trumpet and percussion reach their densest interplay, the harmonized lines answering the rhythmic accents."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Outro",
+          "description": "The handclap pattern recedes, leaving the trumpet to trail off into the following track."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Ba-Benzélé",
+      "duration": "6:19",
+      "energy": "mid",
+      "tags": [
+        "Harmonizer trumpet",
+        "Polyrhythmic percussion",
+        "Modal groove",
+        "Fretless bass"
+      ],
+      "role": "Album role: The longest Side One piece — a sustained polyrhythmic groove named for Central African Ba-Benzélé pygmy music, developing the trumpet-over-percussion form at greater length.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Percussion and bass lock into a rolling polyrhythmic figure that references Ba-Benzélé vocal-instrumental traditions.",
+          "detail": "Jerome Harris plays bass; the title alludes to the Central African pygmy music documented in field recordings that influenced the piece."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Trumpet entry",
+          "description": "Harmonized trumpet enters over the groove, its stacked intervals imitating the interlocking whistles and voices of the source tradition."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Development",
+          "description": "Eno's synthesizer and treatment layers expand the harmonic space while the percussion pulse remains constant."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Interplay",
+          "description": "Trumpet phrases lengthen and overlap, exchanging accents with the percussion in extended call-and-response."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Plateau",
+          "description": "All elements sustain at full density, the groove hypnotic and unbroken."
+        },
+        {
+          "timestamp": "6:00",
+          "section": "Outro",
+          "description": "The trumpet withdraws and the percussion figure fades toward silence."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Rising Thermal 14° 16' N; 32° 28' E",
+      "duration": "3:10",
+      "energy": "low",
+      "tags": [
+        "Drone texture",
+        "Harmonizer trumpet",
+        "Tape treatments",
+        "Ambient"
+      ],
+      "role": "Album role: A brief atmospheric coda to Side One — a rising drone piece whose coordinates in the title mark the Sudanese region depicted on the album's Landsat cover.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A slowly rising drone emerges from silence, built from sustained harmonized trumpet and synthesizer without percussion."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Ascent",
+          "description": "The layered tones gradually climb in register and intensity, evoking the thermal updraft named in the title."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Treatment",
+          "description": "Eno's tape treatments introduce shifting spectral colour as the drone reaches its fullest density."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Outro",
+          "description": "The ascending texture plateaus and then dissolves, closing the album's first side."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Charm (Over \"Burundi Cloud\")",
+      "duration": "21:33",
+      "energy": "mid",
+      "tags": [
+        "Extended groove",
+        "Harmonizer trumpet",
+        "Polyrhythmic percussion",
+        "Modal",
+        "Ghatam"
+      ],
+      "role": "Album role: The album's extended centerpiece — a single twenty-one-minute modal groove that occupies all of Side Two and fully realizes the Fourth World synthesis of processed trumpet, hand percussion, and electronic treatment.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Hand percussion and ghatam establish a rolling polyrhythmic bed that will persist essentially unbroken for the full duration.",
+          "detail": "Naná Vasconcelos and Aïyb Dieng drive the percussion; the piece layers over a rhythmic figure derived from Burundi drumming."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Trumpet entry",
+          "description": "Harmonized trumpet enters with sustained modal phrases, each note fanned into parallel intervals by the Harmonizer."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "First development",
+          "description": "Eno introduces synthesizer and treatment layers that shade the harmony while the percussion pulse holds steady."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Textural expansion",
+          "description": "The trumpet lines grow more elaborate and vocal, weaving longer melismatic arcs across the groove."
+        },
+        {
+          "timestamp": "11:00",
+          "section": "Plateau",
+          "description": "The arrangement reaches a sustained equilibrium of trumpet, percussion, and electronics at full density."
+        },
+        {
+          "timestamp": "14:00",
+          "section": "Variation",
+          "description": "Subtle shifts in percussion emphasis and synthesizer colour vary the texture without breaking the underlying pulse."
+        },
+        {
+          "timestamp": "17:00",
+          "section": "Deepening",
+          "description": "The trumpet returns to longer sustained tones as the treated layers thicken beneath it."
+        },
+        {
+          "timestamp": "19:30",
+          "section": "Recession",
+          "description": "Melodic elements gradually thin and the percussion figure carries the piece toward its final fade, closing the album."
+        }
+      ]
+    }
+  ]
+}

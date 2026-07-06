@@ -1,0 +1,303 @@
+{
+  "id": "tangerine-dream-exit",
+  "artist": "Tangerine Dream",
+  "title": "Exit",
+  "year": 1981,
+  "label": "Virgin Records",
+  "producer": "Edgar Froese · Christopher Franke",
+  "genre": "Berlin School / Electronic",
+  "genreTags": [
+    "Berlin School",
+    "Electronic",
+    "Ambient"
+  ],
+  "runtime": "36:49",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/45/Exit_%28Tangerine_Dream_album%29.png",
+  "spotifyUrl": "https://open.spotify.com/album/4IhZlOlEsgfHqaUs1zcrPI",
+  "youtubeUrl": "https://www.youtube.com/watch?v=ojC2MpTbflU",
+  "overview": "Recorded in Berlin across June and July 1981 by the trio of Edgar Froese, Christopher Franke, and Johannes Schmoelling — the lineup that ran from 1979 to 1987 — and released on Virgin Records on 11 September 1981, produced by Froese and Franke. Exit marks a decisive turn away from the side-long modular suites of the group's 1970s work toward concise, song-length pieces built on tightly programmed digital sequencing, the same compact melodic approach the trio would extend on Hyperborea (1983). Franke's Roland MC-8 Microcomposer drives arpeggiated sequencer patterns with a metronomic precision the earlier hand-tuned analogue rigs could not hold, and the timbral palette leans on cleaner digital synthesis alongside the group's established Moog and Mellotron voices. The record carries an explicit late-Cold-War, anti-nuclear charge — 'Kiew Mission' opens with an uncredited Berlin actress reciting, in Russian, the names of the continents and a plea to end the threat of limited nuclear war — while 'Choronzon' was issued as a single ahead of the album on 28 August 1981.\n\nExit reached number 43 in the UK albums chart and spent five weeks on it, one of the trio's stronger commercial showings. Timestamps are proportionally estimated to ±10 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Kiew Mission",
+      "duration": "9:22",
+      "energy": "mid",
+      "tags": [
+        "Opener",
+        "Cold War Theme",
+        "Spoken Russian",
+        "Sequencer Pattern"
+      ],
+      "role": "Album role: The extended opening statement and the record's thematic anchor — a Cold-War meditation whose spoken Russian passage frames the anti-nuclear concept before the shorter melodic pieces take over.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Atmospheric entry",
+          "description": "sustained pads and processed textures open in a low register with no sequencer pulse yet.",
+          "detail": "The track begins as pure atmosphere rather than rhythm, establishing the ominous tone that the Cold-War concept requires before any pattern grounds it."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Sequencer entry",
+          "description": "an arpeggiated sequencer figure enters, its steady pulse likely clocked by Franke's Roland MC-8 Microcomposer.",
+          "detail": "The metronomic precision of the MC-8 lets the pattern hold a machine-steady tempo that the group's earlier hand-tuned analogue sequencers could not sustain over long durations."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Spoken Russian passage",
+          "description": "an uncredited Berlin actress recites, in Russian, the names of the continents over the sequencer bed.",
+          "detail": "The voice pleads to end the threat of limited nuclear war — the album's most direct expression of its late-Cold-War, anti-nuclear theme. The delivery is chant-like rather than melodic."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Melodic layer",
+          "description": "a lead synthesiser voice states a sustained melodic phrase above the continuing sequencer grid.",
+          "detail": "The melodic line uses the cleaner digital timbres that distinguish Exit from the warmer Moog-dominated palette of the trio's 1970s records."
+        },
+        {
+          "timestamp": "6:50",
+          "section": "Harmonic development",
+          "description": "additional pad layers thicken the texture as the chord centre shifts.",
+          "detail": "Multiple sequencer lines running at different rates generate the characteristic polyrhythmic shimmer without any percussion in the arrangement."
+        },
+        {
+          "timestamp": "8:20",
+          "section": "Textural withdrawal",
+          "description": "layers drop away as the piece decelerates toward the abrupt tonal shift of 'Pilots of Purple Twilight'.",
+          "detail": "The retreat closes the album's longest track and clears space for the compact song-length pieces that fill the remainder of the record."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Pilots of Purple Twilight",
+      "duration": "4:21",
+      "energy": "mid",
+      "tags": [
+        "Mid-Tempo",
+        "Melodic",
+        "Sequencer Groove",
+        "Digital Synthesis"
+      ],
+      "role": "Album role: The first of the record's concise song-length pieces — a mid-tempo melodic sketch that demonstrates the trio's shift from long-form suites to compact structures.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Direct entry",
+          "description": "a sequencer pattern and pad chord establish the tempo immediately, with none of the ambient preamble of the opener.",
+          "detail": "The abrupt start signals the album's more song-oriented format — structure asserted from the first bar rather than accumulated gradually."
+        },
+        {
+          "timestamp": "0:55",
+          "section": "Lead melody",
+          "description": "a synthesiser lead states the main melodic phrase over the cycling sequence.",
+          "detail": "The phrase is symmetrical and easily grasped, closer to pop-song construction than the open-ended development of the group's earlier work."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Harmonic shift",
+          "description": "the chord sequence modulates and a secondary voice answers the lead.",
+          "detail": "The brief modal move supplies contrast within a compact four-minute frame that leaves no room for extended plateaus."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Restatement",
+          "description": "the main melodic phrase returns with fuller pad accompaniment beneath it.",
+          "detail": "The return functions as a chorus-like recapitulation, reinforcing the piece's song-form design."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Close",
+          "description": "the sequencer thins and the pads decay to make way for 'Choronzon'.",
+          "detail": "The short fade hands off directly to the album's most driving track, sharpening the contrast in energy."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Choronzon",
+      "duration": "4:10",
+      "energy": "high",
+      "tags": [
+        "Single",
+        "Driving Sequencer",
+        "Arpeggiated",
+        "Uptempo"
+      ],
+      "role": "Album role: The album's driving centrepiece and lead single — the most propulsive sequencer piece on the record, released ahead of the album and later adopted as television theme music.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequencer launch",
+          "description": "a fast arpeggiated sequencer pattern opens at full momentum with an insistent pulse.",
+          "detail": "Issued as a single on 28 August 1981, 'Choronzon' is the album's most immediately propulsive piece, built to work as a self-contained track."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Lead theme",
+          "description": "a bright synthesiser lead enters with the track's hook-like main melody.",
+          "detail": "The melodic writing is deliberately catchy, reflecting the more dancefloor-adjacent sensibility the trio brought to Exit."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Layer intensification",
+          "description": "additional sequencer voices stack over the base pattern, increasing rhythmic density.",
+          "detail": "The perceived acceleration comes from layering independent cycling patterns rather than any change in tempo — a core Berlin-school device."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Peak",
+          "description": "lead melody and all sequencer layers run at maximum simultaneous density.",
+          "detail": "This is the album's highest-energy passage, the sequencer grid at its most driving before the arrangement begins to shed voices."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Close",
+          "description": "layers withdraw and the pattern winds down toward the title track.",
+          "detail": "The compact ending keeps the piece single-length, resolving cleanly rather than dissolving into drone."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Exit",
+      "duration": "5:35",
+      "energy": "mid",
+      "tags": [
+        "Title Track",
+        "Melodic",
+        "Sequencer Groove",
+        "Reflective"
+      ],
+      "role": "Album role: The title track — a mid-tempo, more reflective piece that recentres the record after the high-energy 'Choronzon' and restates its concise melodic template.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequencer bed",
+          "description": "a moderate-tempo sequencer pattern establishes the groove beneath opening pad chords.",
+          "detail": "The tempo settles below 'Choronzon', giving the title track a more contemplative footing at the album's midpoint."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Main melody",
+          "description": "a lead synthesiser introduces the title track's principal melodic phrase.",
+          "detail": "The melody is broad and unhurried, using the clean digital lead voices that define the album's sound."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Harmonic development",
+          "description": "the chord centre shifts and layered pads broaden the texture.",
+          "detail": "Countermelodies weave against the lead as multiple sequencer lines cycle at differing lengths."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Peak",
+          "description": "the arrangement reaches full density with lead and sequencer layers combined.",
+          "detail": "The climax is warmer and less driving than 'Choronzon', matching the track's reflective character."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Close",
+          "description": "layers recede and the pads decay ahead of 'Network 23'.",
+          "detail": "The gentle wind-down resets the album's energy before its second uptempo piece."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Network 23",
+      "duration": "4:57",
+      "energy": "high",
+      "tags": [
+        "Driving Sequencer",
+        "Uptempo",
+        "Arpeggiated",
+        "Digital Synthesis"
+      ],
+      "role": "Album role: The record's second high-energy sequencer piece — a driving companion to 'Choronzon' that lifts the album's momentum before the ambient closer.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Sequencer launch",
+          "description": "a brisk arpeggiated pattern opens with a firm, uptempo pulse.",
+          "detail": "'Network 23' paired with 'Choronzon' on the single release, and the two share a propulsive, tightly sequenced character."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Lead theme",
+          "description": "a synthesiser lead states the main melodic figure above the running sequence.",
+          "detail": "The melodic writing is direct and rhythmically insistent, aligned with the album's more accessible bent."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Layering",
+          "description": "further sequencer and pad layers enter, thickening the polyrhythmic grid.",
+          "detail": "Independent patterns at different cycle lengths drive the sense of forward motion without any tempo change."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Peak",
+          "description": "melody and sequencer layers reach full simultaneous density.",
+          "detail": "The high point sustains the driving energy that 'Choronzon' established earlier in the running order."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Close",
+          "description": "layers drop away and the pattern resolves toward the ambient finale.",
+          "detail": "The clean ending sets up the sharp contrast with the slow, drifting 'Remote Viewing'."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Remote Viewing",
+      "duration": "8:21",
+      "energy": "low",
+      "tags": [
+        "Ambient Closer",
+        "Drone",
+        "Atmospheric",
+        "Slow-Evolving"
+      ],
+      "role": "Album role: The ambient closer — an extended, slow-evolving atmospheric piece that abandons the album's song-length format to return the trio to open-ended drone as a final exhale.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Ambient entry",
+          "description": "sustained drones and processed textures open with no sequencer pulse.",
+          "detail": "The finale drops the driving format of the preceding tracks entirely, closing the album in open atmospheric space."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Textural drift",
+          "description": "slowly shifting pad layers move against one another without a fixed pulse.",
+          "detail": "The piece evolves through timbral change rather than rhythmic development, closer in spirit to the trio's 1970s long-form work."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Sparse melodic hints",
+          "description": "faint melodic fragments surface within the drifting texture.",
+          "detail": "The fragments are suggestive rather than stated, never resolving into a fixed theme."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Harmonic swell",
+          "description": "the pad layers thicken toward the piece's fullest harmonic point.",
+          "detail": "The swell is gradual and diffuse, avoiding any sharp climax in keeping with the ambient design."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Decay",
+          "description": "the texture attenuates as layers fade one by one.",
+          "detail": "The systematic withdrawal mirrors the closing mechanics of the trio's extended pieces at compressed scale."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Terminal drone",
+          "description": "a sustained decaying tone carries the album to near-silence.",
+          "detail": "The record ends not on resolution but on a dissolving drone — the Berlin-school close, a cessation rather than a conclusion."
+        }
+      ]
+    }
+  ]
+}

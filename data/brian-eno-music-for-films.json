@@ -1,0 +1,598 @@
+{
+  "id": "brian-eno-music-for-films",
+  "artist": "Brian Eno",
+  "title": "Music for Films",
+  "year": 1978,
+  "label": "EG Records",
+  "producer": "Brian Eno",
+  "genre": "Ambient / Soundtrack",
+  "genreTags": [
+    "Ambient",
+    "Soundtrack",
+    "Electronic"
+  ],
+  "runtime": "40:51",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Brian_Eno_-_Music_for_Films.jpg/330px-Brian_Eno_-_Music_for_Films.jpg",
+  "isSoundtrack": true,
+  "spotifyUrl": "https://open.spotify.com/album/7ijihvbGUQU2SgwSzarVI5",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=OLAK5uy_m3Joc1YzZ5mX9b6up71y3WJ40zBoErgVg",
+  "overview": "Music for Films (1978) is a solo studio album by Brian Eno, released in September 1978 through EG Records and compiled from material recorded between 1975 and 1978. Conceived as a soundtrack for imaginary films, the album collects eighteen short cues rather than the extended sustained pieces of Eno's parallel Ambient series that began the same year with Ambient 1: Music for Airports — a collage structure in which most tracks run between one and four minutes. The method draws on Eno's treatment practice: synthesizer washes, treated piano, tape-loop textures, and found sounds are combined with contributions from session players including Robert Fripp, John Cale, Phil Collins, and Fred Frith, then processed into short, self-contained atmospheres. Several pieces had already served real productions before the compilation — cues appeared in Derek Jarman's Sebastiane (1976) and Jubilee (1977) and in the television film Alternative 3 (1977) — while the album as a whole was pitched to filmmakers as a library of ready-made moods.\n\nCritical response was favourable, and the record established the model of a composer's cue-library album that Eno extended in later More Music for Films collections. The album peaked at number 55 on the UK Albums Chart.\n\nTimestamps are proportionally estimated to ±10 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "M386",
+      "duration": "2:49",
+      "energy": "low",
+      "tags": [
+        "Synthesizer wash",
+        "Dark drone",
+        "Tape-loop texture",
+        "Opening cue"
+      ],
+      "role": "Album role: Opening cue — establishes the album's imaginary-film premise with a cold, mechanistic synthesizer drone that sets the collection's dark ambient baseline.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low synthesizer drone fades in from silence, occupying the low-mid frequency range with no rhythmic pulse."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Layering",
+          "description": "Additional treated tones enter above the drone, their slow attack blurring any note onset into a continuous wash."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Development",
+          "description": "Harmonic content shifts as filtered overtones phase in and out, sustaining tension without resolution."
+        },
+        {
+          "timestamp": "2:25",
+          "section": "Outro",
+          "description": "Upper layers recede and the drone thins to its fundamental, fading toward silence."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Aragon",
+      "duration": "1:37",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Reverb wash",
+        "Short-form cue",
+        "Melodic fragment"
+      ],
+      "role": "Album role: Brief melodic cue that softens the opener's darkness with a treated-piano fragment suspended in reverb.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Treated piano notes enter with heavy reverb, sketching a fragmentary melodic figure over near-silence."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Development",
+          "description": "A sustained synthesizer pad underpins the piano, widening the harmonic bed beneath the acoustic figure."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Outro",
+          "description": "The piano figure thins to a single voice and dissolves into its reverb tail."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "From the Same Hill",
+      "duration": "2:58",
+      "energy": "low",
+      "tags": [
+        "Acoustic guitar",
+        "Folk-ambient",
+        "Chamber texture",
+        "Pastoral mood"
+      ],
+      "role": "Album role: Pastoral cue introducing acoustic instrumentation — a folk-inflected texture that broadens the album's palette beyond pure synthesis.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A fingerpicked acoustic guitar figure opens the cue in a warm, close-miked tone."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Layering",
+          "description": "Sustained strings or bowed textures enter beneath the guitar, framing the figure in a chamber-like harmonic setting."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Development",
+          "description": "The guitar figure repeats with subtle variation as the surrounding pad swells, deepening the pastoral atmosphere."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Outro",
+          "description": "Instruments recede in sequence, leaving the guitar to fade last into reverb."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Inland Sea",
+      "duration": "1:23",
+      "energy": "low",
+      "tags": [
+        "Synthesizer wash",
+        "Drifting texture",
+        "Short-form cue",
+        "Watery mood"
+      ],
+      "role": "Album role: Short atmospheric interlude — a drifting synthesizer wash evoking an expanse of still water.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A soft synthesizer wash fades in, its slow amplitude modulation suggesting gentle undulation."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Development",
+          "description": "Overlapping tonal layers accumulate into a shimmering, directionless field with no clear melodic centre."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Outro",
+          "description": "The wash attenuates smoothly, receding into silence."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Two Rapid Formations",
+      "duration": "3:24",
+      "energy": "mid",
+      "tags": [
+        "Sequenced synthesizer",
+        "Rhythmic pulse",
+        "Motorik motif",
+        "Kinetic cue"
+      ],
+      "role": "Album role: One of the album's most kinetic cues — a sequenced synthesizer pulse that introduces measured rhythmic motion into the otherwise static collection.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A repeating sequenced synthesizer pattern establishes a steady mid-tempo pulse from the outset."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Layering",
+          "description": "A sustained pad and secondary melodic line settle over the sequence, thickening the harmonic texture."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Development",
+          "description": "The sequence undergoes filtering and stereo displacement, shifting timbre while the pulse holds constant."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Outro",
+          "description": "Layers drop away and the sequence loops down to a single repeating figure before fading."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Slow Water",
+      "duration": "3:16",
+      "energy": "low",
+      "tags": [
+        "Synthesizer wash",
+        "Deep reverb",
+        "Ambient bed",
+        "Aquatic mood"
+      ],
+      "role": "Album role: Extended ambient bed that returns the album to stillness after the sequenced motion of the preceding cue.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A deep synthesizer wash fades in beneath a cavernous reverb space, establishing a slow, submerged texture."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Development",
+          "description": "Sustained tones drift across the stereo field, their soft attacks merging into a continuous harmonic flow."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Peak",
+          "description": "Layered voices reach maximum density, producing a gently churning wall of texture without rhythmic anchor."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Outro",
+          "description": "Upper partials fade first, darkening the timbre as the bed recedes into its reverb tail."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Sparrowfall (1)",
+      "duration": "1:11",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Miniature cue",
+        "Sparse texture",
+        "Series motif"
+      ],
+      "role": "Album role: First of three linked miniatures — a sparse treated-piano sketch that opens the album's shortest sequence of cues.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Isolated treated-piano notes enter over silence, spaced widely with long reverb decay."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Development",
+          "description": "A faint sustained tone underpins the piano, adding minimal harmonic support to the sparse figure."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Outro",
+          "description": "The final piano note is left to ring out and fade unaccompanied."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Sparrowfall (2)",
+      "duration": "1:45",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Synthesizer wash",
+        "Miniature cue",
+        "Series motif"
+      ],
+      "role": "Album role: Second miniature in the Sparrowfall series — the same sparse language extended with a fuller synthesizer bed.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Treated-piano notes reprise the series motif, again spaced widely against silence."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Layering",
+          "description": "A soft synthesizer wash swells beneath the piano, giving the figure a warmer harmonic frame than its predecessor."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Outro",
+          "description": "The piano thins to a single voice as the wash recedes into silence."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Sparrowfall (3)",
+      "duration": "1:23",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Reverb wash",
+        "Miniature cue",
+        "Series motif"
+      ],
+      "role": "Album role: Closing miniature of the Sparrowfall series — a final restatement of the motif that completes the three-part sequence.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "The Sparrowfall piano motif returns a third time, its intervals slightly altered from the earlier parts."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Development",
+          "description": "A sustained pad blurs the piano figure into a continuous wash, dissolving the boundary between note and reverb."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Outro",
+          "description": "The wash fades out, closing the three-part sequence."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Quartz",
+      "duration": "2:02",
+      "energy": "low",
+      "tags": [
+        "Synthesizer drone",
+        "Crystalline timbre",
+        "Static texture",
+        "Cold mood"
+      ],
+      "role": "Album role: Cold, crystalline drone cue — a static synthesizer texture whose glassy timbre names the piece.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A glassy synthesizer drone fades in with bright, ringing overtones and no rhythmic movement."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Development",
+          "description": "Additional high-frequency partials shimmer above the fundamental, sharpening the crystalline character."
+        },
+        {
+          "timestamp": "1:35",
+          "section": "Outro",
+          "description": "The drone loses upper partials progressively and settles into silence."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Events in Dense Fog",
+      "duration": "3:43",
+      "energy": "low",
+      "tags": [
+        "Synthesizer wash",
+        "Dark ambient",
+        "Diffuse texture",
+        "Cinematic cue"
+      ],
+      "role": "Album role: The album's longest interior cue — a diffuse, obscured texture that sustains a sense of cinematic suspense across nearly four minutes.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A blurred synthesizer wash fades in, its indistinct edges evoking the obscuring fog of the title."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Development",
+          "description": "Faint tonal shapes surface and submerge within the wash, suggesting half-seen events without resolving into melody."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Tension",
+          "description": "Dissonant overtones accumulate, thickening the texture toward an uneasy harmonic density at the midpoint."
+        },
+        {
+          "timestamp": "3:05",
+          "section": "Outro",
+          "description": "The obscuring layers thin gradually, allowing the wash to dissipate into silence."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "'There Is Nobody'",
+      "duration": "1:42",
+      "energy": "low",
+      "tags": [
+        "Sparse synthesizer",
+        "Desolate mood",
+        "Short-form cue",
+        "Minimal texture"
+      ],
+      "role": "Album role: Desolate short cue — a minimal, near-empty texture that literalises the emptiness of its title.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A sparse synthesizer tone enters against a wide field of silence, establishing a desolate stillness."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Development",
+          "description": "A second sustained voice fades in and out beneath the first, barely disturbing the emptiness."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Outro",
+          "description": "The tones fade to silence, leaving the cue's void intact."
+        }
+      ]
+    },
+    {
+      "num": 13,
+      "title": "A Measured Room",
+      "duration": "1:41",
+      "energy": "mid",
+      "tags": [
+        "Sequenced synthesizer",
+        "Rhythmic pulse",
+        "Short-form cue",
+        "Mechanical motif"
+      ],
+      "role": "Album role: Compact rhythmic cue — a measured sequenced pulse that briefly reintroduces mechanical motion into the collection.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A repeating sequenced pattern sets a precise, metronomic mid-tempo pulse from the first bar."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Development",
+          "description": "A sustained tone settles over the sequence, adding harmonic weight without disrupting the mechanical regularity."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Outro",
+          "description": "The sequence thins to its core figure and cuts to silence."
+        }
+      ]
+    },
+    {
+      "num": 14,
+      "title": "Patrolling Wire Borders",
+      "duration": "1:02",
+      "energy": "low",
+      "tags": [
+        "Synthesizer drone",
+        "Tense texture",
+        "Miniature cue",
+        "Ominous mood"
+      ],
+      "role": "Album role: The album's shortest cue — a tense, ominous drone miniature evoking guarded frontier space.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low, tense synthesizer drone fades in with a faint metallic edge suggesting wire and enclosure."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Development",
+          "description": "An unsettled overtone hovers above the drone, sharpening the sense of watchful tension."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Outro",
+          "description": "The drone fades abruptly, cutting the brief cue short."
+        }
+      ]
+    },
+    {
+      "num": 15,
+      "title": "Task Force",
+      "duration": "1:20",
+      "energy": "mid",
+      "tags": [
+        "Sequenced synthesizer",
+        "Driving pulse",
+        "Short-form cue",
+        "Purposeful motif"
+      ],
+      "role": "Album role: Brisk action-styled cue — a driving sequenced figure that supplies the collection's most purposeful sense of momentum.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A driving sequenced synthesizer figure enters at once, establishing a purposeful mid-tempo momentum."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Development",
+          "description": "A secondary melodic layer doubles the sequence, reinforcing the forward drive with harmonic support."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Outro",
+          "description": "The figure loops down and fades, closing the brief cue."
+        }
+      ]
+    },
+    {
+      "num": 16,
+      "title": "Alternative 3",
+      "duration": "3:11",
+      "energy": "low",
+      "tags": [
+        "Synthesizer wash",
+        "Dark ambient",
+        "Television cue",
+        "Eerie mood"
+      ],
+      "role": "Album role: Eerie extended cue — the piece used in the 1977 television film Alternative 3, sustaining an unsettled, conspiratorial atmosphere.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A dark synthesizer wash fades in, establishing an eerie, unsettled harmonic space."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Development",
+          "description": "Slowly shifting tonal layers phase across the stereo field, deepening the sense of unease.",
+          "detail": "This cue accompanied Anglia Television's 1977 hoax-documentary Alternative 3, one of several pieces on the album drawn from real productions."
+        },
+        {
+          "timestamp": "1:55",
+          "section": "Peak",
+          "description": "Harmonic density reaches its ceiling as dissonant overtones accumulate at sustained equilibrium."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Outro",
+          "description": "The layers recede in sequence, leaving the fundamental wash to fade into silence."
+        }
+      ]
+    },
+    {
+      "num": 17,
+      "title": "Strange Light",
+      "duration": "2:08",
+      "energy": "low",
+      "tags": [
+        "Synthesizer wash",
+        "Shimmering texture",
+        "Bright timbre",
+        "Reflective mood"
+      ],
+      "role": "Album role: Luminous penultimate cue — a bright, shimmering wash that lifts the album's timbre before its closing piece.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A bright synthesizer wash fades in with high-register shimmer, lightening the album's darker palette."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Development",
+          "description": "Overlapping upper-partial layers rotate slowly, producing a gently glinting harmonic field."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Outro",
+          "description": "The shimmer thins from the top downward and dissolves into its reverb tail."
+        }
+      ]
+    },
+    {
+      "num": 18,
+      "title": "Final Sunset",
+      "duration": "4:16",
+      "energy": "low",
+      "tags": [
+        "Treated piano",
+        "Synthesizer wash",
+        "Extended ambient",
+        "Closing meditation"
+      ],
+      "role": "Album role: Extended closing meditation — the album's longest and most resolved cue, drawing the collection to a slow, valedictory close.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Treated-piano notes enter over a warm synthesizer bed, establishing a valedictory harmonic centre."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Development",
+          "description": "The piano traces a slow descending arc as the pad swells beneath it, notes overlapping through reverb rather than pedal sustain."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Suspension",
+          "description": "All elements sustain at a single harmonic point; temporal motion appears to halt as reverb tails merge."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Outro",
+          "description": "The piano thins to a final voice and the bed recedes, closing the album in a long, quiet decay."
+        }
+      ]
+    }
+  ]
+}

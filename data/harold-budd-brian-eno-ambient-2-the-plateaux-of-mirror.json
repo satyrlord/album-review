@@ -1,0 +1,370 @@
+{
+  "id": "harold-budd-brian-eno-ambient-2-the-plateaux-of-mirror",
+  "artist": "Harold Budd / Brian Eno",
+  "title": "Ambient 2: The Plateaux of Mirror",
+  "year": 1980,
+  "label": "EG Records",
+  "producer": "Brian Eno",
+  "genre": "Ambient / Piano",
+  "genreTags": [
+    "Ambient",
+    "Piano",
+    "Neo-Classical",
+    "Electronic"
+  ],
+  "runtime": "39:22",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a5/The_Plateaux_of_Mirror.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/5ma9r5NFV0poevmydI2qgO",
+  "youtubeUrl": "https://www.youtube.com/playlist?list=PLzWmNYF6L9EFZ27Gu-0cky-sAFjSEWqN3",
+  "overview": "Ambient 2: The Plateaux of Mirror (1980) documents Harold Budd improvising soft-pedal piano inside processing environments built by Brian Eno, recorded in 1979 at Grant Avenue Studio in Hamilton, Ontario. Eno constructed what he called a sound-world — chains of reverb, tape processing, and electronic treatment — and fed Budd the treated signal in real time, so the pianist responded to the reverberant, altered result rather than to a dry acoustic instrument; Budd described it as his first use of the studio as a compositional tool. The record is the second installment of Eno's Ambient series — Ambient 1: Music for Airports (Eno, 1978), Ambient 2: The Plateaux of Mirror (Budd & Eno, 1980), Ambient 3: Day of Radiance (Laraaji, 1980), Ambient 4: On Land (Eno, 1982) — and its formula of a minimalist composer playing improvised piano within Eno-produced soundscapes proved durable enough to yield the sequel collaboration The Pearl (1984). Critical response was warm — AllMusic called it \"a lovely, evocative work\" and Pitchfork praised its \"moments of deep beauty\" — while noting that the album is designed to transform an environment rather than to command foreground attention. The ten pieces favor sustained harmonic suspension, slow rubato phrasing, and long reverberant decay, with the extended \"First Light\" and \"An Arc of Doves\" framing shorter, more fragmentary miniatures. Timestamps are proportionally estimated to ±8 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "First Light",
+      "duration": "7:08",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Reverberant treatment",
+        "Harmonic suspension",
+        "Extended form"
+      ],
+      "role": "Album role: Opening statement and longest piece — establishes the album's core method of soft-pedal piano improvisation suspended within Eno's reverberant treated space.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Widely spaced soft-pedal piano notes enter over a near-silent treated ambience, each tone extended by long reverb decay.",
+          "detail": "Budd played into Eno's processing chain and responded to the treated return rather than the dry instrument."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Development",
+          "description": "Slow rubato phrasing accumulates as sustained-pedal harmonies overlap into a continuous reverberant wash."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Suspension",
+          "description": "Melodic motion thins to isolated chords held in harmonic suspension, the treated tail defining the sense of space."
+        },
+        {
+          "timestamp": "5:10",
+          "section": "Recurrence",
+          "description": "The opening interval material returns in a lower register, the electronic bed swelling almost imperceptibly beneath it."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Outro",
+          "description": "Final piano figures dissolve into extended reverb, decaying toward silence to close the piece."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Steal Away",
+      "duration": "1:25",
+      "energy": "low",
+      "tags": [
+        "Piano miniature",
+        "Sparse texture",
+        "Reverberant treatment"
+      ],
+      "role": "Album role: Brief miniature — a short reflective piano fragment that acts as a transitional breath between the extended opener and the title track.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A single soft-pedal piano phrase emerges from silence, its attack softened and its decay lengthened by reverberant treatment."
+        },
+        {
+          "timestamp": "0:35",
+          "section": "Statement",
+          "description": "The phrase repeats with minor harmonic variation, sustained tones overlapping in the treated space."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Outro",
+          "description": "The final chord is left to ring, decaying into the reverberant field as the miniature closes."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "The Plateaux of Mirror",
+      "duration": "4:09",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Slow rubato",
+        "Harmonic suspension",
+        "Title track"
+      ],
+      "role": "Album role: Title piece — a slow, mirrored piano meditation that names the album and codifies its reflective, weightless harmonic language.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Deliberate soft-pedal piano chords enter in a mid-high register, each voiced with generous sustain and reverb."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Theme",
+          "description": "A slow rubato melodic line unfolds above the sustained harmony, phrases mirrored in near-symmetrical contour."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Suspension",
+          "description": "Harmonic motion slows toward stasis as chords are held in suspension over the treated reverberant bed."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Outro",
+          "description": "The melodic figure recedes and the final sustained chord dissolves into the reverb tail."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Above Chiangmai",
+      "duration": "2:55",
+      "energy": "low",
+      "tags": [
+        "Piano miniature",
+        "Modal harmony",
+        "Reverberant treatment"
+      ],
+      "role": "Album role: Short modal interlude — an evocative miniature whose gently exotic harmonic color offers a brief change of light before the side-closing centerpiece.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Soft-pedal piano introduces a modal figure with an unresolved, faintly exotic harmonic color over quiet treated ambience."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Development",
+          "description": "The modal cell repeats with subtle registral shifts, sustained notes blurring into one another through reverb."
+        },
+        {
+          "timestamp": "2:05",
+          "section": "Suspension",
+          "description": "Motion settles onto a held harmony, the treated tail sustaining the color as phrasing thins."
+        },
+        {
+          "timestamp": "2:35",
+          "section": "Outro",
+          "description": "The final figure decays into the reverberant field, closing the miniature."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "An Arc of Doves",
+      "duration": "6:22",
+      "energy": "low",
+      "tags": [
+        "Sustained treatment",
+        "Slow-drift texture",
+        "Harmonic suspension",
+        "Extended form"
+      ],
+      "role": "Album role: Side-one centerpiece — an extended, slowly drifting piece whose sustained treated harmonies form the album's most weightless and continuous expanse.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A soft-pedal piano chord fades in and is held, its treated tail extended into a continuous sustained drone-like bed."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Development",
+          "description": "Additional piano tones drift in and out of the reverberant field, phrasing detached from any pulse."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Plateau",
+          "description": "The texture reaches a stable equilibrium of overlapping sustained harmonies, motion reduced to slow harmonic drift."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Suspension",
+          "description": "Layers thin gradually as upper harmonics recede, leaving a slowly shifting suspended core."
+        },
+        {
+          "timestamp": "5:50",
+          "section": "Outro",
+          "description": "The remaining tones decay into extended reverb, dissolving toward silence to close side one."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Not Yet Remembered",
+      "duration": "3:48",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Vocal treatment",
+        "Reverberant wash",
+        "Harmonic suspension"
+      ],
+      "role": "Album role: Side-two opener — reintroduces the piano-in-treatment language with an added wash of processed voicing, deepening the album's reflective atmosphere.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Soft-pedal piano chords enter beneath a treated wash of sustained, wordless vocal-like tone in the reverberant space."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Theme",
+          "description": "A slow melodic line emerges, its phrases suspended over the continuous processed bed."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Suspension",
+          "description": "Harmonic motion slows as sustained tones overlap, the vocal-like treatment thickening the wash."
+        },
+        {
+          "timestamp": "3:15",
+          "section": "Outro",
+          "description": "Piano and treated layers recede together into the reverb tail, decaying toward silence."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "The Chill Air",
+      "duration": "2:09",
+      "energy": "low",
+      "tags": [
+        "Piano miniature",
+        "Sparse texture",
+        "Reverberant treatment"
+      ],
+      "role": "Album role: Brief cool-toned miniature — a sparse, austere fragment that lowers the temperature between the two fuller side-two pieces.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Isolated soft-pedal piano notes enter in a high register over a hushed treated ambience, spaced far apart."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Statement",
+          "description": "The sparse figure repeats with slight variation, sustained tones ringing into the cool reverberant field."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Outro",
+          "description": "The final note is left to decay, dissolving into the treated space."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Among Fields of Crystal",
+      "duration": "3:24",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Bright register",
+        "Harmonic suspension",
+        "Reverberant treatment"
+      ],
+      "role": "Album role: Luminous mid-side piece — its bright, crystalline upper-register piano gives the album its most shimmering harmonic surface.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Bright soft-pedal piano figures enter in the upper register, each note extended by shimmering reverberant treatment."
+        },
+        {
+          "timestamp": "1:05",
+          "section": "Theme",
+          "description": "A slow melodic contour develops, overlapping sustained tones producing a crystalline, glassy harmonic surface."
+        },
+        {
+          "timestamp": "2:15",
+          "section": "Suspension",
+          "description": "Motion settles onto held harmonies, the treated tail sustaining the bright color in suspension."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Outro",
+          "description": "The upper-register figures thin and decay into extended reverb, closing the piece."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Wind in Lonely Fences",
+      "duration": "3:50",
+      "energy": "low",
+      "tags": [
+        "Sustained treatment",
+        "Electric piano",
+        "Slow-drift texture",
+        "Reverberant wash"
+      ],
+      "role": "Album role: Darker atmospheric piece — treated electric-piano sustain and a windswept processed bed give side two its most desolate, drifting texture.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A treated electric-piano tone fades in and is sustained, framed by a windswept processed ambience low in the mix."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Development",
+          "description": "Sparse melodic gestures drift over the sustained bed, phrasing detached and unhurried."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Suspension",
+          "description": "Harmonies are held in suspension as the processed wash swells slightly, deepening the desolate atmosphere."
+        },
+        {
+          "timestamp": "3:25",
+          "section": "Outro",
+          "description": "The sustained tones recede into the reverberant field, dissolving toward silence."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Failing Light",
+      "duration": "4:12",
+      "energy": "low",
+      "tags": [
+        "Soft-pedal piano",
+        "Harmonic suspension",
+        "Reverberant treatment",
+        "Closing meditation"
+      ],
+      "role": "Album role: Closing meditation — a slow, dimming piano piece whose gradually darkening harmony resolves the album into quiet dissolution.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Soft-pedal piano chords enter in a warm mid register, each voiced with generous sustain in the treated space."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Theme",
+          "description": "A slow descending melodic line unfolds, phrases suspended over the reverberant bed as the harmony gently darkens."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Suspension",
+          "description": "Motion slows toward stasis as sustained chords are held, the treated tail carrying the fading light of the title."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Outro",
+          "description": "The final chord is left to decay into extended reverb, dissolving into silence to close the album."
+        }
+      ]
+    }
+  ]
+}
