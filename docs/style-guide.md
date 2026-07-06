@@ -202,13 +202,20 @@ Rules:
 - Keep `buildSegmentChart()` zero-dependency and DOM-safe.
 - Build the chart with `createElement()` and `textContent` only.
 - The chart root is `.segment-chart` with `role="list"` and a descriptive `aria-label`; each `.segment-row` is a `listitem`.
-- Bars are proportional: each `.segment-bar` gets a width of
-  `duration / maxDuration`, so the chart is a true structural map across
-  tracks. Segments inside a bar are proportional to their section
-  span.
-- Section colors are stable per section name (hashed into the palette by
-  `sectionColorIndex()`), so "Peak" is the same color in every row;
-  adjacent duplicate slots shift by one to stay distinguishable.
+- Every `.segment-bar` spans the full width. Segments inside a bar are
+  proportional to their section span, so each bar reads as a percentage
+  breakdown of that one track's runtime — not the track's length
+  relative to other tracks.
+- Section colors are stable per section name across the whole chart, so
+  "Peak" is the same color in every row *and* in the legend.
+  `resolveSectionColors()` assigns one color per distinct name (keyed by
+  `foldKey`), resolving hash collisions from `sectionColorIndex()` once
+  globally instead of shifting colors per row.
+- A `.segment-legend` (aria-hidden decorative key) follows the rows,
+  mapping each section swatch to its name. It is hidden from assistive
+  tech because every row already names its sections in the `sr-only`
+  summary, keeping the `role="list"` container free of non-`listitem`
+  children.
 - When a row has an `href`, the `.segment-row-label` renders an anchor
   whose `aria-label` is a plain-language summary (label, duration,
   section list). Rows without links carry the same summary in an

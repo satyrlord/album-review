@@ -208,7 +208,7 @@ function renderPage(d: AlbumData): string {
     `  <section class="preamble card border border-base-300/70 bg-base-200/80 shadow-xl backdrop-blur-xl">\n` +
     `    <div class="card-body gap-5 p-6 sm:p-8">\n` +
     `      <div class="badge badge-outline badge-primary w-fit px-4 py-3 font-mono text-[0.68rem] uppercase tracking-[0.28em]">Track Timeline</div>\n` +
-    `      <h2 class="text-sm text-base-content/55">Proportional structural map</h2>\n` +
+    `      <h2 class="text-sm text-base-content/55">Structural map — section breakdown per track</h2>\n` +
     `      <div id="timelineChart" class="rounded-box border border-base-300/60 bg-base-100/45 p-4 shadow-inner sm:p-5"></div>\n` +
     `    </div>\n` +
     `  </section>\n\n` +

@@ -6,6 +6,7 @@ interface CollectionDom {
   grid: HTMLElement;
   search: HTMLInputElement;
   count: HTMLElement;
+  sort: HTMLSelectElement;
 }
 
 // One colour per unique artist (sorted A-Z). Identity hues only — the
@@ -20,8 +21,9 @@ const PALETTE: readonly string[] = [
   '#b18aff', // violet
 ];
 
-/** Genre tags shown before the "+ more" expander is opened. */
-const VISIBLE_GENRE_TAGS = 10;
+/** Genre tags shown before the "+ more" expander is opened. Kept low so
+ *  the filter block stays compact and the album grid reaches the fold. */
+const VISIBLE_GENRE_TAGS = 6;
 
 export function buildColorMap(albums: AlbumIndexEntry[]): Record<string, string> {
   const artists = Array.from(new Set(albums.map(a => a.artist))).sort();
@@ -30,6 +32,30 @@ export function buildColorMap(albums: AlbumIndexEntry[]): Record<string, string>
     map[name] = PALETTE[i % PALETTE.length];
   });
   return map;
+}
+
+export type SortKey = 'year-asc' | 'year-desc' | 'artist-asc' | 'title-asc' | 'tracks-desc';
+
+/**
+ * Sort a copy of the albums by the chosen key. Every comparator falls
+ * back to the same year → artist → title tiebreak so ordering is stable
+ * and deterministic regardless of the primary key.
+ */
+export function sortAlbums(albums: AlbumIndexEntry[], key: SortKey): AlbumIndexEntry[] {
+  const tiebreak = (a: AlbumIndexEntry, b: AlbumIndexEntry): number =>
+    a.year - b.year
+    || a.artist.localeCompare(b.artist)
+    || a.title.localeCompare(b.title);
+
+  const primary: Record<SortKey, (a: AlbumIndexEntry, b: AlbumIndexEntry) => number> = {
+    'year-asc': () => 0,
+    'year-desc': (a, b) => b.year - a.year,
+    'artist-asc': (a, b) => a.artist.localeCompare(b.artist),
+    'title-asc': (a, b) => a.title.localeCompare(b.title),
+    'tracks-desc': (a, b) => b.tracks - a.tracks,
+  };
+
+  return albums.slice().sort((a, b) => primary[key](a, b) || tiebreak(a, b));
 }
 
 export function matchesFilters(album: AlbumIndexEntry, artists: ReadonlySet<string>, genres: ReadonlySet<string>, q: string): boolean {
@@ -56,12 +82,14 @@ function getCollectionDom(): CollectionDom | null {
   const grid = document.getElementById('ixGrid');
   const search = document.getElementById('ixSearch');
   const count = document.getElementById('ixCount');
+  const sort = document.getElementById('ixSort');
 
   if (!(grid instanceof HTMLElement)) return null;
   if (!(search instanceof HTMLInputElement)) return null;
   if (!(count instanceof HTMLElement)) return null;
+  if (!(sort instanceof HTMLSelectElement)) return null;
 
-  return { grid, search, count };
+  return { grid, search, count, sort };
 }
 
 function renderAlbumCardMedia(album: AlbumIndexEntry): string {
@@ -93,7 +121,7 @@ function bootCollectionPage(): void {
   const dom = getCollectionDom();
   if (!dom) return;
 
-  const { grid, search, count } = dom;
+  const { grid, search, count, sort } = dom;
 
   mountFooter('siteFooter', {
     context: 'Collection Index',
@@ -223,7 +251,11 @@ function bootCollectionPage(): void {
   function render(): void {
     const q = normaliseText(search.value.trim());
 
-    const visible = allAlbums.filter(a => matchesFilters(a, activeArtistTags, activeGenreTags, q));
+    const sortKey = sort.value as SortKey;
+    const visible = sortAlbums(
+      allAlbums.filter(a => matchesFilters(a, activeArtistTags, activeGenreTags, q)),
+      sortKey,
+    );
 
     count.textContent = `${visible.length} / ${allAlbums.length} album${allAlbums.length !== 1 ? 's' : ''}`;
     renderActiveFilterChips();
@@ -336,6 +368,7 @@ function bootCollectionPage(): void {
   }
 
   search.addEventListener('input', render);
+  sort.addEventListener('change', render);
 
   async function main(): Promise<void> {
     applyStoredBg();

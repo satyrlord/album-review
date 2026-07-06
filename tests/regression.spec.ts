@@ -760,15 +760,20 @@ test.describe("album index regressions", () => {
     await expect(firstLabelLink).toHaveAttribute("href", "#track-1");
     await expect(page.locator("#track-1")).toHaveCount(1);
 
-    // Bars are proportional: the longest track spans 100%, others less.
-    const widths = await chart.locator(".segment-bar").evaluateAll(
-      (bars) => bars.map((bar) => parseFloat((bar as HTMLElement).style.width)),
+    // Every bar spans the full width — bars show each track's own section
+    // split as a percentage, not track length relative to other tracks.
+    const barWidths = await chart.locator(".segment-bar").evaluateAll(
+      (bars) => bars.map((bar) => (bar as HTMLElement).style.width),
     );
-    expect(Math.max(...widths)).toBe(100);
-    expect(Math.min(...widths)).toBeLessThan(100);
-    for (const width of widths) {
-      expect(width).toBeGreaterThan(0);
+    for (const width of barWidths) {
+      // No inline width is set; the bar fills its grid cell via CSS.
+      expect(width).toBe("");
     }
+
+    // The color legend names every distinct section once.
+    const legend = chart.locator(".segment-legend");
+    await expect(legend).toHaveCount(1);
+    await expect(legend.locator(".segment-legend-item").first()).toBeAttached();
   });
 
   test("album page provides a back-to-top control on long pages", async ({ page }) => {
@@ -867,8 +872,8 @@ test.describe("album index regressions", () => {
     });
 
     expect(result.defaultRows).toBe(2);
-    // Proportional bars: 120s track spans 100%, 60s track spans 50%.
-    expect(result.barWidths).toEqual(["100%", "50%"]);
+    // Full-width bars: no inline width is set on any bar; each fills its cell.
+    expect(result.barWidths).toEqual(["", ""]);
     expect(result.hasNoPctSpan).toBe(true);
     // Rows without links carry a hidden per-track summary for screen readers.
     expect(result.srSummaries).toEqual([
@@ -876,7 +881,7 @@ test.describe("album index regressions", () => {
       "Track B, 1:00. Sections: Main.",
     ]);
     expect(result.zeroSegWidth).toBe("0%");
-    // A zero-duration row cannot be scaled; it keeps the default width.
+    // Bars never carry an inline width — full-width is the CSS default.
     expect(result.zeroBarWidth).toBe("");
   });
 

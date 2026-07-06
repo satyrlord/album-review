@@ -2,8 +2,9 @@
 // Segment — Stacked Segmented Horizontal Bar Chart (TypeScript)
 // Zero-dependency, accessible, palette-aware chart builder.
 // Each row is one track; segments are timeline sections.
-// Bar lengths are proportional to track duration, so the chart
-// reads as a true structural map of the album.
+// Every bar spans the full width: each bar shows how one track's
+// runtime is split across its sections (a percentage breakdown),
+// not the track's length relative to other tracks.
 // ──────────────────────────────────────────────────────────────
 
 import { foldKey } from './shared/text.js';
@@ -24,7 +25,7 @@ export interface SegmentData {
 export interface SegmentRow {
   /** Track label shown to the left of the bar. */
   label: string;
-  /** Total track duration in seconds (determines proportional bar width). */
+  /** Total track duration in seconds, used for the accessible summary. */
   duration: number;
   /** Formatted duration string for display. */
   durationLabel: string;
@@ -95,12 +96,52 @@ export function sectionColorIndex(title: string, paletteSize: number): number {
   return hash % paletteSize;
 }
 
+/**
+ * Assign each distinct section name one stable color, resolving hash
+ * collisions once for the whole chart. Because the mapping is global,
+ * a section is the same color in every bar *and* in the legend — no
+ * per-row shifting that would make the legend lie. Names are keyed by
+ * `foldKey` so casing/spacing variants share a color; the first-seen
+ * spelling is used as the legend label.
+ */
+export function resolveSectionColors(
+  rows: SegmentRow[],
+  colors: string[],
+): Map<string, { label: string; color: string }> {
+  const byKey = new Map<string, { label: string; color: string }>();
+  const usedSlots = new Set<number>();
+
+  for (const row of rows) {
+    for (const seg of row.segments) {
+      const label = seg.title;
+      if (!label) continue;
+      const key = foldKey(label);
+      if (byKey.has(key)) continue;
+
+      let slot = sectionColorIndex(label, colors.length);
+      // Walk to the next free slot so distinct names don't collide while
+      // there are still unused colors; once the palette is exhausted,
+      // reuse is unavoidable and we keep the hashed slot.
+      if (usedSlots.size < colors.length) {
+        while (usedSlots.has(slot)) {
+          slot = (slot + 1) % colors.length;
+        }
+        usedSlots.add(slot);
+      }
+      byKey.set(key, { label, color: colors[slot] });
+    }
+  }
+
+  return byKey;
+}
+
 // ── Public API ───────────────────────────────────────────────
 
 /**
  * Render a stacked segmented bar chart: one horizontal bar per track,
- * each bar divided into timeline sections. Bar width is proportional
- * to the track duration relative to the longest track.
+ * each bar divided into timeline sections. Every bar spans the full
+ * width; segment widths are the section's share of that one track, so
+ * each bar reads as a percentage breakdown of the track's runtime.
  */
 export function buildSegmentChart(
   element: HTMLElement,
@@ -118,7 +159,7 @@ export function buildSegmentChart(
   element.setAttribute('aria-label', ariaLabel);
 
   const colors = PALETTES[palette];
-  const maxDuration = rows.reduce((max, row) => Math.max(max, row.duration), 0);
+  const sectionColors = resolveSectionColors(rows, colors);
 
   for (const row of rows) {
     const rowEl = document.createElement('div');
@@ -153,32 +194,27 @@ export function buildSegmentChart(
     durationEl.setAttribute('aria-hidden', 'true');
     durationEl.textContent = row.durationLabel;
 
-    // Bar container — width proportional to track duration
+    // Bar container — every bar spans the full width; the segments inside
+    // it divide up that track's own runtime as a percentage breakdown.
     const barEl = document.createElement('div');
     barEl.classList.add('segment-bar');
     barEl.setAttribute('aria-hidden', 'true');
-    if (maxDuration > 0) {
-      const rowPct = (row.duration / maxDuration) * 100;
-      barEl.style.width = `${parseFloat(rowPct.toFixed(4))}%`;
-    }
 
     const percentages = getSegmentPercentages(row.segments);
 
-    let previousColorIndex = -1;
     for (let i = 0; i < row.segments.length; i++) {
       const seg = row.segments[i];
       const pct = percentages[i];
 
-      let colorIndex = sectionColorIndex(seg.title, colors.length);
-      if (colorIndex === previousColorIndex) {
-        // Avoid two different adjacent sections blending into one block.
-        colorIndex = (colorIndex + 1) % colors.length;
-      }
-      previousColorIndex = colorIndex;
+      // One stable color per section name across the whole chart, so the
+      // legend below matches every bar. Unlabeled sections fall back to
+      // the hashed slot.
+      const color = sectionColors.get(foldKey(seg.title))?.color
+        ?? colors[sectionColorIndex(seg.title, colors.length)];
 
       const wrapper = document.createElement('div');
       wrapper.style.width = `${parseFloat((pct * 100).toFixed(4))}%`;
-      wrapper.style.backgroundColor = colors[colorIndex];
+      wrapper.style.backgroundColor = color;
       wrapper.classList.add('segment-item-wrapper');
       wrapper.title = seg.tooltip;
 
@@ -196,4 +232,45 @@ export function buildSegmentChart(
     rowEl.appendChild(durationEl);
     element.appendChild(rowEl);
   }
+
+  appendLegend(element, sectionColors);
+}
+
+/**
+ * Append a color key mapping each section name to its swatch. It is
+ * decorative reinforcement — every row already names its sections in the
+ * `sr-only` summary — so it is hidden from assistive tech to keep the
+ * `role="list"` container free of non-`listitem` children.
+ */
+function appendLegend(
+  element: HTMLElement,
+  sectionColors: Map<string, { label: string; color: string }>,
+): void {
+  if (sectionColors.size === 0) return;
+
+  const legend = document.createElement('div');
+  legend.classList.add('segment-legend');
+  legend.setAttribute('aria-hidden', 'true');
+
+  const entries = Array.from(sectionColors.values())
+    .sort((a, b) => a.label.localeCompare(b.label));
+
+  for (const { label, color } of entries) {
+    const item = document.createElement('div');
+    item.classList.add('segment-legend-item');
+
+    const swatch = document.createElement('span');
+    swatch.classList.add('segment-legend-swatch');
+    swatch.style.backgroundColor = color;
+
+    const text = document.createElement('span');
+    text.classList.add('segment-legend-label');
+    text.textContent = label;
+
+    item.appendChild(swatch);
+    item.appendChild(text);
+    legend.appendChild(item);
+  }
+
+  element.appendChild(legend);
 }

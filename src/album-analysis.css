@@ -263,6 +263,29 @@ a {
   gap: 0.5rem;
 }
 
+.ix-sort {
+  align-items: center;
+  display: flex;
+  gap: 0.55rem;
+  /* Push the sort control to the far right of the results bar, past the
+     count and any active-filter chips. */
+  margin-left: auto;
+}
+
+.ix-sort-label {
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.ix-sort-select {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
 .ix-filter-chip {
   cursor: pointer;
   font-family: var(--font-mono);
@@ -330,11 +353,15 @@ a {
   text-transform: uppercase;
 }
 
-.ix-artist-tag {
+/* Artist and genre filter pills are one component with identical shape,
+   size, and behavior; only the hue token (--tag-hue) and resting text
+   color differ, so the two facets read as siblings, not two systems. */
+.ix-artist-tag,
+.ix-genre-tag {
   background: var(--color-base-100, #0a0a0c);
-  border: 1px solid color-mix(in srgb, var(--time) 50%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tag-hue) 50%, transparent);
   border-radius: 9999px;
-  color: var(--time);
+  color: var(--tag-text, var(--tag-hue));
   cursor: pointer;
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -346,17 +373,36 @@ a {
   transition: background 180ms ease, border-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
 }
 
-.ix-artist-tag:hover {
-  background: color-mix(in srgb, var(--time) 12%, transparent);
-  border-color: color-mix(in srgb, var(--time) 50%, transparent);
-  color: var(--time);
+.ix-artist-tag:hover,
+.ix-genre-tag:hover {
+  background: color-mix(in srgb, var(--tag-hue) 12%, transparent);
+  border-color: color-mix(in srgb, var(--tag-hue) 50%, transparent);
+  color: var(--tag-text, var(--tag-hue));
 }
 
-.ix-artist-tag.active {
-  background: color-mix(in srgb, var(--time) 16%, transparent);
-  border-color: color-mix(in srgb, var(--time) 55%, transparent);
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--time) 35%, transparent);
-  color: var(--time);
+.ix-artist-tag.active,
+.ix-genre-tag.active {
+  background: color-mix(in srgb, var(--tag-hue) 16%, transparent);
+  border-color: color-mix(in srgb, var(--tag-hue) 55%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--tag-hue) 35%, transparent);
+  color: var(--tag-text, var(--tag-hue));
+}
+
+.ix-artist-tag {
+  --tag-hue: var(--time);
+}
+
+.ix-genre-tag {
+  --tag-hue: var(--accent3);
+  --tag-text: color-mix(in srgb, var(--accent3) 40%, #fff);
+}
+
+/* The active genre pill fills solid for a stronger "selected" read; white
+   text on the darkened fill stays above the WCAG AA 4.5:1 threshold. */
+.ix-genre-tag.active {
+  background: color-mix(in srgb, var(--accent3) 80%, black 20%);
+  border-color: color-mix(in srgb, var(--accent3) 40%, transparent);
+  color: #fff;
 }
 
 .ix-nav-genre-tags {
@@ -369,22 +415,6 @@ a {
   width: 100%;
 }
 
-.ix-genre-tag {
-  background: var(--color-base-100, #0a0a0c);
-  border: 1px solid color-mix(in srgb, var(--accent3) 50%, transparent);
-  border-radius: 9999px;
-  color: color-mix(in srgb, var(--accent3) 40%, #fff);
-  cursor: pointer;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  line-height: 1;
-  min-height: 2rem;
-  padding: 0.55rem 0.9rem;
-  text-transform: uppercase;
-  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
-}
-
 .ix-nav-genre-tag[disabled] {
   cursor: not-allowed;
   opacity: 0.35;
@@ -393,19 +423,6 @@ a {
 .ix-tag-expander {
   border-style: dashed;
   color: var(--text-dim);
-}
-
-.ix-genre-tag:hover {
-  background: color-mix(in srgb, var(--accent3) 12%, transparent);
-  border-color: color-mix(in srgb, var(--accent3) 50%, transparent);
-  color: color-mix(in srgb, var(--accent3) 40%, #fff);
-}
-
-.ix-genre-tag.active {
-  background: color-mix(in srgb, var(--accent3) 80%, black 20%);
-  border-color: color-mix(in srgb, var(--accent3) 40%, transparent);
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent3) 35%, transparent);
-  color: #fff;
 }
 
 .ix-genre-tag-count {
@@ -551,6 +568,11 @@ a {
 }
 
 .meta-item {
+  display: flex;
+  flex-direction: column;
+  /* A shared floor so single-line cards (Genre, Year) match multi-line
+     ones (Producer) and the row reads as one even shelf, not a ragged one. */
+  min-height: 5.5rem;
   min-width: 0;
 }
 
@@ -564,9 +586,12 @@ a {
   text-transform: uppercase;
 }
 
+/* Value sits at the bottom of the card so labels align across the row
+   regardless of how many lines each value wraps to. */
 .meta-item span {
   display: block;
   line-height: 1.5;
+  margin-top: auto;
 }
 
 .hero-links {
@@ -841,6 +866,9 @@ a {
   min-width: 0;
   overflow: hidden;
   padding: 2px;
+  /* Every bar is full-width: segments show each track's own section
+     split as a percentage, not track length relative to other tracks. */
+  width: 100%;
 }
 
 .segment-item-wrapper {
@@ -875,6 +903,34 @@ a {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+.segment-legend {
+  border-top: 1px solid var(--panel-border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  margin-top: 0.35rem;
+  padding-top: 1.1rem;
+}
+
+.segment-legend-item {
+  align-items: center;
+  color: var(--text-dim);
+  display: flex;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  gap: 0.45rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.segment-legend-swatch {
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  display: inline-block;
+  height: 0.7rem;
+  width: 0.7rem;
 }
 
 @media (max-width: 1024px) {

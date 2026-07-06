@@ -27,6 +27,16 @@
   <div class="ix-results-bar">
     <span class="ix-count badge badge-ghost badge-lg h-auto rounded-full px-4 py-3" id="ixCount"></span>
     <div class="ix-active-filters" id="ixActiveFilters"></div>
+    <label class="ix-sort" for="ixSort">
+      <span class="ix-sort-label">Sort</span>
+      <select class="ix-sort-select select select-sm select-bordered border-base-300/60 bg-base-100/40 rounded-full" id="ixSort" aria-label="Sort albums">
+        <option value="year-asc">Year ↑</option>
+        <option value="year-desc">Year ↓</option>
+        <option value="artist-asc">Artist A–Z</option>
+        <option value="title-asc">Title A–Z</option>
+        <option value="tracks-desc">Most tracks</option>
+      </select>
+    </label>
   </div>
   <div class="ix-grid" id="ixGrid"></div>
 </main>
