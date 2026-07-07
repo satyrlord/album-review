@@ -44,6 +44,8 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Build site
+        env:
+          NODE_OPTIONS: --no-deprecation
         run: npm run build
 
       - name: Configure GitHub Pages
