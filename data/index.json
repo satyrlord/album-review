@@ -600,6 +600,21 @@
     "isSoundtrack": true
   },
   {
+    "id": "the-irresistible-force-global-chillage",
+    "artist": "The Irresistible Force",
+    "title": "Global Chillage",
+    "year": 1994,
+    "tracks": 7,
+    "genre": "Ambient / Ambient House",
+    "genreTags": [
+      "Ambient",
+      "Ambient House",
+      "Chillout",
+      "Electronic"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/9f/The_Irresistible_Force_-_Global_Chillage.jpg"
+  },
+  {
     "id": "the-prodigy-music-for-the-jilted-generation",
     "artist": "The Prodigy",
     "title": "Music for the Jilted Generation",

@@ -49,6 +49,7 @@ export function resolveStreamName(url: string): string {
     if (host === 'music.apple.com' || host.endsWith('.music.apple.com')) return 'Apple Music';
     if (host === 'deezer.com' || host.endsWith('.deezer.com')) return 'Deezer';
     if (host === 'tidal.com' || host.endsWith('.tidal.com')) return 'Tidal';
+    if (host === 'music.youtube.com') return 'YouTube Music';
   } catch {
     return 'Stream';
   }

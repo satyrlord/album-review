@@ -282,7 +282,6 @@ A research shortlist for new album analyses, ordered by similarity to reviewed a
 - **David Behrman** — *On the Other Ocean* (1977) — Electronic / Minimalism P#29, S#23
 - **The Orb** — *Orbus Terrarum* (1995) — Ambient House P#19
 - **The Irresistible Force** — *Flying High* (1992) — Ambient House R#59
-- **The Irresistible Force** — *Global Chillage* (1994) — Ambient House R#65
 - **One Dove** — *Morning Dove White* (—) — Ambient House Ac
 - **Wendy Carlos** — *Switched-On Bach* (1968) — Electronic / Classical —
 - **Isao Tomita** — *Snowflakes Are Dancing* (1974) — Electronic / Classical —

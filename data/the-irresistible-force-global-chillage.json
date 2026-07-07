@@ -1,0 +1,373 @@
+{
+  "id": "the-irresistible-force-global-chillage",
+  "artist": "The Irresistible Force",
+  "title": "Global Chillage",
+  "year": 1994,
+  "label": "Rising High Records",
+  "producer": "Mixmaster Morris",
+  "genre": "Ambient / Ambient House",
+  "genreTags": [
+    "Ambient",
+    "Ambient House",
+    "Chillout",
+    "Electronic"
+  ],
+  "runtime": "65:09",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/9f/The_Irresistible_Force_-_Global_Chillage.jpg",
+  "audioStreamUrl": "https://music.youtube.com/watch?v=sAw_yllpSYQ",
+  "youtubeUrl": "https://www.youtube.com/watch?v=sAw_yllpSYQ",
+  "overview": "Global Chillage (1994) is the second album by The Irresistible Force — the ambient alias of London DJ Morris Gould, aka Mixmaster Morris — released on Rising High Records at the height of the UK chill-out room movement Morris helped define. Its seven tracks, most stretching between eight and fourteen minutes, are gently drifting patchworks of synthesizer pads, vocal fragments, and soft percussion; The Times called the album \"a classic of the ambient genre\", noting that what may sound random in fact follows careful structures that leave little to chance. The record was engineered by Adrian Harrow with cover art by Chris Levine, and reached the US through Astralwerks, which issued Waveform / Natural Frequency as a promotional single. The track titles pair elemental opposites — Sunstroke against Snowstorm, Moonrise against Natural Frequency — and the music works the same way: slow textural rotation in place of conventional development, with the closing Manifesto compressing the album's chill-out philosophy into a two-minute processed-voice coda.\n\nThe Rising High catalogue is absent from licensed audio streaming platforms (Spotify, Apple Music, Deezer, Qobuz), so the listening links point to the YouTube full-album stream and its YouTube Music mirror. Timestamps are proportionally estimated to ±10 seconds; transitions are gradual and do not produce hard section boundaries.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Natural Frequency",
+      "duration": "14:06",
+      "energy": "low",
+      "tags": [
+        "Album Opener",
+        "Vocal Samples",
+        "Shimmering Synth",
+        "Long-Form Drift"
+      ],
+      "role": "Album role: The album's opening statement and longest piece — a fourteen-minute shimmering synth exploration that establishes the record's method: slow textural rotation, vocal fragments used for depth rather than message, and percussion kept at the edge of perception.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Shimmer entry",
+          "description": "high-register synth shimmer fades in from silence — the album opens at the top of the frequency range.",
+          "detail": "Where many ambient records of the period open with sub-bass warmth, Global Chillage begins with brightness. The shimmer is unanchored — no root note, no pulse — leaving the listener to wait for the ground to arrive beneath it."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "First vocal fragment",
+          "description": "a processed voice surfaces inside the texture — indistinct, more timbre than statement.",
+          "detail": "The vocal samples on this track were singled out by reviewers for adding depth and a touch of intrigue. They function as instruments: recognisably human in grain, but stripped of any recoverable meaning."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Pad accumulation",
+          "description": "sustained mid-register pads thicken beneath the shimmer — the track's harmonic core assembles.",
+          "detail": "The arrival of the pads reframes the opening shimmer as ornament rather than substance. From this point the track has a floor, and everything above it becomes detail work."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Percussive undercurrent",
+          "description": "a gentle beat surfaces beneath the pads — felt more than heard, giving the drift a slow pulse.",
+          "detail": "The Times' description of the album — synthesized sound and percussion in carefully structured patchworks — is at its most literal here. The percussion never rises to danceable presence; it exists to give the fourteen-minute span a sense of forward time."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Texture rotation",
+          "description": "the layers exchange positions — shimmer recedes, vocal fragments return over the pulse.",
+          "detail": "The track's development is rotational rather than linear: the same handful of elements re-weighted rather than replaced. This is the structural signature of the whole album, stated once at full scale before the shorter tracks apply it."
+        },
+        {
+          "timestamp": "11:30",
+          "section": "Unwinding",
+          "description": "the percussion withdraws first, then the pads thin — the accumulation reversed in order.",
+          "detail": "The exit mirrors the entrance: elements leave in roughly the reverse of their arrival, returning the track to the unanchored shimmer it began with."
+        },
+        {
+          "timestamp": "13:15",
+          "section": "Dissolve",
+          "description": "the remaining shimmer attenuates gradually toward the opening of Downstream.",
+          "detail": "The final minute is a controlled evaporation. Nothing cadences; the track simply becomes too quiet to continue, handing its residual brightness to the chimes of the next piece."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Downstream",
+      "duration": "10:05",
+      "energy": "low",
+      "tags": [
+        "Chimes",
+        "Hypnotic Repetition",
+        "Synth Swooshes",
+        "Water Drift"
+      ],
+      "role": "Album role: The album's hypnosis piece — mild chimes and a repeating synth figure cycled past the point where repetition becomes entrancement, carried on the swooshing filter movement that gives the track its downstream motion.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Chime figure",
+          "description": "a small bell-like motif states the loop that will occupy the entire track.",
+          "detail": "The motif is deliberately modest — a few notes, softly struck. Its interest lies not in what it says but in what sustained repetition does to it: by mid-track the figure has stopped registering as melody and become environment."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Filter swooshes",
+          "description": "broadband filter sweeps begin passing across the texture — the track's characteristic motion.",
+          "detail": "The swooshes are the album's most identifiable production gesture, cited in contemporary reviews as a defining texture. They move laterally across the stereo field like current over a riverbed, supplying the sense of travel the title promises."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Loop consolidation",
+          "description": "chimes, pad, and sweep lock into a stable cycle — the track reaches its steady state.",
+          "detail": "From here the piece is functionally static, and deliberately so. The entrancement reviewers described comes from this stability: once the cycle locks, attention detaches from expectation and settles into the texture itself."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Harmonic tilt",
+          "description": "the underlying pad shifts by one interval — the track's only structural change.",
+          "detail": "A single harmonic movement in ten minutes. Its rarity gives it disproportionate weight: the tilt registers as an event on the scale of a key change in conventional music."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Recession",
+          "description": "the layers pull back one at a time — sweep first, then pad.",
+          "detail": "The withdrawal is as unhurried as the accumulation. The track does not end its loop so much as walk away from it slowly."
+        },
+        {
+          "timestamp": "9:40",
+          "section": "Outro",
+          "description": "the chime figure sounds alone, fading — the loop reduced to its seed.",
+          "detail": "Ending on the bare motif closes the frame: the figure that opened the track as a promise of development exits having never developed, which is precisely the point."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Moonrise",
+      "duration": "9:41",
+      "energy": "low",
+      "tags": [
+        "Space Ambient",
+        "Low Drone",
+        "Chirping Synth",
+        "Nocturne"
+      ],
+      "role": "Album role: The record's turn toward space ambient — synthesis used for effects rather than melody, gentle chirping details scattered over a low-pitched hum, marking the album's furthest point from the chill-out room and its closest to open space.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Low hum established",
+          "description": "a low-pitched drone opens the track — the darkest register the album has yet entered.",
+          "detail": "After two tracks built on brightness and motion, Moonrise inverts the palette: the fundamental sits low and nearly motionless, and everything of interest happens as small light against it."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "First chirps",
+          "description": "small synthetic chirps flicker above the drone — brief, high, irregular.",
+          "detail": "Reviewers described this track as gentle chirping over a low-pitched hum, with the synthesizer used for effects rather than melodies. The chirps behave like nocturnal wildlife: aperiodic, spatial, never resolving into a phrase."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Effect constellation",
+          "description": "the chirps multiply into a scattered field of small events across the stereo image.",
+          "detail": "Density substitutes for development. No individual event matters; the accumulating field of them gradually shifts the track's character from empty to inhabited."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Drone modulation",
+          "description": "the hum's pitch centre moves for the first time — a slow, deep shift beneath the detail layer.",
+          "detail": "The moment functions like the moon clearing the horizon: nothing above changes, but the ground tone of the whole scene is different afterwards."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Field thinning",
+          "description": "the chirp density decreases — events become sparse, the space between them audible.",
+          "detail": "The withdrawal of detail returns attention to the drone, preparing the symmetry of the close: the track will end as it began, hum alone."
+        },
+        {
+          "timestamp": "9:10",
+          "section": "Hum alone",
+          "description": "the last chirps disperse and the drone closes the track unaccompanied.",
+          "detail": "A clean structural palindrome — drone, life, drone — and the album's most self-contained piece."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Sunstroke",
+      "duration": "8:25",
+      "energy": "low",
+      "tags": [
+        "Warm Haze",
+        "Melodic Fragments",
+        "Weather Pair",
+        "Standout Cut"
+      ],
+      "role": "Album role: The warm pole of the album's central weather pair — a heat-hazed drift that contemporary US reviews singled out as one of the record's most immediate tracks, setting up the cold answer of Snowstorm.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Warm pad wash",
+          "description": "a broad, warm pad opens the track — the brightest harmonic colour since the opener.",
+          "detail": "Placed after the nocturnal Moonrise, the warmth registers as sunrise by contrast. The album's sequencing works in these adjacencies: each track's character is half its own material, half what preceded it."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Melodic fragment",
+          "description": "a short melodic phrase surfaces — the most tuneful material on the album so far.",
+          "detail": "The Orange County Register, otherwise cool on the album, named Sunstroke one of its two standouts. The fragment is why: it offers a graspable musical object in a record that mostly withholds them."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Haze thickening",
+          "description": "detuned pad layers beat slowly against each other — the texture shimmers like heat distortion.",
+          "detail": "The detuning is the track's title made audible: pitch relationships that would be stable in cooler music waver slightly, producing the optical-illusion quality of air over hot ground."
+        },
+        {
+          "timestamp": "5:15",
+          "section": "Fragment return",
+          "description": "the melodic cell returns, slightly varied — the track's only recurrence.",
+          "detail": "One statement, one varied return. The economy is deliberate: repetition enough to confirm the phrase was real, variation enough to deny it the status of a hook."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Cooling",
+          "description": "the warm layers thin and the beating slows — temperature draining ahead of Snowstorm.",
+          "detail": "The final ninety seconds are transitional by design, lowering the track's temperature so that the cold open of Snowstorm lands as arrival rather than shock."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Snowstorm",
+      "duration": "8:39",
+      "energy": "low",
+      "tags": [
+        "Cold Texture",
+        "Filtered Noise",
+        "Weather Pair",
+        "Crystalline Detail"
+      ],
+      "role": "Album role: The cold pole answering Sunstroke — the same drifting method rendered in icy timbres, with filtered noise standing in for weather and the album's starkest textural contrast.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Cold open",
+          "description": "a glassy, drained pad opens the track — Sunstroke's warmth removed, the outline kept.",
+          "detail": "The two tracks share a structural template and oppose each other timbrally, the album's clearest compositional pairing. Hearing them in sequence makes the method explicit: the same architecture, refurnished."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Noise weather",
+          "description": "filtered white noise swells across the texture in slow gusts.",
+          "detail": "Noise is the track's weather system. Its filter contour rises and falls without rhythm, and its unpredictability supplies the drama the harmonic layer deliberately lacks."
+        },
+        {
+          "timestamp": "3:45",
+          "section": "Crystalline details",
+          "description": "small high-register events scatter over the pad — brief, hard-edged, ice-like.",
+          "detail": "The counterpart to Moonrise's chirps, transposed to a colder register: aperiodic points of detail whose accumulation, not identity, carries the track."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Storm density peak",
+          "description": "noise gusts and detail layer reach maximum simultaneous density — the track's whiteout.",
+          "detail": "The loudest passage on the album's second side, achieved without percussion or bass: pure textural mass. Even at peak density the dynamics stay within ambient bounds — a storm watched through glass."
+        },
+        {
+          "timestamp": "7:15",
+          "section": "Clearing",
+          "description": "the noise recedes and the pad steadies — visibility returning.",
+          "detail": "The clearing is gradual and slightly asymmetric: the noise leaves faster than it arrived, the way weather actually breaks."
+        },
+        {
+          "timestamp": "8:20",
+          "section": "Still air",
+          "description": "the glassy pad closes the track alone, motionless.",
+          "detail": "The stillness after the storm is brief but structural — a held breath before Waveform begins the album's largest construction."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Waveform",
+      "duration": "12:00",
+      "energy": "mid",
+      "tags": [
+        "US Single",
+        "Layered Synthesis",
+        "Vocal Samples",
+        "Rhythmic Summit"
+      ],
+      "role": "Album role: The album's most complex construction and its rhythmic summit — unusual vocal samples woven through layered synthesizers over a warm, steady pulse; issued with Natural Frequency as the US promotional single and named a standout by reviewers on both sides of the album's critical divide.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Pad foundation",
+          "description": "warm pads establish the harmonic bed — unhurried, but with more forward intent than anything since the opener.",
+          "detail": "The opening minutes disguise the track's ambition. It begins in the album's established register, then spends twelve minutes exceeding it — the record's one exercise in accumulation rather than rotation."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Vocal sample entry",
+          "description": "the track's unusual vocal material appears — fragments processed to the edge of recognisability.",
+          "detail": "Reviewers consistently flagged Waveform's vocal samples as the strangest on the album. They sit between speech and texture, recut and repitched until their origin is unrecoverable but their humanity is not."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Pulse arrives",
+          "description": "a soft, steady beat enters — the most present rhythm on the album.",
+          "detail": "This is the track's energy threshold: the moment Global Chillage crosses from pure ambient drift into warm, rhythmic movement. The pulse stays gentle — chill-out room, not dancefloor — but it reorganises everything above it."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Layer stacking",
+          "description": "synthesizer lines accumulate over the pulse — the densest arrangement on the record.",
+          "detail": "Described in reviews as the album's most complex track, Waveform earns the label here: multiple simultaneous synth voices, each individually simple, interlocking into the album's one passage of genuine polyphony."
+        },
+        {
+          "timestamp": "7:30",
+          "section": "Sample rework",
+          "description": "the vocal fragments return, recut against the pulse — familiar material in rhythmic position.",
+          "detail": "The reappearance of the vocals inside the rhythmic grid ties the track's two halves together: what entered as free-floating texture returns as a quasi-percussive element."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Wind-down begins",
+          "description": "the layers peel off roughly in order of arrival — the accumulation played in reverse.",
+          "detail": "The long dismantling honours the album's structural manners: nothing is dropped, everything is withdrawn. Two and a half minutes of exit for five minutes of build."
+        },
+        {
+          "timestamp": "11:30",
+          "section": "Terminal drift",
+          "description": "the pulse is gone; residual pads hand the album to its coda.",
+          "detail": "The final thirty seconds return the record to stillness so that Manifesto's processed voice enters from silence rather than momentum."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Manifesto",
+      "duration": "2:13",
+      "energy": "low",
+      "tags": [
+        "Coda",
+        "Processed Vocals",
+        "Organ Timbre",
+        "Closing Statement"
+      ],
+      "role": "Album role: The two-minute closing statement — a voice processed until it functions as a pipe organ, compressing the album's chill-out philosophy into a coda that is over almost before it registers.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Voice enters",
+          "description": "a heavily processed vocal opens the track — human in source, instrumental in effect.",
+          "detail": "After an hour of near-instrumental music, the album ends on the voice — but processed past speech. The title promises a declaration; the delivery withholds the words, leaving only the tone of one."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Organ transformation",
+          "description": "the processing thickens the voice into a sustained, pipe-organ-like timbre.",
+          "detail": "Reviewers heard the processed vocals as resembling a pipe organ — a church sonority arrived at through purely electronic means, giving the album's last minute an unexpectedly liturgical weight."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Final swell",
+          "description": "the organ-voice swells to the track's single dynamic peak.",
+          "detail": "The only crescendo on the album is its last gesture: two minutes of material given the arc a longer track would spread over ten."
+        },
+        {
+          "timestamp": "2:05",
+          "section": "Release",
+          "description": "the swell releases and the album ends without a fade.",
+          "detail": "A record built on gradual dissolves ends on a comparatively clean release — the manifesto stated, the case closed at 65 minutes."
+        }
+      ]
+    }
+  ]
+}

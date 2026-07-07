@@ -45,11 +45,12 @@ describe("getEnergyTagClasses", () => {
 });
 
 describe("resolveStreamName", () => {
-  it("recognises Apple Music, Deezer, and Tidal hosts", () => {
+  it("recognises Apple Music, Deezer, Tidal, and YouTube Music hosts", () => {
     expect(resolveStreamName("https://music.apple.com/album/1")).toBe("Apple Music");
     expect(resolveStreamName("https://geo.music.apple.com/album/1")).toBe("Apple Music");
     expect(resolveStreamName("https://www.deezer.com/album/1")).toBe("Deezer");
     expect(resolveStreamName("https://tidal.com/album/1")).toBe("Tidal");
+    expect(resolveStreamName("https://music.youtube.com/watch?v=sAw_yllpSYQ")).toBe("YouTube Music");
   });
 
   it("falls back to Stream for other hosts and invalid URLs", () => {
