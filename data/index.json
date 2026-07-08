@@ -117,6 +117,21 @@
     "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Fripp_%26_Eno%27s_Evening_Star.jpg"
   },
   {
+    "id": "gas-0095",
+    "artist": "Gas",
+    "title": "Gas 0095",
+    "year": 1995,
+    "tracks": 12,
+    "genre": "Ambient Techno / Ambient Dub",
+    "genreTags": [
+      "Ambient Techno",
+      "Ambient Dub",
+      "Electronic",
+      "Experimental"
+    ],
+    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/93/Gas0095b.jpg"
+  },
+  {
     "id": "global-communication-76-14",
     "artist": "Global Communication",
     "title": "76:14",

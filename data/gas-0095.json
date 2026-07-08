@@ -1,0 +1,483 @@
+{
+  "id": "gas-0095",
+  "artist": "Gas",
+  "title": "Gas 0095",
+  "year": 1995,
+  "label": "em:t",
+  "producer": "Mat Jarvis",
+  "genre": "Ambient Techno / Ambient Dub",
+  "genreTags": [
+    "Ambient Techno",
+    "Ambient Dub",
+    "Electronic",
+    "Experimental"
+  ],
+  "runtime": "72:34",
+  "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/93/Gas0095b.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/0qZJxzlxxcn43Et1vVjqO6",
+  "youtubeUrl": "https://www.youtube.com/watch?v=zzkfr_zv5aM",
+  "overview": "Gas 0095 (em:t, 1995) is the debut album of Nottingham producer Mat Jarvis — released under the Gas moniker and unrelated to Wolfgang Voigt's later Cologne project of the same name — written, performed, and recorded alone in his home studio across 1994. The record became the flagship long-player of em:t Records, the short-lived ambient imprint whose sleeves were art-directed by The Designers Republic; the cover pairs a high-resolution nature photograph of an iridescent ctenophore, rendered like an alien craft, with the label's austere grid typography. It was never advertised and sold by word of mouth, later trading above 400 dollars among collectors before Jarvis remastered it from the original tapes for a 2008 reissue on his Microscopics label.\n\nThe album fuses beatless ambient drift with dub-inflected ambient techno, its four-on-the-floor tracks anchored by deep, phased low-end and delay-saturated space. Two conceptual conceits define its structure: the near-silent \"joke\" tracks — a sub-second fragment, a track time-stretched into a single second, and elemental-chemistry titles such as \"SeOCl₂\" and \"H₂TeO₃\" — that puncture the long-form pieces, and the pair of \"Generator\" bookends, \"Generator 0000\" opening and \"Generator 0072\" closing (the latter concealing the hidden codas \"Pink\" and \"Doom\"). Between them sit the extended centrepieces \"Experiments on Live Electricity\", \"Mathematics and Electronics\", and \"Discovery\", each a slow accretion of loop, hiss, and filtered pad. Timestamps are proportionally estimated to ±8 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "Generator 0000",
+      "duration": "0:36",
+      "energy": "low",
+      "tags": [
+        "Intro",
+        "Drone",
+        "Generator Bookend",
+        "Tape Hiss"
+      ],
+      "role": "Album role: The opening bookend — a brief generator hum that powers up the record's electrical conceit before the first long-form piece begins.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low electrical hum fades in from silence beneath a wash of tape hiss, establishing the album's machine-room atmosphere."
+        },
+        {
+          "timestamp": "0:18",
+          "section": "Swell",
+          "description": "The drone thickens as filtered upper partials drift across the stereo field without settling on a pitch centre."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Outro",
+          "description": "The hum recedes, leaving a residual hiss that bleeds directly into the following track."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Experiments on Live Electricity",
+      "duration": "16:36",
+      "energy": "mid",
+      "tags": [
+        "Ambient Techno",
+        "Four-on-the-Floor",
+        "Extended Piece",
+        "Dub Delay"
+      ],
+      "role": "Album role: The album's longest statement and structural anchor — an extended ambient-techno build that establishes the phased kick and delay-drenched loop vocabulary heard throughout.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A submerged pad emerges over the carried-over hiss, its harmonics slowly phasing as the piece opens without percussion."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Beat entry",
+          "description": "A soft four-on-the-floor kick enters low in the mix, more felt than heard, anchoring the drifting texture to a pulse."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Layering",
+          "description": "Delayed loop fragments and filtered chords accumulate, each repeat smeared further by dub-style feedback echo."
+        },
+        {
+          "timestamp": "8:40",
+          "section": "Development",
+          "description": "The pad harmonics widen and the kick sits deeper, the track settling into a hypnotic, near-static groove."
+        },
+        {
+          "timestamp": "11:50",
+          "section": "Plateau",
+          "description": "All strata sustain at full density, loops and kick locked in a repetitive equilibrium with minimal variation."
+        },
+        {
+          "timestamp": "14:30",
+          "section": "Recession",
+          "description": "The kick drops away first, leaving the phased pads and echo tails to thin toward the close."
+        },
+        {
+          "timestamp": "16:10",
+          "section": "Outro",
+          "description": "The remaining loops dissolve into reverb and hiss, fading to near-silence."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Microscopic",
+      "duration": "9:53",
+      "energy": "mid",
+      "tags": [
+        "Ambient Techno",
+        "Phased Pad",
+        "Hypnotic Loop",
+        "Deep Bass"
+      ],
+      "role": "Album role: A mid-album groove piece that tightens the debut's loop-based method — the track from which Jarvis would later name his Microscopics reissue label.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A filtered pad and faint sub-bass open the piece, phasing gently as the stereo image slowly opens."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Beat entry",
+          "description": "A measured kick and a short delayed loop establish the groove beneath the sustained pad."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Development",
+          "description": "Additional loop fragments phase in and out, the low-pass filter opening incrementally to reveal more high-frequency detail."
+        },
+        {
+          "timestamp": "6:30",
+          "section": "Plateau",
+          "description": "The texture holds at its fullest, the repetition of the core loop generating a hypnotic stasis."
+        },
+        {
+          "timestamp": "8:20",
+          "section": "Recession",
+          "description": "Layers peel away in reverse order, the kick fading before the pad."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Outro",
+          "description": "A single filtered chord sustains and dissolves into the following interlude."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Miniscule / Pixels",
+      "duration": "1:30",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Micro-Edit",
+        "Sound Design",
+        "Digital Texture"
+      ],
+      "role": "Album role: A short paired interlude — the near-instant \"Miniscule\" fragment followed by the granular \"Pixels\" — that punctures the long-form flow with digital detail.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Miniscule",
+          "description": "A compressed sub-second burst of sound registers as a single click before immediately clearing."
+        },
+        {
+          "timestamp": "0:05",
+          "section": "Pixels",
+          "description": "Granular digital fragments scatter across the stereo field, glinting like pixellated noise over a faint bed."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Development",
+          "description": "The scattered particles cohere into a shimmering, unpitched texture that slowly thins."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Outro",
+          "description": "The fragments fade out, leaving silence ahead of the next long piece."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Vapourware",
+      "duration": "1:31",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Drone",
+        "Evaporating Texture",
+        "Ambient"
+      ],
+      "role": "Album role: A brief ambient interlude whose title puns on unreleased software — a vaporous pad sketch that evaporates as quickly as it forms.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A soft, breathy pad rises from silence, its edges blurred by heavy reverb."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Development",
+          "description": "The pad drifts through subtle filter movement without resolving to a harmonic centre."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Outro",
+          "description": "The texture disperses and evaporates, thinning to nothing."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "SeOCl₂",
+      "duration": "0:35",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Micro-Edit",
+        "Chemistry Title",
+        "Noise Burst"
+      ],
+      "role": "Album role: One of the album's chemistry-titled micro-tracks — named for selenium oxychloride — a fleeting noise sketch dividing the record's larger pieces.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A short filtered noise gesture surfaces abruptly, its transient softened by delay."
+        },
+        {
+          "timestamp": "0:18",
+          "section": "Development",
+          "description": "The noise smears into a brief echoing tail across the stereo image."
+        },
+        {
+          "timestamp": "0:30",
+          "section": "Outro",
+          "description": "The gesture decays to silence."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Earthshake",
+      "duration": "8:57",
+      "energy": "high",
+      "tags": [
+        "Ambient Techno",
+        "Deep Sub-Bass",
+        "Four-on-the-Floor",
+        "Dub Delay"
+      ],
+      "role": "Album role: The record's most physically forceful groove — a low-frequency-heavy techno piece whose quaking sub-bass gives the album its most assertive pulse.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A deep sub-bass rumble opens the track, more tectonic than tonal, beneath a distant filtered pad."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Beat entry",
+          "description": "A heavy four-on-the-floor kick locks in with the sub-bass, driving the groove forward with weight."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Layering",
+          "description": "Dub-delayed percussive fragments and a phased chord loop build over the pulse, echoes trailing across the stereo field."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Peak",
+          "description": "The track reaches maximum density and force, kick and sub-bass fully forward with the loops churning at their loudest."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Recession",
+          "description": "The upper loops thin as the delay feedback is pulled back, though the kick holds."
+        },
+        {
+          "timestamp": "8:30",
+          "section": "Outro",
+          "description": "The kick cuts and the sub-bass rumble decays into the following long piece."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Mathematics and Electronics",
+      "duration": "12:50",
+      "energy": "mid",
+      "tags": [
+        "Ambient Techno",
+        "Extended Piece",
+        "Sequenced Pattern",
+        "Phased Pad"
+      ],
+      "role": "Album role: An extended centrepiece foregrounding sequenced, mathematically patterned motifs — the clearest expression of the album's machine-logic conceit.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A sparse sequenced motif ticks over a low pad, its interval pattern repeating with clockwork regularity."
+        },
+        {
+          "timestamp": "2:40",
+          "section": "Beat entry",
+          "description": "A soft kick joins the sequence, framing the pattern within a steady four-on-the-floor pulse."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Development",
+          "description": "The sequence subdivides and phases against itself, additional filtered voices thickening the harmonic field."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Plateau",
+          "description": "All layers lock into a dense, repetitive equilibrium, the pattern hypnotic in its exactness."
+        },
+        {
+          "timestamp": "10:30",
+          "section": "Recession",
+          "description": "Voices are subtracted one at a time, exposing the underlying sequence again."
+        },
+        {
+          "timestamp": "12:20",
+          "section": "Outro",
+          "description": "The motif slows and dissolves into reverb, closing the piece."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Timestretch / Earthloop",
+      "duration": "3:47",
+      "energy": "low",
+      "tags": [
+        "Sound Design",
+        "Time-Stretch",
+        "Concept Piece",
+        "Ambient"
+      ],
+      "role": "Album role: A conceptual sound-design piece — pairing the album's time-stretch experiment, a full track compressed toward a single instant, with the looping \"Earthloop\" tail.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Timestretch",
+          "description": "A track's worth of material collapses into a compressed smear, pitch preserved while duration is crushed."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "Earthloop",
+          "description": "A low, earthen loop emerges and begins to repeat, its cycle gradually stabilising into a slow pulse."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Development",
+          "description": "The loop phases and accretes faint high-frequency detail while holding its fundamental cycle."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Outro",
+          "description": "The loop thins and fades toward the chemistry-titled interlude that follows."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "f / H₂TeO₃",
+      "duration": "0:50",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Micro-Edit",
+        "Chemistry Title",
+        "Noise Burst"
+      ],
+      "role": "Album role: A paired micro-interlude — the fragment \"f\" and the telluric-acid-titled \"H₂TeO₃\" — extending the album's running joke of near-silent chemistry sketches.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "f",
+          "description": "A single filtered gesture registers briefly and clears."
+        },
+        {
+          "timestamp": "0:20",
+          "section": "H₂TeO₃",
+          "description": "A short granular noise texture flickers across the stereo field."
+        },
+        {
+          "timestamp": "0:42",
+          "section": "Outro",
+          "description": "The texture decays to silence ahead of the final long piece."
+        }
+      ]
+    },
+    {
+      "num": 11,
+      "title": "Discovery",
+      "duration": "10:49",
+      "energy": "mid",
+      "tags": [
+        "Ambient Techno",
+        "Extended Piece",
+        "Melodic Loop",
+        "Dub Delay"
+      ],
+      "role": "Album role: The last of the extended centrepieces and the album's warmest — a melodically inflected ambient-techno build that resolves the record's darker textures.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A warm, consonant pad opens over faint hiss, admitting a melodic colour absent from earlier tracks."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Beat entry",
+          "description": "A gentle kick and a short melodic loop enter, the loop echoing through dub-style delay."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Development",
+          "description": "Layered melodic fragments and phased chords accumulate, the harmonic field brightening as the filter opens."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Plateau",
+          "description": "The full texture sustains at its warmest and densest, the melodic loop foregrounded over the steady pulse."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Recession",
+          "description": "The kick withdraws, leaving the melodic loops and pads to ring out through their echo tails."
+        },
+        {
+          "timestamp": "10:20",
+          "section": "Outro",
+          "description": "The loops dissolve into reverb, setting up the closing bookend."
+        }
+      ]
+    },
+    {
+      "num": 12,
+      "title": "Generator 0072 / Pink / Doom",
+      "duration": "5:00",
+      "energy": "low",
+      "tags": [
+        "Generator Bookend",
+        "Hidden Track",
+        "Drone",
+        "Outro"
+      ],
+      "role": "Album role: The closing bookend answering \"Generator 0000\" — a powering-down drone that conceals the hidden codas \"Pink\" and \"Doom\" and seals the album's electrical frame.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Generator 0072",
+          "description": "The electrical hum returns from the opening track, now winding down rather than powering up."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Development",
+          "description": "The drone thins and cools, its harmonics dropping as the generator conceit resolves."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Pink",
+          "description": "After a gap, the hidden coda \"Pink\" surfaces as a soft, filtered noise wash resembling pink noise.",
+          "detail": "\"Pink\" and \"Doom\" are hidden tracks appended to the closer and not listed on the original packaging."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Doom",
+          "description": "A darker, low-frequency drone — \"Doom\" — swells beneath the fading pink-noise bed."
+        },
+        {
+          "timestamp": "4:40",
+          "section": "Outro",
+          "description": "The low drone decays to silence, closing the album."
+        }
+      ]
+    }
+  ]
+}
