@@ -1,6 +1,7 @@
 import type { AlbumIndexEntry } from "./shared/schema.js";
 import { escapeHtml, normaliseText } from "./shared/text.js";
 import { applyStoredBg, bindCoverFallbacks, FALLBACK_COVER_URL, mountCollectionHero, mountFooter, resolveCoverImageUrl } from "./site.js";
+import { applyStoredTheme } from "./theme.js";
 
 interface CollectionDom {
   grid: HTMLElement;
@@ -371,6 +372,7 @@ function bootCollectionPage(): void {
   sort.addEventListener('change', render);
 
   async function main(): Promise<void> {
+    applyStoredTheme();
     applyStoredBg();
 
     try {

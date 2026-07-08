@@ -1,5 +1,6 @@
 import { escapeHtml } from "./shared/text.js";
 import { applyStoredBg, mountPage, renderBackNav, renderFooter } from "./site.js";
+import { applyStoredTheme } from "./theme.js";
 
 interface CreditEntry {
   source: string;
@@ -108,6 +109,7 @@ function renderPage(): string {
 }
 
 function main(): void {
+  applyStoredTheme();
   applyStoredBg();
 
   if (!mountPage("creditsRoot", renderPage())) return;

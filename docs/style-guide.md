@@ -12,6 +12,7 @@ If this guide and the code disagree, update this guide to match the code.
 - [Architecture notes](architecture-notes.md)
 - [Shared stylesheet](../src/album-analysis.css)
 - [Shared site chrome helpers](../src/site.ts)
+- [Theme registry and switcher](../src/theme.ts)
 - [Collection renderer](../src/index.ts)
 - [Album renderer](../src/album.ts)
 - [Segment chart renderer](../src/segment.ts)
@@ -23,7 +24,10 @@ If this guide and the code disagree, update this guide to match the code.
   Treat it as three layers in one file: Tailwind import, DaisyUI theme
   definition, and custom CSS for the bespoke pieces DaisyUI does not cover
   directly.
-- Every HTML entry point sets `data-theme="dark"` on the root `<html>` element. The site is dark-theme only.
+- Every HTML entry point sets `data-theme="dark"` on the root `<html>`
+  element as the default. A hero theme switcher lets the reader pick another
+  theme; the choice is applied to `data-theme` and persisted (see the Theme
+  System section).
 - Prefer DaisyUI component classes in renderer output: `card`, `btn`, `badge`, `input`, and `alert` are the default primitives.
 - Keep the hook classes that the runtime and tests rely on: `site-nav`, `site-nav-link`, `site-footer`, `ix-card`, `track`, `timeline`, and the `segment-*` chart classes.
 - When a per-instance accent is needed on collection cards, use the `style="--card-accent:..."` hook from [src/index.ts](../src/index.ts).
@@ -31,7 +35,34 @@ If this guide and the code disagree, update this guide to match the code.
 
 ## Theme System
 
-The app customizes DaisyUI's `dark` theme directly inside [src/album-analysis.css](../src/album-analysis.css). Primary tokens are exposed to the rest of the code through custom-property aliases:
+The app ships several DaisyUI themes defined in
+[src/album-analysis.css](../src/album-analysis.css): `dark` (default),
+`cosmic`, `retro`, `vintage`, `sega`, and `minimal`. `dark` is the default
+theme, is marked `--prefersdark`, and is the value baked into each HTML entry
+point's `<html data-theme>`, so a first visit always renders the historical
+ALBANA look.
+
+[src/theme.ts](../src/theme.ts) owns the runtime side:
+
+- `THEMES` is the ordered registry (`id` + `label`); `DEFAULT_THEME_ID` is `dark`.
+- `applyStoredTheme()` reads the stored id and writes `data-theme`. Each page
+  calls it at boot, next to `applyStoredBg()`.
+- `setTheme(id)` persists and applies a theme. Unknown ids fall back to the
+  default, so a stale or hand-edited store can never leave a page unthemed.
+- The choice is stored in `localStorage` under `siteThemeId`.
+- `renderThemeSwitcher()` renders the labelled `.theme-switcher` `<select>`
+  mounted in every page hero (the collection hero toolbar, and next to the
+  "Back to Home" link on album and credits pages). `bindThemeControls()` wires
+  its `change` handler after the markup mounts.
+
+Every theme keeps `--color-primary` as a bright, WCAG-AA action colour so
+`btn-primary` text contrast holds — including the solid-primary Spotify and
+audio-stream hero buttons. Do not repurpose `--color-primary` for a decorative
+role in any theme.
+
+Primary tokens are exposed to the rest of the code through custom-property
+aliases, which read from the active theme's `--color-*` values and therefore
+follow the selected theme automatically:
 
 | Variable | Source | Use |
 | --- | --- | --- |
@@ -44,8 +75,13 @@ The app customizes DaisyUI's `dark` theme directly inside [src/album-analysis.cs
 | `--surface` | `--color-base-200` | Card surfaces |
 | `--surface2` | `--color-base-300` | Nested surfaces and chart backplates |
 
-Functional colors are reserved: `--time` amber means timestamps/counts,
-`--warn` orange means errors. Artist identity colors on collection cards
+The `--text-dim` alias is derived from `--color-base-content` with
+`color-mix`, so it stays legible on both dark and light themes; `--panel-border`
+switches to a dark ink under the light themes (`vintage`, `minimal`).
+
+Functional colors are reserved: `--time` means timestamps/counts,
+`--warn` means errors — each theme keeps distinct warning and error hues so
+those roles stay readable. Artist identity colors on collection cards
 come from a dedicated identity palette in [src/index.ts](../src/index.ts)
 (green, pink, sky blue, lime, violet) and must never reuse the functional
 hues. Every identity hue must pass WCAG AA (4.5:1) on the card surface at
@@ -53,8 +89,8 @@ the 12px artist-label size.
 
 Design direction:
 
-- Surfaces are translucent dark panels with blurred backdrops and strong shadows.
-- Backgrounds use radial glows and a faint grid overlay rather than flat fill.
+- Surfaces are translucent panels with blurred backdrops and strong shadows.
+- Backgrounds use radial glows and a faint grid overlay rather than flat fill; the WebP backdrop renders under every theme.
 - Accent color should feel technical and luminous, not pastel or muted.
 - `prefers-reduced-motion` disables hover transforms and transitions; `prefers-reduced-data` skips the backdrop image download entirely.
 
@@ -73,8 +109,10 @@ pages also pick a fresh random backdrop.
 Web fonts are loaded through `<link rel="preconnect">` +
 `<link rel="stylesheet">` tags in each HTML entry point (not a CSS
 `@import`), with trimmed weight sets: DM Sans 400/500/700, JetBrains Mono
-400/600, Orbitron 700, Space Grotesk 400–700. Tailwind theme variables in
-[src/album-analysis.css](../src/album-analysis.css) map them to utilities:
+400/600, Orbitron 700, Space Grotesk 400–700. The per-theme display faces
+(Audiowide, Macondo, Silkscreen, VT323) are loaded in the same link. Tailwind
+theme variables in [src/album-analysis.css](../src/album-analysis.css) map the
+core faces to utilities:
 
 | Utility | Font |
 | --- | --- |
@@ -82,11 +120,17 @@ Web fonts are loaded through `<link rel="preconnect">` +
 | `font-mono` | `JetBrains Mono` |
 | `font-display` | `Space Grotesk` |
 
-In addition, `Orbitron` is applied directly (not through a Tailwind utility) to `.ix-brand-title` as the brand wordmark face, falling back to `--font-display`.
+The brand wordmark face is the `--font-brand` custom property, applied to
+`.ix-brand-title` (falling back to `--font-display`). Each theme overrides
+`--font-brand` with a period-appropriate display face: `dark` keeps `Orbitron`,
+`cosmic` uses `Audiowide`, `retro` uses `Macondo`, `vintage` uses `Silkscreen`,
+`sega` uses `VT323`, and `minimal` uses `--font-display`. Body copy (DM Sans)
+and monospace chrome (JetBrains Mono) stay constant across themes, so metadata
+and timestamps read the same everywhere.
 
 Current usage:
 
-- `Orbitron` is the brand wordmark face for the ALBANA title.
+- `--font-brand` (default `Orbitron`) is the brand wordmark face for the ALBANA title, and changes per theme.
 - `Space Grotesk` is the display face for collection card titles and the credits h1.
 - `JetBrains Mono` is the album-page h1 face (applied via the `font-mono`
   utility in the renderer — there is deliberately no blanket `.hero h1`

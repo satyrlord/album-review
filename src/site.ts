@@ -1,5 +1,6 @@
 import type { SiteBuildMeta } from './shared/schema.js';
 import { escapeHtml } from './shared/text.js';
+import { bindThemeControls, renderThemeSwitcher } from './theme.js';
 
 interface SiteBuildInfo extends SiteBuildMeta {
   version: string;
@@ -71,12 +72,16 @@ export function getBuildMeta(): SiteBuildInfo {
   };
 }
 
-/** Canonical "Back to Home" nav used by album and credits pages. */
+/** Canonical "Back to Home" nav used by album and credits pages. Pairs the
+ *  back link with the hero theme switcher on one row. */
 export function renderBackNav(): string {
   return (
-    `<nav class="site-nav" aria-label="Primary">\n` +
-    `  <a class="site-nav-link btn btn-sm btn-ghost border border-transparent bg-base-100/40 hover:border-primary/35 hover:bg-primary/10 hover:text-primary" href="index.html" data-js="pick-random-bg">\u2190 Back to Home</a>\n` +
-    `</nav>`
+    `<div class="site-nav-row flex flex-wrap items-center justify-between gap-3">\n` +
+    `  <nav class="site-nav" aria-label="Primary">\n` +
+    `    <a class="site-nav-link btn btn-sm btn-ghost border border-transparent bg-base-100/40 hover:border-primary/35 hover:bg-primary/10 hover:text-primary" href="index.html" data-js="pick-random-bg">\u2190 Back to Home</a>\n` +
+    `  </nav>\n` +
+    `  ${renderThemeSwitcher()}\n` +
+    `</div>`
   );
 }
 
@@ -94,7 +99,8 @@ export function renderCollectionHero(options: CollectionHeroOptions): string {
     `<header class="ix-hero">\n` +
 
     `  <div class="container">\n` +
-    `    <div class="flex flex-col items-center gap-5 px-6 py-8 text-center sm:px-10 sm:py-12">` +
+    `    <div class="ix-hero-toolbar flex justify-end pt-6">${renderThemeSwitcher()}</div>\n` +
+    `    <div class="flex flex-col items-center gap-5 px-6 pb-8 pt-4 text-center sm:px-10 sm:pb-12">` +
     `\n        <h1 class="font-display text-4xl font-semibold tracking-[-0.04em] text-base-content sm:text-5xl lg:text-6xl 2xl:text-7xl${titleClass}">${escapeHtml(options.title)}</h1>` +
     taglineHtml +
     `\n        <label class="input input-bordered flex h-auto min-h-14 w-full max-w-3xl items-center gap-3 border-base-300/60 bg-base-200/50 px-5 py-3 text-lg backdrop-blur-sm">\n` +
@@ -114,6 +120,7 @@ export function mountCollectionHero(elementId: string, options: CollectionHeroOp
   const target = document.getElementById(elementId);
   if (!target) return;
   target.outerHTML = renderCollectionHero(options);
+  bindThemeControls(document);
 }
 
 export function renderFooter(options: SiteFooterOptions = {}): string {
@@ -197,6 +204,7 @@ export function mountPage(rootId: string, html: string): boolean {
   root.outerHTML = html;
   bindCoverFallbacks(document);
   bindFooterControls();
+  bindThemeControls(document);
   document.querySelector<HTMLAnchorElement>('[data-js="pick-random-bg"]')
     ?.addEventListener('click', () => { pickAndStoreRandomBg(); });
 

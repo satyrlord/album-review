@@ -10,6 +10,7 @@ import { parseDuration } from "./shared/format.js";
 import type { AlbumData, AlbumTrack, TimelineEvent } from "./shared/schema.js";
 import { escapeHtml } from "./shared/text.js";
 import { applyStoredBg, FALLBACK_COVER_URL, mountPage, renderBackNav, renderFooter, resolveCoverImageUrl } from "./site.js";
+import { applyStoredTheme } from "./theme.js";
 
 /** Wrap the last word of a title in <span> — matches scaffold pattern. */
 export function titleH1(title: string): string {
@@ -257,6 +258,7 @@ function showError(msg: string): void {
 }
 
 async function main(): Promise<void> {
+  applyStoredTheme();
   applyStoredBg();
 
   const params = new URLSearchParams(window.location.search);

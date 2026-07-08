@@ -1038,6 +1038,115 @@ test.describe("album index regressions", () => {
     expect(result.defaultFallback).toBe("covers/fallback-cd-case.svg");
   });
 
+  test("defaults to the dark theme and offers every registered theme", async ({ page }) => {
+    await gotoIndex(page);
+
+    // Fresh visit renders the default dark theme.
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+
+    const select = page.locator(".theme-switcher-select");
+    await expect(select).toBeVisible();
+    await expect(select.locator("option")).toHaveText([
+      "Dark",
+      "Cosmic",
+      "Retro",
+      "Vintage",
+      "Sega",
+      "Minimal",
+    ]);
+    await expect(select).toHaveValue("dark");
+  });
+
+  test("selecting a theme applies it and persists across reloads and pages", async ({ page }) => {
+    await gotoIndex(page);
+
+    await page.locator(".theme-switcher-select").selectOption("cosmic");
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "cosmic");
+
+    const stored = await page.evaluate(() => localStorage.getItem("siteThemeId"));
+    expect(stored).toBe("cosmic");
+
+    // Persists on reload of the same page.
+    await page.reload();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "cosmic");
+    await expect(page.locator(".theme-switcher-select")).toHaveValue("cosmic");
+
+    // Persists onto the album page and its switcher reflects the choice.
+    await page.goto("/album.html?id=jean-michel-jarre-oxygene");
+    await expect(page.getByRole("heading", { name: "Oxygène", level: 1 })).toBeVisible();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "cosmic");
+    await expect(page.locator(".theme-switcher-select")).toHaveValue("cosmic");
+
+    // And onto the credits page.
+    await page.goto("/credits.html");
+    await expect(page.getByRole("heading", { name: /Credits/i })).toBeVisible();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "cosmic");
+  });
+
+  test("the theme switcher lets the album page change theme in place", async ({ page }) => {
+    await page.goto("/album.html?id=jean-michel-jarre-oxygene");
+    await expect(page.getByRole("heading", { name: "Oxygène", level: 1 })).toBeVisible();
+
+    await page.locator(".theme-switcher-select").selectOption("sega");
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "sega");
+    expect(await page.evaluate(() => localStorage.getItem("siteThemeId"))).toBe("sega");
+  });
+
+  test("an unknown stored theme falls back to the default", async ({ page }) => {
+    await page.addInitScript(() => {
+      localStorage.setItem("siteThemeId", "not-a-real-theme");
+    });
+
+    await gotoIndex(page);
+
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+    await expect(page.locator(".theme-switcher-select")).toHaveValue("dark");
+  });
+
+  test("theme helpers cover registry lookups and unknown-id fallbacks", async ({ page }) => {
+    await gotoIndex(page);
+
+    const result = await page.evaluate(async () => {
+      const themePath = "/src/theme.ts";
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const theme: any = await import(themePath);
+
+      // Unknown ids never leave the document without a theme.
+      theme.setTheme("bogus");
+      const afterBogus = document.documentElement.dataset["theme"];
+      const storedAfterBogus = localStorage.getItem("siteThemeId");
+
+      theme.setTheme("retro");
+      const afterRetro = document.documentElement.dataset["theme"];
+
+      const switcherHtml = theme.renderThemeSwitcher() as string;
+
+      // bindThemeControls is a no-op on a container without the control.
+      const empty = document.createElement("div");
+      theme.bindThemeControls(empty);
+
+      return {
+        knownDark: theme.isKnownTheme("dark"),
+        knownBogus: theme.isKnownTheme("bogus"),
+        knownNull: theme.isKnownTheme(null),
+        defaultId: theme.DEFAULT_THEME_ID,
+        afterBogus,
+        storedAfterBogus,
+        afterRetro,
+        switcherHasRetroSelected: switcherHtml.includes('value="retro" selected'),
+      };
+    });
+
+    expect(result.knownDark).toBe(true);
+    expect(result.knownBogus).toBe(false);
+    expect(result.knownNull).toBe(false);
+    expect(result.defaultId).toBe("dark");
+    expect(result.afterBogus).toBe("dark");
+    expect(result.storedAfterBogus).toBe("dark");
+    expect(result.afterRetro).toBe("retro");
+    expect(result.switcherHasRetroSelected).toBe(true);
+  });
+
   test("credits page renders all sections with nav and footer", async ({ page }) => {
     await page.goto("/credits.html");
 

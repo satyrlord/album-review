@@ -6,8 +6,15 @@
 @source "./*.ts";
 
 @plugin "daisyui" {
-  themes: dark --default --prefersdark;
+  themes: dark --default --prefersdark, cosmic, retro, vintage, sega, minimal;
 }
+
+/* ── Themes ─────────────────────────────────────────────────
+   `dark` is the default and the historical ALBANA look. The other
+   themes are selectable through the hero theme switcher (see theme.ts).
+   Every theme keeps --color-primary as a bright, WCAG-AA action colour so
+   btn-primary text contrast holds, and sets --font-brand as the display
+   face applied by .ix-brand-title and the album/credits h1 selectors. */
 
 @plugin "daisyui/theme" {
   name: "dark";
@@ -46,6 +53,187 @@
   --noise: 0;
 }
 
+/* Cosmic — deep sci-fi navy with electric blue + violet neon accents.
+   The closest sibling to the default dark look; keeps the glow language. */
+@plugin "daisyui/theme" {
+  name: "cosmic";
+  color-scheme: dark;
+
+  --color-base-100: #06080f;
+  --color-base-200: #0d1120;
+  --color-base-300: #161c31;
+  --color-base-content: #e6ecff;
+  --color-primary: #4cc9ff;
+  --color-primary-content: #041019;
+  --color-secondary: #b388ff;
+  --color-secondary-content: #120a29;
+  --color-accent: #8b5cf6;
+  --color-accent-content: #f4f0ff;
+  --color-neutral: #1b2138;
+  --color-neutral-content: #eef2ff;
+  --color-info: #7bd8ff;
+  --color-info-content: #06131c;
+  --color-success: #3ee6a0;
+  --color-success-content: #04180f;
+  --color-warning: #ffc04c;
+  --color-warning-content: #251900;
+  --color-error: #ff5c8a;
+  --color-error-content: #2a0611;
+
+  --radius-selector: 9999px;
+  --radius-field: 1rem;
+  --radius-box: 1.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+/* Retro — warm nostalgic dark palette, amber + teal, softer neon. */
+@plugin "daisyui/theme" {
+  name: "retro";
+  color-scheme: dark;
+
+  --color-base-100: #1a1410;
+  --color-base-200: #241b15;
+  --color-base-300: #31251c;
+  --color-base-content: #f3e9d8;
+  --color-primary: #f5b642;
+  --color-primary-content: #241600;
+  --color-secondary: #ff7a59;
+  --color-secondary-content: #2a0a02;
+  --color-accent: #46c8b6;
+  --color-accent-content: #052420;
+  --color-neutral: #2f2419;
+  --color-neutral-content: #f6efe2;
+  --color-info: #7ec8e3;
+  --color-info-content: #06151d;
+  --color-success: #9ccc65;
+  --color-success-content: #12210a;
+  --color-warning: #f5b642;
+  --color-warning-content: #241600;
+  --color-error: #e8563f;
+  --color-error-content: #2a0700;
+
+  --radius-selector: 9999px;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+/* Vintage — light 90s-desktop grey with teal, pixel display type, hard edges. */
+@plugin "daisyui/theme" {
+  name: "vintage";
+  color-scheme: light;
+
+  --color-base-100: #d6d3c4;
+  --color-base-200: #c7c3b2;
+  --color-base-300: #b3ae9b;
+  --color-base-content: #211d15;
+  --color-primary: #0f6f6f;
+  --color-primary-content: #ecfbfb;
+  --color-secondary: #a24b2e;
+  --color-secondary-content: #fdeee7;
+  --color-accent: #6a4fb0;
+  --color-accent-content: #f3f0fc;
+  --color-neutral: #7b7666;
+  --color-neutral-content: #f7f5ee;
+  --color-info: #2b6ea3;
+  --color-info-content: #eef6fc;
+  --color-success: #2f7d46;
+  --color-success-content: #eefbef;
+  --color-warning: #9a6a12;
+  --color-warning-content: #fdf5e6;
+  --color-error: #a12f26;
+  --color-error-content: #fdeeed;
+
+  --radius-selector: 0.25rem;
+  --radius-field: 0.125rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 1;
+  --noise: 0;
+}
+
+/* Sega — arcade cabinet: deep indigo/purple with hot yellow, pixel type. */
+@plugin "daisyui/theme" {
+  name: "sega";
+  color-scheme: dark;
+
+  --color-base-100: #120b2e;
+  --color-base-200: #1b1140;
+  --color-base-300: #271a55;
+  --color-base-content: #f4f1ff;
+  --color-primary: #ffd614;
+  --color-primary-content: #221a00;
+  --color-secondary: #ff4fa3;
+  --color-secondary-content: #2a0417;
+  --color-accent: #35e0ff;
+  --color-accent-content: #041a1f;
+  --color-neutral: #241a52;
+  --color-neutral-content: #f4f1ff;
+  --color-info: #35e0ff;
+  --color-info-content: #041a1f;
+  --color-success: #37e35f;
+  --color-success-content: #04200e;
+  --color-warning: #ffd614;
+  --color-warning-content: #221a00;
+  --color-error: #ff5252;
+  --color-error-content: #2a0404;
+
+  --radius-selector: 0.25rem;
+  --radius-field: 0.125rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 1;
+  --noise: 0;
+}
+
+/* Minimal — bright near-white canvas, restrained ink + indigo accent. */
+@plugin "daisyui/theme" {
+  name: "minimal";
+  color-scheme: light;
+
+  --color-base-100: #f7f7f4;
+  --color-base-200: #ededea;
+  --color-base-300: #e0e0dc;
+  --color-base-content: #14140f;
+  --color-primary: #1f1f1a;
+  --color-primary-content: #f7f7f4;
+  --color-secondary: #312c85;
+  --color-secondary-content: #eeecff;
+  --color-accent: #4338ca;
+  --color-accent-content: #eef0ff;
+  --color-neutral: #6b6b63;
+  --color-neutral-content: #f7f7f4;
+  --color-info: #1d5fa8;
+  --color-info-content: #eef5fc;
+  --color-success: #1f7a44;
+  --color-success-content: #eefbef;
+  --color-warning: #8a5a12;
+  --color-warning-content: #fdf5e6;
+  --color-error: #b42318;
+  --color-error-content: #fdeeed;
+
+  --radius-selector: 9999px;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
 @theme {
   --font-sans: "DM Sans", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
@@ -58,12 +246,31 @@
   --surface2: var(--color-base-300);
   --panel-border: rgba(255, 255, 255, 0.12);
   --text: var(--color-base-content);
-  --text-dim: rgba(231, 227, 221, 0.65);
+  --text-dim: color-mix(in srgb, var(--color-base-content) 65%, transparent);
   --accent: var(--color-primary);
   --accent2: var(--color-secondary);
   --accent3: var(--color-accent);
   --time: var(--color-warning);
   --warn: var(--color-error);
+  /* Display face for the ALBANA wordmark and page h1s. Each theme overrides
+     it with a period-appropriate face; the default keeps Orbitron. */
+  --font-brand: "Orbitron";
+}
+
+/* Per-theme display faces. Body copy (DM Sans) and monospace chrome
+   (JetBrains Mono) stay constant so metadata and timestamps read the same
+   across themes; only the display/brand face changes. */
+[data-theme="cosmic"]  { --font-brand: "Audiowide"; }
+[data-theme="retro"]   { --font-brand: "Macondo"; }
+[data-theme="vintage"] { --font-brand: "Silkscreen"; }
+[data-theme="sega"]    { --font-brand: "VT323"; }
+[data-theme="minimal"] { --font-brand: var(--font-display); }
+
+/* Light themes have no white glass to sit on; use a dark ink for panel
+   borders and quiet the body glow overlays so the bright canvas stays clean. */
+[data-theme="vintage"],
+[data-theme="minimal"] {
+  --panel-border: color-mix(in srgb, var(--color-base-content) 18%, transparent);
 }
 
 html {
@@ -169,7 +376,7 @@ a {
 }
 
 .ix-brand-title {
-  font-family: "Orbitron", var(--font-display), sans-serif;
+  font-family: var(--font-brand), var(--font-display), sans-serif;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -281,6 +488,28 @@ a {
 }
 
 .ix-sort-select {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+/* Hero theme switcher — a compact chrome control that mirrors the sort
+   select. Rendered in every page hero by renderThemeSwitcher() (theme.ts). */
+.theme-switcher {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.55rem;
+}
+
+.theme-switcher-label {
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.theme-switcher-select {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.08em;
