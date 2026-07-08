@@ -769,11 +769,6 @@ test.describe("album index regressions", () => {
       // No inline width is set; the bar fills its grid cell via CSS.
       expect(width).toBe("");
     }
-
-    // The color legend names every distinct section once.
-    const legend = chart.locator(".segment-legend");
-    await expect(legend).toHaveCount(1);
-    await expect(legend.locator(".segment-legend-item").first()).toBeAttached();
   });
 
   test("album page provides a back-to-top control on long pages", async ({ page }) => {

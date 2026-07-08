@@ -251,15 +251,10 @@ Rules:
   breakdown of that one track's runtime — not the track's length
   relative to other tracks.
 - Section colors are stable per section name across the whole chart, so
-  "Peak" is the same color in every row *and* in the legend.
-  `resolveSectionColors()` assigns one color per distinct name (keyed by
-  `foldKey`), resolving hash collisions from `sectionColorIndex()` once
-  globally instead of shifting colors per row.
-- A `.segment-legend` (aria-hidden decorative key) follows the rows,
-  mapping each section swatch to its name. It is hidden from assistive
-  tech because every row already names its sections in the `sr-only`
-  summary, keeping the `role="list"` container free of non-`listitem`
-  children.
+  "Peak" is the same color in every row. `resolveSectionColors()` assigns
+  one color per distinct name (keyed by `foldKey`), resolving hash
+  collisions from `sectionColorIndex()` once globally instead of shifting
+  colors per row.
 - When a row has an `href`, the `.segment-row-label` renders an anchor
   whose `aria-label` is a plain-language summary (label, duration,
   section list). Rows without links carry the same summary in an

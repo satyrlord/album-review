@@ -1134,34 +1134,6 @@ a {
   text-transform: uppercase;
 }
 
-.segment-legend {
-  border-top: 1px solid var(--panel-border);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.1rem;
-  margin-top: 0.35rem;
-  padding-top: 1.1rem;
-}
-
-.segment-legend-item {
-  align-items: center;
-  color: var(--text-dim);
-  display: flex;
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  gap: 0.45rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.segment-legend-swatch {
-  border-radius: 3px;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
-  display: inline-block;
-  height: 0.7rem;
-  width: 0.7rem;
-}
-
 @media (max-width: 1024px) {
   .hero-layout.has-cover {
     grid-template-columns: minmax(0, 1fr);

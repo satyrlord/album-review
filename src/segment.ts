@@ -99,10 +99,9 @@ export function sectionColorIndex(title: string, paletteSize: number): number {
 /**
  * Assign each distinct section name one stable color, resolving hash
  * collisions once for the whole chart. Because the mapping is global,
- * a section is the same color in every bar *and* in the legend — no
- * per-row shifting that would make the legend lie. Names are keyed by
- * `foldKey` so casing/spacing variants share a color; the first-seen
- * spelling is used as the legend label.
+ * a section is the same color in every bar — no per-row shifting that
+ * would misrepresent the sections. Names are keyed by `foldKey` so
+ * casing/spacing variants share a color.
  */
 export function resolveSectionColors(
   rows: SegmentRow[],
@@ -232,45 +231,4 @@ export function buildSegmentChart(
     rowEl.appendChild(durationEl);
     element.appendChild(rowEl);
   }
-
-  appendLegend(element, sectionColors);
-}
-
-/**
- * Append a color key mapping each section name to its swatch. It is
- * decorative reinforcement — every row already names its sections in the
- * `sr-only` summary — so it is hidden from assistive tech to keep the
- * `role="list"` container free of non-`listitem` children.
- */
-function appendLegend(
-  element: HTMLElement,
-  sectionColors: Map<string, { label: string; color: string }>,
-): void {
-  if (sectionColors.size === 0) return;
-
-  const legend = document.createElement('div');
-  legend.classList.add('segment-legend');
-  legend.setAttribute('aria-hidden', 'true');
-
-  const entries = Array.from(sectionColors.values())
-    .sort((a, b) => a.label.localeCompare(b.label));
-
-  for (const { label, color } of entries) {
-    const item = document.createElement('div');
-    item.classList.add('segment-legend-item');
-
-    const swatch = document.createElement('span');
-    swatch.classList.add('segment-legend-swatch');
-    swatch.style.backgroundColor = color;
-
-    const text = document.createElement('span');
-    text.classList.add('segment-legend-label');
-    text.textContent = label;
-
-    item.appendChild(swatch);
-    item.appendChild(text);
-    legend.appendChild(item);
-  }
-
-  element.appendChild(legend);
 }
