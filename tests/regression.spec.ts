@@ -62,6 +62,13 @@ test.describe("album index regressions", () => {
     await expect(page.locator(".site-footer-credits")).toHaveAttribute("href", /credits\.html$/);
     await expect(page.locator(".ix-card")).toHaveCount(totalAlbums);
     await expect(page.locator("#ixCount")).toHaveText(`${totalAlbums} / ${totalAlbums} albums`);
+
+    const sort = page.getByLabel("Sort albums");
+    for (const option of ["year-desc", "artist-asc", "title-asc", "tracks-desc", "year-asc"]) {
+      await sort.selectOption(option);
+      await expect(sort).toHaveValue(option);
+      await expect(page.locator(".ix-card")).toHaveCount(totalAlbums);
+    }
   });
 
   test("renders a shared footer with a clickable version badge", async ({ page }) => {
@@ -378,6 +385,7 @@ test.describe("album index regressions", () => {
         "missing-grid": "ixGrid",
         "missing-search": "ixSearch",
         "missing-count": "ixCount",
+        "missing-sort": "ixSort",
       };
 
       Document.prototype.getElementById = function(id: string): HTMLElement | null {
@@ -389,7 +397,7 @@ test.describe("album index regressions", () => {
       };
     });
 
-    for (const fixture of ["missing-grid", "missing-search", "missing-count"]) {
+    for (const fixture of ["missing-grid", "missing-search", "missing-count", "missing-sort"]) {
       await page.goto(`/index.html?fixture=${fixture}`);
       await expect(page.getByRole("heading", { name: "ALBANA" })).toBeVisible();
       await expect(page.locator("#siteNav")).toHaveCount(0);      // replaced by hero

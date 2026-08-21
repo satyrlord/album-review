@@ -51,7 +51,7 @@ export interface AlbumData {
   label: string;
   producer: string;
   genre: string;
-  /** 1–9 individual genre/subgenre tags derived from genre by splitting "/" and trimming whitespace; must include at least one non-empty tag */
+  /** 1–9 curated genre/subgenre tags used for discovery; scaffold defaults come from genre */
   genreTags: string[];
   /** Total runtime in M:SS or H:MM:SS format */
   runtime: string;
@@ -79,7 +79,7 @@ export interface AlbumIndexEntry {
   year: number;
   tracks: number;
   genre: string;
-  /** 1–9 individual genre/subgenre tags derived from genre by splitting "/" and trimming whitespace */
+  /** 1–9 curated genre/subgenre tags copied from the source album */
   genreTags: string[];
   /** Optional remote or local thumbnail URL for the album cover */
   coverUrl?: string;

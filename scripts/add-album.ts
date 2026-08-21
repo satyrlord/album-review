@@ -28,6 +28,7 @@ import { toAlbumIndexEntry, writeAlbumIndexFile } from "./albums/album-index.js"
 import { cacheCover, getCoverCachePath } from "./albums/cover-cache.js";
 import type { AlbumData } from "../src/shared/schema.js";
 import { Track, slugify, buildJson } from "./albums/album-scaffold.js";
+import { resolveAlbumYear } from "./albums/album-year.js";
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 
@@ -216,47 +217,29 @@ function parseArgs(): {
   return { artist, title, year, genre, mbid, dryRun };
 }
 
-interface ResolvedRelease {
-  mbid: string;
-  releaseDate: string;
-  resolvedYear: number;
-}
-
 async function resolveRelease(
   artist: string, title: string, year: number, providedMbid: string,
-): Promise<ResolvedRelease> {
-  let mbid = providedMbid;
-  let resolvedYear = year;
-  let releaseDate = year ? String(year) : "";
-
-  if (!mbid) {
-    const yearLabel = year ? ` (${year})` : "";
-    console.log(`[1/4] Searching MusicBrainz for '${title}' by ${artist}${yearLabel}…`);
-    const release = await searchRelease(artist, title, year);
-    if (!release) {
-      console.error("      No release found. Try --mbid <id> to specify one directly.");
-      console.error("      Search at: https://musicbrainz.org/release/");
-      process.exit(1);
-    }
-    mbid        = release.id;
-    releaseDate = release.date ?? releaseDate;
-    if (!resolvedYear && releaseDate) {
-      resolvedYear = parseInt(releaseDate.slice(0, 4), 10) || new Date().getFullYear();
-    }
-    if (!resolvedYear) resolvedYear = new Date().getFullYear();
-    console.log(`      Found: ${release.title} (${releaseDate})  MBID: ${mbid}`);
-  } else {
-    console.log(`[1/4] Using provided MBID: ${mbid}`);
-    if (!resolvedYear) resolvedYear = new Date().getFullYear();
+): Promise<string> {
+  if (providedMbid) {
+    console.log(`[1/4] Using provided MBID: ${providedMbid}`);
+    return providedMbid;
   }
 
-  return { mbid, releaseDate, resolvedYear };
+  console.log(`[1/4] Searching MusicBrainz for '${title}' by ${artist}…`);
+  const release = await searchRelease(artist, title, year);
+  if (!release) {
+    console.error("      No release found. Try --mbid <id> to specify one directly.");
+    console.error("      Search at: https://musicbrainz.org/release/");
+    process.exit(1);
+  }
+
+  console.log(`      Found: ${release.title}  MBID: ${release.id}`);
+  return release.id;
 }
 
-async function getTracks(mbid: string, mbidProvided: boolean): Promise<{ tracks: Track[]; releaseDate: string }> {
+async function getTracks(mbid: string): Promise<{ tracks: Track[]; releaseDate: string }> {
   console.log("[2/4] Fetching track listing…");
   const result = await fetchTracks(mbid);
-  const releaseDate = (result.releaseDate && !mbidProvided) ? result.releaseDate : "";
   if (!result.tracks.length) {
     console.error("      No tracks returned. Check the MBID or try a different release.");
     process.exit(1);
@@ -267,7 +250,7 @@ async function getTracks(mbid: string, mbidProvided: boolean): Promise<{ tracks:
     const dur = t.lengthMs ? msToMmss(t.lengthMs) : "?:??";
     console.log(`        ${String(t.num).padStart(2)}. ${t.title}  [${dur}]`);
   }
-  return { tracks: result.tracks, releaseDate: releaseDate || result.releaseDate };
+  return result;
 }
 
 async function resolveCover(
@@ -327,11 +310,12 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  const release = await resolveRelease(artist, title, year, mbidArg);
-  const { tracks } = await getTracks(release.mbid, !!mbidArg);
+  const mbid = await resolveRelease(artist, title, year, mbidArg);
+  const { tracks, releaseDate } = await getTracks(mbid);
   const cachedCoverUrl = await resolveCover(artist, title, id, dryRun);
 
-  const jsonData = buildJson(id, artist, title, release.resolvedYear, genre, tracks, cachedCoverUrl);
+  const resolvedYear = resolveAlbumYear(year, releaseDate, new Date().getFullYear());
+  const jsonData = buildJson(id, artist, title, resolvedYear, genre, tracks, cachedCoverUrl);
   writeOutput(jsonData, dataDir, outPath, id, dryRun);
 }
 

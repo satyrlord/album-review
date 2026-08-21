@@ -27,10 +27,11 @@ src/shared/validate.ts     ← per-record AlbumData validation (beside the schem
 public/covers/             ← versioned local cover-art cache served directly by Vite
 
 scripts/build.ts           ← full quality gate: data validation, Vite build, typecheck, markdownlint, coverage
+scripts/quality-gate-steps.ts ← fail-fast, testable quality-gate step runner
 scripts/test-coverage.ts   ← Playwright + nyc coverage runner and threshold enforcement
 scripts/add-album.ts       ← MusicBrainz/Wikipedia album JSON scaffolder
 scripts/cache-cover-art.ts ← downloads remote cover sources into public/covers/ and rewrites data/*.json to local paths
-scripts/albums/*.ts        ← album data indexing, cross-file checks, and scaffold helpers
+scripts/albums/*.ts        ← album data indexing, release-year resolution, cross-file checks, and scaffold helpers
 
 vitest.config.ts           ← Vitest unit-test config with the src/shared coverage gate
 tests/baseFixtures.ts      ← Playwright fixtures, including Istanbul coverage capture
@@ -91,6 +92,9 @@ The `data/` directory is copied into `dist/data/` during the build.
 5. Runs the Vitest unit suite with the `src/shared/**` coverage gate.
 6. Runs the browser coverage gate through Playwright and nyc.
 
+The runner stops at the first failed step. Later steps never run against an
+invalid data set or a failed build.
+
 `npm run serve` and the Playwright web server both use Vite directly rather than a custom local server script.
 
 ## Architecture Decisions
@@ -128,7 +132,7 @@ The `data/` directory is copied into `dist/data/` during the build.
   file) covers the page modules; Vitest enforces its own independent
   80% threshold scoped to `src/shared/**` (report in `coverage-unit/`).
   No merging of coverage streams.
-- **Validation split by concern**: per-record checks live in
+- **Validation split by concern**: recursive per-record checks live in
   `src/shared/validate.ts` (pure, beside the schema type, unit-gated by
   Vitest); cross-file checks (id↔filename, duplicate ids) live in
   `scripts/albums/album-index.ts` and run inside `readAlbumDataDir`;

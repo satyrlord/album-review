@@ -376,11 +376,7 @@ function bootCollectionPage(): void {
     applyStoredBg();
 
     try {
-      allAlbums = (await loadAlbums()).slice().sort((left, right) =>
-        left.year - right.year
-        || left.artist.localeCompare(right.artist)
-        || left.title.localeCompare(right.title)
-      );
+      allAlbums = sortAlbums(await loadAlbums(), 'year-asc');
     } catch (error: unknown) {
       showError(error instanceof Error ? error.message : 'Could not load album data.');
       return;

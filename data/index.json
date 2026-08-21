@@ -1,5 +1,20 @@
 [
   {
+    "id": "arecibo-trans-plutonian-transmissions",
+    "artist": "Arecibo",
+    "title": "Trans Plutonian Transmissions",
+    "year": 2009,
+    "tracks": 6,
+    "genre": "Dark Ambient / Space Ambient",
+    "genreTags": [
+      "Dark Ambient",
+      "Space Ambient",
+      "Drone",
+      "Electronic"
+    ],
+    "coverUrl": "covers/arecibo-trans-plutonian-transmissions.jpg"
+  },
+  {
     "id": "brian-eno-music-for-films",
     "artist": "Brian Eno",
     "title": "Music for Films",
@@ -11,7 +26,7 @@
       "Soundtrack",
       "Electronic"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Brian_Eno_-_Music_for_Films.jpg/330px-Brian_Eno_-_Music_for_Films.jpg",
+    "coverUrl": "covers/brian-eno-music-for-films.jpg",
     "isSoundtrack": true
   },
   {
@@ -27,7 +42,7 @@
       "Drone",
       "Electronic"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/93/Brian_Eno_On_Land.jpg"
+    "coverUrl": "covers/brian-eno-ambient-4-on-land.jpg"
   },
   {
     "id": "brian-eno-apollo",
@@ -57,7 +72,7 @@
       "Ambient",
       "Electronic"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/77/Cluster_%26_Eno.jpg"
+    "coverUrl": "covers/cluster-eno-cluster-eno.jpg"
   },
   {
     "id": "edgar-froese-epsilon-in-malaysian-pale",
@@ -114,7 +129,7 @@
       "Art Rock",
       "Electronic"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Fripp_%26_Eno%27s_Evening_Star.jpg"
+    "coverUrl": "covers/fripp-eno-evening-star.jpg"
   },
   {
     "id": "gas-0095",
@@ -129,7 +144,7 @@
       "Electronic",
       "Experimental"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/93/Gas0095b.jpg"
+    "coverUrl": "covers/gas-0095.jpg"
   },
   {
     "id": "global-communication-76-14",
@@ -172,7 +187,7 @@
       "Neo-Classical",
       "Electronic"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/a/a5/The_Plateaux_of_Mirror.jpg"
+    "coverUrl": "covers/harold-budd-brian-eno-ambient-2-the-plateaux-of-mirror.jpg"
   },
   {
     "id": "harold-budd-brian-eno-the-pearl",
@@ -187,7 +202,7 @@
       "Electronic",
       "Neo-Classical"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/6/65/Budd_%26_Eno%27s_The_Pearl.jpg"
+    "coverUrl": "covers/harold-budd-brian-eno-the-pearl.jpg"
   },
   {
     "id": "jean-michel-jarre-oxygene",
@@ -306,7 +321,7 @@
       "Electronic",
       "World"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e9/PossibleMusics%28Eno%26Hassell%29.jpg"
+    "coverUrl": "covers/jon-hassell-brian-eno-fourth-world-vol-1.jpg"
   },
   {
     "id": "klaus-schulze-irrlicht",
@@ -366,7 +381,7 @@
       "Electronic",
       "Ambient"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/Trancefer_Klaus_Schulze_Album.jpg"
+    "coverUrl": "covers/klaus-schulze-trancefer.jpg"
   },
   {
     "id": "matt-uelmen-diablo-hellfire",
@@ -410,7 +425,7 @@
       "Ambient",
       "Folk"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/1/16/Mike_oldfield_ommadawn_album_cover.jpg"
+    "coverUrl": "covers/mike-oldfield-ommadawn.jpg"
   },
   {
     "id": "mike-oldfield-tubular-bells-ii",
@@ -537,7 +552,7 @@
       "Art Rock",
       "Electronic"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Frippenopussyfooting.jpg"
+    "coverUrl": "covers/robert-fripp-brian-eno-no-pussyfooting.jpg"
   },
   {
     "id": "tangerine-dream-zeit",
@@ -597,7 +612,7 @@
       "Electronic",
       "Ambient"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/4/45/Exit_%28Tangerine_Dream_album%29.png"
+    "coverUrl": "covers/tangerine-dream-exit.png"
   },
   {
     "id": "tangerine-dream-hyperborea",
@@ -627,7 +642,7 @@
       "Chillout",
       "Electronic"
     ],
-    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/9f/The_Irresistible_Force_-_Global_Chillage.jpg"
+    "coverUrl": "covers/the-irresistible-force-global-chillage.jpg"
   },
   {
     "id": "the-prodigy-music-for-the-jilted-generation",
@@ -656,6 +671,19 @@
       "Breakbeat"
     ],
     "coverUrl": "covers/the-prodigy-fat-of-the-land.jpg"
+  },
+  {
+    "id": "trees-of-eternity-hour-of-the-nightingale",
+    "artist": "Trees of Eternity",
+    "title": "Hour of the Nightingale",
+    "year": 2016,
+    "tracks": 10,
+    "genre": "Gothic Doom Metal / Atmospheric Doom",
+    "genreTags": [
+      "Gothic Doom Metal",
+      "Atmospheric Doom"
+    ],
+    "coverUrl": "covers/trees-of-eternity-hour-of-the-nightingale.jpg"
   },
   {
     "id": "vangelis-heaven-and-hell",

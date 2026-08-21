@@ -1,0 +1,356 @@
+{
+  "id": "arecibo-trans-plutonian-transmissions",
+  "artist": "Arecibo",
+  "title": "Trans Plutonian Transmissions",
+  "year": 2009,
+  "label": "Soleilmoon Recordings",
+  "producer": "Brian Williams (Lustmord)",
+  "genre": "Dark Ambient / Space Ambient",
+  "genreTags": [
+    "Dark Ambient",
+    "Space Ambient",
+    "Drone",
+    "Electronic"
+  ],
+  "runtime": "65:33",
+  "coverUrl": "covers/arecibo-trans-plutonian-transmissions.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/4J7hjamZZGZR1625eiLGck",
+  "youtubeUrl": "https://www.youtube.com/watch?v=96ic1d46gAw",
+  "overview": "Trans Plutonian Transmissions is the sole album Brian Williams — the Welsh dark-ambient pioneer Lustmord — released under the Arecibo alias, named after the Arecibo Observatory radio telescope in Puerto Rico. First issued in 1994 and presented here in the 2009 Soleilmoon Recordings remaster (sol 152 cd), it transfers the Lustmord method — cavernous reverberant space, sub-bass pressure, slow textural accretion — from crypts and caves to deep space, building its six pieces around radio-telescope signal recordings; it remains the standard citation for dark ambient constructed from radio-astronomy source material. Each title pairs a catalogued deep-sky radio source with a procedural sub-title, so the album plays as a single observation session: the radio galaxy NGC 5128 (Centaurus A), the quasar 3C147, M87 (Virgo A), the interacting galaxy pair NGC 5426/5427, and the radio galaxy 3C295.\n\nStructurally the record is six beatless long-form transmissions totalling 65:33 — no percussion, no melodic lead, only layered drones, filtered noise bands, heterodyne whistles, and intermittent signal events. The arc moves from calibration (\"Receiving Station Alignment\") through progressively stranger signal behaviour — a timing discrepancy, field modulation, an anomalous intermittent source — to the closing \"Pulse Burst Decryption\", the album's densest and most active listening.\n\nTimestamps are proportionally estimated to ±10 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "NGC 5128 Receiving Station Alignment",
+      "duration": "10:37",
+      "energy": "low",
+      "tags": [
+        "Opener",
+        "Drone",
+        "Radio Static",
+        "Calibration Conceit"
+      ],
+      "role": "Album role: The calibration opener — the dish swings onto its first target, establishing the album's signal vocabulary of static floor, sub-bass drone, and drifting heterodyne sweeps before any deep-sky material arrives.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A band of filtered static fades in from silence — the receiver noise floor that underpins the entire album.",
+          "detail": "NGC 5128 is the radio galaxy Centaurus A, one of the brightest radio sources in the sky and a natural first target for an alignment pass."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Drone entry",
+          "description": "A sub-bass fundamental rises beneath the static, more pressure than pitch, setting the album's low-end register."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Signal sweep",
+          "description": "A slow heterodyne whistle glides across the stereo field like a dish slewing across the sky in search of lock."
+        },
+        {
+          "timestamp": "4:15",
+          "section": "Layering",
+          "description": "A second drone enters above the fundamental, the two beating slowly against each other in near-unison."
+        },
+        {
+          "timestamp": "5:45",
+          "section": "Noise swell",
+          "description": "The mid-band static thickens into a broadband wash, briefly masking the drones before receding."
+        },
+        {
+          "timestamp": "7:10",
+          "section": "Alignment",
+          "description": "The texture locks into a stable configuration — drones steady, sweeps stilled — as if the station has acquired its target."
+        },
+        {
+          "timestamp": "8:40",
+          "section": "Recession",
+          "description": "Upper partials are filtered away layer by layer, leaving only the fundamental and the noise floor."
+        },
+        {
+          "timestamp": "10:05",
+          "section": "Outro",
+          "description": "The sub-bass fades beneath the residual static, which carries over into the next transmission."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "3C147 Beyond the Heart of Space",
+      "duration": "13:48",
+      "energy": "low",
+      "tags": [
+        "Extended Piece",
+        "Deep Drift",
+        "Quasar Source",
+        "Album Centrepiece"
+      ],
+      "role": "Album role: The album's longest piece and its deepest drift — the first true deep-sky observation, sustaining a near-static drone field for almost fourteen minutes with only glacial internal movement.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low drone emerges from the carried-over static, darker in timbre than the opener's calibration tones.",
+          "detail": "3C147 is a compact steep-spectrum quasar from the Third Cambridge Catalogue of Radio Sources — among the most distant objects named on the album."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Expansion",
+          "description": "Reverberant space widens dramatically as a second, higher drone layer smears across the field."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Signal motif",
+          "description": "A faint periodic tone surfaces inside the drones — the piece's only recurring melodic identity, barely above the noise floor."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Sub-bass swell",
+          "description": "The low end deepens in a long crescendo, adding physical weight without any change in harmonic content."
+        },
+        {
+          "timestamp": "7:20",
+          "section": "Stasis",
+          "description": "The texture reaches its fullest density and holds — a suspended, directionless field with no pulse or progression."
+        },
+        {
+          "timestamp": "9:10",
+          "section": "Modulation",
+          "description": "A slow filter sweep tilts the spectral balance toward the mid-band, the drones seeming to rotate rather than move."
+        },
+        {
+          "timestamp": "10:50",
+          "section": "Thinning",
+          "description": "Layers withdraw one at a time, the periodic tone resurfacing briefly as the density falls."
+        },
+        {
+          "timestamp": "12:20",
+          "section": "Deep fade",
+          "description": "Only the sub-bass and static remain, decaying at an almost imperceptible rate."
+        },
+        {
+          "timestamp": "13:30",
+          "section": "Outro",
+          "description": "The transmission closes on the bare noise floor, the source lost beyond the heart of space."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "M87 The Four Second Timing Discrepancy",
+      "duration": "11:23",
+      "energy": "low",
+      "tags": [
+        "Pulse Cycle",
+        "Drone",
+        "Virgo A Source",
+        "Rhythmic Conceit"
+      ],
+      "role": "Album role: The album's rhythmic conceit — a slow recurring pulse cycle, the \"timing discrepancy\" of the title, gives the drift its only periodic structure and marks the record's mid-point.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A hollow drone opens the piece, colder and more metallic than the preceding transmissions.",
+          "detail": "M87 (Virgo A) is the giant elliptical galaxy whose supermassive black hole was the subject of the first-ever black-hole image in 2019 — on this 1994 recording it is simply a bright, steady radio source."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "Pulse entry",
+          "description": "A dull periodic thud begins repeating on a slow cycle — the timing discrepancy of the title, felt as an irregularity rather than a beat."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Layering",
+          "description": "Drone strata accumulate around the pulse, each repeat of the cycle slightly out of phase with the last."
+        },
+        {
+          "timestamp": "4:40",
+          "section": "Drift",
+          "description": "The pulse recedes into the reverb tail while a high, thin whistle traces slow arcs overhead."
+        },
+        {
+          "timestamp": "6:20",
+          "section": "Pulse return",
+          "description": "The cycle re-emerges louder and closer, its period audibly slipping against the drones beneath it."
+        },
+        {
+          "timestamp": "8:00",
+          "section": "Density peak",
+          "description": "Pulse, drones, and static reach their thickest overlap — the track's most active passage."
+        },
+        {
+          "timestamp": "9:40",
+          "section": "Breakdown",
+          "description": "The pulse halts abruptly, leaving the drones exposed and the discrepancy unresolved."
+        },
+        {
+          "timestamp": "10:55",
+          "section": "Outro",
+          "description": "The remaining layers fade to static, the cycle never returning."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "NGC 5426 Unified Field Modulation",
+      "duration": "7:31",
+      "energy": "low",
+      "tags": [
+        "Interlude",
+        "Filter Modulation",
+        "Galaxy Pair I"
+      ],
+      "role": "Album role: The album's shortest piece and its pivot — first half of the paired NGC 5426/5427 observations, a compact study in continuous filter modulation before the anomalies of its companion track.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A single mid-register drone fades in, unusually plain and unadorned for the album.",
+          "detail": "NGC 5426 and NGC 5427 are an interacting pair of spiral galaxies catalogued together as Arp 271 — the album observes them across two consecutive tracks."
+        },
+        {
+          "timestamp": "1:15",
+          "section": "Modulation onset",
+          "description": "A slow low-pass filter begins sweeping the drone, its spectrum breathing open and closed on a long cycle."
+        },
+        {
+          "timestamp": "2:45",
+          "section": "Layering",
+          "description": "A sub-bass layer joins beneath, modulated on a different period so the two cycles slide against each other."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Convergence",
+          "description": "The modulation cycles briefly align — the \"unified field\" of the title — producing the track's single moment of full-spectrum swell."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Divergence",
+          "description": "The cycles drift apart again, the texture thinning as the filters close."
+        },
+        {
+          "timestamp": "7:00",
+          "section": "Outro",
+          "description": "The drone contracts to a narrow band and fades, handing off directly to the companion observation."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "NGC 5427 Anomalous Intermittent Radio Source",
+      "duration": "10:16",
+      "energy": "low",
+      "tags": [
+        "Signal Bursts",
+        "Drone",
+        "Galaxy Pair II",
+        "Event-Based Structure"
+      ],
+      "role": "Album role: The companion observation to NGC 5426 and the album's most event-driven piece — irregular signal bursts interrupt the drift, dramatising the anomalous intermittent source of the title.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "The drone bed continues from the previous track, now shadowed by a faint irregular crackle."
+        },
+        {
+          "timestamp": "1:30",
+          "section": "First burst",
+          "description": "A sudden burst of band-limited noise cuts across the field and vanishes — the anomaly announcing itself."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Watch",
+          "description": "Long stretch of near-stasis, the drones holding steady as if the receiver is waiting for the source to repeat."
+        },
+        {
+          "timestamp": "4:45",
+          "section": "Burst cluster",
+          "description": "Several bursts arrive in quick succession at irregular intervals, each with a different spectral signature."
+        },
+        {
+          "timestamp": "6:15",
+          "section": "Response",
+          "description": "The drone bed darkens and thickens beneath the bursts, the observation absorbing the anomaly into its texture."
+        },
+        {
+          "timestamp": "7:45",
+          "section": "Final burst",
+          "description": "One last, longest burst decays through the reverb — the source's final detected event."
+        },
+        {
+          "timestamp": "9:00",
+          "section": "Recession",
+          "description": "The crackle fades from the field, leaving the drones unaccompanied."
+        },
+        {
+          "timestamp": "10:00",
+          "section": "Outro",
+          "description": "The bed dims to the static floor in preparation for the closing decryption."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "3C295 Pulse Burst Decryption",
+      "duration": "11:58",
+      "energy": "low",
+      "tags": [
+        "Closer",
+        "Densest Piece",
+        "Pulse Material",
+        "Radio Galaxy Source"
+      ],
+      "role": "Album role: The closing transmission and the album's densest, most active piece — pulse fragments from across the record return and are worked over as if being decoded, resolving the observation session without ever yielding a message.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A dense composite drone opens immediately, thicker than any previous piece's starting texture.",
+          "detail": "3C295 is a distant, luminous radio galaxy from the Third Cambridge Catalogue — at the time of its optical identification one of the most distant objects known."
+        },
+        {
+          "timestamp": "1:40",
+          "section": "Pulse fragments",
+          "description": "Short pulse figures reminiscent of the M87 cycle surface and vanish inside the drones, no two identical."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Layering",
+          "description": "Heterodyne whistles and noise bands from the earlier transmissions stack into the field — the album's vocabulary recombined."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Decryption",
+          "description": "The pulse material organises into a quasi-regular pattern, the closest the album comes to rhythm, as if a signal is being resolved."
+        },
+        {
+          "timestamp": "6:40",
+          "section": "Density peak",
+          "description": "All layers sound at once — the record's maximum textural density, still beatless and without melodic lead."
+        },
+        {
+          "timestamp": "8:10",
+          "section": "Dissolution",
+          "description": "The pattern collapses back into unordered bursts, the decryption abandoned."
+        },
+        {
+          "timestamp": "9:30",
+          "section": "Thinning",
+          "description": "Layers withdraw in reverse order of entry, the whistles departing first, then the pulses."
+        },
+        {
+          "timestamp": "10:50",
+          "section": "Final drone",
+          "description": "A lone sub-bass drone holds beneath the static — the album's opening state restored."
+        },
+        {
+          "timestamp": "11:40",
+          "section": "Outro",
+          "description": "The noise floor fades to silence, ending the observation session."
+        }
+      ]
+    }
+  ]
+}
