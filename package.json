@@ -29,7 +29,7 @@
   "devDependencies": {
     "@playwright/test": "^1.59.1",
     "@tailwindcss/vite": "^4.2.2",
-    "@types/node": "^26.2.0",
+    "@types/node": "^26.4.1",
     "@vitest/coverage-v8": "^4.1.11",
     "daisyui": "^5.7.22",
     "fallow": "^3.22.0",
