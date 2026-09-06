@@ -25,6 +25,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -42,12 +44,15 @@ jobs:
         run: npm run validate
 
       - name: Run unit tests
+        if: ${{ !cancelled() }}
         run: npm run test:unit
 
       - name: Run Playwright regression tests
+        if: ${{ !cancelled() }}
         run: npm test
 
       - name: Build site
+        if: ${{ !cancelled() }}
         env:
           NODE_OPTIONS: --no-deprecation
         run: npm run build
