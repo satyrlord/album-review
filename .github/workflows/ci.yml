@@ -1,0 +1,61 @@
+name: Pull Request Quality Gate
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-gate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality-gate:
+    name: Validate, test, and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.2
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Validate
+        run: npm run validate
+
+      - name: Run unit tests
+        run: npm run test:unit
+
+      - name: Run Playwright regression tests
+        run: npm test
+
+      - name: Build site
+        env:
+          NODE_OPTIONS: --no-deprecation
+        run: npm run build
+
+      - name: Upload Playwright report
+        if: ${{ !cancelled() && hashFiles('playwright-report/**') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ github.run_attempt }}
+          path: playwright-report/
+          retention-days: 14
