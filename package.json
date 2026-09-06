@@ -37,7 +37,7 @@
     "markdownlint-cli2": "^0.23.0",
     "nyc": "^18.0.0",
     "tailwindcss": "^4.2.2",
-    "tsx": "^4.23.12",
+    "tsx": "^4.23.13",
     "typescript": "7.0.2",
     "vite": "^8.2.2",
     "vite-plugin-istanbul": "^9.0.1",
