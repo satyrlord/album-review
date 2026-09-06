@@ -79,7 +79,8 @@ Vitest unit-coverage threshold instead; give them unit tests.
 If any coverage cell drops below 80%, add or update tests before considering the work complete.
 
 Pull requests targeting `main` must pass the
-`Pull Request Quality Gate / Validate, test, and build` check. The gate runs
+`Validate, test, and build` check from the Pull Request Quality Gate workflow.
+The gate runs
 `npm run validate:ci`, `npm run test:unit`, the Playwright regression suite
 with `npm test`, and `npm run build`. Do not merge dependency updates while
 this check is missing, pending, or failing. The CI validation uses
