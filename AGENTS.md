@@ -80,9 +80,11 @@ If any coverage cell drops below 80%, add or update tests before considering the
 
 Pull requests targeting `main` must pass the
 `Pull Request Quality Gate / Validate, test, and build` check. The gate runs
-`npm run validate`, `npm run test:unit`, the Playwright regression suite
+`npm run validate:ci`, `npm run test:unit`, the Playwright regression suite
 with `npm test`, and `npm run build`. Do not merge dependency updates while
-this check is missing, pending, or failing.
+this check is missing, pending, or failing. The CI validation uses
+`fallow audit` so existing health findings remain visible without blocking
+unrelated pull requests; new findings still fail the gate.
 
 ---
 
