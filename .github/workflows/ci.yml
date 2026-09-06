@@ -41,7 +41,7 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Validate
-        run: npm run validate
+        run: npm run validate:ci
 
       - name: Run unit tests
         if: ${{ !cancelled() }}
