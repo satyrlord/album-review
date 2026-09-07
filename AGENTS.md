@@ -28,7 +28,7 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 | `data/index.json` | Generated album summary index derived from `data/*.json` |
 | `src/album-analysis.css` | Shared stylesheet — single source of truth for all design tokens and components |
 | `scripts/add-album.ts` | MusicBrainz/Wikipedia scaffolder for new album JSON files |
-| `docs/writing-guide.md` | Rules for writing album overviews, track roles, timeline events, and analytical style |
+| `docs/writing-guide.md` | Rules for writing album overviews, track roles, timeline events, tags, and analytical style |
 
 ---
 
@@ -86,6 +86,18 @@ with `npm test`, and `npm run build`. Do not merge dependency updates while
 this check is missing, pending, or failing. The CI validation uses
 `fallow audit` so existing health findings remain visible without blocking
 unrelated pull requests; new findings still fail the gate.
+
+Vitest and `@vitest/coverage-v8` must resolve to the same version. Update
+both in `package.json` and regenerate `package-lock.json` with npm. The
+npm Dependabot `vitest` group keeps `vitest` and `@vitest/*` version updates
+together for major, minor, and patch releases. Do not use `--force` or
+`--legacy-peer-deps` to bypass peer-dependency conflicts.
+
+The gate requires successful `npm ci` before validation or unit tests,
+and successful dependency and Chromium installation before Playwright or
+`npm run build`. After setup succeeds, independent checks still run after
+a validation or test failure. Keep failed steps fatal and preserve the
+`Validate, test, and build` check name.
 
 ---
 

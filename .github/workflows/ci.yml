@@ -35,24 +35,28 @@ jobs:
           cache: npm
 
       - name: Install dependencies
+        id: dependencies
         run: npm ci
 
       - name: Install Chromium
+        id: chromium
         run: npx playwright install --with-deps chromium
 
+      # Continue independent checks after a failure, but only with valid setup.
       - name: Validate
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
         run: npm run validate:ci
 
       - name: Run unit tests
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
         run: npm run test:unit
 
       - name: Run Playwright regression tests
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.chromium.outcome == 'success' }}
         run: npm test
 
       - name: Build site
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && steps.dependencies.outcome == 'success' && steps.chromium.outcome == 'success' }}
         env:
           NODE_OPTIONS: --no-deprecation
         run: npm run build
