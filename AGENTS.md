@@ -94,3 +94,12 @@ unrelated pull requests; new findings still fail the gate.
 The site deploys automatically to GitHub Pages on every push to `main` via `.github/workflows/deploy.yml`.
 
 GitHub Actions builds the site with Vite and publishes `dist/`, so local pushes only need the source files plus a clean `npm run build` result.
+
+`npm run build` includes Playwright browser coverage, not only the Vite
+build. Each Linux CI job that runs it must install Chromium and its system
+dependencies with `npx playwright install --with-deps chromium` after
+`npm ci`. Do not remove this setup from the deployment job just because the
+pull-request job also installs browsers. The deployment workflow uploads
+the Playwright report when available, including after a failed build.
+Keep browser coverage output visible in the build log so failures show the
+underlying Playwright error, not only the wrapper command's exit code.

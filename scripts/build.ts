@@ -77,7 +77,8 @@ step("Unit tests (Vitest)", () => {
 });
 
 step("Test coverage", () => {
-  execSync("npx tsx scripts/test-coverage.ts", { cwd: ROOT, stdio: "pipe" });
+  // Stream Playwright diagnostics instead of hiding them behind the build wrapper.
+  execSync("npx tsx scripts/test-coverage.ts", { cwd: ROOT, stdio: "inherit" });
 });
 
 console.log("\n────────────────────────────────────────────────────────────");
