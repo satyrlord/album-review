@@ -28,7 +28,7 @@ Consult `docs/writing-guide.md` for rules on writing album overviews, track role
 | `data/index.json` | Generated album summary index derived from `data/*.json` |
 | `src/album-analysis.css` | Shared stylesheet — single source of truth for all design tokens and components |
 | `scripts/add-album.ts` | MusicBrainz/Wikipedia scaffolder for new album JSON files |
-| `docs/writing-guide.md` | Rules for writing album overviews, track roles, timeline events, tags, and analytical style |
+| `docs/writing-guide.md` | Rules for writing album overviews, track roles, timeline events, and analytical style |
 
 ---
 
