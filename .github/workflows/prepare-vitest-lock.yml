@@ -1,0 +1,71 @@
+name: Prepare Vitest lockfile (temporary)
+
+on:
+  push:
+    branches:
+      - chore/vitest-5-quality-gate
+    paths:
+      - .github/workflows/prepare-vitest-lock.yml
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    if: github.repository == 'satyrlord/album-review' && github.ref == 'refs/heads/chore/vitest-5-quality-gate'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout exact source without persisted credentials
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.2
+
+      - name: Resolve the paired upgrade without lifecycle scripts
+        run: npm install --save-dev --package-lock-only --ignore-scripts --no-audit --no-fund vitest@5.0.0 @vitest/coverage-v8@5.0.0
+
+      - name: Verify versions and direct-dependency scope
+        run: |
+          python3 - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+          before = json.loads(subprocess.check_output(['git', 'show', 'HEAD:package.json'], text=True))
+          after = json.loads(Path('package.json').read_text())
+          lock = json.loads(Path('package-lock.json').read_text())
+          for name in ('vitest', '@vitest/coverage-v8'):
+              assert after['devDependencies'][name] == '^5.0.0', name
+              assert lock['packages']['']['devDependencies'][name] == '^5.0.0', name
+              assert lock['packages']['node_modules/' + name]['version'] == '5.0.0', name
+              before['devDependencies'][name] = '^5.0.0'
+          assert before == after, 'Unexpected manifest change outside the Vitest pair'
+          print('Both Vitest packages resolve to 5.0.0; unrelated direct dependencies are unchanged.')
+          PY
+          git diff --stat
+
+      - name: Check clean installation without lifecycle scripts
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Store generated package files as Git blobs without moving any branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for file in package.json package-lock.json; do
+            python3 - "$file" > "$RUNNER_TEMP/vitest-blob.json" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          json.dump({'content': Path(sys.argv[1]).read_text(), 'encoding': 'utf-8'}, sys.stdout)
+          PY
+            sha=$(gh api --method POST repos/satyrlord/album-review/git/blobs --input "$RUNNER_TEMP/vitest-blob.json" --jq '.sha')
+            echo "$file=$sha"
+            echo "$file=$sha" >> "$GITHUB_STEP_SUMMARY"
+          done
