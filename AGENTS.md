@@ -78,6 +78,27 @@ Vitest unit-coverage threshold instead; give them unit tests.
 
 If any coverage cell drops below 80%, add or update tests before considering the work complete.
 
+Pull requests targeting `main` must pass the
+`Validate, test, and build` check from the Pull Request Quality Gate workflow.
+The gate runs
+`npm run validate:ci`, `npm run test:unit`, the Playwright regression suite
+with `npm test`, and `npm run build`. Do not merge dependency updates while
+this check is missing, pending, or failing. The CI validation uses
+`fallow audit` so existing health findings remain visible without blocking
+unrelated pull requests; new findings still fail the gate.
+
+Vitest and `@vitest/coverage-v8` must resolve to the same version. Update
+both in `package.json` and regenerate `package-lock.json` with npm. The
+npm Dependabot `vitest` group keeps `vitest` and `@vitest/*` version updates
+together for major, minor, and patch releases. Do not use `--force` or
+`--legacy-peer-deps` to bypass peer-dependency conflicts.
+
+The gate requires successful `npm ci` before validation or unit tests,
+and successful dependency and Chromium installation before Playwright or
+`npm run build`. After setup succeeds, independent checks still run after
+a validation or test failure. Keep failed steps fatal and preserve the
+`Validate, test, and build` check name.
+
 ---
 
 ## Deployment
@@ -85,3 +106,12 @@ If any coverage cell drops below 80%, add or update tests before considering the
 The site deploys automatically to GitHub Pages on every push to `main` via `.github/workflows/deploy.yml`.
 
 GitHub Actions builds the site with Vite and publishes `dist/`, so local pushes only need the source files plus a clean `npm run build` result.
+
+`npm run build` includes Playwright browser coverage, not only the Vite
+build. Each Linux CI job that runs it must install Chromium and its system
+dependencies with `npx playwright install --with-deps chromium` after
+`npm ci`. Do not remove this setup from the deployment job just because the
+pull-request job also installs browsers. The deployment workflow uploads
+the Playwright report when available, including after a failed build.
+Keep browser coverage output visible in the build log so failures show the
+underlying Playwright error, not only the wrapper command's exit code.

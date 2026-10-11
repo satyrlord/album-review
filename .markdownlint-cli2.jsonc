@@ -10,6 +10,7 @@
     ".qoder/**",
     "tmp/**",
     ".git/**",
+    ".github/skills/**",
     "**/node_modules/**",
     "**/HTML-REPORT.md",
     "playwright-report/**",

@@ -1,5 +1,4 @@
-# Basic `dependabot.yml` file with
-# minimum configuration for three package managers
+# Dependency updates for npm packages and GitHub Actions
 
 version: 2
 updates:
@@ -10,6 +9,17 @@ updates:
     # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: "daily"
+    groups:
+      # Vitest and its coverage provider must resolve to the same version.
+      vitest:
+        applies-to: version-updates
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+        update-types:
+          - "major"
+          - "minor"
+          - "patch"
 
   # Enable version updates for GitHub Actions
   - package-ecosystem: "github-actions"
