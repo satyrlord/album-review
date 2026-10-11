@@ -112,6 +112,9 @@ One to three sentences identifying the track's function within the album arc. Le
   Collage`, `Vocoder`, `Gregorian Chant Sample`).
 - Avoid generic adjectives like "energetic" or "beautiful" as standalone
   tags.
+- The build rejects tracks with fewer than 2 or more than 5 tags. The
+  scaffolder seeds each track with the placeholders `Scaffold` and
+  `Tags Pending`; replace both before committing.
 
 ---
 

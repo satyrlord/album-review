@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { buildJson, slugify } from "../../scripts/albums/album-scaffold.js";
+import { getAlbumDataIssues } from "../../src/shared/validate.js";
 
 describe("slugify", () => {
   it("lowercases, strips accents, and hyphenates", () => {
@@ -30,6 +31,20 @@ describe("buildJson", () => {
     expect(scaffoldJson.producer).toBe("Unknown");
     expect(scaffoldJson.runtime).toBe("7:02");
     expect(scaffoldJson.coverUrl).toBeUndefined();
+  });
+
+  it("produces a scaffold that passes album validation", () => {
+    const scaffoldJson = buildJson(
+      "generated-scaffold",
+      "Vangelis",
+      "Voices",
+      1995,
+      "Electronic / Ambient",
+      [{ num: 1, title: "Voices", lengthMs: 422000 }],
+    );
+
+    expect(scaffoldJson.tracks[0].tags).toEqual(["Scaffold", "Tags Pending"]);
+    expect(getAlbumDataIssues(scaffoldJson)).toEqual([]);
   });
 
   it("trims slash-delimited genre tags", () => {
