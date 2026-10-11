@@ -52,6 +52,20 @@ function getTimelineEventIssues(value: unknown, path: string): string[] {
   return issues;
 }
 
+function addTrackTagsIssues(tags: unknown, path: string, issues: string[]): void {
+  if (!Array.isArray(tags)) {
+    issues.push(`${path} must be an array`);
+    return;
+  }
+
+  if (!tags.every(tag => typeof tag === 'string' && !!tag.trim())) {
+    issues.push(`${path} entries must be non-empty strings`);
+  }
+  if (tags.length < 2 || tags.length > 5) {
+    issues.push(`${path} must contain 2 to 5 tags`);
+  }
+}
+
 function getAlbumTrackIssues(value: unknown, path: string): string[] {
   if (!isJsonObject(value)) {
     return [`${path} must be an object matching AlbumTrack`];
@@ -66,11 +80,7 @@ function getAlbumTrackIssues(value: unknown, path: string): string[] {
     issues.push(`${path}.energy must be a valid energy level`);
   }
 
-  if (!Array.isArray(value.tags)) {
-    issues.push(`${path}.tags must be an array`);
-  } else if (!value.tags.every(tag => typeof tag === 'string' && !!tag.trim())) {
-    issues.push(`${path}.tags entries must be non-empty strings`);
-  }
+  addTrackTagsIssues(value.tags, `${path}.tags`, issues);
 
   addRequiredStringIssue(value, 'role', `${path}.role`, issues);
 

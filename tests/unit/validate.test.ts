@@ -157,4 +157,22 @@ describe("getAlbumDataIssues", () => {
     expect(issues).toContain("tracks[1].events[0] must be an object matching TimelineEvent");
     expect(issues).toContain("tracks[2].events must be an array");
   });
+
+  it("requires 2 to 5 tags per track", () => {
+    const track = VALID_ALBUM.tracks[0];
+    const issues = getAlbumDataIssues({
+      ...VALID_ALBUM,
+      tracks: [
+        { ...track, tags: [] },
+        { ...track, tags: ["Ambient"] },
+        { ...track, tags: ["A", "B", "C", "D", "E", "F"] },
+        { ...track, tags: ["A", "B", "C", "D", "E"] },
+      ],
+    });
+
+    expect(issues).toContain("tracks[0].tags must contain 2 to 5 tags");
+    expect(issues).toContain("tracks[1].tags must contain 2 to 5 tags");
+    expect(issues).toContain("tracks[2].tags must contain 2 to 5 tags");
+    expect(issues.filter(issue => issue.startsWith("tracks[3]"))).toEqual([]);
+  });
 });

@@ -25,8 +25,10 @@ function getProcessOutput(value: unknown): string {
 function getFailureText(error: unknown): string {
   if (error && typeof error === "object" && "stderr" in error) {
     const processError = error as { stderr?: unknown; stdout?: unknown };
-    const processOutput = getProcessOutput(processError.stderr) || getProcessOutput(processError.stdout);
-    if (processOutput.trim()) return processOutput;
+    const stderr = getProcessOutput(processError.stderr);
+    if (stderr.trim()) return stderr;
+    const stdout = getProcessOutput(processError.stdout);
+    if (stdout.trim()) return stdout;
   }
 
   if (error instanceof Error) return error.message;

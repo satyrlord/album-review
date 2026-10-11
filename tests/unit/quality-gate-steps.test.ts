@@ -70,4 +70,48 @@ describe("runQualityGateSteps", () => {
     expect(output.stderrLines.join("")).toContain("CHILD_DIAGNOSTIC");
     expect(output.stderrLines.join("")).not.toContain("Command failed");
   });
+
+  it("prefers stdout over a whitespace-only stderr", () => {
+    const output = createOutput();
+    const childError = Object.assign(new Error("Command failed"), {
+      stderr: Buffer.from(" \n"),
+      stdout: "STDOUT_DIAGNOSTIC\n",
+    });
+
+    runQualityGateSteps(
+      [{ label: "Child process", run: () => { throw childError; } }],
+      output,
+    );
+
+    expect(output.stderrLines.join("")).toContain("STDOUT_DIAGNOSTIC");
+    expect(output.stderrLines.join("")).not.toContain("Command failed");
+  });
+
+  it("prefers a non-empty stderr over stdout", () => {
+    const output = createOutput();
+    const childError = Object.assign(new Error("Command failed"), {
+      stderr: "STDERR_DIAGNOSTIC\n",
+      stdout: "STDOUT_DIAGNOSTIC\n",
+    });
+
+    runQualityGateSteps(
+      [{ label: "Child process", run: () => { throw childError; } }],
+      output,
+    );
+
+    expect(output.stderrLines.join("")).toContain("STDERR_DIAGNOSTIC");
+    expect(output.stderrLines.join("")).not.toContain("STDOUT_DIAGNOSTIC");
+  });
+
+  it("falls back to the error message when both streams are blank", () => {
+    const output = createOutput();
+    const childError = Object.assign(new Error("Command failed"), { stderr: " ", stdout: 42 });
+
+    runQualityGateSteps(
+      [{ label: "Child process", run: () => { throw childError; } }],
+      output,
+    );
+
+    expect(output.stderrLines.join("")).toContain("Command failed");
+  });
 });
