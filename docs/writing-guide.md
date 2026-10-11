@@ -208,8 +208,9 @@ Name specific instruments and models when known. This is a defining feature of t
 - `label` — the primary original release label. For joint releases, separate labels with ` · ` (space, middle dot, space): `"Disques Motors · Polydor"`.
 - `producer` — same format for co-producers: `"Trevor Horn · Tom Newman · Mike Oldfield"`.
 - Do not leave either field as an empty string `""`. If the value is genuinely unknown, use `"Unknown"`.
-- `genre` — the display string, with subgenres separated by ` / `:
-  `"Electronic / Ambient"`. `genreTags` holds the same values split into
-  1–9 individual tags; the scaffolder derives it from `genre`, and the
-  build validates it. When editing `genre` by hand, update `genreTags`
-  to match.
+- `genre` — the compact display string, with primary subgenres separated
+  by ` / `: `"Electronic / Ambient"`.
+- `genreTags` — 1–9 curated filter tags. Include the primary values from
+  `genre` when they are useful filters, and add broader or more specific
+  categories when they improve discovery. The scaffolder initializes this
+  array from `genre`; editors can then refine it.

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "add-album": "tsx scripts/add-album.ts",
@@ -23,8 +26,12 @@
   "allowScripts": {
     "esbuild": true
   },
-  "engines": {
-    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  "overrides": {
+    "@istanbuljs/load-nyc-config": {
+      "js-yaml": "^5.4.3"
+    },
+    "katex": "^0.19.0",
+    "smol-toml": "^1.9.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",

@@ -1,0 +1,477 @@
+{
+  "id": "trees-of-eternity-hour-of-the-nightingale",
+  "artist": "Trees of Eternity",
+  "title": "Hour of the Nightingale",
+  "year": 2016,
+  "label": "Svart Records",
+  "producer": "Jens Bogren",
+  "genre": "Gothic Doom Metal / Atmospheric Doom",
+  "genreTags": [
+    "Gothic Doom Metal",
+    "Atmospheric Doom"
+  ],
+  "runtime": "1:02:41",
+  "coverUrl": "covers/trees-of-eternity-hour-of-the-nightingale.jpg",
+  "spotifyUrl": "https://open.spotify.com/album/6sFhi9TivgwN6XzcEYcfAy",
+  "youtubeUrl": "https://www.youtube.com/watch?v=eLXh3s12bO4",
+  "overview": "The only album by Trees of Eternity — the project formed around Swallow the Sun guitarist Juha Raivio and South African-born Swedish vocalist Aleah Stanbridge, completed by ex-Katatonia members Fredrik Norrman (guitar) and Mattias Norrman (bass) with drummer Kai Hahto. Recording finished in 2014 with producer Jens Bogren, but the album stalled in post-production; Stanbridge died of cancer on 18 April 2016, the original label withdrew a week after her death, and Svart Records released the record posthumously on 11 November 2016.\n\nThe album holds a single register across ten tracks: slow, downtuned gothic doom beneath Stanbridge's close-miked, multitracked vocals — a combination Louder Sound compared to My Dying Bride, Tori Amos, The Gathering, and Mazzy Star. Two guest vocalists deepen the low end of the register: Mick Moss of Antimatter on 'Condemned to Silence' and Nick Holmes of Paradise Lost on the closer 'Gallows Bird'. 'Broken Mirror' preceded the album as the lead single on 11 August 2016.\n\nTimestamps are proportionally estimated to ±15 seconds.",
+  "tracks": [
+    {
+      "num": 1,
+      "title": "My Requiem",
+      "duration": "6:02",
+      "energy": "high",
+      "tags": [
+        "Opener",
+        "Doom Riff Template",
+        "String Arrangement",
+        "Layered Vocal Harmonies"
+      ],
+      "role": "Album role: The opener and the album's template — string-shadowed doom riffs under Stanbridge's hushed delivery, establishing the tempo ceiling and dynamic range every later track works within. The title reads as unintended epitaph on a record released seven months after her death.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "String and synthesizer pads open alone — a slow harmonic drone establishing the album's minor-key register before any guitar enters."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Riff entry",
+          "description": "Downtuned rhythm guitars land on the first full doom riff — low-tempo, sustained chords with Hahto's drums marking half-time accents beneath.",
+          "detail": "Jens Bogren's production keeps the guitars wide but subdued, mixed to support rather than bury the vocal — the balance that defines the whole record."
+        },
+        {
+          "timestamp": "1:20",
+          "section": "Verse",
+          "description": "Stanbridge enters close-miked and low in volume, the guitars dropping back to let the multitracked vocal carry the melodic line."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Chorus",
+          "description": "The full band returns under a layered vocal harmony — the album's characteristic lift from whispered verse to weighted chorus without any tempo change."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Bridge",
+          "description": "Guitars thin to sustained single notes over strings; a lead guitar line answers the vocal phrase in call-and-response."
+        },
+        {
+          "timestamp": "5:20",
+          "section": "Outro",
+          "description": "Final chorus restatement decays into the opening string pad, closing the frame the intro established."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Eye of Night",
+      "duration": "6:05",
+      "energy": "mid",
+      "tags": [
+        "Clean Guitar Verses",
+        "Mid-Tempo Doom",
+        "Vocal Multitracking"
+      ],
+      "role": "Album role: The consolidation track — pulls the opener's weight back toward restraint, verses carried on clean guitar figures so the doom chorus lands as contrast rather than continuation.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Clean, chorused guitar arpeggios open over a quiet rhythm-section pulse — the softest entry point on the album's first side."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Verse",
+          "description": "Stanbridge sings in her lower register over the clean figure, double-tracked at the phrase ends for emphasis."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Chorus",
+          "description": "Distorted guitars enter with the chorus — the arrangement thickens without accelerating, the doom weight arriving as texture rather than aggression."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Middle eight",
+          "description": "A stripped passage of voice and sustained pads breaks the verse-chorus cycle before the final build."
+        },
+        {
+          "timestamp": "4:40",
+          "section": "Final chorus",
+          "description": "Extended chorus repetition with added vocal harmony layers — the densest vocal stack of the track."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Outro",
+          "description": "Guitars withdraw to the opening clean figure, resolving the track where it began."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Condemned to Silence",
+      "duration": "5:23",
+      "energy": "mid",
+      "tags": [
+        "Mick Moss Duet",
+        "Antimatter Guest",
+        "Male-Female Contrast"
+      ],
+      "role": "Album role: The first duet — Mick Moss of Antimatter trades verses with Stanbridge, his weathered baritone giving the album its first counterweight to her airy register and prefiguring the Nick Holmes pairing on the closer.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A slow guitar figure over restrained drums sets a brooding, static harmonic bed."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Verse — Stanbridge",
+          "description": "Stanbridge takes the first verse alone, the arrangement held to guitar, bass, and brushed-weight drums."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Verse — Moss",
+          "description": "Mick Moss answers with the second verse in a low baritone — the album's first male voice, mixed dry against Stanbridge's reverb-softened tone.",
+          "detail": "Moss fronts the British band Antimatter; his guest spot links the album to the melancholic rock lineage the band drew on alongside its doom foundations."
+        },
+        {
+          "timestamp": "2:50",
+          "section": "Chorus",
+          "description": "Both voices join in harmony over the full distorted arrangement — the duet's structural payoff."
+        },
+        {
+          "timestamp": "4:00",
+          "section": "Bridge",
+          "description": "Instrumental passage with a sustained lead guitar line over the chorus progression."
+        },
+        {
+          "timestamp": "4:50",
+          "section": "Outro",
+          "description": "The voices trade final phrases as the band decays to the opening figure."
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "A Million Tears",
+      "duration": "7:13",
+      "energy": "high",
+      "tags": [
+        "Emotional Centrepiece",
+        "Extended Climax",
+        "String Layers"
+      ],
+      "role": "Album role: Side One's emotional centrepiece and its longest statement — a seven-minute grief arc whose extended climax carries the heaviest sustained playing of the album's first half.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Piano-voiced keys and strings open in a bare texture, delaying the band's entry."
+        },
+        {
+          "timestamp": "1:00",
+          "section": "Verse",
+          "description": "Stanbridge enters over the keys alone — the most exposed vocal placement on the album so far."
+        },
+        {
+          "timestamp": "2:10",
+          "section": "Band entry",
+          "description": "Drums and downtuned guitars arrive together at full doom weight, converting the ballad opening into the album's slowest heavy crawl."
+        },
+        {
+          "timestamp": "3:20",
+          "section": "Second verse",
+          "description": "The arrangement pulls back to keys and clean guitar, the dynamic trough before the long final build."
+        },
+        {
+          "timestamp": "4:30",
+          "section": "Climb",
+          "description": "Guitars re-enter layer by layer with string counterlines — a cumulative build rather than a sudden drop."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Climax",
+          "description": "Peak density: full band, string layers, and stacked vocal harmonies sustained across a minute-long plateau."
+        },
+        {
+          "timestamp": "6:40",
+          "section": "Outro",
+          "description": "The plateau decays back to solitary keys, mirroring the intro."
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Hour of the Nightingale",
+      "duration": "5:36",
+      "energy": "mid",
+      "tags": [
+        "Title Track",
+        "Midpoint",
+        "Restrained Arrangement"
+      ],
+      "role": "Album role: The title track and structural midpoint — a deliberate de-escalation after 'A Million Tears' that restates the album's core language at its most restrained.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Clean guitar and ambient pad tones open at low volume, the drums entering with soft mallet-weight accents."
+        },
+        {
+          "timestamp": "0:50",
+          "section": "Verse",
+          "description": "Stanbridge's melody moves in long, held phrases over the sparse bed — the vocal as the track's primary rhythmic element."
+        },
+        {
+          "timestamp": "2:00",
+          "section": "Chorus",
+          "description": "Distorted guitars swell in beneath the chorus harmony, restrained to a supporting role rather than a riff statement."
+        },
+        {
+          "timestamp": "3:10",
+          "section": "Instrumental",
+          "description": "A lead guitar line takes the verse melody over the full arrangement."
+        },
+        {
+          "timestamp": "4:20",
+          "section": "Final chorus",
+          "description": "The chorus returns with added vocal layers, the track's single dynamic peak."
+        },
+        {
+          "timestamp": "5:10",
+          "section": "Outro",
+          "description": "Instruments strip away to the opening pad, closing the album's first half."
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "The Passage",
+      "duration": "6:11",
+      "energy": "mid",
+      "tags": [
+        "Side Two Opener",
+        "Slow Build",
+        "Atmospheric Doom"
+      ],
+      "role": "Album role: Side Two's opener — a single sustained build that trades verse-chorus architecture for gradual accumulation, the most atmosphere-driven construction on the album.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Sustained synthesizer and string drones open without percussion, the longest beatless stretch on the record."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Verse",
+          "description": "Voice and clean guitar enter over the drone, drums arriving underneath at minimal volume."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "First swell",
+          "description": "Distorted guitars rise into the texture for a single chorus-weight passage, then recede."
+        },
+        {
+          "timestamp": "3:40",
+          "section": "Trough",
+          "description": "The arrangement empties back to voice and drone — the build resets rather than progresses."
+        },
+        {
+          "timestamp": "4:40",
+          "section": "Final swell",
+          "description": "The full band returns at greater density, strings doubling the guitar line to the track's peak."
+        },
+        {
+          "timestamp": "5:40",
+          "section": "Outro",
+          "description": "The drone outlasts the band, dissolving into the silence before 'Broken Mirror'."
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Broken Mirror",
+      "duration": "5:56",
+      "energy": "high",
+      "tags": [
+        "Lead Single",
+        "Most Immediate Chorus",
+        "First Posthumous Release"
+      ],
+      "role": "Album role: The lead single — released 11 August 2016 as the first music issued after Stanbridge's death — and the album's most immediate track, its chorus the closest the record comes to a conventional gothic-metal hook.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "The band opens together on the main riff — the most direct entry on the album, no ambient preamble."
+        },
+        {
+          "timestamp": "0:45",
+          "section": "Verse",
+          "description": "Guitars drop to palm-muted restraint under the verse vocal, bass carrying the harmonic motion."
+        },
+        {
+          "timestamp": "1:45",
+          "section": "Chorus",
+          "description": "The hook arrives on stacked vocal harmonies over the full riff — the album's most repeatable chorus figure."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Bridge",
+          "description": "A quieter passage of clean guitar and single-tracked voice sets up the final run."
+        },
+        {
+          "timestamp": "4:10",
+          "section": "Final choruses",
+          "description": "Double chorus restatement with lead guitar embellishment over the top."
+        },
+        {
+          "timestamp": "5:30",
+          "section": "Outro",
+          "description": "The main riff closes the track unaccompanied, decaying to silence."
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Black Ocean",
+      "duration": "7:02",
+      "energy": "high",
+      "tags": [
+        "2013 Demo Origin",
+        "Heaviest Riffs",
+        "Death-Doom Weight"
+      ],
+      "role": "Album role: The oldest song and the heaviest — title track of the band's 2013 demo, re-recorded here, its riffing closest to the death-doom weight of Raivio's parent band Swallow the Sun.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "A low, sustained guitar drone builds into the album's most massive riff entry, drums at full crash-cymbal weight.",
+          "detail": "The song predates the album: it titled the band's 2013 demo, and the re-recording keeps its heavier riff language intact within Bogren's cleaner production."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Verse",
+          "description": "Stanbridge sings over the riff at full density rather than a stripped bed — the only track where the verse keeps the doom weight underneath the vocal."
+        },
+        {
+          "timestamp": "2:20",
+          "section": "Chorus",
+          "description": "The harmonic centre lifts under a layered chorus melody, strings surfacing in the upper mids."
+        },
+        {
+          "timestamp": "3:30",
+          "section": "Breakdown",
+          "description": "The band cuts to clean guitar and voice — the track's single dynamic trough."
+        },
+        {
+          "timestamp": "4:40",
+          "section": "Rebuild",
+          "description": "The main riff returns beneath a lead guitar line, regaining full weight in stages."
+        },
+        {
+          "timestamp": "5:50",
+          "section": "Final chorus",
+          "description": "Closing chorus at maximum layer count, held longer than the earlier statements."
+        },
+        {
+          "timestamp": "6:40",
+          "section": "Outro",
+          "description": "The riff halts abruptly, leaving a residual drone to fade."
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Sinking Ships",
+      "duration": "3:36",
+      "energy": "low",
+      "tags": [
+        "Shortest Track",
+        "Stripped Arrangement",
+        "Ballad"
+      ],
+      "role": "Album role: The breathing space before the finale — the shortest track and the most stripped, functioning as a quiet prelude that resets the dynamic floor ahead of the nine-minute closer.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Clean guitar and soft pads open alone — no distorted guitar anywhere in the track's first half."
+        },
+        {
+          "timestamp": "0:40",
+          "section": "Verse",
+          "description": "A single-tracked vocal over the clean figure, the most intimate mix placement on the album."
+        },
+        {
+          "timestamp": "1:50",
+          "section": "Swell",
+          "description": "Strings and low guitar sustain rise briefly beneath the second verse without breaking the ballad frame."
+        },
+        {
+          "timestamp": "3:00",
+          "section": "Outro",
+          "description": "The arrangement thins back to guitar and voice, ending unresolved into the closer."
+        }
+      ]
+    },
+    {
+      "num": 10,
+      "title": "Gallows Bird",
+      "duration": "9:38",
+      "energy": "peak",
+      "tags": [
+        "Nick Holmes Duet",
+        "Closer",
+        "Longest Track",
+        "Extended Coda"
+      ],
+      "role": "Album role: The summit and farewell — a nine-and-a-half-minute closer pairing Stanbridge with Nick Holmes of Paradise Lost, whose sepulchral baritone turns the final duet into a dialogue between the living and the departed before an extended instrumental coda carries the album out.",
+      "events": [
+        {
+          "timestamp": "0:00",
+          "section": "Intro",
+          "description": "Slow clean guitar and pads open at funeral pace, the drums entering with sparse, spacious hits."
+        },
+        {
+          "timestamp": "1:10",
+          "section": "Verse — Stanbridge",
+          "description": "Stanbridge takes the opening verses alone over the restrained bed."
+        },
+        {
+          "timestamp": "2:30",
+          "section": "Verse — Holmes",
+          "description": "Nick Holmes enters in a deep, half-spoken baritone — the album's darkest vocal color, set against Stanbridge's high harmony.",
+          "detail": "Holmes fronts Paradise Lost, the band that codified gothic doom in the early 1990s; his presence places the album explicitly in that lineage."
+        },
+        {
+          "timestamp": "3:50",
+          "section": "Chorus",
+          "description": "Both voices converge over the full doom arrangement — the album's final and heaviest duet payoff."
+        },
+        {
+          "timestamp": "5:00",
+          "section": "Climax",
+          "description": "Peak intensity of the record: layered guitars, strings, and both vocalists sustained across the track's structural summit."
+        },
+        {
+          "timestamp": "6:10",
+          "section": "Wind-down",
+          "description": "The band recedes in stages, voices departing first, guitars decaying to sustained single notes."
+        },
+        {
+          "timestamp": "7:20",
+          "section": "Coda",
+          "description": "An extended instrumental fade — drone, pad, and residual guitar resonance stretched far past the song's end.",
+          "detail": "The long dissolve functions as the album's memorial close, holding silence at bay for over two minutes after the final vocal."
+        },
+        {
+          "timestamp": "9:20",
+          "section": "End",
+          "description": "The last drone fades to true silence, ending the album and the band's recorded output."
+        }
+      ]
+    }
+  ]
+}

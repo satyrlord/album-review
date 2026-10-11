@@ -1,8 +1,7 @@
 /**
- * tags.ts — shared genre-tag model. Deriving tags from the genre display
- * string and collapsing spelling variants both live here; the browser
- * reads the derived `genreTags` arrays produced by this module via the
- * scaffolder and index generator.
+ * tags.ts — shared genre-tag model. Scaffold defaults come from the genre
+ * display string. Editors can add curated discovery tags. The index builder
+ * uses this module to collapse spelling variants across those tag arrays.
  */
 
 import type { AlbumIndexEntry } from './schema.js';

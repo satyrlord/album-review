@@ -26,6 +26,8 @@ describe("buildJson", () => {
 
     expect(scaffoldJson.genre).toBe("");
     expect(scaffoldJson.genreTags).toEqual([]);
+    expect(scaffoldJson.label).toBe("Unknown");
+    expect(scaffoldJson.producer).toBe("Unknown");
     expect(scaffoldJson.runtime).toBe("7:02");
     expect(scaffoldJson.coverUrl).toBeUndefined();
   });

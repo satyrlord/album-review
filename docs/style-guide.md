@@ -173,6 +173,8 @@ Home page uses [src/index.ts](../src/index.ts).
 Structure:
 
 - Static HTML provides the hero shell, search input, pill container, results bar (count plus the `#ixActiveFilters` chip container), grid root, and footer mount point.
+- The collection loads in ascending release-year order. The sort control and
+  initial load both use the page module's canonical `sortAlbums()` helper.
 - The hero search shell is rendered by [src/site.ts](../src/site.ts) as a
   pill input with auto height plus a minimum height override so the
   `sm:text-lg` search text and placeholder do not clip.
