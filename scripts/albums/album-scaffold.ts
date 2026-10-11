@@ -25,6 +25,9 @@ export function slugify(text: string): string {
   return value.replace(/^-|-$/g, "");
 }
 
+/** Placeholder track tags; the validator requires 2–5 per track. */
+const SCAFFOLD_TRACK_TAGS = ['Scaffold', 'Tags Pending'];
+
 /**
  * Build a scaffold album JSON document from imported metadata.
  * Empty or whitespace-only cover URLs are treated as missing and omitted.
@@ -48,7 +51,7 @@ export function buildJson(
     title:    t.title,
     duration: t.lengthMs ? msToMmss(t.lengthMs) : '?:??',
     energy:   'mid',
-    tags:     [],
+    tags:     [...SCAFFOLD_TRACK_TAGS],
     role:     'Initial scaffold only. Narrative role pending detailed listen.',
     events: [{
       timestamp:   '0:00',
