@@ -37,7 +37,7 @@
     "@playwright/test": "^1.64.0",
     "@tailwindcss/vite": "^4.2.2",
     "@types/node": "^26.6.5",
-    "@vitest/coverage-v8": "^5.0.4",
+    "@vitest/coverage-v8": "^5.0.5",
     "daisyui": "^5.7.50",
     "fallow": "^3.33.1",
     "jsdom": "30.1.2",
